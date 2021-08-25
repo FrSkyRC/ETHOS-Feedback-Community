@@ -25,3 +25,6 @@ Below are some notes to help you report issues/bugs or improvement suggestions.
 Thanks again for your interests and helps on the system.
 We hope it will become good enough to fulfill your demands on radio system.
 
+## ABOUT THE MANUALS
+If there are any mistakes, please criticize and correct them in time to us. 
+Thanks.
