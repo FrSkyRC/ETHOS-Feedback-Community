@@ -25,6 +25,13 @@ Below are some notes to help you report issues/bugs or improvement suggestions.
 Thanks again for your interests and helps on the system.
 We hope it will become good enough to fulfill your demands on radio system.
 
+### ETHOS Wiki
+* See ETHOS Wiki for the following: https://github.com/FrSkyRC/ETHOS-Feedback-Community/wiki
+* ETHOS File Storage, ETHOS flashing and TD ISRM updating 
+* ETHOS Localizion 
+* ETHOS simulaters
+
 ## ABOUT THE MANUALS
 If there are any mistakes, please criticize and correct them in time to us. 
 Thanks.
+
