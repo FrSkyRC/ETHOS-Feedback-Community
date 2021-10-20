@@ -22,8 +22,7 @@ Below are some notes to help you report issues/bugs or improvement suggestions.
 * Description how to reproduce the bug
 * If possible a screenshot or video, it is worth 1000 words :) 
 
-Thanks again for your interests and helps on the system.
-We hope it will become good enough to fulfill your demands on radio system.
+Thanks again for your interest and help on this new system, we hope it becomes better and better to fulfill all your demands!
 
 ### Ethos Wiki
 Ethos Wiki is there: https://github.com/FrSkyRC/ETHOS-Feedback-Community/wiki
