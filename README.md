@@ -27,7 +27,8 @@ We hope it will become good enough to fulfill your demands on radio system.
 
 ### Ethos Wiki
 Ethos Wiki is there: https://github.com/FrSkyRC/ETHOS-Feedback-Community/wiki
-It covers these topics:
+
+Here are some direct links to the main pages:
 * [Ethos File Storage, ETHOS flashing and TD ISRM updating](https://github.com/FrSkyRC/ETHOS-Feedback-Community/wiki/ETHOS-File-Storage)
 * Ethos Localization 
 * Ethos Simulators
