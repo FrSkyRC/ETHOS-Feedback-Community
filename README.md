@@ -32,7 +32,8 @@ We hope it will become good enough to fulfill your demands on radio system.
 * ETHOS simulaters
 
 ## Ethos Manuals
-* [English manual](https://github.com/FrSkyRC/ETHOS-Feedback-Community/raw/main/X20%20and%20Ethos%20User%20Manual_1.0.11_rev18.pdf)
+* [English Manual](https://github.com/FrSkyRC/ETHOS-Feedback-Community/raw/main/X20%20and%20Ethos%20User%20Manual_1.0.11_rev18.pdf)
+* [French Manual](https://github.com/FrSkyRC/ETHOS-Feedback-Community/raw/main/X20%20and%20Ethos%20User%20Manual_1.0.11_rev18%20-%20FR.pdf)
 
 If there are any mistakes, please feel free to tell us!
 
