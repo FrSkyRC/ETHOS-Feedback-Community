@@ -26,10 +26,11 @@ Thanks again for your interests and helps on the system.
 We hope it will become good enough to fulfill your demands on radio system.
 
 ### Ethos Wiki
-* See Ethos Wiki for the following: https://github.com/FrSkyRC/ETHOS-Feedback-Community/wiki
-* ETHOS File Storage, ETHOS flashing and TD ISRM updating 
-* ETHOS Localizion 
-* ETHOS simulaters
+Ethos Wiki is there: https://github.com/FrSkyRC/ETHOS-Feedback-Community/wiki
+It covers these topics:
+* [Ethos File Storage, ETHOS flashing and TD ISRM updating](https://github.com/FrSkyRC/ETHOS-Feedback-Community/wiki/ETHOS-File-Storage)
+* Ethos Localization 
+* Ethos Simulators
 
 ## Ethos Manuals
 * [English Manual](https://github.com/FrSkyRC/ETHOS-Feedback-Community/raw/main/X20%20and%20Ethos%20User%20Manual_1.0.11_rev18.pdf)
