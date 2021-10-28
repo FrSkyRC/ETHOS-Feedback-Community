@@ -35,6 +35,7 @@ Here are some direct links to the main pages:
 ## Ethos Manuals
 * [English Manual](https://github.com/FrSkyRC/ETHOS-Feedback-Community/raw/main/X20%20and%20Ethos%20User%20Manual_1.0.11_rev18.pdf)
 * [French Manual](https://github.com/FrSkyRC/ETHOS-Feedback-Community/raw/main/X20%20and%20Ethos%20User%20Manual_1.0.11_rev18%20-%20FR.pdf)
+* [Chinese Manual](https://github.com/FrSkyRC/ETHOS-Feedback-Community/raw/main/X20%20and%20Ethos%20User%20Manual_1.0.10_rev16%20-%20CN.pdf)
 
 If there are any mistakes, please feel free to tell us!
 
