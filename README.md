@@ -1,3 +1,14 @@
+# NOTICE   2021-10-28
+
+The FrSkyRC / ETHOS-Feedback-Community will be set to read-only to allow engineers to concentrate on LUA-related development and support for a period of time.
+
+Any issue or bug based on the latest 1.0.12 release, pls report to ethos@frsky-rc.com by e-mail.
+
+You can also follow the [RCG thread](https://www.rcgroups.com/forums/showthread.php?3703807-New-%C2%96-FrSky-X20-X20S-X20HD-Tandem-and-ETHOS) to learn more. During the closure of the repository, no new ETHOS features will be added, but you are very welcome to stay tuned to the area until it is reopened.
+
+Thank you again for your support and understanding since the release of ETHOS.
+
+
 # Feedback about FrSky Ethos
 
 Thank you for helping FrSky Ethos to be better! Here FrSky could collect input and suggestion from all the end users on the system operation. The goal of this program is to find issues/bugs that can be corrected in further software updates.
