@@ -1,6 +1,6 @@
 # NOTICE  - 2021-10-28
 
-The FrSkyRC / ETHOS-Feedback-Community will be set to read-only to allow engineers to concentrate on LUA-related development and support for a period of time.
+The FrSkyRC / ETHOS-Feedback-Community will be read-only to allow engineers to concentrate on LUA-related development and support for a period of time.
 
 Any issue or bug based on the latest 1.0.14 release, pls report to ethos@frsky-rc.com by e-mail.
 
