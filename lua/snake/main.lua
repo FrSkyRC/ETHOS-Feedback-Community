@@ -159,7 +159,7 @@ local function paint()
   end
 end
 
-local icon = lcd.loadMask("/scripts/snake.png")
+local icon = lcd.loadMask("snake.png")
 
 local function init()
   system.registerSystemTool({name=name, icon=icon, create=create, wakeup=wakeup, event=event, paint=paint})

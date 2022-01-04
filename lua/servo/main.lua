@@ -157,7 +157,7 @@ local function event(widget, category, value, x, y)
   return false
 end
 
-local icon = lcd.loadMask("/scripts/servo.png")
+local icon = lcd.loadMask("servo.png")
 
 local function init()
   system.registerSystemTool({name=name, icon=icon, create=create, wakeup=wakeup, event=event})
