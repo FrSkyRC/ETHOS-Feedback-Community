@@ -13,5 +13,3 @@ __Alpha Releases are for testing purposes and should not be flown or used by the
 - [Lua] os.clock() fixed, it returns seconds (float)
 - [Lua] sport.popFrame() appIdStart and appIdEnd filters fixed
 - DE, FR, IT and NL translations
-
-_coming soon_
