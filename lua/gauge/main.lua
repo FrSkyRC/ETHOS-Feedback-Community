@@ -86,9 +86,9 @@ local function configure(widget)
     -- Min & Max
     line = form.addLine("Range")
     local slots = form.getFieldSlots(line, {0, "-", 0})
-    form.addNumberField(line, slots[1], -1024, 1024, function() return widget.min end, function(value) widget.min = value end);
+    form.addNumberField(line, slots[1], -1024, 1024, function() return widget.min end, function(value) widget.min = value end)
     form.addStaticText(line, slots[2], "-")
-    form.addNumberField(line, slots[3], -1024, 1024, function() return widget.max end, function(value) widget.max = value end);
+    form.addNumberField(line, slots[3], -1024, 1024, function() return widget.max end, function(value) widget.max = value end)
 end
 
 local function read(widget)
