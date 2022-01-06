@@ -2,39 +2,33 @@
 
 local function create()
   local sensor = system.getSource("LiPo")
-  return {sensor=sensor}
+  return {sensor=sensor, value=nil}
 end
 
 local function paint(widget)
-  local w, h = lcd.getWindowSize()
-    local text_w, text_h = lcd.getTextSize("")
-    if widget.sensor ~= nil then
-      lcd.font(FONT_XL)
-      lcd.drawText(10, 10, "Total = "..widget.sensor:stringValue(), LEFT)
-      lcd.drawText(w - 10, 10, widget.sensor:stringValue(OPTION_CELL_COUNT).." Cells", RIGHT)
-
-      local cellsCount = widget.sensor:value(OPTION_CELL_COUNT)
-
-      local x = 10
-      local y = 50
-
-      for i = 1, cellsCount do
-        if x + 180 > w then
-          x = 10;
-          y = y + 40;
-        end
-
-        lcd.drawText(x, y, "Cell"..i.."  "..widget.sensor:stringValue(OPTION_CELL_INDEX(i)), LEFT)
-        x = x + 180
-      end
-  end  
+  if widget.sensor ~= nil then
+    lcd.font(FONT_L)
+    local y = 10
+    lcd.drawText(10, y, "Total = " .. widget.sensor:stringValue() .. " (" .. widget.sensor:stringValue(OPTION_CELL_COUNT) .. " cells)")
+    y = y + 30
+    for i = 1, widget.sensor:value(OPTION_CELL_COUNT) do
+      lcd.drawText(10, y, "Cell[" .. i .."] = " .. widget.sensor:stringValue(OPTION_CELL_INDEX(i)))
+      y = y + 30
+    end
+  end
 end
 
 local function wakeup(widget)
+  local newValue = nil
+  if widget.sensor == nil then
+    widget.sensor = system.getSource("LiPo")
+  end
   if widget.sensor ~= nil then
+    newValue = widget.sensor:stringValue()
+  end
+  if widget.value ~= newValue then
+    widget.value = newValue
     lcd.invalidate()
-  else 
-    widget.sensor = system.getSource("LiPo1")
   end
 end
 
