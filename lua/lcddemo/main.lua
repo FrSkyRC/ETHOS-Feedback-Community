@@ -1,4 +1,4 @@
--- Lua LCD Test widget
+-- Lua LCD demo widget
 
 local bitmap, mask
 
