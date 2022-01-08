@@ -39,7 +39,7 @@ Thanks again for your interest and help on this new system, we hope it becomes b
 Ethos Wiki is there: https://github.com/FrSkyRC/ETHOS-Feedback-Community/wiki
 
 Here are some direct links to the main pages:
-* [Ethos File Storage, ETHOS flashing and TD ISRM updating](https://github.com/FrSkyRC/ETHOS-Feedback-Community/wiki/ETHOS-File-Storage)
+* [Ethos File Storage, ETHOS flashing and TD ISRM updating](https://github.com/FrSkyRC/ETHOS-Feedback-Community/wiki/ETHOS-File-Storage-and-Firmware-Flashing)
 * Ethos Localization 
 * Ethos Simulators
 
