@@ -33,7 +33,7 @@ Here are some direct links to the main pages:
 * Ethos Simulators
 
 ## Ethos Manuals
-* [English Manual](https://github.com/FrSkyRC/ETHOS-Feedback-Community/raw/main/doc/%5BEN%5D%20X20%20and%20Ethos%20User%20Manual_1.1.0.pdf)
+* [English Manual](https://github.com/FrSkyRC/ETHOS-Feedback-Community/raw/main/doc/%5BEN%5D%20X20%20and%20Ethos%20User%20Manual_1.1.1_rev2.pdf)
 * [French Manual](https://github.com/FrSkyRC/ETHOS-Feedback-Community/raw/main/doc/%5BFR%5D%20X20%20and%20Ethos%20User%20Manual_1.0.17_rev18.pdf)
 * [Chinese Manual](https://github.com/FrSkyRC/ETHOS-Feedback-Community/raw/main/doc/%5BCN%5D%20X20%20and%20Ethos%20User%20Manual_1.0.10_rev16.pdf)
 
