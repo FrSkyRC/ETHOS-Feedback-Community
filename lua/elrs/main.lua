@@ -1,4 +1,4 @@
--- ELRS Configuration
+-- Express LRS Module
 
 local translations = {en="ELRS Configuration"}
 
@@ -17,6 +17,7 @@ local fields = {}
 local fieldPopup
 local fieldTime = 0
 local loadQ = {}
+local expectChunksRemain = -1
 local fieldChunk = 0
 local fieldData = {}
 local currentParent
@@ -125,6 +126,7 @@ local function parseParameterInfoMessage(data)
   end
   local field = fields[fieldId]
   local chunksRemain = data[4]
+  -- If no field or the chunksremain changed when we have data, don't continue
   if not field or (chunksRemain ~= expectChunksRemain and #fieldData ~= 0) then
     return
   end
@@ -139,30 +141,76 @@ local function parseParameterInfoMessage(data)
     if #fieldData > 3 then
       local offset
       field.id = fieldId
-      field.parent = (fieldData[1] ~= 0) and fieldData[1] or nil
+      field.parent = fieldData[1]
       field.type = fieldData[2] & 0x7f
-      field.hidden = (fieldData[2] & 0x80) or nil
+      field.hidden = fieldData[2] & 0x80
       field.name, offset = parseString(fieldData, 3, field.name)
       print("Field: " .. field.name .. ", Type: " .. field.type)
 
-      while currentParent ~= nil and field.parent ~= currentParent.id do
+      if currentParent ~= nil and field.parent ~= currentParent.id then
         form.endExpansionPanel()
-        currentParent = currentParent.parent
+        currentParent = nil
       end
 
       if field.type == 9 then
         field.values, offset = parseChoiceValues(fieldData, offset)
         field.value = fieldData[offset]
         field.unit = parseString(fieldData, offset + 4)
-        local line = form.addLine(field.name)
-        form.addChoiceField(line, nil, field.values, function() return field.value end, function(value) field.value = value crossfire.pushFrame(0x2D, { deviceId, handsetId, field.id, value }) end)
+        if field.widget == nil then
+          local line = form.addLine(field.name)
+          field.widget = form.addChoiceField(line, nil, field.values, function() return field.value end, function(value) field.value = value crsf.pushFrame(0x2D, { deviceId, handsetId, field.id, value }) end)
+        end
+      elseif field.type == 13 then
+        field.status = fieldData[offset]
+        field.timeout = fieldData[offset + 1]
+        field.info = parseString(fieldData, offset + 2)
+        print("Status: " .. field.status .. ", Info: " .. field.info)
+        if field.dialog then
+          if field.status == 0 then
+            field.dialog:close()
+            --field.dialog = nil
+          else
+            if field.status == 3 then
+              field.dialog:buttons({ { label = "OK", action = function()
+                crsf.pushFrame(0x2D, { deviceId, handsetId, field.id, 4 }) -- lcsConfirmed
+                fieldTimeout = os.time() + field.timeout / 100 -- we are expecting an immediate response
+                field.status = 4
+              end }, { label = "Cancel" } })
+            else
+              field.dialog:buttons({ { label = "Cancel", action = function()
+                fieldPopup = nil
+                return true
+              end } })
+            end
+            field.dialog:message(field.info)
+          end
+        elseif field.widget == nil then
+          local line = form.addLine("")
+          field.widget = form.addTextButton(line, nil, field.name,
+                  function()
+                    if field.status < 4 then
+                      field.status = 1
+                      crsf.pushFrame(0x2D, { deviceId, handsetId, field.id, field.status })
+                      fieldPopup = field
+                      field.dialog = form.openDialog(field.name, field.info, { { label = "Cancel", action = function()
+                        fieldPopup = nil
+                        return true
+                      end } })
+                    end
+                  end)
+        end
+      elseif field.type == 12 then
+        field.value, offset = parseString(fieldData, offset)
+        if field.widget == nil and field.hidden == 0 then
+          local line = form.addLine(field.name)
+          field.widget = form.addStaticText(line, nil, field.value)
+        end
       elseif field.type == 11 then
         form.beginExpansionPanel(field.name)
         currentParent = field
+      else
+        print("Not implemented!")
       end
-
-      --if field.min == 0 then field.min = nil end
-      --if field.max == 0 then field.max = nil end
     end
 
     fieldChunk = 0
@@ -173,17 +221,17 @@ end
 local function wakeup(widget)
   local time = os.clock()
   while true do
-    command, data = crossfire.popFrame()
+    command, data = crsf.popFrame()
     if command == nil then
       break
     elseif command == 0x29 then
       parseDeviceInfoMessage(data)
     elseif command == 0x2B then
       parseParameterInfoMessage(data)
-      if #loadQ > 0 then
+      if #loadQ > 0 or expectChunksRemain >= 0 then
         fieldTime = 0 -- request next chunk immediately
-        --elseif fieldPopup then
-        --  fieldTime = time + fieldPopup.timeout
+      elseif fieldPopup then
+        fieldTime = time + fieldPopup.timeout / 100
       end
       --elseif command == 0x2D then
       --  parseElrsV1Message(data)
@@ -192,32 +240,33 @@ local function wakeup(widget)
     end
   end
 
-  --if fieldPopup then
-  --  if time > fieldTime and fieldPopup.status ~= 3 then
-  --    crossfire.pushFrame(0x2D, { deviceId, handsetId, fieldPopup.id, 6 }) -- lcsQuery
-  --    fieldTime = time + fieldPopup.timeout
-  --  end
-  --else
-  if time > devicesRefreshTime and deviceId == nil then
+  if fieldPopup then
+    --print("popup " .. time .. "   " .. fieldTime .. "  " .. fieldPopup.status)
+    if time > fieldTime and fieldPopup.status ~= 3 then
+      crsf.pushFrame(0x2D, { deviceId, handsetId, fieldPopup.id, 6 }) -- lcsQuery
+      print("timeout " .. fieldPopup.timeout .. " status " .. fieldPopup.status)
+      fieldTime = time + fieldPopup.timeout / 100
+    end
+  elseif time > devicesRefreshTime and deviceId == nil then
     devicesRefreshTime = time + 1 -- 1s
-    crossfire.pushFrame(0x28, { 0x00, 0xEA })
+    crsf.pushFrame(0x28, { 0x00, 0xEA })
   --elseif time > linkstatTime then
   --  if not isElrsTx and #loadQ == 0 then
   --    goodBadPkt = ""
   --  else
-  --    crossfire.pushFrame(0x2D, { deviceId, handsetId, 0x0, 0x0 }) -- request linkstat
+  --    crsf.pushFrame(0x2D, { deviceId, handsetId, 0x0, 0x0 }) -- request linkstat
   --  end
   --  linkstatTime = time + 1
   elseif time > fieldTime and deviceId ~= nil then
     if #loadQ > 0 then
-      crossfire.pushFrame(0x2C, { deviceId, handsetId, loadQ[#loadQ], fieldChunk })
+      crsf.pushFrame(0x2C, { deviceId, handsetId, loadQ[#loadQ], fieldChunk })
       fieldTime = time + 0.5
     end
   end
 end
 
 local function init()
-  system.registerElrsProtocol({configure={name=name, create=create, wakeup=wakeup}})
+  system.registerElrsModule({configure={name=name, create=create, wakeup=wakeup}})
 end
 
 return {init=init}
