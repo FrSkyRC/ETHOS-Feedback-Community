@@ -25,6 +25,7 @@ local currentParent
 local function create()
   devices = {}
   deviceId = nil
+  fieldPopup = nil
   return {}
 end
 
