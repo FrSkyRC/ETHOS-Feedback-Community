@@ -37,7 +37,8 @@ Here are some direct links to the main pages:
 * [English Manual](https://github.com/FrSkyRC/ETHOS-Feedback-Community/raw/main/doc/%5BEN%5D%20X20%20and%20Ethos%20User%20Manual_1.4.6_rev0.pdf)
 * [French Manual](https://github.com/FrSkyRC/ETHOS-Feedback-Community/raw/main/doc/%5BFR%5D%20X20%20and%20Ethos%20User%20Manual_1.0.17_rev18.pdf)
 * [Italian Manual](https://github.com/FrSkyRC/ETHOS-Feedback-Community/raw/main/doc/%5BIT%5D%20X20%20and%20Ethos%20User%20Manual_1.4.2_rev1.pdf)
-* [Brazilian Portuguese Manual](https://github.com/FrSkyRC/ETHOS-Feedback-Community/raw/main/doc/%5BES%5D%20X20%20and%20Ethos%20User%20Manual_1.4.6_rev0.pdf)
+* [Brazilian Portuguese Manual](https://github.com/FrSkyRC/ETHOS-Feedback-Community/raw/main/doc/%5BPB%5D%20X20%20and%20Ethos%20User%20Manual_1.0_rev0.pdf)
+* [Spanish Manual](https://github.com/FrSkyRC/ETHOS-Feedback-Community/raw/main/doc/%5BPB%5D%20X20%20and%20Ethos%20User%20Manual_1.4.6_rev0.pdf)
 
 If there are any mistakes, please feel free to tell us!
 
