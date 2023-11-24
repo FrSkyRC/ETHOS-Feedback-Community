@@ -1,6 +1,6 @@
 -- TBS Crossfire Module
 
-local translations = {en="Crossfire Configuration"}
+local translations = {en="Crossfire Config"}
 
 local function name(widget)
   local locale = system.getLocale()
@@ -21,6 +21,7 @@ local expectChunksRemain = -1
 local fieldChunk = 0
 local fieldData = {}
 local currentParent
+local currentExpansionPanel
 
 local function create()
   devices = {}
@@ -92,7 +93,7 @@ local function parseDeviceInfoMessage(data)
     device = createDevice(id, name, data[offset + 12])
     isElrsTx = (parseValue(data, offset, 4) == 0x454C5253 and deviceId == 0xEE) or nil -- SerialNumber = 'E L R S' and ID is TX module
     devices[#devices + 1] = device
-    local line = form.addLine(name)
+    local line = form.addLine(name, currentExpansionPanel)
     form.addTextButton(line, nil, "Setup", function() setCurrentDevice(device) end)
   end
 end
@@ -149,7 +150,7 @@ local function parseParameterInfoMessage(data)
       print("Field: " .. field.name .. ", Type: " .. field.type)
 
       if currentParent ~= nil and field.parent ~= currentParent.id then
-        form.endExpansionPanel()
+        currentExpansionPanel = nil
         currentParent = nil
       end
 
@@ -158,7 +159,7 @@ local function parseParameterInfoMessage(data)
         field.value = fieldData[offset]
         field.unit = parseString(fieldData, offset + 4)
         if field.widget == nil then
-          local line = form.addLine(field.name)
+          local line = form.addLine(field.name, currentExpansionPanel)
           field.widget = form.addChoiceField(line, nil, field.values, function() return field.value end, function(value) field.value = value crsf.pushFrame(0x2D, { deviceId, handsetId, field.id, value }) end)
         end
       elseif field.type == 13 then
@@ -186,7 +187,7 @@ local function parseParameterInfoMessage(data)
             field.dialog:message(field.info)
           end
         elseif field.widget == nil then
-          local line = form.addLine("")
+          local line = form.addLine("", currentExpansionPanel)
           field.widget = form.addTextButton(line, nil, field.name,
                   function()
                     if field.status < 4 then
@@ -203,11 +204,11 @@ local function parseParameterInfoMessage(data)
       elseif field.type == 12 then
         field.value, offset = parseString(fieldData, offset)
         if field.widget == nil and field.hidden == 0 then
-          local line = form.addLine(field.name)
+          local line = form.addLine(field.name, currentExpansionPanel)
           field.widget = form.addStaticText(line, nil, field.value)
         end
       elseif field.type == 11 then
-        form.beginExpansionPanel(field.name)
+        currentExpansionPanel = form.addExpansionPanel(field.name)
         currentParent = field
       else
         print("Not implemented!")
