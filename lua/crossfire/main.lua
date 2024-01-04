@@ -27,6 +27,8 @@ local function create()
   devices = {}
   deviceId = nil
   fieldPopup = nil
+  currentParent = nil
+  currentExpansionPanel = nil
   return {}
 end
 
