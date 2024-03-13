@@ -1,13 +1,25 @@
 -- Multimodule protocols
 
 local FAILSAFE = 1
-local TELEMETRY = 2
 
-local RF_TUNE_OPTION = {name="RF Tune", min=-128, max=127, display=function(value) return value end }
-local SERVO_REFRESH_RATE_OPTION = {name="Servo Refresh Rate", min=0, max=70, display=function(value) return (value * 5 + 50) .. "Hz" end }
+-- options sent on byte 26
+local DISABLE_TELEMETRY_OPTION = {name="Disable telemetry", type="checkbox", min=0, max=0x02000000}
+local DISABLE_CH_MAPPING_OPTION = {name="Disable channel mapping", type="checkbox", min=0, max=0x01000000}
+
+-- options sent on byte 1
+local BIND_ON_CHANNEL_OPTION = {name="Bind on channel", type="checkbox", min=0, max=0x400000}
+
+-- options sent on byte 2
+local LOW_POWER_OPTION = {name="Low power", type="checkbox", min=0, max=0x8000}
+
+-- options sent on byte 3
+local RF_TUNE_OPTION = {name="RF tune", min=-128, max=127}
+local DSM2_ENABLE_MAX_THROW_OPTION = {name="Enable max throw", type="checkbox", min=0, max=0x80}
+local DSM2_SERVO_REFRESH_RATE_OPTION = {name="Servo refresh rate", type="choice", max=0x40, values={{"22ms", 0x00}, {"11ms", 0x40}}}
+local FLYSKY_SERVO_REFRESH_RATE_OPTION = {name="Servo refresh rate", min=0, max=70, display=function(value) return (value * 5 + 50) .. "Hz" end}
 
 local function init()
-    system.registerMultimoduleProtocol("Assan", 24)
+    system.registerMultimoduleProtocol("Assan", 24, {options={BIND_ON_CHANNEL_OPTION, DISABLE_TELEMETRY_OPTION, LOW_POWER_OPTION}})
     system.registerMultimoduleProtocol("Bayang", 14, {variants={"Bayang", "H8S3D", "X16_AH", "IRDRONE", "DHD_D4", "QX100"}})
     system.registerMultimoduleProtocol("Bayang RX", 59, {variants={"Multi", "CPPM"}})
     system.registerMultimoduleProtocol("Bugs", 41)
@@ -29,7 +41,7 @@ local function init()
     system.registerMultimoduleProtocol("ESky150", 35)
     system.registerMultimoduleProtocol("ESky150V2", 69)
     system.registerMultimoduleProtocol("FlySky", 1, {variants={"Default", "V9X9", "V6X6", "V912", "CX20"}})
-    system.registerMultimoduleProtocol("FlySky AFHDS 2A", 28, {variants={"PWM+IBUS", "PPM+IBUS", "PWM+SBUS", "PPM+SBUS", "PWM+IBUS16", "PPM+IBUS16"}, features=FAILSAFE+TELEMETRY, options={SERVO_REFRESH_RATE_OPTION}})
+    system.registerMultimoduleProtocol("FlySky AFHDS 2A", 28, {variants={"PWM+IBUS", "PPM+IBUS", "PWM+SBUS", "PPM+SBUS", "PWM+IBUS16", "PPM+IBUS16"}, features=FAILSAFE, options={FLYSKY_SERVO_REFRESH_RATE_OPTION}})
     system.registerMultimoduleProtocol("Flysky AFHDS2A RX", 56, {variants={"Multi", "CPPM"}})
     system.registerMultimoduleProtocol("FQ777", 23)
     system.registerMultimoduleProtocol("FrSky D8", 3, {options={RF_TUNE_OPTION}, minChannels=8, maxChannels=8})
@@ -60,12 +72,12 @@ local function init()
     system.registerMultimoduleProtocol("LOLI", 82)
     system.registerMultimoduleProtocol("Losi", 89)
     system.registerMultimoduleProtocol("MJXq", 18, {variants={"WLH08", "X600", "X800", "H26D", "E010*", "H26WH", "PHOENIX*"}})
-    system.registerMultimoduleProtocol("MPX MLINK", 78)
+    system.registerMultimoduleProtocol("MPX MLINK", 78, {options={BIND_ON_CHANNEL_OPTION, DISABLE_TELEMETRY_OPTION, LOW_POWER_OPTION}, features=FAILSAFE})
     system.registerMultimoduleProtocol("MouldKg", 90, {variants={"Analog", "Digit"}})
     system.registerMultimoduleProtocol("MT99xx", 17, {variants={"MT", "H7", "YZ", "LS", "FY805", "A180", "DRAGON", "F949G"}})
     system.registerMultimoduleProtocol("MT99xx2", 92, {variants={"PA18"}})
     system.registerMultimoduleProtocol("NCC1701", 44)
-    system.registerMultimoduleProtocol("OMP", 77, {features=TELEMETRY, options={RF_TUNE_OPTION}})
+    system.registerMultimoduleProtocol("OMP", 77, {options={RF_TUNE_OPTION}})
     system.registerMultimoduleProtocol("OpenLRS", 27)
     system.registerMultimoduleProtocol("Pelikan", 60, {variants={"Pro", "Lite", "SCX24"}})
     system.registerMultimoduleProtocol("Potensic", 51, {variants={"A20"}})
@@ -80,7 +92,7 @@ local function init()
     system.registerMultimoduleProtocol("Shenqi", 19, {variants={"Shenqi"}})
     system.registerMultimoduleProtocol("Skyartec", 68)
     system.registerMultimoduleProtocol("SLT", 11, {variants={"SLT_V1", "SLT_V2", "Q100", "Q200", "MR100"}})
-    system.registerMultimoduleProtocol("Spektrum", 6, {variants={"DSM2-1F", "DSM2-2F", "DSMX-1F", "DSMX-2F", "AUTO", "DSMR-1F"}, minChannels=3, maxChannels=12})
+    system.registerMultimoduleProtocol("Spektrum", 6, {variants={"DSM2-1F", "DSM2-2F", "DSMX-1F", "DSMX-2F", "AUTO", "DSMR-1F"}, minChannels=3, maxChannels=12, options={DSM2_ENABLE_MAX_THROW_OPTION, DSM2_SERVO_REFRESH_RATE_OPTION, DISABLE_TELEMETRY_OPTION, DISABLE_CH_MAPPING_OPTION, LOW_POWER_OPTION}})
     system.registerMultimoduleProtocol("SymaX", 10, {variants={"SYMAX", "SYMAX5C"}})
     system.registerMultimoduleProtocol("Tiger", 61)
     system.registerMultimoduleProtocol("Traxxas", 43, {variants={"6519 RX"}})
