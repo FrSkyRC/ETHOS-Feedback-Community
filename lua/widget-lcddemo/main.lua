@@ -3,6 +3,8 @@
 local bitmap, mask
 
 local function paint(widget)
+    local w, h = lcd.getWindowSize()
+
     -- Demo of a mask
     lcd.color(lcd.RGB(255, 255, 0))
     lcd.drawMask(0, 10, mask)
@@ -12,13 +14,17 @@ local function paint(widget)
     lcd.color(lcd.RGB(255,0,255))
     lcd.drawText(15, 10, "FONT")
 
+    -- Demo of a bitmap with clipping
+    lcd.setClipping(w - 120, h - 120, 100, 100)
+    lcd.drawBitmap(w - 120, h - 120, bitmap)
+
     -- Demo of a bitmap
-    local w2, h2 = lcd.getWindowSize()
-    lcd.drawBitmap(10, 25, bitmap, w2 - 20, h2 - 35)
+    lcd.setClipping()
+    lcd.drawBitmap(10, 25, bitmap)
 end
 
 local function init()
-    bitmap = lcd.loadBitmap("FLASH:/bitmaps/system/default_glider.png")
+    bitmap = lcd.loadBitmap("FLASH:/bitmaps/system/Archer+SR12+.png")
     mask = lcd.loadMask("FLASH:/bitmaps/system/mask_dot.png")
     system.registerWidget({key="lcddemo", name="Lua LCD Demo", paint=paint})
 end

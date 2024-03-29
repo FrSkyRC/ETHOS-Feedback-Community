@@ -95,7 +95,7 @@ local function parseDeviceInfoMessage(data)
     device = createDevice(id, name, data[offset + 12])
     isElrsTx = (parseValue(data, offset, 4) == 0x454C5253 and deviceId == 0xEE) or nil -- SerialNumber = 'E L R S' and ID is TX module
     devices[#devices + 1] = device
-    local line = form.addLine(name, currentExpansionPanel)
+    local line = form.addLine(name)
     form.addTextButton(line, nil, "Setup", function() setCurrentDevice(device) end)
   end
 end
