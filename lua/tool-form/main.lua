@@ -28,6 +28,7 @@ local function create()
     form.addColorField(line, nil, function() return data.color end, function(newValue) data.color = newValue end)
 
     local line = form.addLine("Expansion panel example")
+    local panel
     local field = form.addNumberField(line, nil, 1, 5, function() return data.count end, function(value) 
         data.count = value
         panel:clear()
@@ -35,7 +36,7 @@ local function create()
     end)
     field:default(1)
     field:suffix(" lines")
-    local panel = form.addExpansionPanel("Lines")
+    panel = form.addExpansionPanel("Lines")
     fillPanel(data, panel)
 
     local line = form.addLine("Source example")
