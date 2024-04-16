@@ -7,6 +7,8 @@ local function fillPanel(data, panel)
 end    
 
 local function create()
+    w, h = lcd.getWindowSize()
+
     local data = {
         text="", 
         color=lcd.RGB(100, 50, 50), 
@@ -16,6 +18,7 @@ local function create()
         switch=nil,
         file=nil,
         bitmap=nil,
+        number=5
     }
 
     local line = form.addLine("Button example")
@@ -55,6 +58,17 @@ local function create()
     local line = form.addLine("Bitmap example")
     form.addBitmapField(line, nil, "/bitmaps/models", function() return data.bitmap end, function(newValue) data.bitmap = newValue end)
 
+    local line = form.addLine("Number example")
+    form.addNumberField(line, nil, -100, 100, function() return data.number end, function(newValue) data.number = newValue end)
+
+    local line = form.addLine("Fields without line")
+    for i=1, 3 do
+        local y = form.height() + 10
+        for x=10, w - 170, 180 do
+            form.addNumberField(nil, {x=x, y=y, w=170, h=40}, -100, 100, function() return data.number end, function(newValue) data.number = newValue form.invalidate() end)
+        end
+    end
+
     return data
 end    
 
@@ -66,10 +80,10 @@ local function event(data, category, value, x, y)
     return false
 end
 
-local icon = lcd.loadMask("servo.png")
+local icon = lcd.loadMask("form.png")
 
 local function init()
-    system.registerSystemTool({name="Form", icon=icon, create=create, wakeup=wakeup, event=event})
+    system.registerSystemTool({name="Lua Form", icon=icon, create=create, wakeup=wakeup, event=event})
 end
 
 return {init=init}
