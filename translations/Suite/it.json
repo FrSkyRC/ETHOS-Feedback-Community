@@ -116,8 +116,8 @@
     "FlashingBootloader": "Flash del bootloader...",
     "DFUWriting": "Scrittura DFU, completato {{ value }} % ...",
     "PermissionDenied": "Permesso Vietato!",
-    "DFUDetected": "DFU device detected",
-    "DFUNotDetected": "DFU device not detected"
+    "DFUDetected": "Dispositivo DFU rilevato",
+    "DFUNotDetected": "Dispositivo DFU non rilevato"
   },
   "FRSKFlasher": {
     "FRSKFlasher": "FRSK Flasher",
