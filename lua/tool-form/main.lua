@@ -22,7 +22,10 @@ local function create()
     }
 
     local line = form.addLine("Button example")
-    form.addTextButton(line, nil, "Press here", function() print("Button pressed") end)
+    form.addTextButton(line, nil, "Press here", 
+      function() 
+        form.openDialog("Help", "Increase D, P, I in order until each wobbles, then back off.\nSet F for a good response in full stick flips and rolls.\nIf necessary, tweak P:D ratio to set response damping to your liking.\nIncrease O until wobbles occur when jabbing elevator at full collective, back off a bit.\nIncrease B if you want sharper response.", {{label="OK", action=function() return true end}}, TEXT_LEFT)
+      end)
     
     local line = form.addLine("Text example")
     form.addTextField(line, nil, function() return data.text end, function(newValue) data.text = newValue end)
@@ -30,7 +33,7 @@ local function create()
     local line = form.addLine("Color example")
     form.addColorField(line, nil, function() return data.color end, function(newValue) data.color = newValue end)
 
-    local line = form.addLine("Expansion panel example")
+    local line = form.addLine("Expansion panel example", false)
     local panel
     local field = form.addNumberField(line, nil, 1, 5, function() return data.count end, function(value) 
         data.count = value
