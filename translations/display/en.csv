@@ -129,7 +129,7 @@ TX_SETTINGS,"TX settings",
 MIXES,"Mixes",
 CHANNELS,"Channels",
 FLIGHT_MODE,"Flight mode",
-D,"D"
+D,"D",
 CONFIRM_DELETE_MIX,"Are you sure you want to delete this mix?",
 CONFIRM_DELETE_SSS,"Are you sure you want to delete %s",
 NONE,"None",
