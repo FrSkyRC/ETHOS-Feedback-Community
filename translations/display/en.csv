@@ -176,7 +176,7 @@ START_CONDITION,"Start condition",
 STOP_CONDITION,"Stop condition",
 TIMER_EDIT,"Timer edit",
 PERSISTENT,"Persistent",
-START_VALUE,"Start value","Start",
+START_VALUE,"Start value","Start"
 AUDIO_ACTIONS,"Audio actions",
 AUDIO_ACTION,"Audio action",
 ADD_A_NEW_AUDIO_ACTION,"Add a new audio action",
