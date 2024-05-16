@@ -180,7 +180,7 @@ START_VALUE,"Start value","Start"
 AUDIO_ACTIONS,"Audio actions",
 AUDIO_ACTION,"Audio action",
 ADD_A_NEW_AUDIO_ACTION,"Add a new audio action",
-ALARM_VALUE,"Alarm value","Alarm",
+ALARM_VALUE,"Alarm value","Alarm"
 HAPTIC,"Haptic",
 COUNTDOWN,"Countdown",
 BEEP_COUNTDOWN,"Beep countdown",
