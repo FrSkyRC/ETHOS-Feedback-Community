@@ -968,7 +968,7 @@ VIEW_PER_CHANNEL,"View per channel",
 VIEW_TABLE,"Table view",
 GENERAL,"General",
 RX_STILL_ON_TURN_OFF_RF,"Receiver is still connected.\nAre you sure you want to continue?",
-LOAD_ALL_FUNCTION_SWITCH_POSITIONS,"Load all function switch positions","Load all FS positions",
+LOAD_ALL_FUNCTION_SWITCH_POSITIONS,"Load all function switch positions","Load all FS positions"
 CONFIRM_LOAD_ALL_FUNCTION_SWITCH_POSITIONS,"This operation will override all FS positions with the current ones. Are you sure you want to continue?",
 STORAGE_LOCATION,"Storage location",
 RADIO,"Radio",
