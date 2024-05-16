@@ -215,10 +215,10 @@ HIGH_PWM_SPEED,"Haute vitesse PWM",
 FLIGHT_DATA_RECORDER,"Enreg. données vol",
 RX_HAS_NO_FLIGHT_DATA_RECORD,"RX sans enreg. données vol !",
 ANTENNA,"Antenne",
-POWER_HAS_BEEN_CHANGED_PLEASE_REBIND,"Changement de puissance, appairage nécessaire !"
+POWER_HAS_BEEN_CHANGED_PLEASE_REBIND,"Changement de puissance, appairage nécessaire !",
 NO_RESPONSE_FROM_MODULE,"Aucune réponse module !",
 POWER,"Puissance",
-BAUDRATE,"Baudrate"
+BAUDRATE,"Baudrate",
 WAITING_FOR_MODULE,"En attente module...",
 TX_SETTINGS,"Paramètres TX",
 NO_CHECK,"Inactif",
