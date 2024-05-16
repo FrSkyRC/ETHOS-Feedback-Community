@@ -36,7 +36,7 @@ CONFIRM,"Confirmer",
 SET_CURRENT_MODEL,"Sélection modèle",
 UNCATEGORIZED,"Non trié",
 CHANGE_FOLDER,"Déplacer",
-OPERATION,"Opération"
+OPERATION,"Opération",
 OPERATION_FAILED,"Echec opération !",
 DELETE_FOLDER,"Supprimer dossier",
 RENAME_FOLDER,"Renommer dossier",
