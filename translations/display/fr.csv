@@ -85,7 +85,7 @@ DEFAULT_FLIGHT_MODE,"Phase vol par défaut",
 CHANNELS,"Voies",
 D,"D",
 CONFIRM_DELETE_MIX,"Suppression mixage ?",
-CONFIRM_DELETE_SSS,"Suppression %s ?"
+CONFIRM_DELETE_SSS,"Suppression %s ?",
 NONE,"Aucun",
 NO_MIX_HINT,"Aucun mixage. Appuyer sur le bouton '+' pour en créer un !",
 MIX_FLIGHT_MODES_DESCRIPTION,,
