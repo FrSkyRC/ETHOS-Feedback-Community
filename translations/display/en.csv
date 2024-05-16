@@ -272,7 +272,7 @@ SET_MAIN_SCREEN,"Set main screen",
 CONFIGURE_WIDGET,"Configure widget",
 NEW_SCREEN,"New screen",
 SCREEN,"Screen",
-CHANGE_WIDGET,"Change widget","Change",
+CHANGE_WIDGET,"Change widget","Change"
 MOVE_FORWARD,"← Move forward",
 MOVE_BACKWARD,"→ Move backward",
 RESET_FLIGHT,"Reset flight",
