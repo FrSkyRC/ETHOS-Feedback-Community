@@ -672,7 +672,7 @@ DATA_REFUSED,"Data refused",
 DEVICE_NOT_RESPONDING,"Device not responding",
 NO_OUTPUT,"No output",
 WEIGHT_RATES,"Weight / Rates",
-OTHERWISE,"Otherwise","Else",
+OTHERWISE,"Otherwise","Else"
 AUTO,"Auto",
 TRIM_STEP_FINE,"Fine",
 TRIM_STEP_COARSE,"Coarse",
