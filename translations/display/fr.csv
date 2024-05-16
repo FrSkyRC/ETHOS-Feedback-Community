@@ -24,7 +24,7 @@ LAST_MODIFICATION,"Dernière modification","Date mod."
 CLONE,"Dupliquer",
 MODEL_MATCH,"ID Modèle",
 MODEL_DATA_LOAD,"Chargement modèle",
-FILE_SIZE,"Taille fichier","Taille",
+FILE_SIZE,"Taille fichier","Taille"
 ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_MODEL,"Suppression modèle ?",
 SUCCESS,"Succès !",
 CLONE_MODEL_SUCCESSFULLY,"Copie modèle réussie !",
