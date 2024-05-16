@@ -2,7 +2,7 @@ TRANSLATION_NAME,"Français",
 TRANSLATION_KEY,"fr",
 MODEL,"Modèle",
 MODEL_SELECT,"Choix modèle",
-NO_MODELS_DIRECTORY,"Répertoire modèles absent !"
+NO_MODELS_DIRECTORY,"Répertoire modèles absent !",
 EDIT_MODEL,"Editer modèle",
 FLIGHT_MODES,"Phases de vol",
 MIXES,"Mixages",
