@@ -201,7 +201,7 @@ RESET_BIND,"Réinitialisation appairage",
 FACTORY_RESET,"RAZ usine",
 TELEMETRY_PORT,"Port Télém.",
 WARNING,"Alerte",
-ERRORS,"Erreurs"
+ERRORS,"Erreurs",
 OPTIONS,"Options",
 CONFIGURE,"Configurer",
 WAITING_FOR_RECEIVER,"En attente récepteur...",
