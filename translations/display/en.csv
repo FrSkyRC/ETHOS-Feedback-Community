@@ -592,7 +592,7 @@ CALIBRATE,"Calibrate",
 CLICK_CALIBRATE_TO_START,"Click 'Calibrate' to start",
 CENTER_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,"Center the sticks/pots/sliders, click 'Next' when done",
 MOVE_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,"Move the sticks/pots/sliders to full range, click 'Next' when done","Move the sticks/pots/sliders, click 'Next' when done",
-CALIBRATION_COMPLETE_CLICK_CONFIRM_TO_STORE,"Calibration complete, click 'Confirm' to store it to the radio settings","Calibration complete, click 'Confirm' to store it",
+CALIBRATION_COMPLETE_CLICK_CONFIRM_TO_STORE,"Calibration complete, click 'Confirm' to store it to the radio settings","Calibration complete, click 'Confirm' to store it"
 BACKLIGHT,"BackLight",
 DARK_MODE,"Dark mode",
 HIGHLIGHT_COLOR,"Highlight color",
