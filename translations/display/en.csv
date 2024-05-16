@@ -1017,7 +1017,7 @@ SWAP_CHANNELS,"Swap channels",
 CONFIRM_RESET_SETTINGS,"The settings will be reset to the default values.\nAre you sure you want to continue?",
 CONFIRM_SWITCH_EXTERNAL_MODULE,"External module is now used. It will be stopped.\nAre you sure you want to continue?",
 CONFIRM_SWITCH_TRAINER,"Trainer is now using the external module. It will be stopped.\nAre you sure you want to continue?",
-COMPETITION_OPTION,"Competition (only RSSI and Battery)","Competition (RSSI / Batt)","Competition (RSSI / Batt)",
+COMPETITION_OPTION,"Competition (only RSSI and Battery)","Competition (RSSI / Batt)","Competition (RSSI / Batt)"
 CONFIRM_BLUETOOTH_USED_BY_SSS,"Bluetooth is now used by %s. It will be stopped.\nAre you sure you want to continue?",
 BOTH_MODULES,"Both modules",
 SPORT_CONNECTOR,"S.Port connector",
