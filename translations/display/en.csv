@@ -233,7 +233,7 @@ PERCENT,"Percent",
 DESTINATION,"Destination",
 ENABLE,"Enable",
 NO_FUNCTION_HINT,"No function yet. Please press the add button to create one!",
-SPECIAL_FUNCTIONS,"Special functions","Special funcs",
+SPECIAL_FUNCTIONS,"Special functions","Special funcs"
 SF,"SF",
 DISABLE,"Disable",
 ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_SPECIAL_FUNCTION,"Are you sure you want to delete this special function?",
