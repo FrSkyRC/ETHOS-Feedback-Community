@@ -1,16 +1,23 @@
 local environment = system.getVersion()
 
-local function create(widget)
+local function create()
+	-- this function is called whenever the widget is first initialised
+    -- it's usefull for setting up widget variables or just
+    -- general stuff you need.
+
+	local widget = {}
     return widget 
 end
 
 local function configure(widget)
-    return widget
+	-- this function is called whenever you configure your widget.
+    -- the goal here is to use the forms libraries to display
+    -- a nice styled menu system.
 end
 
 local function paint(widget)
-	-- this is called wherver lcd.invalidate() is called.
-	-- you use this loop to handle any display functions within
+	-- this is called wherever lcd.invalidate() is called.
+	-- you use this function to handle any display functions within
 	-- your widget
 end
 
@@ -18,10 +25,10 @@ local function menu(widget)
 	-- add a menu item to the configuration menu popup of the widget
 	-- usefull if adding new tools
 
-	--return {
-	--	  { "Entry 1", function() end},
-	--	  { "Entry 2", function() end},
-	--	}
+	return {
+		--   { "Entry 1", function() end},
+		--   { "Entry 2", function() end},
+	}
 end
 
 local function read()
@@ -40,7 +47,6 @@ local function write()
 	return true
 end
 
-
 local function event(widget, category, value, x, y)
 	-- trigger whenever the widget is in focus and and
 	-- even occurs such as a button or screen click
@@ -54,8 +60,6 @@ local function wakeup(widget)
 	
     return
 end
-
-
 
 local function init()
 	-- this is where we 'setup' the widget
