@@ -313,6 +313,8 @@ CONFIRM_RESET_FACTORY_SETTINGS,"Ripristina valori di fabbrica?",
 SYSTEM,"Sistema",
 DISPLAY,"Display",
 KEYBOARD,"Tastiera",
+ENABLE_SLIDER,"Enable slider"
+DISABLE_SLIDER,"Disable slider"
 ALERTS,"Avvisi",
 SPECTRUM_ANALYSER,"An.Spettro",
 BATTERY,"Batteria",
