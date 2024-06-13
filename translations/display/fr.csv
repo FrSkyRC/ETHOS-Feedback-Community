@@ -1016,6 +1016,7 @@ PITCH_ANGLE,"Tangage",
 HYDRAULIC_PRESSURE,"Pression",
 IGNORE_TRAINER_INPUT,"Non contrôlé par élève",
 FULL_RANGE,"Course complète",
+IGNORE_RANGE,"Ignore range"
 HALF_RANGE,"Demi-Course",
 VIEW_PER_CHANNEL,"Vue par sorties",
 VIEW_TABLE,"Vue par défaut",

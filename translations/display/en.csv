@@ -503,6 +503,7 @@ CATEGORY,"Category",
 MEMBER,"Member",
 IGNORE_TRAINER_INPUT,"Ignore trainer input",
 FULL_RANGE,"Full range",
+IGNORE_RANGE,"Ignore range"
 HALF_RANGE,"Half range",
 NEGATIVE,"Negative",
 EDGE,"Edge",

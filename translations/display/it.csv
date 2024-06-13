@@ -968,6 +968,7 @@ PITCH_ANGLE,"Angolo P.",
 HYDRAULIC_PRESSURE,"Pressione Idr.",
 IGNORE_TRAINER_INPUT,"Non gestito dal Trainer",
 FULL_RANGE,"Full range",
+IGNORE_RANGE,"Ignore range"
 HALF_RANGE,"Half range",
 LAST_POSITION,"Ultima Posizione",
 SLEEP_BRIGHTNESS,"Luminosità Modalità Sleep",
