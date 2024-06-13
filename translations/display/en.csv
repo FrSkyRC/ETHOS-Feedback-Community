@@ -58,6 +58,7 @@ DURATION,"Duration",
 SOURCE_A,"Source (A)",
 TRIGGER_OFF_CONDITION,"Trigger OFF condition",
 DELAY_BEFORE_INACTIVE,"Delay before inactive",
+DELAY_ON_OFF,"Delay ON / OFF"
 SOURCE,"Source",
 APPLICATION_ID,"Application ID",
 PHYSICAL_ID,"Physical ID",
@@ -1056,7 +1057,7 @@ CONFIRM_RECEIVE_FILE_SSS_IN_FOLDER_SSS_SIZE_IS_SSS,"About to receive file %s to 
 CONFIRM_OVERWRITE_FILE_SSS_IN_FOLDER_SSS_SIZE_IS_SSS,"About to overwrite file %s in folder %s\nFile size is %s",
 SENDING_SSS,"Sending %s ...",
 RECEIVING_SSS,"Receiving %s ...",
-COUNTING_SOURCE,"Proportional timing source",
+COUNTING_SOURCE,"Proportional timing source","% timing source"
 SEND_MODEL,"Send model",
 RECEIVE_MODEL,"Receive model",
 ARE_YOU_USING_A_FRSKY_SELF_STAB_RECEIVER,"Are you using a self-stab receiver from FrSky?",

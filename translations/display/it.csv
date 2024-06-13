@@ -58,6 +58,7 @@ DURATION,"Durata",
 SOURCE_A,"Sorgente (A)",
 TRIGGER_OFF_CONDITION,"Condizione Trigger OFF",
 DELAY_BEFORE_INACTIVE,"Ritardo prima di disattivare",
+DELAY_ON_OFF,"Delay ON / OFF"
 SOURCE,"Comando",
 APPLICATION_ID,"ID Applicazione",
 PHYSICAL_ID,"ID Fisico",
