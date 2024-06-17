@@ -1,15 +1,18 @@
 -- Lua Form widget
 
 local function create()
-    return {color=lcd.RGB(100, 50, 50), text=""}
+    return {color=lcd.RGB(100, 50, 50), text="", source=nil}
 end
 
 local function build(widget)
-    form.create()
     local w, h = lcd.getWindowSize()
-    form.addTextButton(nil, {x=20, y=20, w=math.max(170, w/2), h=40}, "Press here", function() print("Button pressed") end)
-    form.addTextField(nil, {x=30, y=70, w=math.max(170, w/2), h=40}, function() return widget.text end, function(newValue) widget.text = newValue end)
-    form.addColorField(nil, {x=40, y=120, w=math.max(170, w/2), h=40}, function() return widget.color end, function(newValue) widget.color = newValue end)
+
+    local line = form.addLine("Source example")
+    form.addSourceField(line, nil, function() return widget.source end, function(newValue) widget.source = newValue end)
+
+    form.addTextButton(nil, {x=20, y=form.height() + 10, w=math.max(170, w/2), h=40}, "Clear Form!", function() print("Button pressed") form.clear() end)
+    form.addTextField(nil, {x=20, y=form.height() + 10, w=math.max(170, w/2), h=40}, function() return widget.text end, function(newValue) widget.text = newValue end)
+    form.addColorField(nil, {x=20, y=form.height() + 10, w=math.max(170, w/2), h=40}, function() return widget.color end, function(newValue) widget.color = newValue end)
 end    
 
 local function paint(widget)
@@ -19,7 +22,7 @@ local function paint(widget)
 end
 
 local function init()
-    system.registerWidget({key="form", name="Form", create=create, build=build, paint=paint, title=false})
+    system.registerWidget({key="luaform", name="Lua form in widget", create=create, build=build, paint=paint, title=false})
 end
 
 return {init=init}
