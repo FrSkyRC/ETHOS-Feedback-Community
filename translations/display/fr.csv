@@ -1082,3 +1082,4 @@ STICK_MOTORS,"Vibreur sous chaque manche",
 CONFIRM_DELETE_ACTION,"Suppression action ?",
 CONFIRM_DELETE_SCREEN,"Suppression écran ?",
 CONFIRM_DELETE_SENSOR,"Suppression capteur ?",
+FILE_ALREADY_EXISTS,"Un fichier du même nom existe déjà"
