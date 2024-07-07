@@ -1082,4 +1082,4 @@ STICK_MOTORS,"Stick motori",
 CONFIRM_DELETE_ACTION,"Sei Sicuro di voler rimuovere questa azione?",
 CONFIRM_DELETE_SCREEN,"Sei Sicuro di voler rimuovere questa schermata?",
 CONFIRM_DELETE_SENSOR,"Sei Sicuro di voler rimuovere questo sensore?",
-FILE_ALREADY_EXISTS,"A file with the same name already exists"
+FILE_ALREADY_EXISTS,"Un file con lo stesso nome già presente"
