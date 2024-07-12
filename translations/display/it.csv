@@ -29,6 +29,7 @@ MIN,"Min",
 CURVE,"Curva",
 MAX,"Max",
 CHANNEL,"Canale",
+INVERTED_CHANNEL,"Inverted channel"
 INVERT,"Inverti",
 SLOW_DOWN,"Rallenta Discesa",
 INVERTED,"Invertito",
