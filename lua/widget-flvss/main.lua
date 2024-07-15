@@ -9,9 +9,9 @@ local function paint(widget)
   if widget.sensor ~= nil then
     lcd.font(FONT_L)
     local y = 10
-    lcd.drawText(10, y, "Total = " .. widget.sensor:stringValue() .. " (" .. widget.sensor:stringValue(OPTION_CELL_COUNT) .. " cells)")
+    lcd.drawText(10, y, "Total = " .. widget.sensor:stringValue() .. " (" .. widget.sensor:stringValue({options=OPTION_CELLS_COUNT}) .. " cells)")
     y = y + 30
-    for i = 1, widget.sensor:value(OPTION_CELL_COUNT) do
+    for i = 1, widget.sensor:value({options=OPTION_CELLS_COUNT}) do
       lcd.drawText(10, y, "Cell[" .. i .."] = " .. widget.sensor:stringValue(OPTION_CELL_INDEX(i)))
       y = y + 30
     end
