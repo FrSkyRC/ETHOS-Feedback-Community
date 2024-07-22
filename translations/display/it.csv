@@ -1086,4 +1086,4 @@ CONFIRM_DELETE_SENSOR,"Sei Sicuro di voler rimuovere questo sensore?",
 FILE_ALREADY_EXISTS,"Un file con lo stesso nome già presente"
 MODEL_RUNTIME,"Tempo operativo Modello"
 RADIO_RUNTIME,"Tempo operativo Radio"
-WAITING_FOR_SIGNAL,"waiting for signal..."
+WAITING_FOR_SIGNAL,"Attesa Segnale..."
