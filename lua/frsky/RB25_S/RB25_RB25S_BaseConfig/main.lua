@@ -255,9 +255,10 @@ local function event(widget, category, value, x, y)
     widget.sensor:idle(false)
   elseif category == EVT_KEY and value == KEY_PAGE_PREVIOUS then
     runPage(-1)
-    system.killEvents(KEY_PAGE_NEXT);
+    system.killEvents(KEY_PAGE_PREVIOUS);
   elseif category == EVT_KEY and value == KEY_PAGE_NEXT then
     runPage(1)
+    system.killEvents(KEY_PAGE_NEXT);
   end
   return false
 end
