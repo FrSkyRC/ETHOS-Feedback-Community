@@ -261,10 +261,10 @@ end
 
 local function event(widget, category, value, x, y)
   print("Event received:", category, value, x, y, KEY_EXIT_BREAK)
-  if  category == EVT_KEY and value == KEY_PAGE_UP then
+  if  category == EVT_KEY and value == KEY_PAGE_PREVIOUS then
     runPage(-1)
-    system.killEvents(KEY_PAGE_DOWN);
-  elseif category == EVT_KEY and value == KEY_PAGE_DOWN then
+    system.killEvents(KEY_PAGE_NEXT);
+  elseif category == EVT_KEY and value == KEY_PAGE_NEXT then
     runPage(1)
   end
   return false
