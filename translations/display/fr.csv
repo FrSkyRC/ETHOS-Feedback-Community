@@ -606,7 +606,7 @@ CENTER_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,"Centrer les manches/pots, puis appuye
 MOVE_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,"Bouger les manches/pots dans tous les sens, puis appuyer sur 'Suivant'","Bouger les manches/pots dans tous les sens, puis 'Suivant'"
 CALIBRATION_COMPLETE_CLICK_CONFIRM_TO_STORE,"Calibrage terminé, appuyer sur 'Confirmer' pour enregistrer",
 NEXT,"Suivant",
-GYRO_CALIBRATION,"Calibrage gyro",
+GYRO_CALIBRATION,"Calibrage gyros",
 PREV,"Précédent",
 GYRO_CALIBRATION_PLACE_LEVEL,"Mettre radio à l'endroit\net appuyer sur le bouton 'Suivant'",
 GYRO_CALIBRATION_LEFT,"Tourner radio à gauche\net appuyer sur le bouton 'Suivant'",
