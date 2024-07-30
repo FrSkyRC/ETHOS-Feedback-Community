@@ -530,8 +530,8 @@ UNSUPPORTED_RX,"RX non supporté",
 SOUND,"Audio",
 DISPLAY,"Affichage",
 KEYBOARD,"Clavier",
-ENABLE_SLIDER,"Enable slider"
-DISABLE_SLIDER,"Disable slider"
+ENABLE_SLIDER,"Activer curseur"
+DISABLE_SLIDER,"Désactiver curseur"
 ALWAYS_ON,"Toujours",
 YES,"Oui",
 DIGITAL_RSSI,"RSSI numérique",
