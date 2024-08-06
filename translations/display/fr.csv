@@ -599,8 +599,8 @@ MDL_LONG,"Appui long MDL",
 SYS_LONG,"Appui long SYS ",
 DISP_SHORT,"Appui court {DISP_LABEL}",
 DISP_LONG,"Appui long {DISP_LABEL}",
-ANALOGS_CALIBRATION,"Calibrage analog.",
-CALIBRATE,"Calibrage",
+ANALOGS_CALIBRATION,"Calibration analog.",
+CALIBRATE,"Calibration",
 CLICK_CALIBRATE_TO_START,"Appuyer sur 'Calibrer' pour commencer",
 CENTER_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,"Centrer les manches/pots, puis appuyer sur 'Suivant'","Centrer les manches/pots, puis 'Suivant'"
 MOVE_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,"Bouger les manches/pots dans tous les sens, puis appuyer sur 'Suivant'","Bouger les manches/pots dans tous les sens, puis 'Suivant'"
