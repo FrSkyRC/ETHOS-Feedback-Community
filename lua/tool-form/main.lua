@@ -43,10 +43,19 @@ local function create()
                 width=790,
                 title="Help",
                 message="Increase D, P, I in order until each wobbles,\nthen back off.\nSet F for a good response in full\nstick flips and rolls.\nIf necessary, tweak P:D ratio\nto set response damping to your liking.\nIncrease O until wobbles occur\nwhen jabbing elevator at full collective, back off a bit.\nIncrease B if you want sharper response.\nIncrease D, P, I in order until each wobbles,\nthen back off.\nSet F for a good response in full\nstick flips and rolls.\nIf necessary, tweak P:D ratio\nto set response damping to your liking.\nIncrease O until wobbles occur\nwhen jabbing elevator at full collective, back off a bit.\nIncrease B if you want sharper response.", 
-                buttons={{label="OK", action=function() return true end}}, 
+                buttons={
+                  {label="C7", action=function() system.playTone(2093,250) end},
+                  {label="H", action=function() system.playTone(1975,250) end},
+                  {label="A", action=function() system.playTone(1760,250) end},
+                  {label="G", action=function() system.playTone(1567,250) end},
+                  {label="F", action=function() system.playTone(1396,250) end},
+                  {label="E", action=function() system.playTone(1318,250) end},
+                  {label="D", action=function() system.playTone(1174,250) end},
+                  {label="C6", action=function() system.playTone(1046,250) end},
+                  {label="OK", action=function() return true end}}, 
                 wakeup=function()
-                        lcd.invalidate()
-                    end,  
+                         lcd.invalidate()
+                       end,  
                 paint=function() 
                         local w, h = lcd.getWindowSize()
                         local left = w * 0.75 - 10
@@ -60,7 +69,7 @@ local function create()
                             lcd.drawPoint(left + i, top + val*h/2+h/2)
                         end
 
-                    end,
+                      end,
                 options=TEXT_LEFT
             })
         end})

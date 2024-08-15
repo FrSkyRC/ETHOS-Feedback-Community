@@ -231,11 +231,13 @@ local function wakeup(widget)
     elseif command == 0x29 then
       parseDeviceInfoMessage(data)
     elseif command == 0x2B then
-      parseParameterInfoMessage(data)
-      if #loadQ > 0 or expectChunksRemain >= 0 then
-        fieldTime = 0 -- request next chunk immediately
-      elseif fieldPopup then
-        fieldTime = time + fieldPopup.timeout / 100
+      if deviceId ~= nil then
+        parseParameterInfoMessage(data)
+        if #loadQ > 0 or expectChunksRemain >= 0 then
+          fieldTime = 0 -- request next chunk immediately
+        elseif fieldPopup then
+          fieldTime = time + fieldPopup.timeout / 100
+        end
       end
       --elseif command == 0x2D then
       --  parseElrsV1Message(data)
@@ -269,8 +271,20 @@ local function wakeup(widget)
   end
 end
 
+local function event(widget, category, x, y)
+  if category == EVT_CLOSE then
+    if deviceId ~= nil then
+      form.clear()
+      devices = { }
+      deviceId = nil
+      return true
+    end
+  end
+  return false
+end
+
 local function init()
-  system.registerElrsModule({configure={name=name, create=create, wakeup=wakeup}})
+  system.registerElrsModule({configure={name=name, create=create, wakeup=wakeup, event=event}})
 end
 
 return {init=init}
