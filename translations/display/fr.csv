@@ -601,7 +601,7 @@ DISP_SHORT,"Appui court {DISP_LABEL}",
 DISP_LONG,"Appui long {DISP_LABEL}",
 ANALOGS_CALIBRATION,"Calibration analog.",
 CALIBRATE,"Calibration",
-CLICK_CALIBRATE_TO_START,"Appuyer sur 'Calibrer' pour commencer",
+CLICK_CALIBRATE_TO_START,"Appuyer sur 'Calibration' pour commencer",
 CENTER_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,"Centrer les manches/pots, puis appuyer sur 'Suivant'","Centrer les manches/pots, puis 'Suivant'"
 MOVE_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,"Bouger les manches/pots dans tous les sens, puis appuyer sur 'Suivant'","Bouger les manches/pots dans tous les sens, puis 'Suivant'"
 CALIBRATION_COMPLETE_CLICK_CONFIRM_TO_STORE,"Calibration terminée, appuyer sur 'Confirmer' pour enregistrer",
