@@ -1085,7 +1085,7 @@ CONFIRM_DELETE_ACTION,"Sei Sicuro di voler rimuovere questa azione?",
 CONFIRM_DELETE_SCREEN,"Sei Sicuro di voler rimuovere questa schermata?",
 CONFIRM_DELETE_SENSOR,"Sei Sicuro di voler rimuovere questo sensore?",
 FILE_ALREADY_EXISTS,"Un file con lo stesso nome già presente"
-MODEL_RUNTIME,"Tempo operativo Modello"
-RADIO_RUNTIME,"Tempo operativo Radio"
+MODEL_RUNTIME,"Tempo utilizzo Modello"
+RADIO_RUNTIME,"Tempo utilizzo Radio"
 WAITING_FOR_SIGNAL,"Attesa Segnale..."
-CONFIRM_RESET_RUNTIME,"Runtime will be reset.\nAre you sure you want to continue?"
+CONFIRM_RESET_RUNTIME,"Tempo utilizzo verrà resettato.\nSei sicuro di voler continuare?"
