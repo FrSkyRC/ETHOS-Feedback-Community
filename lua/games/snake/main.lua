@@ -66,6 +66,7 @@ local function move()
   lcd.invalidate()
 
   if Head.x < 0 or Head.x > xMax or Head.y < 0 or Head.y > yMax then
+    print("Game over!")
     system.exit()
   elseif game_map[Head.x][Head.y] == "food" then
     eat_food()
@@ -78,8 +79,8 @@ end
 
 local function create()
   local w, h = lcd.getWindowSize()
-  xMax = math.floor(w / wCell) - 1
-  yMax = math.floor(h / wCell) - 1
+  xMax = math.floor(w / wCell)
+  yMax = math.floor(h / wCell)
 
   food = false
   size = 3
@@ -107,30 +108,35 @@ local function event(widget, category, value, x, y)
   print("Event received:", category, value, x, y, KEY_RIGHT_FIRST)
 
   local dir = direction
-  if category == EVT_KEY and value == KEY_RIGHT_FIRST and direction ~= "left" then
-    dir = "right"
-    Head.dx = 1
-    Head.dy = 0
-  end
-  if category == EVT_KEY and value == KEY_LEFT_FIRST and direction ~= "right" then
-    dir = "left"
-    Head.dx = -1
-    Head.dy = 0
-  end
-  if category == EVT_KEY and value == KEY_UP_FIRST and direction ~= "down" then
-    dir = "up"
-    Head.dx = 0
-    Head.dy = -1
-  end
-  if category == EVT_KEY and value == KEY_DOWN_FIRST and direction ~= "up" then
-    dir = "down"
-    Head.dx = 0
-    Head.dy = 1
+  local result = false
+
+  if category == EVT_KEY then
+    result = true
+    if value == KEY_RIGHT_FIRST and direction ~= "left" then
+      dir = "right"
+      Head.dx = 1
+      Head.dy = 0
+    elseif value == KEY_LEFT_FIRST and direction ~= "right" then
+      dir = "left"
+      Head.dx = -1
+      Head.dy = 0
+    elseif value == KEY_UP_FIRST and direction ~= "down" then
+      dir = "up"
+      Head.dx = 0
+      Head.dy = -1
+    elseif value == KEY_DOWN_FIRST and direction ~= "up" then
+      dir = "down"
+      Head.dx = 0
+      Head.dy = 1
+    end
+  elseif category == EVT_CLOSE then
+    print("No, you will play until the end!")
+    result = true
   end
 
   direction = dir
 
-  return true
+  return result
 end
 
 local function paint()
