@@ -21,8 +21,18 @@ local function paint(widget)
     end
 end
 
+local function menu(widget)
+    return {
+        {"Model Info", function()
+                         local buttons = { {label="Close", action=function() return true end},}
+                         form.openDialog("Model Info", "Some Text", buttons)
+                        end
+        }
+    }
+end
+
 local function init()
-    system.registerWidget({key="sinus", name=name, create=create, paint=paint})
+    system.registerWidget({key="sinus", name=name, create=create, paint=paint, menu=menu})
 end
 
 return {init=init}
