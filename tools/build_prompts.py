@@ -8,6 +8,7 @@ import hashlib
 import os
 import shutil
 import sys
+import tempfile
 try:
     from google.cloud import texttospeech
 except:
@@ -68,31 +69,19 @@ class PromptsCache:
 class BaseGenerator:
     @staticmethod
     def sox(input, output, tempo=None, norm=False, silence=False):
-        command = "sox %(input)s -r 16000 -c 1 -e a-law %(output)s %(tempo)s %(norm)s %(silence)s" % {
-            "input": input,
-            "output": output,
-            "tempo": ("tempo %f" % tempo) if tempo else "", 
-            "norm": "norm" if norm else "",
-            "silence": "reverse silence 1 0.1 0.1% reverse" if silence else "",
-        }
-        # print(command)
-        os.system(command.encode("utf-8"))
-
-
-class GoogleTranslateGenerator(BaseGenerator):
-    def __init__(self, voice):
-        self.voice = voice
-
-    def cache_prefix(self):
-        return "gtts-%s" % self.voice
-
-    def build(self, filename, text, options):
-        print(filename, repr(text))
-        tts = gTTS(text=text, lang=self.voice)
-        tts_output = "/tmp/output.mp3"
-        tts.save(tts_output)
-        self.sox(tts_output, filename, tempo=1.2, norm=True)
-        os.unlink(tts_output)
+        if shutil.which("sox"):
+            command = "sox %(input)s -r 16000 -c 1 -e a-law %(output)s %(tempo)s %(norm)s %(silence)s" % {
+                "input": input,
+                "output": output,
+                "tempo": ("tempo %f" % tempo) if tempo else "", 
+                "norm": "norm" if norm else "",
+                "silence": "reverse silence 1 0.1 0.1% reverse" if silence else "",
+            }
+            # print(command)
+            os.system(command)
+        else:
+            print("The sox executable hasn't been found in your PATH")
+            shutil.copyfile(input, output)
 
 
 class GoogleCloudTextToSpeechGenerator(BaseGenerator):
@@ -119,11 +108,12 @@ class GoogleCloudTextToSpeechGenerator(BaseGenerator):
                 speaking_rate=self.speed * float(options.get("speed", 1.0))
             )
         )
-        tts_output = "/tmp/output.wav"
+        temp_path = tempfile.mkdtemp()
+        tts_output = os.path.join(temp_path, "output.wav")
         with open(tts_output, "wb") as out:
             out.write(response.audio_content)
         self.sox(tts_output, path, silence=True)
-        os.unlink(tts_output)
+        shutil.rmtree(temp_path)
 
 
 def build(engine, voice, speed, csv, cache, only_missing=False, recreate_cache=False):
