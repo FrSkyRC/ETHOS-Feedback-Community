@@ -8,7 +8,11 @@ import hashlib
 import os
 import shutil
 import sys
-from google.cloud import texttospeech
+try:
+    from google.cloud import texttospeech
+except:
+    print("You need the google text to speech lib for python: python -m pip install google-cloud-texttospeech")
+    sys.exit(1)
 
 
 def extract_csv(path):
