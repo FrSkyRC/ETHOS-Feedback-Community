@@ -10,9 +10,14 @@ import shutil
 import sys
 import tempfile
 try:
+    import sox
+except:
+    print("You need sox for python: python -m pip install sox")
+    sys.exit(1)
+try:
     from google.cloud import texttospeech
 except:
-    print("You need the google text to speech lib for python: python -m pip install google-cloud-texttospeech")
+    print("You need google text to speech for python: python -m pip install google-cloud-texttospeech")
     sys.exit(1)
 
 
@@ -69,19 +74,16 @@ class PromptsCache:
 class BaseGenerator:
     @staticmethod
     def sox(input, output, tempo=None, norm=False, silence=False):
-        if shutil.which("sox"):
-            command = "sox %(input)s -r 16000 -c 1 -e a-law %(output)s %(tempo)s %(norm)s %(silence)s" % {
-                "input": input,
-                "output": output,
-                "tempo": ("tempo %f" % tempo) if tempo else "", 
-                "norm": "norm" if norm else "",
-                "silence": "reverse silence 1 0.1 0.1% reverse" if silence else "",
-            }
-            # print(command)
-            os.system(command)
-        else:
-            print("The sox executable hasn't been found in your PATH")
-            shutil.copyfile(input, output)
+        tfm = sox.Transformer()
+        tfm.set_output_format(channels=1, rate=16000, encoding="a-law")
+        extra_args = []
+        if tempo:
+            extra_args.extend(["tempo", str(tempo)])
+        if norm:
+            extra_args.append("norm")
+        if silence:
+            extra_args.extend(["reverse", "silence", "1", "0.1", "0.1%", "reverse"])
+        tfm.build(input, output, extra_args=extra_args)
 
 
 class GoogleCloudTextToSpeechGenerator(BaseGenerator):
