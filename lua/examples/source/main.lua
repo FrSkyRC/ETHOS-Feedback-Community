@@ -30,7 +30,7 @@ local function sourceWrite(source)
 end
 
 local function sourceWakeup(source)
-  print("Source wakeup")
+  -- print("Source wakeup")
   source:value(source:value() + 0.1)
 end
 
