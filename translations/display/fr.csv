@@ -30,10 +30,10 @@ SUCCESS,"Succès !",
 CLONE_MODEL_SUCCESSFULLY,"Copie modèle réussie !",
 FILENAME_TOO_LONG,"Nom fichier trop long !",
 RX_STILL_ON_SELECT_ANOTHER_MODEL,"RX toujours ON. Changer modèle ?",
-CONFIRM_SELECT_ANOTHER_MODEL,"Sélection autre modèle ?",
+CONFIRM_SELECT_ANOTHER_MODEL,"Sélectionner autre modèle ?",
 FILE_NAME,"Nom",
 CONFIRM,"Confirmer",
-SET_CURRENT_MODEL,"Sélection modèle",
+SET_CURRENT_MODEL,"Sélectionner",
 UNCATEGORIZED,"Non trié",
 CHANGE_FOLDER,"Déplacer",
 OPERATION,"Opération",
@@ -383,8 +383,8 @@ RBOX_STATE_1,"Statut1 RBOX",
 RBOX_STATE_2,"Statut2 RBOX",
 BATTERY_1_CONSUMPTION,"Conso. Bat1",
 BATTERY_2_CONSUMPTION,"Conso. Bat2",
-BATTERY_1_TEMPERATURE,"Bat1 temp."
-BATTERY_2_TEMPERATURE,"Bat2 temp."
+BATTERY_1_TEMPERATURE,"Temp. Bat1"
+BATTERY_2_TEMPERATURE,"Temp. Bat2."
 RB_OUTPUT_STATE,"Etat sortie",
 RB_CH1_A,"Intensité V1",
 RB_CH2_A,"Intensité V2",
