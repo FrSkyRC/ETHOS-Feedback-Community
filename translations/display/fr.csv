@@ -284,7 +284,7 @@ DURATION,"Durée",
 SOURCE_A,"Source (A)",
 TRIGGER_OFF_CONDITION,"Condition pour OFF",
 DELAY_BEFORE_INACTIVE,"Délai avant OFF",
-DELAY_ON_OFF,"Délai avant ON / OFF"
+DELAY_ON_OFF,"Délai avant ON / OFF",
 SOURCE,"Source",
 LOGIC_SWITCH_RANGE,"Intervalle",
 ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_LOGIC_SWITCH,"Suppression inter logique ?",
