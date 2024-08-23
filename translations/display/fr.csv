@@ -316,7 +316,7 @@ UNIT_POINTS_COUNT,"points",
 WEIGHT,"Course",
 POINTS,"Points",
 OFFSET,"Décalage",
-AUTO_OFFSET,"Décalage automatique"
+AUTO_OFFSET,"Décalage automatique",
 OFFSET_WHEN_ACTIVE,"Décalage qd ligne activée",
 OFFSET_WHEN_INACTIVE,"Décalage qd ligne désactivée",
 SMOOTH,"Lisser",
