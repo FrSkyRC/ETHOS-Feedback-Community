@@ -129,7 +129,7 @@ MIN,"Mini",
 MAX,"Maxi",
 CURVE,"Courbe",
 CHANNEL,"Voie",
-INVERTED_CHANNEL,"Voie inversée"
+INVERTED_CHANNEL,"Voie inversée",
 INVERT,"Inverser",
 INVERTED,"Inversé",
 CONFIRM_DELETE_TIMER,"Suppression chrono ?",
