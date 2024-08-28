@@ -1093,3 +1093,11 @@ WAITING_FOR_SIGNAL,"en attente du signal ...",
 CONFIRM_RESET_RUNTIME,"Remise à zéro.\nContinuer ?",
 EDITABLE_BANK,"Bank"
 BANK,"Bank"
+POWER_SWITCH,"Power switch"
+CUR_VOLT_RATE,"Current & voltage rate"
+BEC_VOLT_RATE,"BEC voltage rate"
+SBEC_VOLTAGE,"SBEC voltage"
+BATTERY_MODE,"Battery mode"
+SWITCH_VOLTAGE,"Switch voltage"
+BALANCE,"'Balance"
+BACKUP,"Backup"
