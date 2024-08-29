@@ -1093,3 +1093,4 @@ WAITING_FOR_SIGNAL,"en attente du signal ...",
 CONFIRM_RESET_RUNTIME,"Remise à zéro.\nContinuer ?",
 EDITABLE_BANK,"Bank"
 BANK,"Bank"
+COMPARE_CHANNELS,"Compare channels"
