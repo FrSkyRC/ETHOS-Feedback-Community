@@ -1,11 +1,5 @@
--- TBS Crossfire Module
-
-local translations = {en="Crossfire Config"}
-
-local function name(widget)
-  local locale = system.getLocale()
-  return translations[locale] or translations["en"]
-end
+-- Crossfire Module
+crossfire = {}
 
 local devices = { }
 local devicesRefreshTime = 0
@@ -22,14 +16,19 @@ local fieldChunk = 0
 local fieldData = {}
 local currentParent
 local currentExpansionPanel
+local menuDepth = 0
 
-local function create()
+function crossfire.create()
   devices = {}
   deviceId = nil
   fieldPopup = nil
   currentParent = nil
   currentExpansionPanel = nil
   return {}
+end
+
+function crossfire.close()
+	CRSF_PAUSE_TELEMETRY = false 
 end
 
 local function createDevice(id, name, fieldsCount)
@@ -89,14 +88,16 @@ local function parseDeviceInfoMessage(data)
   local id = data[2]
   local offset, name
   name, offset = parseString(data, 3)
-  print("Device: " .. name)
   local device = getDevice(name)
   if device == nil then
     device = createDevice(id, name, data[offset + 12])
     isElrsTx = (parseValue(data, offset, 4) == 0x454C5253 and deviceId == 0xEE) or nil -- SerialNumber = 'E L R S' and ID is TX module
     devices[#devices + 1] = device
-    local line = form.addLine(name, currentExpansionPanel)
-    form.addTextButton(line, nil, "Setup", function() setCurrentDevice(device) end)
+
+	if device.fieldsCount > 0 then
+		local line = form.addLine(name, currentExpansionPanel)
+		form.addTextButton(line, nil, "Setup", function() setCurrentDevice(device) end)
+	end
   end
 end
 
@@ -107,7 +108,7 @@ local function parseChoiceValues(data, offset)
   local b = data[offset]
   while b ~= 0 do
     if b == 59 then -- ';'
-      print("Choice Value: " .. opt)
+      --print("Choice Value: " .. opt)
       values[#values + 1] = { opt, #values }
       opt = ''
     else
@@ -116,7 +117,7 @@ local function parseChoiceValues(data, offset)
     offset = offset + 1
     b = data[offset]
   end
-  print("Choice Value: " .. opt)
+  --print("Choice Value: " .. opt)
   values[#values + 1] = { opt, #values }
   return values, offset + 1, collectgarbage("collect")
 end
@@ -149,7 +150,7 @@ local function parseParameterInfoMessage(data)
       field.type = fieldData[2] & 0x7f
       field.hidden = fieldData[2] & 0x80
       field.name, offset = parseString(fieldData, 3, field.name)
-      print("Field: " .. field.name .. ", Type: " .. field.type)
+      --print("Field: " .. field.name .. ", Type: " .. field.type)
 
       if currentParent ~= nil and field.parent ~= currentParent.id then
         currentExpansionPanel = nil
@@ -168,7 +169,7 @@ local function parseParameterInfoMessage(data)
         field.status = fieldData[offset]
         field.timeout = fieldData[offset + 1]
         field.info = parseString(fieldData, offset + 2)
-        print("Status: " .. field.status .. ", Info: " .. field.info)
+        --print("Status: " .. field.status .. ", Info: " .. field.info)
         if field.dialog then
           if field.status == 0 then
             field.dialog:close()
@@ -213,7 +214,7 @@ local function parseParameterInfoMessage(data)
         currentExpansionPanel = form.addExpansionPanel(field.name)
         currentParent = field
       else
-        print("Not implemented!")
+        --print("Not implemented!")
       end
     end
 
@@ -222,7 +223,14 @@ local function parseParameterInfoMessage(data)
   end
 end
 
-local function wakeup(widget)
+function crossfire.wakeup(widget)
+
+  if lcd.hasFocus() then
+	CRSF_PAUSE_TELEMETRY = true
+  else
+ 	CRSF_PAUSE_TELEMETRY = false 
+  end
+
   local time = os.clock()
   while true do
     command, data = crsf.popFrame()
@@ -230,7 +238,9 @@ local function wakeup(widget)
       break
     elseif command == 0x29 then
       parseDeviceInfoMessage(data)
+	  menuDepth = 0
     elseif command == 0x2B then
+	  menuDepth = 1
       parseParameterInfoMessage(data)
       if #loadQ > 0 or expectChunksRemain >= 0 then
         fieldTime = 0 -- request next chunk immediately
@@ -248,7 +258,7 @@ local function wakeup(widget)
     --print("popup " .. time .. "   " .. fieldTime .. "  " .. fieldPopup.status)
     if time > fieldTime and fieldPopup.status ~= 3 then
       crsf.pushFrame(0x2D, { deviceId, handsetId, fieldPopup.id, 6 }) -- lcsQuery
-      print("timeout " .. fieldPopup.timeout .. " status " .. fieldPopup.status)
+      --print("timeout " .. fieldPopup.timeout .. " status " .. fieldPopup.status)
       fieldTime = time + fieldPopup.timeout / 100
     end
   elseif time > devicesRefreshTime and deviceId == nil then
@@ -267,11 +277,36 @@ local function wakeup(widget)
       fieldTime = time + 0.5
     end
   end
+  
+
 end
 
-local function init()
-  system.registerCrossfireModule({configure={name=name, create=create, wakeup=wakeup}})
+
+function crossfire.event(widget, category, value, x, y)
+    --print("Event received:" .. ", " .. category .. "," .. value .. "," .. x .. "," .. y)
+	if menuDepth == 1 then
+		if category == EVT_CLOSE then
+			form.clear()
+			devices = {}
+			deviceId = nil
+			fieldPopup = nil
+			currentParent = nil
+			currentExpansionPanel = nil
+			return true
+		end
+		if category == 0 and value == 35 then
+			form.clear()
+			devices = {}
+			deviceId = nil
+			fieldPopup = nil
+			currentParent = nil
+			currentExpansionPanel = nil		
+			return true
+		end
+	end
+	
+	return false
 end
 
-return {init=init}
+return crossfire
 
