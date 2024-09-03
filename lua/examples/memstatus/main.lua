@@ -30,8 +30,8 @@ function wakeup()
         prevluaBitmapsRamAvailable = mem.luaBitmapsRamAvailable
 
         print("-------------------------------------------------------")
-        print("luaRamAvailable        : " .. mem.luaRamAvailable / 1000 .. "kB" .. " [" .. ramDiff .. "]")
-        print("luaBitmapsRamAvailable : " .. mem.luaBitmapsRamAvailable / 1000 .. "kB" .. " [" .. bmpDiff .. "]")
+        print("luaRamAvailable..........: " .. mem.luaRamAvailable / 1000 .. "kB" .. " [" .. ramDiff .. "]")
+        print("luaBitmapsRamAvailable...: " .. mem.luaBitmapsRamAvailable / 1000 .. "kB" .. " [" .. bmpDiff .. "]")
         print("------------------------------------------------------\r\n")
 
     end
