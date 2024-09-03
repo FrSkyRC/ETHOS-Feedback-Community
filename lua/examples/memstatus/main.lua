@@ -23,15 +23,15 @@ function wakeup()
 
         mem = system.getMemoryUsage()
 
-        local ramDiff = (mem.luaRamAvailable - prevluaRamAvailable) / 1000 .. 'KB'
-        local bmpDiff = (mem.luaBitmapsRamAvailable - prevluaBitmapsRamAvailable) / 1000 .. 'KB'
+        local ramDiff = (mem.luaRamAvailable - prevluaRamAvailable) / 1000 .. 'kB'
+        local bmpDiff = (mem.luaBitmapsRamAvailable - prevluaBitmapsRamAvailable) / 1000 .. 'kB'
 
         prevluaRamAvailable = mem.luaRamAvailable
         prevluaBitmapsRamAvailable = mem.luaBitmapsRamAvailable
 
         print("-------------------------------------------------------")
-        print("luaRamAvailable        : " .. mem.luaRamAvailable / 1000 .. "KB" .. " [" .. ramDiff .. "]")
-        print("luaBitmapsRamAvailable : " .. mem.luaBitmapsRamAvailable / 1000 .. "KB" .. " [" .. bmpDiff .. "]")
+        print("luaRamAvailable        : " .. mem.luaRamAvailable / 1000 .. "kB" .. " [" .. ramDiff .. "]")
+        print("luaBitmapsRamAvailable : " .. mem.luaBitmapsRamAvailable / 1000 .. "kB" .. " [" .. bmpDiff .. "]")
         print("------------------------------------------------------\r\n")
 
     end
