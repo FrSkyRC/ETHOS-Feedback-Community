@@ -6,7 +6,6 @@ config.useCompiler = true
 compile = assert(loadfile(config.moduleDir .. "compile.lua"))(config)
 elrs = assert(compile.loadScript(config.moduleDir .. "crossfire.lua"))(config, compile)
 
-
 local function create()
     return crossfire.create()
 end
@@ -24,7 +23,7 @@ local function close()
 end
 
 local function init()
-  system.registerCrossfireModule({configure={name=config.moduleName, create=create, wakeup=wakeup,event=event,close=close}})
+    system.registerCrossfireModule({configure = {name = config.moduleName, create = create, wakeup = wakeup, event = event, close = close}})
 end
 
-return {init=init}
+return {init = init}
