@@ -161,7 +161,7 @@ RSSI,"RSSI",
 ARE_YOU_SURE_TO_RESET_THIS_RECEIVER,"Are you sure you want to reset this receiver ?",
 SET,"Set",
 EXPO,"Expo",
-UNIT_POINTS_COUNT,"points",
+UNIT_POINTS_COUNT," points",
 WEIGHT,"Weight",
 POINTS,"Points",
 OFFSET,"Offset",
@@ -1100,3 +1100,4 @@ BATTERY_MODE,"Battery mode"
 SWITCH_VOLTAGE,"Switch voltage"
 BALANCE,"Balance"
 BACKUP,"Backup"
+BALANCE_CHANNELS,"Balance channels"

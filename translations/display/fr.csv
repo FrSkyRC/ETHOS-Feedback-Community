@@ -312,7 +312,7 @@ CURVE_USED_BY,"Courbe utilisée :",
 AND_WITH_TWO_SPACES," et ",
 NO_CURVE_HINT,"Aucune courbe. Appuyer sur '+' pour en créer une !",
 EXPO,"Expo",
-UNIT_POINTS_COUNT,"points",
+UNIT_POINTS_COUNT," points",
 WEIGHT,"Course",
 POINTS,"Points",
 OFFSET,"Décalage",
@@ -1100,3 +1100,4 @@ BATTERY_MODE,"Battery mode"
 SWITCH_VOLTAGE,"Switch voltage"
 BALANCE,"Balance"
 BACKUP,"Backup"
+BALANCE_CHANNELS,"Balance channels"
