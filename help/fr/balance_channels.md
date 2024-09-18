@@ -13,14 +13,14 @@ Avant l'équilibrage des voies, les recommandations sont les suivantes :
 6. Exécuter l'équilibrage des voies.
 
 ## Utilisation
-Les voies à équilibrer doivent être sélectionnées. Les voies mixées sont affichées selon l'axe X, pendant que les valeurs corrigées sont affichées selon l'axe Y.
+Les voies à équilibrer doivent être sélectionnées. Les voies mixées sont affichées selon l'axe X, pendant que les corrections (deltas) sont affichées selon l'axe Y.
 
 ## Icônes
 ![Analog](/bitmaps/system/icon_analog.png) La source utilisée par le mixeur est selectionnée par défault pour l'équilibrage, mais il est possible de choisir n'importe quelle source analogique : la première source analogique qui sera déplacée servira pour la configuration.
 
-![Magnet](/bitmaps/system/icon_magnet.png) En sélectionnant l'option, le point de la courbe le plus proche de la position de l'axe X va être sélectionné et ensuite modifié avec l'encodeur rotatif. Non sélectionnée, le point de la courbe est sélectionné avec les touches 'SYS' et 'DISP'. La source doit être ajustée pour ajuster une valeur X avec un point de la courbe avant modification.
+![Magnet](/bitmaps/system/icon_magnet.png) En activant cette option, le point de la courbe le plus proche de la position de l'axe X va être sélectionné et ensuite modifié avec l'encodeur rotatif. Sans cette option, le point de la courbe est sélectionné manuellement avec les touches 'SYS' et 'DISP'. La source doit être ajustée pour ajuster une valeur X avec un point de la courbe avant modification.
 
-![Lock](/bitmaps/system/icon_lock.png) L'appuie sur ENTER en mode édition ou en sélectionnant l'icône verrouille toutes les entrées à la position actuelle et l'ajustement des courbes est ainsi facilité.
+![Lock](/bitmaps/system/icon_lock.png) Cette fonction verrouille toutes les entrées à la position actuelle et l'ajustement des courbes est ainsi facilité. L'appui sur 'ENTER' active et désactive cette fonction également.
 
 ![Settings](/bitmaps/system/icon_system.png) Boite de dialogue de configuation des voies sélectionnées. Choix possible du nombre de points pour toutes les courbes ou seulement certaines ainsi que leur lissage.
 
