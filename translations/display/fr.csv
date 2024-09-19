@@ -1103,3 +1103,5 @@ BACKUP,"Sauvegarder",
 BALANCE_CHANNELS,"Equilibrer voies",
 CHOOSE_CHANNELS,"Choisir les voies",
 BALANCE_CURVE,"Courbe équilibrage",
+CONFIRM_TO_SHARE_RECEIVER,"Are you sure you want to share this receiver?"
+CONFIRM_TO_UNBIND_RECEIVER,"Are you sure you want to unbind this receiver?"
