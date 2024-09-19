@@ -16,12 +16,12 @@ Prior to balancing channels, this recommended process should be followed:
 When activated, the channels to be balanced are chosen. The channels will be displayed in the order of selection. The mix outputs are shown along the X axes, while the balance adjustment differential values are shown on the Y axes.
 
 ## Buttons
-![Analog](/bitmaps/system/icon_analog.png) The source(s) configured in the channel mixes may be used, or optionally any other convenient analog input. If you select this 'Auto analog input'option, the first stick, slider or pot you move will be used as the source for X, not only in the graph, but also in the model.
+![Analog](FLASH:/bitmaps/system/icon_analog.png) The source(s) configured in the channel mixes may be used, or optionally any other convenient analog input. If you select this 'Auto analog input'option, the first stick, slider or pot you move will be used as the source for X, not only in the graph, but also in the model.
 
-![Magnet](/bitmaps/system/icon_magnet.png) When selected, the nearest curve point on the X axis will be automatically selected for adjustment with the rotary encoder. When deselected, the curve point to be adjusted can be selected using the 'SYS' and 'DISP' keys. The input must be adjusted to align the X value with a curve point before adjustment is made.
+![Magnet](FLASH:/bitmaps/system/icon_magnet.png) When selected, the nearest curve point on the X axis will be automatically selected for adjustment with the rotary encoder. When deselected, the curve point to be adjusted can be selected using the 'SYS' and 'DISP' keys. The input must be adjusted to align the X value with a curve point before adjustment is made.
 
-![Lock](/bitmaps/system/icon_lock.png) Pressing the ENTER key while in graph edit mode will toggle Lock mode on and off. When enabled, all inputs are locked so that you can release the stick input, allowing you to observe the control surfaces while you adjust your curve.
+![Lock](FLASH:/bitmaps/system/icon_lock.png) Pressing the ENTER key while in graph edit mode will toggle Lock mode on and off. When enabled, all inputs are locked so that you can release the stick input, allowing you to observe the control surfaces while you adjust your curve.
 
-![Settings](/bitmaps/system/icon_system.png) Open the configuration dialog for the chosen channels. It is possible to modify the number of points of all curves, or only some, and choose if they are smoothed or not.
+![Settings](FLASH:/bitmaps/system/icon_system.png) Open the configuration dialog for the chosen channels. It is possible to modify the number of points of all curves, or only some, and choose if they are smoothed or not.
 
 [?] This help file.
