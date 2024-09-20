@@ -26,4 +26,4 @@ Tap on a channel graph (or scroll to it and press ENTER) to edit the balance cur
 
 ![Settings](FLASH:/bitmaps/system/icon_system.png) Open the configuration dialog for the chosen channels. It is possible to modify the number of points of all curves, or only some, and choose if they are smoothed or not.
 
-[?] This help file.
+[?] This help file. It can also be called up with the MDL key.
