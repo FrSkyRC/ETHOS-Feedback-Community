@@ -1,4 +1,4 @@
-Questa funzione ti consente di bilanciare coppie selezionate o un gruppo fino a 4 canali per assicurarti che si muovano in perfetta armonia. Ad esempio, alettoni sbilanciati possono causare un rollio indesiderato, mentre motori sbilanciati su modelli a più motori possono portare a uno yaw indesiderato.
+Questa funzione ti consente di bilanciare coppie selezionate o un gruppo fino a 4 canali per assicurarti che si muovano in perfetta armonia. Ad esempio, alettoni sbilanciati possono causare un rollio indesiderato, mentre motori sbilanciati su modelli a più motori possono portare a un imbardata indesiderata.
 
 ## Panoramica  
 Questa funzione crea automaticamente una curva di bilanciamento differenziale per ciascun canale selezionato. È possibile scegliere il numero di punti di bilanciamento. Confrontando le posizioni fisiche delle superfici di controllo (come gli alettoni) in ciascun punto delle curve, possono essere facilmente regolati per essere uguali. Il risultato finale è che le superfici seguono perfettamente.
