@@ -7,7 +7,7 @@ Création automatique d'une courbe jusqu'à 21 points de compensation pour chaqu
 Avant l'équilibrage des voies, les recommandations sont les suivantes : 
 1. Définir correctement la direction de chaque servo.
 2. Avec la commande au neutre, utiliser le centre PWM pour positionner les palonniers au bon angle.
-3. Configurer les limites Min/Max et éventuellent le Subtrim.
+3. Configurer les limites Min/Max et éventuellement le Subtrim.
 4. Configurer toute autre courbe utile.
 5. Configurer la vitesse de déplacement.
 6. Exécuter l'équilibrage des voies.
