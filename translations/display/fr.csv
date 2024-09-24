@@ -1090,7 +1090,7 @@ MODEL_RUNTIME,"Utilisation modèle",
 RADIO_RUNTIME,"Utilisation radio",
 WAITING_FOR_SIGNAL,"en attente du signal ...",
 CONFIRM_RESET_RUNTIME,"Remise à zéro.\nContinuer ?",
-BANK,"Bank"
+BANK,"Inclinaison",
 POWER_SWITCH,"Interrupteur",
 CURRENT_AND_VOLTAGE_RATE,"Fréq. Intensité & tension",
 BEC_VOLTAGE_RATE,"Fréq. tension BEC",
@@ -1102,5 +1102,5 @@ BACKUP,"Sauvegarder",
 BALANCE_CHANNELS,"Equilibrer voies",
 CHOOSE_CHANNELS,"Choisir les voies",
 BALANCE_CURVE,"Courbe équilibrage",
-CONFIRM_TO_SHARE_RECEIVER,"Are you sure you want to share this receiver?"
-CONFIRM_TO_UNBIND_RECEIVER,"Are you sure you want to unbind this receiver?"
+CONFIRM_TO_SHARE_RECEIVER,"Partager ce récepteur ?"
+CONFIRM_TO_UNBIND_RECEIVER,"Réinitialiser l'appairage du récepteur ?"
