@@ -1085,22 +1085,22 @@ STICK_MOTORS,"Stick motori",
 CONFIRM_DELETE_ACTION,"Sei Sicuro di voler rimuovere questa azione?",
 CONFIRM_DELETE_SCREEN,"Sei Sicuro di voler rimuovere questa schermata?",
 CONFIRM_DELETE_SENSOR,"Sei Sicuro di voler rimuovere questo sensore?",
-FILE_ALREADY_EXISTS,"Un file con lo stesso nome già presente"
-MODEL_RUNTIME,"Tempo utilizzo Modello"
-RADIO_RUNTIME,"Tempo utilizzo Radio"
-WAITING_FOR_SIGNAL,"Attesa Segnale..."
-CONFIRM_RESET_RUNTIME,"Tempo utilizzo verrà resettato.\nSei sicuro di voler continuare?"
-BANK,"Banco"
-POWER_SWITCH,"Interruttore di potenza"
-CURRENT_AND_VOLTAGE_RATE,"Corrente & voltaggio"
-BEC_VOLTAGE_RATE,"Voltaggio BEC"
-SBEC_VOLTAGE,"Voltaggio SBEC"
-BATTERY_MODE,"Modo Batteria"
-SWITCH_VOLTAGE,"Volt interruttore"
-BALANCE,"Bilanciamento"
-BACKUP,"Backup"
-BALANCE_CHANNELS,"Bilanciamento canali"
-CHOOSE_CHANNELS,"Scegli canali"
-BALANCE_CURVE,"Curva Bilanciamento"
-CONFIRM_TO_SHARE_RECEIVER,"Sei Sicuro di voler condivdere questa ricevente?"
-CONFIRM_TO_UNBIND_RECEIVER,"Sei Sicuro di voler scollegare questa ricevente?"
+FILE_ALREADY_EXISTS,"Un file con lo stesso nome già presente",
+MODEL_RUNTIME,"Tempo utilizzo Modello",
+RADIO_RUNTIME,"Tempo utilizzo Radio",
+WAITING_FOR_SIGNAL,"Attesa Segnale...",
+CONFIRM_RESET_RUNTIME,"Tempo utilizzo verrà resettato.\nSei sicuro di voler continuare?",
+BANK,"Inclinazione",
+POWER_SWITCH,"Interruttore di potenza",
+CURRENT_AND_VOLTAGE_RATE,"Corrente & voltaggio",
+BEC_VOLTAGE_RATE,"Voltaggio BEC",
+SBEC_VOLTAGE,"Voltaggio SBEC",
+BATTERY_MODE,"Modo Batteria",
+SWITCH_VOLTAGE,"Volt interruttore",
+BALANCE,"Bilanciamento",
+BACKUP,"Backup",
+BALANCE_CHANNELS,"Bilanciamento canali",
+CHOOSE_CHANNELS,"Scegli canali",
+BALANCE_CURVE,"Curva Bilanciamento",
+CONFIRM_TO_SHARE_RECEIVER,"Sei Sicuro di voler condivdere questa ricevente?",
+CONFIRM_TO_UNBIND_RECEIVER,"Sei Sicuro di voler scollegare questa ricevente?",
