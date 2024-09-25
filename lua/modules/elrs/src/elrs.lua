@@ -29,6 +29,7 @@ end
 
 function elrs.close()
 	ELRS_PAUSE_TELEMETRY = false 
+	CRSF_PAUSE_TELEMETRY = false 
 end
 
 local function createDevice(id, name, fieldsCount)
@@ -225,10 +226,12 @@ end
 
 function elrs.wakeup(widget)
 
-  if lcd.hasFocus() then
+  if lcd.hasFocus() or lcd.isVisible() then
 	ELRS_PAUSE_TELEMETRY = true
+	CRSF_PAUSE_TELEMETRY = true    
   else
  	ELRS_PAUSE_TELEMETRY = false 
+	CRSF_PAUSE_TELEMETRY = false     
   end
 
   local time = os.clock()
@@ -304,7 +307,8 @@ function elrs.event(widget, category, value, x, y)
 			return true
 		end
 	end
-	
+ 	ELRS_PAUSE_TELEMETRY = false 	
+	CRSF_PAUSE_TELEMETRY = false     
 	return false
 end
 
