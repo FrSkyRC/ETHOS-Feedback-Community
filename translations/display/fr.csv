@@ -1104,3 +1104,4 @@ CHOOSE_CHANNELS,"Choisir les voies",
 BALANCE_CURVE,"Courbe équilibrage",
 CONFIRM_TO_SHARE_RECEIVER,"Partager ce récepteur ?",
 CONFIRM_TO_UNBIND_RECEIVER,"Réinitialiser l'appairage du récepteur ?",
+CONFIRM_CLEAR_BAL_CURVE,"This channel is balanced by this curve.\nAre you sure you want to clear this balance curve?"

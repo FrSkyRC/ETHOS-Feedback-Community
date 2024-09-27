@@ -1104,3 +1104,4 @@ CHOOSE_CHANNELS,"Scegli canali",
 BALANCE_CURVE,"Curva Bilanciamento",
 CONFIRM_TO_SHARE_RECEIVER,"Sei Sicuro di voler condivdere questa ricevente?",
 CONFIRM_TO_UNBIND_RECEIVER,"Sei Sicuro di voler scollegare questa ricevente?",
+CONFIRM_CLEAR_BAL_CURVE,"This channel is balanced by this curve.\nAre you sure you want to clear this balance curve?"
