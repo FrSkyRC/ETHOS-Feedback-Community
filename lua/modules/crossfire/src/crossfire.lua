@@ -18,19 +18,29 @@ local currentParent
 local currentExpansionPanel
 local menuDepth = 0
 
+
+function crossfire.pauseTelemetry(state)
+        CRSF_PAUSE_TELEMETRY = state
+        ELRS_PAUSE_TELEMETRY = state
+end
+
+
 function crossfire.create()
         devices = {}
         deviceId = nil
         fieldPopup = nil
         currentParent = nil
         currentExpansionPanel = nil
+        crossfire.pauseTelemetry(true)
         return {}
 end
 
+
+
 function crossfire.close()
-        ELRS_PAUSE_TELEMETRY = false
-        CRSF_PAUSE_TELEMETRY = false
+      crossfire.pauseTelemetry(false)
 end
+
 
 local function createDevice(id, name, fieldsCount)
         local device = {id = id, name = name, fieldsCount = fieldsCount, timeout = 0}
@@ -105,7 +115,7 @@ local function parseChoiceValues(data, offset)
                 offset = offset + 1
                 b = data[offset]
         end
-        -- print("Choice Value: " .. opt)
+
         values[#values + 1] = {opt, #values}
         return values, offset + 1, collectgarbage("collect")
 end
@@ -228,16 +238,18 @@ end
 
 function crossfire.wakeup(widget)
 
+
+
         if lcd.hasFocus() or lcd.isVisible() then
-                ELRS_PAUSE_TELEMETRY = true
-                CRSF_PAUSE_TELEMETRY = true
+                crossfire.pauseTelemetry(true)
         else
-                ELRS_PAUSE_TELEMETRY = false
-                CRSF_PAUSE_TELEMETRY = false
+                crossfire.pauseTelemetry(false)
         end
 
+  
         local time = os.clock()
         while true do
+        
                 command, data = crsf.popFrame()
                 if command == nil then
                         break
@@ -252,32 +264,24 @@ function crossfire.wakeup(widget)
                         elseif fieldPopup then
                                 fieldTime = time + fieldPopup.timeout / 100
                         end
-                        -- elseif command == 0x2D then
-                        --  parseElrsV1Message(data)
-                        -- elseif command == 0x2E then
-                        --  parseElrsInfoMessage(data)
+                        
                 end
         end
 
-        if fieldPopup then
-                -- print("popup " .. time .. "   " .. fieldTime .. "  " .. fieldPopup.status)
+        if fieldPopup then        
                 if time > fieldTime and fieldPopup.status ~= 3 then
+                              
                         crsf.pushFrame(0x2D, {deviceId, handsetId, fieldPopup.id, 6}) -- lcsQuery
-                        -- print("timeout " .. fieldPopup.timeout .. " status " .. fieldPopup.status)
                         fieldTime = time + fieldPopup.timeout / 100
                 end
         elseif time > devicesRefreshTime and deviceId == nil then
+
                 devicesRefreshTime = time + 1 -- 1s
                 crsf.pushFrame(0x28, {0x00, 0xEA})
-                -- elseif time > linkstatTime then
-                --  if not isElrsTx and #loadQ == 0 then
-                --        goodBadPkt = ""
-                --  else
-                --        crsf.pushFrame(0x2D, { deviceId, handsetId, 0x0, 0x0 }) -- request linkstat
-                --  end
-                --  linkstatTime = time + 1
+
         elseif time > fieldTime and deviceId ~= nil then
                 if #loadQ > 0 then
+                             
                         crsf.pushFrame(0x2C, {deviceId, handsetId, loadQ[#loadQ], fieldChunk})
                         fieldTime = time + 0.5
                 end
@@ -286,7 +290,7 @@ function crossfire.wakeup(widget)
 end
 
 function crossfire.event(widget, category, value, x, y)
-        -- print("Event received:" .. ", " .. category .. "," .. value .. "," .. x .. "," .. y)
+        
         if menuDepth == 1 then
                 if category == EVT_CLOSE then
                         form.clear()
@@ -307,8 +311,7 @@ function crossfire.event(widget, category, value, x, y)
                         return true
                 end
         end
-        ELRS_PAUSE_TELEMETRY = false
-        CRSF_PAUSE_TELEMETRY = false
+        crossfire.pauseTelemetry(false)
         return false
 end
 

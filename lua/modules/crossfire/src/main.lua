@@ -1,10 +1,10 @@
 local config = {}
-config.moduleName = "Crossfire Configuration"
+config.moduleName = "Crossfire configuration"
 config.moduleDir = "/scripts/crossfire/"
 config.useCompiler = true
 
 compile = assert(loadfile(config.moduleDir .. "compile.lua"))(config)
-elrs = assert(compile.loadScript(config.moduleDir .. "crossfire.lua"))(config, compile)
+crossfire = assert(compile.loadScript(config.moduleDir .. "crossfire.lua"))(config, compile)
 
 local function create()
         return crossfire.create()
