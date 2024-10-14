@@ -1,5 +1,3 @@
-☻
-
 ## Übersicht
 Mit dieser Funktion wird automatisch eine Differenzausgleichskurve für jeden ausgewählten Kanal erstellt. Die Anzahl der Ausgleichspunkte kann gewählt werden. Durch den Vergleich der physischen Positionen der Steuerflächen (z. B. Klappen) an jedem Punkt der Kurven können diese leicht angepasst werden, so dass sie gleich sind. Das Endergebnis sind perfekt nachgeführte Flächen..
 
