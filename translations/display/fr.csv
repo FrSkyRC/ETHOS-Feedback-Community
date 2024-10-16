@@ -1049,6 +1049,7 @@ SEND_FILE,"Envoyer fichier",
 FILE_TRANSFER,"Transfert fichier",
 RECEIVE_FILE_HERE,"Réception fichier",
 WAITING_FOR_CONNECTION,"En attente de connexion",
+CONNECTION_REFUSED,"Connection refused"
 WAITING_FOR_RECEIVER_CONFIRMATION,"En attente de confirmation récepteur ...",
 FILE_TRANSFER_FAILED,"Erreur transfert fichier",
 CONFIRM_RECEIVE_FILE_SSS_IN_FOLDER_SSS_SIZE_IS_SSS,"Réception fichier %s dans répertoire %s\nTaille fichier %s",
