@@ -292,6 +292,7 @@ LOCAL_NAME,"Nome Locale",
 SEARCH_DEVICES,"Cerca Dispositivi",
 BLUETOOTH_DEVICE_CONNECTED,"Disp. Bluetooth connesso",
 CONNECT_LAST_DEVICE,"Connetti ultimo Disp.",
+DEVICE,"Device"
 NO_BLUETOOTH_DEVICE_FOUND,"Nessun Disp. Bluetooth!",
 SPEAKER_MUTE,"Altoparlante Muto",
 DISCONNECT,"Disconnetti",
