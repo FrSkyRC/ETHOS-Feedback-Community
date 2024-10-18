@@ -482,7 +482,7 @@ LOCAL_NAME,"Nom local",
 SEARCH_DEVICES,"Chercher ...",
 BLUETOOTH_DEVICE_CONNECTED,"Périphérique bluetooth connecté",
 CONNECT_LAST_DEVICE,"Dernière connexion",
-DEVICE,"Périphérique"
+DEVICE,"Périphérique",
 NO_BLUETOOTH_DEVICE_FOUND,"Aucun périphérique bluetooth détecté !",
 SPEAKER_MUTE,"Couper haut-parleur",
 DISCONNECT,"Déconnecter",
