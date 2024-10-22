@@ -11,9 +11,12 @@ local function paint(widget)
     local y = 10
     lcd.drawText(10, y, "Total = " .. widget.sensor:stringValue() .. " (" .. widget.sensor:stringValue({options=OPTION_CELLS_COUNT}) .. " cells)")
     y = y + 30
-    for i = 1, widget.sensor:value({options=OPTION_CELLS_COUNT}) do
-      lcd.drawText(10, y, "Cell[" .. i .."] = " .. widget.sensor:stringValue(OPTION_CELL_INDEX(i)))
-      y = y + 30
+    local cellsCount = widget.sensor:value({options=OPTION_CELLS_COUNT})
+    if cellsCount then
+      for i = 1, cellsCount do
+        lcd.drawText(10, y, "Cell[" .. i .."] = " .. widget.sensor:stringValue(OPTION_CELL_INDEX(i)))
+        y = y + 30
+      end
     end
   end
 end
