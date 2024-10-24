@@ -18,12 +18,14 @@ local currentParent
 local currentExpansionPanel
 local menuDepth = 0
 
-local sensor
-
-function elrs.ethosVersion()
-    local environment = system.getVersion()
-    local v = tonumber(environment.major .. environment.minor)
-    return v
+local version = system.getVersion()
+if version.minor > 5 then
+    local sensor = crsf.getSensor()
+    elrs.popFrame = function() return sensor:popFrame() end
+    elrs.pushFrame = function(x,y) return sensor:pushFrame(x,y) end
+else
+    elrs.popFrame = function() return crsf.popFrame() end
+    elrs.pushFrame = function(x,y) return crsf.pushFrame(x,y) end
 end
 
 function elrs.pauseTelemetry(state)
@@ -41,29 +43,8 @@ function elrs.create()
         currentParent = nil
         currentExpansionPanel = nil
         elrs.pauseTelemetry(true)
-
-        if elrs.ethosVersion() >= 16 then
-                sensor = crsf.getSensor()
-        end
               
         return {}
-end
-
-function elrs.popFrame(x,y)
-
-        if elrs.ethosVersion() >= 16 then
-               return sensor:popFrame(x,y)
-        else
-               return crsf.popFrame(x,y)
-        end
-end
-
-function elrs.pushFrame(x,y)
-        if elrs.ethosVersion() >= 16 then
-               return sensor:pushFrame(x,y)
-        else
-               return crsf.pushFrame(x,y)
-        end
 end
 
 function elrs.close()
