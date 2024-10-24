@@ -1,4 +1,4 @@
--- Crossfire Module
+-- Express LRS Module
 crossfire = {}
 
 local devices = {}
@@ -19,9 +19,20 @@ local currentExpansionPanel
 local menuDepth = 0
 
 
+if crsf.getSensor ~= nil then
+    local sensor = crsf.getSensor()
+    crossfire.popFrame = function() return sensor:popFrame() end
+    crossfire.pushFrame = function(x,y) return sensor:pushFrame(x,y) end
+else
+    crossfire.popFrame = function() return crsf.popFrame() end
+    crossfire.pushFrame = function(x,y) return crsf.pushFrame(x,y) end
+end
+
 function crossfire.pauseTelemetry(state)
-        CRSF_PAUSE_TELEMETRY = state
-        ELRS_PAUSE_TELEMETRY = state
+        if crsf.getSensor ~= nil then
+                CRSF_PAUSE_TELEMETRY = state
+                ELRS_PAUSE_TELEMETRY = state
+        end
 end
 
 
@@ -32,10 +43,9 @@ function crossfire.create()
         currentParent = nil
         currentExpansionPanel = nil
         crossfire.pauseTelemetry(true)
+              
         return {}
 end
-
-
 
 function crossfire.close()
       crossfire.pauseTelemetry(false)
@@ -161,7 +171,7 @@ local function parseParameterInfoMessage(data)
                                                 return field.value
                                         end, function(value)
                                                 field.value = value
-                                                crsf.pushFrame(0x2D, {deviceId, handsetId, field.id, value})
+                                                crossfire.pushFrame(0x2D, {deviceId, handsetId, field.id, value})
                                         end)
                                 end
                         elseif field.type == 13 then
@@ -179,7 +189,7 @@ local function parseParameterInfoMessage(data)
                                                                 {
                                                                         label = "OK",
                                                                         action = function()
-                                                                                crsf.pushFrame(0x2D, {deviceId, handsetId, field.id, 4}) -- lcsConfirmed
+                                                                                crossfire.pushFrame(0x2D, {deviceId, handsetId, field.id, 4}) -- lcsConfirmed
                                                                                 fieldTimeout = os.time() + field.timeout / 100 -- we are expecting an immediate response
                                                                                 field.status = 4
                                                                         end
@@ -203,7 +213,7 @@ local function parseParameterInfoMessage(data)
                                         field.widget = form.addTextButton(line, nil, field.name, function()
                                                 if field.status < 4 then
                                                         field.status = 1
-                                                        crsf.pushFrame(0x2D, {deviceId, handsetId, field.id, field.status})
+                                                        crossfire.pushFrame(0x2D, {deviceId, handsetId, field.id, field.status})
                                                         fieldPopup = field
                                                         field.dialog = form.openDialog(field.name, field.info, {
                                                                 {
@@ -237,9 +247,7 @@ local function parseParameterInfoMessage(data)
 end
 
 function crossfire.wakeup(widget)
-
-
-
+ 
         if lcd.hasFocus() or lcd.isVisible() then
                 crossfire.pauseTelemetry(true)
         else
@@ -250,7 +258,7 @@ function crossfire.wakeup(widget)
         local time = os.clock()
         while true do
         
-                command, data = crsf.popFrame()
+                command, data = crossfire.popFrame()
                 if command == nil then
                         break
                 elseif command == 0x29 then
@@ -271,18 +279,18 @@ function crossfire.wakeup(widget)
         if fieldPopup then        
                 if time > fieldTime and fieldPopup.status ~= 3 then
                               
-                        crsf.pushFrame(0x2D, {deviceId, handsetId, fieldPopup.id, 6}) -- lcsQuery
+                        crossfire.pushFrame(0x2D, {deviceId, handsetId, fieldPopup.id, 6}) -- lcsQuery
                         fieldTime = time + fieldPopup.timeout / 100
                 end
         elseif time > devicesRefreshTime and deviceId == nil then
 
                 devicesRefreshTime = time + 1 -- 1s
-                crsf.pushFrame(0x28, {0x00, 0xEA})
+                crossfire.pushFrame(0x28, {0x00, 0xEA})
 
         elseif time > fieldTime and deviceId ~= nil then
                 if #loadQ > 0 then
                              
-                        crsf.pushFrame(0x2C, {deviceId, handsetId, loadQ[#loadQ], fieldChunk})
+                        crossfire.pushFrame(0x2C, {deviceId, handsetId, loadQ[#loadQ], fieldChunk})
                         fieldTime = time + 0.5
                 end
         end
