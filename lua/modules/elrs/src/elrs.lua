@@ -18,8 +18,8 @@ local currentParent
 local currentExpansionPanel
 local menuDepth = 0
 
-local version = system.getVersion()
-if version.minor > 5 then
+
+if crsf.getSensor ~= nil then
     local sensor = crsf.getSensor()
     elrs.popFrame = function() return sensor:popFrame() end
     elrs.pushFrame = function(x,y) return sensor:pushFrame(x,y) end
