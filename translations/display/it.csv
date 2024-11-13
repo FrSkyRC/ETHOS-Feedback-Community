@@ -1112,3 +1112,5 @@ BALANCE_CURVE,"Curva Bilanciamento",
 CONFIRM_TO_SHARE_RECEIVER,"Sei Sicuro di voler condivdere questa ricevente?",
 CONFIRM_TO_UNBIND_RECEIVER,"Sei Sicuro di voler scollegare questa ricevente?",
 RX_VFR,"Rx VFR"
+DEVICE_CONFIG_LABEL,"Visit the Lua Lib in Ethos Suite version 1.6.0 or the official Feedback GitHub repository to access more official tools."
+MORE_TOOLS,"More tools"

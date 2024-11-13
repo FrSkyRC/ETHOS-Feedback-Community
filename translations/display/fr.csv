@@ -1112,3 +1112,5 @@ BALANCE_CURVE,"Courbe équilibrage",
 CONFIRM_TO_SHARE_RECEIVER,"Partager ce récepteur ?",
 CONFIRM_TO_UNBIND_RECEIVER,"Réinitialiser l'appairage du récepteur ?",
 RX_VFR,"Rx VFR"
+DEVICE_CONFIG_LABEL,"Visit the Lua Lib in Ethos Suite version 1.6.0 or the official Feedback GitHub repository to access more official tools."
+MORE_TOOLS,"More tools"
