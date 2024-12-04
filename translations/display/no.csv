@@ -735,19 +735,19 @@ UPGRADE_MODULE,"Oppgrader modul"
 AUTHENTICATION_FAILURE,"Feil ved autentisering"
 MODULE_NEEDS_UPGRADE,"Modulen trenger oppgradering"
 CLEAR,"Fjern"
-MIX_SWITCH_DESCRIPTION,""
-MIX_WEIGHT_DESCRIPTION,""
-MIX_CURVE_DESCRIPTION,""
-MIX_DIFFERENTIAL_DESCRIPTION,""
-MIX_OUTPUT_DESCRIPTION,""
-MIX_INPUT_DESCRIPTION,""
-MIX_OPERATION_DESCRIPTION,""
-MIX_REVERSE_DESCRIPTION,""
-MIX_OFFSET_DESCRIPTION,""
-MIX_WEIGHTUP_DESCRIPTION,""
-MIX_WEIGHTDOWN_DESCRIPTION,""
-MIX_SPEEDUP_DESCRIPTION,""
-MIX_SPEEDDOWN_DESCRIPTION,""
+MIX_SWITCH_DESCRIPTION,"Velg en bryter for å endre den aktive/inaktive utgaven av miksen",
+MIX_WEIGHT_DESCRIPTION,"Multipliseringen i % lagt til en innkommende kilde for å bestemme 'output'-verdien av miksen. Dette vil bli kalkulert etter kurven",
+MIX_CURVE_DESCRIPTION,"Velg en kurve for miksen. Dette vil bli kalkulert før parameter vekten",
+MIX_DIFFERENTIAL_DESCRIPTION,"Velg mengden av differensial bevegelse for kanaler",
+MIX_OUTPUT_DESCRIPTION,"Velg kanalen du vil skal bli påvirket av denne miksen",
+MIX_INPUT_DESCRIPTION,"Velg kontroll-kilden for denne miksen",
+MIX_OPERATION_DESCRIPTION,"Velg funksjonstype for miks: Legg til, Multipliser eller Erstatt",
+MIX_REVERSE_DESCRIPTION,"Reverser retningen av kontroll",
+MIX_OFFSET_DESCRIPTION,"Velg mengden offset fra senter",
+MIX_WEIGHTUP_DESCRIPTION,"Velg mengden av bevegelse opp",
+MIX_WEIGHTDOWN_DESCRIPTION,"Velg mengden av bevegelse ned",
+MIX_SPEEDUP_DESCRIPTION,"Velg mengden hastighet opp",
+MIX_SPEEDDOWN_DESCRIPTION,"Velg mengden hastighet ned",
 MIX_LOWPOSTRIM_DESCRIPTION,"Trim kun aktivt på tomgang"
 HELI_PITCH,"Pitch (Heli)"
 HELI_GYRO,"Gyro (Heli)"
@@ -998,7 +998,7 @@ OPERATION_ADD,"Legg til(+)"
 OPERATION_SUBTRACT,"Trekk fra(-)"
 OPERATION_MULTIPLY,"Gange(*)"
 OPERATION_DIVIDE,"Dele(/)"
-SQRT,"Sqrt"
+SQRT,"Sq.root"
 REPURPOSE,"Tar verdi fra"
 SENSOR_CONFLICT_WARNING,"Advarsel Sensor-konflikt"
 NIGHTLY_BUILD_NOT_FOR_FLYING,"'Nightly' utgave. IKKE BRUK DENNE TIL FLYVING!"
@@ -1045,7 +1045,7 @@ SEND_FILE,"Send fil"
 FILE_TRANSFER,"Filoverføring"
 RECEIVE_FILE_HERE,"Motta fil her"
 WAITING_FOR_CONNECTION,"Venter på tilkobling"
-CONNECTION_REFUSED,"Connection refused"
+CONNECTION_REFUSED,"Tilkobling avvist"
 WAITING_FOR_RECEIVER_CONFIRMATION,"Venter på bekreftelse fra mottaker..."
 FILE_TRANSFER_FAILED,"Filoverføring feilet"
 CONFIRM_RECEIVE_FILE_SSS_IN_FOLDER_SSS_SIZE_IS_SSS,"Klar til å motta fil %s i mappe %s\nFilstørrelse er %s"
@@ -1057,7 +1057,7 @@ RECEIVE_MODEL,"Motta modell"
 UNIT_KNOT,"knop"
 UNIT_MILLILITER_PER_PULSE,"ml/p"
 UNIT_RPM,"rpm"
-ARE_YOU_USING_A_FRSKY_SELF_STAB_RECEIVER,"Bruker du en selvstabiliserende mottaker fra FrSky?"
+ARE_YOU_USING_A_FRSKY_SELF_STAB_RECEIVER,"Bruker du en SR/SxR mottaker fra FrSky?"
 ASSIGN_INPUT_HINT,"Vennligst tildel input-kilder for følgende funksjoner"
 EMERGENCY,"Nødstilfelle"
 GAIN_ADJUST,"Gain just."
