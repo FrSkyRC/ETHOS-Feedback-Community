@@ -1,5 +1,6 @@
 TRANSLATION_NAME,"Norsk"
 TRANSLATION_KEY,"no"
+SPECIAL_CHARS,"Åøå´_-+."
 MODEL,"Modell"
 MODEL_SELECT,"Velg modell"
 NO_MODELS_DIRECTORY,"Ingen modell-mappe!"

@@ -1,5 +1,6 @@
 TRANSLATION_NAME,"Italiano",
 TRANSLATION_KEY,"it",
+SPECIAL_CHARS,"ÄäÖöÜüûøàçéèê_-+."
 FORMULA,"Formula",
 CALCULATED_SENSOR,"Sensore Calcolato",
 NAME,"Nome",

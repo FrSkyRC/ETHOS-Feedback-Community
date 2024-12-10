@@ -1,5 +1,6 @@
 TRANSLATION_NAME,"English",
 TRANSLATION_KEY,"en",
+SPECIAL_CHARS,"ø_-+."
 FORMULA,"Formula",
 CALCULATED_SENSOR,"Calculated sensor",
 NAME,"Name",

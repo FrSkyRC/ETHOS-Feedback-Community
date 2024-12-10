@@ -1,5 +1,6 @@
 TRANSLATION_NAME,"Português"
 TRANSLATION_KEY,"pt"
+SPECIAL_CHARS,"ãçíõ_-+."
 FORMULA,"Formula"
 CALCULATED_SENSOR,"Sensor customizado"
 NAME,"Nome"

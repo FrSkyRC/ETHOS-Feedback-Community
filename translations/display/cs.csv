@@ -1,5 +1,6 @@
 TRANSLATION_NAME,"Česky"
 TRANSLATION_KEY,"cz"
+SPECIAL_CHARS,"ÄäÖöÜüßûøàçéèê_-+."
 FORMULA,"Vzorec"
 CALCULATED_SENSOR,"Vypočtený senzor"
 NAME,"Název"
