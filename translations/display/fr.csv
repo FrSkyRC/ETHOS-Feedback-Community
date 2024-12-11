@@ -1,6 +1,6 @@
 TRANSLATION_NAME,"Français",
 TRANSLATION_KEY,"fr",
-SPECIAL_CHARS,"äöüûøàçéèê_-+."
+SPECIAL_CHARS,"äöüûøàçéèê_-+.",
 MODEL,"Modèle",
 MODEL_SELECT,"Choix modèle",
 NO_MODELS_DIRECTORY,"Répertoire modèles absent !",
