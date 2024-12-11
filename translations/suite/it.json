@@ -20,8 +20,8 @@
     },
     "Welcome": {
         "WelcomeToEthosSuite": "Benvenuti nella Ethos Suite",
-        "P1": "Prima di iniziare l'upgrade del firmware, eseguire backup dei files: model.bin files e radio.bin file. Ethos Suite converte I modelli dalle versioni precedenti ma non il contrario. I files di backup sono necessari per ripristinare versioni precedenti.",
-        "P2": "Dopo aver eseguito un aggiornmento, si prega di controllare il modello e le sue programmazioni e funzionalità prima di volare.",
+        "P1": "Prima di iniziare l'upgrade del firmware, eseguire backup dei files: model.bin files e radio.bin file. Ethos Suite converte i modelli dalle versioni precedenti ma non il contrario. I files di backup sono necessari per ripristinare versioni precedenti.",
+        "P2": "Dopo aver eseguito un aggiornamento, si prega di controllare il modello e le sue programmazioni e funzionalità prima di volare.",
         "LatestRelease": "Ultima Release"
     },
     "UpdateNews": {
@@ -53,7 +53,7 @@
         "Logs": "Logs",
         "Screenshots": "Schermate Screenshots",
         "Bootloader": "Bootloader",
-        "FRSKFile": ".frsk File",
+        "FRSKFile": "File .frsk",
         "SytemSettings": "Settaggi di Sistema",
         "Outdated": "Obsoleto",
         "All": "Tutti",
@@ -100,9 +100,10 @@
         "OpenDirectory": "Apri Cartella",
         "SelectAll": "Seleziona tutto",
         "UnselectAll": "Deseleziona tutto",
-        "Refresh": "Refresh",
-        "SystemFiles": "System files",
-        "Dismiss": "Dismiss"
+        "Refresh": "Aggiorna",
+        "SystemFiles": "File di Sistema",
+        "Dismiss": "Dismetti",
+        "ShowPrereleases": "Mostra pre-releases"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Scegliere la versione del video component",
@@ -245,7 +246,7 @@
         "FirmwareFlashSuccess": "Firmware flash riuscito!",
         "FirmwareFlashError": "Errore Flash firmware!",
         "DownloadingSystemFiles": "Scarica files di sistema ...",
-        "CopyingSystemFilesToRadio": "Copying system files to radio ...",
+        "CopyingSystemFilesToRadio": "Copio file di sistema sulla radio ...",
         "DownloadingAudioPack": "Scarico {{ lang }} Pacchetto audio...",
         "CopyingAudioPackToRadio": "Copio {{ lang }} pacchetto audio sulla radio...",
         "UpdateSuccess": "Aggiornamento Riuscito",
