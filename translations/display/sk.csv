@@ -234,7 +234,7 @@ SLAVE_CH,Podriadený CH
 PERCENT,Percent 
 DESTINATION,Cieľ 
 ENABLE,Zap 
-NO_FUNCTION_HINT,"Žiadna funkcia. Ak chcete vytvoriť, stlačte tlačidlo Pridať!" 
+NO_FUNCTION_HINT,Žiadna funkcia. Ak chcete vytvoriť, stlačte tlačidlo Pridať!
 SPECIAL_FUNCTIONS,Špeciálne funkcie 
 SF,SF 
 DISABLE,Vyp 
