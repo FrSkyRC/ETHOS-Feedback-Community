@@ -765,8 +765,8 @@ GYRO_X_AXIS,Gyro os X
 GYRO_Y_AXIS,Gyro os Y 
 GYRO_LEFT,Gyro vľavo 
 GYRO_RIGHT,Gyro vprav 
-GYRO_UP,"""Gyro hore  
-GYRO_DOWN,""Gyro dole" 
+GYRO_UP,Gyro hore  
+GYRO_DOWN,Gyro dole
 AILERON_LETTER,K 
 RUDDER_LETTER,S 
 ELEVATOR_LETTER,V 
@@ -900,7 +900,7 @@ POTS_SLIDERS,Pot / Slidery
 STICKS_POTS_SLIDERS,Páky / Pot / Slidery 
 WRITE_INTERVAL,Interval zápisu 
 TX_BATT,TxBatt 
-AVERAGE,Prieměr 
+AVERAGE,Priemer 
 TOTALIZE,Súhrn 
 CELL,Článok 
 CONSUMPTION,Spotreba 
@@ -932,7 +932,7 @@ FLIGHT_VALUE,Letová hodnota
 CURRENT_FLIGHT_MODE,Aktuálna letová hodnota 
 NO_DESTINATION,Bez cieľa 
 ENT_LONG,ENT dlho 
-RX_STILL_ON_TURN_OFF_TRANSMITTER,Prijímač je stále zapnutý, vypnúť rádio ? 
+RX_STILL_ON_TURN_OFF_TRANSMITTER,Prijímač je stále zapnutý, vypnúť rádio? 
 CONFIRM_RESET_SENSOR,Hodnota tohto senzoru bude resetovaná.\nChcete pokračovať? 
 LATITUDE,Zemepisná šírka 
 LONGITUDE,Zemepisná dĺžka 
@@ -1016,7 +1016,7 @@ OPERATION_DIVIDE,Deliť (/)
 SQRT,Odmocnina 
 REPURPOSE,Znovu použiť trim 
 SENSOR_CONFLICT_WARNING,Varovanie! Konflikt senzorov 
-NIGHTLY_BUILD_NOT_FOR_FLYING,"Neoficiálna verzia, nevhodné k letu!" 
+NIGHTLY_BUILD_NOT_FOR_FLYING,Neoficiálna verzia, nevhodné k letu!
 READING_FILE,Čítam súbor ... 
 NOT_ENOUGH_MEMORY,Nedostatok pamäti 
 CLEAN_LOGS,Odstrániť záznamy 
