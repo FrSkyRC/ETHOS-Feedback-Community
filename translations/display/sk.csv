@@ -76,7 +76,7 @@ MODEL_DATA_LOAD,Dáta modelu nahrané
 FILE_SIZE,Veľkosť súboru 
 MODEL_SELECT,Výber modelu 
 NO_MODELS_DIRECTORY,Neexistuje adresár modelov 
-ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_MODEL,"Ste si istý, že chcete odstrániť tento model?" 
+ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_MODEL,Ste si istý, že chcete odstrániť tento model? 
 SUCCESS,Hotovo! 
 CLONE_MODEL_SUCCESSFULLY,Model je úspešne skopírovaný 
 FILENAME_TOO_LONG,Názov súboru je príliš dlhý! 
