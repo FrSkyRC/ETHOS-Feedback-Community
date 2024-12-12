@@ -624,7 +624,7 @@ FLIGHT_MODE_SHORT,LR
 PREFLIGHT_WARNING,Predletová výstraha 
 NEW_MODEL,Nový model 
 STARTING_CALIBRATION,Spúšťam kalibráciu... 
-NO_SD_CARD_WARNING,"Varovanie, žiadna SD karta" 
+NO_SD_CARD_WARNING,Varovanie, žiadna SD karta
 ADD_CURVE_ERROR,Pridanie krivky zlyhalo! 
 STEP,Krok 
 AILERON,Krídelko 
@@ -747,7 +747,7 @@ MIX_SWITCH_DESCRIPTION,Zvoľte prepínač k aktivácii/deaktivácii mixu
 MIX_WEIGHT_DESCRIPTION,Násobič v % je aplikovaný na zdroj k určeniu výstupnej hodnoty mixu 
 MIX_CURVE_DESCRIPTION,Zvoľte krivku pre mix 
 MIX_DIFFERENTIAL_DESCRIPTION,Vyberte veľkosť rozdielového pohybu pre kanály 
-MIX_OUTPUT_DESCRIPTION,"Vyberte kanál, ktorý má byť týmto mixom ovplyvnený" 
+MIX_OUTPUT_DESCRIPTION,Vyberte kanál, ktorý má byť týmto mixom ovplyvnený 
 MIX_INPUT_DESCRIPTION,Vyberte zdroj ovládania tohto mixu 
 MIX_OPERATION_DESCRIPTION,Vyberte typ funkcie tohto mixu: Pridať, Násobiť alebo Vymeniť 
 MIX_REVERSE_DESCRIPTION,Otočiť smer ovládania 
