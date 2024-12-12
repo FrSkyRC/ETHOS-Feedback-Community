@@ -76,7 +76,7 @@ MODEL_DATA_LOAD,Dáta modelu nahrané
 FILE_SIZE,Veľkosť súboru 
 MODEL_SELECT,Výber modelu 
 NO_MODELS_DIRECTORY,Neexistuje adresár modelov 
-ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_MODEL,Ste si istý, že chcete odstrániť tento model? 
+ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_MODEL,/nSte si istý, že chcete odstrániť tento model? 
 SUCCESS,Hotovo! 
 CLONE_MODEL_SUCCESSFULLY,Model je úspešne skopírovaný 
 FILENAME_TOO_LONG,Názov súboru je príliš dlhý! 
@@ -172,7 +172,7 @@ POINT,Bod
 POINTS_COUNT,Počet bodov 
 EASY_MODE,Jednoduchý režim 
 LOGIC_SWITCHES,Logické spínače 
-ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_LOGIC_SWITCH,Skutočne chcete odstrániť tento logický spínač? 
+ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_LOGIC_SWITCH,/nSkutočne chcete odstrániť tento logický spínač? 
 NO_LOGIC_SWITCH_HINT,Žiadny logický spínač. Prosím zvolte tlačidlo pridať pre vytvorenie! 
 START_CONDITION,Podmienka štartu 
 STOP_CONDITION,Podmienka zastavenia 
@@ -195,7 +195,7 @@ AND_WITH_TWO_SPACES, a
 CURVES,Krivky 
 VARS,Premenné 
 NO_VAR_HINT,Zatiaľ bez premenných. Ak chcete vytvoriť, stlačte tlačidlo Pridať! 
-ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_VAR,Skutočne chcete odstrániť túto premennú? 
+ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_VAR,/nSkutočne chcete odstrániť túto premennú? 
 NO_CURVE_HINT,Žiadna krivka. Ak chcete vytvoriť, stlačte tlačidlo Pridať! 
 CONFIRM_RESET_MIXES,Potvrďte odstránenie mixov. 
 ELEVATORS,Výškovky 
