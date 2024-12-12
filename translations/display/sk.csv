@@ -80,7 +80,7 @@ ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_MODEL,Ste si istý, že chcete odstrániť 
 SUCCESS,Hotovo! 
 CLONE_MODEL_SUCCESSFULLY,Model je úspešne skopírovaný 
 FILENAME_TOO_LONG,Názov súboru je príliš dlhý! 
-RX_STILL_ON_SELECT_ANOTHER_MODEL,"Prijímač je stále zapnutý, ste si istý prepnutím modelu?" 
+RX_STILL_ON_SELECT_ANOTHER_MODEL,Prijímač je stále zapnutý, ste si istý prepnutím modelu? 
 CONFIRM_SELECT_ANOTHER_MODEL,Potvrďte voľbu iného modelu? 
 FILE_NAME,Názov súboru 
 MODEL_TYPE,Typ modelu 
@@ -122,7 +122,7 @@ TIMERS,Stopky
 COPY,Kopírovať 
 NO_TIMER_HINT,Žiadne stopky. Prosím zvolte tlačidlo pridať pre vytvorenie! 
 ANTENNA,Anténa 
-POWER_HAS_BEEN_CHANGED_PLEASE_REBIND,"Výkon bol zmenený, prosím prepárujte!" 
+POWER_HAS_BEEN_CHANGED_PLEASE_REBIND,Výkon bol zmenený, prosím prepárujte! 
 NO_RESPONSE_FROM_MODULE,Modul neodpovedá! 
 POWER,Výkon 
 BAUDRATE,Prenosová rýchlosť 
@@ -165,8 +165,8 @@ WEIGHT,Váha
 POINTS,Body 
 OFFSET,Offset 
 AUTO_OFFSET,Auto offset 
-OFFSET_WHEN_ACTIVE,"Offset, když je line aktivní" 
-OFFSET_WHEN_INACTIVE,"Offset, když je line neaktivní" 
+OFFSET_WHEN_ACTIVE,Offset, když je line aktivní 
+OFFSET_WHEN_INACTIVE,Offset, když je line neaktivní 
 SMOOTH,Vyhladenie 
 POINT,Bod 
 POINTS_COUNT,Počet bodov 
@@ -194,9 +194,9 @@ CURVE_USED_BY,Táto krivka je použitá v týchto mixoch:
 AND_WITH_TWO_SPACES, a  
 CURVES,Krivky 
 VARS,Premenné 
-NO_VAR_HINT,"Zatiaľ bez premenných. Ak chcete vytvoriť, stlačte tlačidlo Pridať!" 
+NO_VAR_HINT,Zatiaľ bez premenných. Ak chcete vytvoriť, stlačte tlačidlo Pridať! 
 ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_VAR,Skutočne chcete odstrániť túto premennú? 
-NO_CURVE_HINT,"Žiadna krivka. Ak chcete vytvoriť, stlačte tlačidlo Pridať!" 
+NO_CURVE_HINT,Žiadna krivka. Ak chcete vytvoriť, stlačte tlačidlo Pridať! 
 CONFIRM_RESET_MIXES,Potvrďte odstránenie mixov. 
 ELEVATORS,Výškovky 
 YAW,Otáčanie 
@@ -511,10 +511,10 @@ GO_TO_SCREEN,Choď na obrazovku
 LOCK_TOUCHSCREEN,Zámok dotyku 
 BLANK,Prázdny 
 CALIBRATE,Kalibrovať 
-CLICK_CALIBRATE_TO_START,"Stlačte ""Kalibrovať"" pre štart" 
-CENTER_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,"Vycentrujte páky/pot/ťahové ovl., potom stlačte ""Ďaľší"" " 
-MOVE_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,"Hýbte pákami/pot/ťahovými ovl do max, potom stlačte ""Ďalší""" 
-CALIBRATION_COMPLETE_CLICK_CONFIRM_TO_STORE,"Kalibrácia je kompletná, stalčte ""Potvrdiť"" pre uloženie do rádia" 
+CLICK_CALIBRATE_TO_START,Stlačte Kalibrovať pre štart
+CENTER_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,Vycentrujte páky/pot/ťahové ovl., potom stlačte Ďaľší
+MOVE_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,Hýbte pákami/pot/ťahovými ovl do max, potom stlačte Ďalší 
+CALIBRATION_COMPLETE_CLICK_CONFIRM_TO_STORE,Kalibrácia je kompletná, stalčte Potvrdiť pre uloženie do rádia
 BACKLIGHT,Podsvietenie 
 DARK_MODE,Tmavý režim 
 HIGHLIGHT_COLOR,Farba zvýraznenia 
@@ -749,7 +749,7 @@ MIX_CURVE_DESCRIPTION,Zvoľte krivku pre mix
 MIX_DIFFERENTIAL_DESCRIPTION,Vyberte veľkosť rozdielového pohybu pre kanály 
 MIX_OUTPUT_DESCRIPTION,"Vyberte kanál, ktorý má byť týmto mixom ovplyvnený" 
 MIX_INPUT_DESCRIPTION,Vyberte zdroj ovládania tohto mixu 
-MIX_OPERATION_DESCRIPTION,"Vyberte typ funkcie tohto mixu: Pridať, Násobiť alebo Vymeniť" 
+MIX_OPERATION_DESCRIPTION,Vyberte typ funkcie tohto mixu: Pridať, Násobiť alebo Vymeniť 
 MIX_REVERSE_DESCRIPTION,Otočiť smer ovládania 
 MIX_OFFSET_DESCRIPTION,Vyberte veľkosť offsetu od stredu 
 MIX_WEIGHTUP_DESCRIPTION,Vyberte rozsah pohybu hore 
@@ -800,17 +800,17 @@ MINIMUM,Minimum
 MOMENTARY,Momentový 
 TWO_POS,2-Poz 
 THREE_POS,3-Poz 
-GYRO_CALIBRATION_PLACE_LEVEL,Umístěte rádio do roviny a po dokončení klikněte na Hotovo 
-GYRO_CALIBRATION_LEFT,Nakloňte rádio do LEVA a po dokončení klikněte na Hotovo 
-GYRO_CALIBRATION_RIGHT,Nakloňte rádio do PRAVA a po dokončení klikněte na Hotovo 
-GYRO_CALIBRATION_NOSE_UP,Nakloňte rádio NAHORU a po dokončení klikněte na Hotovo 
-GYRO_CALIBRATION_NOSE_DOWN,Nakloňte rádio DOLU a po dokončení klikněte na Hotovo 
+GYRO_CALIBRATION_PLACE_LEVEL,Položte rádio na roviny a po dokončení kliknite na Hotovo 
+GYRO_CALIBRATION_LEFT,Naklonte rádio do ĽAVA a po dokončení kliknite na Hotovo 
+GYRO_CALIBRATION_RIGHT,Naklonte rádio do PRAVA a po dokončení kliknite na Hotovo 
+GYRO_CALIBRATION_NOSE_UP,Naklonte rádio HORE a po dokončení kliknite na Hotovo 
+GYRO_CALIBRATION_NOSE_DOWN,Naklonte rádio DOLE a po dokončení kliknite na Hotovo 
 DEFAULT,Východzia 
 STRENGTH,Sila 
 AM,AM 
 PM,PM 
 PLAY_VARIO,Zvuk vária 
-RF_ALWAYS_OFF,"Špeciálny režim, RF bude trvalo vypnutý." 
+RF_ALWAYS_OFF,Špeciálny režim, RF bude trvalo vypnutý. 
 STAB_FUNC,Funkcie stabilizácie 
 RX_PROTOCOL,RX protokol 
 NO_MAP,Bez mapovania 
@@ -932,7 +932,7 @@ FLIGHT_VALUE,Letová hodnota
 CURRENT_FLIGHT_MODE,Aktuálna letová hodnota 
 NO_DESTINATION,Bez cieľa 
 ENT_LONG,ENT dlho 
-RX_STILL_ON_TURN_OFF_TRANSMITTER,"Prijímač je stále zapnutý, vypnúť rádio ?" 
+RX_STILL_ON_TURN_OFF_TRANSMITTER,Prijímač je stále zapnutý, vypnúť rádio ? 
 CONFIRM_RESET_SENSOR,Hodnota tohto senzoru bude resetovaná.\nChcete pokračovať? 
 LATITUDE,Zemepisná šírka 
 LONGITUDE,Zemepisná dĺžka 
@@ -1085,7 +1085,7 @@ REMOTE_NFC,NFC
 SWITCH_CHANNEL,Přepnout kanál 
 WIRELESS,Bezdrátový 
 TIMEOUT,Časový limit 
-NO_ENABLED_MODULE,"Povoľte modul, ktorý chcete spárovať s NFC" 
+NO_ENABLED_MODULE,Povoľte modul, ktorý chcete spárovať s NFC
 GET_MODULE_UUID_FAILED,Nepodarilo sa získať UUID modulu.\nSkontrolujte prosím stav modulu! 
 BIND_NFC_FAILED,Nepodarilo sa spojiť NFC s modulom! 
 PROTOCOL_NOT_SUPPORTED,Aktuální protokol modulu nie je podporovaný! 
