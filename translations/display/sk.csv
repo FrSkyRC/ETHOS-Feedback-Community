@@ -299,10 +299,10 @@ DISCONNECT,Odpojené
 WAITING_FOR_DEVICE,Čakám na spojenie 
 DIST_ADDRESS,Vzdialená adresa 
 CONNECTING,Pripojené 
-ROTARY_ENCODER_HALF_STEPS,Rotary encoder half steps 
+ROTARY_ENCODER_HALF_STEPS,Rotačný enkóder polovičné kroky 
 BLUETOOTH_AUDIO,Bluetooth Audio 
-NOT_INSTALLED,Not installed (default) 
-INSTALLED_AS_AN_OPTION,Installed as an option 
+NOT_INSTALLED,Nenainštalované (default) 
+INSTALLED_AS_AN_OPTION,Inštalácia ako voľba
 RESET_MODULE,Reset modulu 
 HIGH_SPEED,Vysoká rýchlosť 
 NORMAL_SPEED,Normálna rýchlosť 
@@ -312,7 +312,7 @@ FILE_MANAGER,Prieskumník
 SOUND,Zvuk 
 STICKS,Páky 
 DATE_TIME,Dátum a Čas 
-HARDWARE,Hardware 
+HARDWARE,Hardwér
 INFO,Info 
 SERIAL_NUMBER,Sériové číslo 
 RESET_FACTORY_SETTINGS,Reset na továrenské nastavenie 
@@ -338,9 +338,9 @@ ALWAYS_ON,Vždy zapnuté
 YES,Áno 
 DIGITAL_RSSI,Digitálne RSSI 
 GYRO,Gyro 
-GYRO_SWITCHES,Gyro switches 
+GYRO_SWITCHES,Gyro prepínače 
 LANGUAGE,Jazyk 
-SWITCHES,Přepínače 
+SWITCHES,Prepínače 
 TOP_TOOLBAR,Horný panel 
 NO,Nie 
 BRIGHTNESS,Jas 
@@ -355,7 +355,7 @@ DATE,Dátum
 ADJUST_RTC_SPEED,Nastavenie RTC rýchlosti 
 SHOW_SECONDS,Zobraziť sekundy 
 IS24HOUR,24 hodinový čas 
-TIME_ZONE,Časová zóna 
+TIME_ZONE,Časová pásmo 
 YEAR,Rok 
 MONTH,Mesiac 
 TIME,Čas 
@@ -363,7 +363,7 @@ NEXT,Ďalšie
 GYRO_CALIBRATION,Kalibrácia Gyra 
 PREV,Späť 
 MDL_LONG,MDL dlho 
-HARDWARE_CHECK,Kontrola hardwaru 
+HARDWARE_CHECK,Kontrola hardwéru
 SWITCHES_SETTINGS,Nastavenie prepínačov 
 ADC_INSPECTOR,Inšpektor ADC 
 SYS_LONG,SYS dlho 
@@ -385,17 +385,17 @@ STICKS_MODE_3,Mód 3
 STICKS_MODE_4,Mód 4 
 FIRST_FOUR_CHANNELS_FIXED,Prvé 4 kanály fixné 
 NO_SD_CARD,Žiadna SD karta 
-FLASH_BOOTLOADER,Zápis Bootloadera 
-FLASH_INTERNAL_MODULE,Zápis interného modulu 
+FLASH_BOOTLOADER,Aktualizácia bootloadera 
+FLASH_INTERNAL_MODULE,Aktualizácia interného modulu 
 PLAY,Prehrať 
 CURRENT_VERSION,Aktuálna verzia 
-FLASH_RECEIVER_BY_INTERNAL_MODULE_OTA,Zápis RX cez interný modul OTA 
-FLASH_RECEIVER_BY_EXTERNAL_MODULE_OTA,Zápis RX cez extrný modul OTA 
+FLASH_RECEIVER_BY_INTERNAL_MODULE_OTA,Aktualizácia RX cez interný modul OTA 
+FLASH_RECEIVER_BY_EXTERNAL_MODULE_OTA,Aktualizácia RX cez extrný modul OTA 
 OTA_UPDATE,Aktualizácia OTA 
-FLASH_EXTERNAL_DEVICE,Zápis externej jednotky 
+FLASH_EXTERNAL_DEVICE,Aktualizácia externej jednotky 
 OPEN,Otvoriť 
-FLASH_EXTERNAL_MODULE,Zápis externého modulu 
-FLASH_EXTERNAL_MULTIMODULE,Zápis externého multimodulu 
+FLASH_EXTERNAL_MODULE,Aktualizácia externého modulu 
+FLASH_EXTERNAL_MULTIMODULE,Aktualizácia externého multimodulu 
 MOVE_HERE,Presunúť sem 
 OTA_UPDATE_ERROR,Chyba aktualizácie OTA 
 UNSUPPORTED_RX,Nepodporovaný RX 
@@ -444,7 +444,7 @@ MODEL_BITMAP,Obrázok modelu
 TAIL_TYPE,Typ chvosta 
 TRADITIONAL,Tradičný 
 VTAIL,V-Tail 
-REVERSE,Reverse 
+REVERSE,Reverz
 RATE,Rate 
 UP,Hore 
 DOWN,Dole 
@@ -502,7 +502,7 @@ RF_PROTOCOL,RF protokol
 EXTERNAL_RF,Externý RF 
 LOGIC_SWITCH_RANGE,Rozsah logického prepínača 
 PLAY_SEQUENCE,Prehrať sekvenciu 
-WAIT_DURATION,Doba čekání 
+WAIT_DURATION,Doba čakania
 WAIT_CONDITION,Podmienka čakania 
 CONFIRM_DELETE_LINE,Potvrďte odstránenie riadku 
 ADD_A_NEW_LINE_IN_SEQUENCE,Pridanie nového riadku do sekvencie 
@@ -620,7 +620,7 @@ VOLTAGE_CALIBRATION,Kalibrácia napätia
 STARTING_MODEL_WIZARD,Spúšťanie sprievodcu modelu... 
 RADIO_DATA_LOAD,Dáta rádia nahrané 
 DEFAULT_SYSTEM_SETTINGS_RESTORED,Obnovenie továrenského nastavenia systému. 
-FLIGHT_MODE_SHORT,LR 
+FLIGHT_MODE_SHORT,Krátky letový režim 
 PREFLIGHT_WARNING,Predletová výstraha 
 NEW_MODEL,Nový model 
 STARTING_CALIBRATION,Spúšťam kalibráciu... 
@@ -630,7 +630,7 @@ STEP,Krok
 AILERON,Krídelko 
 SPACE_WITH_CHANNEL,Kanál 
 ELEVON,Výškovka 
-QUESTION_SWAP_SSS_AND_SSS_CHANNELS_SETTINGS,Chcete zameniť zameniť kanálov %s a %s? 
+QUESTION_SWAP_SSS_AND_SSS_CHANNELS_SETTINGS,Chcete zameniť nastavenia kanálov %s a %s? 
 INPUT,Vstup 
 ELE_TO_AIL,Výškovka → Krídelka 
 THR_CURVE,Krivka plynu 
@@ -662,7 +662,7 @@ TRIM_STEP_EXPONENTIAL,Trim krok exponenciálny
 TRIM_STEP_EXTRA_FINE,Trim krok extra jemný 
 TRIM_STEP_MEDIUM,Trim krok stredný 
 TRIM_STEP_CUSTOM,Vlastný 
-SCREENSHOT,Screenshot 
+SCREENSHOT,Obrazovka 
 SILENT,Tichý 
 ALARMS_ONLY,Len alarmy 
 OFTEN,Často 
@@ -710,7 +710,7 @@ THR_TO_RUD,Plyn → Smerovka
 TEMPERATURE,Teplota 
 DATA_RATE,Rýchlosť prenosu dát 
 GPS,GPS 
-GAS_SUITE,Gas Suite 
+GAS_SUITE,Sprievodca nastavením plynu 
 FLOW_RESET,Reset prietoku 
 CDI_OFF_SPEED_LIMIT,Limit rychlosti vypnutí CDI 
 FLOW_PULSE,Pulz prietoku 
@@ -809,7 +809,7 @@ DEFAULT,Východzia
 STRENGTH,Sila 
 AM,AM 
 PM,PM 
-PLAY_VARIO,Zvuk vária 
+PLAY_VARIO,Spustiť vario 
 RF_ALWAYS_OFF,Špeciálny režim RF bude trvalo vypnutý. 
 STAB_FUNC,Funkcie stabilizácie 
 RX_PROTOCOL,RX protokol 
@@ -833,8 +833,8 @@ PLACE_RECEIVE_LEFT,Položte prijímač na ľavú stranu.
 PLACE_RECEIVE_RIGHT,Položte prijímač na pravú stranu. 
 PLACE_RECEIVE_FORWARD,Položte prijímač na prednú stranu. 
 PLACE_RECEIVE_BACKWARD,Položte prijímač na zadnú stranu. 
-ADD_A_NEW_WEIGHT,+ Pridať váhu 
-ADD_A_NEW_CURVE,+ Pridať krivku 
+ADD_A_NEW_WEIGHT,Pridať váhu 
+ADD_A_NEW_CURVE,Pridať krivku 
 AUDIO,Zvuk 
 VOICE,Hlas 
 VAR,Var 
@@ -847,7 +847,7 @@ EDIT_SSS,Upraviť %s
 RESET_SSS,%s Reset 
 OPTIONS_3DOTS,Možnosti... 
 QUESTION_COPY_CHANNEL_NAME,Kánal nemá názov.\nChcete skopírovať názov mixu do kanálu? 
-FLY_BAR_LESS,Flybarless 
+FLY_BAR_LESS,Fly bar less 
 WING_RUD_ELE_AIL,Klasické lietadlo 
 WING_FLYING,Delta krídlo 
 WING_VTAIL_AIL,Letadlo VTail 
@@ -865,7 +865,7 @@ ELE2_INVERTED,Invertovaná výškovka 2
 RUD_INVERTED,Invertovaný smer 
 AUX1_ENABLE,Zapnutie AUX1 
 AUX2_ENABLE,Zapnutie AUX2 
-QUICK_MODE,Quick Mode 
+QUICK_MODE,Rýchly mód 
 SELF_CHECK,Vlastná kontrola 
 STAB_GAIN_OF_AIL,Zisk stabilizácie krídelok 
 STAB_GAIN_OF_ELE,Zisk stabilizácie výškovky 
@@ -896,8 +896,8 @@ SYSTEM_VALUE,Systémová hodnota
 GPS_CLOCK,Dátum Čas GPS 
 RACING_MODE_ACTIVE,Aktivovaný závodný mód. 
 RACING_MODE_IS_UNSUPPORTED,Závodný mód nie je  podporovaný. 
-POTS_SLIDERS,Pot / Slidery 
-STICKS_POTS_SLIDERS,Páky / Pot / Slidery 
+POTS_SLIDERS,Pot / Ťahové ovl. 
+STICKS_POTS_SLIDERS,Páky / Pot / Ťahové ovl. 
 WRITE_INTERVAL,Interval zápisu 
 TX_BATT,TxBatt 
 AVERAGE,Priemer 
@@ -1007,7 +1007,7 @@ WAKE_UP_RESET,Reset pri prebudení
 WATCHDOG_RESET,Watchdog Reset 
 LOCKUP_RESET,Lockup Reset 
 BROWN_DOWN_DET_RESET,Zistený reset zlyhanie napájania
-RX_RESET_CASE,Kdy resetovat RX 
+RX_RESET_CASE,Kedy resetovať RX 
 OPERATION_ASSIGN,Priradiť (=) 
 OPERATION_ADD,Pridať (+) 
 OPERATION_SUBTRACT,Odobrať (-) 
@@ -1018,7 +1018,7 @@ REPURPOSE,Znovu použiť trim
 SENSOR_CONFLICT_WARNING,Varovanie! Konflikt senzorov 
 NIGHTLY_BUILD_NOT_FOR_FLYING,Neoficiálna verzia nevhodné k letu!
 READING_FILE,Čítam súbor ... 
-NOT_ENOUGH_MEMORY,Nedostatok pamäti 
+NOT_ENOUGH_MEMORY,Nedostatok pamäte 
 CLEAN_LOGS,Odstrániť záznamy 
 CONFIRM_CLEAN_LOGS,Potvrďte odstránenie záznamov. 
 CLEANING_LOGS,Odstraňujem záznamy ... 
@@ -1082,13 +1082,13 @@ DISABLE_XXX,Vypnúť %s?
 CONFIRMATION_BEFORE_ACTIVE,Potvrdenie pred aktiváciou 
 CONFIRMATION_BEFORE_INACTIVE,Potvrdenie pred deaktiváciou 
 REMOTE_NFC,NFC 
-SWITCH_CHANNEL,Přepnout kanál 
+SWITCH_CHANNEL,Prepnúť kanál 
 WIRELESS,Bezdrátový 
 TIMEOUT,Časový limit 
 NO_ENABLED_MODULE,Povoľte modul ktorý chcete spárovať s NFC
 GET_MODULE_UUID_FAILED,Nepodarilo sa získať UUID modulu.\nSkontrolujte prosím stav modulu! 
 BIND_NFC_FAILED,Nepodarilo sa spojiť NFC s modulom! 
-PROTOCOL_NOT_SUPPORTED,Aktuální protokol modulu nie je podporovaný! 
+PROTOCOL_NOT_SUPPORTED,Aktuálny protokol modulu nie je podporovaný! 
 CONFIRM_DELETE_TRIM,Potvrďte zamazanie trimu 
 LEFT_STICK,Ľavá páka 
 RIGHT_STICK,Pravá páka 
