@@ -25,7 +25,7 @@ BEHAVIOUR,Chovanie
 ADD_NEW_BEHAVIOUR,Pridať nové chovanie  
 ADD_EXTRA_TRIM,Pridať extra trim 
 EXTRA_TRIM,Extra trim 
-SLOW_UP,Pomal& hore 
+SLOW_UP,Pomaly hore 
 MIN,Min 
 CURVE,Krivka 
 MAX,Max 
@@ -246,8 +246,8 @@ RX_NAME,Názov RX
 RECEIVER_CONNECTED,Prijímač pripojený 
 REGISTRATION,Registrácia 
 TRIMS,Trimy 
-FADE_IN,Náběh 
-FADE_OUT,Sestup 
+FADE_IN,Nábeh 
+FADE_OUT,Výbeh 
 AUTO_DETECT,Autodetekcia 
 DISPLAY_DECIMALS_AND_UNIT,Presnosť zobrazenia / jednotka 
 SELECT_SENSOR,Vyberte senzor 
@@ -257,13 +257,13 @@ BAND,Pásmo
 RATIO,Pomer 
 MODULE,Modul 
 PROTOCOL_DECIMALS_AND_UNIT,Presnosť protokolu / jednotka 
-CROSS_TRIM,Přiřazení trimů 
+CROSS_TRIM,Priradenie trimrov
 MOVE_TRIM_TO_SUBTRIM,Presunúť trim do subtrimu 
 INSTANT_TRIM,Okamžitý trim 
-CONFIRM_MOVE_TRIM_TO_SUBTRIM,Potvrdte presun trimu do subtrimu 
+CONFIRM_MOVE_TRIM_TO_SUBTRIM,Potvrďte presun trimu do subtrimu 
 MOVE_TRIMS_TO_SUBTRIMS,Presunúť trimy do subtrimov 
-CONFIRM_MOVE_TRIMS_TO_SUBTRIMS,Potvrdte presun trimov do subtrimov 
-INDEPENDENT_PER_FLIGHT_MODE,Individuální trim podle let. režimu 
+CONFIRM_MOVE_TRIMS_TO_SUBTRIMS,Potvrďte presun trimov do subtrimov 
+INDEPENDENT_PER_FLIGHT_MODE,Individuálny trim podľa let. režimu 
 STICK,Páka 
 CONFIGURE_SCREENS,Nastavenie obrazoviek 
 TOP_SCREEN,Horná obrazovka 
@@ -372,8 +372,8 @@ POTS_SLIDERS_SETTINGS,Nastavenie pot/ťahových ovl.
 SWITCH_MIDDLE_DETECT_DELAY,Oneskorenie detekcie stredovej polohy 
 DISP_SHORT,{DISP_LABEL} krátky 
 DISP_LONG,{DISP_LABEL} dlhý 
-SWITCH,Přepínač 
-ANALOGS_FILTER,Analogový filter 
+SWITCH,Prepínač 
+ANALOGS_FILTER,Analógový filter 
 ANALOGS_CALIBRATION,Kalibrácia pák 
 CONFIRM_CONTINUE,Potvrďte pokračovanie 
 THR_NOT_LOW_WARNING,Plyn nie je na voľnobehu 
@@ -419,7 +419,7 @@ REPEAT_AT_ZERO,Opakovať do nuly
 FIXED_WING,Lietadlo 
 GLIDER,Vetroň 
 HELI,Vrtuľník 
-MULTI,Multikoptér 
+MULTI,Multikoptéra 
 OTHER,Iné 
 CALIBRATION,Kalibrácia 
 INPUTS,Vstupy 
@@ -513,7 +513,7 @@ BLANK,Prázdny
 CALIBRATE,Kalibrovať 
 CLICK_CALIBRATE_TO_START,Stlačte Kalibrovať pre štart
 CENTER_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,Vycentrujte páky/pot/ťahové ovl. potom stlačte Ďaľší
-MOVE_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,Hýbte pákami/pot/ťahovými ovl do max potom stlačte Ďalší 
+MOVE_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,Hýbte pákami/pot/ťahovými ovl. do max potom stlačte Ďalší 
 CALIBRATION_COMPLETE_CLICK_CONFIRM_TO_STORE,Kalibrácia je kompletná stalčte Potvrdiť pre uloženie do rádia
 BACKLIGHT,Podsvietenie 
 DARK_MODE,Tmavý režim 
@@ -564,8 +564,8 @@ RB_OUTPUT_2_VOLTAGE,Napätie Výstup 2
 GASSUIT_TEMP1,Plyn Teplota 1 
 GASSUIT_TEMP2,Plyn Teplota 2 
 GASSUIT_SPEED,Plyn RPM 
-GASSUIT_RES_VOL,Plyn Res. Vol. 
-GASSUIT_RES_PERC,Plyn Res. % 
+GASSUIT_RES_VOL,Plyn rozl. Vol. 
+GASSUIT_RES_PERC,Plyn rozl. % 
 GASSUIT_FLOW,Plyn prietok 
 GASSUIT_MAX_FLOW,Plyn max prietok 
 GASSUIT_AVG_FLOW,Plyn priem prietok 
@@ -688,8 +688,8 @@ FLIGHT_SAFETY,Flight safety
 VARIOMETER,Výškomer 
 ALARMS,Alarmy 
 SENSOR,Senzor 
-RX_BATT,RxBatt 
-RX_CURRENT,RxPrúd 
+RX_BATT,Rx batéria 
+RX_CURRENT,Rx prúd 
 ALTITUDE,Výška 
 VSPEED,Vertikálna rýchlosť 
 SELECT_LANGUAGE,Výber jazyka 
@@ -810,7 +810,7 @@ STRENGTH,Sila
 AM,AM 
 PM,PM 
 PLAY_VARIO,Spustiť vario 
-RF_ALWAYS_OFF,Špeciálny režim RF bude trvalo vypnutý. 
+RF_ALWAYS_OFF,Režim RF bude trvalo vypnutý. 
 STAB_FUNC,Funkcie stabilizácie 
 RX_PROTOCOL,RX protokol 
 NO_MAP,Bez mapovania 
@@ -825,8 +825,8 @@ RX3_MAP,RX3 Map
 ALL_FREQUENCY,Všetky frekvencie 
 STICKS_NAME,Názvy pák 
 CHANNELS_COUNT,Počet kanálov 
-EXT,Ext 
-INT,Int 
+EXT,Externý 
+INT,Interný 
 PLACE_RECEIVE_LEVEL,Položte prijímač na rovinu. 
 PLACE_RECEIVE_LEVEL_REVERSE,Položte prijímač na rovinu vrchom. 
 PLACE_RECEIVE_LEFT,Položte prijímač na ľavú stranu. 
@@ -839,14 +839,14 @@ AUDIO,Zvuk
 VOICE,Hlas 
 VAR,Var 
 VOLUME,Hlasitosť 
-SAVE_TO_FLASH,Uložitťdo pamete 
+SAVE_TO_FLASH,Uložiť do pamäte 
 SAVE_TO_FLASH_MESSAGE,Všetky nastavenia boli uložené do pamäte! 
 TIMER_GENERATOR,Generátor časovača 
 CONFIRM_CLEAR_CHANNEL_DDD_NAME,Kanál %d nie je použitý v žiadnom mixe.\nChcete vymazať názov? 
 EDIT_SSS,Upraviť %s 
 RESET_SSS,%s Reset 
 OPTIONS_3DOTS,Možnosti... 
-QUESTION_COPY_CHANNEL_NAME,Kánal nemá názov.\nChcete skopírovať názov mixu do kanálu? 
+QUESTION_COPY_CHANNEL_NAME,Kánal nemá názov.Chcete skopírovať názov mixu do kanálu? 
 FLY_BAR_LESS,Fly bar less 
 WING_RUD_ELE_AIL,Klasické lietadlo 
 WING_FLYING,Delta krídlo 
@@ -933,7 +933,7 @@ CURRENT_FLIGHT_MODE,Aktuálna letová hodnota
 NO_DESTINATION,Bez cieľa 
 ENT_LONG,ENT dlho 
 RX_STILL_ON_TURN_OFF_TRANSMITTER,Prijímač je stále zapnutý vypnúť rádio? 
-CONFIRM_RESET_SENSOR,Hodnota tohto senzoru bude resetovaná.\nChcete pokračovať? 
+CONFIRM_RESET_SENSOR,Hodnota tohto senzoru bude resetovaná.Chcete pokračovať? 
 LATITUDE,Zemepisná šírka 
 LONGITUDE,Zemepisná dĺžka 
 GPS_MAP,GPS Mapa 
@@ -967,8 +967,8 @@ SUMMARY,Sumár
 CONFIRM_STOP_USING_CURVE,Potvrďte ukončenie používania krivky 
 CONFIRM_STOP_USING_RATE,Potvrďte ukončenie používania rozsahu 
 PATTERN,Pole 
-ROLL_ANGLE,R.Angle 
-PITCH_ANGLE,P.Angle 
+ROLL_ANGLE,Uhol otáčania
+PITCH_ANGLE,Uhol sklonu
 HYDRAULIC_PRESSURE,Hydraulický tlak 
 IGNORE_TRAINER_INPUT,Nie je ovládané žiakom 
 FULL_RANGE,Plný rozsah 
@@ -980,7 +980,7 @@ TOP_LCD_SLEEP,Spánok hornej obrazovky
 VIEW_PER_CHANNEL,Zobrazenie po kanáloch 
 VIEW_TABLE,Tabuľkové zobrazenie 
 GENERAL,Hlavné 
-RX_STILL_ON_TURN_OFF_RF,Prijímač je stále pripojený.\nChcete pokračovať? 
+RX_STILL_ON_TURN_OFF_RF,Prijímač je stále pripojený. Chcete pokračovať? 
 LOAD_ALL_FUNCTION_SWITCH_POSITIONS,Načítať polohy všetkých funkčných tlačítok 
 CONFIRM_LOAD_ALL_FUNCTION_SWITCH_POSITIONS,Táto operácia prepíše pozície všetkých tlačítok na aktuálne. Chcete pokračovať? 
 STORAGE_LOCATION,Umiestnenie úložiska 
@@ -1025,11 +1025,11 @@ CLEANING_LOGS,Odstraňujem záznamy ...
 PAUSE_CONDITION,Pauza 
 RESET_SETTINGS,Reset nastavení 
 SWAP_CHANNELS,Zámena kanálov 
-CONFIRM_RESET_SETTINGS,Potvrďte reset nastavení\nChcete pokračovať? 
-CONFIRM_SWITCH_EXTERNAL_MODULE,Nyní je použit externí modul. Bude zastavený.\nChcete pokračovať? 
-CONFIRM_SWITCH_TRAINER,Tréner teraz používa externý modul. Bude zastavený.\nChcete pokračovať? 
+CONFIRM_RESET_SETTINGS,Potvrďte reset nastavení. Chcete pokračovať? 
+CONFIRM_SWITCH_EXTERNAL_MODULE,Teraz je použitý externý modul. Bude zastavený. Chcete pokračovať? 
+CONFIRM_SWITCH_TRAINER,Tréner teraz používa externý modul. Bude zastavený. Chcete pokračovať? 
 COMPETITION_OPTION,Turnaj (len RSSI a Batéria) 
-CONFIRM_BLUETOOTH_USED_BY_SSS,Bluetooth teraz používa %s. Bude zastavené.\nChcete pokračovať? 
+CONFIRM_BLUETOOTH_USED_BY_SSS,Bluetooth teraz používa %s. Bude zastavené. Chcete pokračovať? 
 BOTH_MODULES,Obidve moduly 
 SPORT_CONNECTOR,S.Port konektor 
 CONFIRM_SPORT_USED_BY_SSS,S.Port konektor práve používa %s. Chcete pokračovať? 
