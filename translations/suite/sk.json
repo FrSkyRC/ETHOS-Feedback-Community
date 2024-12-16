@@ -20,7 +20,7 @@
     },
     "Welcome": {
         "WelcomeToEthosSuite": "Vitajte v Ethos Suite",
-        "P1": "Pred spustením aktualizácie firmwéru zálohujte súbory model.bin a radio.bin. Ethos Suite vykoná konverziu modelu zo staršej na novšiu, ale nie naopak. Zálohované súbory sú potrebné na návrat k predchádzajúcim verziám verzím.",
+        "P1": "Pred spustením aktualizácie firmwéru zálohujte súbory model.bin a radio.bin. Ethos Suite vykoná konverziu modelu zo staršej na novšiu, ale nie naopak. Zálohované súbory sú potrebné na návrat k predchádzajúcim verziám.",
         "P2": "Po aktualizácii skontrolujte nastavenie modelu pred letom, aby ste se uistili, že všetko funguje správne.",
         "LatestRelease": "Aktuálne vydanie"
     },
@@ -154,11 +154,11 @@
         "NoFRSKFileFound": "Žiadny .frsk súbor nebol nájdený v zip balíku",
         "MultipleFRSKDetected": "Viac nájdených .frsk súborov. Prosím vyberte .frsk súbor pre zápis",
         "ProductList": "Zoznam produktov",
-        "ProductAssets": "Aktíva produktu"
+        "ProductAssets": "Dostupné verzie"
     },
     "VersionTag": {
         "MissingRemoteVersion": "Chýba vzdialená verzia",
-        "NoCurrentVersion": "Žádná aktuálna verzia",
+        "NoCurrentVersion": "Žiadna aktuálna verzia",
         "OutOfDate": "Neaktuálna",
         "GreaterThanLatestRelease": "Vyššia než aktuálna verzia",
         "UpToDate": "Aktuálna",
@@ -213,7 +213,7 @@
         "RecommendUpdate": "Doporučujeme aktualizáciu na {{ recommend }} pre lepšie využitie",
         "MissingRequiredComponentVersion": "Chýba požadovaná verzia komponentu",
         "TargetFirmwareNotCompatible": "The {{ targetComponent }} firmware version {{ targetVersion }} needs to be used with the {{ requireComponent }} firmware version {{ requireVersion }}.",
-        "RequireUpdate": "Please update the {{ requireComponent }} firmware to version {{ requireVersion }} firstly."
+        "RequireUpdate": "Prosím aktualizujte {{ requireComponent }} najprv na verziu {{ requireVersion }} ."
     },
     "RadioTool": {
         "ComparedWithTheLatestStabVersion": "(V porovnaní s najnovšou stabilnou verziou)",
@@ -249,11 +249,11 @@
         "DownloadingAudioPack": "Sťahovanie {{ lang }} zvukového balíka...",
         "CopyingAudioPackToRadio": "Kopírovanie {{ lang }} zvukového balíka do rádia...",
         "UpdateSuccess": "Aktualizácia ukončená",
-        "WriteBootloader": "Zápis bootloadera",
+        "WriteBootloader": "Aktualizácia bootloadera",
         "DownloadingBootloader": "Sťahovanie bootloadera...",
         "CopyingBootloaderToRadio": "Kopírovanie bootloadera do rádia...",
-        "FlashingBootloader": "Zápis bootloader...",
-        "BootloaderFlashError": "Chyba zápisu bootloadera!",
+        "FlashingBootloader": "Aktualizujem bootloader...",
+        "BootloaderFlashError": "Chyba aktualizácie bootloadera!",
         "VersionNotSupportedToStartFirmware": "Táto verzia bootloadera nepodporuje prepnutie do firmwéru!",
         "VersionNotSupportedToStartBootloader": "Táto verzia firmwéru nepodporuje prepnutie do bootloadera!",
         "OperationCancelled": "Opreácia je zrušená!",
@@ -293,7 +293,7 @@
         "BackupYourRadio": "Zálohuj rádio",
         "BackupLocation": "Lokácia zálohy",
         "LastBackupTime": "Posledný čas vytvorenia zálohy",
-        "NotBackupYet": "Radio nie je zálohované",
+        "NotBackupYet": "Rádio nie je zálohované",
         "Backup": "Záloha",
         "Restore": "Obnovenie",
         "ModelsList": "Zoznam modelov",
@@ -487,7 +487,7 @@
     },
     "Product": {
         "Servos": "Servá",
-        "Transmitters": "Vysielkače",
+        "Transmitters": "Vysielače",
         "Flight-Safe System": "Letové bezpečnostné systémy",
         "Accessories": "Príslušenstvo",
         "ESC": "ESC",
