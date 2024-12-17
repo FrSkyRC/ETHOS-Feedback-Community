@@ -1,6 +1,6 @@
 TRANSLATION_NAME != ,"Slovensky"
 TRANSLATION_KEY,"sk "
-SPECIAL_CHARS,"áčéíľřťúýä_-+. "
+SPECIAL_CHARS,"áčéíľščžťťúýäôň_-+. "
 FORMULA,"Vzorec "
 CALCULATED_SENSOR,"Vypočítaný senzor "
 NAME,"Názov "
