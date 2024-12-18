@@ -42,7 +42,7 @@
         "ReleaseDate": "Dátum vydania",
         "Detail": "Detail",
         "DownloadFailed": "Stiahnutie zlyhalo!",
-        "AssetError": "Chyba aktív!",
+        "AssetError": "Chyba dostupnej verzie!",
         "Cancelled": "Zrušené",
         "Success": "Hotovo",
         "Audio": "Audio",
@@ -111,16 +111,16 @@
         "Version2": "Verzia 2"
     },
     "DFUFlasher": {
-        "DFUFlasher": "DFU zapisovač",
+        "DFUFlasher": "DFU inštalátor",
         "ChooseBootloaderBin": "Vyberte súbor bootloaderu",
         "SelectBootloader": "Vyberte bootloader",
         "BootloaderInfo": "Bootloader Info:",
         "CAUTION": "Pozor!",
         "NotSuitable": "Tento súbor .frsk nie je vhodný pre vaše rádio. Upozorňujeme, že môže dôjsť k poškodeniu!",
         "UnknownFile": "Neznámy súbor. Upozorňujeme, že to môže zpôsobiť poškodenie vašeho zariadenia!",
-        "ClickToFlash": "Kliknutím spustíte zápis bootloaderu",
-        "Success": "Zápis bootloaderu bol úspešný!",
-        "Failed": "Zápis zlyhal!",
+        "ClickToFlash": "Kliknutím spustíte aktualizáciu bootloadera",
+        "Success": "Aktualizácia bootloaderu bola úspešná!",
+        "Failed": "Aktualizácia zlyhala!",
         "FlashingBootloader": "Nahrávam bootloader...",
         "DFUWriting": "DFU zápis, OK {{ value }} % ...",
         "PermissionDenied": "Prístup zamietnutý!",
@@ -242,8 +242,8 @@
         "CopyingFirmwareToRadio": "Kopírujem firmvér do rádia...",
         "UnmountingDrives": "Odpojiť disky...",
         "WritingFirmware": "Nahrávam operačný systém...",
-        "FirmwareFlashSuccess": "Zápis firmvéru úspešný!",
-        "FirmwareFlashError": "Zápis firmvéru zlyhal!",
+        "FirmwareFlashSuccess": "Aktualizácia firmvéru úspešná!",
+        "FirmwareFlashError": "Aktualizácia firmvéru zlyhala!",
         "DownloadingSystemFiles": "Sťahovanie systémových súborov ...",
         "CopyingSystemFilesToRadio": "Kopírovanie systémových súborov do rádia ...",
         "DownloadingAudioPack": "Sťahovanie {{ lang }} zvukového balíka...",
@@ -256,7 +256,7 @@
         "BootloaderFlashError": "Chyba aktualizácie bootloadera!",
         "VersionNotSupportedToStartFirmware": "Táto verzia bootloadera nepodporuje prepnutie do firmwéru!",
         "VersionNotSupportedToStartBootloader": "Táto verzia firmwéru nepodporuje prepnutie do bootloadera!",
-        "OperationCancelled": "Opreácia je zrušená!",
+        "OperationCancelled": "Operácia je zrušená!",
         "ComponentNotFound": "Zodpovedajúci komponent sa nepodarilo nájsť!",
         "DownloadFailed": "Sťahovanie zlyhalo!",
         "StartUpdating": "Štart aktualizácie...",
@@ -286,7 +286,7 @@
         "GoToEthosManage": "Choď  do Ethos manažéra",
         "ModuleFirmwareList": "Zozanm firmvéru pre RF moduly",
         "FirmwareDetail": "Informácie o firmvéri",
-        "FlashModule": "Zápis modulu"
+        "FlashModule": "Aktualizácia modulu"
     },
     "ModelTool": {
         "ModelManager": "Správca modelov",
@@ -325,7 +325,7 @@
         "BackupDate": "Dátum zálohovania",
         "BackupComponents": "Zálohované komponenty",
         "AnalysingComponents": "Analyzovanie komponentov...",
-        "BackupNotMatchRadio": "Táto záloha sa nezhoduje s vaším rádiom. Chcete pokračovať?",
+        "BackupNotMatchRadio": "Táto záloha sa nezhoduje s vašim rádiom. Chcete pokračovať?",
         "WritingBackupFile": "Zapisuje sa záložný súbor..."
     },
     "About": {
@@ -399,7 +399,7 @@
         "FrskGuideFinish": "Znova pripojte rádio a kliknite na \"Finish\" tlačidlo po dokončení aktualizácie"
     },
     "FlashGuide": {
-        "FlashGuideTitle": "Automatické zápis sa nespustil úspešne. Dokončite proces manuálne podľa pokynov",
+        "FlashGuideTitle": "Automatická aktualizácia sa nespustila úspešne. Dokončite proces manuálne podľa pokynov",
         "FlashGuideStep": "Súbor firmware.bin pripravený. Stačí odpojiť USB kábel a aktualizácia sa spustí automaticky",
         "FlashGuideFinish": "Znova pripojte rádio a kliknite na \"Finish\" tlačidlo po dokončení aktualizácie"
     },
@@ -408,7 +408,7 @@
         "NandBootloaderGuideStep1": "Uistite sa, že váš počítač má správne nainštalovaný ovládač DFU",
         "NandBootloaderGuideStep2": "Navštívte GitHub a stiahnite si bootloader podľa príslušného rádia",
         "NandBootloaderGuideStep3": "Pripojte rádio, keď je vypnuté",
-        "NandBootloaderGuideStep4": "Prejdite na DFU zapisovač, vyberte bootloader.frsk, ktorý ste si práve stiahli, a kliknite \"Zápis\""
+        "NandBootloaderGuideStep4": "Prejdite na DFU inštalátor, vyberte bootloader.frsk, ktorý ste si práve stiahli, a kliknite \"Zápis\""
     },
     "LanguageManager": {
         "LanguageManager": "Správca jazykov",
