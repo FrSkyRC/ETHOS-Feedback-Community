@@ -1,4 +1,4 @@
-{
+zia{
     "Language": "Slovenčina",
     "MainPage": {
         "Welcome": "Vitajte",
@@ -150,7 +150,7 @@
         "LuaScripts": "Lua skripty",
         "DownloadFirmware": "Stiahnutie firmvéru",
         "DownloadScripts": "Stiahnutie skriptov",
-        "DownloadAssetSuccessfully": "Dielo bolo úspešne stiahnuté!",
+        "DownloadAssetSuccessfully": "Verzia bola úspešne stiahnutá!",
         "NoFRSKFileFound": "Žiadny .frsk súbor nebol nájdený v zip balíku",
         "MultipleFRSKDetected": "Viac nájdených .frsk súborov. Prosím vyberte .frsk súbor pre zápis",
         "ProductList": "Zoznam produktov",
@@ -284,7 +284,7 @@
     "RFModule": {
         "RFModule": "RF Modul",
         "GoToEthosManage": "Choď  do Ethos manažéra",
-        "ModuleFirmwareList": "Zozanm firmvéru pre RF moduly",
+        "ModuleFirmwareList": "Zoznam firmvéru pre RF moduly",
         "FirmwareDetail": "Informácie o firmvéri",
         "FlashModule": "Aktualizácia modulu"
     },
