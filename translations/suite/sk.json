@@ -102,7 +102,7 @@
         "UnselectAll": "Zrušiť všetko",
         "Refresh": "Obnoviť",
         "SystemFiles": "Systémové súbory",
-        "Dismiss": "Zamietnuté"
+        "Dismiss": "Zrušiť"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Zvoľte verziu vašej zobrazovacej jednotky",
@@ -134,7 +134,7 @@
         "FileInfo": "Info o súbore:",
         "CAUTION": "Pozor!",
         "ClickToFlash": "Kliknutím spustíte zápis do zariadenia",
-        "FlashingDevice": "Zapisujem do zariadenia...",
+        "FlashingDevice": "Aktualizujem zariadenie...",
         "Success": "Zápis .frsk úspešný!",
         "Failed": "Zápis zlyhal!",
         "DownloadingFRSK": "Sťahovanie .frsk...",
@@ -232,12 +232,12 @@
         "EjectDrives": "Vysunúť disky",
         "SwitchToEthos": "Prepnúť na Ethos",
         "SwitchToBootloader": "Prepnúť na Bootloader",
-        "WriteAllComponents": "Zápis všetkých zariadení",
-        "WriteOutdated": "Zápis neaktuálnych zariadení",
-        "WriteFirmware": "Zápis firmvéru",
-        "WriteFirmwareAndSystemFiles": "Zápis firmwéru a systémových súborov",
-        "WriteAudio": "Zápis zvukových súborov",
-        "WriteSystemBitmaps": "Zápis systémových grafických súborov",
+        "WriteAllComponents": "Aktualizácia všetkých zariadení",
+        "WriteOutdated": "Aktualizácia zastaraných zariadení",
+        "WriteFirmware": "Aktualizácia firmvéru",
+        "WriteFirmwareAndSystemFiles": "Aktualizácia firmwéru a systémových súborov",
+        "WriteAudio": "Aktualizácia zvukových súborov",
+        "WriteSystemBitmaps": "Aktualizácia systémových grafických súborov",
         "DownloadingFirmware": "Sťahujem firmvér...",
         "CopyingFirmwareToRadio": "Kopírujem firmvér do rádia...",
         "UnmountingDrives": "Odpojiť disky...",
@@ -326,7 +326,7 @@
         "BackupComponents": "Zálohované komponenty",
         "AnalysingComponents": "Analyzovanie komponentov...",
         "BackupNotMatchRadio": "Táto záloha sa nezhoduje s vašim rádiom. Chcete pokračovať?",
-        "WritingBackupFile": "Zapisuje sa záložný súbor..."
+        "WritingBackupFile": "Nahráva sa záložný súbor..."
     },
     "About": {
         "About": "O aplikácii",
