@@ -499,5 +499,8 @@
         "Sensors": "Sensoren",
         "VTX": "Video-Übertragungssysteme",
         "Radio": "Sender"
+    },
+    "ResourcesCenter": {
+        "ResourcesCenter": "Resources Center"
     }
 }

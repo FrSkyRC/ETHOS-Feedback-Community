@@ -498,5 +498,8 @@
         "Sensors": "Sensori",
         "VTX": "VTX",
         "Radio": "Radio"
+    },
+    "ResourcesCenter": {
+        "ResourcesCenter": "Resources Center"
     }
 }

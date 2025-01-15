@@ -498,5 +498,8 @@
         "Sensors": "传感器",
         "VTX": "VTX",
         "Radio": "遥控器"
+    },
+    "ResourcesCenter": {
+        "ResourcesCenter": "Resources Center"
     }
 }

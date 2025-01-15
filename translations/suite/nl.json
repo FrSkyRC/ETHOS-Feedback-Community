@@ -499,5 +499,8 @@
         "Sensors": "Sensors",
         "VTX": "VTX",
         "Radio": "Radio"
+    },
+    "ResourcesCenter": {
+        "ResourcesCenter": "Resources Center"
     }
 }

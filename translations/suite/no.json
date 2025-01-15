@@ -500,5 +500,8 @@
         "Sensors": "Sensorer",
         "VTX": "VTX",
         "Radio": "Radio"
+    },
+    "ResourcesCenter": {
+        "ResourcesCenter": "Resources Center"
     }
 }
