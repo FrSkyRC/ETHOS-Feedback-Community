@@ -210,6 +210,7 @@ local function parseParameterInfoMessage(data)
                 {
                   label = "Cancel",
                   action = function()
+                    pushFrame(0x2D, {deviceId, handsetId, field.id, 5}) -- lcsCancelled
                     fieldPopup = nil
                     return true
                   end
@@ -229,6 +230,7 @@ local function parseParameterInfoMessage(data)
                 {
                   label = "Cancel",
                   action = function()
+                    pushFrame(0x2D, {deviceId, handsetId, field.id, 5}) -- lcsCancelled
                     fieldPopup = nil
                     return true
                   end
