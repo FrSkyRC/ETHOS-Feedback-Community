@@ -1,6 +1,7 @@
 String name, String context, X20(...) / XE(S) / V20, X18RS / X14(...) / T14 / V15, All other radios
 TRANSLATION_NAME,,"中文"
 TRANSLATION_KEY,,"cn"
+SPECIAL_CHARS,,"_-+."
 FORMULA,,"计算"
 CALCULATED_SENSOR,,"计算传感器"
 NAME,,"名称"

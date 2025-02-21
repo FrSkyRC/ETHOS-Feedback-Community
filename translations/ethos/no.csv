@@ -1,6 +1,7 @@
 String name, String context, X20(...) / XE(S) / V20, X18RS / X14(...) / T14 / V15, All other radios
 TRANSLATION_NAME,,"Norsk"
 TRANSLATION_KEY,,"no"
+SPECIAL_CHARS,,"Åøå´_-+."
 MODEL,,"Modell"
 MODEL_SELECT,,"Velg modell"
 NO_MODELS_DIRECTORY,,"Ingen modell-mappe!"

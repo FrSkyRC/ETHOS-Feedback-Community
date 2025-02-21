@@ -1,6 +1,7 @@
 Clef, Contexte, X20(...) / XE(S) / V20, X14(...) / T14 / V15, Autres radios
 TRANSLATION_NAME,,"Français",
 TRANSLATION_KEY,,"fr",
+SPECIAL_CHARS,,"äöüûøàçéèê_-+.",
 MODEL,,"Modèle",
 MODEL_SELECT,,"Choix modèle",
 NO_MODELS_DIRECTORY,,"Répertoire modèles absent !",
