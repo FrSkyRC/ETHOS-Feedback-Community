@@ -1130,3 +1130,4 @@ WAITING_FOR_NFC_CARD,,"Prosím podržte NFC čip blízko \n NFC spínače pro p�
 BIND_CARD_SUCCESS,,"Úspěšné párování NFC čipu!"
 BIND_CARD_FAIL,,"Párování NFC čipu se nezdařilo!"
 BUS_INVERT,F.Bus and F.Port inverted on receiver (Yes / No),"Bus invert"
+SBEC_INPUT_VOLT,"None","SBEC input volt."

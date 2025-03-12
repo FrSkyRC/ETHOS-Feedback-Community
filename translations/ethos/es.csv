@@ -1130,3 +1130,4 @@ WAITING_FOR_NFC_CARD,,"Mantega la tarjeta NFC cerca del NFC remoto para vincular
 BIND_CARD_SUCCESS,,"¡Tarjeta NFC vinculada con éxito!"
 BIND_CARD_FAIL,,"¡Tarjeta NFC no se ha vinculado!"
 BUS_INVERT,F.Bus and F.Port inverted on receiver (Yes / No),"Buses invertidos en receptor"
+SBEC_INPUT_VOLT,"None","SBEC input volt."

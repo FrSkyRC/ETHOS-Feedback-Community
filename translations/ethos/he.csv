@@ -1170,3 +1170,4 @@ WAITING_FOR_NFC_CARD,,"Please hold the NFC key close to the RemoteNFC panel for 
 BIND_CARD_SUCCESS,,"Bind NFC card successfully!"
 BIND_CARD_FAIL,,"NFC card is not successfully bound!"
 BUS_INVERT,F.Bus and F.Port inverted on receiver (Yes / No),"Bus invert"
+SBEC_INPUT_VOLT,"None","SBEC input volt."

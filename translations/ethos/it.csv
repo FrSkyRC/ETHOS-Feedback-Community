@@ -1130,3 +1130,4 @@ WAITING_FOR_NFC_CARD,,"Si prega di tenere la tessera NFC vicino al comando remot
 BIND_CARD_SUCCESS,,"Bind Tessera NFC eseguito!"
 BIND_CARD_FAIL,,"Bind Tessera NFC fallito!"
 BUS_INVERT,F.Bus e F.Port invertite su ricevente (Si / No),"Inverti BUS"
+SBEC_INPUT_VOLT,"None","SBEC input volt."

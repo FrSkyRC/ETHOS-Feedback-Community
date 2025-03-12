@@ -1130,3 +1130,4 @@ WAITING_FOR_NFC_CARD,,"Maintenir la clé NFC proche du panneau NFC pour appairag
 BIND_CARD_SUCCESS,,"Appairage carte NFC réussi !",
 BIND_CARD_FAIL,,"Echec appairage carte NFC !",
 BUS_INVERT,F.Bus and F.Port inverted on receiver (Yes / No),"Bus inversé",
+SBEC_INPUT_VOLT,"None","SBEC input volt."
