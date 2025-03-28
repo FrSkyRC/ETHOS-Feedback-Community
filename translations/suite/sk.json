@@ -104,8 +104,8 @@
         "SystemFiles": "Systémové súbory",
         "Dismiss": "Zrušiť",
         "ShowPrereleases": "Ukázať pre-releases",
-        "VisitThirdparty": "Visit thirdparty url",
-        "PathInvalid": "The selected file path contains invalid characters, and the file has been removed from the list"
+        "VisitThirdparty": "Navštíviť web tretej strany",
+        "PathInvalid": "Zvolená cesta k súboru obsahuje neplatné znaky, súbor bude odstránený zo zoznamu"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Zvoľte verziu vašej zobrazovacej jednotky",
