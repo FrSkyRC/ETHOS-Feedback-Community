@@ -21,6 +21,12 @@ local function paint(widget)
     -- Demo of a bitmap
     lcd.setClipping()
     lcd.drawBitmap(10, 25, bitmap)
+
+    -- Demo of a filled triangle
+    local x = 50
+    local y = 225
+    lcd.color(WHITE)
+    lcd.drawFilledTriangle(x, y+6, x+5, y, x+5, y+10)
 end
 
 local function init()

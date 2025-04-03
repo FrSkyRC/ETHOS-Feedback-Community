@@ -1,4 +1,4 @@
-local LUA_VERSION = "3.0.5";
+local LUA_VERSION = "3.0.6";
 
 TEST = false
 GlobalPath = ""
@@ -43,8 +43,6 @@ local finalTime = nil
 local OPERATION_TIMEOUT = 1 -- second(s)
 local MAX_TIMEOUT = 10
 
-local supportFields = nil
-
 local createNeeded = false
 local createFunction = nil
 
@@ -78,7 +76,7 @@ local REMOTE_DEVICE = {address = 0xFE, state = STATE_READ, field = nil, label = 
     if family.ID == Product.family then
       for j, product in pairs(family.Products) do
         if product.ID == Product.id then
-          supportFields = product.SupportFields
+          Product.supportFields = product.SupportFields
           if task.field ~= nil then
             task.field:value(product.Name)
             task.state = STATE_PASS
@@ -112,13 +110,12 @@ end}
 local tasks = {REMOTE_DEVICE, REMOTE_VERSION}
 local currentTask = nil
 local function clearAllTasks()
-  for i, task in pairs(tasks) do
+  for _, task in pairs(tasks) do
     task.state = STATE_READ
     if task.field ~= nil then
       task.field:value(STR("Reading"))
     end
   end
-  supportFields = nil
   Product.resetProduct()
 end
 
@@ -339,7 +336,7 @@ local function buildBackupForm(ePanel, focusRefresh)
 end
 
 local function buildpage()
-  if supportFields == nil then
+  if not Product.exist() then
     return
   end
 
@@ -347,7 +344,7 @@ local function buildpage()
   buildBackupForm(configureForm)
 
   for index, page in pairs(pages) do
-    for i, supportField in pairs(supportFields) do
+    for i, supportField in pairs(Product.supportFields) do
       if supportField == index then
         if page.name ~= nil then
           local line = form.addLine(page.name)
@@ -417,7 +414,7 @@ end
 local function checkNextTask()
   local allPass = true
   if TEST then
-    supportFields = {1, 2, 3, 4}
+    Product.supportFields = {1, 2, 3, 4}
     Product.family = 2
     Product.id = 79
   end
@@ -436,7 +433,7 @@ local function checkNextTask()
     end
   end
 
-  if allPass and supportFields ~= nil then
+  if allPass and Product.exist() then
     buildpage()
   end
   print("All task finished")

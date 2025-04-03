@@ -105,6 +105,7 @@ local function init()
     system.registerMultimoduleProtocol("WK2x01", 30, {variants={"WK2801", "WK2401", "W6_5_1", "W6_6_1", "W6_HEL", "W6_HEL_I"}})
     system.registerMultimoduleProtocol("XERALL", 91, {variants={"Tank"}})
     system.registerMultimoduleProtocol("XK", 62, {variants={"X450", "X420"}})
+    system.registerMultimoduleProtocol("XK2", 99, {variants={"X4", "P10"}})
     system.registerMultimoduleProtocol("YD717", 8, {variants={"YD717", "SKYWLKR", "SYMAX4", "XINXUN", "NIHUI"}})
     system.registerMultimoduleProtocol("ZSX", 52, {variants={"280"}})
 end

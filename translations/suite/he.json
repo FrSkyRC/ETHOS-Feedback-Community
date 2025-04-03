@@ -160,7 +160,7 @@
         "ProductAssets": "Product assets"
     },
     "VersionTag": {
-        "MissingRemoteVersion": "Missing remote version",
+        "FetchingFromServer": "Fetching from the server ...",
         "NoCurrentVersion": "אין גרסה נוכחית",
         "OutOfDate": "לא עדכני",
         "GreaterThanLatestRelease": "גבוה יותר מגרסה אחרונה",

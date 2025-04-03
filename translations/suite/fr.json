@@ -104,8 +104,8 @@
         "SystemFiles": "Fichiers système",
         "Dismiss": "Annuler",
         "ShowPrereleases": "Affichage pré-versions",
-        "VisitThirdparty": "Visit thirdparty url",
-        "PathInvalid": "The selected file path contains invalid characters, and the file has been removed from the list"
+        "VisitThirdparty": "Accéder url accessoires",
+        "PathInvalid": "Le répertoire sélectionné contient des caractères non valides, et le fichier a été retiré de la liste"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Choisir votre version de composant vidéo",
@@ -160,7 +160,7 @@
         "ProductAssets": "Gamme de produits"
     },
     "VersionTag": {
-        "MissingRemoteVersion": "Version distante manquante",
+        "FetchingFromServer": "Fetching from the server ...",
         "NoCurrentVersion": "Pas de nouvelle version",
         "OutOfDate": "Mise à jour disponible",
         "GreaterThanLatestRelease": "Supérieure à la version actuelle",

@@ -9,6 +9,8 @@ local GYRO_MODE_CHECK_REQUEST = 0
 local GYRO_MODE_CHECK_RESPONSE = 1
 local GYRO_MODE_CHECK_PASS = 2
 local GYRO_MODE_CHECK_REJECT = 3
+local GYRO_MODE_CHECK_GIVEUP = 4
+local GYRO_MODE_CHECK_CHANGE = 5
 local gyroModeCheck = GYRO_MODE_CHECK_REQUEST
 local GYRO_MODE_CHECK_DETAIL = {address = 0xA4, passFunction = function(value4Bytes) return ((value4Bytes >> 8) & 0xFF) > 0  end}
 
@@ -22,7 +24,19 @@ local nextOpTime
 local caliButton = nil
 
 local function isSR6Mini()
-  return Product.family and Product.family == 2 and Product.id and (Product.id == 79 or Product.id == 80)
+  return Product.exist() and Product.family == 2 and Product.id and (Product.id == 79 or Product.id == 80)
+end
+
+local function hasBasicConfiguration()
+  if not Product.exist() or Product.family ~= 2 then
+    return false
+  end
+  for _, value in ipairs(Product.supportFields) do
+    if value == 1 then
+      return true
+    end
+  end
+  return false
 end
 
 local SR6_CALI_LABELS = {
@@ -56,7 +70,7 @@ end
 local function getCaliLabel()
   if gyroModeCheck <= GYRO_MODE_CHECK_RESPONSE then
     return STR("CheckingGyroMode")
-  elseif gyroModeCheck == GYRO_MODE_CHECK_REJECT then
+  elseif gyroModeCheck > GYRO_MODE_CHECK_PASS then
     return STR("GyroModeDisabled")
   elseif isSR6Mini() then
     return SR6_CALI_LABELS[step + 1]
@@ -116,11 +130,11 @@ end
 local function pageInit()
   step = 0
   calibrationState = CALIBRATION_INIT
-  gyroModeCheck = GYRO_MODE_CHECK_REQUEST
+  gyroModeCheck = hasBasicConfiguration() and GYRO_MODE_CHECK_REQUEST or GYRO_MODE_CHECK_PASS
 
   local line = form.addLine("", nil, false)
   caliButton = form.addTextButton(line, nil, STR("Calibrate"), function() doCalibrate() end)
-  caliButton:enable(false)
+  caliButton:enable(gyroModeCheck == GYRO_MODE_CHECK_PASS)
 
   bitmap = lcd.loadBitmap(getCaliBitmapPath())
 end
@@ -164,6 +178,21 @@ local function wakeup()
       lcd.invalidate()
     elseif os.clock() >= nextOpTime then
       gyroModeCheck = GYRO_MODE_CHECK_REQUEST
+    end
+  elseif gyroModeCheck == GYRO_MODE_CHECK_CHANGE then
+    if Sensor.writeParameter(GYRO_MODE_CHECK_DETAIL.address, 1) then
+      gyroModeCheck = GYRO_MODE_CHECK_REQUEST
+    end
+  elseif gyroModeCheck == GYRO_MODE_CHECK_REJECT then
+    if not Dialog.isDialogOpen() then
+      local buttons = {{label = STR("Close"), action = function ()
+        gyroModeCheck = GYRO_MODE_CHECK_GIVEUP
+        Dialog.closeDialog()
+      end}, {label = STR("OK"), action = function ()
+        gyroModeCheck = GYRO_MODE_CHECK_CHANGE
+        Dialog.closeDialog()
+      end}}
+      Dialog.openDialog({title = STR("OpenGyroMode"), message = STR("ConfirmOpenGyroMode"), buttons = buttons})
     end
   elseif nextStep then
     if step < 6 then

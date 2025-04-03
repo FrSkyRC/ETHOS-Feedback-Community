@@ -1,4 +1,4 @@
-Clef, Contexte, X20(...) / XE(S) / V20, X14(...) / T14 / V15, Autres radios
+Clef, Contexte, X20(...) / XE(S) / V20, X14(...) / T14 / V15, Autres radios,
 TRANSLATION_NAME,,"Français",
 TRANSLATION_KEY,,"fr",
 MODEL,,"Modèle",
@@ -1130,4 +1130,4 @@ WAITING_FOR_NFC_CARD,,"Maintenir la clé NFC proche du panneau NFC pour appairag
 BIND_CARD_SUCCESS,,"Appairage carte NFC réussi !",
 BIND_CARD_FAIL,,"Echec appairage carte NFC !",
 BUS_INVERT,F.Bus and F.Port inverted on receiver (Yes / No),"Bus inversé",
-SBEC_INPUT_VOLT,"None","SBEC input volt."
+SBEC_INPUT_VOLT,"None","Tension entrée SBEC",

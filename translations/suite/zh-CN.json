@@ -160,7 +160,7 @@
         "ProductAssets": "产品附件"
     },
     "VersionTag": {
-        "MissingRemoteVersion": "没有远程版本号",
+        "FetchingFromServer": "正在从服务器拉取 ...",
         "NoCurrentVersion": "未找到当前版本号",
         "OutOfDate": "已过期",
         "GreaterThanLatestRelease": "领先于服务器版本",

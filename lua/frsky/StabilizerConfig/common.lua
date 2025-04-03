@@ -2,6 +2,10 @@ local Product = {}
 Product.resetProduct = function ()
   Product.family = nil
   Product.id = nil
+  Product.supportFields = nil
+end
+Product.exist = function ()
+  return Product.family ~= nil and Product.id ~= nil and Product.supportFields ~= nil
 end
 
 local Module = {}

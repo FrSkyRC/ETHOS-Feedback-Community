@@ -160,7 +160,7 @@
         "ProductAssets": "Dostupné verzie"
     },
     "VersionTag": {
-        "MissingRemoteVersion": "Chýba vzdialená verzia",
+        "FetchingFromServer": "Načítavanie zo servera ...",
         "NoCurrentVersion": "Žiadna aktuálna verzia",
         "OutOfDate": "Neaktuálna",
         "GreaterThanLatestRelease": "Vyššia než aktuálna verzia",
