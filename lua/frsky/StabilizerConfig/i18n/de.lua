@@ -28,7 +28,7 @@ return {
   Disable = "Deaktiviert",
   Enable = "Aktiviert",
   Back = "Zurück",
-  Open = "Offen",
+  Open = "Öffnen",
   OK = "OK",
   Reset = "Zurücksetzen",
 
@@ -83,7 +83,7 @@ return {
   CaliFinished = "Kalibrierung beendet. Sie können diese Seite jetzt verlassen",
 
   CheckingGyroMode = "Überprüfung des Kreiselmodus ...",
-  GyroModeDisabled = "Please ENABLE the \"Gyro mode\" in Basic Configuration",
+  GyroModeDisabled = "Bitte aktivieren Sie den \"Gyro mode\" in der Grundkonfiguration",
 
   PreCaliLevelCali = "Einbaulage kalibrieren",
   PreCaliStickCenter = "Knüppelmitte kalibrieren",
