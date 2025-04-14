@@ -28,7 +28,7 @@ return {
   Disable = "Deaktiviert",
   Enable = "Aktiviert",
   Back = "Zurück",
-  Open = "Offen",
+  Open = "Öffnen",
   OK = "OK",
   Reset = "Zurücksetzen",
 
@@ -63,6 +63,8 @@ return {
   WaitUntilCali = "Bitte warten, bis die Kalibrierung abgeschlossen ist ...",
   PressCaliToStart = "Drücken Sie die Taste \"Calibrate\" um zu starten.",
   CalibrationFinished = "Kalibrierung abgeschlossen!",
+  OpenGyroMode = "Kreiselmodus nicht aktiviert!",
+  ConfirmOpenGyroMode = "Möchen Sie den \"Gyro mode\" aktivieren?",
 
   CaliSR6Step1 = "Legen Sie den SR6 horizontal mit der Oberseite nach oben.",
   CaliSR6Step2 = "Legen Sie den SR6 horizontal mit der Oberseite nach unten.",
@@ -81,7 +83,7 @@ return {
   CaliFinished = "Kalibrierung beendet. Sie können diese Seite jetzt verlassen",
 
   CheckingGyroMode = "Überprüfung des Kreiselmodus ...",
-  GyroModeDisabled = "Kreiselmodus nicht aktiviert!",
+  GyroModeDisabled = "Bitte aktivieren Sie den \"Gyro mode\" in der Grundkonfiguration",
 
   PreCaliLevelCali = "Einbaulage kalibrieren",
   PreCaliStickCenter = "Knüppelmitte kalibrieren",
@@ -106,8 +108,8 @@ return {
   MountingType = "Einbauart",
   Horizontal = "Horizontal",
   HorizontalRev = "Horizontal reverse",
-  Vertical = "Vertical",
-  VerticalRev = "Vertical reverse",
+  Vertical = "Vertikal",
+  VerticalRev = "Vertikal reverse",
   CHMode = "{{ CH }} Modus",
   CHInvert = "{{ CH }} invertiert",
   CHStabGain = "{{ CH }} Stabi-Modus Empfindl.",

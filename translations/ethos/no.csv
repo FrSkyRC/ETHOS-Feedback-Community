@@ -1130,3 +1130,4 @@ WAITING_FOR_NFC_CARD,,"Vennligst hold NFC-kortet inn mot\n'Remote NFC'-panelet f
 BIND_CARD_SUCCESS,,"Vellykket NFC-kort binding!"
 BIND_CARD_FAIL,,"NFC-kortet ble ikke vellykket bundet!"
 BUS_INVERT,F.Bus and F.Port inverted on receiver (Yes / No),"Reverser F.Bus/F.Port"
+SBEC_INPUT_VOLT,"None","SBEC input volt."

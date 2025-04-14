@@ -104,7 +104,7 @@
         "SystemFiles": "Systémové súbory",
         "Dismiss": "Zrušiť",
         "ShowPrereleases": "Ukázať pre-releases",
-        "VisitThirdparty": "Navštíviť web tretej strany",
+        "VisitThirdparty": "Navštíviť webovú lokalitu tretích strán",
         "PathInvalid": "Zvolená cesta k súboru obsahuje neplatné znaky, súbor bude odstránený zo zoznamu"
     },
     "ChooseVideoVersion": {
@@ -160,7 +160,7 @@
         "ProductAssets": "Dostupné verzie"
     },
     "VersionTag": {
-        "MissingRemoteVersion": "Chýba vzdialená verzia",
+        "FetchingFromServer": "Načítavanie zo servera ...",
         "NoCurrentVersion": "Žiadna aktuálna verzia",
         "OutOfDate": "Neaktuálna",
         "GreaterThanLatestRelease": "Vyššia než aktuálna verzia",

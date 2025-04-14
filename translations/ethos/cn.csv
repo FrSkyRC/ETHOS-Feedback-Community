@@ -1172,3 +1172,4 @@ WAITING_FOR_NFC_CARD,,"请将 NFC 卡片靠近 Remote NFC 面板等待卡片绑�
 BIND_CARD_SUCCESS,,"NFC 卡片绑定成功!"
 BIND_CARD_FAIL,,"NFC 卡片绑定失败!"
 BUS_INVERT,F.Bus and F.Port inverted on receiver (Yes / No),"Bus invert"
+SBEC_INPUT_VOLT,"None","SBEC input volt."

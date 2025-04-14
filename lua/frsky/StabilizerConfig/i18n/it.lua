@@ -63,6 +63,8 @@ return {
   WaitUntilCali = "Attendere la fine della calibrazione...",
   PressCaliToStart = "Premi \"Calibra\" per iniziare",
   CalibrationFinished = "Calibrazione finita!",
+  OpenGyroMode = "Gyro non abilitato",
+  ConfirmOpenGyroMode = "Vuoi abilitare \"Gyro mode\"?",
 
   CaliSR6Step1 = "Metti la SR6 orizzontale, parte superiore su.",
   CaliSR6Step2 = "Metti la SR6 orizzontale, parte superiore giù.",
@@ -81,7 +83,7 @@ return {
   CaliFinished = "Calibrazione completata. Puoi uscire da questa pagina",
 
   CheckingGyroMode = "Controllo modo gyro ...",
-  GyroModeDisabled = "Modo Gyro non abilitato!",
+  GyroModeDisabled = "ABILITA \"Gyro mode\" nella Configurazione Base",
 
   PreCaliLevelCali = "Calibrazione Livello",
   PreCaliStickCenter = "Calibrazione centro Stick",
@@ -95,7 +97,7 @@ return {
 
   ConfirmToBegin = "Si prega di confermare per iniziare",
 
-  ConfirmReset = "Confirma reset",
+  ConfirmReset = "Conferma reset",
   ResetLabel = "I settaggi stanno per essere resettati.\nSi prega di confermare per continuare.",
   Stabilizer = "Stabilizzatore",
   QuickMode = "Modo Veloce",

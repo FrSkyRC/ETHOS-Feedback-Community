@@ -63,6 +63,8 @@ return {
   WaitUntilCali = "Espere hasta que la calibración haya terminado ...",
   PressCaliToStart = "Presione el botón \"Calibrar\" para empezar",
   CalibrationFinished = "¡Calibración terminada!",
+  OpenGyroMode = "Gyro mode not enabled",
+  ConfirmOpenGyroMode = "Do you want to enable \"Gyro mode\"?",
 
   CaliSR6Step1 = "Coloque su SR6 horizontal, parte superior hacia arriba.",
   CaliSR6Step2 = "Coloque su SR6 horizontal, parte superior hacia abajo.",
@@ -81,7 +83,7 @@ return {
   CaliFinished = "Calibración terminada. Ya puede salir de esta página",
 
   CheckingGyroMode = "Comprobando el modo giro ...",
-  GyroModeDisabled = "¡Modo giro no habilitado!",
+  GyroModeDisabled = "Please ENABLE the \"Gyro mode\" in Basic Configuration",
 
   PreCaliLevelCali = "Calibración de nivelación",
   PreCaliStickCenter = "Calibración de centrado palanca",

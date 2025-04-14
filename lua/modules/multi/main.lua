@@ -17,6 +17,7 @@ local RF_TUNE_OPTION = {name="RF tune", min=-128, max=127}
 local DSM2_ENABLE_MAX_THROW_OPTION = {name="Enable max throw", type="checkbox", min=0, max=0x80}
 local DSM2_SERVO_REFRESH_RATE_OPTION = {name="Servo refresh rate", type="choice", max=0x40, values={{"22ms", 0x00}, {"11ms", 0x40}}}
 local FLYSKY_SERVO_REFRESH_RATE_OPTION = {name="Servo refresh rate", min=0, max=70, display=function(value) return (value * 5 + 50) .. "Hz" end}
+local FIXED_ID = {name="Fixed ID", type="checkbox", min=0, max=0x00000001}
 
 local function init()
     system.registerMultimoduleProtocol("Assan", 24, {options={BIND_ON_CHANNEL_OPTION, DISABLE_TELEMETRY_OPTION, LOW_POWER_OPTION}})
@@ -29,7 +30,7 @@ local function init()
     system.registerMultimoduleProtocol("CG023", 13, {variants={"CG023", "YD829"}})
     system.registerMultimoduleProtocol("Corona", 37, {variants={"COR_V1", "COR_V2", "FD_V3"}, options={RF_TUNE_OPTION}})
     system.registerMultimoduleProtocol("CX10", 12, {variants={"GREEN", "BLUE", "DM007", "0", "J3015_1", "J3015_2", "MK33041"}})
-    system.registerMultimoduleProtocol("Devo", 7, {variants={"8CH", "10CH", "12CH", "6CH", "7CH"}})
+    system.registerMultimoduleProtocol("Devo", 7, {variants={"8CH", "10CH", "12CH", "6CH", "7CH"}, options={FIXED_ID}})
     system.registerMultimoduleProtocol("DM002", 33)
     system.registerMultimoduleProtocol("DSM_RX", 70, {variants={"Multi", "CPPM"}})
     system.registerMultimoduleProtocol("E010R5", 81)
@@ -44,7 +45,7 @@ local function init()
     system.registerMultimoduleProtocol("FlySky AFHDS 2A", 28, {variants={"PWM+IBUS", "PPM+IBUS", "PWM+SBUS", "PPM+SBUS", "PWM+IBUS16", "PPM+IBUS16"}, features=FAILSAFE, options={FLYSKY_SERVO_REFRESH_RATE_OPTION}})
     system.registerMultimoduleProtocol("Flysky AFHDS2A RX", 56, {variants={"Multi", "CPPM"}})
     system.registerMultimoduleProtocol("FQ777", 23)
-    system.registerMultimoduleProtocol("FrSky D8", 3, {options={RF_TUNE_OPTION}, minChannels=8, maxChannels=8})
+    system.registerMultimoduleProtocol("FrSky D8", 3, {variants={"D8", "Cloned"}, options={RF_TUNE_OPTION}, minChannels=8, maxChannels=8})
     system.registerMultimoduleProtocol("FrskyL", 67, {variants={"LR12", "LR12 6CH"}})
     system.registerMultimoduleProtocol("FrSky V", 25, {options={RF_TUNE_OPTION}})
     system.registerMultimoduleProtocol("FrskyX", 15, {variants={"CH_16", "CH_8", "EU_16", "EU_8", "Cloned", "Cloned_8"}, options={RF_TUNE_OPTION}})
@@ -104,6 +105,7 @@ local function init()
     system.registerMultimoduleProtocol("WK2x01", 30, {variants={"WK2801", "WK2401", "W6_5_1", "W6_6_1", "W6_HEL", "W6_HEL_I"}})
     system.registerMultimoduleProtocol("XERALL", 91, {variants={"Tank"}})
     system.registerMultimoduleProtocol("XK", 62, {variants={"X450", "X420"}})
+    system.registerMultimoduleProtocol("XK2", 99, {variants={"X4", "P10"}})
     system.registerMultimoduleProtocol("YD717", 8, {variants={"YD717", "SKYWLKR", "SYMAX4", "XINXUN", "NIHUI"}})
     system.registerMultimoduleProtocol("ZSX", 52, {variants={"280"}})
 end

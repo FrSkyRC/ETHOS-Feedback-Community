@@ -63,6 +63,8 @@ return {
   WaitUntilCali = "Attendre la fin de la calibration ...",
   PressCaliToStart = "Appuyer sur \"Calibrer\" pour commencer",
   CalibrationFinished = "Calibration terminée !",
+  OpenGyroMode = "Gyro non activé",
+  ConfirmOpenGyroMode = "Activer \"Gyro\"?",
 
   CaliSR6Step1 = "Positionner le SR6 horizontalement, connecteurs en haut.",
   CaliSR6Step2 = "Positionner le SR6 horizontalement, connecteurs en bas.",
@@ -71,8 +73,8 @@ return {
   CaliSR6Step5 = "Positionner le SR6 ANT à droite, connecteurs face à vous.",
   CaliSR6Step6 = "Positionner le SR6 ANT à droite, connecteurs face opposée.",
 
-  CaliCommonStep1 = "Positionner le Rx Stab. horizontalement with the front facing up.",
-  CaliCommonStep2 = "Positionner le Rx Stab. horizontalement with the back facing up.",
+  CaliCommonStep1 = "Positionner le Rx Stab. horizontalement avant vers le haut.",
+  CaliCommonStep2 = "Positionner le Rx Stab. horizontalement arrière vers le haut.",
   CaliCommonStep3 = "Positionner le Rx Stab. verticalement, marquage vers la gauche.",
   CaliCommonStep4 = "Positionner le Rx Stab. verticalement, marquage vers la droite.",
   CaliCommonStep5 = "Positionner le Rx Stab. verticalement, marquage affiché normalement.",
@@ -81,7 +83,7 @@ return {
   CaliFinished = "Calibration terminée. Vous pouvez quitter cette page",
 
   CheckingGyroMode = "Vérification mode gyro ...",
-  GyroModeDisabled = "Mode gyro non activé !",
+  GyroModeDisabled = "Please ENABLE the \"Gyro mode\" in Basic Configuration",
 
   PreCaliLevelCali = "Calibration niveau",
   PreCaliStickCenter = "Calibration centres",

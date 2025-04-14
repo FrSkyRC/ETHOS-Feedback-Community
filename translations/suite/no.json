@@ -160,7 +160,7 @@
         "ProductAssets": "Produkt elementer"
     },
     "VersionTag": {
-        "MissingRemoteVersion": "Mangler 'remote' versjon",
+        "FetchingFromServer": "Henter fra server ...",
         "NoCurrentVersion": "Ingen nåværende versjon",
         "OutOfDate": "Utdatert",
         "GreaterThanLatestRelease": "Større enn siste utgivelse",

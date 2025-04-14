@@ -102,9 +102,9 @@
         "Refresh": "Obnovit",
         "SystemFiles": "Systémové soubory",
         "Dismiss": "Zamítnout",
-        "ShowPrereleases": "Ukázat Show předběžná vydání",
-        "VisitThirdparty": "Visit thirdparty url",
-        "PathInvalid": "The selected file path contains invalid characters, and the file has been removed from the list"
+        "ShowPrereleases": "Ukázat předběžná vydání",
+        "VisitThirdparty": "Ukázat cizí adresu",
+        "PathInvalid": "Vybraná cesta k souboru obsahuje neplatné znaky a soubor byl odstraněn ze seznamu"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Vyberte verzi komponenty videa",
@@ -159,7 +159,7 @@
         "ProductAssets": "Product assets"
     },
     "VersionTag": {
-        "MissingRemoteVersion": "Chybí vzdálená verze",
+        "FetchingFromServer": "Fetching from the server ...",
         "NoCurrentVersion": "Žádná aktuální verze",
         "OutOfDate": "Zastaralý",
         "GreaterThanLatestRelease": "Vyšší než poslední verze",
@@ -329,7 +329,7 @@
         "AnalysingComponents": "Analyzuji komponenty...",
         "BackupNotMatchRadio": "Tato záloha se neshoduje s vaším rádiem. Chcete pokračovat?",
         "WritingBackupFile": "Zapisuji soubor zálohy...",
-        "CreateAtVersion": "Create at version"
+        "CreateAtVersion": "Vytvořeno ve verzi"
     },
     "About": {
         "About": "O aplikaci",
@@ -470,7 +470,7 @@
         "InstallLatest": "Nainstalovat poslední",
         "Reinstall": "Přeinstalovat",
         "ScriptInfo": "Informace o skriptu",
-        "TheEntireZip": "The entire zip file"
+        "TheEntireZip": "Celý soubor Zip"
     },
     "Updater": {
         "NewVersionAvailable": "Nová verze Suitu {{ version }} je k dispozici!",

@@ -64,41 +64,50 @@ local function paint(widget)
 end
 
 local function wakeup(widget)
-  if widget.sensor:alive() then
-    if idle == false and widget.sensor:idle(true) == true then
-      idle = true
+  -- TODO call discover
+  if widget.sensor:appId() == 0xFFFF then
+    local frame = widget.sensor:popFrame()
+    if frame == nil then
+      return
     end
-    if calibrationState == CALIBRATION_WRITE then
-      print("CALIBRATION_WRITE")
-      if widget.sensor:writeParameter(0xB2, step) == true then
-        print("widget.sensor:writeParameter")
-        calibrationState = CALIBRATION_READ
-      end
-    elseif calibrationState == CALIBRATION_READ then
-      print("CALIBRATION_READ")
-      if widget.sensor:requestParameter(0xB2) == true then
-        print("widget.sensor:requestParameter")
-        calibrationState = CALIBRATION_WAIT
-        nextOpTime = os.clock() + 3
-      end
-    elseif calibrationState == CALIBRATION_WAIT then
-      local value = widget.sensor:getParameter()
-      if value then
-        local fieldId = value % 256
-        if fieldId == 0xB2 then
-          if step == 5 then
-            calibrationState = CALIBRATION_OK
-            bitmap = lcd.loadBitmap("cali/cali_ok.png")
-          else
-            calibrationState = CALIBRATION_INIT
-            step = (step + 1) % 6
-            bitmap = lcd.loadBitmap("cali/cali_"..step..".png")
-          end
-          lcd.invalidate()
+    widget.sensor:module(frame:module())
+    widget.sensor:band(frame:band())
+    widget.sensor:rx(frame:rx())
+    widget.sensor:appId(frame:appId())
+  end
+  if idle == false and widget.sensor:idle(true) == true then
+    idle = true
+  end
+  if calibrationState == CALIBRATION_WRITE then
+    print("CALIBRATION_WRITE")
+    if widget.sensor:writeParameter(0xB2, step) == true then
+      print("widget.sensor:writeParameter")
+      calibrationState = CALIBRATION_READ
+    end
+  elseif calibrationState == CALIBRATION_READ then
+    print("CALIBRATION_READ")
+    if widget.sensor:requestParameter(0xB2) == true then
+      print("widget.sensor:requestParameter")
+      calibrationState = CALIBRATION_WAIT
+      nextOpTime = os.clock() + 3
+    end
+  elseif calibrationState == CALIBRATION_WAIT then
+    local value = widget.sensor:getParameter()
+    if value then
+      local fieldId = value % 256
+      if fieldId == 0xB2 then
+        if step == 5 then
+          calibrationState = CALIBRATION_OK
+          bitmap = lcd.loadBitmap("cali/cali_ok.png")
+        else
+          calibrationState = CALIBRATION_INIT
+          step = (step + 1) % 6
+          bitmap = lcd.loadBitmap("cali/cali_"..step..".png")
         end
-      elseif os.clock() >= nextOpTime then
-        calibrationState = CALIBRATION_WRITE
+        lcd.invalidate()
       end
+    elseif os.clock() >= nextOpTime then
+      calibrationState = CALIBRATION_WRITE
     end
   end
 end

@@ -275,67 +275,72 @@ local function create()
 end
 
 local function wakeup(widget)
-  local invalidateNeeded = false
-  if widget.sensor:alive() then
-    if idle == false then
-      widget.sensor:idle()
-      idle = true
+  -- TODO call discover
+  if widget.sensor:appId() == 0xFFFF then
+    local frame = widget.sensor:popFrame()
+    if frame == nil then
+      return
     end
-    if requestInProgress then
-      local value = widget.sensor:getParameter()
-      -- print("widget.sensor:getParameter = ", value)
-      if value then
-        local fieldId = value % 256
-        local parameter = parameters[refreshIndex + 1]
-        if fieldId == parameter[3] then
-          value = math.floor(value / 256)
-          -- print("widget.sensor:value = ", value)
-          while parameters[refreshIndex + 1][3] == fieldId do
-            if parameters[refreshIndex + 1][5] ~= nil and value ~= nil then
-              invalidateNeeded = true;
-            end
-            parameters[refreshIndex + 1][5] = value
-            if value ~= nil then
-              if fields[refreshIndex + 1] then
-                if type(fields[refreshIndex + 1]) == "table" then
-                  for index = 1, #fields[refreshIndex + 1] do
-                    fields[refreshIndex + 1][index]:enable(true)
-                  end
-                else
-                  fields[refreshIndex + 1]:enable(true)
+    widget.sensor:module(frame:module())
+    widget.sensor:band(frame:band())
+    widget.sensor:rx(frame:rx())
+    widget.sensor:appId(frame:appId())
+  end
+  if idle == false then
+    widget.sensor:idle()
+    idle = true
+  end
+  if requestInProgress then
+    local value = widget.sensor:getParameter()
+    -- print("widget.sensor:getParameter = ", value)
+    if value then
+      local fieldId = value % 256
+      local parameter = parameters[refreshIndex + 1]
+      if fieldId == parameter[3] then
+        value = math.floor(value / 256)
+        -- print("widget.sensor:value = ", value)
+        while parameters[refreshIndex + 1][3] == fieldId do
+          if parameters[refreshIndex + 1][5] ~= nil and value ~= nil then
+            lcd.invalidate()
+          end
+          parameters[refreshIndex + 1][5] = value
+          if value ~= nil then
+            if fields[refreshIndex + 1] then
+              if type(fields[refreshIndex + 1]) == "table" then
+                for index = 1, #fields[refreshIndex + 1] do
+                  fields[refreshIndex + 1][index]:enable(true)
                 end
+              else
+                fields[refreshIndex + 1]:enable(true)
               end
             end
-            refreshIndex = refreshIndex + 1
-            if refreshIndex > (#parameters - 1) then break end
           end
-          requestInProgress = false
+          refreshIndex = refreshIndex + 1
+          if refreshIndex > (#parameters - 1) then break end
         end
-      else
         requestInProgress = false
       end
     else
-      if #modifications > 0 then
-        -- print("writeParameter", modifications[1][1], modifications[1][2])
-        if widget.sensor:writeParameter(modifications[1][1], modifications[1][2]) == true then
-          if modifications[1][1] == 0x13 then -- appId changed
-            widget.sensor:appId(0x0F00 + ((modifications[1][2] >> 8) & 0xFF))
-          end
-          refreshIndex = 0
-          requestInProgress = false
-          modifications[1] = nil
+      requestInProgress = false
+    end
+  else
+    if #modifications > 0 then
+      -- print("writeParameter", modifications[1][1], modifications[1][2])
+      if widget.sensor:writeParameter(modifications[1][1], modifications[1][2]) == true then
+        if modifications[1][1] == 0x13 then -- appId changed
+          widget.sensor:appId(0x0F00 + ((modifications[1][2] >> 8) & 0xFF))
         end
-      elseif refreshIndex <= (#parameters - 1) then
-        local parameter = parameters[refreshIndex + 1]
-        -- print("requestParameter", parameter[3])
-        if widget.sensor:requestParameter(parameter[3]) then
-          requestInProgress = true
-        end
+        refreshIndex = 0
+        requestInProgress = false
+        modifications[1] = nil
+      end
+    elseif refreshIndex <= (#parameters - 1) then
+      local parameter = parameters[refreshIndex + 1]
+      -- print("requestParameter", parameter[3])
+      if widget.sensor:requestParameter(parameter[3]) then
+        requestInProgress = true
       end
     end
-  end
-  if invalidateNeeded then
-    lcd.invalidate()
   end
 end
 

@@ -37,9 +37,9 @@ local function create()
         text="Press here", 
         press=function() 
             form.openDialog({
-                width=790,
+                width=w,
                 title="Help",
-                message="Increase D, P, I in order until each wobbles,\nthen back off.\nSet F for a good response in full\nstick flips and rolls.\nIf necessary, tweak P:D ratio\nto set response damping to your liking.\nIncrease O until wobbles occur\nwhen jabbing elevator at full collective, back off a bit.\nIncrease B if you want sharper response.\nIncrease D, P, I in order until each wobbles,\nthen back off.\nSet F for a good response in full\nstick flips and rolls.\nIf necessary, tweak P:D ratio\nto set response damping to your liking.\nIncrease O until wobbles occur\nwhen jabbing elevator at full collective, back off a bit.\nIncrease B if you want sharper response.", 
+                message="Increase D, P, I in order until each wobbles,\nthen back off.\nSet F for a good response in full\nstick flips and rolls.\nIf necessary, tweak P:D ratio\nto set response damping to your liking. Increase O until wobbles occur when jabbing elevator at full collective, back off a bit. Increase B if you want sharper response.\nIncrease D, P, I in order until each wobbles, then back off.\nSet F for a good response in full stick flips and rolls.\nIf necessary, tweak P:D ratio to set response damping to your liking.\nIncrease O until wobbles occur when jabbing elevator at full collective, back off a bit.\nIncrease B if you want sharper response.", 
                 buttons={{label="OK", action=function() return true end}}, 
                 wakeup=function()
                         lcd.invalidate()
@@ -154,7 +154,7 @@ local function wakeup(data)
 end
 
 local function event(data, category, value, x, y)
-    print("Event received:", category, value, x, y, KEY_EXIT_BREAK)
+    print("Event received:", category, value, x, y)
     return false
 end
 

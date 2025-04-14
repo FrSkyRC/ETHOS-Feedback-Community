@@ -218,8 +218,8 @@ local requestInProgress
 local lastRquestTime
 Params = {}
 
-function InitPage()
-  print("Enter config page, InitPage()")
+function configCreate()
+  print("Enter ESC config page")
   requestInProgress = false
   lastRquestTime = 0
 
@@ -237,9 +237,17 @@ function InitPage()
   end
 end
 
-function Wakeup(data)
-  if Params == nil or not data.sensor:alive() then
-    return
+function configWakeup(data)
+  -- TODO call discover
+  if data.sensor:appId() == 0xFFFF then
+    local frame = data.sensor:popFrame()
+    if frame == nil then
+      return
+    end  
+    data.sensor:module(frame:module())
+    data.sensor:band(frame:band())
+    data.sensor:rx(frame:rx())
+    data.sensor:appId(frame:appId())
   end
   if data.needIdle == nil or data.needIdle then
     for index, parameter in pairs(Params) do
@@ -313,7 +321,7 @@ function Wakeup(data)
   end
 end
 
-function PageClose(data)
+function configClose(data)
   if data.needIdle then
     data.sensor:idle(false)
   end

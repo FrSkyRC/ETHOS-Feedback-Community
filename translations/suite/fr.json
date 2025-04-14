@@ -104,8 +104,8 @@
         "SystemFiles": "Fichiers système",
         "Dismiss": "Annuler",
         "ShowPrereleases": "Affichage pré-versions",
-        "VisitThirdparty": "Visit thirdparty url",
-        "PathInvalid": "The selected file path contains invalid characters, and the file has been removed from the list"
+        "VisitThirdparty": "Accéder url accessoires",
+        "PathInvalid": "Le répertoire sélectionné contient des caractères non valides, et le fichier a été retiré de la liste"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Choisir votre version de composant vidéo",
@@ -160,7 +160,7 @@
         "ProductAssets": "Gamme de produits"
     },
     "VersionTag": {
-        "MissingRemoteVersion": "Version distante manquante",
+        "FetchingFromServer": "Fetching from the server ...",
         "NoCurrentVersion": "Pas de nouvelle version",
         "OutOfDate": "Mise à jour disponible",
         "GreaterThanLatestRelease": "Supérieure à la version actuelle",
@@ -330,7 +330,7 @@
         "AnalysingComponents": "Analyse des éléments ...",
         "BackupNotMatchRadio": "Cette sauvegarde ne correspond pas à votre radio. Continuer ?",
         "WritingBackupFile": "Ecriture sauvegarde en cours ...",
-        "CreateAtVersion": "Create at version"
+        "CreateAtVersion": "Créer avec la version"
     },
     "About": {
         "About": "A propos",
@@ -471,7 +471,7 @@
         "InstallLatest": "Installer dernière verison",
         "Reinstall": "Reinstaller",
         "ScriptInfo": "Information Script",
-        "TheEntireZip": "The entire zip file"
+        "TheEntireZip": "Le fichier ZIP complet"
     },
     "Updater": {
         "NewVersionAvailable": "Nouvelle version de Suite {{ version }} disponible !",
