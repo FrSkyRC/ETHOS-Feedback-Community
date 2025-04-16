@@ -1,7 +1,7 @@
 String name, String context, X20(...) / XE(S) / V20, X18RS / X14(...) / T14 / V15, All other radios
 TRANSLATION_NAME,,"Nederlands"
 TRANSLATION_KEY,,"nl"
-SPECIAL_CHARS,,"ø_-+."
+SPECIAL_CHARS,,"_-+."
 FORMULA,,"Formule"
 CALCULATED_SENSOR,,"Berekende Sensor"
 NAME,,"Naam"
