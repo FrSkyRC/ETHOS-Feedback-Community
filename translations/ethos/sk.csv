@@ -1131,3 +1131,4 @@ WAITING_FOR_NFC_CARD,,"Prosím držte NFC kartu v blízkosti zariadenia pre pár
 BIND_CARD_SUCCESS,,"Párovanie NFC karty úspešné!"
 BIND_CARD_FAIL,,"Párovanie NFC karty nebolo úspešné!"
 BUS_INVERT,F.Bus and F.Port inverted on receiver (Yes / No),"Bus invert"
+SBEC_INPUT_VOLT,"None","SBEC input volt."
