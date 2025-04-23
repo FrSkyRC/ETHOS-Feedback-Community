@@ -26,7 +26,7 @@ local function paint(widget)
     elseif h > 170 then
         lcd.font(FONT_XL)
     else
-        lcd.font(FONT_STD)
+        lcd.font(FONT_M)
     end
 
     local text_w, text_h = lcd.getTextSize("")
