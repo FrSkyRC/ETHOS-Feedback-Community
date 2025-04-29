@@ -1,4 +1,4 @@
-String name, String context, X20(...) / XE(S) / V20, X18RS / X14(...) / T14 / V15, All other radios
+String name, String context, X20(...) / XE(S) / V20, X18RS / X14(...) / T14 / V15 All other radios
 TRANSLATION_NAME,,"Slovensky"
 TRANSLATION_KEY,,"sk"
 SPECIAL_CHARS,,"áčéíľščžťťúýäôň_-+."
@@ -1130,5 +1130,5 @@ BIND_CARD,,"Párovacia karta"
 WAITING_FOR_NFC_CARD,,"Prosím držte NFC kartu v blízkosti zariadenia pre párovanie..."
 BIND_CARD_SUCCESS,,"Párovanie NFC karty úspešné!"
 BIND_CARD_FAIL,,"Párovanie NFC karty nebolo úspešné!"
-BUS_INVERT,F.Bus and F.Port inverted on receiver (Yes / No),"Bus invert"
-SBEC_INPUT_VOLT,"None","SBEC input volt."
+BUS_INVERT,F.Bus and F.Port inverted on receiver (Yes / No),"Invertovaný BUS"
+SBEC_INPUT_VOLT,"None","SBEC vstupné napätie."
