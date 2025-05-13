@@ -35,6 +35,7 @@ INVERT,,反転
 SLOW_DOWN,,減速する
 INVERTED,,反転
 FLIGHT_MODES,,飛行モード
+DRIVE_MODES,"None","Drive modes"
 MIX_FLIGHT_MODES_DESCRIPTION,,
 MIX_NAME_DESCRIPTION,,ミックスの名前を編集
 TRIGGER_ON_CONDITION,,トリガーON条件
@@ -527,6 +528,8 @@ FIXED_WING,,"Airplane"
 GLIDER,,"Glider"
 HELI,,"Heli"
 MULTI,,"Multi"
+CAR,,"Car",
+BOAT,,"Boat",
 OTHER,,"Other"
 CALIBRATION,,"Calibration"
 INPUTS,,"Inputs"
@@ -620,7 +623,6 @@ TRIMS_POSITIONS,,"Trim positions"
 CONST_VALUE,,"Const value"
 SLIDER_LEFT,,"Slider left"
 SLIDER_RIGHT,,"Slider right"
-RIGHT_HORIZONTAL,,"Right horizontal"
 TRIM_RIGHT_HORIZONTAL_LEFT,,"Trim RHL"
 TRIM_RIGHT_HORIZONTAL_RIGHT,,"Trim RHR"
 RIGHT_VERTICAL,,"Right vertical"
