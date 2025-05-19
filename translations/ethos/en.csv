@@ -135,10 +135,11 @@ TX_SETTINGS,,"TX settings",
 MIXES,,"Mixes",
 CHANNELS,,"Channels",
 FLIGHT_MODE,,"Flight mode",
+DRIVE_MODE,,"Drive mode"
 D,,"D",
 CONFIRM_DELETE_MIX,,"Are you sure you want to delete this mix?",
 CONFIRM_DELETE_SSS,,"Are you sure you want to delete %s?",
-NONE,,"None",
+NONE,,,
 NO_MIX_HINT,,"No mix yet. Please press the add button to create one!",
 TYPE,,"Type",
 SHARE,,"Share",
@@ -659,6 +660,7 @@ STARTING_MODEL_WIZARD,,"Starting model wizard ...",
 RADIO_DATA_LOAD,,"Radio data load",
 DEFAULT_SYSTEM_SETTINGS_RESTORED,,"Storage error, default system settings restored.",
 FLIGHT_MODE_SHORT,,"FM",
+DRIVE_MODE_SHORT,,"DM"
 PREFLIGHT_WARNING,,"Preflight warnings",
 NEW_MODEL,,"New model",
 STARTING_CALIBRATION,,"Starting calibration ...",
@@ -754,6 +756,7 @@ RB_30_40,,"RB 30/40",
 EW,,"EW",
 NS,,"NS",
 DEFAULT_FLIGHT_MODE,,"Default flight mode",
+DEFAULT_DRIVE_MODE,,"Default drive mode"
 SKIP_ON_STARTUP,,"Skip on startup",
 LOW_VALUE_WARNING,,"Low value warning",
 CRITICAL_VALUE,,"Critical value",
@@ -1134,4 +1137,4 @@ WAITING_FOR_NFC_CARD,,"Please hold the NFC key close to the RemoteNFC panel for 
 BIND_CARD_SUCCESS,,"Bind NFC card successfully!"
 BIND_CARD_FAIL,,"NFC card is not successfully bound!"
 BUS_INVERT,F.Bus and F.Port inverted on receiver (Yes / No),"Bus invert"
-SBEC_INPUT_VOLT,"None","SBEC input volt."
+SBEC_INPUT_VOLT,,"SBEC input volt."

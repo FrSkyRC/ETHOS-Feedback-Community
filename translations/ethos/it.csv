@@ -37,7 +37,7 @@ INVERT,,"Inverti",
 SLOW_DOWN,,"Rallenta Discesa",
 INVERTED,,"Invertito",
 FLIGHT_MODES,,"Fasi di Volo",
-DRIVE_MODES,"None","Drive modes"
+DRIVE_MODES,,"Drive modes"
 MIX_FLIGHT_MODES_DESCRIPTION,,"",
 MIX_NAME_DESCRIPTION,,"Modifica nome per il mixer",
 TRIGGER_ON_CONDITION,,"Condizione Trigger ON",
@@ -135,6 +135,7 @@ TX_SETTINGS,,"Impostazioni TX",
 MIXES,,"Mixes",
 CHANNELS,,"Canali",
 FLIGHT_MODE,,"Fase di Volo",
+DRIVE_MODE,,"Drive mode"
 D,,"D",
 CONFIRM_DELETE_MIX,,"Sei Sicuro di voler cancellare questo mix?",
 CONFIRM_DELETE_SSS,,"Sei Sicuro di voler cancellare %s",
@@ -625,6 +626,7 @@ STARTING_MODEL_WIZARD,,"Inizializza Creatore Modelli...",
 RADIO_DATA_LOAD,,"Carica Dati Radio",
 DEFAULT_SYSTEM_SETTINGS_RESTORED,,"Errore Memoria, Valori di fabbrica ripristinati.",
 FLIGHT_MODE_SHORT,,"FV",
+DRIVE_MODE_SHORT,,"DM"
 PREFLIGHT_WARNING,,"Avviso Pre-volo",
 NEW_MODEL,,"Nuovo modello",
 STARTING_CALIBRATION,,"Inizio calibrazione...",
@@ -740,6 +742,7 @@ RB_30_40,,"RB 30/40",
 EW,,"EW",
 NS,,"NS",
 DEFAULT_FLIGHT_MODE,,"Fase di volo Standard",
+DEFAULT_DRIVE_MODE,,"Default drive mode"
 SKIP_ON_STARTUP,,"Tralascia all'Avvio",
 LOW_VALUE_WARNING,,"Avviso Valore Basso",
 CRITICAL_VALUE,,"Valore Critico",
@@ -1134,4 +1137,4 @@ WAITING_FOR_NFC_CARD,,"Si prega di tenere la tessera NFC vicino al comando remot
 BIND_CARD_SUCCESS,,"Bind Tessera NFC eseguito!"
 BIND_CARD_FAIL,,"Bind Tessera NFC fallito!"
 BUS_INVERT,F.Bus e F.Port invertite su ricevente (Si / No),"Inverti BUS"
-SBEC_INPUT_VOLT,"None","SBEC volt. input"
+SBEC_INPUT_VOLT,,"SBEC volt. input"
