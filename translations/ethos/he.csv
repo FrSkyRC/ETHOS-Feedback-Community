@@ -1,6 +1,8 @@
 String name, String context, X20(...) / XE(S) / V20, X18RS / X14(...) / T14 / V15, All other radios
-TRANSLATION_NAME,,"תירבע"
 TRANSLATION_KEY,,"he"
+TRANSLATION_NAME,,"תירבע"
+TRANSLATION_FALLBACK_NAME,,"Hebrew"
+TRANSLATION_FONT_SUBSET,,"hebrew"
 SPECIAL_CHARS,,"_-+."
 TRANSLATION_DIRECTION,,"R2L"
 FORMULA,,"אחסונ"

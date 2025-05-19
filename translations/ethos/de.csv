@@ -1,6 +1,8 @@
 String name, String context, X20(...) / XE(S) / V20, X18RS / X14(...) / T14 / V15, All other radios
-TRANSLATION_NAME,,"Deutsch"
 TRANSLATION_KEY,,"de"
+TRANSLATION_NAME,,"Deutsch"
+TRANSLATION_FALLBACK_NAME,,"Deutsch"
+TRANSLATION_FONT_SUBSET,,"latin"
 SPECIAL_CHARS,,"ÄäÖöÜüßûøàçéèê_-+."
 FORMULA,,"Formel"
 CALCULATED_SENSOR,,"Berechneter Sensor"
