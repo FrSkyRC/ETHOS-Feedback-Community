@@ -658,7 +658,7 @@ LOW_BATTERY,,"Radio battery low!",
 VOLTAGE_CALIBRATION,,"Voltage calibration",
 STARTING_MODEL_WIZARD,,"Starting model wizard ...",
 RADIO_DATA_LOAD,,"Radio data load",
-DEFAULT_SYSTEM_SETTINGS_RESTORED,,"Storage error, default system settings restored.","Storage error, default settings restored.",
+DEFAULT_SYSTEM_SETTINGS_RESTORED,,"Storage error, default system settings restored.","Storage error, default system settings restored.","Storage error, default settings restored.",
 FLIGHT_MODE_SHORT,,"FM",
 DRIVE_MODE_SHORT,,"DM"
 PREFLIGHT_WARNING,,"Preflight warnings",
