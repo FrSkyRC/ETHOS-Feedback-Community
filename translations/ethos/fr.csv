@@ -47,7 +47,7 @@ DELETE_FOLDER,,"Supprimer dossier",
 RENAME_FOLDER,,"Renommer dossier",
 CREATE_FOLDER,,"Créer nouveau dossier",
 MODEL_TYPE,,"Type de modèle","Type"
-FIXED_WING,,"Avion",
+PLANE,,"Avion",
 GLIDER,,"Planeur",
 HELI,,"Hélicoptère","Hélico"
 MULTI,,"Multi",

@@ -422,7 +422,7 @@ PITCH_AT_ZERO,,"Tonfrequenz Sinken"
 SEQUENCE,,"Sequenzen"
 PITCH_AT_MAX,,"Tonfrequenz Steigen"
 REPEAT_AT_ZERO,,"Wiederholrate"
-FIXED_WING,,"Motor/Jet"
+PLANE,,"Motor/Jet"
 GLIDER,,"Segler"
 HELI,,"Hubschrauber","Heli"
 CAR,,"Car",
