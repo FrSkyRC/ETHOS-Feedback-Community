@@ -491,6 +491,9 @@ WAITING_FOR_DEVICES,,"En attente périphériques ...",
 LOCAL_NAME,,"Nom local",
 SEARCH_DEVICES,,"Chercher ...",
 BLUETOOTH_DEVICE_CONNECTED,,"Périphérique bluetooth connecté",
+CONFIRM_ALLOW_CONNECTION,,"Allow connection?"
+BLUETOOTH_FIRMWARE_NEEDS_UPDATE,,"Bluetooth firmware needs to be updated!"
+BLUETOOTH_MAINTENANCE,,"Bluetooth maintenance"
 CONNECT_LAST_DEVICE,,"Dernière connexion",
 DEVICE,,"Périphérique",
 NO_BLUETOOTH_DEVICE_FOUND,,"Aucun périphérique bluetooth détecté !",
@@ -1069,7 +1072,7 @@ COUNTING_SOURCE,,"Source proportionnelle",
 SEND_FILE,,"Envoyer fichier",
 FILE_TRANSFER,,"Transfert fichier",
 RECEIVE_FILE_HERE,,"Réception fichier",
-WAITING_FOR_CONNECTION,,"En attente de connexion",
+WAITING_FOR_CONNECTION,,"En attente de connexion ...",
 CONNECTION_REFUSED,,"Connexion refusée",
 WAITING_FOR_RECEIVER_CONFIRMATION,,"En attente de confirmation récepteur ...",
 FILE_TRANSFER_FAILED,,"Erreur transfert fichier",
