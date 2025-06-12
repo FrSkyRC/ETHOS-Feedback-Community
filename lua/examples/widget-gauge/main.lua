@@ -89,6 +89,10 @@ local function configure(widget)
     form.addNumberField(line, slots[1], -1024, 1024, function() return widget.min end, function(value) widget.min = value end)
     form.addStaticText(line, slots[2], "-")
     form.addNumberField(line, slots[3], -1024, 1024, function() return widget.max end, function(value) widget.max = value end)
+
+    -- Exit configuration
+    line = form.addLine("")
+    form.addButton(line, nil, {text="Exit configuration", press=function() system.exit() end})
 end
 
 local function read(widget)
