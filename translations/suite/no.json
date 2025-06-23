@@ -102,7 +102,10 @@
         "UnselectAll": "Opphev alle valg",
         "Refresh": "Last på nytt",
         "SystemFiles": "System filer",
-        "Dismiss": "Avvis"
+        "Dismiss": "Avvis",
+        "ShowPrereleases": "Vis 'Pre-releases'",
+        "VisitThirdparty": "Gå til ekstern URL adresse",
+        "PathInvalid": "Den valgte fil-banen inneholder ugyldige tegn og filen har blitt fjernet fra listen"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Velg din video-komponent-versjon",
@@ -157,7 +160,7 @@
         "ProductAssets": "Produkt elementer"
     },
     "VersionTag": {
-        "MissingRemoteVersion": "Mangler 'remote' versjon",
+        "FetchingFromServer": "Henter fra server ...",
         "NoCurrentVersion": "Ingen nåværende versjon",
         "OutOfDate": "Utdatert",
         "GreaterThanLatestRelease": "Større enn siste utgivelse",
@@ -327,7 +330,8 @@
         "BackupComponents": "Sikkerhetskopier komponenter",
         "AnalysingComponents": "Analyserer komponenter...",
         "BackupNotMatchRadio": "Denne sikkerhetskopien passer ikke med denne radioen. Ønsker du å fortsette?",
-        "WritingBackupFile": "Skriver sikkerhetskopi-fil(er)..."
+        "WritingBackupFile": "Skriver sikkerhetskopi-fil(er)...",
+        "CreateAtVersion": "Create at version"
     },
     "About": {
         "About": "Om",
@@ -467,7 +471,8 @@
         "InstalledScript": "Installerte script",
         "InstallLatest": "Installer nyeste",
         "Reinstall": "Reinstall",
-        "ScriptInfo": "Script informatsjon"
+        "ScriptInfo": "Script informasjon",
+        "TheEntireZip": "The entire zip file"
     },
     "Updater": {
         "NewVersionAvailable": "En ny 'Ethos Suite'-version, versjon {{ version }}, er tilgjengelig!",

@@ -299,8 +299,8 @@ local function configure(widget)
   line = panel:addLine("RPM source")
   form.addSourceField(line, nil, function() return widget.rpmSource end, function(newValue)
     widget.rpmSource = newValue
-    if rpmMaxEdit ~= nil then
-      rpmMaxEdit:suffix(widget.rpmSource ~= nil and widget.rpmSource:stringUnit() or "")
+    if rpmMaxEdit ~= nil and widget.rpmSource ~= nil then
+      rpmMaxEdit:suffix(widget.rpmSource:stringUnit())
     end
   end)
   line = panel:addLine("Max RPM")
@@ -314,8 +314,8 @@ local function configure(widget)
   line = panel:addLine("Speed source")
   form.addSourceField(line, nil, function() return widget.speedSource end, function(newValue)
     widget.speedSource = newValue
-    if speedMaxEdit ~= nil then
-      speedMaxEdit:suffix(widget.speedSource ~= nil and widget.speedSource:stringUnit() or "")
+    if speedMaxEdit ~= nil and widget.speedSource ~= nil then
+      speedMaxEdit:suffix(widget.speedSource:stringUnit())
     end
   end)
   line = panel:addLine("Max Speed")
@@ -329,8 +329,8 @@ local function configure(widget)
   line = panel:addLine("Fuel source")
   form.addSourceField(line, nil, function() return widget.fuelSource end, function(newValue)
     widget.fuelSource = newValue
-    if maxFuelEdit ~= nil then
-      maxFuelEdit:suffix(widget.fuelSource ~= nil and widget.fuelSource:stringUnit() or "")
+    if maxFuelEdit ~= nil and widget.fuelSource ~= nil then
+      maxFuelEdit:suffix(widget.fuelSource:stringUnit())
     end
   end)
   line = panel:addLine("Max fuel")
@@ -344,8 +344,8 @@ local function configure(widget)
   line = panel:addLine("EGT source")
   form.addSourceField(line, nil, function() return widget.egtSource end, function(newValue)
     widget.egtSource = newValue
-    if egtMaxEdit ~= nil then
-      egtMaxEdit:suffix(widget.egtSource ~= nil and widget.egtSource:stringUnit() or "")
+    if egtMaxEdit ~= nil and widget.egtSource ~= nil then
+      egtMaxEdit:suffix(widget.egtSource:stringUnit())
     end
   end)
   line = panel:addLine("Max EGT")

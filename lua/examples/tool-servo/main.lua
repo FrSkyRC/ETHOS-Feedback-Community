@@ -100,50 +100,59 @@ local function create()
 end
 
 local function wakeup(widget)
-  if widget.sensor:alive() then
-    if requestInProgress then
-      local value = widget.sensor:getParameter()
-      if value then
-        local fieldId = value % 256
-        local parameter = parameters[refreshIndex + 1]
-        if fieldId == parameter[3] then
-          value = math.floor(value / 256)
-          if parameter[3] == 0x08 then
-            value = value & 0xFF;
-            if value > parameter[6] then
-              value = value - 256
-            end
+  -- TODO call discover
+  if widget.sensor:appId() == 0xFFFF then
+    local frame = widget.sensor:popFrame()
+    if frame == nil then
+      return
+    end
+    widget.sensor:module(frame:module())
+    widget.sensor:band(frame:band())
+    widget.sensor:rx(frame:rx())
+    widget.sensor:appId(frame:appId())
+  end
+  if requestInProgress then
+    local value = widget.sensor:getParameter()
+    if value then
+      local fieldId = value % 256
+      local parameter = parameters[refreshIndex + 1]
+      if fieldId == parameter[3] then
+        value = math.floor(value / 256)
+        if parameter[3] == 0x08 then
+          value = value & 0xFF;
+          if value > parameter[6] then
+            value = value - 256
           end
-
-          parameters[refreshIndex + 1][4] = value
-          if value ~= nil then
-            fields[refreshIndex + 1]:enable(true)
-            if refreshIndex + 2 == #parameters then
-              fields[#parameters]:enable(true)
-            end
-          end
-
-          refreshIndex = refreshIndex + 1
-          requestInProgress = false
         end
-      else
+
+        parameters[refreshIndex + 1][4] = value
+        if value ~= nil then
+          fields[refreshIndex + 1]:enable(true)
+          if refreshIndex + 2 == #parameters then
+            fields[#parameters]:enable(true)
+          end
+        end
+
+        refreshIndex = refreshIndex + 1
         requestInProgress = false
       end
     else
-      if #modifications > 0 then
-        if widget.sensor:writeParameter(modifications[1][1], modifications[1][2]) == true then
-          if modifications[1][1] == 0x01 then -- appId changed
-            widget.sensor:appId(0x6800 + modifications[1][2])
-          end
-          refreshIndex = 0
-          requestInProgress = false
-          modifications[1] = nil
+      requestInProgress = false
+    end
+  else
+    if #modifications > 0 then
+      if widget.sensor:writeParameter(modifications[1][1], modifications[1][2]) == true then
+        if modifications[1][1] == 0x01 then -- appId changed
+          widget.sensor:appId(0x6800 + modifications[1][2])
         end
-      elseif refreshIndex < (#parameters - 1) then
-        local parameter = parameters[refreshIndex + 1]
-        if widget.sensor:requestParameter(parameter[3]) then
-          requestInProgress = true
-        end
+        refreshIndex = 0
+        requestInProgress = false
+        modifications[1] = nil
+      end
+    elseif refreshIndex < (#parameters - 1) then
+      local parameter = parameters[refreshIndex + 1]
+      if widget.sensor:requestParameter(parameter[3]) then
+        requestInProgress = true
       end
     end
   end

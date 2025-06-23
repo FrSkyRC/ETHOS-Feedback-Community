@@ -102,7 +102,10 @@
         "UnselectAll": "Unselect all",
         "Refresh": "Refresh",
         "SystemFiles": "System files",
-        "Dismiss": "Dismiss"
+        "Dismiss": "Dismiss",
+        "ShowPrereleases": "Show pre-releases",
+        "VisitThirdparty": "Visit thirdparty url",
+        "PathInvalid": "The selected file path contains invalid characters, and the file has been removed from the list"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Choose your video component version",
@@ -157,7 +160,7 @@
         "ProductAssets": "Product assets"
     },
     "VersionTag": {
-        "MissingRemoteVersion": "Missing remote version",
+        "FetchingFromServer": "Fetching from the server ...",
         "NoCurrentVersion": "No current version",
         "OutOfDate": "Out of date",
         "GreaterThanLatestRelease": "Greater than latest release",
@@ -327,7 +330,8 @@
         "BackupComponents": "Backup Components",
         "AnalysingComponents": "Analysing components ...",
         "BackupNotMatchRadio": "This backup doesn't match with your radio. Do you want to continue?",
-        "WritingBackupFile": "Writing backup file ..."
+        "WritingBackupFile": "Writing backup file ...",
+        "CreateAtVersion": "Create at version"
     },
     "About": {
         "About": "About",
@@ -467,7 +471,8 @@
         "InstalledScript": "Installed script",
         "InstallLatest": "Install latest",
         "Reinstall": "Reinstall",
-        "ScriptInfo": "Script information"
+        "ScriptInfo": "Script information",
+        "TheEntireZip": "The entire zip file"
     },
     "Updater": {
         "NewVersionAvailable": "New Suite version {{ version }} is available!",

@@ -1,3 +1,13 @@
+local Product = {}
+Product.resetProduct = function ()
+  Product.family = nil
+  Product.id = nil
+  Product.supportFields = nil
+end
+Product.exist = function ()
+  return Product.family ~= nil and Product.id ~= nil and Product.supportFields ~= nil
+end
+
 local Module = {}
 Module.INTERNAL_MODULE = 0x00
 Module.EXTERNAL_MODULE = 0x01
@@ -80,4 +90,4 @@ Progress.closeAllowed = function (newValue)
   end
 end
 
-return {Module = Module, Sensor = Sensor, Dialog = Dialog, Progress = Progress}
+return {Product = Product, Module = Module, Sensor = Sensor, Dialog = Dialog, Progress = Progress}

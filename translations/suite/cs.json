@@ -99,9 +99,12 @@
         "PlatformNotSupported": "Platforma není podporována!",
         "SelectAll": "Vybrat vše",
         "UnselectAll": "Zrušit výběr",
-        "Refresh": "Refresh",
-        "SystemFiles": "System files",
-        "Dismiss": "Dismiss"
+        "Refresh": "Obnovit",
+        "SystemFiles": "Systémové soubory",
+        "Dismiss": "Zamítnout",
+        "ShowPrereleases": "Ukázat předběžná vydání",
+        "VisitThirdparty": "Ukázat cizí adresu",
+        "PathInvalid": "Vybraná cesta k souboru obsahuje neplatné znaky a soubor byl odstraněn ze seznamu"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Vyberte verzi komponenty videa",
@@ -156,7 +159,7 @@
         "ProductAssets": "Product assets"
     },
     "VersionTag": {
-        "MissingRemoteVersion": "Chybí vzdálená verze",
+        "FetchingFromServer": "Fetching from the server ...",
         "NoCurrentVersion": "Žádná aktuální verze",
         "OutOfDate": "Zastaralý",
         "GreaterThanLatestRelease": "Vyšší než poslední verze",
@@ -200,19 +203,19 @@
         "RestoreSucceed": "Obnova do továrního nastavení uspěšná! Prosím restartujte rádio ručně."
     },
     "RadioInfo": {
-        "RadioInfo": "Radio information",
-        "ManageEthos": "Manage ETHOS",
-        "ManageModule": "Manage internal module",
-        "ManageLua": "Manage Lua script",
-        "ManageDevice": "Manage external device",
-        "ManageModel": "Manage model"
+        "RadioInfo": "Informace o rádiu",
+        "ManageEthos": "Správce ETHOS",
+        "ManageModule": "Správce interního modulu",
+        "ManageLua": "Správce Lua skriptů",
+        "ManageDevice": "Správce externího zařízení",
+        "ManageModel": "Spravovat model"
     },
     "VersionMap": {
-        "RecommendUpdate": "We strongly recommend you update to {{ recommend }} for a better experience",
-        "MissingRequiredComponentVersion": "Missing required component version",
-        "TargetFirmwareNotCompatible": "The {{ targetComponent }} firmware version {{ targetVersion }} needs to be used with the {{ requireComponent }} firmware version {{ requireVersion }}.",
-        "RequireUpdate": "Please update the {{ requireComponent }} firmware to version {{ requireVersion }} firstly.",
-        "CheckRxVersion": "Please ensure that the firmware of the receivers used with this module is also upgraded to version {{ version }} or above."
+        "RecommendUpdate": "Důrazně doporučujeme aktualizovat na {{ recommend }} pro lepší zážitek",
+        "MissingRequiredComponentVersion": "Chybí požadovaná verze komponenty",
+        "TargetFirmwareNotCompatible": "Verze firmware {{ targetVersion }} {{ targetComponent }} je potřeba použít s verzí firmware {{ requireVersion }} {{ requireComponent }}.",
+        "RequireUpdate": "Prosím nejdříve aktualizujte firmware {{ requireComponent }} na verzi {{ requireVersion }}.",
+        "CheckRxVersion": "Ujistěte se prosím, že firmware přijímačů používaných s tímto modulem je také aktualizován na verzi {{ version }} nebo vyšší."
     },
     "RadioTool": {
         "ComparedWithTheLatestStabVersion": "(Ve srovnání s nejnovější stabilní verzí)",
@@ -325,7 +328,8 @@
         "BackupComponents": "Záloha komponent",
         "AnalysingComponents": "Analyzuji komponenty...",
         "BackupNotMatchRadio": "Tato záloha se neshoduje s vaším rádiem. Chcete pokračovat?",
-        "WritingBackupFile": "Zapisuji soubor zálohy..."
+        "WritingBackupFile": "Zapisuji soubor zálohy...",
+        "CreateAtVersion": "Vytvořeno ve verzi"
     },
     "About": {
         "About": "O aplikaci",
@@ -448,24 +452,25 @@
         "NoScriptsFound": "V souboru .zip nebyly nalezeny žádné skripty!"
     },
     "LuaLib": {
-        "LuaLib": "Lua library",
-        "DownloadingScript": "Downloading scripts ...",
-        "ScriptNotFound": "Script not found!",
-        "DownloadScriptSuccessfully": "Download scirpt successfully!",
-        "SavingScript": "Saving scripts ...",
-        "StartingInstallScripts": "Starting installing scripts ...",
-        "StartingDownloadScripts": "Starting downloading scripts ...",
-        "AnalysingFile": "Analysing the file ...",
-        "FailToInstallScripts": "Failed to install scripts!",
-        "WritingScriptsInfo": "Writing scripts information ...",
-        "LoadingScriptsFromRadio": "Loading scripts from radio ...",
-        "RemoteLibrary": "Remote library",
-        "RadioScripts": "Radio scripts",
-        "Install": "Install",
-        "InstalledScript": "Installed script",
-        "InstallLatest": "Install latest",
-        "Reinstall": "Reinstall",
-        "ScriptInfo": "Script information"
+        "LuaLib": "Knihovna Lua",
+        "DownloadingScript": "Stahuji skripty ...",
+        "ScriptNotFound": "Skript nebyl nalezen!",
+        "DownloadScriptSuccessfully": "Úspěšné stažení skriptu!",
+        "SavingScript": "Ukládám skripty ...",
+        "StartingInstallScripts": "Spouštění instalace skriptů ...",
+        "StartingDownloadScripts": "Spouštění stahování skriptů ...",
+        "AnalysingFile": "Analyzuji soubor ...",
+        "FailToInstallScripts": "Instalace skriptů se nezdařila!",
+        "WritingScriptsInfo": "Zapisuji informace o skriptu ...",
+        "LoadingScriptsFromRadio": "Načítání skriptů z rádia ...",
+        "RemoteLibrary": "Vzdálená knihovna",
+        "RadioScripts": "Skripty rádia",
+        "Install": "Instalovat",
+        "InstalledScript": "Nainstalovane skripty",
+        "InstallLatest": "Nainstalovat poslední",
+        "Reinstall": "Přeinstalovat",
+        "ScriptInfo": "Informace o skriptu",
+        "TheEntireZip": "Celý soubor Zip"
     },
     "Updater": {
         "NewVersionAvailable": "Nová verze Suitu {{ version }} je k dispozici!",
@@ -485,17 +490,17 @@
         "NewVersionLabel": "K dispozici je nová verze"
     },
     "Product": {
-        "Servos": "Servos",
-        "Transmitters": "Transmitters",
-        "Flight-Safe System": "Flight-Safe System",
-        "Accessories": "Accessories",
+        "Servos": "Serva",
+        "Transmitters": "Vysílače",
+        "Flight-Safe System": "Letecké bezpečnostní systémy",
+        "Accessories": "Příslušenství",
         "ESC": "ESC",
-        "Modules": "Modules",
-        "Internal module": "Internal module",
-        "External module": "External module",
-        "Receivers": "Receivers",
-        "Sensors": "Sensors",
+        "Modules": "Moduly",
+        "Internal module": "Interní moduly",
+        "External module": "Externí moduly",
+        "Receivers": "Přijímače",
+        "Sensors": "Senzory",
         "VTX": "VTX",
-        "Radio": "Radio"
+        "Radio": "Rádio"
     }
 }

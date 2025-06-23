@@ -86,56 +86,56 @@ end
 
 local parameters = {
   -- { name, type, page, sub, value, min, max, unit, offset }
-  {"Reset", createResetButton, 0xC0, 3, nil, "Start", 0x81},
-  {"Stabilizer", createChoiceField, 0xC0, 1, nil, {{"Off", 0}, {"On", 1}} },
+  {STR("Reset"), createResetButton, 0xC0, 3, nil, STR("Start"), 0x81},
+  {STR("Stabilizer"), createChoiceField, 0xC0, 1, nil, {{STR("Off"), 0}, {STR("On"), 1}} },
   -- {"Self check", createTextButton, 0xC0, 2, nil, "Start", 1},
-  {"Quick mode", createChoiceField, 0xC1, 1, nil, {{"Disable", 0}, {"Enable", 1}} },
+  {STR("QuickMode"), createChoiceField, 0xC1, 1, nil, {{STR("Disable"), 0}, {STR("Enable"), 1}} },
 
-  {"Wing type", createChoiceField, 0xC1, 2, nil, {{"Normal", 0}, {"Delta", 1}, {"VTail", 2}} },
-  {"Mounting type", createChoiceField, 0xC1, 3, nil, {{"Horizontal", 0}, {"Horizontal reverse", 1}, {"Vertical", 2}, {"Vertical reverse", 3}} },
+  {STR("WingType"), createChoiceField, 0xC1, 2, nil, {{STR("Normal"), 0}, {STR("Delta"), 1}, {STR("VTail"), 2}} },
+  {STR("MountingType"), createChoiceField, 0xC1, 3, nil, {{STR("Horizontal"), 0}, {STR("HorizontalRev"), 1}, {STR("Vertical"), 2}, {STR("VerticalRev"), 3}} },
 
-  {"CH7 mode", createChoiceField, 0xC2, 1, nil, {{"AIL3", 0}, {"AUX", 1}} },
-  {"CH8 mode", createChoiceField, 0xC2, 2, nil, {{"ELE3", 0}, {"AUX", 1}} },
-  {"CH9 mode", createChoiceField, 0xC2, 3, nil, {{"RUD2", 0}, {"AUX", 1}} },
-  {"CH10 mode", createChoiceField, 0xC3, 1, nil, {{"AIL4", 0}, {"AUX", 1}} },
-  {"CH11 mode", createChoiceField, 0xC3, 2, nil, {{"ELE4", 0}, {"AUX", 1}} },
+  {STR("CHMode", {CH = "CH7"}), createChoiceField, 0xC2, 1, nil, {{"AIL3", 0}, {"AUX", 1}} },
+  {STR("CHMode", {CH = "CH8"}), createChoiceField, 0xC2, 2, nil, {{"ELE3", 0}, {"AUX", 1}} },
+  {STR("CHMode", {CH = "CH9"}), createChoiceField, 0xC2, 3, nil, {{"RUD2", 0}, {"AUX", 1}} },
+  {STR("CHMode", {CH = "CH10"}), createChoiceField, 0xC3, 1, nil, {{"AIL4", 0}, {"AUX", 1}} },
+  {STR("CHMode", {CH = "CH11"}), createChoiceField, 0xC3, 2, nil, {{"ELE4", 0}, {"AUX", 1}} },
 
-  {"AIL3 inverted", createChoiceField, 0xC4, 1, nil, {{"Off", 0}, {"On", 0xFF}} },
-  {"ELE3 inverted", createChoiceField, 0xC4, 2, nil, {{"Off", 0}, {"On", 0xFF}} },
-  {"RUD2 inverted", createChoiceField, 0xC4, 3, nil, {{"Off", 0}, {"On", 0xFF}} },
-  {"AIL4 inverted", createChoiceField, 0xC5, 1, nil, {{"Off", 0}, {"On", 0xFF}} },
-  {"ELE4 inverted", createChoiceField, 0xC5, 2, nil, {{"Off", 0}, {"On", 0xFF}} },
+  {STR("CHInvert", {CH = "AIL3"}), createChoiceField, 0xC4, 1, nil, {{STR("Off"), 0}, {STR("On"), 0xFF}} },
+  {STR("CHInvert", {CH = "ELE3"}), createChoiceField, 0xC4, 2, nil, {{STR("Off"), 0}, {STR("On"), 0xFF}} },
+  {STR("CHInvert", {CH = "RUD2"}), createChoiceField, 0xC4, 3, nil, {{STR("Off"), 0}, {STR("On"), 0xFF}} },
+  {STR("CHInvert", {CH = "AIL4"}), createChoiceField, 0xC5, 1, nil, {{STR("Off"), 0}, {STR("On"), 0xFF}} },
+  {STR("CHInvert", {CH = "ELE4"}), createChoiceField, 0xC5, 2, nil, {{STR("Off"), 0}, {STR("On"), 0xFF}} },
 
-  {"AIL3-4 stab gain", createNumberField, 0xC6, 1, nil, 0, 200, "%"},
-  {"ELE3-4 stab gain", createNumberField, 0xC6, 2, nil, 0, 200, "%"},
-  {"RUD2 stab gain", createNumberField, 0xC6, 3, nil, 0, 200, "%"},
-  {"AIL3-4 auto 1v1 gain", createNumberField, 0xC7, 1, nil, 0, 200, "%"},
-  {"ELE3-4 auto 1v1 gain", createNumberField, 0xC7, 2, nil, 0, 200, "%"},
-  {"ELE3-4 hover gain", createNumberField, 0xC8, 2, nil, 0, 200, "%"},
-  {"RUD2 hover gain", createNumberField, 0xC8, 3, nil, 0, 200, "%"},
-  {"AIL3-4 knife gain", createNumberField, 0xC9, 1, nil, 0, 200, "%"},
-  {"RUD2 knife gain", createNumberField, 0xC9, 3, nil, 0, 200, "%"},
+  {STR("CHStabGain", {CH = "AIL3-4"}), createNumberField, 0xC6, 1, nil, 0, 200, "%"},
+  {STR("CHStabGain", {CH = "ELE3-4"}), createNumberField, 0xC6, 2, nil, 0, 200, "%"},
+  {STR("CHStabGain", {CH = "RUD2"}), createNumberField, 0xC6, 3, nil, 0, 200, "%"},
+  {STR("CHAutoLvlGain", {CH = "AIL3-4"}), createNumberField, 0xC7, 1, nil, 0, 200, "%"},
+  {STR("CHAutoLvlGain", {CH = "ELE3-4"}), createNumberField, 0xC7, 2, nil, 0, 200, "%"},
+  {STR("CHHoverGain", {CH = "ELE3-4"}), createNumberField, 0xC8, 2, nil, 0, 200, "%"},
+  {STR("CHHoverGain", {CH = "RUD2"}), createNumberField, 0xC8, 3, nil, 0, 200, "%"},
+  {STR("CHKnifeGain", {CH = "AIL3-4"}), createNumberField, 0xC9, 1, nil, 0, 200, "%"},
+  {STR("CHKnifeGain", {CH = "RUD2"}), createNumberField, 0xC9, 3, nil, 0, 200, "%"},
 
-  {"AIL3-4 auto 1v1 offset", createNumberField, 0xCA, 1, nil, -20, 20, "%", 0x80},
-  {"ELE3-4 auto 1v1 offset", createNumberField, 0xCA, 2, nil, -20, 20, "%", 0x80},
-  {"ELE3-4 hover offset", createNumberField, 0xCB, 2, nil, -20, 20, "%", 0x80},
-  {"RUD2 hover offset", createNumberField, 0xCB, 3, nil, -20, 20, "%", 0x80},
-  {"AIL3-4 knife offset", createNumberField, 0xCC, 1, nil, -20, 20, "%", 0x80},
-  {"RUD2 knife offset", createNumberField, 0xCC, 3, nil, -20, 20, "%", 0x80},
+  {STR("CHAutoLvlOffset", {CH = "AIL3-4"}), createNumberField, 0xCA, 1, nil, -20, 20, "%", 0x80},
+  {STR("CHAutoLvlOffset", {CH = "ELE3-4"}), createNumberField, 0xCA, 2, nil, -20, 20, "%", 0x80},
+  {STR("CHHoverOffset", {CH = "ELE3-4"}), createNumberField, 0xCB, 2, nil, -20, 20, "%", 0x80},
+  {STR("CHHoverOffset", {CH = "RUD2"}), createNumberField, 0xCB, 3, nil, -20, 20, "%", 0x80},
+  {STR("CHKnifeOffset", {CH = "AIL3-4"}), createNumberField, 0xCC, 1, nil, -20, 20, "%", 0x80},
+  {STR("CHKnifeOffset", {CH = "RUD2"}), createNumberField, 0xCC, 3, nil, -20, 20, "%", 0x80},
 
-  {"Roll degree", createNumberField, 0xCD, 1, nil, 0, 80, "°"},
-  {"Pitch degree", createNumberField, 0xCD, 2, nil, 0, 80, "°"},
+  {STR("RollDegree"), createNumberField, 0xCD, 1, nil, 0, 80, "°"},
+  {STR("PitchDegree"), createNumberField, 0xCD, 2, nil, 0, 80, "°"},
 
-  {"AIL3 stick priority", createNumberField, 0xCE, 1, nil, 0, 100, "%"},
-  {"AIL3 rev. stick priority", createNumberField, 0xCE, 2, nil, 0, 100, "%", 0, "-"},
-  {"ELE3 stick priority", createNumberField, 0xCF, 1, nil, 0, 100, "%"},
-  {"ELE3 rev. stick priority", createNumberField, 0xCF, 2, nil, 0, 100, "%", 0, "-"},
-  {"RUD2 stick priority", createNumberField, 0xD0, 1, nil, 0, 100, "%"},
-  {"RUD2 rev. stick priority", createNumberField, 0xD0, 2, nil, 0, 100, "%", 0, "-"},
-  {"AIL4 stick priority", createNumberField, 0xD1, 1, nil, 0, 100, "%"},
-  {"AIL4 rev. stick priority", createNumberField, 0xD1, 2, nil, 0, 100, "%", 0, "-"},
-  {"ELE4 stick priority", createNumberField, 0xD2, 1, nil, 0, 100, "%"},
-  {"ELE4 rev. stick priority", createNumberField, 0xD2, 2, nil, 0, 100, "%", 0, "-"},
+  {STR("CHStickPriority", {CH = "AIL3"}), createNumberField, 0xCE, 1, nil, 0, 100, "%"},
+  {STR("CHRevStickPriority", {CH = "AIL3"}), createNumberField, 0xCE, 2, nil, 0, 100, "%", 0, "-"},
+  {STR("CHStickPriority", {CH = "ELE3"}), createNumberField, 0xCF, 1, nil, 0, 100, "%"},
+  {STR("CHRevStickPriority", {CH = "ELE3"}), createNumberField, 0xCF, 2, nil, 0, 100, "%", 0, "-"},
+  {STR("CHStickPriority", {CH = "RUD2"}), createNumberField, 0xD0, 1, nil, 0, 100, "%"},
+  {STR("CHRevStickPriority", {CH = "RUD2"}), createNumberField, 0xD0, 2, nil, 0, 100, "%", 0, "-"},
+  {STR("CHStickPriority", {CH = "AIL4"}), createNumberField, 0xD1, 1, nil, 0, 100, "%"},
+  {STR("CHRevStickPriority", {CH = "AIL4"}), createNumberField, 0xD1, 2, nil, 0, 100, "%", 0, "-"},
+  {STR("CHStickPriority", {CH = "ELE4"}), createNumberField, 0xD2, 1, nil, 0, 100, "%"},
+  {STR("CHRevStickPriority", {CH = "ELE2"}), createNumberField, 0xD2, 2, nil, 0, 100, "%", 0, "-"},
 }
 
 local restoreFileName = ""
@@ -145,7 +145,7 @@ local function buildBackupForm(ePanel, focusRefresh)
   ePanel:clear()
 
   local ePanelLine = ePanel:addLine("")
-  local slots = form.getFieldSlots(ePanelLine, {270, "- Load -","- Save -"})
+  local slots = form.getFieldSlots(ePanelLine, {270, "- "..STR("Load").." -","- "..STR("Save").." -"})
 
   form.addFileField(ePanelLine, slots[1], "", "csv+ext", function ()
     return restoreFileName
@@ -153,20 +153,20 @@ local function buildBackupForm(ePanel, focusRefresh)
     restoreFileName = newFile
   end)
 
-  form.addTextButton(ePanelLine, slots[2], "Load", function()
+  form.addTextButton(ePanelLine, slots[2], STR("Load"), function()
     if refreshIndex == 0 then
-      Dialog.openDialog({title = "Load failed", message = "Please read the settings firstly.", buttons = {{label = "OK", action = function () Dialog.closeDialog() end}},})
+      Dialog.openDialog({title = STR("LoadFailed"), message = STR("ReadSettingsFirstly"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
       return
     end
 
     if not restoreFileName or restoreFileName == "" then
-      Dialog.openDialog({title = "No file selected", message = "Please select the file you\nwant to load the configures from.", buttons = {{label = "OK", action = function () Dialog.closeDialog() end}},})
+      Dialog.openDialog({title = STR("NoFileSelected"), message = STR("SelectFileFirstly"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
       return
     end
 
     local file = io.open(restoreFileName, "r+")
     if file == nil then
-      Dialog.openDialog({title = "Load failed", message = "File read error.", buttons = {{label = "OK", action = function () Dialog.closeDialog() end}},})
+      Dialog.openDialog({title = STR("LoadFailed"), message = STR("FileReadError"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
       return
     end
 
@@ -190,12 +190,12 @@ local function buildBackupForm(ePanel, focusRefresh)
         fields[index]:enable(false)
       end
     end
-    Dialog.openDialog({title = "Configure loaded", message = "Configure has been loaded from\n" .. restoreFileName, buttons = {{label = "OK", action = function () Dialog.closeDialog() end}},})
+    Dialog.openDialog({title = STR("ConfigurationLoaded"), message = STR("ConfigFileLoaded", {name = '\n' .. restoreFileName}), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
   end)
 
   local button = form.addTextButton(ePanelLine, slots[3], "Save", function()
     if refreshIndex == 0 then
-      Dialog.openDialog({title = "Save failed", message = "Please read the settings firstly.", buttons = {{label = "OK", action = function () Dialog.closeDialog() end}},})
+      Dialog.openDialog({title = STR("SaveFailed"), message = STR("ReadSettingsFirstly"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
       return
     end
 
@@ -232,7 +232,7 @@ local function buildBackupForm(ePanel, focusRefresh)
         end
         file:close()
         if i == 99 then
-          Dialog.openDialog({title = "Save failed", message = "Cannot save to file!", buttons = {{label = "OK", action = function () Dialog.closeDialog() end}},})
+          Dialog.openDialog({title = STR("SaveFailed"), message = STR("CannotSaveToFile"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
           return
         end
       end
@@ -242,12 +242,12 @@ local function buildBackupForm(ePanel, focusRefresh)
     if file ~= nil then
       file:write(output)
       file:close()
-      Dialog.openDialog({title = "Configure saved", message = "Configure has been saved into\n" .. fileName, buttons = {{label = "OK", action = function ()
+      Dialog.openDialog({title = STR("configurationSaved"), message = STR("ConfigSaveToFile", {fileName = "\n"..fileName}) .. fileName, buttons = {{label = STR("OK"), action = function ()
         Dialog.closeDialog()
         buildBackupForm(ePanel, true)
       end}},})
     else
-      Dialog.openDialog({title = "Save failed", message = "File operation error.", buttons = {{label = "OK", action = function () Dialog.closeDialog() end}},})
+      Dialog.openDialog({title = STR("SaveFailed"), message = STR("FSError"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
     end
   end)
   if focusRefresh then
@@ -263,7 +263,7 @@ local function pageInit()
   modifications = {}
   fields = {}
 
-  local configureForm = form.addExpansionPanel("Save & Load configures")
+  local configureForm = form.addExpansionPanel(STR("SaveAndLoad"))
   buildBackupForm(configureForm)
 
   for index = 1, #parameters do

@@ -102,7 +102,10 @@
         "UnselectAll": "取消选择所有",
         "Refresh": "刷新",
         "SystemFiles": "系统文件",
-        "Dismiss": "忽略"
+        "Dismiss": "忽略",
+        "ShowPrereleases": "显示预发布版本",
+        "VisitThirdparty": "访问第三方链接",
+        "PathInvalid": "The selected file path contains invalid characters, and the file has been removed from the list"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "选择你的视频组件版本",
@@ -157,7 +160,7 @@
         "ProductAssets": "产品附件"
     },
     "VersionTag": {
-        "MissingRemoteVersion": "没有远程版本号",
+        "FetchingFromServer": "正在从服务器拉取 ...",
         "NoCurrentVersion": "未找到当前版本号",
         "OutOfDate": "已过期",
         "GreaterThanLatestRelease": "领先于服务器版本",
@@ -213,7 +216,7 @@
         "MissingRequiredComponentVersion": "缺少必要的组件版本",
         "TargetFirmwareNotCompatible": "你即将升级的 {{ targetComponent }} {{ targetVersion }} 需要与 {{ requireComponent }} {{ requireVersion }} 配合使用.",
         "RequireUpdate": "请先将 {{ requireComponent }} 升级到版本 {{ requireVersion }}.",
-        "CheckRxVersion": "Please ensure that the firmware of the receivers used with this module is also upgraded to version {{ version }} or above."
+        "CheckRxVersion": "请确保与本遥控器模块配合使用的接收机已经升级至 {{ version }} 或者更高版本."
     },
     "RadioTool": {
         "ComparedWithTheLatestStabVersion": "(与最新的稳定版比较)",
@@ -326,7 +329,8 @@
         "BackupComponents": "备份组件",
         "AnalysingComponents": "解析组件中...",
         "BackupNotMatchRadio": "这份备份不适用于你的遥控器, 你确定要继续吗?",
-        "WritingBackupFile": "正在写入备份文件..."
+        "WritingBackupFile": "正在写入备份文件...",
+        "CreateAtVersion": "创建于版本"
     },
     "About": {
         "About": "关于",
@@ -466,7 +470,8 @@
         "InstalledScript": "已安装的脚本",
         "InstallLatest": "安装最新版",
         "Reinstall": "重新安装",
-        "ScriptInfo": "脚本信息"
+        "ScriptInfo": "脚本信息",
+        "TheEntireZip": "The entire zip file"
     },
     "Updater": {
         "NewVersionAvailable": "Suite {{ version }} 已发布!",

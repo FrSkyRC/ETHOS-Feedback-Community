@@ -98,7 +98,10 @@
         "UnselectAll": "Deseleccionar todo",
         "Refresh": "Refrescar",
         "SystemFiles": "Archivos de sistema",
-        "Dismiss": "Descartar"
+        "Dismiss": "Descartar",
+        "ShowPrereleases": "Mostrar pre-releases",
+        "VisitThirdparty": "Visitar url de terceros",
+        "PathInvalid": "La localización del archivo contiene caracteres inválidos, y el archivo se ha eliminado de la lista"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Elija su versión de video componente",
@@ -153,7 +156,7 @@
         "ProductAssets": "Elementos de Productos"
     },
     "VersionTag": {
-        "MissingRemoteVersion": "No se encuentra la versión remota",
+        "FetchingFromServer": "Obteniendo desde el servidor ...",
         "NoCurrentVersion": "No hay actualizaciones más recientes",
         "OutOfDate": "Disponible nueva versión",
         "GreaterThanLatestRelease": "Superior a la versión actual",
@@ -207,10 +210,10 @@
         "MissingRequiredComponentVersion": "Faltan componentes necesarios para esta versión",
         "TargetFirmwareNotCompatible": "Los componentes {{ targetComponent }} de esta versión de firmware {{ targetVersion }} necesitan usarse con {{ requireComponent }} version de firmware {{ requireVersion }}.",
         "RequireUpdate": "Por favor, actualice primero los {{ requireComponent }} del firmware a la versión {{ requireVersion }}.",
-        "CheckRxVersion": "POr favor, asegúrese de que el firmware de los receptores que usa con este módulo están también actualizados a la versión {{ version }} o superior."
+        "CheckRxVersion": "Por favor, asegúrese de que el firmware de los receptores que usa con este módulo están también actualizados a la versión {{ version }} o superior."
     },
     "RadioTool": {
-        "ComparedWithTheLatestStabVersion": "(Comparando con la última versión estable)",
+        "ComparedWithTheLatestStabVersion": "Comparando con la última versión estable",
         "BootloaderMode": "Modo bootloader",
         "FirmwareVersion": "Versión del firmware:",
         "BootloaderVersion": "Versión del Bootloader:",
@@ -219,7 +222,7 @@
         "Flash": "Flash ({{ size }}):",
         "UpdateSD": "Actualiza la tarjeta SD",
         "UpdateFlash": "Actualiza la memoria Flash",
-        "SelectRelease": "Lanzar la selección",
+        "SelectRelease": "Seleccionar release",
         "LocalFile": "Archivo local",
         "SelectLocalFirmware": "Seleccione un firmware",
         "AudioLanguages": "Idioma de audio",
@@ -319,7 +322,8 @@
         "BackupComponents": "Componentes del Backup",
         "AnalysingComponents": "Analizando componentes...",
         "BackupNotMatchRadio": "Este backup no pertenece a su radio. ¿Quiere continuar?",
-        "WritingBackupFile": "Escribiendo archivo backup..."
+        "WritingBackupFile": "Escribiendo archivo backup...",
+        "CreateAtVersion": "Creado con version"
     },
     "About": {
         "About": "Acerca de",
@@ -380,7 +384,7 @@
     "FirmwareGuide": {
         "FirmwareGuideTitle": "Es posible que este bootloader no permita pasar al modo firmware automáticamente. Pasar manualmente a modo bootloader, siguiendo estos pasos:",
         "FirmwareGuideStep1": "Desconectar el cable USB y apagar la radio",
-        "FirmwareGuideStep2": "Encender la radio normalmente y asegurarse de que todas las verificaciones se han acabado",
+        "FirmwareGuideStep2": "Encender la radio normalmente y asegurarse de que todas las verificaciones han terminado",
         "FirmwareGuideStep3": "Conectar la radio al ordenador y seleccionar \"Frsky Suite\" en el menú que aparece en pantalla de la radio.",
         "WaitingForFirmware": "Esperando Firmware"
     },
@@ -459,7 +463,8 @@
         "InstalledScript": "Script instalado",
         "InstallLatest": "Instalar el último",
         "Reinstall": "Reinstalar",
-        "ScriptInfo": "Información del Script"
+        "ScriptInfo": "Información del Script",
+        "TheEntireZip": "El archivo zip entero"
     },
     "Updater": {
         "NewVersionAvailable": "Hay disponible una nueva versión de la Suite {{ version }}",

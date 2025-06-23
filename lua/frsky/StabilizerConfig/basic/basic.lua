@@ -69,8 +69,8 @@ end
 -- end
 
 local parameters = {
-  {"Gyro mode",  createChoiceField, 0xA4, 1, nil, {{"Off", 0x00}, {"Basic", 0x01},{"ADV",0x02}}},
-  {"ADV config ", createChoiceField, 0xA4, 3, nil, {{"Disable", 0}, {"Enable", 1}}},
+  {STR("GyroMode"),  createChoiceField, 0xA4, 1, nil, {{STR("Off"), 0x00}, {STR("Basic"), 0x01},{STR("ADV"),0x02}}},
+  {STR("ADVConfig"), createChoiceField, 0xA4, 3, nil, {{STR("Disable"), 0}, {STR("Enable"), 1}}},
   -- {"Calibrate horizontal", createTextButton, 0xA4, 2, nil, "Start", 1}
 }
 
@@ -81,7 +81,7 @@ local function buildBackupForm(ePanel, focusRefresh)
   ePanel:clear()
 
   local ePanelLine = ePanel:addLine("")
-  local slots = form.getFieldSlots(ePanelLine, {270, "- Load -","- Save -"})
+  local slots = form.getFieldSlots(ePanelLine, {270, "- "..STR("Load").." -","- "..STR("Save").." -"})
 
   form.addFileField(ePanelLine, slots[1], "", "csv+ext", function ()
     return restoreFileName
@@ -89,20 +89,20 @@ local function buildBackupForm(ePanel, focusRefresh)
     restoreFileName = newFile
   end)
 
-  form.addTextButton(ePanelLine, slots[2], "Load", function()
+  form.addTextButton(ePanelLine, slots[2], STR("Load"), function()
     if refreshIndex == 0 then
-      Dialog.openDialog({title = "Load failed", message = "Please read the settings firstly.", buttons = {{label = "OK", action = function () Dialog.closeDialog() end}},})
+      Dialog.openDialog({title = STR("LoadFailed"), message = STR("ReadSettingsFirstly"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
       return
     end
 
     if not restoreFileName or restoreFileName == "" then
-      Dialog.openDialog({title = "No file selected", message = "Please select the file you\nwant to load the configures from.", buttons = {{label = "OK", action = function () Dialog.closeDialog() end}},})
+      Dialog.openDialog({title = STR("NoFileSelected"), message = STR("SelectFileFirstly"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
       return
     end
 
     local file = io.open(restoreFileName, "r+")
     if file == nil then
-      Dialog.openDialog({title = "Load failed", message = "File read error.", buttons = {{label = "OK", action = function () Dialog.closeDialog() end}},})
+      Dialog.openDialog({title = STR("LoadFailed"), message = STR("FileReadError"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
       return
     end
 
@@ -126,12 +126,12 @@ local function buildBackupForm(ePanel, focusRefresh)
         fields[index]:enable(false)
       end
     end
-    Dialog.openDialog({title = "Configure loaded", message = "Configure has been loaded from\n" .. restoreFileName, buttons = {{label = "OK", action = function () Dialog.closeDialog() end}},})
+    Dialog.openDialog({title = STR("ConfigurationLoaded"), message = STR("ConfigFileLoaded", {name = '\n' .. restoreFileName}), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
   end)
 
-  local button = form.addTextButton(ePanelLine, slots[3], "Save", function()
+  local button = form.addTextButton(ePanelLine, slots[3], STR("Save"), function()
     if refreshIndex == 0 then
-      Dialog.openDialog({title = "Save failed", message = "Please read the settings firstly.", buttons = {{label = "OK", action = function () Dialog.closeDialog() end}},})
+      Dialog.openDialog({title = STR("SaveFailed"), message = STR("ReadSettingsFirstly"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
       return
     end
 
@@ -168,7 +168,7 @@ local function buildBackupForm(ePanel, focusRefresh)
         end
         file:close()
         if i == 99 then
-          Dialog.openDialog({title = "Save failed", message = "Cannot save to file!", buttons = {{label = "OK", action = function () Dialog.closeDialog() end}},})
+          Dialog.openDialog({title = STR("SaveFailed"), message = STR("CannotSaveToFile"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
           return
         end
       end
@@ -178,12 +178,12 @@ local function buildBackupForm(ePanel, focusRefresh)
     if file ~= nil then
       file:write(output)
       file:close()
-      Dialog.openDialog({title = "Configure saved", message = "Configure has been saved into\n" .. fileName, buttons = {{label = "OK", action = function ()
+      Dialog.openDialog({title = STR("configurationSaved"), message = STR("ConfigSaveToFile", {fileName = "\n"..fileName}), buttons = {{label = STR("OK"), action = function ()
         Dialog.closeDialog()
         buildBackupForm(ePanel, true)
       end}},})
     else
-      Dialog.openDialog({title = "Save failed", message = "File operation error.", buttons = {{label = "OK", action = function () Dialog.closeDialog() end}},})
+      Dialog.openDialog({title = STR("SaveFailed"), message = STR("FSError"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
     end
   end)
   if focusRefresh then

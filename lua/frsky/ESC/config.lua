@@ -50,6 +50,8 @@ end
       setValue (function) - Optional. Only needed when the field requires a special setValue handler
       valueIndex (number) - Optional. Only needed when the field doesn't need the whole received value. Normally would be 1 ~ 3
       defaultValue (number) - Optional. Only needed when the field hasn't been read yet. To set the value which should be displayed
+      valueWrite(function) - Optional. Only needed when the field needs a special value process before writing
+      valueRead(function) - Optional. Only needed when the field needs a special value process before reading
       extraInfo (table) - Necessary. extraInfo = { valuePairs }
         valuePairs (table) - Necessary. The pairs for choice field to map value with test. Should be in form like {{0, "value1"}, {1, "value2"}, ...}
 
@@ -83,6 +85,8 @@ end
       setValue (function) - Optional. Only needed when the field requires a special setValue handler
       valueIndex (number) - Optional. Only needed when the field doesn't need the whole received value. Normally would be 1 ~ 3
       defaultValue (number) - Optional. Only needed when the field hasn't been read yet. To set the value which should be displayed
+      valueWrite(function) - Optional. Only needed when the field needs a special value process before writing
+      valueRead(function) - Optional. Only needed when the field needs a special value process before reading
       extraInfo (table) - Necessary. extraInfo = { min, max, step, suffix, prefix, prec, text }
         min (number) - Necessary. Min value for the number edit
         max (number) - Necessary. Max value for the number edit
@@ -137,6 +141,8 @@ end
       getValue (function) - Optional. Only needed when the field requires a special getValue handler
       setValue (function) - Optional. Only needed when the field requires a special setValue handler
       valueIndex (number) - Optional. Only needed when the field doesn't need the whole received value. Normally would be 1 ~ 3
+      valueWrite(function) - Optional. Only needed when the field needs a special value process before writing
+      valueRead(function) - Optional. Only needed when the field needs a special value process before reading
       extraInfo (table) - Necessary. extraInfo = { buttonText }
         buttonText (string) - Necessary. The text displays on the button
 
@@ -168,6 +174,8 @@ end
       getValue (function) - Optional. Only needed when the field requires a special getValue handler
       valueIndex (number) - Optional. Only needed when the field doesn't need the whole received value. Normally would be 1 ~ 3
       defaultValue (number) - Optional. Only needed when the field hasn't been read yet. To set the value which should be displayed
+      valueWrite(function) - Optional. Only needed when the field needs a special value process before writing
+      valueRead(function) - Optional. Only needed when the field needs a special value process before reading
       extraInfo (table) - Optional. extraInfo = { }
 
       The following field will be added by code automaticlly
@@ -210,8 +218,8 @@ local requestInProgress
 local lastRquestTime
 Params = {}
 
-function InitPage()
-  print("Enter config page, InitPage()")
+function configCreate()
+  print("Enter ESC config page")
   requestInProgress = false
   lastRquestTime = 0
 
@@ -229,9 +237,17 @@ function InitPage()
   end
 end
 
-function Wakeup(data)
-  if Params == nil or not data.sensor:alive() then
-    return
+function configWakeup(data)
+  -- TODO call discover
+  if data.sensor:appId() == 0xFFFF then
+    local frame = data.sensor:popFrame()
+    if frame == nil then
+      return
+    end  
+    data.sensor:module(frame:module())
+    data.sensor:band(frame:band())
+    data.sensor:rx(frame:rx())
+    data.sensor:appId(frame:appId())
   end
   if data.needIdle == nil or data.needIdle then
     for index, parameter in pairs(Params) do
@@ -251,12 +267,16 @@ function Wakeup(data)
   if requestInProgress then
     local receivedValue = data.sensor:getParameter()
     if receivedValue ~= nil then
-      print("data.sensor:getParameter(): ", receivedValue)
+      print("data.sensor:getParameter(): ", string.format("%X", receivedValue))
       local pageAddress = receivedValue & 0xFF
       local value = receivedValue >> 8
       for index, parameter in pairs(Params) do
         if parameter.pageAddress == pageAddress then
-          parameter.value = value
+          local valueRead = value
+          if parameter.valueRead ~= nil then
+            valueRead = parameter.valueRead(valueRead)
+          end
+          parameter.value = valueRead
           parameter.state = FieldState.RECEIVED
           if parameter.field ~= nil then
             parameter.field:enable(true)
@@ -271,14 +291,23 @@ function Wakeup(data)
     for index, parameter in pairs(Params) do
       if parameter.state == FieldState.IDLE then
         if data.sensor:requestParameter(parameter.pageAddress) then
-          print("data.sensor:requestParameter(" .. parameter.pageAddress .. ")")
+          print("data.sensor:requestParameter(" .. string.format("%X", parameter.pageAddress) .. ")")
           requestInProgress = true
           lastRquestTime = os.time()
           return
         end
       elseif parameter.state == FieldState.DIRTY then
-        if data.sensor:writeParameter(parameter.pageAddress, parameter.value) then
-          print("data.sensor:writeParameter(" .. parameter.pageAddress .. "): " .. parameter.value)
+        local valueWrite
+        if parameter.valueWrite ~= nil then
+          valueWrite = parameter.valueWrite(parameter.value)
+        else
+          local D1 = parameter.value & 0xFF
+          local D2 = (parameter.value >> 8) & 0xFF
+          local D3 = (parameter.value >> 16) & 0xFF
+          valueWrite = D1 + D2 * 256 + D3 * 256 * 256
+        end
+        if data.sensor:writeParameter(parameter.pageAddress, valueWrite) then
+          print("data.sensor:writeParameter(" .. string.format("%X", parameter.pageAddress) .. "): " .. string.format("%X", valueWrite))
           if parameter.isAppId ~= nil and parameter.isAppId then
             local oldAppId = data.sensor:appId()
             data.sensor:appId(oldAppId & 0xFFF0 | parameter.value)
@@ -292,7 +321,7 @@ function Wakeup(data)
   end
 end
 
-function PageClose(data)
+function configClose(data)
   if data.needIdle then
     data.sensor:idle(false)
   end

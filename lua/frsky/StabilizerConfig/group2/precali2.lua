@@ -25,7 +25,7 @@ local function doCalibration()
     return
   end
 
-  local button = {{label = "Close", action = function ()
+  local button = {{label = STR("Close"), action = function ()
     Dialog.closeDialog()
   end}}
 
@@ -33,7 +33,7 @@ local function doCalibration()
   local finalTick = os.clock() + CALI_OPERATION_TIMEOUT
   local lastPushTick = nil
   changeCaliState(CALI_STATE_WRITE)
-  Dialog.openDialog({title = "Calibrating", message = "Please wait until calibration finished ...\n", buttons = button, wakeup = function ()
+  Dialog.openDialog({title = STR("Calibrating"), message = startCaliParams.state == 3 and STR("PreCaliStickRangeHint") or STR("PreCaliWaitHint"), buttons = button, wakeup = function ()
     -- Calibration finished
     if not Dialog.isDialogOpen() or caliState == CALI_STATE_FINISHED then
       return
@@ -42,7 +42,7 @@ local function doCalibration()
     -- Calibration timeout
     if finalTick <= os.clock() then
       changeCaliState(CALI_STATE_FINISHED)
-      Dialog.message("Calibration failed!\nPlease check the connection state!")
+      Dialog.message(STR("PreCaliFailed"))
     end
 
     -- Push reading state frame in the free time
@@ -93,7 +93,7 @@ local function doCalibration()
         changeCaliState(CALI_STATE_READ)
       elseif excStepState == EXC_STATE_DONE then
         changeCaliState(CALI_STATE_FINISHED)
-        Dialog.message("Calibration finished!")
+        Dialog.message(STR("CalibrationFinished"))
       end
     end
   end})
@@ -101,32 +101,30 @@ local function doCalibration()
 end
 
 local function startCalibration(state)
-  local buttons = {{label = "Cancel", action = function ()
+  local buttons = {{label = STR("Cancel"), action = function ()
     Dialog.closeDialog()
   end},
-  {label = "OK", action = function()
+  {label = STR("OK"), action = function()
     startCaliParams = {state = state}
     Dialog.closeDialog()
   end}}
-  local messages = {"Calibration of the horizontal is about to begin.\nPlease place the model in a level position,\nthen press OK to continue.",
-                    "Stick center calibration is about to begin.\nPlease set the stick to the center position,\nthen press OK to continue.",
-                    "Stick range calibration is about to begin.\nAfter pressing OK, please move the stick to\nits full range in all directions to calibrate."}
-  Dialog.openDialog({title = "Please confirm to begin", message = messages[state], buttons = buttons})
+  local messages = {STR("PreCaliLevelCheckLabel"), STR("PreCaliStickCenterLabel"), STR("PreCaliStickRangeLabel")}
+  Dialog.openDialog({title = STR("ConfirmToBegin"), message = messages[state], buttons = buttons})
 end
 
 local function pageInit()
   local line = form.addLine("Level calibration")
-  form.addTextButton(line, nil, "Start", function ()
+  form.addTextButton(line, nil, STR("Start"), function ()
     startCalibration(0x01)
   end)
 
-  line = form.addLine("Stick center calibration")
-  form.addTextButton(line, nil, "Start", function ()
+  line = form.addLine(STR("PreCaliStickCenter"))
+  form.addTextButton(line, nil, STR("Start"), function ()
     startCalibration(0x02)
   end)
 
-  line = form.addLine("Stick range calibration")
-  form.addTextButton(line, nil, "Start", function ()
+  line = form.addLine(STR("PreCaliStickRange"))
+  form.addTextButton(line, nil, STR("Start"), function ()
     startCalibration(0x03)
   end)
 end
