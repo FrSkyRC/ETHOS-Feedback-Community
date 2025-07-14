@@ -5,7 +5,7 @@ return {
   RemoteDevice = "Périphérique",
   RemoteVersion = "Version périphérique",
   UnsupportDevice = "Périphérique inconnu",
-  UncompitableVersion = "Verison non compatible",
+  UncompitableVersion = "Version non compatible",
   Reading = "Lecture ...",
   UnableToRead = "Lecture impossible",
 
