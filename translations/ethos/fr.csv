@@ -903,6 +903,7 @@ RX_PROTOCOL,,"Protocole RX",
 NO_MAP,,"Pas de redirection",
 STICKS_NAME,,"Nom manches",
 CHANNELS_COUNT,,"Nombre voies",
+OUTPUTS_COUNT,,"Outputs count"
 EXT,,"Ext.",
 INT,,"Int.",
 ADD_A_NEW_WEIGHT,,"Ajout course",
