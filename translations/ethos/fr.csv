@@ -1066,6 +1066,7 @@ SELECT_MODEL_AT_POWER_ON,,"Choix modèle au démarrage",
 LOAD_MODEL,,"Charger modèle",
 TELEMETRY_ACTIVE,,"Télémétrie active",
 FLIGHT_RESET,,"Réinit. vol",
+TRIP_RESET,,"Trip reset"
 THROTTLE_ACTIVE,,"Gaz actif",
 COUNTING_SOURCE,,"Source proportionnelle",
 SEND_FILE,,"Envoyer fichier",

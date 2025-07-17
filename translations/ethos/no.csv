@@ -1063,6 +1063,7 @@ SELECT_MODEL_AT_POWER_ON,,"Velg hvilken modell som aktiveres når radioen starte
 LOAD_MODEL,,"Last inn modell"
 TELEMETRY_ACTIVE,,"Telemetri Aktiv"
 FLIGHT_RESET,,"Tilbakestill 'Flight'"
+TRIP_RESET,,"Trip reset"
 THROTTLE_ACTIVE,,"Gass Aktiv"
 COUNTING_SOURCE,,"Proposjonal 'Timer' kilde"
 SEND_FILE,,"Send fil"

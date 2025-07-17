@@ -1063,6 +1063,7 @@ SELECT_MODEL_AT_POWER_ON,,"เลือก Model เมื่อตอนเป�
 LOAD_MODEL,,"Load model"
 TELEMETRY_ACTIVE,,"Telemetry active"
 FLIGHT_RESET,,"Flight reset"
+TRIP_RESET,,"Trip reset"
 THROTTLE_ACTIVE,,"Throttle active"
 SEND_FILE,,"ส่ง File"
 FILE_TRANSFER,,"โอนถ่าย File "

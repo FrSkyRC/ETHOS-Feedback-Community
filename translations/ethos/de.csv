@@ -1064,6 +1064,7 @@ SELECT_MODEL_AT_POWER_ON,,"Modell beim Einschalten auswählen","Modell beim Eins
 LOAD_MODEL,,"Modell laden"
 TELEMETRY_ACTIVE,,"Telemetrie aktiv"
 FLIGHT_RESET,,"Flug zurücksetzen"
+TRIP_RESET,,"Trip reset"
 THROTTLE_ACTIVE,,"Gas aktiv"
 COUNTING_SOURCE,,"Proportionale Zeitquelle"
 SEND_FILE,,"Datei senden"
