@@ -1062,8 +1062,8 @@ SERIAL,,"Seriale",
 SELECT_MODEL_AT_POWER_ON,,"Seleziona modello all'accensione",
 LOAD_MODEL,,"Carica modello",
 TELEMETRY_ACTIVE,,"Telemetria Attiva",
-FLIGHT_RESET,,"Flight reset",
-TRIP_RESET,,"Trip reset"
+FLIGHT_RESET,,"Reset Volo",
+TRIP_RESET,,"Reset Viaggio"
 THROTTLE_ACTIVE,,"Gas Attivo",
 COUNTING_SOURCE,,"Sorgente Proporzionale timing",
 SEND_FILE,,"Invia file",
