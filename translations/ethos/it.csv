@@ -833,7 +833,7 @@ RX3_MAP,,"RX3 Mappa",
 ALL_FREQUENCY,,"Tutte le frequenze",
 STICKS_NAME,,"Nome Sticks",
 CHANNELS_COUNT,,"Numero Canali",
-OUTPUTS_COUNT,,"Conteggio Output"
+OUTPUTS_COUNT,,"Conteggio Uscite"
 EXT,,"Ext",
 INT,,"Int",
 PLACE_RECEIVER_LEVEL,,"Posiziona la ricevente orizzontale,\nfaccia su.",
