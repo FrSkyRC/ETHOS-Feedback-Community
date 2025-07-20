@@ -5,7 +5,7 @@ TRANSLATION_FALLBACK_NAME,,"Francais"
 TRANSLATION_FONT_SUBSET,,"latin"
 SPECIAL_CHARS,,"äöüûùàçéèê_-+.",
 MODEL,,"Modèle",
-STEERING,,"Steering"
+STEERING,,"Pilotage"
 MODEL_SELECT,,"Choix modèle",
 NO_MODELS_DIRECTORY,,"Répertoire modèles absent !",
 EDIT_MODEL,,"Editer modèle",
