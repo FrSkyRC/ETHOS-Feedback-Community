@@ -738,6 +738,8 @@ REVERSE,,"Inversé",
 RATE,,"Taux",
 UP,,"Haut",
 DOWN,,"Bas",
+LEFT_SHORT,,"G"
+RIGHT_SHORT,,"D"
 RIGHT,,"Droite",
 LEFT,,"Gauche",
 TOP,,"Haut",
