@@ -316,6 +316,7 @@ HIGH_SPEED,,"Velocità Alta",
 NORMAL_SPEED,,"Velocità Normale",
 MODEL,,"Modello",
 STEERING,,"Steering"
+STEERING_BRAKE,,"Steering brake"
 CHECKLIST,,"Checklist",
 FILE_MANAGER,,"File Manager",
 SOUND,,"Suono & Vibrazione",

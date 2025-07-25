@@ -6,6 +6,7 @@ TRANSLATION_FONT_SUBSET,,"latin"
 SPECIAL_CHARS,,"äöüûùàçéèê_-+.",
 MODEL,,"Modèle",
 STEERING,,"Pilotage"
+STEERING_BRAKE,,"Steering brake"
 MODEL_SELECT,,"Choix modèle",
 NO_MODELS_DIRECTORY,,"Répertoire modèles absent !",
 EDIT_MODEL,,"Editer modèle",
