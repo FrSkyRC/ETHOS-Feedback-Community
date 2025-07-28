@@ -316,7 +316,7 @@ HIGH_SPEED,,"Velocità Alta",
 NORMAL_SPEED,,"Velocità Normale",
 MODEL,,"Modello",
 STEERING,,"Sterzo"
-STEERING_BRAKE,,"Ammortizzatore Sterzo"
+STEERING_BRAKE,,"Convergenza Dinamica-Freno"
 CHECKLIST,,"Checklist",
 FILE_MANAGER,,"File Manager",
 SOUND,,"Suono & Vibrazione",
