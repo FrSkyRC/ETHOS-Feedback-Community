@@ -5,7 +5,8 @@ TRANSLATION_FALLBACK_NAME,,"Francais"
 TRANSLATION_FONT_SUBSET,,"latin"
 SPECIAL_CHARS,,"äöüûùàçéèê_-+.",
 MODEL,,"Modèle",
-STEERING,,"Steering"
+STEERING,,"Pilotage"
+STEERING_BRAKE,,"Steering brake"
 MODEL_SELECT,,"Choix modèle",
 NO_MODELS_DIRECTORY,,"Répertoire modèles absent !",
 EDIT_MODEL,,"Editer modèle",
@@ -492,9 +493,9 @@ WAITING_FOR_DEVICES,,"En attente périphériques ...",
 LOCAL_NAME,,"Nom local",
 SEARCH_DEVICES,,"Chercher ...",
 BLUETOOTH_DEVICE_CONNECTED,,"Périphérique bluetooth connecté",
-CONFIRM_ALLOW_CONNECTION,,"Allow connection?"
-BLUETOOTH_FIRMWARE_NEEDS_UPDATE,,"Bluetooth firmware needs to be updated!"
-BLUETOOTH_MAINTENANCE,,"Bluetooth maintenance"
+CONFIRM_ALLOW_CONNECTION,,"Autoriser connexion ?"
+BLUETOOTH_FIRMWARE_NEEDS_UPDATE,,"Mettre à jour le firlware Bluetooth !"
+BLUETOOTH_MAINTENANCE,,"Maintenance Bluetooth"
 CONNECT_LAST_DEVICE,,"Dernière connexion",
 DEVICE,,"Périphérique",
 NO_BLUETOOTH_DEVICE_FOUND,,"Aucun périphérique bluetooth détecté !",
@@ -738,6 +739,8 @@ REVERSE,,"Inversé",
 RATE,,"Taux",
 UP,,"Haut",
 DOWN,,"Bas",
+LEFT_SHORT,,"G"
+RIGHT_SHORT,,"D"
 RIGHT,,"Droite",
 LEFT,,"Gauche",
 TOP,,"Haut",
@@ -1130,9 +1133,9 @@ CONFIRM_TO_SHARE_RECEIVER,,"Partager ce récepteur ?",
 CONFIRM_TO_UNBIND_RECEIVER,,"Réinitialiser l'appairage du récepteur ?",
 CONFIRM_FRSK_NOT_COMPATIBLE,,"Fichier non compatible. Continuer ?",
 RX_VFR,,"Rx VFR",
-SMOKE_PUMP_VOLTAGE,,"Tension fumi.",
-SMOKE_PUMP_CURRENT,,"Intensité fumi.",
-SMOKE_PUMP_TEMPERATURE,,"Temp. fumi.",
+SMOKE_PUMP_VOLTAGE,,"V Pompe fumi.",
+SMOKE_PUMP_CURRENT,,"I Pompe fumi.",
+SMOKE_PUMP_TEMPERATURE,,"T° Pompe fumi.",
 SMOKE_PUMP,,"Pompe fumigène",
 SOLENOID_VALVE,,"Electrovanne",
 BIND_CARD,,"Carte appairage",

@@ -315,7 +315,8 @@ RESET_MODULE,,"Reset Modulo",
 HIGH_SPEED,,"Velocità Alta",
 NORMAL_SPEED,,"Velocità Normale",
 MODEL,,"Modello",
-STEERING,,"Steering"
+STEERING,,"Sterzo"
+STEERING_BRAKE,,"Ammortizzatore Sterzo"
 CHECKLIST,,"Checklist",
 FILE_MANAGER,,"File Manager",
 SOUND,,"Suono & Vibrazione",
@@ -459,6 +460,8 @@ REVERSE,,"Inverti",
 RATE,,"Rate",
 UP,,"Su",
 DOWN,,"Giu",
+LEFT_SHORT,,"Sx"
+RIGHT_SHORT,,"Dx"
 RIGHT,,"Destra",
 LEFT,,"Sinistra",
 TOP,,"Sopra",

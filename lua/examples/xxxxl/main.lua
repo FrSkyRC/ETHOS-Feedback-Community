@@ -1,7 +1,7 @@
 -- XXXXL widget
 
 local function create()
-    local font = lcd.loadFont("xxxxl.fnt")
+    local font = lcd.loadFont("FONTS:/xxxxl_core.fnt")
     return {font=font, color=lcd.RGB(255, 0, 0)}
 end
 
