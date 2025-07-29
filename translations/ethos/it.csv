@@ -213,6 +213,7 @@ PITCH,,"Passo",
 THROTTLE,,"Gas",
 FLAPS,,"Flaps",
 ENGINE,,"Motore",
+BRAKE,,"Brake"
 RUDDERS,,"Direzionale",
 ROLL,,"Roll",
 FUNCTION_SWITCHES,,"Interruttori Funzione",

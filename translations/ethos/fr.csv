@@ -74,6 +74,7 @@ FLAPS,,"Volets",
 NO_FLAPS,,"Pas de volet",
 ENGINE,,"Moteur",
 NO_ENGINE,,"Pas de moteur",
+BRAKE,,"Brake"
 RUDDERS,,"Dérive",
 NO_RUDDERS,,"Pas de dérive",
 ROLL,,"Roulis",
