@@ -58,7 +58,7 @@
         "Outdated": "plus à jour",
         "All": "Tout",
         "Close": "Fermer",
-        "ReferToFAQ": "Consulter la FAQ",
+        "ReferToFAQ": "Consulter les questions fréquentes",
         "Cancel": "Annuler",
         "Finish": "Terminer",
         "OK": "OK",
@@ -366,7 +366,7 @@
         "LuaDocDescription": "Documentation pour vos scripts Lua",
         "LuaExamples": "Démo Lua",
         "LuaExamplesDescription": "Exemples de scripts Lua sur Github.",
-        "SuiteFAQ": "FAQ Ethos Suite",
+        "SuiteFAQ": "Questions fréquentes Ethos Suite",
         "SuiteFAQDescription": "Questions fréquentes sur l'utilisation de Ethos Suite.",
         "EthosManual": "Manuel Ethos",
         "EthosManualDescription": "Manuel emploi Ethos au format PDF téléchargeable, incluant les anciennes versions.",
@@ -466,7 +466,7 @@
         "InstalledScript": "Script installé",
         "InstallLatest": "Installer dernière verison",
         "Reinstall": "Reinstaller",
-        "ScriptInfo": "Information Script"
+        "ScriptInfo": "Script information"
     },
     "Updater": {
         "NewVersionAvailable": "Nouvelle version de Suite {{ version }} disponible !",
@@ -500,3 +500,4 @@
         "Radio": "Radio"
     }
 }
+
