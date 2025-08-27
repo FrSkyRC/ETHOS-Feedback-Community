@@ -19,7 +19,7 @@
         "UpdateBootloader": "Pokud je verze bootloaderu starší než 1.2.10, pak při vypnutém rádiu připojte rádio přes USB kabel k Ethos Suite. Pro upgrade bootloaderu použijte Ethos Suite DFU flasher."
     },
     "Welcome": {
-        "WelcomeToEthosSuite": "Víjejte v Ethos Suite",
+        "WelcomeToEthosSuite": "Vítejte v Ethos Suite",
         "P1": "Před zahájením aktualizace firmwaru zálohujte soubory model.bin a radio.bin. Ethos Suite provádí konverzi modelu ze starší verze na novější, ale ne z nové na starou. Záložní soubory jsou potřeba pro návrat ke starším verzím.",
         "P2": "Po aktualizaci zkontrolujte naprogramování modelu před letem, abyste se ujistili, že vše funguje správně.",
         "LatestRelease": "Poslední verze"
@@ -30,19 +30,19 @@
     "ToolCommon": {
         "FatalErrorOccurred": "Došlo k závažné chybě",
         "ErrorLoggedTo": "Chyby byly zapsány do logu, který je v adresáři {{ path }}. Pokud toto dialogové okno nemůžete zavřít, restartujte Ethos Suite.",
-        "OpenDirectoryAfterTranscode": "Po překódování otevřít adresář",
+        "OpenDirectoryAfterTranscode": "Po konverzi otevřít adresář",
         "OpenDirectory": "Otevřít adresář",
         "ClearAll": "Vymazat vše",
-        "Transcode": "Překódování",
+        "Transcode": "Konverze",
         "OutputPath": "Cesta:",
-        "TranscodeFinished": "Překódování dokončeno!",
+        "TranscodeFinished": "Konverze dokončena!",
         "Firmware": "Firmware",
         "Version": "Verze",
         "Size": "Velikost",
         "ReleaseDate": "Datum uvedení",
         "Detail": "Detail",
         "DownloadFailed": "Stažení selhalo!",
-        "AssetError": "Chyba asetu!",
+        "AssetError": "Chyba souboru!",
         "Cancelled": "Zrušeno",
         "Success": "Úspěch",
         "Audio": "Audio",
@@ -84,7 +84,7 @@
         "DisplayLanguage": "Zobrazit jazyk",
         "Options": "Možnosti",
         "Recommended": "Doporučené",
-        "ListToBeTranscoded": "Seznam k překódování",
+        "ListToBeTranscoded": "Seznam ke konverzi",
         "Delete": "Smazat",
         "Language": "Jazyk",
         "PathNotExists": "Cesta neexistuje",
@@ -104,11 +104,14 @@
         "Dismiss": "Zamítnout",
         "ShowPrereleases": "Ukázat předběžná vydání",
         "VisitThirdparty": "Ukázat cizí adresu",
-        "PathInvalid": "Vybraná cesta k souboru obsahuje neplatné znaky a soubor byl odstraněn ze seznamu"
+        "PathInvalid": "Vybraná cesta k souboru obsahuje neplatné znaky a soubor byl odstraněn ze seznamu",
+        "OpenFile": "Open file",
+        "Add": "Add",
+        "Upload": "Upload"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Vyberte verzi komponenty videa",
-        "DialogText": "Ethos Suit zjistil, že používáte HD rádio. Verze video komponenty však chybí. Prosím ověřte si pečlivě verzi komponenty videa podle níže uvedených obrázků.",
+        "DialogText": "Ethos Suite zjistil, že používáte HD rádio. Verze video komponenty však chybí. Prosím ověřte si pečlivě verzi komponenty videa podle níže uvedených obrázků.",
         "Version1": "Verze 1",
         "Version2": "Verze 2"
     },
@@ -156,10 +159,10 @@
         "NoFRSKFileFound": "Ve staženém zipu nebyl nalezen žádný soubor .frsk",
         "MultipleFRSKDetected": "Bylo zjištěno více dostupných souborů .frsk. Vyberte soubor .frsk, který chcete flashovat",
         "ProductList": "Seznam produktů",
-        "ProductAssets": "Product assets"
+        "ProductAssets": "Soubory k produktu"
     },
     "VersionTag": {
-        "FetchingFromServer": "Fetching from the server ...",
+        "FetchingFromServer": "Získávám ze serveru ...",
         "NoCurrentVersion": "Žádná aktuální verze",
         "OutOfDate": "Zastaralý",
         "GreaterThanLatestRelease": "Vyšší než poslední verze",
@@ -172,8 +175,8 @@
         "Resize": "Změnit velikost",
         "MaxWidth": "Max šířka",
         "MaxHeight": "Max výška",
-        "TranscodingImages": "Překódovaní obrázků...",
-        "TheFollowingImagesFailedToTranscode": "Následující obrázky se nepodařilo překódovat:",
+        "TranscodingImages": "Konverze obrázků...",
+        "TheFollowingImagesFailedToTranscode": "Následující obrázky se nepodařilo zkonvertovat:",
         "RadioImages": "Obrázky rádia",
         "OutputSize": "Výstupní velikost",
         "ModelImage": "Model image",
@@ -183,11 +186,11 @@
     },
     "AudioManager": {
         "AudioManager": "Správce zvuků",
-        "TranscodingAudios": "Překódování audia...",
-        "RadioAudios": "Audiostopy rádia"
+        "TranscodingAudios": "Konverze audia...",
+        "RadioAudios": "Audiostopy v rádiu"
     },
     "RepairTool": {
-        "RepairTool": "Opravný nástroj",
+        "RepairTool": "Nástroje pro opravu",
         "FormatToolTitle": "Formátování vnitřního úložiště (X18 series, TW XLite series, XE series, X20 Pro)",
         "FormatToolSubTitle": "Pokud Vaše rádio nemůže číst z interní paměti NAND nebo nemůžete uložit nastavení. Prosím připojte spuštěné rádio k Suitu a zkuste tento nástroj.",
         "Formatting": "Formátuji...",
@@ -281,7 +284,12 @@
         "ConfirmBackup": "Zálohovat?",
         "BackupOrContinueUpdate": "Před aktualizací se doporučuje zálohovat obsah rádia. Chcete přejít na zálohování nebo pokračovat v aktualizaci?",
         "GoToBackup": "Na zálohování",
-        "ContinueUpdaing": "Aktualizovat"
+        "ContinueUpdaing": "Aktualizovat",
+        "CheckingComponentsVersion": "Kontrola verze komponentů ...",
+        "ComponentsNeedToBeUpdated": "Komponenty je nutno aktualizovat",
+        "UpdateComponentToVersion": "Komponent {{ component }} je třeba aktualizovat na verzi {{ version }}",
+        "ConfirmFlashBootloader": "Potvrďte flash bootloaderu",
+        "Bootloader170confirmation": "Aktualizace bootloaderu na verzi 1.7.0 smaže veškerý obsah jednotky \"FLASH\". Opravdu chcete pokračovat?"
     },
     "RFModule": {
         "RFModule": "RF modul",
@@ -311,7 +319,7 @@
         "SelectRestoreComponent": "Vyberte soubor který chcete obnovit",
         "NoBackupFileFound": "Soubor zálohy nenalezen",
         "RestoreWillStart": "Obnova začne",
-        "RestoreFile": "Obnoví vybrané komponenty v {{ souboru }} do vašeho rádia. Tím přepíšete soubory se stejným názvem ve vašem rádiu.",
+        "RestoreFile": "Obnoví vybrané komponenty v {{ file }} do vašeho rádia. Tím přepíšete soubory se stejným názvem ve vašem rádiu.",
         "BackupRestoreCompleted": "Obnova zálohy dokončena",
         "BackupCompleted": "Záloha dokončena",
         "BackupWriteTo": "Soubor zálohy zapsán do {{ file }}",
@@ -361,7 +369,13 @@
         "DebugMode": "Režim ladění",
         "ExportDebugTraces": "Exportovat ladění",
         "Export": "Exportovat",
-        "DebugOptions": "Možnosti ladění"
+        "DebugOptions": "Možnosti ladění",
+        "Proxy": "Proxy",
+        "NoProxy": "No proxy",
+        "SystemProxy": "System proxy",
+        "CustomProxy": "Custom proxy",
+        "ProxyAddress": "Proxy address",
+        "ProxyPort": "Port"
     },
     "Documentation": {
         "Documentation": "Dokumentace",
@@ -395,7 +409,7 @@
         "WaitingForFirmware": "Čekání na firmware..."
     },
     "FrskGuide": {
-        "FrskGuideTitle": "Automatický aktualizace se nespustila úspěšně. Aktualizujte soubor .frsk ručně podle následujících kroků",
+        "FrskGuideTitle": "Automatická aktualizace se nespustila úspěšně. Aktualizujte soubor .frsk ručně podle následujících kroků",
         "FrskGuideStep1": "Odpojte kabel USB a přejděte do nabídky Systém - Správce souborů",
         "FrskGuideStep2": "Najděte soubor device.frsk na kartě NAND nebo SD karta",
         "FrskGuideStep3": "Aktualizujte své zařízení výběrem možností ve vyskakovacím menu.",
@@ -417,7 +431,7 @@
         "LanguageManager": "Správce jazyků",
         "LanguageList": "Seznam jazyků",
         "DownloadLocation": "Místo stahování",
-        "RadioI18n": "Adresár lokalizace rádia",
+        "RadioI18n": "Adresář lokalizace rádia",
         "DownloadingI18n": "Stahuji lokalizační soubor",
         "NoI18nFileSelected": "Nebyl vybrán lokalizační soubor",
         "I18nDownloadSuccessfully": "Lokalizační soubory byli uspěšně staženy",
@@ -502,5 +516,48 @@
         "Sensors": "Senzory",
         "VTX": "VTX",
         "Radio": "Rádio"
+    },
+    "Simulator": {
+        "EthosSimulator": "Ethos simulátor",
+        "Radio": "Model rádia",
+        "Release": "Vydání",
+        "Protocol": "Protokol",
+        "StartSim": "Start simulátoru",
+        "NoSupportedSim": "Nenalezen podporovaný simulátor",
+        "DownloadingSimulator": "Stahuji simulátor ...",
+        "InitSimulatorFailed": "Nepodařilo se inicializovat simulátor",
+        "FailToPrepareSimDir": "Při přípravě složek potřebných pro simulátor nastala chyba",
+        "StopSimulator": "Zastavit simulátor",
+        "UploadFiles": "Nahrát soubory",
+        "UploadFilesDestQuestion": "Jakou složku chcete nahrát do simulátoru?",
+        "CustomDirectory": "Vlastní složka",
+        "FileUploadedAndReloadSimQuestion": "Soubory úspěšně nahrány. Chcete restartovat simulátor pro načtení těchto souborů?",
+        "SwitchPageQuestion": "Simulátor bude ukončen. Opravdu chcete pokračovat?",
+        "NoDestDirSelected": "Nevybrána cílová složka!",
+        "SyncRadioFilesToLocalSimulator": "Synchronizovat soubory rádia do místního simulátoru",
+        "OpenLocalSimDir": "Otevřít místní složku simulátoru",
+        "SelectLocalSimDir": "Vybrat místní složku simulátoru",
+        "CurrentLocalSimDir": "Současná místní složka simulátoru",
+        "OverwriteLocalSimDirQuestion": "Chystáte se synchronizovat obsah rádia do místní složky simulátoru. Dojde k přepsání obsahu místní složky. Opravdu chcete pokračovat?",
+        "RadioConnectedToSim": "Rádio připojeno k simulátoru",
+        "InitFailAndFallBackToDefault": "Selhala inicializace vybrané složky simulátoru, použita výchozí cesta.",
+        "ExecSimScript": "Spustit makro skript simulátoru",
+        "SelectSyncComponent": "Vyberte komponenty, které chcete synchronizovat",
+        "Synchronize": "Synchronizovat",
+        "SelectMacro": "Prosím, vyberte makro ke spuštění",
+        "SimNotStarted": "Simulátor neběží",
+        "NoMacroFound": "Nenalezeno dostupné makro",
+        "AutoCentering": "Auto centrování",
+        "MaintainVertical": "Pohyb jen ve vertikální ose",
+        "MaintainHorizontal": "Pohyb jen v horizontální ose",
+        "MidpointSnapping": "Přichytávat ke středům",
+        "ToggleConsoleWindow": "Přepnout okno konzole",
+        "ClearConsoleOutput": "Vyčistit výstup konzole",
+        "ReloadSimulator": "Znovu načíst simulátor",
+        "ReloadSimQuestion": "Opravdu chcete znovu načíst simulátor?",
+        "HowToUploadFilesToSim": "Jak nahrát soubory do simulátoru?",
+        "UploadFilesStep1": "Otevřete lokální složku simulátoru",
+        "UploadFilesStep2": "Nahrajte vaše soubory / složky do lokální složky simulátoru. Cesta by měla vypadat následovně\n> ${PathToLocalSimulator}/.simulator/${ReleaseTagName}/persist/${RadioName}/",
+        "UploadFilesStep3": "Znovu načtěte běžící simulátor"
     }
 }

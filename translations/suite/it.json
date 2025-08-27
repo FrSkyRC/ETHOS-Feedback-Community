@@ -103,7 +103,12 @@
         "Refresh": "Aggiorna",
         "SystemFiles": "File di Sistema",
         "Dismiss": "Dismetti",
-        "ShowPrereleases": "Mostra pre-releases"
+        "ShowPrereleases": "Mostra pre-releases",
+        "VisitThirdparty": "Visita link terze-parti",
+        "PathInvalid": "Il percorso file selezionato contiene caratteri non validi, e il file è stato rimosso dalla lista",
+        "OpenFile": "Open file",
+        "Add": "Add",
+        "Upload": "Upload"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Scegliere la versione del video component",
@@ -158,8 +163,8 @@
         "ProductAssets": "Assets Prodotti"
     },
     "VersionTag": {
-        "MissingRemoteVersion": "Versione remota mancante",
-        "NoCurrentVersion": "No versione corrente",
+        "FetchingFromServer": "Recupero dal server ...",
+        "NoCurrentVersion": "Nessuna versione corrente",
         "OutOfDate": "Obsoleta",
         "GreaterThanLatestRelease": "Piu recente di questa release",
         "UpToDate": "Aggiornata",
@@ -273,13 +278,18 @@
         "LastUpdatedAt": "Ultimo aggiornamento del",
         "TestingVersion": "Versione di Test",
         "GoToModuleManager": "Vai al manager modulo",
-        "GoToDownloadCenter": "Vai al download center",
+        "GoToDownloadCenter": "Vai al centro download",
         "LatestBootloaderRequired": "Ultimo bootloader richiesto!",
         "ConfirmUpdateBootloaderFirstly": "Il Firmware di questa release richiede l'aggiornamento del bootloader. O la radio non funzionerà correttamente. Confermi l'aggiornamento del bootloader per prima cosa?",
         "ConfirmBackup": "Conferma backup",
         "BackupOrContinueUpdate": "E' raccomandato di eseguire il backup del contenuto della radio prima di aggiornare. Vuoi andare alla pagina di backup o continuare aggiornamento?",
         "GoToBackup": "Vai alla pagina di backup",
-        "ContinueUpdaing": "Continua aggiornamento"
+        "ContinueUpdaing": "Continua aggiornamento",
+        "CheckingComponentsVersion": "Controllo versione componenti ...",
+        "ComponentsNeedToBeUpdated": "I componenti necessitano aggiornamento",
+        "UpdateComponentToVersion": "Componente {{ component }} deve essere aggiornato alla versione {{ version }}",
+        "ConfirmFlashBootloader": "Conferma flash bootloader",
+        "Bootloader170confirmation": "Aggiornando il bootloader alla versione 1.7.0 verrà cancellato tutto il contenuto del FLASH drive. Sei sicuro di voler continuare?"
     },
     "RFModule": {
         "RFModule": "Modulo RF",
@@ -326,7 +336,8 @@
         "BackupComponents": "Backup Componenti",
         "AnalysingComponents": "Analisi componenti...",
         "BackupNotMatchRadio": "Questo backup non corrisponde con la tua radio. Vuoi continuare?",
-        "WritingBackupFile": "Scrittura backup..."
+        "WritingBackupFile": "Scrittura backup...",
+        "CreateAtVersion": "Creato alla versione"
     },
     "About": {
         "About": "A proposito",
@@ -358,7 +369,13 @@
         "DebugMode": "Modo Debug",
         "ExportDebugTraces": "Esporta tracce debug",
         "Export": "Esporta",
-        "DebugOptions": "Opzioni Debug"
+        "DebugOptions": "Opzioni Debug",
+        "Proxy": "Proxy",
+        "NoProxy": "Nessun proxy",
+        "SystemProxy": "Proxy Sistema",
+        "CustomProxy": "Proxy Custom",
+        "ProxyAddress": "Indirizzo Proxy",
+        "ProxyPort": "Porta"
     },
     "Documentation": {
         "Documentation": "Documentazione",
@@ -466,7 +483,8 @@
         "InstalledScript": "Script Installato",
         "InstallLatest": "Installa ultimo",
         "Reinstall": "Reinstalla",
-        "ScriptInfo": "Informazione Script"
+        "ScriptInfo": "Informazione Script",
+        "TheEntireZip": "L'intero File Zip"
     },
     "Updater": {
         "NewVersionAvailable": "Nuova versione Suite {{ version }} disponibile!",
@@ -498,5 +516,48 @@
         "Sensors": "Sensori",
         "VTX": "VTX",
         "Radio": "Radio"
+    },
+    "Simulator": {
+        "EthosSimulator": "Simulatore Ethos",
+        "Radio": "Radio",
+        "Release": "Versione",
+        "Protocol": "Protocollo",
+        "StartSim": "Avvia simulatore",
+        "NoSupportedSim": "Nessun simulatore supportato trovato",
+        "DownloadingSimulator": "Scarico simulatore ...",
+        "InitSimulatorFailed": "Inizializzazione Simulatore Fallita",
+        "FailToPrepareSimDir": "Errore durante la preparazione della directory necessaria al Simulatore",
+        "StopSimulator": "Stop simulatore",
+        "UploadFiles": "Carica Files",
+        "UploadFilesDestQuestion": "Quale directory vuoi caricare nel simulatore?",
+        "CustomDirectory": "Directory personalizzata",
+        "FileUploadedAndReloadSimQuestion": "Files caricati correttamente. Necessiti di riavviare il simulatore per attivare i files?",
+        "SwitchPageQuestion": "Il simulatore sta per essere arrestato. Sei sicuro di voler continuare?",
+        "NoDestDirSelected": "Nessuna directory di destinazione selezionata!",
+        "SyncRadioFilesToLocalSimulator": "Sincr. files radio al Simulatore locale.",
+        "OpenLocalSimDir": "Apri Directory Simulatore locale",
+        "SelectLocalSimDir": "Seleziona directory Simulatore locale",
+        "CurrentLocalSimDir": "Directory selezionata Simulatore locale",
+        "OverwriteLocalSimDirQuestion": "Stai per sincronizzare i contenuti della radio alla directory del Simulatore locale. Questo sovrascriverà il contenuto della directory locale. Sei sicuro di continuare?",
+        "RadioConnectedToSim": "Radio connessa al simulatore",
+        "InitFailAndFallBackToDefault": "Il Simulatore selezionato non è riuscito a inizializzare i files necessari della directory ed è ritornata al percorso standard.",
+        "ExecSimScript": "Esegui gli script delle macro",
+        "SelectSyncComponent": "Seleziona i componenti che vuoi sincronizzare",
+        "Synchronize": "Sincronizza",
+        "SelectMacro": "Seleziona la macro che vuoi eseguire",
+        "SimNotStarted": "Simulatore non avviato",
+        "NoMacroFound": "Nessuna macro del simulatore trovata",
+        "AutoCentering": "Auto centraggio",
+        "MaintainVertical": "Mantieni movimento asse verticale",
+        "MaintainHorizontal": "Mantieni movimento asse orizzontale",
+        "MidpointSnapping": "Snap al Midpoint",
+        "ToggleConsoleWindow": "Attiva finestra console",
+        "ClearConsoleOutput": "Svuota output console",
+        "ReloadSimulator": "Ricarica simulatore",
+        "ReloadSimQuestion": "Vuoi ricaricare il simulatore?",
+        "HowToUploadFilesToSim": "Come caricare files al simulatore?",
+        "UploadFilesStep1": "Apri la directory locale del simulatore",
+        "UploadFilesStep2": "Aggiungi files / directory alla cartella locale del simulatore. Il percorso deve essere tipo\n> ${PathToLocalSimulator}/.simulator/${ReleaseTagName}/persist/${RadioName}/",
+        "UploadFilesStep3": "Ricarica il simulatore attivo"
     }
 }

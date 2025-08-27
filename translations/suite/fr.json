@@ -58,7 +58,7 @@
         "Outdated": "plus à jour",
         "All": "Tout",
         "Close": "Fermer",
-        "ReferToFAQ": "Consulter les questions fréquentes",
+        "ReferToFAQ": "Consulter la FAQ",
         "Cancel": "Annuler",
         "Finish": "Terminer",
         "OK": "OK",
@@ -102,7 +102,13 @@
         "UnselectAll": "Déselectionner tout",
         "Refresh": "Rafraichir",
         "SystemFiles": "Fichiers système",
-        "Dismiss": "Annuler"
+        "Dismiss": "Annuler",
+        "ShowPrereleases": "Affichage pré-versions",
+        "VisitThirdparty": "Accéder url accessoires",
+        "PathInvalid": "Le répertoire sélectionné contient des caractères non valides, et le fichier a été retiré de la liste",
+        "OpenFile": "Open file",
+        "Add": "Add",
+        "Upload": "Upload"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Choisir votre version de composant vidéo",
@@ -157,7 +163,7 @@
         "ProductAssets": "Gamme de produits"
     },
     "VersionTag": {
-        "MissingRemoteVersion": "Version distante manquante",
+        "FetchingFromServer": "Récupération depuis le serveur...",
         "NoCurrentVersion": "Pas de nouvelle version",
         "OutOfDate": "Mise à jour disponible",
         "GreaterThanLatestRelease": "Supérieure à la version actuelle",
@@ -211,8 +217,8 @@
     "VersionMap": {
         "RecommendUpdate": "Mise à jour recommandée {{ recommend }} ",
         "MissingRequiredComponentVersion": "Version composant non disponible",
-        "TargetFirmwareNotCompatible": "Le firmawre {{ targetVersion }} du {{ targetComponent }} nécessite le firmware {{requireVersion }} avec le {{ requireComponent }}.",
-        "RequireUpdate": "Mettre à jour le firmawre {{ requireComponent }} vers la version {{ requireVersion }} en premier.",
+        "TargetFirmwareNotCompatible": "Le firmware {{ targetVersion }} du {{ targetComponent }} nécessite le firmware {{requireVersion }} avec le {{ requireComponent }}.",
+        "RequireUpdate": "Mettre à jour le firmware {{ requireComponent }} vers la version {{ requireVersion }} en premier.",
         "CheckRxVersion": "Vérifier que le firmware des récepteurs utilisés avec ce module sont aussi en version {{ version }} ou supérieur."
     },
     "RadioTool": {
@@ -279,7 +285,12 @@
         "ConfirmBackup": "Confirmer sauvegarde ?",
         "BackupOrContinueUpdate": "Sauvegarde conseillée avant une mise à jour. Aller à la page de sauvegarde ou continuer ?",
         "GoToBackup": "Vers la page Sauvegarde",
-        "ContinueUpdaing": "Poursuivre la mise à jour"
+        "ContinueUpdaing": "Poursuivre la mise à jour",
+        "CheckingComponentsVersion": "Vérification version composants en cour ...",
+        "ComponentsNeedToBeUpdated": "Des composants nécessitent une mise à jour",
+        "UpdateComponentToVersion": "Le composant {{ component }} nécessite la mise à jour en version {{ version }}",
+        "ConfirmFlashBootloader": "Confirm flashing bootloader",
+        "Bootloader170confirmation": "Upgrading the bootloader to version 1.7.0 will erase all contents on the FLASH drive. Are you sure you want to continue?"
     },
     "RFModule": {
         "RFModule": "Module RF",
@@ -326,7 +337,8 @@
         "BackupComponents": "Sauvegarder les éléments",
         "AnalysingComponents": "Analyse des éléments ...",
         "BackupNotMatchRadio": "Cette sauvegarde ne correspond pas à votre radio. Continuer ?",
-        "WritingBackupFile": "Ecriture sauvegarde en cours ..."
+        "WritingBackupFile": "Ecriture sauvegarde en cours ...",
+        "CreateAtVersion": "Créer avec la version"
     },
     "About": {
         "About": "A propos",
@@ -358,7 +370,13 @@
         "DebugMode": "Mode débug",
         "ExportDebugTraces": "Exporter fichiers debug",
         "Export": "Exporter",
-        "DebugOptions": "Options débuggage"
+        "DebugOptions": "Options débuggage",
+        "Proxy": "Proxy",
+        "NoProxy": "Pas de proxy",
+        "SystemProxy": "Proxy système",
+        "CustomProxy": "Proxy perso",
+        "ProxyAddress": "Adresse proxy",
+        "ProxyPort": "Port"
     },
     "Documentation": {
         "Documentation": "Documentation",
@@ -366,7 +384,7 @@
         "LuaDocDescription": "Documentation pour vos scripts Lua",
         "LuaExamples": "Démo Lua",
         "LuaExamplesDescription": "Exemples de scripts Lua sur Github.",
-        "SuiteFAQ": "Questions fréquentes Ethos Suite",
+        "SuiteFAQ": "FAQ Ethos Suite",
         "SuiteFAQDescription": "Questions fréquentes sur l'utilisation de Ethos Suite.",
         "EthosManual": "Manuel Ethos",
         "EthosManualDescription": "Manuel emploi Ethos au format PDF téléchargeable, incluant les anciennes versions.",
@@ -466,7 +484,8 @@
         "InstalledScript": "Script installé",
         "InstallLatest": "Installer dernière verison",
         "Reinstall": "Reinstaller",
-        "ScriptInfo": "Script information"
+        "ScriptInfo": "Information Script",
+        "TheEntireZip": "Le fichier ZIP complet"
     },
     "Updater": {
         "NewVersionAvailable": "Nouvelle version de Suite {{ version }} disponible !",
@@ -498,6 +517,48 @@
         "Sensors": "Capteurs",
         "VTX": "VTX",
         "Radio": "Radio"
+    },
+    "Simulator": {
+        "EthosSimulator": "Simulateur Ethos",
+        "Radio": "Radio",
+        "Release": "Version",
+        "Protocol": "Protocole",
+        "StartSim": "Démarrer simulateur",
+        "NoSupportedSim": "Simulateur non trouvé pour cette radio",
+        "DownloadingSimulator": "Téléchargement simulateur en cours ...",
+        "InitSimulatorFailed": "Erreur initialisation du simulateur",
+        "FailToPrepareSimDir": "Une erreur est survenue lors de la création du répertoire du simulateur",
+        "StopSimulator": "Arrêter le simulateur",
+        "UploadFiles": "Télecharger fichiers",
+        "UploadFilesDestQuestion": "Répertoire pour télécharger les fichiers du simulateur ?",
+        "CustomDirectory": "Répertoire perso",
+        "FileUploadedAndReloadSimQuestion": "Téléchargement fichiers réussi. Redemarrer le simulateur pour charger les fichiers ?",
+        "SwitchPageQuestion": "Le simulateur va s'arrêter. Continuer ?",
+        "NoDestDirSelected": "Pas de répertoire de destination sélectionné !",
+        "SyncRadioFilesToLocalSimulator": "Sync. fichiers radio avec le simulateur local",
+        "OpenLocalSimDir": "Ouvrir le répertoire local du simulateur",
+        "SelectLocalSimDir": "Sélectionner le répertoire local du simulateur",
+        "CurrentLocalSimDir": "Répertoire actuel local du simulateur",
+        "OverwriteLocalSimDirQuestion": "Attention, la synchronisation avec le répertoire local du simulateur va effacer le contenu de ce dernier. Continuer ?",
+        "RadioConnectedToSim": "Radio connecté au simulateur",
+        "InitFailAndFallBackToDefault": "Le répertoire choisit ne permet pas l'initialisation des fichiers du simulateur. Retour au répertoire par défaut.",
+        "ExecSimScript": "Executer macros scripts du simulateur",
+        "SelectSyncComponent": "Choisir éléments à synchroniser",
+        "Synchronize": "Synchroniser",
+        "SelectMacro": "Sélectionner la macro à executer",
+        "SimNotStarted": "Simulateur non démarré",
+        "NoMacroFound": "Aucune macro pour le simulateur trouvé",
+        "AutoCentering": "Centrage auto",
+        "MaintainVertical": "Axe vertical maintenu",
+        "MaintainHorizontal": "Axe horizontal maintenu",
+        "MidpointSnapping": "Accrochage point central",
+        "ToggleConsoleWindow": "Toggle console window",
+        "ClearConsoleOutput": "Clear console output",
+        "ReloadSimulator": "Reload simulator",
+        "ReloadSimQuestion": "Do you want to reload the simulator?",
+        "HowToUploadFilesToSim": "How to upload files to simulator?",
+        "UploadFilesStep1": "Open the local simulator directory",
+        "UploadFilesStep2": "Put files / directories to the local simulator directory. The path should goes like\n> ${PathToLocalSimulator}/.simulator/${ReleaseTagName}/persist/${RadioName}/",
+        "UploadFilesStep3": "Reload the running simulator"
     }
 }
-

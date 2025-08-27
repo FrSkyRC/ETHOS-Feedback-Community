@@ -105,7 +105,10 @@
         "Dismiss": "忽略",
         "ShowPrereleases": "显示预发布版本",
         "VisitThirdparty": "访问第三方链接",
-        "PathInvalid": "The selected file path contains invalid characters, and the file has been removed from the list"
+        "PathInvalid": "所选文件的路径包含非法字符, 相关文件已从列表中移除",
+        "OpenFile": "打开文件",
+        "Add": "添加",
+        "Upload": "上传"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "选择你的视频组件版本",
@@ -180,7 +183,7 @@
         "ModelImage": "模型图片",
         "GPSImage": "GPS 图片",
         "WidgetImage": "用户图片",
-        "RightDirectory": "右侧文件夹"
+        "RightDirectory": "右侧目录"
     },
     "AudioManager": {
         "AudioManager": "音频管理器",
@@ -282,7 +285,12 @@
         "ConfirmBackup": "请确认备份",
         "BackupOrContinueUpdate": "我们强烈建议在升级遥控器前对遥控器中的内容进行备份, 你需要前往备份页面还是继续升级?",
         "GoToBackup": "前往备份页面",
-        "ContinueUpdaing": "继续升级"
+        "ContinueUpdaing": "继续升级",
+        "CheckingComponentsVersion": "正在获取组件版本号 ...",
+        "ComponentsNeedToBeUpdated": "组件需要升级",
+        "UpdateComponentToVersion": "组件 {{ component }} 需要升级到版本 {{ version }}",
+        "ConfirmFlashBootloader": "Confirm flashing bootloader",
+        "Bootloader170confirmation": "Upgrading the bootloader to version 1.7.0 will erase all contents on the FLASH drive. Are you sure you want to continue?"
     },
     "RFModule": {
         "RFModule": "射频模块",
@@ -362,7 +370,13 @@
         "DebugMode": "Debug 模式",
         "ExportDebugTraces": "导出 Debug 记录",
         "Export": "导出",
-        "DebugOptions": "Debug 选项"
+        "DebugOptions": "Debug 选项",
+        "Proxy": "代理",
+        "NoProxy": "不使用代理",
+        "SystemProxy": "系统代理",
+        "CustomProxy": "自定义代理",
+        "ProxyAddress": "代理地址",
+        "ProxyPort": "端口号"
     },
     "Documentation": {
         "Documentation": "文档",
@@ -471,7 +485,7 @@
         "InstallLatest": "安装最新版",
         "Reinstall": "重新安装",
         "ScriptInfo": "脚本信息",
-        "TheEntireZip": "The entire zip file"
+        "TheEntireZip": "整个压缩包文件"
     },
     "Updater": {
         "NewVersionAvailable": "Suite {{ version }} 已发布!",
@@ -502,5 +516,48 @@
         "Sensors": "传感器",
         "VTX": "VTX",
         "Radio": "遥控器"
+    },
+    "Simulator": {
+        "EthosSimulator": "Ethos 模拟器",
+        "Radio": "遥控器",
+        "Release": "发布版本",
+        "Protocol": "地区版本",
+        "StartSim": "启动模拟器",
+        "NoSupportedSim": "没有找到合适的模拟器",
+        "DownloadingSimulator": "正在下载模拟器 ...",
+        "InitSimulatorFailed": "模拟器初始化失败",
+        "FailToPrepareSimDir": "在准备模拟器必要文件时出现了错误",
+        "StopSimulator": "停止模拟器",
+        "UploadFiles": "上传文件",
+        "UploadFilesDestQuestion": "你想把文件上传到模拟器的什么目录中?",
+        "CustomDirectory": "自定义文件夹",
+        "FileUploadedAndReloadSimQuestion": "文件上传完成, 需要现在重启模拟器来载入文件吗?",
+        "SwitchPageQuestion": "该操作会使模拟器停止, 你确定要继续吗?",
+        "NoDestDirSelected": "没有选择目标目录!",
+        "SyncRadioFilesToLocalSimulator": "将遥控器中内容同步到本地模拟器目录中",
+        "OpenLocalSimDir": "打开本地模拟器目录",
+        "SelectLocalSimDir": "选择本地模拟器目录",
+        "CurrentLocalSimDir": "当前本地模拟器目录",
+        "OverwriteLocalSimDirQuestion": "你即将把遥控器中的内容同步到本地模拟器目录中, 该操作会覆盖本地模拟器目录中的内容, 你确定要继续吗?",
+        "RadioConnectedToSim": "连接到模拟器的遥控器",
+        "InitFailAndFallBackToDefault": "所选择的模拟器目录在初始化模拟器必要文件时出现错误, 已经回退至默认的本地模拟器目录",
+        "ExecSimScript": "执行模拟器宏文件",
+        "SelectSyncComponent": "选择你想要同步的组件",
+        "Synchronize": "同步",
+        "SelectMacro": "请选择你想要执行的宏文件",
+        "SimNotStarted": "模拟器未在运行",
+        "NoMacroFound": "没有找到可供执行的宏文件",
+        "AutoCentering": "自动回中",
+        "MaintainVertical": "保持垂直轴向移动",
+        "MaintainHorizontal": "保持水平轴向移动",
+        "MidpointSnapping": "中点吸附",
+        "ToggleConsoleWindow": "开/关控制台窗口",
+        "ClearConsoleOutput": "清空控制台输出",
+        "ReloadSimulator": "重载模拟器",
+        "ReloadSimQuestion": "你确定要重载模拟器吗?",
+        "HowToUploadFilesToSim": "如何将文件上传至模拟器?",
+        "UploadFilesStep1": "打开本地模拟器目录",
+        "UploadFilesStep2": "将文件/文件夹放到对应的目录中, 路径应当如下:\n> ${本地模拟器目录}/.simulator/${发布版本Tag名}/persist/${遥控器名}/",
+        "UploadFilesStep3": "重载正在运行的模拟器"
     }
 }

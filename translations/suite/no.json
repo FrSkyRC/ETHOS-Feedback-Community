@@ -105,7 +105,10 @@
         "Dismiss": "Avvis",
         "ShowPrereleases": "Vis 'Pre-releases'",
         "VisitThirdparty": "Gå til ekstern URL adresse",
-        "PathInvalid": "Den valgte fil-banen inneholder ugyldige tegn og filen har blitt fjernet fra listen"
+        "PathInvalid": "Den valgte fil-banen inneholder ugyldige tegn og filen har blitt fjernet fra listen",
+        "OpenFile": "Open file",
+        "Add": "Add",
+        "Upload": "Upload"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Velg din video-komponent-versjon",
@@ -283,7 +286,12 @@
         "ConfirmBackup": "Bekreft sikkerhetskopi",
         "BackupOrContinueUpdate": "Det er anbefalt at du sikkerhetskopierer innholdet på radioen før du oppdaterer. Ønsker du å gå til Sikkerhetskopi-siden eller fortsette oppdateringen?",
         "GoToBackup": "Gå til Sikkerhetskopi-siden",
-        "ContinueUpdaing": "Fortsett oppdateringen"
+        "ContinueUpdaing": "Fortsett oppdateringen",
+        "CheckingComponentsVersion": "Checking components version ...",
+        "ComponentsNeedToBeUpdated": "Components need to be updated",
+        "UpdateComponentToVersion": "Component {{ component }} needs to be updated to version {{ version }}",
+        "ConfirmFlashBootloader": "Confirm flashing bootloader",
+        "Bootloader170confirmation": "Upgrading the bootloader to version 1.7.0 will erase all contents on the FLASH drive. Are you sure you want to continue?"
     },
     "RFModule": {
         "RFModule": "RF Modul",
@@ -363,7 +371,13 @@
         "DebugMode": "'Debug' modus",
         "ExportDebugTraces": "Eksporter 'Debug traces'",
         "Export": "Eksport",
-        "DebugOptions": "'Debug' alternativer"
+        "DebugOptions": "'Debug' alternativer",
+        "Proxy": "Proxy",
+        "NoProxy": "No proxy",
+        "SystemProxy": "System proxy",
+        "CustomProxy": "Custom proxy",
+        "ProxyAddress": "Proxy address",
+        "ProxyPort": "Port"
     },
     "Documentation": {
         "Documentation": "Dokumentasjon",
@@ -504,5 +518,48 @@
         "Sensors": "Sensorer",
         "VTX": "VTX",
         "Radio": "Radio"
+    },
+    "Simulator": {
+        "EthosSimulator": "Ethos Simulator",
+        "Radio": "Radio",
+        "Release": "Release",
+        "Protocol": "Protocol",
+        "StartSim": "Start simulator",
+        "NoSupportedSim": "No supported simulator found",
+        "DownloadingSimulator": "Downloading simulator ...",
+        "InitSimulatorFailed": "Failed to initialize simulator",
+        "FailToPrepareSimDir": "An error occurred while preparing the necessary directory for the simulator",
+        "StopSimulator": "Stop simulator",
+        "UploadFiles": "Upload files",
+        "UploadFilesDestQuestion": "Which directory would you like to upload the files to in the simulator?",
+        "CustomDirectory": "Custom directory",
+        "FileUploadedAndReloadSimQuestion": "Files uploaded successfully. Do you need to restart the simulator to load the files?",
+        "SwitchPageQuestion": "The simulator is about to stop. Are you sure you want to continue?",
+        "NoDestDirSelected": "No destination directory selected!",
+        "SyncRadioFilesToLocalSimulator": "Sync radio files to local simulator",
+        "OpenLocalSimDir": "Open local simulator directory",
+        "SelectLocalSimDir": "Select local simulator directory",
+        "CurrentLocalSimDir": "Current local simulator directory",
+        "OverwriteLocalSimDirQuestion": "You are about to synchronize the contents of the radio to the local simulator directory. This will overwrite the contents of the local directory. Are you sure you want to continue?",
+        "RadioConnectedToSim": "Radio connected to simulator",
+        "InitFailAndFallBackToDefault": "The selected simulator directory failed to initialize the necessary simulator files and has fallen back to the default path.",
+        "ExecSimScript": "Execute simulator macro script",
+        "SelectSyncComponent": "Select components you want to synchronize",
+        "Synchronize": "Synchronize",
+        "SelectMacro": "Please select the macro you want to execute",
+        "SimNotStarted": "Simulator isn't started",
+        "NoMacroFound": "No available simulator macro found",
+        "AutoCentering": "Auto centering",
+        "MaintainVertical": "Maintain vertical axis movement",
+        "MaintainHorizontal": "Maintain horizontal axis movement",
+        "MidpointSnapping": "Midpoint snapping",
+        "ToggleConsoleWindow": "Toggle console window",
+        "ClearConsoleOutput": "Clear console output",
+        "ReloadSimulator": "Reload simulator",
+        "ReloadSimQuestion": "Do you want to reload the simulator?",
+        "HowToUploadFilesToSim": "How to upload files to simulator?",
+        "UploadFilesStep1": "Open the local simulator directory",
+        "UploadFilesStep2": "Put files / directories to the local simulator directory. The path should goes like\n> ${PathToLocalSimulator}/.simulator/${ReleaseTagName}/persist/${RadioName}/",
+        "UploadFilesStep3": "Reload the running simulator"
     }
 }
