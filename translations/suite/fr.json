@@ -106,9 +106,9 @@
         "ShowPrereleases": "Affichage pré-versions",
         "VisitThirdparty": "Accéder url accessoires",
         "PathInvalid": "Le répertoire sélectionné contient des caractères non valides, et le fichier a été retiré de la liste",
-        "OpenFile": "Open file",
-        "Add": "Add",
-        "Upload": "Upload"
+        "OpenFile": "Ouvrir fichier",
+        "Add": "Ajouter",
+        "Upload": "Charger"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Choisir votre version de composant vidéo",
@@ -289,8 +289,8 @@
         "CheckingComponentsVersion": "Vérification version composants en cour ...",
         "ComponentsNeedToBeUpdated": "Des composants nécessitent une mise à jour",
         "UpdateComponentToVersion": "Le composant {{ component }} nécessite la mise à jour en version {{ version }}",
-        "ConfirmFlashBootloader": "Confirm flashing bootloader",
-        "Bootloader170confirmation": "Upgrading the bootloader to version 1.7.0 will erase all contents on the FLASH drive. Are you sure you want to continue?"
+        "ConfirmFlashBootloader": "Confirmer mise à jour du bootloader",
+        "Bootloader170confirmation": "Mettre à jour le bootloader en V 1.7.0 effacera la mémoire flash. Continuer ?"
     },
     "RFModule": {
         "RFModule": "Module RF",
@@ -496,7 +496,7 @@
         "UpdaterNotFound": "Lien de téléchargement de la mise à jour non trouvé",
         "DownloadingUpdater": "Téchargement de la mise à jour. Effectué {{ progress }}% ...",
         "ConfirmCancelDownload": "Confirmer l'annulation du téléchargement",
-        "ConfirmCancelDownloadLabel": "Annular la téléchargement ? Le processus devra être recommencer depuis le début.",
+        "ConfirmCancelDownloadLabel": "Annuler la téléchargement ? Le processus devra être recommencer depuis le début.",
         "NetworkError": "Erreur de réseau pour le téléchargement de la mise à jour.",
         "UpdateDownloadedLabel": "Mise à jour téléchargée. Voulez-vous ?",
         "InstallUpdate": "Installer la mise à jour",
@@ -540,9 +540,9 @@
         "SelectLocalSimDir": "Sélectionner le répertoire local du simulateur",
         "CurrentLocalSimDir": "Répertoire actuel local du simulateur",
         "OverwriteLocalSimDirQuestion": "Attention, la synchronisation avec le répertoire local du simulateur va effacer le contenu de ce dernier. Continuer ?",
-        "RadioConnectedToSim": "Radio connecté au simulateur",
+        "RadioConnectedToSim": "Radio connectée au simulateur",
         "InitFailAndFallBackToDefault": "Le répertoire choisit ne permet pas l'initialisation des fichiers du simulateur. Retour au répertoire par défaut.",
-        "ExecSimScript": "Executer macros scripts du simulateur",
+        "ExecSimScript": "Exécuter macros scripts du simulateur",
         "SelectSyncComponent": "Choisir éléments à synchroniser",
         "Synchronize": "Synchroniser",
         "SelectMacro": "Sélectionner la macro à executer",
@@ -552,13 +552,14 @@
         "MaintainVertical": "Axe vertical maintenu",
         "MaintainHorizontal": "Axe horizontal maintenu",
         "MidpointSnapping": "Accrochage point central",
-        "ToggleConsoleWindow": "Toggle console window",
-        "ClearConsoleOutput": "Clear console output",
-        "ReloadSimulator": "Reload simulator",
-        "ReloadSimQuestion": "Do you want to reload the simulator?",
-        "HowToUploadFilesToSim": "How to upload files to simulator?",
-        "UploadFilesStep1": "Open the local simulator directory",
-        "UploadFilesStep2": "Put files / directories to the local simulator directory. The path should goes like\n> ${PathToLocalSimulator}/.simulator/${ReleaseTagName}/persist/${RadioName}/",
-        "UploadFilesStep3": "Reload the running simulator"
+        "ToggleConsoleWindow": "Basculer vers la console windows",
+        "ClearConsoleOutput": "Effacer la sortie console",
+        "ReloadSimulator": "Recharger le simulateur",
+        "ReloadSimQuestion": "Rechargement du simulateur ?",
+        "HowToUploadFilesToSim": "Comment charger les fichiers vers le simulateur ?",
+        "UploadFilesStep1": "Ouvrir le répertoire local du simulateur",
+        "UploadFilesStep2": "Mettre les fichiers/ répertoires dans le répertoire local du simulateur. Le chemin doit être\n> ${PathToLocalSimulator}/.simulator/${ReleaseTagName}/persist/${RadioName}/",
+        "UploadFilesStep3": "Recharger le simulateur en cours d'utilisation"
     }
+
 }
