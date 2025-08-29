@@ -547,12 +547,12 @@
         "MidpointSnapping": "Ajuste del punto medio",
         "ToggleConsoleWindow": "Alternar ventana de consola",
         "ClearConsoleOutput": "Borrar salida de consola",
-        "ReloadSimulator": "Reload simulator",
-        "ReloadSimQuestion": "Do you want to reload the simulator?",
-        "HowToUploadFilesToSim": "How to upload files to simulator?",
-        "UploadFilesStep1": "Open the local simulator directory",
-        "UploadFilesStep2": "Put files / directories to the local simulator directory. The path should goes like\n> ${PathToLocalSimulator}/.simulator/${ReleaseTagName}/persist/${RadioName}/",
-        "UploadFilesStep3": "Reload the running simulator",
-        "ExecutingMacroFile": "Executing macro file"
+        "ReloadSimulator": "Recargar simulador",
+        "ReloadSimQuestion": "¿Quiere recargar el simulador?",
+        "HowToUploadFilesToSim": "¿Como subir archivos al simulador?",
+        "UploadFilesStep1": "Abrir el directorio local del simulador",
+        "UploadFilesStep2": "Poner archivos / directorios en el directorio local del simulador. La dirección deberia ser como\n> ${PathToLocalSimulator}/.simulator/${ReleaseTagName}/persist/${RadioName}/",
+        "UploadFilesStep3": "Recargar el simulador que está funcionando",
+        "ExecutingMacroFile": "Executando archivo macro"
     }
 }
