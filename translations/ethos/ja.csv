@@ -1,1147 +1,1147 @@
 String name, String context, X20(...) / XE(S) / V20, X18RS / X14(...) / T14 / V15, All other radios
-TRANSLATION_KEY,,ja
-TRANSLATION_NAME,,英語
-TRANSLATION_FALLBACK_NAME,,"Japanese"
-TRANSLATION_FONT_SUBSET,,"cjk"
-SPECIAL_CHARS,,"_-+."
-FORMULA,,式
-CALCULATED_SENSOR,,計算されたセンサー
-NAME,,名前
-DECIMALS,,小数点
-VALUE,,価値
-SENSOR_LOST_WARNING_DELAY,,センサー紛失警告遅延
-WARNING_DISABLED,,警告が無効になっています
-RANGE,,範囲
-SPACE_WITH_SAMPLES,,サンプル
-RESET,,リセット
-TELEMETRY_SENSOR,,テレメトリセンサー
-UNIT,,ユニット
-WRITE_LOGS,,ログの書き込み
-ID,,ID
-CENTER,,中心
-SUBTRIM,,サブトリム
-PWM_CENTER,,PWMセンター
-NORMAL,,普通
-EQUAL,,等しい
-UNPLUGGED,,プラグを抜く
-BEHAVIOUR,,行動
-ADD_NEW_BEHAVIOUR,,新しい動作を追加する
-ADD_EXTRA_TRIM,,トリムを追加する
-EXTRA_TRIM,,追加トリム
-SLOW_UP,,ゆっくりして
-MIN,,分
-CURVE,,曲線
-MAX,,マックス
-CHANNEL,,チャネル
-INVERT,,反転
-SLOW_DOWN,,減速する
-INVERTED,,反転
-FLIGHT_MODES,,飛行モード
-DRIVE_MODES,,"Drive modes"
-MIX_FLIGHT_MODES_DESCRIPTION,,
-MIX_NAME_DESCRIPTION,,ミックスの名前を編集
-TRIGGER_ON_CONDITION,,トリガーON条件
-COMMENT,,コメント
-FUNCTION,,関数
-VALUES,,価値観
-ADD_NEW_VALUE,,+ 新しい値を追加
-ACTIONS,,アクション
-ADD_NEW_ACTION,,+ 新しいアクションを追加
-DURATION_HIGH,,有効期間
-RISING_EDGE,,上昇エッジ
-DURING,,その間
-VALUE1,,価値1
-VALUE_X,,値 (X)
-CHECK_INTERVAL,,チェック間隔
-ACTIVE_CONDITION,,アクティブ状態
-MIN_DURATION,,最小期間
-MAX_DURATION,,最大継続時間
-DURATION_LOW,,非アクティブ期間
-VALUE2,,価値2
-DELAY_BEFORE_ACTIVE,,アクティブになる前に遅延
-DURATION,,間隔
-SOURCE_A,,出典（A）
-TRIGGER_OFF_CONDITION,,トリガーOFF条件
-DELAY_BEFORE_INACTIVE,,非アクティブになるまでの遅延
-DELAY_ON_OFF,,遅延オン/オフ
-SOURCE,,ソース
-APPLICATION_ID,,アプリケーションID
-PHYSICAL_ID,,身体ID
-ACTION,,アクション
-TRAINER,,トレーナー
-TRAINER_MODE,,トレーナーモード
-CHANNEL_RANGE,,チャンネル範囲
-CH,,中国語
-OUTPUTS,,出力
-LAST_MODIFICATION,,最終更新日,最終更新。
-CLONE,,クローン
-MODEL_MATCH,,モデルID
-MODEL_DATA_LOAD,,モデルデータのロード
-FILE_SIZE,,ファイルサイズ
-MODEL_SELECT,,モデル選択
-NO_MODELS_DIRECTORY,,モデルディレクトリがありません!
-ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_MODEL,,このモデルを削除してもよろしいですか?
-SUCCESS,,成功！
-CLONE_MODEL_SUCCESSFULLY,,モデルのクローンが正常に作成されました。
-FILENAME_TOO_LONG,,ファイル名が長すぎます。
-RX_STILL_ON_SELECT_ANOTHER_MODEL,,受信機はまだオンになっています。別のモデルを選択してもよろしいですか?
-CONFIRM_SELECT_ANOTHER_MODEL,,別のモデルを選択してもよろしいですか?
-FILE_NAME,,ファイル名
-MODEL_TYPE,,モデルタイプ
-CONFIRM,,確認する
-SET_CURRENT_MODEL,,現在のモデルを設定する
-UNCATEGORIZED,,未分類
-CHANGE_FOLDER,,フォルダの変更
-OPERATION,,手術
-OPERATION_FAILED,,操作に失敗しました!
-DELETE_FOLDER,,フォルダを削除
-RENAME_FOLDER,,フォルダ名の変更
-CREATE_FOLDER,,フォルダを作成
-CONFIRM_DELETE_FLIGHT_MODE,,このフライトモードを削除してもよろしいですか?
-MOVE,,動く
-EDIT,,編集
-ADD,,追加
-TELEMETRY_PORT,,テレメトリポート
-WARNING,,警告
-ERRORS,,エラー
-OPTIONS,,オプション
-CONFIGURE,,設定
-WAITING_FOR_RECEIVER,,受信者を待っています...
-PIN,,ピン
-TELEMETRY,,テレメトリー
-RX_SETTINGS,,受信設定
-NO_RESPONSE_FROM_RECEIVER,,"No response from receiver"
-SBUS_OUT,,"SBUS out"
-SBUS_IN,,"SBUS in"
-TELEMETRY_25_MW,,"Telemetry 25mW"
-HIGH_PWM_SPEED,,"High PWM speed"
-FLIGHT_DATA_RECORDER,,"Flight data record"
-RX_HAS_NO_FLIGHT_DATA_RECORD,,"Receiver has no flight data recorder."
-DEVICE_CONFIG,,"Device config"
-CONFIRM_DELETE_TIMER,,"Are you sure you want to delete this timer?"
-TIMER,,"Timer"
-MODE,,"Mode"
-PASTE,,"Paste"
-TIMERS,,"Timers"
-COPY,,"Copy"
-NO_TIMER_HINT,,"No timer yet. Please press the add button to create one!"
-ANTENNA,,"Antenna"
-POWER_HAS_BEEN_CHANGED_PLEASE_REBIND,,"The power has been changed, please rebind!"
-NO_RESPONSE_FROM_MODULE,,"No response from module!"
-POWER,,"Power"
-BAUDRATE,,"Baudrate"
-WAITING_FOR_MODULE,,"Waiting for module ..."
-TX_SETTINGS,,"TX settings"
-MIXES,,"Mixes"
-CHANNELS,,"Channels"
-FLIGHT_MODE,,"Flight mode"
-DRIVE_MODE,,"Drive mode"
-D,,"D"
-CONFIRM_DELETE_MIX,,"Are you sure you want to delete this mix?"
-CONFIRM_DELETE_SSS,,"Are you sure you want to delete %s?"
-NONE,,"None"
-NO_MIX_HINT,,"No mix yet. Please press the add button to create one!"
-TYPE,,"Type"
-SHARE,,"Share"
-RX,,"RX"
-RACING_MODE,,"Racing mode"
-RANGE_CHECK,,"Range check","Range"
-EXTERNAL_MODULE,,"External module"
-BIND_OK,,"Bind OK"
-BINDING_3DOTS,,"Binding ..."
-BIND,,"Bind"
-FAILSAFE,,"Failsafe"
-INTERNAL_MODULE,,"Internal module"
-SET_FAILSAFE,,"Set failsafe"
-RESET_BIND,,"Reset bind"
-FACTORY_RESET,,"Factory reset"
-RF_SYSTEM,,"RF system"
-OWNER_REGISTRATION_ID,,"Owner registration ID"
-SELECT_DEVICE,,"Select device"
-REGISTER,,"Register"
-VALID_FRAME_RATE,,"VFR"
-STATE,,"State"
-PROTOCOL,,"Protocol"
-ARE_YOU_SURE_TO_RESET_THIS_RECEIVER,,"Are you sure you want to reset this receiver ?"
-SET,,"Set"
-EXPO,,"Expo"
-UNIT_POINTS_COUNT,," points"
-WEIGHT,,"Weight"
-POINTS,,"Points"
-OFFSET,,"Offset"
-AUTO_OFFSET,,"Auto offset"
-OFFSET_WHEN_ACTIVE,,"Offset when active"
-OFFSET_WHEN_INACTIVE,,"Offset when inactive"
-SMOOTH,,"Smooth"
-POINT,,"Point"
-POINTS_COUNT,,"Points count"
-EASY_MODE,,"Easy mode"
-LOGIC_SWITCHES,,"Logic switches"
-ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_LOGIC_SWITCH,,"Are you sure you want to delete this logic switch?"
-NO_LOGIC_SWITCH_HINT,,"No logic switch yet. Please press the add button to create one!"
-START_CONDITION,,"Start condition"
-STOP_CONDITION,,"Stop condition"
-TIMER_EDIT,,"Timer edit"
-PERSISTENT,,"Persistent"
-START_VALUE,,"Start value","Start"
-AUDIO_ACTIONS,,"Audio actions"
-AUDIO_ACTION,,"Audio action"
-ADD_A_NEW_AUDIO_ACTION,,"Add a new audio action"
-ALARM_VALUE,,"Alarm value","Alarm"
-HAPTIC,,"Haptic"
-COUNT_SECONDS,,"Countdown"
-START,,"Start"
-PLAY_FILE,,"Play file"
-SPACE_WITH_OTHERS,," other places"
-CONFIRM_DELETE_CURVE,,"Are you sure you want to delete this curve?"
-CURVE_USED_BY,,"This curve is used by:"
-AND_WITH_TWO_SPACES,," and "
-CURVES,,"Curves"
-NO_CURVE_HINT,,"No curve yet. Please press the add button to create one!"
-VARS,,"Vars"
-NO_VAR_HINT,,"No var yet. Please press the add button to create one!"
-ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_VAR,,"Are you sure you want to delete this var?"
-CONFIRM_RESET_MIXES,,"This operation will cause all mixes to be reset.\nAre you sure you want to continue?"
-ELEVATORS,,"Elevators"
-YAW,,"Yaw"
-SWASH_PLATE,,"Swash plate"
-EDIT_MODEL,,"Edit model"
-PICTURE,,"Picture"
-TAIL,,"Tail"
-AILERONS,,"Ailerons"
-PITCH,,"Pitch"
-THROTTLE,,"Throttle"
-FLAPS,,"Flaps"
-ENGINE,,"Engine"
-BRAKE,,"Brake"
-RUDDERS,,"Rudders"
-ROLL,,"Roll"
-FUNCTION_SWITCHES,,"Function switches"
-RESET_ALL_MIXES,,"Reset all mixes"
-CREATE_CALCULATED_SENSOR,,"Create calculated sensor"
-CONFIRM_DELETE_SENSORS,,"All the sensors will be removed.\nAre you sure you want to continue?"
-ON,,"ON"
-OFF,,"OFF"
-DISCOVER_NEW_SENSORS,,"Discover new sensors"
-DELETE_ALL,,"Delete all"
-INDIVIDUAL_RSSI_ALERT_PER_BAND,,"Individual RSSI alert per band"
-CREATE_DIY_SENSOR,,"Create DIY sensor"
-CONFIRM_LOAD_ALL_SWITCH_POSITIONS,,"This operation will override all switch check positions with the current ones. Are you sure you want to continue?"
-CHECK_FUNCTION,,"Check function"
-LOAD_ALL_SWITCH_POSITIONS,,"Load all switch positions"
-CONFIRM_LOAD_ALL_POT_POSITIONS,,"This operation will override all pot check positions with the current ones. Are you sure you want to continue?"
-LOAD_ALL_POT_POSITIONS,,"Load all pot positions"
-CALIBRATION_FINISH,,"Calibration finished!"
-SXR_CALIBRATION,,"SxR calibration"
-CLICK_WHEN_DONE,,"Click when done"
-CALIBRATING,,"Calibrating ..."
-SXR_CALIBRATION_DESCRIPTION,,"Calibration of SxR gyros and accelerometers"
-SLAVE_CH,,"Slave CH"
-PERCENT,,"Percent"
-DESTINATION,,"Destination"
-ENABLE,,"Enable"
-NO_FUNCTION_HINT,,"No function yet. Please press the add button to create one!"
-SPECIAL_FUNCTIONS,,"Special functions","Special funcs"
-SF,,"SF"
-DISABLE,,"Disable"
-ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_SPECIAL_FUNCTION,,"Are you sure you want to delete this special function?"
-REGISTRATION_OK,,"Registration OK"
-UID,,"UID"
-REGISTRATION_ID,,"Registration ID"
-RX_NAME,,"RX name"
-RECEIVER_CONNECTED,,"Receiver connected"
-REGISTRATION,,"Registration"
-TRIMS,,"Trims"
-FADE_IN,,"Fade in"
-FADE_OUT,,"Fade out"
-AUTO_DETECT,,"Auto detect"
-DISPLAY_DECIMALS_AND_UNIT,,"Display decimals / unit"
-SELECT_SENSOR,,"Select sensor"
-DIY_SENSOR,,"DIY sensor"
-WAITING,,"Waiting"
-BAND,,"Band"
-RATIO,,"Ratio"
-MODULE,,"Module"
-PROTOCOL_DECIMALS_AND_UNIT,,"Protocol decimals / unit"
-CROSS_TRIM,,"Cross trim"
-MOVE_TRIM_TO_SUBTRIM,,"Move trim to subtrim"
-INSTANT_TRIM,,"Instant trim"
-CONFIRM_MOVE_TRIM_TO_SUBTRIM,,"Confirm move trim to subtrim?"
-MOVE_TRIMS_TO_SUBTRIMS,,"Move trims to subtrims"
-CONFIRM_MOVE_TRIMS_TO_SUBTRIMS,,"Confirm move trims to subtrims?"
-INDEPENDENT_PER_FLIGHT_MODE,,"Independent per FM"
-STICK,,"Stick"
-CONFIGURE_SCREENS,,"Configure screens"
-TOP_SCREEN,,"Top screen"
-CHANGE_LAYOUT,,"Change layout"
-FULL_SCREEN,,"Full screen"
-WIDGET,,"Widget"
-SET_MAIN_SCREEN,,"Set main screen"
-CONFIGURE_WIDGET,,"Configure widget"
-NEW_SCREEN,,"New screen"
-SCREEN,,"Screen"
-CHANGE_WIDGET,,"Change widget","Change"
-MOVE_FORWARD,,"← Move forward"
-MOVE_BACKWARD,,"→ Move backward"
-RESET_FLIGHT,,"Reset flight"
-RESET_TIMERS,,"Reset timers"
-RESET_TELEMETRY,,"Reset telemetry"
-HOME,,"Home"
-ADD_AFTER,,"Add after"
-ADD_MIX_FAILED,,"Add mix failed!"
-MAX_MIXES_REACHED,,"The maximum number of mixes has been reached!"
-FIRST_POSITION,,"First position"
-MIXES_LIBRARY,,"Mixes library"
-LOCAL_ADDRESS,,"Local address"
-WAITING_FOR_DEVICES,,"Waiting for devices ..."
-LOCAL_NAME,,"Local name"
-SEARCH_DEVICES,,"Search ..."
-BLUETOOTH_DEVICE_CONNECTED,,"Bluetooth device connected"
-CONFIRM_ALLOW_CONNECTION,,"Allow connection?"
-BLUETOOTH_FIRMWARE_NEEDS_UPDATE,,"Bluetooth firmware needs to be updated!"
-BLUETOOTH_MAINTENANCE,,"Bluetooth maintenance"
-CONNECT_LAST_DEVICE,,"Connect last device"
-DEVICE,,"Device"
-NO_BLUETOOTH_DEVICE_FOUND,,"No Bluetooth device found!"
-SPEAKER_MUTE,,"Speaker mute"
-DISCONNECT,,"Disconnect"
-WAITING_FOR_DEVICE,,"Waiting for device"
-DIST_ADDRESS,,"Distant address"
-CONNECTING,,"Connecting"
-ROTARY_ENCODER_HALF_STEPS,,"Rotary encoder half steps"
-BLUETOOTH_AUDIO,,"Bluetooth Audio"
-NOT_INSTALLED,,"Not installed (default)"
-INSTALLED_AS_AN_OPTION,,"Installed as an option"
-RESET_MODULE,,"Reset module"
-HIGH_SPEED,,"High speed"
-NORMAL_SPEED,,"Normal speed"
-MODEL,,"Model"
-STEERING,,"Steering"
-STEERING_BRAKE,,"Steering brake"
-CHECKLIST,,"Checklist"
-FILE_MANAGER,,"File manager"
-SOUND,,"Sound & Vibr."
-STICKS,,"Sticks"
-DATE_TIME,,"Date & Time"
-HARDWARE,,"Hardware"
-INFO,,"Info"
-SERIAL_NUMBER,,"Serial number"
-RESET_FACTORY_SETTINGS,,"Reset factory settings"
-CONFIRM_RESET_FACTORY_SETTINGS,,"Reset factory settings?"
-SYSTEM,,"System"
-DISPLAY,,"Display"
-KEYBOARD,,"Keyboard"
-ENABLE_SLIDER,,"Enable slider"
-DISABLE_SLIDER,,"Disable slider"
-ALERTS,,"Alerts"
-SPECTRUM_ANALYSER,,"Spectrum"
-BATTERY,,"Battery"
-CHECKLIST_WARNING,,"Checklist warning"
-RADIO_IS_IN_SILENT_MODE,,"Radio is in silent mode"
-RADIO_BATTERY_IS_LOW,,"Radio battery is low"
-THROTTLE_IS_NOT_IDLE,,"Throttle is not idle"
-ARE_NOT_IN_SAFE_POSITION,," are not in safe position"
-IS_NOT_IN_SAFE_POSITION,," is not in safe position"
-FUNCTION_SWITCHES_ARE_NOT_IN_SAFE_POSITION,,"Function switches are not in safe position"
-FAILSAFE_IS_NOT_SET,,"Failsafe is not set"
-RTC_BATTERY_IS_LOW,,"RTC battery is low"
-ALWAYS_ON,,"Always on"
-YES,,"Yes"
-DIGITAL_RSSI,,"Digital RSSI"
-GYRO,,"Gyro"
-GYRO_SWITCHES,,"Gyro switches"
-LANGUAGE,,"Language"
-SWITCHES,,"Switches"
-TOP_TOOLBAR,,"Top toolbar"
-NO,,"No"
-BRIGHTNESS,,"Brightness"
-KEYS,,"Keys"
-WAKE_UP,,"Wake up"
-DIGITAL_VOLTAGE,,"Digital voltage"
-SLEEP,,"Sleep"
-SYSTEM_ALERTS,,"System alerts"
-INACTIVITY,,"Inactivity"
-AUTO_ADJUST_FROM_GPS,,"Auto adjust from GPS"
-DATE,,"Date"
-ADJUST_RTC_SPEED,,"Adjust RTC speed"
-SHOW_SECONDS,,"Display seconds"
-IS24HOUR,,"24-hour time"
-TIME_ZONE,,"Time zone"
-YEAR,,"Year"
-MONTH,,"Month"
-TIME,,"Time"
-NEXT,,"Next"
-GYRO_CALIBRATION,,"Gyro calibration"
-PREV,,"Prev"
-MDL_LONG,,"MDL long"
-HARDWARE_CHECK,,"Hardware check"
-SWITCHES_SETTINGS,,"Switches settings"
-ADC_INSPECTOR,,"ADC inspector"
-SYS_LONG,,"SYS long"
-HOME_KEYMAP,,"Home keymap"
-POTS_SLIDERS_SETTINGS,,"Pots/Sliders settings"
-SWITCH_MIDDLE_DETECT_DELAY,,"Switch middle detect delay"
-DISP_SHORT,,"{DISP_LABEL} short"
-DISP_LONG,,"{DISP_LABEL} long"
-SWITCH,,"Switch"
-ANALOGS_FILTER,,"Analogs filter"
-ANALOGS_CALIBRATION,,"Analogs calibration"
-CONFIRM_CONTINUE,,"Are you sure you want to continue?"
-THR_NOT_LOW_WARNING,,"Throttle is not in low position!"
-CHANNELS_ORDER,,"Channel order"
-STICKS_MODE,,"Sticks mode"
-STICKS_MODE_1,,"Sticks mode 1"
-STICKS_MODE_2,,"Sticks mode 2"
-STICKS_MODE_3,,"Sticks mode 3"
-STICKS_MODE_4,,"Sticks mode 4"
-FIRST_FOUR_CHANNELS_FIXED,,"First four channels fixed"
-NO_SD_CARD,,"No SD Card"
-FLASH_BOOTLOADER,,"Flash bootloader"
-FLASH_INTERNAL_MODULE,,"Flash internal RF module"
-PLAY,,"Play"
-CURRENT_VERSION,,"Current version"
-FLASH_RECEIVER_BY_INTERNAL_MODULE_OTA,,"Flash RX by int. OTA"
-FLASH_RECEIVER_BY_EXTERNAL_MODULE_OTA,,"Flash RX by ext. OTA"
-OTA_UPDATE,,"OTA update"
-FLASH_EXTERNAL_DEVICE,,"Flash external device"
-OPEN,,"Open"
-FLASH_EXTERNAL_MODULE,,"Flash external module"
-FLASH_EXTERNAL_MULTIMODULE,,"Flash external multimodule"
-MOVE_HERE,,"Move here"
-OTA_UPDATE_ERROR,,"OTA update error"
-UNSUPPORTED_RX,,"Unsupported RX"
-MAIN_VOLTAGE,,"Main voltage"
-DISPLAY_VOLTAGE_RANGE,,"Display voltage range"
-LOW_VOLTAGE,,"Low voltage"
-RTC_VOLTAGE,,"RTC voltage"
-UNKNOWN,,"Unknown"
-FIRMWARE,,"Firmware"
-FIRMWARE_VERSION,,"Firmware version"
-VIDEO_HARDWARE_VERSION,,"Video hardware version"
-RECEIVER,,"Receiver"
-NON_STABILIZED_RECEIVER,,"Non stabilized receiver"
-VARIO,,"Vario"
-MAIN_VOLUME,,"Main volume"
-AUDIO_VOLUME,,"Volume"
-PITCH_AT_ZERO,,"Pitch zero"
-SEQUENCE,,"Sequence"
-PITCH_AT_MAX,,"Pitch max"
-REPEAT_AT_ZERO,,"Repeat"
-SILENT,,"Silent"
-ALARMS_ONLY,,"Alarms only"
-OFTEN,,"Often"
-ALWAYS,,"Always"
-NEVER,,"Never"
-WHEN_TELEMETRY_STREAMING,,"When telemetry streaming"
-VOICE1,,"Voice 1 (main)"
-VOICE2,,"Voice 2"
-VOICE3,,"Voice 3"
-SUNDAY,,"Sunday"
-MONDAY,,"Monday"
-TUESDAY,,"Tuesday"
-WEDNESDAY,,"Wednesday"
-THURSDAY,,"Thursday"
-FRIDAY,,"Friday"
-SATURDAY,,"Saturday"
-JANUARY,,"January"
-FEBRUARY,,"February"
-MARCH,,"March"
-APRIL,,"April"
-MAY,,"May"
-JUNE,,"June"
-JULY,,"July"
-AUGUST,,"August"
-SEPTEMBER,,"September"
-OCTOBER,,"October"
-NOVEMBER,,"November"
-DECEMBER,,"December"
-CURRENT,,"Current"
-VFAS,,"VFAS"
-TEMPERATURE_2,,"Temp2"
-TEMPERATURE_1,,"Temp1"
-FUEL,,"Fuel"
-ACCX,,"AccX"
-ACCY,,"AccY"
-ACCZ,,"AccZ"
-GPS_ALT,,"GPS alt"
-GPS_SPEED,,"GPS speed"
-GPS_COURSE,,"GPS course"
-AIR_SPEED,,"Air speed"
-BATTERY_1_VOLTAGE,,"Bat1 voltage"
-BATTERY_1_CURRENT,,"Bat1 current"
-BATTERY_2_VOLTAGE,,"Bat2 voltage"
-BATTERY_2_CURRENT,,"Bat2 current"
-RBOX_STATE_1,,"RBOX S1"
-RBOX_STATE_2,,"RBOX S2"
-BATTERY_1_CONSUMPTION,,"Bat1 cons."
-BATTERY_2_CONSUMPTION,,"Bat2 cons."
-BATTERY_1_TEMPERATURE,,"Bat1 temp."
-BATTERY_2_TEMPERATURE,,"Bat2 temp."
-SD1_CHANNEL,,"SD1CH"
-ESC_VOLTAGE,,"ESC voltage"
-ESC_CURRENT,,"ESC current"
-ESC_RPM,,"ESC RPM"
-ESC_CONSUMPTION,,"ESC consumption"
-ESC_TEMPERATURE,,"ESC temp"
-RB_OUTPUT_STATE,,"Output state"
-RB_CH1_A,,"CH1 current"
-RB_CH2_A,,"CH2 current"
-RB_CH3_A,,"CH3 current"
-RB_CH4_A,,"CH4 current"
-RB_CH5_A,,"CH5 current"
-RB_CH6_A,,"CH6 current"
-RB_CH7_A,,"CH7 current"
-RB_CH8_A,,"CH8 current"
-RB_CH9_A,,"CH9 current"
-RB_OUTPUT_1_VOLTAGE,,"Output1 voltage"
-RB_OUTPUT_2_VOLTAGE,,"Output2 voltage"
-GASSUIT_TEMP1,,"GASS temp1"
-GASSUIT_TEMP2,,"GASS temp2"
-GASSUIT_SPEED,,"GASS RPM"
-GASSUIT_RES_VOL,,"GASS res. vol."
-GASSUIT_RES_PERC,,"GASS res. %"
-GASSUIT_FLOW,,"GASS flow"
-GASSUIT_MAX_FLOW,,"GASS max flow"
-GASSUIT_AVG_FLOW,,"GASS avg flow"
-BEC_VOLTAGE,,"BEC voltage"
-BEC_CURRENT,,"BEC current"
-POWER_900M,,"Power 900M"
-ROLL_ANGLE,,"R.angle"
-PITCH_ANGLE,,"P.angle"
-HYDRAULIC_PRESSURE,,"H.pressure"
-INTERNAL_GPS,,"Internal GPS"
-RAM_AVAILABLE,,"RAM available"
-CLOCK,,"Clock"
-LATITUDE,,"Latitude"
-LONGITUDE,,"Longitude"
-TRIP,,"Trip"
-CATEGORY,,"Category"
-MEMBER,,"Member"
-IGNORE_TRAINER_INPUT,,"Ignore trainer input"
-FULL_RANGE,,"Full range"
-IGNORE_RANGE,,"Ignore range"
-HALF_RANGE,,"Half range"
-NEGATIVE,,"Negative"
-EDGE,,"Edge"
-ELE_TO_AIL,,"Ele => Ail"
-AIL_TO_RUD,,"Ail => Rud"
-ELE_TO_CAMBER,,"Ele => Camber"
-RUD_TO_AIL,,"Rud => Ail"
-RUD_TO_ELE,,"Rud => Ele"
-AIL_TO_FLAPS,,"Ail => Flaps"
-FLAPS_TO_ELE,,"Flaps => Ele"
-FREE_MIX,,"Free mix"
-SNAP_ROLL,,"Snap roll"
-TEST_MIX,,"Test mix"
-PLANE,,"Airplane"
-GLIDER,,"Glider"
-HELI,,"Heli"
-MULTI,,"Multi"
-CAR,,"Car",
-BOAT,,"Boat",
-OTHER,,"Other"
-CALIBRATION,,"Calibration"
-INPUTS,,"Inputs"
-UPDATE,,"Update"
-SDCARD,,"SD card"
-SDCARD_ERROR,,"SD card error"
-INVALID_DATA,,"Invalid data"
-FILE_BAD_FORMAT,,"Unknown file"
-NO_FILES_ON_SD,,"No files on SD!"
-READ_ERROR,,"Read error"
-WRITE_ERROR,,"Write error"
-WRONG_HEADER,,"Wrong header"
-WRONG_FORMAT,,"Wrong format"
-WRONG_CRC,,"Wrong CRC"
-WRONG_FILE_SIZE,,"Wrong file size"
-WRONG_FILE,,"Wrong file"
-ERROR,,"Error"
-RUDDER,,"Rudder"
-ELEVATOR,,"Elevator"
-DELETE,,"Delete"
-MODEL_BITMAP,,"Model bitmap"
-TAIL_TYPE,,"Tail type"
-TRADITIONAL,,"Traditional"
-VTAIL,,"V-Tail"
-REVERSE,,"Reverse"
-RATE,,"Rate"
-UP,,"Up"
-DOWN,,"Down"
-LEFT_SHORT,,"L"
-RIGHT_SHORT,,"R"
-RIGHT,,"Right"
-LEFT,,"Left"
-TOP,,"Top"
-BOTTOM,,"Bottom"
-TIMER_UP,,"Up"
-TIMER_DOWN,,"Down"
-LIMIT,,"Limit"
-SPEED,,"Speed"
-SET_DATE,,"Set date"
-SET_TIME,,"Set time"
-SILENT_MODE,,"Silent mode"
-KEY,,"Key"
-ALARM,,"Alarm"
-TRIM,,"Trim"
-SETUP_CHANNEL,,"Setup channel"
-LOGIC_SWITCH,,"Logic switch"
-CREATE_MODEL,,"Create model"
-CANCEL,,"Cancel"
-DELAY,,"Delay"
-SAVE,,"SAVE"
-LS,,"LS"
-FS,,"FS"
-OP,,"OP"
-TRAINER_MASTER,,"Master"
-TRAINER_SLAVE,,"Slave"
-LINK_MODE,,"Link mode"
-TRAINEE_CHANNEL,,"Trainee channel"
-RECEIVER_TYPE,,"Receiver type"
-BACK,,"Back"
-INTERNAL,,"Internal"
-EXTERNAL,,"External"
-RF_PROTOCOL,,"RF protocol"
-EXTERNAL_RF,,"External RF"
-LOGIC_SWITCH_RANGE,,"Range"
-PLAY_SEQUENCE,,"Play audio"
-WAIT_DURATION,,"Wait duration"
-WAIT_CONDITION,,"Wait condition"
-CONFIRM_DELETE_LINE,,"Are you sure you want to delete this line?"
-ADD_A_NEW_LINE_IN_SEQUENCE,,"Add a new line in sequence"
-PLAY_TEXT,,"Play text"
-GO_TO_SCREEN,,"Go to screen"
-LOCK_TOUCHSCREEN,,"Lock touchscreen"
-BLANK,,"Blank"
-CALIBRATE,,"Calibrate"
-CLICK_CALIBRATE_TO_START,,"Click 'Calibrate' to start"
-CENTER_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,,"Center the sticks/pots/sliders, click 'Next' when done"
-MOVE_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,,"Move the sticks/pots/sliders to full range, click 'Next' when done","Move the sticks/pots/sliders, click 'Next' when done"
-CALIBRATION_COMPLETE_CLICK_CONFIRM_TO_STORE,,"Calibration complete, click 'Confirm' to store it to the radio settings","Calibration complete, click 'Confirm' to store it"
-BACKLIGHT,,"BackLight"
-DARK_MODE,,"Dark mode"
-HIGHLIGHT_COLOR,,"Highlight color"
-MODEL_NAME,,"Name"
-NO_AIRBRAKES,,"No airbrakes"
-OK,,"OK"
-FLAP,,"Flap"
-AIRBRAKE,,"Airbrake"
-FILE,,"File"
-FLASH_SPORT,,"Flash S.Port"
-PLAY_VALUE,,"Play value"
-ANALOGS,,"Analogs"
-SWITCHES_POSITIONS,,"Switch positions"
-TRIMS_POSITIONS,,"Trim positions"
-CONST_VALUE,,"Const value"
-SLIDER_LEFT,,"Slider left"
-SLIDER_RIGHT,,"Slider right"
-TRIM_T1_LEFT,,"Trim RHL"
-TRIM_T1_RIGHT,,"Trim RHR"
-TRIM_T2_UP,,"Trim RVU"
-TRIM_T2_DOWN,,"Trim RVD"
-TRIM_T3_UP,,"Trim LVU"
-TRIM_T3_DOWN,,"Trim LVD"
-TRIM_T4_LEFT,,"Trim LHL"
-TRIM_T4_RIGHT,,"Trim LHR"
-TRIM_T5_LEFT,,"T5 L"
-TRIM_T5_RIGHT,,"T5 R"
-TRIM_T6_LEFT,,"T6 L"
-TRIM_T6_RIGHT,,"T6 R"
-TRIM_T5_DOWN,,"T5 D"
-TRIM_T5_UP,,"T5 U"
-TRIM_T6_DOWN,,"T6 D"
-TRIM_T6_UP,,"T6 U"
-DIFFERENTIAL,,"Differential"
-SLOW,,"Slow"
-MULTIPLY,,"Multiply"
-WEIGHT_UP,,"Weight up"
-WEIGHT_DOWN,,"Weight down"
-OUTPUT,,"Output"
-CLOSE,,"Close"
-FLASHING,,"Flashing ..."
-RESET_DEVICE,,"Device reset ..."
-LOW_BATTERY,,"Radio battery low!"
-VOLTAGE_CALIBRATION,,"Voltage calibration"
-STARTING_MODEL_WIZARD,,"Starting model wizard ..."
-RADIO_DATA_LOAD,,"Radio data load"
-DEFAULT_SYSTEM_SETTINGS_RESTORED,,"Storage error, default system settings restored."
-FLIGHT_MODE_SHORT,,"FM"
-DRIVE_MODE_SHORT,,"DM"
-PREFLIGHT_WARNING,,"Preflight warnings"
-NEW_MODEL,,"New model"
-STARTING_CALIBRATION,,"Starting calibration ..."
-NO_SD_CARD_WARNING,,"No SD Card warning"
-ADD_CURVE_ERROR,,"Add curve failed!"
-STEP,,"Step"
-AILERON,,"Aileron"
-ELEVON,,"Elevon"
-SPACE_WITH_CHANNEL,," channel"
-QUESTION_SWAP_SSS_AND_SSS_CHANNELS_SETTINGS,,"Do you want to swap %s and %s channels settings?"
-INPUT,,"Input"
-THR_CURVE,,"Thr curve"
-PITCH_CURVE,,"Pitch curve"
-THROTTLE_CUT,,"Throttle cut"
-DELAY_UP,,"Delay up"
-DELAY_MID,,"Delay mid"
-DELAY_DOWN,,"Delay down"
-NO_DELAY,,"No delay"
-V_TAIL,,"V-Tail"
-DATA_REFUSED,,"Data refused"
-DEVICE_NOT_RESPONDING,,"Device not responding"
-NO_OUTPUT,,"No output"
-WEIGHT_RATES,,"Weight / Rates"
-OTHERWISE,,"Otherwise","Else"
-AUTO,,"Auto"
-TRIM_STEP_FINE,,"Fine"
-TRIM_STEP_COARSE,,"Coarse"
-TRIM_STEP_EXPONENTIAL,,"Exponential"
-TRIM_STEP_EXTRA_FINE,,"Extra fine"
-TRIM_STEP_MEDIUM,,"Medium"
-TRIM_STEP_CUSTOM,,"Custom"
-SCREENSHOT,,"Screenshot"
-POSITIVE,,"Positive"
-THROTTLE_HOLD,,"Throttle hold"
-TRIGGER_VALUE,,"Trigger value"
-IDLE_OUTPUT_VALUE,,"Idle output value"
-LOW_POSITION_TRIM,,"Low position trim"
-AND,,"AND"
-OR,,"OR"
-XOR,,"XOR"
-SENSORS,,"Sensors"
-RECEIVERS,,"Receivers"
-SERVOS,,"Servos"
-FLIGHT_SAFETY,,"Flight safety"
-VARIOMETER,,"Variometer"
-ALARMS,,"Alarms"
-SENSOR,,"Sensor"
-RX_BATT,,"RxBatt"
-RX_CURRENT,,"RxCurrent"
-ALTITUDE,,"Altitude"
-VSPEED,,"VSpeed"
-SELECT_LANGUAGE,,"Select language"
-ONCE,,"Once"
-FLIGHT_DATA,,"Flight data"
-ALL_TIMERS,,"All timers"
-WHOLE_TELEMETRY,,"Whole telemetry"
-REPEAT,,"Repeat"
-WAV_FILE,,"Wav file"
-BUTTERFLY,,"Butterfly"
-CAMBER,,"Camber"
-PITCH_TO_RUD,,"Pitch => Rud"
-MISSING_BASIC_MIX,,"Missing basic mix"
-MISSING_ENOUGH_CHANNEL,,"There are not enough channels available"
-NOT_SUIT_FOR_THIS_MODEL,,"This mix isn't suitable for your model"
-THR_TO_ELE,,"Thr => Ele"
-THR_TO_RUD,,"Thr => Rud"
-TEMPERATURE,,"Temperature"
-DATA_RATE,,"Data Rate"
-GPS,,"GPS"
-GAS_SUITE,,"Gas Suite"
-FLOW_RESET,,"Flow reset"
-CDI_OFF_SPEED_LIMIT,,"CDI off speed limit"
-FLOW_PULSE,,"Flow pulse"
-AUTO_RESET,,"Auto reset"
-RESET_RESIDUAL_VOLUME,,"Reset residual volume"
-RESET_MAX_FLOW,,"Reset max flow"
-RESET_AVERAGE_FLOW,,"Reset average flow"
-VOLUME_ALARM,,"Volume alarm"
-MAX_FLOW_ALARM,,"Max flow alarm"
-OVER_SPEED_ALARM,,"Over speed alarm"
-FLOW_TRIGGER,,"Flow trigger"
-FACTORY_SETTING,,"Factory setting"
-OVER_TEMP1_ALARM,,"Over temperature alarm 1"
-OVER_TEMP2_ALARM,,"Over temperature alarm 2"
-TEMPERATURE_UNIT,,"Temperature unit"
-AUTO_SAVE,,"Auto save"
-GPS_POSITION_DATA_RATE,,"GPS position data rate"
-GPS_ALTITUDE_DATA_RATE,,"GPS altitude data rate"
-GPS_SPEED_DATA_RATE,,"GPS speed data rate"
-GPS_COURSE_DATA_RATE,,"GPS course data rate"
-GPS_TIME_DATA_RATE,,"GPS clock data rate"
-RB_30_40,,"RB 30/40"
-EW,,"EW"
-NS,,"NS"
-DEFAULT_FLIGHT_MODE,,"Default flight mode"
-DEFAULT_DRIVE_MODE,,"Default drive mode"
-SKIP_ON_STARTUP,,"Skip on startup"
-LOW_VALUE_WARNING,,"Low value warning"
-CRITICAL_VALUE,,"Critical value"
-UPGRADE_MODULE,,"Upgrade module"
-AUTHENTICATION_FAILURE,,"Authentication failure"
-MODULE_NEEDS_UPGRADE,,"Module needs upgrade"
-CLEAR,,"Clear"
-MIX_SWITCH_DESCRIPTION,,"Select a switch to change the active/inactive state of the mix"
-MIX_WEIGHT_DESCRIPTION,,"The multiplier in % applied to an incoming source to determine the output value of the mix. This will be calculated after the curve"
-MIX_CURVE_DESCRIPTION,,"Choose a curve for the mix. This will be calculated before the param weight"
-MIX_DIFFERENTIAL_DESCRIPTION,,"Select the amount of differential movement for channels"
-MIX_OUTPUT_DESCRIPTION,,"Select the channel you want to be affected by this mix"
-MIX_INPUT_DESCRIPTION,,"Select the control source of this mix"
-MIX_OPERATION_DESCRIPTION,,"Select function type for mix: Add, Multiply or Replace"
-MIX_REVERSE_DESCRIPTION,,"Reverse direction of control"
-MIX_OFFSET_DESCRIPTION,,"Select the amount of offset from center"
-MIX_WEIGHTUP_DESCRIPTION,,"Select the amount of movement up"
-MIX_WEIGHTDOWN_DESCRIPTION,,"Select the amount of movement down"
-MIX_SPEEDUP_DESCRIPTION,,"Select the amount speed up"
-MIX_SPEEDDOWN_DESCRIPTION,,"Select the amount speed down"
-MIX_LOWPOSTRIM_DESCRIPTION,,"Enable low position trim only"
-HELI_PITCH,,"Pitch"
-HELI_GYRO,,"Gyro"
-MISSING_THROTTLE,,"Your model doesn't have any throttles"
-SIX_POSITIONS_SWITCH,,"6-POS switch"
-GYRO_X_AXIS,,"Gyro X axis"
-GYRO_Y_AXIS,,"Gyro Y axis"
-GYRO_LEFT,,"Gyro Left"
-GYRO_RIGHT,,"Gyro Right"
-GYRO_UP,,"Gyro Up"
-GYRO_DOWN,,"Gyro Down"
-AILERON_LETTER,,"A"
-RUDDER_LETTER,,"R"
-ELEVATOR_LETTER,,"E"
-THROTTLE_LETTER,,"T"
-NOT,,"NOT"
-STICKY,,"Sticky"
-MIDDLE,,"Middle"
-NO_CHECK,,"No check"
-CUSTOM,,"Custom"
-HOLD,,"Hold"
-NO_PULSES,,"No pulses"
-NOT_SET,,"Not set"
-NO_ENGINE,,"No engine"
-NO_FLAPS,,"No flaps"
-NO_RUDDERS,,"No rudders"
-NO_ELEVATORS,,"No elevators"
-NO_AILERONS,,"No ailerons"
-CHANNELS_1,,"1 channel"
-CHANNELS_2,,"2 channels"
-CHANNELS_3,,"3 channels"
-CHANNELS_4,,"4 channels"
-BEEP,,"Beep"
-IN_RANGE,,"in range"
-REPLACE,,"Replace"
-USE_A_SOURCE,,"Use a source"
-CONVERT_TO_VALUE,,"Convert to value"
-SPECIAL,,"Special"
-MAXIMUM,,"Maximum"
-MINIMUM,,"Minimum"
-MOMENTARY,,"Momentary"
-TWO_POS,,"2-POS"
-THREE_POS,,"3-POS"
-GYRO_CALIBRATION_PLACE_LEVEL,,"Place radio LEVEL, and click the button below when done"
-GYRO_CALIBRATION_LEFT,,"Tilt radio to LEFT, and click the button below when done"
-GYRO_CALIBRATION_RIGHT,,"Tilt radio to RIGHT, and click the button below when done"
-GYRO_CALIBRATION_NOSE_UP,,"Tilt radio NOSE UP, and click the button below when done"
-GYRO_CALIBRATION_NOSE_DOWN,,"Tilt radio NOSE DOWN, and click the button below when done"
-DEFAULT,,"Default"
-STRENGTH,,"Strength"
-AM,,"AM"
-PM,,"PM"
-PLAY_VARIO,,"Play vario"
-RF_ALWAYS_OFF,,"Special mode, RF will always be OFF."
-STAB_FUNC,,"Stable function"
-RX_PROTOCOL,,"RX protocol"
-NO_MAP,,"No map"
-DIRECTION,,"Direction"
-CLOCKWISE,,"Clockwise"
-ANTICLOCKWISE,,"Anticlockwise"
-PWM_PULSE_TYPE,,"PWM pulse type"
-BASIC_CONFIG,,"Base config"
-RX1_MAP,,"RX1 map"
-RX2_MAP,,"RX2 map"
-RX3_MAP,,"RX3 map"
-ALL_FREQUENCY,,"All frequency"
-STICKS_NAME,,"Sticks name"
-CHANNELS_COUNT,,"Channels count"
-OUTPUTS_COUNT,,"Outputs count"
-EXT,,"Ext"
-INT,,"Int"
-PLACE_RECEIVER_LEVEL,,"Place your receiver horizontal,\ntop side up."
-PLACE_RECEIVER_LEVEL_REVERSE,,"Place your receiver horizontal,\ntop side down."
-PLACE_RECEIVER_LEFT,,"Place your receiver vertical,\npins up."
-PLACE_RECEIVER_RIGHT,,"Place your receiver vertical,\npins down."
-PLACE_RECEIVER_FORWARD,,"Place your receiver legible\nlettering, pins right."
-PLACE_RECEIVER_BACKWARD,,"Place your receiver not legible\nlettering, pins left."
-ADD_A_NEW_WEIGHT,,"+ Add a new weight"
-ADD_A_NEW_CURVE,,"+ Add a new curve"
-AUDIO,,"Audio"
-VOICE,,"Voice"
-VAR,,"Var"
-VOLUME,,"Volume"
-SAVE_TO_FLASH,,"Save to flash"
-SAVE_TO_FLASH_MESSAGE,,"All settings have been saved into the flash successfully!"
-TIMER_GENERATOR,,"Timer generator"
-EDIT_SSS,,"Edit %s"
-RESET_SSS,,"Reset %s"
-OPTIONS_3DOTS,,"Options ..."
-QUESTION_COPY_CHANNEL_NAME,,"The channel doesn't have a name.\nDo you want to copy the mix's name to the channel?"
-FLY_BAR_LESS,,"Flybarless"
-WING_RUD_ELE_AIL,,"Wing Rud+Ele+Ail"
-WING_FLYING,,"Wing Delta Ail"
-WING_VTAIL_AIL,,"Wing VTail Ail"
-LEVEL,,"Level"
-LEVEL_REVERSED,,"Level reversed"
-UPRIGHT,,"Upright"
-UPRIGHT_REVERSED,,"Upright reversed"
-WING_TYPE,,"Wing type"
-MOUNTING_TYPE,,"Mounting type"
-SXR_ENABLE,,"SXR enable"
-AIL_INVERTED,,"Ail inverted"
-AIL2_INVERTED,,"Ail2 inverted"
-ELE_INVERTED,,"Ele inverted"
-ELE2_INVERTED,,"Ele2 inverted"
-RUD_INVERTED,,"Rud inverted"
-AUX1_ENABLE,,"AUX1 enable"
-AUX2_ENABLE,,"AUX2 enable"
-QUICK_MODE,,"Quick mode"
-SELF_CHECK,,"Self check"
-STAB_GAIN_OF_AIL,,"Stabilize gain of Ail"
-STAB_GAIN_OF_ELE,,"Stabilize gain of Ele"
-STAB_GAIN_OF_RUD,,"Stabilize gain of Rud"
-AUTO_LEVEL_GAIN_OF_AIL,,"Auto Level gain of Ail"
-AUTO_LEVEL_GAIN_OF_ELE,,"Auto Level gain of Ele"
-HOVER_GAIN_OF_ELE,,"Hover gain of Ele"
-HOVER_GAIN_OF_RUD,,"Hover gain of Rud"
-KNIFE_EDGE_GAIN_OF_AIL,,"Knife-edge gain of Ail"
-KNIFE_EDGE_GAIN_OF_RUD,,"Knife-edge gain of Rud"
-AUTO_LEVEL_OFFSET_OF_AIL,,"Auto level offset angle of Ail"
-AUTO_LEVEL_OFFSET_OF_ELE,,"Auto level offset angle of Ele"
-HOVER_OFFSET_ANGLE_OF_ELE,,"Hover offset angle of Ele"
-HOVER_OFFSET_ANGLE_OF_RUD,,"Hover offset angle of Rud"
-KNIFE_EDGE_OFFSET_OF_AIL,,"Knife-edge offset angle of Ail"
-KNIFE_EDGE_OFFSET_OF_RUD,,"Knife-edge offset angle of Rud"
-OUTPUT_VOLTAGE,,"Output voltage"
-LIPO_VOLTAGE,,"Lipo voltage"
-RB_10_20,,"RB 10/20"
-ALTITUDE_DATA_RATE,,"Altitude data rate"
-VARIO_DATA_RATE,,"Vario data rate"
-CURRENT_DATA_RATE,,"Current data rate"
-VOLTAGE_DATA_RATE,,"Voltage data rate"
-RPM,,"RPM"
-POLES_COUNT,,"Poles count"
-NEED_FIRMWARE_UPDATE,,"Need firmware update"
-SYSTEM_VALUE,,"System value"
-GPS_CLOCK,,"GPS clock"
-RACING_MODE_ACTIVE,,"Racing mode active."
-RACING_MODE_IS_UNSUPPORTED,,"Racing mode is unsupported."
-POTS_SLIDERS,,"Pots / Sliders"
-STICKS_POTS_SLIDERS,,"Sticks / Pots / Sliders"
-WRITE_INTERVAL,,"Write interval"
-TX_BATT,,"TxBatt"
-AVERAGE,,"Average"
-TOTALIZE,,"Totalize"
-CELL,,"Cell"
-CONSUMPTION,,"Consumption"
-DISTANCE,,"Distance"
-FALLING_EDGE_OF_SSS_BETWEEN_SSS_AND_SSS,,"↑↓Pulse of %s between %s and %s"
-RISING_EDGE_OF_SSS_DURING_SSS,,"%s after ↑Edge of %s"
-FALLING_EDGE_OF_SSS_DURING_SSS,,"↓Edge of %s during %s"
-FALLING_EDGE_OF_SSS,,"↓Edge of %s"
-RISING_EDGE_OF_SSS,,"↑Edge of %s"
-STALL,,"Stall"
-EDITABLE_SRV_DDD_CURR,,"SRV%d curr"
-EDITABLE_SRV_DDD_VOLT,,"SRV%d volt"
-EDITABLE_SRV_DDD_TEMP,,"SRV%d temp"
-CONDITION,,"Condition"
-TIMER_LOGS,,"Timer Logs"
-SAVE_TO_SD,,"Save to SD"
-CLEAR_LOGS,,"Clear logs"
-TITLE,,"Title"
-LOWEST,,"Lowest"
-COUNT,,"Count"
-HIGHEST,,"Highest"
-BLADES,,"Blades"
-MAINGEAR_TEETH,,"Maingear teeth"
-PINION_TEETH,,"Pinion teeth"
-GEAR,,"Gear"
-PROPELLER,,"Propeller"
-FLIGHT_VALUE,,"Flight value"
-CURRENT_FLIGHT_MODE,,"Current F.M."
-NO_DESTINATION,,"No destination"
-ENT_LONG,,"ENT Long"
-RX_STILL_ON_TURN_OFF_TRANSMITTER,,"Rx is still ON, turn off the transmitter ?"
-CONFIRM_RESET_SENSOR,,"The value of this sensor will be reset.\nAre you sure you want to continue?"
-GPS_MAP,,"GPS Map"
-MAP,,"Map"
-SYSTEM_EVENT,,"System event"
-RSSI_LOW,,"Rssi Low"
-TRAINER_ACTIVE,,"Trainer active"
-MULTIPLIER,,"Multiplier"
-VERTICAL,,"Vertical"
-HORIZONTAL,,"Horizontal"
-TOTAL,,"Total"
-CELLS,,"Cells"
-MULTI_LIPO,,"Multi LiPo"
-LIPO,,"LiPo"
-LINE_CHART,,"Line chart"
-LOG_PERIOD,,"Log period"
-RESUME,,"Resume"
-PAUSE,,"Pause"
-AUTO_RANGE,,"Auto range"
-LOCK,,"Lock"
-Xx2POS,,"{HARDWARE_FUNCTION_SWITCHES} x 2-Pos"
-XPOS_WITH_OFF,,"{HARDWARE_FUNCTION_SWITCHES}-Pos with OFF"
-XPOS,,"{HARDWARE_FUNCTION_SWITCHES}-Pos"
-2xXPOS,,"2 x {HARDWARE_FUNCTION_SWITCHES_PER_SIDE}-Pos"
-GLOBAL,,"Global"
-_2DOTS,,": "
-SUMMARY,,"Summary"
-CONFIRM_STOP_USING_CURVE,,"Are you sure you want to stop using this curve?"
-CONFIRM_STOP_USING_RATE,,"Are you sure you want to stop using this rate?"
-PATTERN,,"Pattern"
-LAST_POSITION,,"Last position"
-SLEEP_BRIGHTNESS,,"Sleep mode brightness"
-TOP_LCD_SLEEP,,"Top LCD sleep"
-VIEW_PER_CHANNEL,,"View per channel"
-VIEW_TABLE,,"Table view"
-GENERAL,,"General"
-RX_STILL_ON_TURN_OFF_RF,,"Receiver is still connected.\nAre you sure you want to continue?"
-LOAD_ALL_FUNCTION_SWITCH_POSITIONS,,"Load all function switch positions","Load all FS positions"
-CONFIRM_LOAD_ALL_FUNCTION_SWITCH_POSITIONS,,"This operation will override all FS positions with the current ones. Are you sure you want to continue?"
-STORAGE_LOCATION,,"Storage location"
-RADIO,,"Radio"
-MODELS,,"Models"
-USER_BITMAPS,,"User bitmaps"
-SCRIPTS,,"Scripts"
-LOGS,,"Logs"
-SCREENSHOTS,,"Screenshots"
-PRESSURE,,"Pressure"
-COLOR,,"Color"
-CONFIRM_CLEAR_CHANNEL_DDD_NAME,,"Channel %d isn't used by any mix.\nDo you want to clear its name?"
-CONFIRM_CLEAR_CHANNELS_SSS_NAME,,"Channels %s are not used by any mix. Do you want to clear their name?"
-CHANNEL_SBUS_VALUE_LIMIT_WARNING,,"The new channel value is incompatible with SBUS/redundancy use. Are you sure you want to continue?"
-VOLTAGE,,"Voltage"
-SAVE_TO_FILE,,"Save to file"
-FLASH_VIDEO_COMPONENT,,"Flash video component"
-RX_BAT_VOLTAGE,,"RX battery voltage"
-RX_BAT_2_VOLTAGE,,"RX battery 2 voltage"
-EXT_ADC_VOLTAGE,,"External ADC voltage"
-BOARD_CURRENT,,"Board current"
-POWER_ON_RESET,,"Power On reset"
-PIN_RESET,,"Pin reset"
-WAKE_UP_RESET,,"Wake Up reset"
-WATCHDOG_RESET,,"Watchdog reset"
-LOCKUP_RESET,,"Lockup reset"
-BROWN_DOWN_DET_RESET,,"Brown down detection reset"
-RX_RESET_CASE,,"RX reset case"
-OPERATION_ASSIGN,,"Assign(=)"
-OPERATION_ADD,,"Add(+)"
-OPERATION_SUBTRACT,,"Subtract(-)"
-OPERATION_MULTIPLY,,"Multiply(*)"
-OPERATION_DIVIDE,,"Divide(/)"
-SQRT,,"Sqrt"
-REPURPOSE,,"Repurpose"
-SENSOR_CONFLICT_WARNING,,"Sensor conflict warning"
-NIGHTLY_BUILD_NOT_FOR_FLYING,,"Nightly build, not for flying!"
-READING_FILE,,"Reading file ..."
-NOT_ENOUGH_MEMORY,,"Not enough memory"
-CLEAN_LOGS,,"Clean logs"
-CONFIRM_CLEAN_LOGS,,"This operation will remove all the .csv files under the directory. Are you sure you want to continue?"
-CLEANING_LOGS,,"Cleaning logs ..."
-PAUSE_CONDITION,,"Pause condition"
-RESET_SETTINGS,,"Reset settings"
-SWAP_CHANNELS,,"Swap channels"
-CONFIRM_RESET_SETTINGS,,"The settings will be reset to the default values.\nAre you sure you want to continue?"
-CONFIRM_SWITCH_EXTERNAL_MODULE,,"External module is now used. It will be stopped.\nAre you sure you want to continue?"
-CONFIRM_SWITCH_TRAINER,,"Trainer is now using the external module. It will be stopped.\nAre you sure you want to continue?"
-COMPETITION_OPTION,,"Competition (only RSSI and Battery)","Competition (RSSI / Batt)"
-CONFIRM_BLUETOOTH_USED_BY_SSS,,"Bluetooth is now used by %s. It will be stopped.\nAre you sure you want to continue?"
-BOTH_MODULES,,"Both modules"
-SPORT_CONNECTOR,,"S.Port connector"
-CONFIRM_SPORT_USED_BY_SSS,,"S.Port connector is now used by %s. Are you sure you want to continue?"
-TRAINER_CABLE,,"Trainer cable"
-BLUETOOTH,,"Bluetooth"
-SBUS_EXTERNAL_MODULE,,"SBUS external module"
-CPPM_EXTERNAL_MODULE,,"CPPM external module"
-LUA_TASKS,,"Lua tasks"
-LUA_SOURCES,,"Lua sources"
-MISSING_SCRIPT_FILE,,"Missing script file"
-BITMAP,,"Bitmap"
-BITMAP_TYPE,,"Bitmap type"
-BITMAP_FILE,,"Bitmap file"
-FILE_PATH,,"File path"
-TEXT,,"Text"
-DOCUMENTS,,"Documents"
-USB_MODE_PRESELECTION,,"USB mode preselection"
-USB_MODE,,"USB mode"
-JOYSTICK,,"Joystick"
-SERIAL,,"Serial"
-SELECT_MODEL_AT_POWER_ON,,"Select model at power on"
-LOAD_MODEL,,"Load model"
-TELEMETRY_ACTIVE,,"Telemetry active"
-FLIGHT_RESET,,"Flight reset"
-TRIP_RESET,,"Trip reset"
-THROTTLE_ACTIVE,,"Throttle active"
-SEND_FILE,,"Send file"
-FILE_TRANSFER,,"File transfer"
-RECEIVE_FILE_HERE,,"Receive file here"
-WAITING_FOR_CONNECTION,,"Waiting for connection ..."
-CONNECTION_REFUSED,,"Connection refused"
-WAITING_FOR_RECEIVER_CONFIRMATION,,"Waiting for receiver confirmation ..."
-FILE_TRANSFER_FAILED,,"File transfer failed"
-CONFIRM_RECEIVE_FILE_SSS_IN_FOLDER_SSS_SIZE_IS_SSS,,"About to receive file %s to folder %s\nFile size is %s"
-CONFIRM_OVERWRITE_FILE_SSS_IN_FOLDER_SSS_SIZE_IS_SSS,,"About to overwrite file %s in folder %s\nFile size is %s"
-SENDING_SSS,,"Sending %s ..."
-RECEIVING_SSS,,"Receiving %s ..."
-COUNTING_SOURCE,,"Proportional timing source","% timing source"
-SEND_MODEL,,"Send model"
-RECEIVE_MODEL,,"Receive model"
-ARE_YOU_USING_A_FRSKY_SELF_STAB_RECEIVER,,"Are you using a self-stab receiver from FrSky?"
-EMERGENCY,,"Emergency"
-GAIN_ADJUST,,"Gain adj."
-UNIT_KNOT,,"knots"
-UNIT_MILLILITER_PER_PULSE,,"ml/p"
-UNIT_RPM,,"r/m"
-ASSIGN_INPUT_HINT,,"Please assign input sources for the following functions"
-CONFIRMATION,,"Confirmation"
-ENABLE_XXX,,"Enable %s?"
-DISABLE_XXX,,"Disable %s?"
-CONFIRMATION_BEFORE_ACTIVE,,"Confirmation before active"
-CONFIRMATION_BEFORE_INACTIVE,,"Confirmation before inactive"
-REMOTE_NFC,,"Remote NFC"
-SWITCH_CHANNEL,,"Switch channel"
-WIRELESS,,"Wireless"
-TIMEOUT,,"Time out"
-NO_ENABLED_MODULE,,"Please enable the module you want to bind with NFC"
-GET_MODULE_UUID_FAILED,,"Failed to get module UUID.\nPlease check your module state!"
-BIND_NFC_FAILED,,"Failed to bind the NFC with the module!"
-PROTOCOL_NOT_SUPPORTED,,"The current module protocol is not supported!"
-CONFIRM_DELETE_TRIM,,"Are you sure you want to delete this extra trim?"
-LEFT_STICK,,"Left stick"
-RIGHT_STICK,,"Right stick"
-ALL_MOTORS,,"All motors"
-SELECT,,"Select"
-SINGLE_MOTOR,,"Single motor"
-STICK_MOTORS,,"Stick motors"
-CONFIRM_DELETE_ACTION,,"Are you sure you want to remove this action?"
-CONFIRM_DELETE_SCREEN,,"Are you sure you want to remove this screen?"
-CONFIRM_DELETE_SENSOR,,"Are you sure you want to remove this sensor?"
-FILE_ALREADY_EXISTS,,"A file with the same name already exists"
-MODEL_RUNTIME,,"Model runtime"
-RADIO_RUNTIME,,"Radio runtime"
-WAITING_FOR_SIGNAL,,"waiting for signal..."
-CONFIRM_RESET_RUNTIME,,"Runtime will be reset.\nAre you sure you want to continue?"
-BANK,,"Bank"
-POWER_SWITCH,,"Power switch"
-CURRENT_AND_VOLTAGE_RATE,,"Current & voltage rate"
-BEC_VOLTAGE_RATE,,"BEC voltage rate"
-SBEC_VOLTAGE,,"SBEC voltage"
-BATTERY_MODE,,"Battery mode"
-SWITCH_VOLTAGE,,"Switch voltage"
-BALANCE,,"Balance"
-BACKUP,,"Backup"
-BALANCE_CHANNELS,,"Balance channels"
-CHOOSE_CHANNELS,,"Choose channels"
-BALANCE_CURVE,,"Balance curve"
-CONFIRM_TO_SHARE_RECEIVER,,"Are you sure you want to share this receiver?"
-CONFIRM_TO_UNBIND_RECEIVER,,"Are you sure you want to unbind this receiver?"
-CONFIRM_FRSK_NOT_COMPATIBLE,,"This FRSK file is not compatible with your device.\nAre you sure you want to continue?"
-RX_VFR,,"Rx VFR"
-SMOKE_PUMP_VOLTAGE,,"S.P voltage"
-SMOKE_PUMP_CURRENT,,"S.P current"
-SMOKE_PUMP_TEMPERATURE,,"S.P temp"
-SMOKE_PUMP,,"Smoke pump"
-SOLENOID_VALVE,,"Solenoid valve"
-BIND_CARD,,"Bind card"
-WAITING_FOR_NFC_CARD,,"Please hold the NFC key close to the RemoteNFC panel for binding ..."
-BIND_CARD_SUCCESS,,"Bind NFC card successfully!"
-BIND_CARD_FAIL,,"NFC card is not successfully bound!"
-BUS_INVERT,F.Bus and F.Port inverted on receiver (Yes / No),"Bus invert"
-SBEC_INPUT_VOLT,,"SBEC input volt."
+TRANSLATION_KEY,,"ja",,
+TRANSLATION_NAME,,"日本語",,
+TRANSLATION_FALLBACK_NAME,,"日本語",,
+TRANSLATION_FONT_SUBSET,,,,
+SPECIAL_CHARS,,"_-+.",,
+FORMULA,,"フォーミュラ",,
+CALCULATED_SENSOR,,"計算センサー",,
+NAME,,"名前",,
+DECIMALS,,"小数",,
+VALUE,,"値",,
+SENSOR_LOST_WARNING_DELAY,,"センサー喪失の警報遅延",,
+WARNING_DISABLED,,"警告無効化",,
+RANGE,,"範囲",,
+SPACE_WITH_SAMPLES,,"サンプル",,
+RESET,,"リセット",,
+TELEMETRY_SENSOR,,"テレメトリーセンサー",,
+UNIT,,"単位",,
+WRITE_LOGS,,"ログ記録",,
+ID,,"ID",,
+CENTER,,"センター",,
+SUBTRIM,,"サブトリム",,
+PWM_CENTER,,"PWM センター",,
+NORMAL,,"ノーマル",,
+EQUAL,,"同等",,
+UNPLUGGED,,"未接続",,
+BEHAVIOUR,,"動作",,
+ADD_NEW_BEHAVIOUR,,"新しい動作を追加",,
+ADD_EXTRA_TRIM,,"新しいエキストラトリムを追加",,
+EXTRA_TRIM,,"エキストラトリム",,
+SLOW_UP,,"緩加速",,
+MIN,,"最小値",,
+CURVE,,"曲線",,
+MAX,,"最大値",,
+CHANNEL,,"チャンネル",,
+INVERT,,"反転",,
+SLOW_DOWN,,"緩減速",,
+INVERTED,,"反転",,
+FLIGHT_MODES,,"フライトモード",,
+DRIVE_MODES,,"ドライブモード",,
+MIX_FLIGHT_MODES_DESCRIPTION,,,,
+MIX_NAME_DESCRIPTION,,"ミックスの名前を編集",,
+TRIGGER_ON_CONDITION,,"トリガー オン 条件",,
+COMMENT,,"コメント",,
+FUNCTION,,"機能",,
+VALUES,,"値",,
+ADD_NEW_VALUE,,"新しい値を追加",,
+ACTIONS,,"アクション、動作",,
+ADD_NEW_ACTION,,"新しいアクションを追加",,
+DURATION_HIGH,,"動作持続時間",,
+RISING_EDGE,,"立ち上がりエッジ",,
+DURING,,"期間中",,
+VALUE1,,"値 1",,
+VALUE_X,,"値 (X)",,
+CHECK_INTERVAL,,"チェック間隔",,
+ACTIVE_CONDITION,,"アクティブ条件",,
+MIN_DURATION,,"最小動作持続時間",,
+MAX_DURATION,,"最大動作持続時間",,
+DURATION_LOW,,"非活性時間",,
+VALUE2,,"値 2",,
+DELAY_BEFORE_ACTIVE,,"起動遅延時間",,
+DURATION,,"継続時間",,
+SOURCE_A,,"入力源 (A)",,
+TRIGGER_OFF_CONDITION,,"トリガー オフ条件",,
+DELAY_BEFORE_INACTIVE,,"待機移行遅延時間",,
+DELAY_ON_OFF,,"遅延 オン/オフ",,
+SOURCE,,"入力源",,
+APPLICATION_ID,,"アプリケーション ID",,
+PHYSICAL_ID,,"物理ID",,
+ACTION,,"アクション",,
+TRAINER,,"トレーナー",,
+TRAINER_MODE,,"トレーナーモード",,
+CHANNEL_RANGE,,"チャンネル範囲",,
+CH,,"CH",,
+OUTPUTS,,"出力",,
+LAST_MODIFICATION,,"最終変更","Last Mod.",
+CLONE,,"クローン",,
+MODEL_MATCH,,"モデルID",,
+MODEL_DATA_LOAD,,"モデルデータ読込",,
+FILE_SIZE,,"ファイルサイズ",,
+MODEL_SELECT,,"モデル選択",,
+NO_MODELS_DIRECTORY,,"モデルディレクトリが存在しません!",,
+ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_MODEL,,"このモデルを削除しますか?",,
+SUCCESS,,"成功!",,
+CLONE_MODEL_SUCCESSFULLY,,"モデルクローンが成功しました!",,
+FILENAME_TOO_LONG,,"ファイル名が長すぎる!",,
+RX_STILL_ON_SELECT_ANOTHER_MODEL,,"受信機はまだオンですが、別のモデルを選択しますか?",,
+CONFIRM_SELECT_ANOTHER_MODEL,,"別のモデルを選択しますか?",,
+FILE_NAME,,"ファイル名が長すぎる!",,
+MODEL_TYPE,,"モデルタイプ",,
+CONFIRM,,"確認",,
+SET_CURRENT_MODEL,,"現在のモデルを設定",,
+UNCATEGORIZED,,"未分類",,
+CHANGE_FOLDER,,"フォルダを変更",,
+OPERATION,,"操作",,
+OPERATION_FAILED,,"操作が失敗しました!",,
+DELETE_FOLDER,,"フォルダを削除",,
+RENAME_FOLDER,,"フォルダの名前を変更",,
+CREATE_FOLDER,,"フォルダを追加",,
+CONFIRM_DELETE_FLIGHT_MODE,,"このフライトモードを削除しますか?",,
+MOVE,,"移動",,
+EDIT,,"編集",,
+ADD,,"追加",,
+TELEMETRY_PORT,,"テレメトリーポート",,
+WARNING,,"警告",,
+ERRORS,,"エラー",,
+OPTIONS,,"オプション",,
+CONFIGURE,,"設定",,
+WAITING_FOR_RECEIVER,,"受信機を待っています。..",,
+PIN,,"pin",,
+TELEMETRY,,"テレメトリー",,
+RX_SETTINGS,,"受信機設定",,
+NO_RESPONSE_FROM_RECEIVER,,"受信機から応答なし",,
+SBUS_OUT,,"SBUS out",,
+SBUS_IN,,"SBUS in",,
+TELEMETRY_25_MW,,"テレメトリパワー減少(25mW)",,
+HIGH_PWM_SPEED,,"高速PWM",,
+FLIGHT_DATA_RECORDER,,"フライトデータ記録",,
+RX_HAS_NO_FLIGHT_DATA_RECORD,,"受信機にはフライトデータ記録がない",,
+DEVICE_CONFIG,,"デバイス設定",,
+CONFIRM_DELETE_TIMER,,"このタイマーを削除しますか?",,
+TIMER,,"タイマー",,
+MODE,,"モード",,
+PASTE,,"貼り付け",,
+TIMERS,,"タイマー",,
+COPY,,"コピー",,
+NO_TIMER_HINT,,"タイマーはまだありません。追加ボタンを押してください。",,
+ANTENNA,,"アンテナ",,
+POWER_HAS_BEEN_CHANGED_PLEASE_REBIND,,"電源入力が変更されました。再ペアリングしてください。",,
+NO_RESPONSE_FROM_MODULE,,"モジュールからの応答がありません!",,
+POWER,,"パワー",,
+BAUDRATE,,"ボーレート",,
+WAITING_FOR_MODULE,,"モジュール応答待機中...",,
+TX_SETTINGS,,"送信機設定",,
+MIXES,,"ミックス",,
+CHANNELS,,"チャンネル",,
+FLIGHT_MODE,,"フライトモード",,
+DRIVE_MODE,,"ドライブモード",,
+D,,"D",,
+CONFIRM_DELETE_MIX,,"このミックスを削除しますか?",,
+CONFIRM_DELETE_SSS,,"この%sを削除しますか?",,
+NONE,,"なし",,
+NO_MIX_HINT,,"ミックスはまだありません。追加ボタンを押してください。",,
+TYPE,,"タイプ",,
+SHARE,,"シェア",,
+RX,,"受信機",,
+RACING_MODE,,"レーシングモード",,
+RANGE_CHECK,,"範囲チェック","Range",
+EXTERNAL_MODULE,,"外部モジュール",,
+BIND_OK,,"ペアリング完了",,
+BINDING_3DOTS,,"ペアリング中",,
+BIND,,"ペアリング",,
+FAILSAFE,,"フェールセーフ",,
+INTERNAL_MODULE,,"内部モジュール",,
+SET_FAILSAFE,,"フェールセーフを設定",,
+RESET_BIND,,"ペアリング初期化",,
+FACTORY_RESET,,"工場出荷初期化",,
+RF_SYSTEM,,"RFシステム",,
+OWNER_REGISTRATION_ID,,"オーナー登録ID",,
+SELECT_DEVICE,,"デバイスを選択",,
+REGISTER,,"登録",,
+VALID_FRAME_RATE,,"VFR",,
+STATE,,"状態",,
+PROTOCOL,,"プロトコル",,
+ARE_YOU_SURE_TO_RESET_THIS_RECEIVER,,"この受信機をリセットしますか?",,
+SET,,"設定",,
+EXPO,,"指数",,
+UNIT_POINTS_COUNT,,"点数",,
+WEIGHT,,"重み",,
+POINTS,,"点数",,
+OFFSET,,"オフセット",,
+AUTO_OFFSET,,"自動オフセット",,
+OFFSET_WHEN_ACTIVE,,"作動時オフセット",,
+OFFSET_WHEN_INACTIVE,,"非作動時オフセット",,
+SMOOTH,,"スムーズ",,
+POINT,,"点",,
+POINTS_COUNT,,"点数計算",,
+EASY_MODE,,"簡易モード",,
+LOGIC_SWITCHES,,"論理スイッチ",,
+ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_LOGIC_SWITCH,,"この論理スイッチを削除しますか?",,
+NO_LOGIC_SWITCH_HINT,,"論理スイッチはまだありません。追加ボタンを押してください。",,
+START_CONDITION,,"開始条件",,
+STOP_CONDITION,,"停止条件",,
+TIMER_EDIT,,"タイマーを編集",,
+PERSISTENT,,"永続",,
+START_VALUE,,"起動値","Start",
+AUDIO_ACTIONS,,"オーディオ操作",,
+AUDIO_ACTION,,"オーディオ操作",,
+ADD_A_NEW_AUDIO_ACTION,,"新しいオーディオ操作を追加",,
+ALARM_VALUE,,"警報設定値","Alarm",
+HAPTIC,,"振動フィードバック",,
+COUNT_SECONDS,,"秒カウント",,
+START,,"開始",,
+PLAY_FILE,,"ファイルを再生",,
+SPACE_WITH_OTHERS,,"その他の場所",,
+CONFIRM_DELETE_CURVE,,"このカーブを削除しますか?",,
+CURVE_USED_BY,,"このカーブは以下の機能で使用されています：",,
+AND_WITH_TWO_SPACES,,"and",,
+CURVES,,"カーブ",,
+NO_CURVE_HINT,,"カーブはまだありません。追加ボタンを押してください。",,
+VARS,,"変数",,
+NO_VAR_HINT,,"変数はまだありません。追加ボタンを押してください。",,
+ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_VAR,,"この変数を削除しますか?",,
+CONFIRM_RESET_MIXES,,"この操作により、すべてのミックスがリセットされます。続けますか?",,
+ELEVATORS,,"エレベーター",,
+YAW,,"ヨー",,
+SWASH_PLATE,,"スワッシュプレート",,
+EDIT_MODEL,,"モデルを編集",,
+PICTURE,,"写真",,
+TAIL,,"尾部",,
+AILERONS,,"エルロン",,
+PITCH,,"ピッチ",,
+THROTTLE,,"スロットル",,
+FLAPS,,"フラップ",,
+ENGINE,,"エンジン",,
+BRAKE,,"ブレーキ",,
+RUDDERS,,"ラダー",,
+ROLL,,"ロール",,
+FUNCTION_SWITCHES,,"機能スイッチ",,
+RESET_ALL_MIXES,,"全ミックスをリセット",,
+CREATE_CALCULATED_SENSOR,,"算出センサーを追加",,
+CONFIRM_DELETE_SENSORS,,"すべてのセンサーが削除されます\n続行しますか?",,
+ON,,"オン",,
+OFF,,"オフ",,
+DISCOVER_NEW_SENSORS,,"新規センサーを探索",,
+DELETE_ALL,,"全削除",,
+INDIVIDUAL_RSSI_ALERT_PER_BAND,,"バンド毎の個別RSSI警告",,
+CREATE_DIY_SENSOR,,"自作センサーを追加",,
+CONFIRM_LOAD_ALL_SWITCH_POSITIONS,,"この操作により全スイッチ点検位置が現在値で上書きされます\n続行しますか?",,
+CHECK_FUNCTION,,"機能チェック",,
+LOAD_ALL_SWITCH_POSITIONS,,"全てのスイッチ位置を読み込み",,
+CONFIRM_LOAD_ALL_POT_POSITIONS,,"この操作により全ポテンショメータ点検位置が現在値で上書きされます\n続行しますか?",,
+LOAD_ALL_POT_POSITIONS,,"全てのポテンショメータ位置を読み込み",,
+CALIBRATION_FINISH,,"校正完了!",,
+SXR_CALIBRATION,,"SxR校正",,
+CLICK_WHEN_DONE,,"完了後クリック",,
+CALIBRATING,,"校正中",,
+SXR_CALIBRATION_DESCRIPTION,,"SxR用ジャイロと加速度計の校正",,
+SLAVE_CH,,"スレーブ CH",,
+PERCENT,,"パーセント",,
+DESTINATION,,"目的地",,
+ENABLE,,"有効化",,
+NO_FUNCTION_HINT,,"この機能がまた設定されなせん\n追加ボタンを押してください。",,
+SPECIAL_FUNCTIONS,,"スペシャル機能","Special funcs",
+SF,,"SF",,
+DISABLE,,"無効化",,
+ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_SPECIAL_FUNCTION,,"このスペシャル機能を削除しますか?",,
+REGISTRATION_OK,,"登録OK",,
+UID,,"UID",,
+REGISTRATION_ID,,"登録ID",,
+RX_NAME,,"受信機名前",,
+RECEIVER_CONNECTED,,"受信機が接続されました",,
+REGISTRATION,,"アリング",,
+TRIMS,,"トリム",,
+FADE_IN,,"フェードイン/アウト",,
+FADE_OUT,,"フェードアウト",,
+AUTO_DETECT,,"自動検出",,
+DISPLAY_DECIMALS_AND_UNIT,,"表示小数/単位",,
+SELECT_SENSOR,,"センサーを選択",,
+DIY_SENSOR,,"自作センサー",,
+WAITING,,"待機中",,
+BAND,,"バンド",,
+RATIO,,"比率",,
+MODULE,,"モジュール",,
+PROTOCOL_DECIMALS_AND_UNIT,,"プロトコル小数点設定 / 単位",,
+CROSS_TRIM,,"クロストリム",,
+MOVE_TRIM_TO_SUBTRIM,,"トリムをサブトリムへ移動",,
+INSTANT_TRIM,,"インスタントトリム",,
+CONFIRM_MOVE_TRIM_TO_SUBTRIM,,"トリムをサブトリムへの移動を確認しますか?",,
+MOVE_TRIMS_TO_SUBTRIMS,,"トリムをサブトリムへ移動",,
+CONFIRM_MOVE_TRIMS_TO_SUBTRIMS,,"トリムをサブトリムへの移動を確認しますか?",,
+INDEPENDENT_PER_FLIGHT_MODE,,"フライトモード毎に独立設定",,
+STICK,,"スティック",,
+CONFIGURE_SCREENS,,"画面構成を設定",,
+TOP_SCREEN,,"最上位スクリーン",,
+CHANGE_LAYOUT,,"レイアウト変更",,
+FULL_SCREEN,,"フルスクリーン表示",,
+WIDGET,,"表示要素",,
+SET_MAIN_SCREEN,,"主表示画面を設定",,
+CONFIGURE_WIDGET,,"表示要素を設定",,
+NEW_SCREEN,,"新規表示画面",,
+SCREEN,,"画面",,
+CHANGE_WIDGET,,"表示要素を変更","Change",
+MOVE_FORWARD,,"前進",,
+MOVE_BACKWARD,,"後退",,
+RESET_FLIGHT,,"フライトモードをリセット",,
+RESET_TIMERS,,"タイマをリセット",,
+RESET_TELEMETRY,,"テレメトリデータをリセット",,
+HOME,,"ホーム",,
+ADD_AFTER,,"後に追加",,
+ADD_MIX_FAILED,,"ミックス追加が失敗しました!",,
+MAX_MIXES_REACHED,,"最大ミックス数に達しました!",,
+FIRST_POSITION,,"最初位置",,
+MIXES_LIBRARY,,"ミックスライブラリ",,
+LOCAL_ADDRESS,,"地元アドレス",,
+WAITING_FOR_DEVICES,,"デバイスの接続を待っています。。",,
+LOCAL_NAME,,"ローカル名",,
+SEARCH_DEVICES,,"検索中..",,
+BLUETOOTH_DEVICE_CONNECTED,,"Bluetoothデバイスが接続されました",,
+CONFIRM_ALLOW_CONNECTION,,"接続を許可しますか?",,
+BLUETOOTH_FIRMWARE_NEEDS_UPDATE,,"Bluetoothファームウェアの更新が必要",,
+BLUETOOTH_MAINTENANCE,,"Bluetoothメンテナンス",,
+CONNECT_LAST_DEVICE,,"最後のデバイスを接続する",,
+DEVICE,,"デバイス",,
+NO_BLUETOOTH_DEVICE_FOUND,,"Bluetoothデバイスは見つかりませんでした!",,
+SPEAKER_MUTE,,"スピーカーミュート",,
+DISCONNECT,,"切断",,
+WAITING_FOR_DEVICE,,"デバイスの接続を待つ",,
+DIST_ADDRESS,,"対象アドレス",,
+CONNECTING,,"接続中",,
+ROTARY_ENCODER_HALF_STEPS,,"回転式エンコーダ半刻み動作",,
+BLUETOOTH_AUDIO,,"Bluetooth オーディオ",,
+NOT_INSTALLED,,"未設置(初期設定)",,
+INSTALLED_AS_AN_OPTION,,"オプションとしてインストール",,
+RESET_MODULE,,"モジュール初期化",,
+HIGH_SPEED,,"高速",,
+NORMAL_SPEED,,"通常",,
+MODEL,,"モデル",,
+STEERING,,"ステアリング",,
+STEERING_BRAKE,,"ステアリングブレーキ",,
+CHECKLIST,,"チェックリスト",,
+FILE_MANAGER,,"ファイルマネージャー",,
+SOUND,,"音声＆振動",,
+STICKS,,"スティック",,
+DATE_TIME,,"日付と時間",,
+HARDWARE,,"ハードウェア",,
+INFO,,"情報",,
+SERIAL_NUMBER,,"シリアル番号",,
+RESET_FACTORY_SETTINGS,,"工場設定に戻る",,
+CONFIRM_RESET_FACTORY_SETTINGS,,"工場設定に戻る?",,
+SYSTEM,,"システム",,
+DISPLAY,,"表示",,
+KEYBOARD,,"キーボード",,
+ENABLE_SLIDER,,"スライダー有効化",,
+DISABLE_SLIDER,,"スライダー無効化",,
+ALERTS,,"アラート",,
+SPECTRUM_ANALYSER,,"スペクトラム",,
+BATTERY,,"バッテリー",,
+CHECKLIST_WARNING,,"チェックリスト警告",,
+RADIO_IS_IN_SILENT_MODE,,"発信機はサイレントモードになります",,
+RADIO_BATTERY_IS_LOW,,"発信機は低電圧になります",,
+THROTTLE_IS_NOT_IDLE,,"スロットルは非アイドル状態です",,
+ARE_NOT_IN_SAFE_POSITION,,"安全位置ではありません。",,
+IS_NOT_IN_SAFE_POSITION,,"安全位置ではありません。",,
+FUNCTION_SWITCHES_ARE_NOT_IN_SAFE_POSITION,,"機能スイッチは安全位置ではありません",,
+FAILSAFE_IS_NOT_SET,,"フェイルセーフは設定されていません",,
+RTC_BATTERY_IS_LOW,,"RTCバッテリーは低電圧になります",,
+ALWAYS_ON,,"常にオン",,
+YES,,"はい",,
+DIGITAL_RSSI,,"デジタル RSSI",,
+GYRO,,"ジャイロ",,
+GYRO_SWITCHES,,"ジャイロスイッチ",,
+LANGUAGE,,"言語",,
+SWITCHES,,"スイッチ",,
+TOP_TOOLBAR,,"トップツールバー",,
+NO,,"いいえ",,
+BRIGHTNESS,,"明るさ",,
+KEYS,,"キー",,
+WAKE_UP,,"待機解除",,
+DIGITAL_VOLTAGE,,"デジタル電圧",,
+SLEEP,,"待機",,
+SYSTEM_ALERTS,,"システムアラート",,
+INACTIVITY,,"不活性",,
+AUTO_ADJUST_FROM_GPS,,"GPSから自動調整",,
+DATE,,"日付",,
+ADJUST_RTC_SPEED,,"RTC速度を調整する",,
+SHOW_SECONDS,,"表示秒数",,
+IS24HOUR,,"24時間表示",,
+TIME_ZONE,,"タイムゾーン",,
+YEAR,,"年",,
+MONTH,,"月",,
+TIME,,"時間",,
+NEXT,,"次へ",,
+GYRO_CALIBRATION,,"ジャイロ校正",,
+PREV,,"戻る",,
+MDL_LONG,,"MDL 長押し",,
+HARDWARE_CHECK,,"ハードウェアチェック",,
+SWITCHES_SETTINGS,,"スイッチ設定",,
+ADC_INSPECTOR,,"ADCインスペクター",,
+SYS_LONG,,"SYS 長押し",,
+HOME_KEYMAP,,"ホームキーマップ",,
+POTS_SLIDERS_SETTINGS,,"ポット/スライダー設定",,
+SWITCH_MIDDLE_DETECT_DELAY,,"スイッチ中立位置検出遅延時間",,
+DISP_SHORT,,"{DISP_LABEL} 押し",,
+DISP_LONG,,"{DISP_LABEL} 長押し",,
+SWITCH,,"スイッチ",,
+ANALOGS_FILTER,,"アナログフィルター",,
+ANALOGS_CALIBRATION,,"アナログ校正",,
+CONFIRM_CONTINUE,,"続けて実行しますか?",,
+THR_NOT_LOW_WARNING,,"スロットル低位置ではありません!",,
+CHANNELS_ORDER,,"チャンネル順位",,
+STICKS_MODE,,"スティックモード",,
+STICKS_MODE_1,,"スティックモード１",,
+STICKS_MODE_2,,"スティックモード２",,
+STICKS_MODE_3,,"スティックモード３",,
+STICKS_MODE_4,,"スティックモード４",,
+FIRST_FOUR_CHANNELS_FIXED,,"最初の4つのチャンネルを固定",,
+NO_SD_CARD,,"SDカードなし",,
+FLASH_BOOTLOADER,,"ブートローダーを更新",,
+FLASH_INTERNAL_MODULE,,"内部RFモジュールを更新",,
+PLAY,,"再生",,
+CURRENT_VERSION,,"現在のバージョン",,
+FLASH_RECEIVER_BY_INTERNAL_MODULE_OTA,,"内蔵モジュールによる受信機のOTA更新",,
+FLASH_RECEIVER_BY_EXTERNAL_MODULE_OTA,,"外部モジュールによる受信機のOTA更新",,
+OTA_UPDATE,,"OTA更新",,
+FLASH_EXTERNAL_DEVICE,,"外部デバイスを更新",,
+OPEN,,"開く",,
+FLASH_EXTERNAL_MODULE,,"外部モジュールを更新",,
+FLASH_EXTERNAL_MULTIMODULE,,"外部マルチモジュールを更新",,
+MOVE_HERE,,"ここに移動",,
+OTA_UPDATE_ERROR,,"OTA更新エラー",,
+UNSUPPORTED_RX,,"サポートされていない受信機",,
+MAIN_VOLTAGE,,"主電圧",,
+DISPLAY_VOLTAGE_RANGE,,"電圧半範囲を表示",,
+LOW_VOLTAGE,,"低電圧",,
+RTC_VOLTAGE,,"ＲＴＣ電圧",,
+UNKNOWN,,"未知",,
+FIRMWARE,,"ファームウェア",,
+FIRMWARE_VERSION,,"ファームウェアバージョン",,
+VIDEO_HARDWARE_VERSION,,"ビデオハードウェアバージョン",,
+RECEIVER,,"受信機",,
+NON_STABILIZED_RECEIVER,,"ジャイロ安定化未機能非対応受信機",,
+VARIO,,"バリオ",,
+MAIN_VOLUME,,"メインボリューム",,
+AUDIO_VOLUME,,"ボリューム",,
+PITCH_AT_ZERO,,"ピッチ中立",,
+SEQUENCE,,"シーケンス",,
+PITCH_AT_MAX,,"ピッチ最大",,
+REPEAT_AT_ZERO,,"リピート",,
+SILENT,,"サイレント",,
+ALARMS_ONLY,,"アラームのみ",,
+OFTEN,,"高頻度",,
+ALWAYS,,"常に",,
+NEVER,,"なし",,
+WHEN_TELEMETRY_STREAMING,,"テレメトリ配信中",,
+VOICE1,,"声１(メイン)",,
+VOICE2,,"声２",,
+VOICE3,,"声３",,
+SUNDAY,,"日曜日",,
+MONDAY,,"月曜日",,
+TUESDAY,,"火曜日",,
+WEDNESDAY,,"水曜日",,
+THURSDAY,,"木曜日",,
+FRIDAY,,"金曜日",,
+SATURDAY,,"土曜日",,
+JANUARY,,"一月",,
+FEBRUARY,,"二月",,
+MARCH,,"三月",,
+APRIL,,"四月",,
+MAY,,"五月",,
+JUNE,,"六月",,
+JULY,,"七月",,
+AUGUST,,"八月",,
+SEPTEMBER,,"九月",,
+OCTOBER,,"十月",,
+NOVEMBER,,"十一月",,
+DECEMBER,,"十二月",,
+CURRENT,,"当前",,
+VFAS,,"VFAS",,
+TEMPERATURE_2,,"温度１",,
+TEMPERATURE_1,,"温度２",,
+FUEL,,"燃料",,
+ACCX,,"AccX",,
+ACCY,,"AccY",,
+ACCZ,,"AccZ",,
+GPS_ALT,,"GPS アルト",,
+GPS_SPEED,,"対地速度",,
+GPS_COURSE,,"GPS方位",,
+AIR_SPEED,,"対気速度",,
+BATTERY_1_VOLTAGE,,"バッテリー1 電圧",,
+BATTERY_1_CURRENT,,"バッテリー1 電流",,
+BATTERY_2_VOLTAGE,,"バッテリー2 電圧",,
+BATTERY_2_CURRENT,,"バッテリー2 電流",,
+RBOX_STATE_1,,"RBOX 状態1",,
+RBOX_STATE_2,,"RBOX 状態2",,
+BATTERY_1_CONSUMPTION,,"バッテリー1 消費量",,
+BATTERY_2_CONSUMPTION,,"バッテリー2 消費量",,
+BATTERY_1_TEMPERATURE,,"バッテリー1 温度",,
+BATTERY_2_TEMPERATURE,,"バッテリー2 温度",,
+SD1_CHANNEL,,"SD1CH",,
+ESC_VOLTAGE,,"ESC 電圧",,
+ESC_CURRENT,,"ESC 電流",,
+ESC_RPM,,"ESC 回転数",,
+ESC_CONSUMPTION,,"ESC 消費量",,
+ESC_TEMPERATURE,,"ESC 温度",,
+RB_OUTPUT_STATE,,"出力状態",,
+RB_CH1_A,,"CH1 電流",,
+RB_CH2_A,,"CH2 電流",,
+RB_CH3_A,,"CH3 電流",,
+RB_CH4_A,,"CH4 電流",,
+RB_CH5_A,,"CH5 電流",,
+RB_CH6_A,,"CH6 電流",,
+RB_CH7_A,,"CH7 電流",,
+RB_CH8_A,,"CH8 電流",,
+RB_CH9_A,,"CH9 電流",,
+RB_OUTPUT_1_VOLTAGE,,"出力1 電圧",,
+RB_OUTPUT_2_VOLTAGE,,"出力2 電圧",,
+GASSUIT_TEMP1,,"ガソリン 温度1",,
+GASSUIT_TEMP2,,"ガソリン 温度2",,
+GASSUIT_SPEED,,"ガソリン 回転数",,
+GASSUIT_RES_VOL,,"ガソリン 残量値",,
+GASSUIT_RES_PERC,,"ガソリン 残量パーセント",,
+GASSUIT_FLOW,,"ガソリン 流量",,
+GASSUIT_MAX_FLOW,,"ガソリン 最大流量",,
+GASSUIT_AVG_FLOW,,"ガソリン 平均流量",,
+BEC_VOLTAGE,,"BEC 電圧",,
+BEC_CURRENT,,"BEC 電流",,
+POWER_900M,,"900M パワー",,
+ROLL_ANGLE,,"横傾斜角",,
+PITCH_ANGLE,,"ピッチ角",,
+HYDRAULIC_PRESSURE,,"油圧",,
+INTERNAL_GPS,,"内蔵GPS",,
+RAM_AVAILABLE,,"利用可能なRAM",,
+CLOCK,,"時計",,
+LATITUDE,,"纬度",,
+LONGITUDE,,"経度",,
+TRIP,,"トリップ",,
+CATEGORY,,"カテゴリー",,
+MEMBER,,"メンバー",,
+IGNORE_TRAINER_INPUT,,"トレーナー入力を無視",,
+FULL_RANGE,,"全範囲",,
+IGNORE_RANGE,,"範囲を無視",,
+HALF_RANGE,,"半範囲",,
+NEGATIVE,,"ネガティブ",,
+EDGE,,"エッジ",,
+ELE_TO_AIL,,"エレベーター => エルロン",,
+AIL_TO_RUD,,"エルロン => ラダー",,
+ELE_TO_CAMBER,,"エレベーター => キャンバー",,
+RUD_TO_AIL,,"ラダー => エルロン",,
+RUD_TO_ELE,,"ラダー=> エレベーター",,
+AIL_TO_FLAPS,,"エルロン => フラップ",,
+FLAPS_TO_ELE,,"フラップ => エレベーター",,
+FREE_MIX,,"任意ミックス",,
+SNAP_ROLL,,"スナップロール",,
+TEST_MIX,,"テストミックス",,
+PLANE,,"固定翼",,
+GLIDER,,"グライダー",,
+HELI,,"ヘリコプター",,
+MULTI,,"マルチ",,
+CAR,,"カー",,
+BOAT,,"ボート",,
+OTHER,,"その他",,
+CALIBRATION,,"校正",,
+INPUTS,,"入力",,
+UPDATE,,"更新",,
+SDCARD,,"SDカード",,
+SDCARD_ERROR,,"SDカードエラー",,
+INVALID_DATA,,"データ不正",,
+FILE_BAD_FORMAT,,"未知のファイル",,
+NO_FILES_ON_SD,,"SDファイルなし!",,
+READ_ERROR,,"読み込みエラー",,
+WRITE_ERROR,,"書き込みエラー",,
+WRONG_HEADER,,"ヘッダー異常",,
+WRONG_FORMAT,,"拡張子非対応",,
+WRONG_CRC,,"CRC 非対応",,
+WRONG_FILE_SIZE,,"ファイル容量異常",,
+WRONG_FILE,,"ファイル非対応",,
+ERROR,,"エラー",,
+RUDDER,,"ラダー",,
+ELEVATOR,,"エレベーター",,
+DELETE,,"削除",,
+MODEL_BITMAP,,"モデルビットマップ",,
+TAIL_TYPE,,"尾タイプ",,
+TRADITIONAL,,"伝統的",,
+VTAIL,,"V-テイル",,
+REVERSE,,"逆",,
+RATE,,"レート",,
+UP,,"上",,
+DOWN,,"下",,
+LEFT_SHORT,,"左",,
+RIGHT_SHORT,,"右",,
+RIGHT,,"右",,
+LEFT,,"左",,
+TOP,,"上面",,
+BOTTOM,,"下面",,
+TIMER_UP,,"上",,
+TIMER_DOWN,,"下",,
+LIMIT,,"制限",,
+SPEED,,"スピード",,
+SET_DATE,,"設定日付",,
+SET_TIME,,"設定時間",,
+SILENT_MODE,,"サイレントモード",,
+KEY,,"キー",,
+ALARM,,"アラーム",,
+TRIM,,"トリム",,
+SETUP_CHANNEL,,"チャンネル設定",,
+LOGIC_SWITCH,,"ロジックスイッチ",,
+CREATE_MODEL,,"モデル追加",,
+CANCEL,,"キャンセル",,
+DELAY,,"遅延",,
+SAVE,,"保存",,
+LS,,"LS",,
+FS,,"FS",,
+OP,,"OP",,
+TRAINER_MASTER,,"マスター",,
+TRAINER_SLAVE,,"スレーブ",,
+LINK_MODE,,"リンクモード",,
+TRAINEE_CHANNEL,,"トレーニーチャンネル",,
+RECEIVER_TYPE,,"受信機タイプ",,
+BACK,,"バック",,
+INTERNAL,,"内部",,
+EXTERNAL,,"外部",,
+RF_PROTOCOL,,"RFプロトコル",,
+EXTERNAL_RF,,"外部 RF",,
+LOGIC_SWITCH_RANGE,,"範囲",,
+PLAY_SEQUENCE,,"オーディオ再生",,
+WAIT_DURATION,,"待つ時間",,
+WAIT_CONDITION,,"待つ条件",,
+CONFIRM_DELETE_LINE,,"この行を削除しましか?",,
+ADD_A_NEW_LINE_IN_SEQUENCE,,"シーケンスで新しい行を追加",,
+PLAY_TEXT,,"テキスト再生",,
+GO_TO_SCREEN,,"画面に移動",,
+LOCK_TOUCHSCREEN,,"タッチスクリーンをロック",,
+BLANK,,"ブランク",,
+CALIBRATE,,"校正",,
+CLICK_CALIBRATE_TO_START,,"「校正」をクリックして開始",,
+CENTER_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,,"スティック/ポット/スライダーをセンターにし、完了したら「次へ」をクリックします。",,
+MOVE_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,,"スティック/ポット/スライダーをフル範囲に移動し、完了したら「次へ」をクリックします。","Move the sticks/pots/sliders, click 'Next' when done",
+CALIBRATION_COMPLETE_CLICK_CONFIRM_TO_STORE,,"校正が完了し、「確認」をクリックして設定を保存。","Calibration complete, click 'Confirm' to store it",
+BACKLIGHT,,"バックライト",,
+DARK_MODE,,"ダークモード",,
+HIGHLIGHT_COLOR,,"ハイライトカラー",,
+MODEL_NAME,,"名前",,
+NO_AIRBRAKES,,"エアブレーキなし",,
+OK,,"はい",,
+FLAP,,"フラップ",,
+AIRBRAKE,,"エアブレーキ",,
+FILE,,"ファイル",,
+FLASH_SPORT,,"S.Portで更新",,
+PLAY_VALUE,,"値再生",,
+ANALOGS,,"アナログ",,
+SWITCHES_POSITIONS,,"スイッチ位置",,
+TRIMS_POSITIONS,,"トリム位置",,
+CONST_VALUE,,"固定値",,
+SLIDER_LEFT,,"左スライダー",,
+SLIDER_RIGHT,,"右スライダー",,
+TRIM_T1_LEFT,,"T1 左",,
+TRIM_T1_RIGHT,,"T1 右",,
+TRIM_T2_UP,,"T2 上",,
+TRIM_T2_DOWN,,"T2 下",,
+TRIM_T3_UP,,"T3 上",,
+TRIM_T3_DOWN,,"T3 下",,
+TRIM_T4_LEFT,,"T4 左",,
+TRIM_T4_RIGHT,,"T4 右",,
+TRIM_T5_LEFT,,"T5 左",,
+TRIM_T5_RIGHT,,"T5 右",,
+TRIM_T5_DOWN,,"T5 下",,
+TRIM_T5_UP,,"T5 上",,
+TRIM_T6_LEFT,,"T6 左",,
+TRIM_T6_RIGHT,,"T6 右",,
+TRIM_T6_DOWN,,"T6 下",,
+TRIM_T6_UP,,"T6 上",,
+DIFFERENTIAL,,"差別",,
+SLOW,,"スロー",,
+MULTIPLY,,"倍数",,
+WEIGHT_UP,,"重みアップ",,
+WEIGHT_DOWN,,"重みダウン",,
+OUTPUT,,"出力",,
+CLOSE,,"閉じる",,
+FLASHING,,"更新中 ...",,
+RESET_DEVICE,,"デバイス初期化 ...",,
+LOW_BATTERY,,"送信機低電量!",,
+VOLTAGE_CALIBRATION,,"電圧校正",,
+STARTING_MODEL_WIZARD,,"モデルウィザードを開始中...",,
+RADIO_DATA_LOAD,,"送信機データ読み込み",,
+DEFAULT_SYSTEM_SETTINGS_RESTORED,,"ストレージエラー,デフォルトのシステム設定が復元されました.","Storage error, default system settings restored.","Storage error, default settings restored."
+FLIGHT_MODE_SHORT,,"FM",,
+DRIVE_MODE_SHORT,,"DM",,
+PREFLIGHT_WARNING,,"フライト前点検警告",,
+NEW_MODEL,,"新しいモデル",,
+STARTING_CALIBRATION,,"校正を開始中...",,
+NO_SD_CARD_WARNING,,"SDカードなし警告",,
+ADD_CURVE_ERROR,,"カーブの追加に失敗しました!",,
+STEP,,"ステップ",,
+AILERON,,"エルロン",,
+ELEVON,,"エレベーター",,
+SPACE_WITH_CHANNEL,,"チャネル",,
+QUESTION_SWAP_SSS_AND_SSS_CHANNELS_SETTINGS,,"%s と %s チャンネルの設定を交換しますか?",,
+INPUT,,"入力",,
+THR_CURVE,,"カーブ",,
+PITCH_CURVE,,"ピッチカーブ",,
+THROTTLE_CUT,,"スロットルカット",,
+DELAY_UP,,"最大値で維持",,
+DELAY_MID,,"中点で維持",,
+DELAY_DOWN,,"最小値で維持",,
+NO_DELAY,,"遅延なし",,
+V_TAIL,,"Vテール",,
+DATA_REFUSED,,"データ拒否されました",,
+DEVICE_NOT_RESPONDING,,"デバイス応答なし",,
+NO_OUTPUT,,"出力なし",,
+WEIGHT_RATES,,"重み付け / レート",,
+OTHERWISE,,"それ以外の場合","Else",
+AUTO,,"自動",,
+TRIM_STEP_FINE,,"微調整",,
+TRIM_STEP_COARSE,,"粗調整",,
+TRIM_STEP_EXPONENTIAL,,"指数関数的",,
+TRIM_STEP_EXTRA_FINE,,"超微調整",,
+TRIM_STEP_MEDIUM,,"ミディアム",,
+TRIM_STEP_CUSTOM,,"カスタム",,
+SCREENSHOT,,"スクリーンショット",,
+POSITIVE,,"ポジティブ",,
+THROTTLE_HOLD,,"スロットルホールド",,
+TRIGGER_VALUE,,"トリガー値",,
+IDLE_OUTPUT_VALUE,,"アイドル出力値",,
+LOW_POSITION_TRIM,,"低位置トリム",,
+AND,,"AND",,
+OR,,"OR",,
+XOR,,"XOR",,
+SENSORS,,"センサー",,
+RECEIVERS,,"受信機",,
+SERVOS,,"サーボ",,
+FLIGHT_SAFETY,,"フライト安全",,
+VARIOMETER,,"バリオメーター",,
+ALARMS,,"アラーム",,
+SENSOR,,"センサー",,
+RX_BATT,,"受信機バッテリー",,
+RX_CURRENT,,"受信機電流",,
+ALTITUDE,,"高度",,
+VSPEED,,"垂直速度",,
+SELECT_LANGUAGE,,"言語選択",,
+ONCE,,"1回限り",,
+FLIGHT_DATA,,"フライトデータ",,
+ALL_TIMERS,,"すべてのタイマー",,
+WHOLE_TELEMETRY,,"すべてのテレメトリー",,
+REPEAT,,"リピート",,
+WAV_FILE,,"WAVファイル",,
+BUTTERFLY,,"バタフライ",,
+CAMBER,,"キャンバー",,
+PITCH_TO_RUD,,"ピッチ => ラダー",,
+MISSING_BASIC_MIX,,"基本的なミックスが欠けている",,
+MISSING_ENOUGH_CHANNEL,,"利用可能なチャンネル数が不足",,
+NOT_SUIT_FOR_THIS_MODEL,,"このミックス設定はお使いのモデルに適していない",,
+THR_TO_ELE,,"スロットル => エルロン",,
+THR_TO_RUD,,"スロットル => ラダー",,
+TEMPERATURE,,"温度",,
+DATA_RATE,,"データレート",,
+GPS,,"GPS",,
+GAS_SUITE,,"燃料監視システム",,
+FLOW_RESET,,"フローリセット",,
+CDI_OFF_SPEED_LIMIT,,"CDIオフスピードリミット",,
+FLOW_PULSE,,"流量パルス",,
+AUTO_RESET,,"自動リセット",,
+RESET_RESIDUAL_VOLUME,,"残量リセット",,
+RESET_MAX_FLOW,,"最大流量リセット",,
+RESET_AVERAGE_FLOW,,"平均流量リセット",,
+VOLUME_ALARM,,"ボリュームアラーム",,
+MAX_FLOW_ALARM,,"最大流量アラーム",,
+OVER_SPEED_ALARM,,"オーバースピードアラーム",,
+FLOW_TRIGGER,,"流量トリガー",,
+FACTORY_SETTING,,"工場出荷時設定",,
+OVER_TEMP1_ALARM,,"過熱アラーム1",,
+OVER_TEMP2_ALARM,,"過熱アラーム2",,
+TEMPERATURE_UNIT,,"温度単位",,
+AUTO_SAVE,,"自動保存",,
+GPS_POSITION_DATA_RATE,,"GPS位置データレート",,
+GPS_ALTITUDE_DATA_RATE,,"GPS高度データレート",,
+GPS_SPEED_DATA_RATE,,"GPS速度データレート",,
+GPS_COURSE_DATA_RATE,,"GPSコースデータレート",,
+GPS_TIME_DATA_RATE,,"GPSクロックデータレート",,
+RB_30_40,,"RB 30/40",,
+EW,,"EW",,
+NS,,"NS",,
+DEFAULT_FLIGHT_MODE,,"デフォルトフライトモード",,
+DEFAULT_DRIVE_MODE,,"デフォルトドライブモード",,
+SKIP_ON_STARTUP,,"起動時スキップ",,
+LOW_VALUE_WARNING,,"低値警告",,
+CRITICAL_VALUE,,"クリティカル値",,
+UPGRADE_MODULE,,"モジュールアップグレード",,
+AUTHENTICATION_FAILURE,,"認証失敗",,
+MODULE_NEEDS_UPGRADE,,"モジュールアップグレード要",,
+CLEAR,,"クリア",,
+MIX_SWITCH_DESCRIPTION,,"ミックス有効/無効切替スイッチを選択",,
+MIX_WEIGHT_DESCRIPTION,,"このミックス乗数(%)は入力ソースに適用され、カーブ適用後にミックス出力値を決定",,
+MIX_CURVE_DESCRIPTION,,"ミックスのカーブ選択してください。このカーブは重み付けパラメータ適用前に計算される",,
+MIX_DIFFERENTIAL_DESCRIPTION,,"チャンネルデフ量選択",,
+MIX_OUTPUT_DESCRIPTION,,"ミックスの影響を受けるチャンネルを選択",,
+MIX_INPUT_DESCRIPTION,,"ミックス制御ソース選択",,
+MIX_OPERATION_DESCRIPTION,,"ミックス機能種別選択：加算?乗算?置換",,
+MIX_REVERSE_DESCRIPTION,,"反転方向",,
+MIX_OFFSET_DESCRIPTION,,"センターオフセット量選択",,
+MIX_WEIGHTUP_DESCRIPTION,,"上昇量選択",,
+MIX_WEIGHTDOWN_DESCRIPTION,,"下降量選択",,
+MIX_SPEEDUP_DESCRIPTION,,"加速量選択",,
+MIX_SPEEDDOWN_DESCRIPTION,,"減速量選択",,
+MIX_LOWPOSTRIM_DESCRIPTION,,"低位置トリムのみ有効",,
+HELI_PITCH,,"ピッチ",,
+HELI_GYRO,,"ジャイロ",,
+MISSING_THROTTLE,,"このモデルにスロットル設定なし",,
+SIX_POSITIONS_SWITCH,,"6段階スイッチ",,
+GYRO_X_AXIS,,"ジャイロX軸",,
+GYRO_Y_AXIS,,"ジャイロY軸",,
+GYRO_LEFT,,"ジャイロ左向け",,
+GYRO_RIGHT,,"ジャイロ右向け",,
+GYRO_UP,,"ジャイロ上向け",,
+GYRO_DOWN,,"ジャイロ下向け",,
+AILERON_LETTER,,"A",,
+RUDDER_LETTER,,"R",,
+ELEVATOR_LETTER,,"E",,
+THROTTLE_LETTER,,"T",,
+NOT,,"いいえ",,
+STICKY,,"粘着スイッチ",,
+MIDDLE,,"中間",,
+NO_CHECK,,"チェックなし",,
+CUSTOM,,"カスタム",,
+HOLD,,"保持",,
+NO_PULSES,,"パルスなし",,
+NOT_SET,,"未設定",,
+NO_ENGINE,,"エンジンなし",,
+NO_FLAPS,,"フラップなし",,
+NO_RUDDERS,,"ラダーなし",,
+NO_ELEVATORS,,"エレベーターなし",,
+NO_AILERONS,,"エルロンなし",,
+CHANNELS_1,,"1 チャンネル",,
+CHANNELS_2,,"2 チャンネル",,
+CHANNELS_3,,"3 チャンネル",,
+CHANNELS_4,,"4 チャンネル",,
+BEEP,,"ビープ",,
+IN_RANGE,,"範囲内",,
+REPLACE,,"置換",,
+USE_A_SOURCE,,"ソース使用",,
+CONVERT_TO_VALUE,,"値変換",,
+SPECIAL,,"スペシャル",,
+MAXIMUM,,"最大",,
+MINIMUM,,"最小",,
+MOMENTARY,,"モメンタリー",,
+TWO_POS,,"2段階スイッチ",,
+THREE_POS,,"3段階スイッチ",,
+GYRO_CALIBRATION_PLACE_LEVEL,,"送信機を水平にし、完了したら下のボタンを押してください",,
+GYRO_CALIBRATION_LEFT,,"送信機を左に傾け、完了したら下のボタンを押してください",,
+GYRO_CALIBRATION_RIGHT,,"送信機を右に傾け、完了したら下のボタンを押してください",,
+GYRO_CALIBRATION_NOSE_UP,,"送信機を機首上げ状態に傾け、完了したら下のボタンを押してください",,
+GYRO_CALIBRATION_NOSE_DOWN,,"送信機を機首下げ状態に傾け、完了したら下のボタンを押してください",,
+DEFAULT,,"デフォルト",,
+STRENGTH,,"強さ",,
+AM,,"AM",,
+PM,,"PM",,
+PLAY_VARIO,,"バリオ再生",,
+RF_ALWAYS_OFF,,"特殊モード(RF常時OFF)",,
+STAB_FUNC,,"安定機能",,
+RX_PROTOCOL,,"RXプロトコル",,
+NO_MAP,,"マップなし",,
+DIRECTION,,"方向",,
+CLOCKWISE,,"時計回り",,
+ANTICLOCKWISE,,"反時計回り",,
+PWM_PULSE_TYPE,,"PWMパルスタイプ",,
+BASIC_CONFIG,,"ベース設定",,
+RX1_MAP,,"RX1 マップ",,
+RX2_MAP,,"RX2 マップ",,
+RX3_MAP,,"RX3 マップ",,
+ALL_FREQUENCY,,"全周波数帯域",,
+STICKS_NAME,,"スティック名",,
+CHANNELS_COUNT,,"チャンネル数",,
+OUTPUTS_COUNT,,"出力端子数",,
+EXT,,"外部",,
+INT,,"内部",,
+PLACE_RECEIVER_LEVEL,,"受信機上面部を上向き",,
+PLACE_RECEIVER_LEVEL_REVERSE,,"受信機上面部を下向き",,
+PLACE_RECEIVER_LEFT,,"受信機端子側を上向き",,
+PLACE_RECEIVER_RIGHT,,"受信機端子側を下向き",,
+PLACE_RECEIVER_FORWARD,,"受信機端子側を右向き",,
+PLACE_RECEIVER_BACKWARD,,"受信機端子側を左向き",,
+ADD_A_NEW_WEIGHT,,"+ 新規ウェイト追加",,
+ADD_A_NEW_CURVE,,"+ 新規カーブ追加",,
+AUDIO,,"オーディオ",,
+VOICE,,"音声",,
+VAR,,"変数",,
+VOLUME,,"音量",,
+SAVE_TO_FLASH,,"フラッシュメモリ保存",,
+SAVE_TO_FLASH_MESSAGE,,"全設定をフラッシュメモリに保存が成功しました",,
+TIMER_GENERATOR,,"タイマー発生器",,
+EDIT_SSS,,"%sを編集",,
+RESET_SSS,,"%sをリセット",,
+OPTIONS_3DOTS,,"オプション...",,
+QUESTION_COPY_CHANNEL_NAME,,"チャンネル名が未設定\nミックスの名称をコピーしますか?",,
+FLY_BAR_LESS,,"フライバーレス",,
+WING_RUD_ELE_AIL,,"固定翼",,
+WING_FLYING,,"デルタ固定翼",,
+WING_VTAIL_AIL,,"Vテール固定翼",,
+LEVEL,,"水平",,
+LEVEL_REVERSED,,"逆水平",,
+UPRIGHT,,"正立",,
+UPRIGHT_REVERSED,,"倒立",,
+WING_TYPE,,"主翼タイプ",,
+MOUNTING_TYPE,,"搭載方式",,
+SXR_ENABLE,,"SXR有効化",,
+AIL_INVERTED,,"エルロン逆転",,
+AIL2_INVERTED,,"エルロン2逆転",,
+ELE_INVERTED,,"エレベーター逆転",,
+ELE2_INVERTED,,"エレベーター2逆転",,
+RUD_INVERTED,,"ラダー逆転",,
+AUX1_ENABLE,,"AUX1有効化",,
+AUX2_ENABLE,,"AUX2有効化",,
+QUICK_MODE,,"クイックモード",,
+SELF_CHECK,,"セルフチェック",,
+STAB_GAIN_OF_AIL,,"エルロンゲイン(自動安定モード)",,
+STAB_GAIN_OF_ELE,,"エレベーターゲイン(自動安定モード)",,
+STAB_GAIN_OF_RUD,,"ラダーゲイン(自動安定モード)",,
+AUTO_LEVEL_GAIN_OF_AIL,,"エルロンゲイン(補助安定モード)",,
+AUTO_LEVEL_GAIN_OF_ELE,,"エレベーターゲイン(補助安定モード)",,
+HOVER_GAIN_OF_ELE,,"エレベーターホバリングゲイン",,
+HOVER_GAIN_OF_RUD,,"ラダーホバリングゲイン",,
+KNIFE_EDGE_GAIN_OF_AIL,,"エルロンナイフエッジゲイン",,
+KNIFE_EDGE_GAIN_OF_RUD,,"ラダーナイフエッジゲイン",,
+AUTO_LEVEL_OFFSET_OF_AIL,,"エルロンオフセット角(補助安定モード)",,
+AUTO_LEVEL_OFFSET_OF_ELE,,"エレベーターオフセット角(補助安定モード)",,
+HOVER_OFFSET_ANGLE_OF_ELE,,"エレベーターホバリングオフセット角",,
+HOVER_OFFSET_ANGLE_OF_RUD,,"ラダーホバリングオフセット角",,
+KNIFE_EDGE_OFFSET_OF_AIL,,"エルロンナイフエッジオフセット角",,
+KNIFE_EDGE_OFFSET_OF_RUD,,"ラダーナイフエッジオフセット角",,
+OUTPUT_VOLTAGE,,"出力電圧",,
+LIPO_VOLTAGE,,"リポ電圧",,
+RB_10_20,,"RB 10/20",,
+ALTITUDE_DATA_RATE,,"高度データ更新レート",,
+VARIO_DATA_RATE,,"バリオデータ更新レート",,
+CURRENT_DATA_RATE,,"電流データ更新レート",,
+VOLTAGE_DATA_RATE,,"電圧データ更新レート",,
+RPM,,"RPM",,
+POLES_COUNT,,"磁極数",,
+NEED_FIRMWARE_UPDATE,,"ファーム更新必要",,
+SYSTEM_VALUE,,"システム数值",,
+GPS_CLOCK,,"GPSクロック",,
+RACING_MODE_ACTIVE,,"レーシングモード作動中",,
+RACING_MODE_IS_UNSUPPORTED,,"レーシングモード非対応",,
+POTS_SLIDERS,,"ツマミ",,
+STICKS_POTS_SLIDERS,,"スティック?ツマミ?スライダ",,
+WRITE_INTERVAL,,"書込間隔",,
+TX_BATT,,"送信機電池電圧",,
+AVERAGE,,"平均値",,
+TOTALIZE,,"積算値",,
+CELL,,"セル電圧",,
+CONSUMPTION,,"消費量",,
+DISTANCE,,"距離",,
+FALLING_EDGE_OF_SSS_BETWEEN_SSS_AND_SSS,,"%sの↑↓パルス(%s～%s間)",,
+RISING_EDGE_OF_SSS_DURING_SSS,,"%s発生後 %sの↑エッジ",,
+FALLING_EDGE_OF_SSS_DURING_SSS,,"%s中における%sの↓エッジ",,
+FALLING_EDGE_OF_SSS,,"%sの↓エッジ",,
+RISING_EDGE_OF_SSS,,"%sの↑エッジ",,
+STALL,,"ストール",,
+EDITABLE_SRV_DDD_CURR,,"SRV%d 電流値",,
+EDITABLE_SRV_DDD_VOLT,,"SRV%d 電圧値",,
+EDITABLE_SRV_DDD_TEMP,,"SRV%d 温度値",,
+CONDITION,,"条件",,
+TIMER_LOGS,,"タイマーログ",,
+SAVE_TO_SD,,"SDカード保存",,
+CLEAR_LOGS,,"ログ消去",,
+TITLE,,"タイトル",,
+LOWEST,,"最小値",,
+COUNT,,"カウント値",,
+HIGHEST,,"最大値",,
+BLADES,,"ローター枚数",,
+MAINGEAR_TEETH,,"メインギア歯数",,
+PINION_TEETH,,"ピニオンギア歯数",,
+GEAR,,"ギア",,
+PROPELLER,,"プロペラ径",,
+FLIGHT_VALUE,,"フライトデータ",,
+CURRENT_FLIGHT_MODE,,"現在のフライトモード",,
+NO_DESTINATION,,"目的地なし",,
+ENT_LONG,,"ENT 長押し",,
+RX_STILL_ON_TURN_OFF_TRANSMITTER,,"受信機電源がオンですが、送信機電源がオフにしますか?",,
+CONFIRM_RESET_SENSOR,,"センサー値をリセットしてもよろしいでしょうか?",,
+GPS_MAP,,"GPS地図",,
+MAP,,"地図",,
+SYSTEM_EVENT,,"システムイベント",,
+RSSI_LOW,,"RSSI低下",,
+TRAINER_ACTIVE,,"トレーナー作動中",,
+MULTIPLIER,,"乗数",,
+VERTICAL,,"垂直",,
+HORIZONTAL,,"水平",,
+TOTAL,,"合計",,
+CELLS,,"セル",,
+MULTI_LIPO,,"複数リポ",,
+LIPO,,"リポ電池",,
+LINE_CHART,,"折れ線グラフ",,
+LOG_PERIOD,,"記録間隔",,
+RESUME,,"レジューム",,
+PAUSE,,"一時停止",,
+AUTO_RANGE,,"オートレンジ",,
+LOCK,,"ロック",,
+Xx2POS,,"{HARDWARE_FUNCTION_SWITCHES} x 2-Pos",,
+XPOS_WITH_OFF,,"{HARDWARE_FUNCTION_SWITCHES}-Pos with OFF",,
+XPOS,,"{HARDWARE_FUNCTION_SWITCHES}-Pos",,
+2xXPOS,,"2 x {HARDWARE_FUNCTION_SWITCHES_PER_SIDE}-Pos",,
+GLOBAL,,"グローバル",,
+_2DOTS,,":",,
+SUMMARY,,"サマリー",,
+CONFIRM_STOP_USING_CURVE,,"このカーブ設定を無効化しますか?",,
+CONFIRM_STOP_USING_RATE,,"このレート設定を無効化しますか?",,
+PATTERN,,"パターン",,
+LAST_POSITION,,"最終位置",,
+SLEEP_BRIGHTNESS,,"スリープ明度",,
+TOP_LCD_SLEEP,,"上部LCDスリープ",,
+VIEW_PER_CHANNEL,,"チャンネル別表示",,
+VIEW_TABLE,,"表形式表示",,
+GENERAL,,"一般設定",,
+RX_STILL_ON_TURN_OFF_RF,,"受信機が接続中...\n続行しますか?",,
+LOAD_ALL_FUNCTION_SWITCH_POSITIONS,,"全機能スイッチ位置をロード","Load all FS positions",
+CONFIRM_LOAD_ALL_FUNCTION_SWITCH_POSITIONS,,"この操作は全FS位置を現在値で上書きします\n続行しますか?",,
+STORAGE_LOCATION,,"保存場所",,
+RADIO,,"送信機",,
+MODELS,,"モデル",,
+USER_BITMAPS,,"ユーザービットマップ",,
+SCRIPTS,,"スクリプト",,
+LOGS,,"ログ",,
+SCREENSHOTS,,"画面キャプチャ",,
+PRESSURE,,"気圧センサー",,
+COLOR,,"表示色",,
+CONFIRM_CLEAR_CHANNEL_DDD_NAME,,"チャンネル%dは未使用です\n名称を消去しますか?",,
+CONFIRM_CLEAR_CHANNELS_SSS_NAME,,"チャンネル%sは未使用です\n名称を消去しますか?",,
+CHANNEL_SBUS_VALUE_LIMIT_WARNING,,"設定値がSBUS/冗長化仕様と非互換です\n続行しますか?",,
+VOLTAGE,,"電圧",,
+SAVE_TO_FILE,,"ファイル保存",,
+FLASH_VIDEO_COMPONENT,,"フラッシュ動画コンポーネント",,
+RX_BAT_VOLTAGE,,"受信機バッテリー電圧",,
+RX_BAT_2_VOLTAGE,,"受信機バッテリー2電圧",,
+EXT_ADC_VOLTAGE,,"外部ADC電圧",,
+BOARD_CURRENT,,"基板電流",,
+POWER_ON_RESET,,"電源投入リセット",,
+PIN_RESET,,"ピンリセット",,
+WAKE_UP_RESET,,"ウェイクアップリセット",,
+WATCHDOG_RESET,,"ウォッチドッグリセット",,
+LOCKUP_RESET,,"ロックアップリセット",,
+BROWN_DOWN_DET_RESET,,"ブラウンアウト検知リセット",,
+RX_RESET_CASE,,"受信機リセットケース",,
+OPERATION_ASSIGN,,"代入(=)",,
+OPERATION_ADD,,"加算(+)",,
+OPERATION_SUBTRACT,,"減算(-)",,
+OPERATION_MULTIPLY,,"乗算(*)",,
+OPERATION_DIVIDE,,"除算(/)",,
+SQRT,,"平方根",,
+REPURPOSE,,"再割当",,
+SENSOR_CONFLICT_WARNING,,"センサ競合警告",,
+NIGHTLY_BUILD_NOT_FOR_FLYING,,"ナイトリービルド(飛行不可!)",,
+READING_FILE,,"ファイル読み込み中...",,
+NOT_ENOUGH_MEMORY,,"メモリ不足",,
+CLEAN_LOGS,,"ログ消去",,
+CONFIRM_CLEAN_LOGS,,"この操作はディレクトリ内の全.csvファイルを削除します。続行しますか?",,
+CLEANING_LOGS,,"ログ消去中...",,
+PAUSE_CONDITION,,"一時停止条件",,
+RESET_SETTINGS,,"設定リセット",,
+SWAP_CHANNELS,,"チャンネルスワップ",,
+CONFIRM_RESET_SETTINGS,,"設定がデフォルト値にリセットされます。続行しますか?",,
+CONFIRM_SWITCH_EXTERNAL_MODULE,,"外部モジュール使用中ですが、この操作より停止されます。続行しますか?",,
+CONFIRM_SWITCH_TRAINER,,"トレーナーが外部モジュールを使用中ですが、この操作より停止されます。続行しますか?",,
+COMPETITION_OPTION,,"コンペティション(RSSIとバッテリーのみ)","Competition (RSSI / Batt)",
+CONFIRM_BLUETOOTH_USED_BY_SSS,,"Bluetoothは%sにより使用中ですが、この操作より停止されます。続行しますか?",,
+BOTH_MODULES,,"両モジュール",,
+SPORT_CONNECTOR,,"S.Portコネクタ",,
+CONFIRM_SPORT_USED_BY_SSS,,"S.Portコネクタは%sにより使用中です。続行しますか?",,
+TRAINER_CABLE,,"トレーナーケーブル",,
+BLUETOOTH,,"Bluetooth",,
+SBUS_EXTERNAL_MODULE,,"SBUS外部モジュール",,
+CPPM_EXTERNAL_MODULE,,"CPPM外部モジュール",,
+LUA_TASKS,,"Luaタスク",,
+LUA_SOURCES,,"Luaソース",,
+MISSING_SCRIPT_FILE,,"スクリプトファイルなし",,
+BITMAP,,"ビットマップ",,
+BITMAP_TYPE,,"ビットマップ種別",,
+BITMAP_FILE,,"ビットマップファイル",,
+FILE_PATH,,"ファイルパス",,
+TEXT,,"テキスト",,
+DOCUMENTS,,"ドキュメント",,
+USB_MODE_PRESELECTION,,"USBモード事前選択",,
+USB_MODE,,"USBモード",,
+JOYSTICK,,"ジョイスティック",,
+SERIAL,,"シリアル",,
+SELECT_MODEL_AT_POWER_ON,,"起動時モデル選択",,
+LOAD_MODEL,,"モデル読み込み",,
+TELEMETRY_ACTIVE,,"テレメトリ作動中",,
+FLIGHT_RESET,,"フライトリセット",,
+TRIP_RESET,,"トリップリセット",,
+THROTTLE_ACTIVE,,"スロットル作動中",,
+SEND_FILE,,"ファイル送信",,
+FILE_TRANSFER,,"ファイル転送",,
+RECEIVE_FILE_HERE,,"ファイルをここで受信",,
+WAITING_FOR_CONNECTION,,"接続待機中...",,
+CONNECTION_REFUSED,,"接続拒否",,
+WAITING_FOR_RECEIVER_CONFIRMATION,,"受信側確認待機中...",,
+FILE_TRANSFER_FAILED,,"ファイル転送エラー",,
+CONFIRM_RECEIVE_FILE_SSS_IN_FOLDER_SSS_SIZE_IS_SSS,,"フォルダ %s にファイル %s を受信します\nファイルサイズは %s です",,
+CONFIRM_OVERWRITE_FILE_SSS_IN_FOLDER_SSS_SIZE_IS_SSS,,"ファイル %s をフォルダ %s で上書きします\nファイルサイズは %s です",,
+SENDING_SSS,,"送信中 %s ...",,
+RECEIVING_SSS,,"受信中 %s ...",,
+COUNTING_SOURCE,,"タイミングソース","% timing source",
+SEND_MODEL,,"モデル送信",,
+RECEIVE_MODEL,,"モデル受信",,
+ARE_YOU_USING_A_FRSKY_SELF_STAB_RECEIVER,,"FrSkyのジャイロあり受信機を使用中ですか?",,
+EMERGENCY,,"緊急",,
+GAIN_ADJUST,,"ゲイン調整",,
+UNIT_KNOT,,"ノット",,
+UNIT_MILLILITER_PER_PULSE,,"ml/p",,
+UNIT_RPM,,"r/m",,
+ASSIGN_INPUT_HINT,,"以下の機能にインプットソースを割り当ててください",,
+CONFIRMATION,,"確認",,
+ENABLE_XXX,,"%sを有効にしますか?",,
+DISABLE_XXX,,"%sを無効にしますか?",,
+CONFIRMATION_BEFORE_ACTIVE,,"有効化前確認",,
+CONFIRMATION_BEFORE_INACTIVE,,"無効化前確認",,
+REMOTE_NFC,,"リモートNFC",,
+SWITCH_CHANNEL,,"スイッチチャンネル",,
+WIRELESS,,"ワイヤレス",,
+TIMEOUT,,"タイムアウト",,
+NO_ENABLED_MODULE,,"NFCアリング対象モジュールを有効にしてください",,
+GET_MODULE_UUID_FAILED,,"モジュールUUID取得失敗\モジュール状態を確認してください",,
+BIND_NFC_FAILED,,"NFC-モジュールアリング失敗",,
+PROTOCOL_NOT_SUPPORTED,,"現行モジュールプロトコル非対応",,
+CONFIRM_DELETE_TRIM,,"このエクストラトリムを削除しますか?",,
+LEFT_STICK,,"左スティック",,
+RIGHT_STICK,,"右スティック",,
+ALL_MOTORS,,"全モーター",,
+SELECT,,"選択",,
+SINGLE_MOTOR,,"単一モーター",,
+STICK_MOTORS,,"スティックモーター",,
+CONFIRM_DELETE_ACTION,,"このアクションを削除しますか?",,
+CONFIRM_DELETE_SCREEN,,"この画面を削除しますか?",,
+CONFIRM_DELETE_SENSOR,,"このセンサーを削除しますか?",,
+FILE_ALREADY_EXISTS,,"同名ファイルが既に存在します",,
+MODEL_RUNTIME,,"モデル稼働時間",,
+RADIO_RUNTIME,,"送信機稼働時間",,
+WAITING_FOR_SIGNAL,,"信号待機中...",,
+CONFIRM_RESET_RUNTIME,,"稼働時間がリセットされます\続行しますか?",,
+BANK,,"バンク",,
+POWER_SWITCH,,"パワースイッチ",,
+CURRENT_AND_VOLTAGE_RATE,,"電流＆電圧レート",,
+BEC_VOLTAGE_RATE,,"BEC電圧レート",,
+SBEC_VOLTAGE,,"SBEC電圧",,
+BATTERY_MODE,,"バッテリーモード",,
+SWITCH_VOLTAGE,,"スイッチ電圧",,
+BALANCE,,"バランス",,
+BACKUP,,"バックアップ",,
+BALANCE_CHANNELS,,"バランスチャンネル",,
+CHOOSE_CHANNELS,,"チャンネル選択",,
+BALANCE_CURVE,,"バランスカーブ",,
+CONFIRM_TO_SHARE_RECEIVER,,"この受信機を共有しますか?",,
+CONFIRM_TO_UNBIND_RECEIVER,,"この受信機のアリングを解除しますか?",,
+CONFIRM_FRSK_NOT_COMPATIBLE,,"このFRSKファイルはデバイス非対応です\続行しますか?",,
+RX_VFR,,"Rx VFR",,
+SMOKE_PUMP_VOLTAGE,,"S.P電圧",,
+SMOKE_PUMP_CURRENT,,"S.P電流",,
+SMOKE_PUMP_TEMPERATURE,,"S.P温度",,
+SMOKE_PUMP,,"スモークポンプ",,
+SOLENOID_VALVE,,"ソレノイドバルブ",,
+BIND_CARD,,"アリングカード",,
+WAITING_FOR_NFC_CARD,,"アリングのためNFCキーをRemoteNFCパネルに近づけてください...",,
+BIND_CARD_SUCCESS,,"NFCカードアリング成功!",,
+BIND_CARD_FAIL,,"NFCカードアリング失敗!",,
+BUS_INVERT,"F.Bus and F.Port inverted on receiver (Yes / No)","bus反転",,
+SBEC_INPUT_VOLT,,"SBEC入力電圧",,
