@@ -108,7 +108,8 @@
         "PathInvalid": "The selected file path contains invalid characters, and the file has been removed from the list",
         "OpenFile": "Open file",
         "Add": "Add",
-        "Upload": "Upload"
+        "Upload": "Upload",
+        "ShowMoreRelease": "You can switch to GitHub in the Suite settings to get more releases."
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Escolha a versão do componente de vídeo",
