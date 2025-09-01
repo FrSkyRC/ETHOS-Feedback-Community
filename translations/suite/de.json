@@ -109,7 +109,7 @@
         "OpenFile": "Datei öffnen",
         "Add": "Hinzufügen",
         "Upload": "Hochladen",
-        "ShowMoreRelease": "You can switch to GitHub in the Suite settings to get more releases."
+        "ShowMoreRelease": "Sie können in den Suite-Einstellungen zu GitHub wechseln, um weitere Releases zu erhalten."
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Wählen Sie Ihre Video-Komponenten-Version",
@@ -563,4 +563,5 @@
         "UploadFilesStep3": "Laden Sie den laufenden Simulator neu.",
         "ExecutingMacroFile": "Makro-Datei ausführen"
     }
+
 }
