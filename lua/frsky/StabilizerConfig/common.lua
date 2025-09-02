@@ -65,8 +65,8 @@ end
 Progress.isDialogOpen = function ()
   return Progress.dialog ~= nil
 end
-Progress.openProgressDialog = function (dialogParams)
-  Progress.dialog = form.openProgressDialog(dialogParams)
+Progress.openWaitDialog = function (dialogParams)
+  Progress.dialog = form.openWaitDialog(dialogParams)
 end
 Progress.closeDialog = function ()
   if Progress.isDialogOpen() then

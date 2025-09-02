@@ -189,7 +189,7 @@ local function buildBackupForm(ePanel, focusRefresh)
     if not Progress.isDialogOpen() then
       saveLoadState = LOAD_STATE_READ
       backupAddress = FIRST_ADDRESS
-      Progress.openProgressDialog({title = STR("Loading"), message = STR("LoadingConfigurations", {progress = "0"}), close = function ()
+      Progress.openWaitDialog({title = STR("Loading"), message = STR("LoadingConfigurations", {progress = "0"}), close = function ()
         file:close()
         file = nil
         print("Close file: ", restoreFileName)
@@ -266,7 +266,7 @@ local function buildBackupForm(ePanel, focusRefresh)
       if file ~= nil then
         backupAddress = FIRST_ADDRESS
         saveLoadState = SAVE_STATE_REQUEST_CURRENT
-        Progress.openProgressDialog({title = STR("Saving"), message = STR("SavingConfigurations", {progress = "0"}), close = function ()
+        Progress.openWaitDialog({title = STR("Saving"), message = STR("SavingConfigurations", {progress = "0"}), close = function ()
           file:close()
           file = nil
           print("Close file: ", fileName)

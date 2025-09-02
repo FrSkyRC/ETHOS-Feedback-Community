@@ -62,10 +62,10 @@ local function create()
             })
         end})
 
-    local line = form.addLine("ProgressDialog example")
+    local line = form.addLine("WaitDialog example")
     form.addTextButton(line, nil, "Press here", 
       function() 
-        progress = form.openProgressDialog("Progress", "Doing some long job ...")
+        progress = form.openWaitDialog("Progress", "Doing some long job ...")
         -- progress:closeAllowed(false)
         progress:closeHandler(function() print("Progress dialog closed") end)
         progressValue = 0
