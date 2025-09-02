@@ -105,10 +105,10 @@
         "ShowPrereleases": "Ukázat předběžná vydání",
         "VisitThirdparty": "Ukázat cizí adresu",
         "PathInvalid": "Vybraná cesta k souboru obsahuje neplatné znaky a soubor byl odstraněn ze seznamu",
-        "OpenFile": "Open file",
-        "Add": "Add",
-        "Upload": "Upload",
-        "ShowMoreRelease": "You can switch to GitHub in the Suite settings to get more releases."
+        "OpenFile": "Otevřít soubor",
+        "Add": "Přidat",
+        "Upload": "Nahrát",
+        "ShowMoreRelease": "Pro získání více vydání přepněte Umístění serveru na Github v Nastavení."
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Vyberte verzi komponenty videa",
@@ -166,9 +166,9 @@
         "FetchingFromServer": "Získávám ze serveru ...",
         "NoCurrentVersion": "Žádná aktuální verze",
         "OutOfDate": "Zastaralý",
-        "GreaterThanLatestRelease": "Vyšší než poslední verze",
+        "GreaterThanLatestRelease": "Vyšší než poslední stabilní verze",
         "UpToDate": "Aktuální",
-        "Nightly": "Pozor! Noční / předběžná verze"
+        "Nightly": "Pozor! Vývojová verze"
     },
     "ImageManager": {
         "ImageManager": "Správce obrázků",
@@ -297,7 +297,7 @@
         "GoToEthosManage": "Jít do správce Ethosu",
         "ModuleFirmwareList": "Seznam firmwarů modulu",
         "FirmwareDetail": "Detaily firmwaru",
-        "FlashModule": "Fleshovat modul"
+        "FlashModule": "Flashovat modul"
     },
     "ModelTool": {
         "ModelManager": "Správa modelů",
@@ -361,7 +361,7 @@
         "ClearCache": "Vymazat mezipaměť",
         "ClearCacheConfirm": "Opravdu chcete vymazat mezipamět?",
         "CacheCleared": "Mezipaměť vymazána!",
-        "Open": "Otevrít",
+        "Open": "Otevřít",
         "Clear": "Vymazat",
         "LangFileNotFound": "Jazykový soubor nebyl nalezen",
         "UpdateSuite": "Aktualizovat suite",
@@ -372,20 +372,20 @@
         "Export": "Exportovat",
         "DebugOptions": "Možnosti ladění",
         "Proxy": "Proxy",
-        "NoProxy": "No proxy",
-        "SystemProxy": "System proxy",
-        "CustomProxy": "Custom proxy",
-        "ProxyAddress": "Proxy address",
+        "NoProxy": "Bez proxy",
+        "SystemProxy": "Systémový proxy",
+        "CustomProxy": "Vlastní proxy",
+        "ProxyAddress": "Adresa proxy",
         "ProxyPort": "Port"
     },
     "Documentation": {
         "Documentation": "Dokumentace",
-        "LuaDoc": "Lua docs",
-        "LuaDocDescription": "Dokumentace k psaní vlastních LUA skriptů.",
+        "LuaDoc": "Lua dokumentace",
+        "LuaDocDescription": "Referenční příručka pro psaní vlastních Ethos Lua skriptů.",
         "LuaExamples": "Lua Demo scripty",
         "LuaExamplesDescription": "Příklady LUA skriptů na Githubu.",
         "SuiteFAQ": "Ethos Suite FAQ",
-        "SuiteFAQDescription": "Nejčastější dotazy k Ethos Suit.",
+        "SuiteFAQDescription": "Nejčastější dotazy k Ethos Suite.",
         "EthosManual": "Manuály Ethos",
         "EthosManualDescription": "Manuály Ethosu ke stažení v PDF, vč starších verzí.",
         "EthosGithub": "Ethos GitHub",
@@ -393,7 +393,7 @@
         "OpenWebpage": "Otevřít v prohlížeči",
         "OpenFAQ": "Otevřít FAQ",
         "OpenManual": "Otevřít manuál",
-        "LoadingManuals": "Načítám manualy ..."
+        "LoadingManuals": "Načítám manuály ..."
     },
     "BootloaderGuide": {
         "BootloaderGuideTitle": "Váš firmware možná nepodporuje automatické přepínání. Přepněte na bootloader ručně podle následujících kroků",
@@ -560,6 +560,6 @@
         "UploadFilesStep1": "Otevřete lokální složku simulátoru",
         "UploadFilesStep2": "Nahrajte vaše soubory / složky do lokální složky simulátoru. Cesta by měla vypadat následovně\n> ${PathToLocalSimulator}/.simulator/${ReleaseTagName}/persist/${RadioName}/",
         "UploadFilesStep3": "Znovu načtěte běžící simulátor",
-        "ExecutingMacroFile": "Executing macro file"
+        "ExecutingMacroFile": "Spouštím makro soubor"
     }
 }
