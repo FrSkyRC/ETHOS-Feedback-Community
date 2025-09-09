@@ -6,6 +6,9 @@ TRANSLATION_FONT_SUBSET,,"latin"
 SPECIAL_CHARS,,"äöüûùàçéèê_-+.",
 MODEL,,"Modèle",
 STEERING,,"Direction"
+DUTY_RATIO,,"Duty ratio"
+CYCLE_DURATION,,"Cycle duration"
+RETURN_POSITION,,"Return position"
 STEERING_BRAKE,,"Frein de direction"
 MODEL_SELECT,,"Choix modèle",
 NO_MODELS_DIRECTORY,,"Répertoire modèles absent !",

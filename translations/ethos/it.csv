@@ -317,6 +317,9 @@ HIGH_SPEED,,"Velocità Alta",
 NORMAL_SPEED,,"Velocità Normale",
 MODEL,,"Modello",
 STEERING,,"Sterzo"
+DUTY_RATIO,,"Duty ratio"
+CYCLE_DURATION,,"Cycle duration"
+RETURN_POSITION,,"Return position"
 STEERING_BRAKE,,"Convergenza Dinamica-Freno"
 CHECKLIST,,"Checklist",
 FILE_MANAGER,,"File Manager",

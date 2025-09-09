@@ -317,6 +317,9 @@ HIGH_SPEED,,"高速スピード",,
 NORMAL_SPEED,,"通常スピード",,
 MODEL,,"モデル",,
 STEERING,,"ステアリング",,
+DUTY_RATIO,,"Duty ratio"
+CYCLE_DURATION,,"Cycle duration"
+RETURN_POSITION,,"Return position"
 STEERING_BRAKE,,"ステアリングブレーキ",,
 CHECKLIST,,"チェックリスト",,
 FILE_MANAGER,,"ファイルマネージャー",,
