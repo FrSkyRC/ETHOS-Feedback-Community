@@ -387,6 +387,7 @@ SWITCH_MIDDLE_DETECT_DELAY,,"スイッチ中立位置検出遅延時間",,
 DISP_SHORT,,"{DISP_LABEL} 押し",,
 DISP_LONG,,"{DISP_LABEL} 長押し",,
 SWITCH,,"スイッチ",,
+THROTTLE_DEAD_BAND,,"Throttle dead band"
 ANALOGS_FILTER,,"アナログフィルター",,
 ANALOGS_CALIBRATION,,"アナログ補正",,
 CONFIRM_CONTINUE,,"続けて実行しますか?",,

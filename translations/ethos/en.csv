@@ -387,6 +387,7 @@ SWITCH_MIDDLE_DETECT_DELAY,,"Switch middle detect delay",
 DISP_SHORT,,"{DISP_LABEL} short",
 DISP_LONG,,"{DISP_LABEL} long",
 SWITCH,,"Switch",
+THROTTLE_DEAD_BAND,,"Throttle dead band"
 ANALOGS_FILTER,,"Analogs filter",
 ANALOGS_CALIBRATION,,"Analogs calibration",
 CONFIRM_CONTINUE,,"Are you sure you want to continue?",

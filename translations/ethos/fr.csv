@@ -614,6 +614,7 @@ ADC_INSPECTOR,,"Vérif. analogique",
 HOME_KEYMAP,,"Raccourcis touches",
 POTS_SLIDERS_SETTINGS,,"Configuration pots/curseurs",
 SWITCH,,"Inter",
+THROTTLE_DEAD_BAND,,"Throttle dead band"
 ANALOGS_FILTER,,"Filtre analogique",
 SLIDER_LEFT,,"Curs. gauche",
 SLIDER_RIGHT,,"Curs. droit",
