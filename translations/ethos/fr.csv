@@ -6,9 +6,9 @@ TRANSLATION_FONT_SUBSET,,"latin"
 SPECIAL_CHARS,,"äöüûùàçéèê_-+.",
 MODEL,,"Modèle",
 STEERING,,"Direction"
-DUTY_RATIO,,"Duty ratio"
-CYCLE_DURATION,,"Cycle duration"
-RETURN_POSITION,,"Return position"
+DUTY_RATIO,,"Ratio cycle"
+CYCLE_DURATION,,"Durée cycle"
+RETURN_POSITION,,"Position retour"
 STEERING_BRAKE,,"Frein de direction"
 MODEL_SELECT,,"Choix modèle",
 NO_MODELS_DIRECTORY,,"Répertoire modèles absent !",
@@ -614,7 +614,7 @@ ADC_INSPECTOR,,"Vérif. analogique",
 HOME_KEYMAP,,"Raccourcis touches",
 POTS_SLIDERS_SETTINGS,,"Configuration pots/curseurs",
 SWITCH,,"Inter",
-THROTTLE_DEAD_BAND,,"Throttle dead band"
+THROTTLE_DEAD_BAND,,"Gaz:zone inactive"
 ANALOGS_FILTER,,"Filtre analogique",
 SLIDER_LEFT,,"Curs. gauche",
 SLIDER_RIGHT,,"Curs. droit",
@@ -635,9 +635,9 @@ CALIBRATION_COMPLETE_CLICK_CONFIRM_TO_STORE,,"Calibration terminée, appuyer sur
 NEXT,,"Suivant",
 GYRO_CALIBRATION,,"Calibration gyros",
 PREV,,"Précédent",
-GYRO_CALIBRATION_PLACE_LEVEL,,"Mettre radio à l'endroit\net appuyer sur le bouton 'Suivant'",
-GYRO_CALIBRATION_LEFT,,"Tourner radio à gauche\net appuyer sur le bouton 'Suivant'",
-GYRO_CALIBRATION_RIGHT,,"Tourner radio à droite\net appuyer sur le bouton 'Suivant'",
+GYRO_CALIBRATION_PLACE_LEVEL,,"Mettre radio à l'horizontale\net appuyer sur le bouton 'Suivant'",
+GYRO_CALIBRATION_LEFT,,"Tourner radio vers la gauche\net appuyer sur le bouton 'Suivant'",
+GYRO_CALIBRATION_RIGHT,,"Tourner radio vers la droite\net appuyer sur le bouton 'Suivant'",
 GYRO_CALIBRATION_NOSE_UP,,"Tourner radio vers le haut\net appuyer sur le bouton 'Suivant'",
 GYRO_CALIBRATION_NOSE_DOWN,,"Tourner radio vers le bas\net appuyer sur le bouton 'Suivant'",
 STARTING_CALIBRATION,,"Démarrage calibration ...",
