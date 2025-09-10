@@ -387,7 +387,7 @@ SWITCH_MIDDLE_DETECT_DELAY,,"Ritardo riconoscimento posizione media int.",
 DISP_SHORT,,"{DISP_LABEL} Corto",
 DISP_LONG,,"{DISP_LABEL} Lungo",
 SWITCH,,"Interruttore",
-THROTTLE_DEAD_BAND,,"Throttle dead band"
+THROTTLE_DEAD_BAND,,"Zona Morta GAS/Motore"
 ANALOGS_FILTER,,"Filtro Analogico",
 ANALOGS_CALIBRATION,,"Calibrazione Analogica",
 CONFIRM_CONTINUE,,"Sicuro di voler continuare?",
