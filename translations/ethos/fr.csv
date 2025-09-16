@@ -31,6 +31,8 @@ ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_VAR,,"Suppression Var ?",
 TRAINER,,"Ecolage",
 DEVICE_CONFIG,,"Config périph",
 LAST_MODIFICATION,,"Dernière modification","Date mod."
+DESCENDING,,"Descending"
+ASCENDING,,"Ascending"
 CLONE,,"Dupliquer",
 MODEL_MATCH,,"ID Modèle",
 MODEL_DATA_LOAD,,"Chargement modèle",
@@ -1079,7 +1081,6 @@ THROTTLE_ACTIVE,,"Gaz actif",
 COUNTING_SOURCE,,"Source proportionnelle",
 SEND_FILE,,"Envoyer fichier",
 FILE_TRANSFER,,"Transfert fichier",
-RECEIVE_FILE_HERE,,"Réception fichier",
 WAITING_FOR_CONNECTION,,"En attente de connexion ...",
 CONNECTION_REFUSED,,"Connexion refusée",
 WAITING_FOR_RECEIVER_CONFIRMATION,,"En attente de confirmation récepteur ...",

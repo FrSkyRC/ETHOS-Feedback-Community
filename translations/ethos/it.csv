@@ -74,6 +74,8 @@ CHANNEL_RANGE,,"Intervallo Canali",
 CH,,"CH",
 OUTPUTS,,"Uscite",
 LAST_MODIFICATION,,"Ultima Modifica",
+DESCENDING,,"Descending"
+ASCENDING,,"Ascending"
 CLONE,,"Clona",
 MODEL_MATCH,,"Model ID",
 MODEL_DATA_LOAD,,"Carica dati Modello",
@@ -1076,7 +1078,6 @@ THROTTLE_ACTIVE,,"Gas Attivo",
 COUNTING_SOURCE,,"Sorgente Proporzionale timing",
 SEND_FILE,,"Invia file",
 FILE_TRANSFER,,"Trasferimento File",
-RECEIVE_FILE_HERE,,"Ricevi il file qui",
 WAITING_FOR_CONNECTION,,"In attesa connessione",
 CONNECTION_REFUSED,,"Connessione rifiutata"
 WAITING_FOR_RECEIVER_CONFIRMATION,,"In attesa conferma ricevente...",
