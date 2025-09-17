@@ -73,7 +73,7 @@ TRAINER_MODE,,"Trainer mode",
 CHANNEL_RANGE,,"Channel range",
 CH,,"CH",
 OUTPUTS,,"Outputs",
-LAST_MODIFICATION,,"Last Modification","Last Mod."
+LAST_MODIFICATION,,"Last modification","Last mod."
 DESCENDING,,"Descending"
 ASCENDING,,"Ascending"
 CLONE,,"Clone",
@@ -88,7 +88,7 @@ CLONE_MODEL_SUCCESSFULLY,,"Model cloned successfully!",
 FILENAME_TOO_LONG,,"Filename too long!",
 RX_STILL_ON_SELECT_ANOTHER_MODEL,,"Receiver is still ON, are you sure you want to select another model?",
 CONFIRM_SELECT_ANOTHER_MODEL,,"Are you sure you want to select another model?",
-FILE_NAME,,"Filename",
+FILE_NAME,,"File name",
 MODEL_TYPE,,"Model type",
 CONFIRM,,"Confirm",
 SET_CURRENT_MODEL,,"Set current model",
