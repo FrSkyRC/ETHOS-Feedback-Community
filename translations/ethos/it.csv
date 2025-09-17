@@ -74,8 +74,8 @@ CHANNEL_RANGE,,"Intervallo Canali",
 CH,,"CH",
 OUTPUTS,,"Uscite",
 LAST_MODIFICATION,,"Ultima Modifica",
-DESCENDING,,"Descending"
-ASCENDING,,"Ascending"
+DESCENDING,,"Discendente"
+ASCENDING,,"Ascendente"
 CLONE,,"Clona",
 MODEL_MATCH,,"Model ID",
 MODEL_DATA_LOAD,,"Carica dati Modello",
