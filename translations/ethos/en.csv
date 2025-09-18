@@ -75,6 +75,7 @@ CH,,"CH",
 OUTPUTS,,"Outputs",
 LAST_MODIFICATION,,"Last modification","Last mod."
 DESCENDING,,"Descending"
+SORT_BY,,"Sort by..."
 ASCENDING,,"Ascending"
 CLONE,,"Clone",
 MODEL_MATCH,,"Model ID",

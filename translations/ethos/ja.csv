@@ -75,6 +75,7 @@ CH,,"CH",,
 OUTPUTS,,"出力",,
 LAST_MODIFICATION,,"最終変更","Last Mod.",
 DESCENDING,,"Descending"
+SORT_BY,,"Sort by..."
 ASCENDING,,"Ascending"
 CLONE,,"クローン",,
 MODEL_MATCH,,"モデルID",,

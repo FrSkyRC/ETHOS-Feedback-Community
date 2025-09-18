@@ -32,6 +32,7 @@ TRAINER,,"Ecolage",
 DEVICE_CONFIG,,"Config périph",
 LAST_MODIFICATION,,"Dernière modification","Date mod."
 DESCENDING,,"Descending"
+SORT_BY,,"Sort by..."
 ASCENDING,,"Ascending"
 CLONE,,"Dupliquer",
 MODEL_MATCH,,"ID Modèle",
