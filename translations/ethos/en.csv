@@ -1078,6 +1078,7 @@ TRIP_RESET,,"Trip reset"
 THROTTLE_ACTIVE,,"Throttle active",
 SEND_FILE,,"Send file",
 FILE_TRANSFER,,"File transfer",
+RECEIVE_FILE,,"Receive file",
 WAITING_FOR_CONNECTION,,"Waiting for connection ...",
 CONNECTION_REFUSED,,"Connection refused"
 WAITING_FOR_RECEIVER_CONFIRMATION,,"Waiting for receiver confirmation ...",
