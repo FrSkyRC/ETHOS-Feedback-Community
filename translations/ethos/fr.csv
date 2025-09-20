@@ -52,7 +52,7 @@ CHANGE_FOLDER,,"Déplacer",
 OPERATION,,"Opération",
 OPERATION_FAILED,,"Echec opération !",
 DELETE_FOLDER,,"Supprimer dossier",
-RENAME_FOLDER,,"Renommer dossier",
+RENAME,,"Renommer",
 CREATE_FOLDER,,"Créer nouveau dossier",
 MODEL_TYPE,,"Type de modèle","Type"
 PLANE,,"Avion",
