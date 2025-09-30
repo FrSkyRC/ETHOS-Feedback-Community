@@ -1,8 +1,8 @@
 String name, String context, X20(...) / XE(S) / V20, X18RS / X14(...) / T14 / V15, All other radios
 TRANSLATION_KEY,,"tr"
 TRANSLATION_NAME,,"Türkçe"
-TRANSLATION_FALLBACK_NAME,,"English"
-TRANSLATION_FONT_SUBSET,,""
+TRANSLATION_FALLBACK_NAME,,"Turkish"
+TRANSLATION_FONT_SUBSET,,"latin"
 SPECIAL_CHARS,,"_-+."
 FORMULA,,"Formül"
 CALCULATED_SENSOR,,"Hesaplanmış sensör"
