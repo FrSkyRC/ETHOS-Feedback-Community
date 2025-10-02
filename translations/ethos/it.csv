@@ -38,7 +38,6 @@ SLOW_DOWN,,"Rallenta Discesa",
 INVERTED,,"Invertito",
 FLIGHT_MODES,,"Fasi di Volo",
 DRIVE_MODES,,"Fasi di Guida"
-MIX_FLIGHT_MODES_DESCRIPTION,,"",
 MIX_NAME_DESCRIPTION,,"Modifica nome per il mixer",
 TRIGGER_ON_CONDITION,,"Condizione Trigger ON",
 COMMENT,,"Commento",

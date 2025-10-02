@@ -38,7 +38,6 @@ SLOW_DOWN,,"Slow down",
 INVERTED,,"Inverted",
 FLIGHT_MODES,,"Flight modes",
 DRIVE_MODES,,"Drive modes"
-MIX_FLIGHT_MODES_DESCRIPTION,,"",
 MIX_NAME_DESCRIPTION,,"Edit name for the mix",
 TRIGGER_ON_CONDITION,,"Trigger ON condition",
 COMMENT,,"Comment",
