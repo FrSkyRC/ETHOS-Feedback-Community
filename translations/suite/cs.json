@@ -560,6 +560,8 @@
         "UploadFilesStep1": "Otevřete lokální složku simulátoru",
         "UploadFilesStep2": "Nahrajte vaše soubory / složky do lokální složky simulátoru. Cesta by měla vypadat následovně\n> ${PathToLocalSimulator}/.simulator/${ReleaseTagName}/persist/${RadioName}/",
         "UploadFilesStep3": "Znovu načtěte běžící simulátor",
-        "ExecutingMacroFile": "Spouštím makro soubor"
+        "ExecutingMacroFile": "Spouštím makro soubor",
+        "Mute": "Mute",
+        "Unmute": "Unmute"
     }
 }

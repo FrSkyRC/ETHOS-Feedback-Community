@@ -561,7 +561,8 @@
         "UploadFilesStep1": "Öffnen Sie das lokale Simulatorverzeichnis.",
         "UploadFilesStep2": "Legen Sie Dateien/Verzeichnisse im lokalen Simulatorverzeichnis ab. Der Pfad sollte wie folgt lauten:\n> ${PathToLocalSimulator}/.simulator/${ReleaseTagName}/persist/${RadioName}/",
         "UploadFilesStep3": "Laden Sie den laufenden Simulator neu.",
-        "ExecutingMacroFile": "Makro-Datei ausführen"
+        "ExecutingMacroFile": "Makro-Datei ausführen",
+        "Mute": "Mute",
+        "Unmute": "Unmute"
     }
-
 }
