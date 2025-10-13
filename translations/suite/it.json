@@ -561,7 +561,7 @@
         "UploadFilesStep2": "Aggiungi files / directory alla cartella locale del simulatore. Il percorso deve essere tipo\n> ${PathToLocalSimulator}/.simulator/${ReleaseTagName}/persist/${RadioName}/",
         "UploadFilesStep3": "Ricarica il simulatore attivo",
         "ExecutingMacroFile": "Eseguo file Macro",
-        "Mute": "Mute",
-        "Unmute": "Unmute"
+        "Mute": "Silenzia",
+        "Unmute": "Attiva"
     }
 }
