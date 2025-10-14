@@ -856,7 +856,7 @@ ADD_A_NEW_WEIGHT,,"+ Aggiungi una nuova escursione",
 ADD_A_NEW_CURVE,,"+ Aggiungi una nuova curva",
 AUDIO,,"Audio",
 VOICE,,"Voce",
-PRIORITY,,"Priority"
+PRIORITY,,"Priorità"
 VAR,,"Var",
 VOLUME,,"Volume",
 SAVE_TO_FLASH,,"Salva su flash",
