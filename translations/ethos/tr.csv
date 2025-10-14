@@ -1,4 +1,4 @@
-String name, String context, X20(...) / XE(S) / V20, X18RS / X14(...) / T14 / V15, All other radios
+String name, String context, X20(...) / XE(S) / V20(PRO), X18RS / X14(...) / T14 / V15, All other radios
 TRANSLATION_KEY,,"tr"
 TRANSLATION_NAME,,"Türkçe"
 TRANSLATION_FALLBACK_NAME,,"Turkish"
@@ -869,6 +869,7 @@ ADD_A_NEW_WEIGHT,,"+ Yeni ağırlık ekle"
 ADD_A_NEW_CURVE,,"+ Yeni eğri ekle"
 AUDIO,,"Ses"
 VOICE,,"Ses"
+PRIORITY,,"Priority"
 VAR,,"Var"
 VOLUME,,"Hacim"
 SAVE_TO_FLASH,,"Flasha kaydet"

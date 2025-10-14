@@ -920,6 +920,7 @@ ADD_A_NEW_WEIGHT,,"Ajout course",
 ADD_A_NEW_CURVE,,"+ Ajout courbe",
 AUDIO,,"Audio",
 VOICE,,"Voix",
+PRIORITY,,"Priority"
 VAR,,"Var",
 VOLUME,,"Volume",
 TIMER_GENERATOR,,"Générateur fonction",
