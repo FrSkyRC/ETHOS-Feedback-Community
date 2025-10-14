@@ -388,7 +388,6 @@ INTERNAL_GPS,,"GPS interne",
 RAM_AVAILABLE,,"RAM disponible",
 CLOCK,,"Horloge",
 TRIP,,"Parcours",
-RB_30_40,,"RB 30/40",
 RX1_MAP,,"Routage RX1",
 RX2_MAP,,"Routage RX2",
 RX3_MAP,,"Routage RX3",
@@ -1152,3 +1151,49 @@ BIND_CARD_SUCCESS,,"Appairage carte NFC réussi !",
 BIND_CARD_FAIL,,"Echec appairage carte NFC !",
 BUS_INVERT,F.Bus and F.Port inverted on receiver (Yes / No),"Bus inversé",
 SBEC_INPUT_VOLT,,"Tension entrée SBEC",
+LANDING_GEAR_CTRL_CH,,"Landing gear ctrl.CH"
+LANDING_GEAR_WORKING_VOLT,,"Landing gear working volt."
+DOOR_WORKING_VOLT,,"Door working volt."
+AFTER_DOOR_MODE,,"Aft. door mode"
+FORWARD_DOOR_MODE,,"Fwd. door mode"
+LEFT_LANDING_GEAR_STALL_CURRENT,,"Left landing gear stall cur."
+RIGHT_LANDING_GEAR_STALL_CURRENT,,"Right landing gear stall cur."
+NOSE_LANDING_GEAR_STALL_CURRENT,,"Nose landing gear stall cur."
+LEFT_LANDING_GEAR_INVERT,,"Left landing gear INVERT"
+RIGHT_LANDING_GEAR_INVERT,,"Right landing gear INVERT"
+NOSE_LANDING_GEAR_INVERT,,"Nose landing gear INVERT"
+DOOR_SPEED,,"Door speed"
+NOSE_DOOR_CLOSE_VALUE,,"Nose door close value"
+NOSE_DOOR_OPEN_VALUE,,"Nose door open value"
+RIGHT_DOOR_CLOSE_VALUE,,"Right door close value"
+RIGHT_DOOR_OPEN_VALUE,,"Right door open value"
+LEFT_DOOR_CLOSE_VALUE,,"Left door close value"
+LEFT_DOOR_OPEN_VALUE,,"Left door open value"
+DELAY_AFTER_DOOR_OPEN,,"Delay after door open"
+DELAY_BEFORE_DOOR_CLOSE,,"Delay before door close"
+RESET_DPM,,"Reset DPM"
+BRAKE_CTRL_CH,,"Brake ctrl. CH"
+BRAKE_WORKING_VOLT,,"Brake working volt."
+RIGHT_BRAKE_LEVEL,,"Right brake level"
+LEFT_BRAKE_LEVEL,,"Left brake level"
+BRAKE_VELOCITY_THRESHOLD,,"Brake velocity threshold"
+GEAR_UP_BRAKE_LEVEL,,"Gear up brake level"
+BRAKE_SELF_STAB_WEIGHT,,"Brake self-stab weight"
+STEER_CHANNEL,,"Steer channel"
+STEER_RANGE,,"Steer range"
+HEADING_HOLD,,"Heading hold"
+STABILIZED,,"Stabilized"
+SELF_STAB_MODE,,"Self-stab mode"
+STEER_STABILIZER_GAIN,,"Steer stabilizer gain"
+STEER_STABILIZER_DIRECTION,,"Steer stabilizer direction"
+STEER_TRIM,,"Steer trim"
+SATLL_CURRENT_CALIBRATE,,"Satll cur. cali."
+NOSE_DOOR_CLOSE_CALIBRATE,,"Nose door close cali."
+NOSE_DOOR_OPEN_CALIBRATE,,"Nose door open cali."
+RIGHT_DOOR_CLOSE_CALIBRATE,,"Right door close cali."
+RIGHT_DOOR_OPEN_CALIBRATE,,"Right door open cali."
+LEFT_DOOR_CLOSE_CALIBRATE,,"Left door close cali."
+LEFT_DOOR_OPEN_CALIBRATE,,"Left door open cali."
+PGC_CALIBRATE_MESSAGE,,"Please refer to the PGC real-time status and close the window when necessary to stop the calibration."
+ENDING_CALIBRATION,,"Ending calibration"
+ENDING_CALIBRATION_MESSAGE,,"Ending calibration, please wait until dialog is closed ..."
