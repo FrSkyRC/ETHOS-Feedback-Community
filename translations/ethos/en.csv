@@ -942,9 +942,12 @@ FALLING_EDGE_OF_SSS_DURING_SSS,,"↓Edge of %s during %s",
 FALLING_EDGE_OF_SSS,,"↓Edge of %s",
 RISING_EDGE_OF_SSS,,"↑Edge of %s",
 STALL,,"Stall",
-EDITABLE_SRV_DDD_CURR,,"SRV%d curr",
-EDITABLE_SRV_DDD_VOLT,,"SRV%d volt",
-EDITABLE_SRV_DDD_TEMP,,"SRV%d temp",
+EDITABLE_SRV_DDD_CURR,,"SRV%d current",
+EDITABLE_SRV_DDD_VOLT,,"SRV%d voltage",
+EDITABLE_SRV_DDD_TEMP,,"SRV%d temperature",
+EDITABLE_SRV_DDD_VELOCITY,,"SRV%d velocity"
+EDITABLE_SRV_DDD_STATE,,"SRV%d state"
+EDITABLE_SRV_DDD_POS,,"SRV%d position"
 CONDITION,,"Condition",
 TIMER_LOGS,,"Timer Logs",
 SAVE_TO_SD,,"Save to SD",
@@ -1162,9 +1165,6 @@ ROTATE_MODE,,"Rotate mode"
 XACT_RANGE,,"Range (Range mode only)"
 XACT_MAX_ANGLE,,"Max angle (Angle mode only)"
 POT_GAP,,"Pot gap"
-EDITABLE_SRV_DDD_VELOCITY,,"SRV%d vel"
-EDITABLE_SRV_DDD_STATE,,"SRV%d state"
-EDITABLE_SRV_DDD_POS,,"SRV%d pos"
 GEAR_CHANNEL,,"Gear channel"
 GEAR_OPERATING_VOLTAGE,,"Gear operating voltage"
 DOOR_OPERATING_VOLTAGE,,"Door operating voltage"
