@@ -437,8 +437,8 @@ PLANE,,"Lietadlo"
 GLIDER,,"Vetroň"
 HELI,,"Vrtuľník"
 MULTI,,"Multikoptéra"
-CAR,,"Car",
-BOAT,,"Boat",
+CAR,,"Car"
+BOAT,,"Boat"
 OTHER,,"Iné"
 CALIBRATION,,"Kalibrácia"
 INPUTS,,"Vstupy"
