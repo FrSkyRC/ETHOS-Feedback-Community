@@ -852,6 +852,7 @@ PLACE_RECEIVER_RIGHT,,"Posiziona la ricevente verticale,\npins giu.",
 PLACE_RECEIVER_FORWARD,,"Posiziona la ricevente lato leggibile\nlettering, pins DX.",
 PLACE_RECEIVER_BACKWARD,,"Posiziona la ricevente lato non leggibile\nlettering, pins SX.",
 ADD_A_NEW_WEIGHT,,"+ Aggiungi una nuova escursione",
+ADD_A_NEW_CONDITION,,"+ Add a new condition"
 ADD_A_NEW_CURVE,,"+ Aggiungi una nuova curva",
 AUDIO,,"Audio",
 VOICE,,"Voce",
@@ -1213,3 +1214,15 @@ LEFT_DOOR,,"Portello SX"
 RIGHT_DOOR,,"Portello DX"
 CALIBRATE_CLOSE_POSITION,,"Calibra posizione chiusa"
 CALIBRATE_OPEN_POSITION,,"Calibra posizione aperta"
+SEQUENCER,,"Sequencer"
+LOOP_MODE,,"Loop mode"
+FORWARD_CONDITION,,"Forward condition"
+BACKWARD_CONDITION,,"Backward condition"
+EARLY,,"Early"
+ADD_A_NEW_OUTPUT,,"+ Add a new output"
+REMOVE_OUTPUT,,"Remove output"
+EDIT_CURVE,,"Edit curve"
+ADD_A_BACKWARD_CURVE,,"Add a backward curve"
+USE_ONLY_ONE_CURVE,,"Use only one curve"
+EDIT_BACKWARD_CURVE,,"Edit backward curve"
+EDIT_FORWARD_CURVE,,"Edit forward curve"
