@@ -14,7 +14,7 @@
         "engine": "google",
         "voice": "de-DE-Wavenet-E",
         "speed": 1.1,
-        "silence": ["silence", "1", "0.1", "1%", "reverse", "silence", "1", "0.1", "1%", "reverse"]
+        "silence": ["reverse", "silence", "1", "0.1", "1%", "reverse"]
     },
     "en/gb": {
         "engine": "google",
