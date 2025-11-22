@@ -147,7 +147,7 @@ TYPE,,"Type",
 SHARE,,"Share",
 RX,,"RX",
 RACING_MODE,,"Racing mode",
-RANGE_CHECK,,"Range check","Range check","Range"
+RANGE_CHECK,,"Range check",
 EXTERNAL_MODULE,,"External module",
 BIND_OK,,"Bind OK",
 BINDING_3DOTS,,"Binding ...",
@@ -1217,7 +1217,9 @@ CALIBRATE_OPEN_POSITION,,"Calibrate open position"
 SEQUENCER,,"Sequencer"
 LOOP_MODE,,"Loop mode"
 FORWARD_CONDITION,,"Forward condition"
+FORWARD_DURATION,,"Forward duration"
 BACKWARD_CONDITION,,"Backward condition"
+BACKWARD_DURATION,,"Backward duration"
 EARLY,,"Early"
 ADD_A_NEW_OUTPUT,,"+ Add a new output"
 REMOVE_OUTPUT,,"Remove output"

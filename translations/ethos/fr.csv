@@ -185,7 +185,7 @@ TYPE,,"Type",
 SHARE,,"Partager",
 RX,,"RX",
 RACING_MODE,,"Mode course",
-RANGE_CHECK,,"Test portée","Portée"
+RANGE_CHECK,,"Test portée",
 EXTERNAL_MODULE,,"Module externe",
 BIND_OK,,"Appairage OK",
 BINDING_3DOTS,,"Appairage ...",
@@ -1223,7 +1223,9 @@ CALIBRATE_OPEN_POSITION,,"Calibrer position ouverte"
 SEQUENCER,,"Séquenceur"
 LOOP_MODE,,"Boucle"
 FORWARD_CONDITION,,"Condition aller"
+FORWARD_DURATION,,"Forward duration"
 BACKWARD_CONDITION,,"Condition retour"
+BACKWARD_DURATION,,"Backward duration"
 EARLY,,"Continu"
 ADD_A_NEW_OUTPUT,,"+ Ajouter voie"
 REMOVE_OUTPUT,,"Supprimer voie"
