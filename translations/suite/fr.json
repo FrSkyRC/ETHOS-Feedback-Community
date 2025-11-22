@@ -556,13 +556,14 @@
         "ToggleConsoleWindow": "Basculer vers la console windows",
         "ClearConsoleOutput": "Effacer la sortie console",
         "ReloadSimulator": "Recharger le simulateur",
-        "ReloadSimQuestion": "Rechargement du simulateur ?",
+        "ReloadSimQuestion": "Recharger le simulateur ?",
         "HowToUploadFilesToSim": "Comment charger les fichiers vers le simulateur ?",
         "UploadFilesStep1": "Ouvrir le répertoire local du simulateur",
         "UploadFilesStep2": "Mettre les fichiers/ répertoires dans le répertoire local du simulateur. Le chemin doit être\n> ${PathToLocalSimulator}/.simulator/${ReleaseTagName}/persist/${RadioName}/",
         "UploadFilesStep3": "Recharger le simulateur en cours d'utilisation",
         "ExecutingMacroFile": "Execution fichier macro en cours...",
-        "Mute": "Mute",
-        "Unmute": "Unmute"
+        "Mute": "Son inactif",
+        "Unmute": "Son actif"
     }
+
 }
