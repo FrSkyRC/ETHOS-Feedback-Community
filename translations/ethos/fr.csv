@@ -499,7 +499,7 @@ LOCAL_NAME,,"Nom local",
 SEARCH_DEVICES,,"Chercher ...",
 BLUETOOTH_DEVICE_CONNECTED,,"Périphérique bluetooth connecté",
 CONFIRM_ALLOW_CONNECTION,,"Autoriser connexion ?"
-BLUETOOTH_FIRMWARE_NEEDS_UPDATE,,"Mettre à jour le firlware Bluetooth !"
+BLUETOOTH_FIRMWARE_NEEDS_UPDATE,,"Mettre à jour le firmware Bluetooth !"
 BLUETOOTH_MAINTENANCE,,"Maintenance Bluetooth"
 CONNECT_LAST_DEVICE,,"Dernière connexion",
 DEVICE,,"Périphérique",
