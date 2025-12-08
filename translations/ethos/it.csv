@@ -158,7 +158,7 @@ SET_FAILSAFE,,"Impostazioni Failsafe",
 RESET_BIND,,"Ripristina collegamento",
 FACTORY_RESET,,"Ripristina ai valori di Fabbrica",
 RF_SYSTEM,,"Sistema RF",
-LINKS,,"Links"
+LINKS,,"Collegamenti"
 OWNER_REGISTRATION_ID,,"ID Registrazione Proprietario",
 SELECT_DEVICE,,"Seleziona dispositivo",
 REGISTER,,"Registrazione",
@@ -1216,7 +1216,7 @@ FORWARD_CONDITION,,"Condizione Avanti"
 FORWARD_DURATION,,"Durata Avanti"
 BACKWARD_CONDITION,,"Condizione Retro"
 BACKWARD_DURATION,,"Durata Retro"
-EARLY,,"Presto"
+EARLY,,"Anticipa"
 ADD_A_NEW_OUTPUT,,"+ Aggiungi una nuova uscita"
 REMOVE_OUTPUT,,"Rimuovi Uscita"
 EDIT_CURVE,,"Modifica curva"
