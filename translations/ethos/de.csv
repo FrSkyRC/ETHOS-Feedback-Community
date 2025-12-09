@@ -132,6 +132,7 @@ POWER_HAS_BEEN_CHANGED_PLEASE_REBIND,,"Sendeleistung verändert, bitte neu binde
 NO_RESPONSE_FROM_MODULE,,"Modul antwortet nicht!"
 POWER,,"Leistung"
 BAUDRATE,,"Baudrate"
+ARMING_CONDITION,,"Arming condition"
 WAITING_FOR_MODULE,,"Warten auf HF-Modul..."
 TX_SETTINGS,,"Sender-Einstellungen"
 MIXES,,"Mischer"

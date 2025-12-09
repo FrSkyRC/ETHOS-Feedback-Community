@@ -132,6 +132,7 @@ POWER_HAS_BEEN_CHANGED_PLEASE_REBIND,,"電源入力が変更されました.\n�
 NO_RESPONSE_FROM_MODULE,,"モジュールからの応答がありません!",,
 POWER,,"パワー",,
 BAUDRATE,,"ボーレート",,
+ARMING_CONDITION,,"Arming condition"
 WAITING_FOR_MODULE,,"モジュール応答待機中...",,
 TX_SETTINGS,,"送信機設定",,
 MIXES,,"ミックス",,

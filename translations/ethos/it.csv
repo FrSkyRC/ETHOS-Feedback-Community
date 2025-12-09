@@ -132,6 +132,7 @@ POWER_HAS_BEEN_CHANGED_PLEASE_REBIND,,"La Potenza Tx è cambiata, si prega di ri
 NO_RESPONSE_FROM_MODULE,,"Nessuna risposta dal modulo!",
 POWER,,"Potenza",
 BAUDRATE,,"Baudrate",
+ARMING_CONDITION,,"Arming condition"
 WAITING_FOR_MODULE,,"Attesa Modulo...",
 TX_SETTINGS,,"Impostazioni TX",
 MIXES,,"Mixes",

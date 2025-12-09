@@ -132,6 +132,7 @@ POWER_HAS_BEEN_CHANGED_PLEASE_REBIND,,"Výkon byl změněn, prosím přepárujte
 NO_RESPONSE_FROM_MODULE,,"Modul neodpovídá!"
 POWER,,"Výkon"
 BAUDRATE,,"Baudrate"
+ARMING_CONDITION,,"Arming condition"
 WAITING_FOR_MODULE,,"Čekám na modul..."
 TX_SETTINGS,,"Nastavení TX"
 MIXES,,"Mixér"

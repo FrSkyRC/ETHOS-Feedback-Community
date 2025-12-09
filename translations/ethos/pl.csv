@@ -132,6 +132,7 @@ POWER_HAS_BEEN_CHANGED_PLEASE_REBIND,,"Zmieniono moc nadawczą. Zbinduj ponownie
 NO_RESPONSE_FROM_MODULE,,"Brak odpowiedzi modułu TX!"
 POWER,,"Moc"
 BAUDRATE,,"Baudrate"
+ARMING_CONDITION,,"Arming condition"
 WAITING_FOR_MODULE,,"Oczekiwanie na moduł..."
 TX_SETTINGS,,"Ustawienia TX"
 MIXES,,"Mikser"

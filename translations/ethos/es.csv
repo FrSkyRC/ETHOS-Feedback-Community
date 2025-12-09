@@ -132,6 +132,7 @@ POWER_HAS_BEEN_CHANGED_PLEASE_REBIND,,"La potencia ha cambiado. Vuelva a vincula
 NO_RESPONSE_FROM_MODULE,,"El módulo no responde"
 POWER,,"Potencia"
 BAUDRATE,,"Baudios"
+ARMING_CONDITION,,"Arming condition"
 WAITING_FOR_MODULE,,"Esperando módulo..."
 TX_SETTINGS,,"Parámet. del TX"
 MIXES,,"Mezclas"

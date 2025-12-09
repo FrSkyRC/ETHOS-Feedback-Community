@@ -132,6 +132,7 @@ POWER_HAS_BEEN_CHANGED_PLEASE_REBIND,,"The power has been changed, please rebind
 NO_RESPONSE_FROM_MODULE,,"No response from module!",
 POWER,,"Power",
 BAUDRATE,,"Baudrate",
+ARMING_CONDITION,,"Arming condition"
 WAITING_FOR_MODULE,,"Waiting for module ...",
 TX_SETTINGS,,"TX settings",
 MIXES,,"Mixes",

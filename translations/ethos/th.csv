@@ -132,6 +132,7 @@ POWER_HAS_BEEN_CHANGED_PLEASE_REBIND,,"พลังงานถูกเปล�
 NO_RESPONSE_FROM_MODULE,,"ไม่มีการตอบสนองจาก Module!"
 POWER,,"Power"
 BAUDRATE,,"Baudrate"
+ARMING_CONDITION,,"Arming condition"
 WAITING_FOR_MODULE,,"กําลังรอ Module ..."
 TX_SETTINGS,,"การตั้งค่า TX"
 MIXES,,"Mixes"

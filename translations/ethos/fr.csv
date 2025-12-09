@@ -236,6 +236,7 @@ POWER_HAS_BEEN_CHANGED_PLEASE_REBIND,,"Changement de puissance, appairage néces
 NO_RESPONSE_FROM_MODULE,,"Aucune réponse module !",
 POWER,,"Puissance",
 BAUDRATE,,"Vitesse",
+ARMING_CONDITION,,"Arming condition"
 WAITING_FOR_MODULE,,"En attente module ...",
 TX_SETTINGS,,"Paramètres TX",
 NO_CHECK,,"Inactif",

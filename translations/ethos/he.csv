@@ -133,6 +133,7 @@ POWER_HAS_BEEN_CHANGED_PLEASE_REBIND,,"!שדחמ דנייב עצב ˎהנוש ק
 NO_RESPONSE_FROM_MODULE,,"! לודומהמ הבוגת ןיא"
 POWER,,"קפסה"
 BAUDRATE,,"Baudrate"
+ARMING_CONDITION,,"Arming condition"
 WAITING_FOR_MODULE,,"לודומל ןיתממ..."
 TX_SETTINGS,,"רדשמ ינוויכ"
 MIXES,,"רסקימ"

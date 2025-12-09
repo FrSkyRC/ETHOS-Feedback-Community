@@ -132,6 +132,7 @@ POWER_HAS_BEEN_CHANGED_PLEASE_REBIND,,"A tensão foi alterada, por favor, re-emp
 NO_RESPONSE_FROM_MODULE,,"Sem resposta do módulo !"
 POWER,,"Potência"
 BAUDRATE,,"Baudrate"
+ARMING_CONDITION,,"Arming condition"
 WAITING_FOR_MODULE,,"À espera do módulo..."
 TX_SETTINGS,,"Parametros TX"
 MIXES,,"Misturas"

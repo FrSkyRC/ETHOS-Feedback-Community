@@ -150,6 +150,7 @@ POWER_HAS_BEEN_CHANGED_PLEASE_REBIND,,"Styrken er blitt endret. Mottaker må bin
 NO_RESPONSE_FROM_MODULE,,"Ingen respons fra modulen!"
 POWER,,"Sendestyrke"
 BAUDRATE,,"Baudrate"
+ARMING_CONDITION,,"Arming condition"
 WAITING_FOR_MODULE,,"Venter på modul..."
 TX_SETTINGS,,"Senderinnstillinger"
 CHANNELS,,"Kanaler"
