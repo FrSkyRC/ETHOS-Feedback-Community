@@ -246,6 +246,7 @@ DESTINATION,,"目的地",,
 ENABLE,,"有効化",,
 NO_FUNCTION_HINT,,"この機能がまだ設定されなせん.\n追加ボタンを押してください.",,
 SPECIAL_FUNCTIONS,,"スペシャル機能","Special funcs",
+NEW_FUNCTION,,"New function"
 SF,,"SF",,
 DISABLE,,"無効化",,
 ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_SPECIAL_FUNCTION,,"このスペシャル機能を削除しますか?",,

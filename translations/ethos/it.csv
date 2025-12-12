@@ -246,6 +246,7 @@ DESTINATION,,"Destinazione",
 ENABLE,,"Abilita",
 NO_FUNCTION_HINT,,"Nessuna Funzione presente. Seleziona aggiungi per crearne una!",
 SPECIAL_FUNCTIONS,,"Funzioni Speciali",
+NEW_FUNCTION,,"New function"
 SF,,"SF",
 DISABLE,,"Disabilita",
 ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_SPECIAL_FUNCTION,,"Sei sicuro di voler cancellare questa funzione speciale?",
