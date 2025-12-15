@@ -25,6 +25,7 @@ TELEMETRY,,"Télémétrie",
 CHECKLIST,,"Checklist",
 LOGIC_SWITCHES,,"Inters logiques",
 SPECIAL_FUNCTIONS,,"Fonctions",
+NEW_FUNCTION,,"Nouvelle fonction"
 CURVES,,"Courbes",
 VARS,,"Vars",
 NO_VAR_HINT,,"Aucune Var. Appuyer sur le bouton '+' pour en créer une !",
