@@ -2,6 +2,7 @@
 
 local function create()
     system.emergency()
+    system.exit()
     return nil
 end    
 
