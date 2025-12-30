@@ -130,7 +130,7 @@ NO_TIMER_HINT,,"Nessun Timer. Premi aggiungi per crearne uno!",
 ANTENNA,,"Antenna",
 POWER_HAS_BEEN_CHANGED_PLEASE_REBIND,,"La Potenza Tx è cambiata, si prega di ricollegare!",
 NO_RESPONSE_FROM_MODULE,,"Nessuna risposta dal modulo!",
-POWER,,"Potenza",
+POWER,,"Alimentazione",
 BAUDRATE,,"Baudrate",
 ARMING_CONDITION,,"Condizione di Armo"
 WAITING_FOR_MODULE,,"Attesa Modulo...",
