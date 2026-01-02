@@ -288,11 +288,11 @@
         "BackupOrContinueUpdate": "Det er anbefalt at du sikkerhetskopierer innholdet på radioen før du oppdaterer. Ønsker du å gå til Sikkerhetskopi-siden eller fortsette oppdateringen?",
         "GoToBackup": "Gå til Sikkerhetskopi-siden",
         "ContinueUpdaing": "Fortsett oppdateringen",
-        "CheckingComponentsVersion": "Checking components version ...",
-        "ComponentsNeedToBeUpdated": "Components need to be updated",
-        "UpdateComponentToVersion": "Component {{ component }} needs to be updated to version {{ version }}",
-        "ConfirmFlashBootloader": "Confirm flashing bootloader",
-        "Bootloader170confirmation": "Upgrading the bootloader to version 1.7.0 will erase all contents on the FLASH drive. Are you sure you want to continue?"
+        "CheckingComponentsVersion": "Sjekker versjon av komponenter ...",
+        "ComponentsNeedToBeUpdated": "Komponenter trenger å bli oppdatert",
+        "UpdateComponentToVersion": "Komponent {{ component }} må oppgraderes til versjon {{ version }}",
+        "ConfirmFlashBootloader": "Bekreft 'flashing' av bootloader",
+        "Bootloader170confirmation": "Oppgradering av bootloader til version 1.7.0 sletter alt innhold på FLASH enheten. Er du sikker på at du vil fortsette?"
     },
     "RFModule": {
         "RFModule": "RF Modul",
@@ -340,7 +340,7 @@
         "AnalysingComponents": "Analyserer komponenter...",
         "BackupNotMatchRadio": "Denne sikkerhetskopien passer ikke med denne radioen. Ønsker du å fortsette?",
         "WritingBackupFile": "Skriver sikkerhetskopi-fil(er)...",
-        "CreateAtVersion": "Create at version"
+        "CreateAtVersion": "Opprett som versjon"
     },
     "About": {
         "About": "Om",
@@ -359,7 +359,7 @@
         "FrSkyServer": "FrSky Server",
         "Github": "Github (Anbefalt)",
         "PopupDialogWhenError": "'Popup dialog' når en fatal feil oppstår",
-        "OpenLogs": "Åpne 'logs' mappen",
+        "OpenLogs": "Åpne logg-mappen",
         "ClearCache": "Slett hurtigminnet",
         "ClearCacheConfirm": "Er du sikker på at du vil slette hurtigminnet?",
         "CacheCleared": "Hurtigminnet slettet!",
@@ -374,10 +374,10 @@
         "Export": "Eksport",
         "DebugOptions": "'Debug' alternativer",
         "Proxy": "Proxy",
-        "NoProxy": "No proxy",
+        "NoProxy": "Ingen proxy",
         "SystemProxy": "System proxy",
-        "CustomProxy": "Custom proxy",
-        "ProxyAddress": "Proxy address",
+        "CustomProxy": "Egendefinert proxy",
+        "ProxyAddress": "Proxy addresse",
         "ProxyPort": "Port"
     },
     "Documentation": {
@@ -487,7 +487,7 @@
         "InstallLatest": "Installer nyeste",
         "Reinstall": "Reinstall",
         "ScriptInfo": "Script informasjon",
-        "TheEntireZip": "The entire zip file"
+        "TheEntireZip": "Hele zip filen"
     },
     "Updater": {
         "NewVersionAvailable": "En ny 'Ethos Suite'-version, versjon {{ version }}, er tilgjengelig!",
