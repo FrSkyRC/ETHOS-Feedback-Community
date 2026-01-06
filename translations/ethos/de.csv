@@ -46,7 +46,7 @@ VALUES,,"Wert"
 ADD_A_NEW_VALUE,,"Neuen Wert hinzufügen","Neuen Wert hinz."
 ACTIONS,,"Aktionen"
 ADD_A_NEW_ACTION,,"Neue Aktion hinzufügen","Neue Aktion hinz."
-ADD_A_NEW_LOGIC_SWITCH,, "Neuen Logikschalter hinzufügen”,"Neuen Logikschalter hin.”
+ADD_A_NEW_LOGIC_SWITCH,, "Neuen Logikschalter hinzufügen”,"Neuen Logikschalter hinz.”
 DURATION_HIGH,,"Laufzeit aktiv"
 RISING_EDGE,,"Flanke steig."
 DURING,,"während"
