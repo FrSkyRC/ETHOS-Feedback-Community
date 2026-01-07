@@ -46,7 +46,7 @@ VALUES,,"Valori",
 ADD_A_NEW_VALUE,,"+ Aggiungi un nuovo valore",
 ACTIONS,,"Azioni",
 ADD_A_NEW_ACTION,,"+ Aggiungi una nuova Azione",
-ADD_A_NEW_LOGIC_SWITCH,,"+ Add a new logic switch"
+ADD_A_NEW_LOGIC_SWITCH,,"+ Aggiungi un nuovo Int. Logico"
 DURATION_HIGH,,"Durata attiva",
 RISING_EDGE,,"Innalza Soglia",
 DURING,,"Durante",
