@@ -556,8 +556,8 @@
         "ExecutingMacroFile": "Executando archivo macro",
         "Mute": "Silenciar",
         "Unmute": "Activar sonido",
-        "OpenConsolePanel": "Open console panel",
-        "OpenControlsPanel": "Open controls panel",
-        "OpenDisplayPanel": "Open display panel"
+        "OpenConsolePanel": "Abrir panel de consola",
+        "OpenControlsPanel": "Abrir panel de controles",
+        "OpenDisplayPanel": "Abrir panel de pantalla"
     }
 }
