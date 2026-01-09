@@ -563,8 +563,9 @@
         "ExecutingMacroFile": "Execution fichier macro en cours...",
         "Mute": "Son inactif",
         "Unmute": "Son actif",
-        "OpenConsolePanel": "Open console panel",
-        "OpenControlsPanel": "Open controls panel",
-        "OpenDisplayPanel": "Open display panel"
+        "OpenConsolePanel": "Afficher console",
+        "OpenControlsPanel": "Afficher contrôle",
+        "OpenDisplayPanel": "Afficher radio"
     }
+
 }
