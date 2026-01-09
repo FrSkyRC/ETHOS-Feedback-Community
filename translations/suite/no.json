@@ -564,8 +564,8 @@
         "ExecutingMacroFile": "Kjører makro-fil",
         "Mute": "Demp volum",
         "Unmute": "Tilbakestill volum",
-        "OpenConsolePanel": "Open console panel",
-        "OpenControlsPanel": "Open controls panel",
-        "OpenDisplayPanel": "Open display panel"
+        "OpenConsolePanel": "Åpne konsoll panel",
+        "OpenControlsPanel": "Åpne kontroll panel",
+        "OpenDisplayPanel": "Åpne display panel"
     }
 }
