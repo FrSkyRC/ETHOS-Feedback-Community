@@ -562,8 +562,8 @@
         "ExecutingMacroFile": "Eseguo file Macro",
         "Mute": "Silenzia",
         "Unmute": "Attiva",
-        "OpenConsolePanel": "Open console panel",
-        "OpenControlsPanel": "Open controls panel",
-        "OpenDisplayPanel": "Open display panel"
+        "OpenConsolePanel": "Apri Pannello Console",
+        "OpenControlsPanel": "Apri Pannello Controlli",
+        "OpenDisplayPanel": "Apri Pannello Schermo"
     }
 }
