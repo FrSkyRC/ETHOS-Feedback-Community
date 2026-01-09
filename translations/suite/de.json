@@ -563,8 +563,9 @@
         "ExecutingMacroFile": "Makro-Datei ausführen",
         "Mute": "Stummschalten",
         "Unmute": "Stummschalten aufgehoben",
-        "OpenConsolePanel": "Open console panel",
-        "OpenControlsPanel": "Open controls panel",
-        "OpenDisplayPanel": "Open display panel"
+        "OpenConsolePanel": "Konsolenfenster öffnen",
+        "OpenControlsPanel": "Bedienfeld öffnen",
+        "OpenDisplayPanel": "Display-Panel öffnen"
     }
+
 }
