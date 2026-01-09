@@ -554,7 +554,6 @@
         "MaintainVertical": "Lås til vertikal bevegelse",
         "MaintainHorizontal": "Lås til horisontal bevegelse",
         "MidpointSnapping": "Automatisk tilbakeføring til midtpunkt",
-        "ToggleConsoleWindow": "Veksle konsollvinduet",
         "ClearConsoleOutput": "Slett dataene i konsollvinduet",
         "ReloadSimulator": "Last simulatoren på nytt",
         "ReloadSimQuestion": "Ønsker du å laste simulatoren på nytt?",
@@ -564,6 +563,9 @@
         "UploadFilesStep3": "Last den kjørende simulatoren på nytt",
         "ExecutingMacroFile": "Kjører makro-fil",
         "Mute": "Demp volum",
-        "Unmute": "Tilbakestill volum"
+        "Unmute": "Tilbakestill volum",
+        "OpenConsolePanel": "Open console panel",
+        "OpenControlsPanel": "Open controls panel",
+        "OpenDisplayPanel": "Open display panel"
     }
 }

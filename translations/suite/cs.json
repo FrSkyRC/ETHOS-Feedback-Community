@@ -552,7 +552,6 @@
         "MaintainVertical": "Pohyb jen ve vertikální ose",
         "MaintainHorizontal": "Pohyb jen v horizontální ose",
         "MidpointSnapping": "Přichytávat ke středům",
-        "ToggleConsoleWindow": "Přepnout okno konzole",
         "ClearConsoleOutput": "Vyčistit výstup konzole",
         "ReloadSimulator": "Znovu načíst simulátor",
         "ReloadSimQuestion": "Opravdu chcete znovu načíst simulátor?",
@@ -562,6 +561,9 @@
         "UploadFilesStep3": "Znovu načtěte běžící simulátor",
         "ExecutingMacroFile": "Spouštím makro soubor",
         "Mute": "Mute",
-        "Unmute": "Unmute"
+        "Unmute": "Unmute",
+        "OpenConsolePanel": "Open console panel",
+        "OpenControlsPanel": "Open controls panel",
+        "OpenDisplayPanel": "Open display panel"
     }
 }

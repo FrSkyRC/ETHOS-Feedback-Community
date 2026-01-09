@@ -553,7 +553,6 @@
         "MaintainVertical": "Axe vertical maintenu",
         "MaintainHorizontal": "Axe horizontal maintenu",
         "MidpointSnapping": "Accrochage point central",
-        "ToggleConsoleWindow": "Basculer vers la console windows",
         "ClearConsoleOutput": "Effacer la sortie console",
         "ReloadSimulator": "Recharger le simulateur",
         "ReloadSimQuestion": "Recharger le simulateur ?",
@@ -563,7 +562,9 @@
         "UploadFilesStep3": "Recharger le simulateur en cours d'utilisation",
         "ExecutingMacroFile": "Execution fichier macro en cours...",
         "Mute": "Son inactif",
-        "Unmute": "Son actif"
+        "Unmute": "Son actif",
+        "OpenConsolePanel": "Open console panel",
+        "OpenControlsPanel": "Open controls panel",
+        "OpenDisplayPanel": "Open display panel"
     }
-
 }

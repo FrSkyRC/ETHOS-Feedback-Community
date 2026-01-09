@@ -553,7 +553,6 @@
         "MaintainVertical": "Vertikale Achsenbewegung beibehalten",
         "MaintainHorizontal": "Horizontale Achsenbewegung beibehalten",
         "MidpointSnapping": "Mittelpunkt-Ausrichtung",
-        "ToggleConsoleWindow": "Konsolenfenster umschalten",
         "ClearConsoleOutput": "Konsolenausgabe löschen",
         "ReloadSimulator": "Simulator neu starten",
         "ReloadSimQuestion": "Simulator neu starten",
@@ -563,7 +562,9 @@
         "UploadFilesStep3": "Laden Sie den laufenden Simulator neu.",
         "ExecutingMacroFile": "Makro-Datei ausführen",
         "Mute": "Stummschalten",
-        "Unmute": "Stummschalten aufgehoben"
+        "Unmute": "Stummschalten aufgehoben",
+        "OpenConsolePanel": "Open console panel",
+        "OpenControlsPanel": "Open controls panel",
+        "OpenDisplayPanel": "Open display panel"
     }
-
 }

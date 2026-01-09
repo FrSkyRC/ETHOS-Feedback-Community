@@ -553,7 +553,6 @@
         "MaintainVertical": "Udržiavanie pohybu vertikálna os",
         "MaintainHorizontal": "Udržiavanie pohybu horizontálna os",
         "MidpointSnapping": "Prichytenie stredu",
-        "ToggleConsoleWindow": "Prepnúť okno konzoly",
         "ClearConsoleOutput": "Vymazať výstup konzoly",
         "ReloadSimulator": "Znovunačítanie simulátora",
         "ReloadSimQuestion": "Chcete simulátor znova načítať??",
@@ -563,6 +562,9 @@
         "UploadFilesStep3": "Znovu načítajte bežiaci simulátor",
         "ExecutingMacroFile": "Spúšťanie súboru makra",
         "Mute": "stlmiť",
-        "Unmute": "Zrušiť stlmenie"
+        "Unmute": "Zrušiť stlmenie",
+        "OpenConsolePanel": "Open console panel",
+        "OpenControlsPanel": "Open controls panel",
+        "OpenDisplayPanel": "Open display panel"
     }
 }

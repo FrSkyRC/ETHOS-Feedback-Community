@@ -552,7 +552,6 @@
         "MaintainVertical": "Mantieni movimento asse verticale",
         "MaintainHorizontal": "Mantieni movimento asse orizzontale",
         "MidpointSnapping": "Snap al Midpoint",
-        "ToggleConsoleWindow": "Attiva finestra console",
         "ClearConsoleOutput": "Svuota output console",
         "ReloadSimulator": "Ricarica simulatore",
         "ReloadSimQuestion": "Vuoi ricaricare il simulatore?",
@@ -562,6 +561,9 @@
         "UploadFilesStep3": "Ricarica il simulatore attivo",
         "ExecutingMacroFile": "Eseguo file Macro",
         "Mute": "Silenzia",
-        "Unmute": "Attiva"
+        "Unmute": "Attiva",
+        "OpenConsolePanel": "Open console panel",
+        "OpenControlsPanel": "Open controls panel",
+        "OpenDisplayPanel": "Open display panel"
     }
 }

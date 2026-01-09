@@ -553,7 +553,6 @@
         "MaintainVertical": "Maintain vertical axis movement",
         "MaintainHorizontal": "Maintain horizontal axis movement",
         "MidpointSnapping": "Midpoint snapping",
-        "ToggleConsoleWindow": "Toggle console window",
         "ClearConsoleOutput": "Clear console output",
         "ReloadSimulator": "Reload simulator",
         "ReloadSimQuestion": "Do you want to reload the simulator?",
@@ -563,6 +562,9 @@
         "UploadFilesStep3": "Reload the running simulator",
         "ExecutingMacroFile": "Executing macro file",
         "Mute": "Mute",
-        "Unmute": "Unmute"
+        "Unmute": "Unmute",
+        "OpenConsolePanel": "Open console panel",
+        "OpenControlsPanel": "Open controls panel",
+        "OpenDisplayPanel": "Open display panel"
     }
 }

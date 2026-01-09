@@ -552,7 +552,6 @@
         "MaintainVertical": "保持垂直轴向移动",
         "MaintainHorizontal": "保持水平轴向移动",
         "MidpointSnapping": "中点吸附",
-        "ToggleConsoleWindow": "开/关控制台窗口",
         "ClearConsoleOutput": "清空控制台输出",
         "ReloadSimulator": "重载模拟器",
         "ReloadSimQuestion": "你确定要重载模拟器吗?",
@@ -562,6 +561,9 @@
         "UploadFilesStep3": "重载正在运行的模拟器",
         "ExecutingMacroFile": "Executing macro file",
         "Mute": "Mute",
-        "Unmute": "Unmute"
+        "Unmute": "Unmute",
+        "OpenConsolePanel": "Open console panel",
+        "OpenControlsPanel": "Open controls panel",
+        "OpenDisplayPanel": "Open display panel"
     }
 }
