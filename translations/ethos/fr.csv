@@ -285,7 +285,7 @@ VALUES,,"Valeurs",
 ADD_A_NEW_VALUE,,"+ Ajout valeur",
 ACTIONS,,"Actions",
 ADD_A_NEW_ACTION,,"Ajout action",
-ADD_A_NEW_LOGIC_SWITCH,,"+ Add a new logic switch"
+ADD_A_NEW_LOGIC_SWITCH,,"+ Ajour inter logique"
 DURATION_HIGH,,"Durée activité",
 RISING_EDGE,,"Chang. état",
 DURING,,"Pendant",
