@@ -1052,7 +1052,7 @@ SPORT_CONNECTOR,,"Connettore S.Port",
 CONFIRM_SPORT_USED_BY_SSS,,"Connettore S.Port in uso ora da %s. Sei sicuro di voler continuare?",
 TRAINER_CABLE,,"Cavo Trainer",
 BLUETOOTH,,"Bluetooth",
-ENGO_GLASSES,,"Engo glasses"
+ENGO_GLASSES,,"Occhiali Engo"
 LUA_TASKS,,"Compiti Lua",
 LUA_SOURCES,,"Sorgenti Lua",
 MISSING_SCRIPT_FILE,,"File script mancante",
