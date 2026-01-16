@@ -1055,7 +1055,7 @@ SPORT_CONNECTOR,,"S.Port connector",
 CONFIRM_SPORT_USED_BY_SSS,,"S.Port connector is now used by %s. Are you sure you want to continue?",
 TRAINER_CABLE,,"Trainer cable",
 BLUETOOTH,,"Bluetooth",
-ENGO_GLASSES,,"Engo Glasses"
+ENGO_GLASSES,,"Engo glasses"
 LUA_TASKS,,"Lua tasks",
 LUA_SOURCES,,"Lua sources",
 MISSING_SCRIPT_FILE,,"Missing script file",
