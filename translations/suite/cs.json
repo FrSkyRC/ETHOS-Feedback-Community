@@ -560,13 +560,13 @@
         "UploadFilesStep2": "Nahrajte vaše soubory / složky do lokální složky simulátoru. Cesta by měla vypadat následovně\n> ${PathToLocalSimulator}/.simulator/${ReleaseTagName}/persist/${RadioName}/",
         "UploadFilesStep3": "Znovu načtěte běžící simulátor",
         "ExecutingMacroFile": "Spouštím makro soubor",
-        "OpenConsolePanel": "Open console panel",
-        "OpenControlsPanel": "Open controls panel",
-        "OpenDisplayPanel": "Open display panel",
-        "ToggleMute": "Toggle mute",
-        "PauseMacro": "Pause macro",
-        "StopMacro": "Stop macro",
-        "StepMacro": "Step macro",
-        "ResumeMacro": "Resume macro"
+        "OpenConsolePanel": "Otevřít panel konzole",
+        "OpenControlsPanel": "Otevřít panelovládáni",
+        "OpenDisplayPanel": "Otevřít panel zobrazení",
+        "ToggleMute": "Ztlumit",
+        "PauseMacro": "Pozastavit makro",
+        "StopMacro": "Zastavit makro",
+        "StepMacro": "Krok",
+        "ResumeMacro": "Spustit makro"
     }
 }
