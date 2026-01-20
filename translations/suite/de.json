@@ -564,6 +564,10 @@
         "OpenConsolePanel": "Konsolenfenster öffnen",
         "OpenControlsPanel": "Bedienfeld öffnen",
         "OpenDisplayPanel": "Display-Panel öffnen",
-        "ToggleMute": "Toggle mute"
+        "ToggleMute": "Toggle mute",
+        "PauseMacro": "Pause macro",
+        "StopMacro": "Stop macro",
+        "StepMacro": "Step macro",
+        "ResumeMacro": "Resume macro"
     }
 }

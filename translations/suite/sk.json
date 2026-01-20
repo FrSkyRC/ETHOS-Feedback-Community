@@ -564,6 +564,10 @@
         "OpenConsolePanel": "Open console panel",
         "OpenControlsPanel": "Open controls panel",
         "OpenDisplayPanel": "Open display panel",
-        "ToggleMute": "Toggle mute"
+        "ToggleMute": "Toggle mute",
+        "PauseMacro": "Pause macro",
+        "StopMacro": "Stop macro",
+        "StepMacro": "Step macro",
+        "ResumeMacro": "Resume macro"
     }
 }

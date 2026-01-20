@@ -563,6 +563,10 @@
         "OpenConsolePanel": "Apri Pannello Console",
         "OpenControlsPanel": "Apri Pannello Controlli",
         "OpenDisplayPanel": "Apri Pannello Schermo",
-        "ToggleMute": "Attiva Silenzioso"
+        "ToggleMute": "Attiva Silenzioso",
+        "PauseMacro": "Pause macro",
+        "StopMacro": "Stop macro",
+        "StepMacro": "Step macro",
+        "ResumeMacro": "Resume macro"
     }
 }
