@@ -562,10 +562,9 @@
         "UploadFilesStep2": "Legg filer/mapper i den lokale simulator-mappen. Filbanen bør være\n> ${PathToLocalSimulator}/.simulator/${ReleaseTagName}/persist/${RadioName}/",
         "UploadFilesStep3": "Last den kjørende simulatoren på nytt",
         "ExecutingMacroFile": "Kjører makro-fil",
-        "Mute": "Demp volum",
-        "Unmute": "Tilbakestill volum",
         "OpenConsolePanel": "Åpne konsoll panel",
         "OpenControlsPanel": "Åpne kontroll panel",
-        "OpenDisplayPanel": "Åpne display panel"
+        "OpenDisplayPanel": "Åpne display panel",
+        "ToggleMute": "Toggle mute"
     }
 }

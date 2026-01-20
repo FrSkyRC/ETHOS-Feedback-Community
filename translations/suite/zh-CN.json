@@ -560,10 +560,9 @@
         "UploadFilesStep2": "将文件/文件夹放到对应的目录中, 路径应当如下:\n> ${本地模拟器目录}/.simulator/${发布版本Tag名}/persist/${遥控器名}/",
         "UploadFilesStep3": "重载正在运行的模拟器",
         "ExecutingMacroFile": "Executing macro file",
-        "Mute": "Mute",
-        "Unmute": "Unmute",
         "OpenConsolePanel": "Open console panel",
         "OpenControlsPanel": "Open controls panel",
-        "OpenDisplayPanel": "Open display panel"
+        "OpenDisplayPanel": "Open display panel",
+        "ToggleMute": "Toggle mute"
     }
 }

@@ -561,10 +561,9 @@
         "UploadFilesStep2": "Put files / directories to the local simulator directory. The path should goes like\n> ${PathToLocalSimulator}/.simulator/${ReleaseTagName}/persist/${RadioName}/",
         "UploadFilesStep3": "Reload the running simulator",
         "ExecutingMacroFile": "Executing macro file",
-        "Mute": "Mute",
-        "Unmute": "Unmute",
         "OpenConsolePanel": "Open console panel",
         "OpenControlsPanel": "Open controls panel",
-        "OpenDisplayPanel": "Open display panel"
+        "OpenDisplayPanel": "Open display panel",
+        "ToggleMute": "Toggle mute"
     }
 }

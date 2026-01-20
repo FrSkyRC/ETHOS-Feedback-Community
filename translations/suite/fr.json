@@ -561,11 +561,9 @@
         "UploadFilesStep2": "Mettre les fichiers/ répertoires dans le répertoire local du simulateur. Le chemin doit être\n> ${PathToLocalSimulator}/.simulator/${ReleaseTagName}/persist/${RadioName}/",
         "UploadFilesStep3": "Recharger le simulateur en cours d'utilisation",
         "ExecutingMacroFile": "Execution fichier macro en cours...",
-        "Mute": "Son inactif",
-        "Unmute": "Son actif",
         "OpenConsolePanel": "Afficher console",
         "OpenControlsPanel": "Afficher contrôle",
-        "OpenDisplayPanel": "Afficher radio"
+        "OpenDisplayPanel": "Afficher radio",
+        "ToggleMute": "Toggle mute"
     }
-
 }

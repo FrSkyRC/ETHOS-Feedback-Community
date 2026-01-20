@@ -561,10 +561,9 @@
         "UploadFilesStep2": "Vložte súbory/adresáre do lokálneho adresára simulátora. Cesta by mala vyzerať takto\n> ${PathToLocalSimulator}/.simulator/${ReleaseTagName}/persist/${RadioName}/",
         "UploadFilesStep3": "Znovu načítajte bežiaci simulátor",
         "ExecutingMacroFile": "Spúšťanie súboru makra",
-        "Mute": "stlmiť",
-        "Unmute": "Zrušiť stlmenie",
         "OpenConsolePanel": "Open console panel",
         "OpenControlsPanel": "Open controls panel",
-        "OpenDisplayPanel": "Open display panel"
+        "OpenDisplayPanel": "Open display panel",
+        "ToggleMute": "Toggle mute"
     }
 }
