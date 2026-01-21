@@ -569,9 +569,10 @@
         "StopMacro": "Makro stoppen",
         "StepMacro": "Makro-Schritt",
         "ResumeMacro": "Makro fortsetzen",
-        "MacroRunning": "Macro running",
-        "MacroRunningToolTip": "Touch screen and control panel will be disabled during macro running",
-        "MacroDebugging": "Macro debugging",
-        "SyncingFS": "Syncing file system ..."
+        "MacroRunning": "Makro ausfühen",
+        "MacroRunningToolTip": "Touchscreen und Bedienfeld werden während der Ausführung des Makros deaktiviert!",
+        "MacroDebugging": "Makro-Fehlersuche",
+        "SyncingFS": "Dateisystem wird synchronisiert..."
     }
+
 }
