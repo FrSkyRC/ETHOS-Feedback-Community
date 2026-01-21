@@ -557,14 +557,14 @@
         "OpenConsolePanel": "Abrir panel de consola",
         "OpenControlsPanel": "Abrir panel de controles",
         "OpenDisplayPanel": "Abrir panel de pantalla",
-        "ToggleMute": "Toggle mute",
-        "PauseMacro": "Pause macro",
-        "StopMacro": "Stop macro",
-        "StepMacro": "Step macro",
-        "ResumeMacro": "Resume macro",
-        "MacroRunning": "Macro running",
-        "MacroRunningToolTip": "Touch screen and control panel will be disabled during macro running",
-        "MacroDebugging": "Macro debugging",
-        "SyncingFS": "Syncing file system ..."
+        "ToggleMute": "alternar silencio",
+        "PauseMacro": "Pausar macro",
+        "StopMacro": "Detener macro",
+        "StepMacro": "Macro paso a paso",
+        "ResumeMacro": "Resumir macro",
+        "MacroRunning": "Ejecutando macro",
+        "MacroRunningToolTip": "La pantalla táctil y el panel de control estarán desactivados mientras se ejecuta la macro",
+        "MacroDebugging": "Depurando macro",
+        "SyncingFS": "Sincronizando el sistema de archivos ..."
     }
 }
