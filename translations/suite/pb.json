@@ -571,7 +571,7 @@
         "StepMacro": "Step macro",
         "ResumeMacro": "Resume macro",
         "MacroRunning": "Macro running",
-        "MacroPaused": "Macro paused",
-        "MacroRunningToolTip": "Touch screen and control panel will be disabled during macro running"
+        "MacroRunningToolTip": "Touch screen and control panel will be disabled during macro running",
+        "MacroDebugging": "Macro debugging"
     }
 }
