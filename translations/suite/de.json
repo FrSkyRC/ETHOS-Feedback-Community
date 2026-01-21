@@ -568,7 +568,9 @@
         "PauseMacro": "Makro-Pause",
         "StopMacro": "Makro stoppen",
         "StepMacro": "Makro-Schritt",
-        "ResumeMacro": "Makro fortsetzen"
+        "ResumeMacro": "Makro fortsetzen",
+        "MacroRunning": "Macro running",
+        "MacroPaused": "Macro paused",
+        "MacroRunningToolTip": "Touch screen and control panel will be disabled during macro running"
     }
-
 }
