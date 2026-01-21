@@ -570,6 +570,7 @@
         "ResumeMacro": "Resume macro",
         "MacroRunning": "Macro running",
         "MacroRunningToolTip": "Touch screen and control panel will be disabled during macro running",
-        "MacroDebugging": "Macro debugging"
+        "MacroDebugging": "Macro debugging",
+        "SyncingFS": "Syncing file system ..."
     }
 }

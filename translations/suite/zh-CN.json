@@ -570,6 +570,7 @@
         "ResumeMacro": "恢复宏运行",
         "MacroRunning": "宏文件正在运行",
         "MacroRunningToolTip": "在宏文件运行期间, 触屏和控制面板将被禁用",
-        "MacroDebugging": "宏文件正在调试"
+        "MacroDebugging": "宏文件正在调试",
+        "SyncingFS": "Syncing file system ..."
     }
 }
