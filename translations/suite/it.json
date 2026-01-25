@@ -564,13 +564,13 @@
         "OpenControlsPanel": "Apri Pannello Controlli",
         "OpenDisplayPanel": "Apri Pannello Schermo",
         "ToggleMute": "Attiva Silenzioso",
-        "PauseMacro": "Pause macro",
+        "PauseMacro": "Pausa macro",
         "StopMacro": "Stop macro",
-        "StepMacro": "Step macro",
-        "ResumeMacro": "Resume macro",
-        "MacroRunning": "Macro running",
-        "MacroRunningToolTip": "Touch screen and control panel will be disabled during macro running",
-        "MacroDebugging": "Macro debugging",
-        "SyncingFS": "Syncing file system ..."
+        "StepMacro": "Avanza macro",
+        "ResumeMacro": "Riprendi macro",
+        "MacroRunning": "Macro in esecuzione",
+        "MacroRunningToolTip": "Il Touch screen e il pannallo di controllo saranno disabilitati durante l'esecuzione delle macro",
+        "MacroDebugging": "Debug Macro",
+        "SyncingFS": "Sincronizzazione file system ..."
     }
 }
