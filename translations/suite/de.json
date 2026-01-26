@@ -573,12 +573,13 @@
         "MacroRunningToolTip": "Touchscreen und Bedienfeld werden während der Ausführung des Makros deaktiviert!",
         "MacroDebugging": "Makro-Fehlersuche",
         "SyncingFS": "Dateisystem wird synchronisiert...",
-        "AddANewSensor": "Add a new sensor",
-        "RemoveAllSensors": "Remove all sensors",
+        "AddANewSensor": "Neuen Sensor hinzufügen",
+        "RemoveAllSensors": "Alle Sensoren entfernen",
         "Module": "Module",
-        "InternalModule": "Internal module",
-        "ExternalModule": "External module",
-        "DataRate": "Data rate",
-        "RemoveThisSensor": "Remove this sensor"
+        "InternalModule": "Internes Modul",
+        "ExternalModule": "Externes Modul",
+        "DataRate": "Datenrate",
+        "RemoveThisSensor": "Diesen Sensor entfernen"
     }
+
 }
