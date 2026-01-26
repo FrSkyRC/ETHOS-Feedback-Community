@@ -565,6 +565,13 @@
         "MacroRunning": "Ejecutando macro",
         "MacroRunningToolTip": "La pantalla táctil y el panel de control estarán desactivados mientras se ejecuta la macro",
         "MacroDebugging": "Depurando macro",
-        "SyncingFS": "Sincronizando el sistema de archivos ..."
+        "SyncingFS": "Sincronizando el sistema de archivos ...",
+        "AddANewSensor": "Add a new sensor",
+        "RemoveAllSensors": "Remove all sensors",
+        "Module": "Module",
+        "InternalModule": "Internal module",
+        "ExternalModule": "External module",
+        "DataRate": "Data rate",
+        "RemoveThisSensor": "Remove this sensor"
     }
 }

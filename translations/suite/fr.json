@@ -572,7 +572,13 @@
         "MacroRunning": "Macro en cours",
         "MacroRunningToolTip": "Ecran tactile et panneau de contrôle désactivés pendant l'exécution d'une macro",
         "MacroDebugging": "debug macro en cours",
-        "SyncingFS": "Sync. fichier système en cours ..."
+        "SyncingFS": "Sync. fichier système en cours ...",
+        "AddANewSensor": "Add a new sensor",
+        "RemoveAllSensors": "Remove all sensors",
+        "Module": "Module",
+        "InternalModule": "Internal module",
+        "ExternalModule": "External module",
+        "DataRate": "Data rate",
+        "RemoveThisSensor": "Remove this sensor"
     }
-
 }

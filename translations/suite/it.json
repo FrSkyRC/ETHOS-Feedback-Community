@@ -571,6 +571,13 @@
         "MacroRunning": "Macro in esecuzione",
         "MacroRunningToolTip": "Il Touch screen e il pannallo di controllo saranno disabilitati durante l'esecuzione delle macro",
         "MacroDebugging": "Debug Macro",
-        "SyncingFS": "Sincronizzazione file system ..."
+        "SyncingFS": "Sincronizzazione file system ...",
+        "AddANewSensor": "Add a new sensor",
+        "RemoveAllSensors": "Remove all sensors",
+        "Module": "Module",
+        "InternalModule": "Internal module",
+        "ExternalModule": "External module",
+        "DataRate": "Data rate",
+        "RemoveThisSensor": "Remove this sensor"
     }
 }

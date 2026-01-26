@@ -571,6 +571,13 @@
         "MacroRunning": "宏文件正在运行",
         "MacroRunningToolTip": "在宏文件运行期间, 触屏和控制面板将被禁用",
         "MacroDebugging": "宏文件正在调试",
-        "SyncingFS": "正在同步文件 ..."
+        "SyncingFS": "正在同步文件 ...",
+        "AddANewSensor": "Add a new sensor",
+        "RemoveAllSensors": "Remove all sensors",
+        "Module": "Module",
+        "InternalModule": "Internal module",
+        "ExternalModule": "External module",
+        "DataRate": "Data rate",
+        "RemoveThisSensor": "Remove this sensor"
     }
 }
