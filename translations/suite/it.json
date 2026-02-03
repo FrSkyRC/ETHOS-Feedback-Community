@@ -569,7 +569,7 @@
         "StepMacro": "Avanza macro",
         "ResumeMacro": "Riprendi macro",
         "MacroRunning": "Macro in esecuzione",
-        "MacroRunningToolTip": "Il Touch screen e il pannallo di controllo saranno disabilitati durante l'esecuzione delle macro",
+        "MacroRunningToolTip": "Il Touch screen e il pannello di controllo saranno disabilitati durante l'esecuzione delle macro",
         "MacroDebugging": "Debug Macro",
         "SyncingFS": "Sincronizzazione file system ...",
         "AddANewSensor": "Aggiungi un nuovo sensore",
