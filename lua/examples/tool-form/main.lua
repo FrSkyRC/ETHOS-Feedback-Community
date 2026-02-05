@@ -65,9 +65,7 @@ local function create()
     local line = form.addLine("WaitDialog example")
     form.addTextButton(line, nil, "Press here", 
       function() 
-        progress = form.openWaitDialog("Progress", "Doing some long job ...")
-        -- progress:closeAllowed(false)
-        progress:closeHandler(function() print("Progress dialog closed") end)
+        progress = form.openWaitDialog({title="Progress", message="Doing some long job ...", close=function() print("Progress dialog closed") end})
         progressValue = 0
       end)
     
@@ -145,8 +143,10 @@ end
 local function wakeup(data)
     if progress then
         progressValue = progressValue + 1
-        if progressValue > 100 then
+        if progressValue == 100 then
             progress:close()
+        elseif progressValue == 50 then
+            progress:message("Very long job!")
         else    
             progress:value(progressValue)
         end
