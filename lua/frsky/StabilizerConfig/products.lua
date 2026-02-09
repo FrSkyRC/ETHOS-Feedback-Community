@@ -22,6 +22,8 @@ local FrSkyProducts = {
       { ID = 76, Name = "Archer+ SR12+", SupportFields = { 2, 3, 4 },    CaliPrefix = "ap_sr12p" },
       { ID = 79, Name = "SR6 Mini",      SupportFields = { 2, 3, 4 },    CaliPrefix = "ap_sr6_mini" },
       { ID = 80, Name = "SR6 Mini E",    SupportFields = { 2, 3, 4 },    CaliPrefix = "ap_sr6_mini" },
+      { ID = 81, Name = "SR6BL15A",      SupportFields = { 2, 3, 4 },    CaliPrefix = "ap_sr6_mini" },
+      { ID = 82, Name = "SR6Lite",       SupportFields = { 2, 3, 4 },    CaliPrefix = "ap_sr6_mini" },
     }
   },
   {

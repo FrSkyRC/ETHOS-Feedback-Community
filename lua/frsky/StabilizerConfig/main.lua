@@ -1,4 +1,4 @@
-local LUA_VERSION = "3.0.8";
+local LUA_VERSION = "3.0.9";
 
 TEST = false
 

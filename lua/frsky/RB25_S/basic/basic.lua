@@ -233,7 +233,6 @@ local function runPage(step)
     local field = parameter[2](line, parameter)
     fields[index] = field
   end
-
 end
 
 local function create()
@@ -245,7 +244,7 @@ local function create()
   parametersGroup = {baseParameters, channelParameters, failsafeParameters}
   page = 1
 
-  local sensor = sport.getSensor({appIdStart=0x0F10, appIdEnd=0x0F1F})
+  local sensor = sport.getSensor({appIdStart=0x0F10, appIdEnd=0x0F1F});
 
   runPage(0)
 
@@ -253,7 +252,7 @@ local function create()
 end
 
 local function wakeup(widget)
-  -- TODO call discover
+  local invalidateNeeded = false
   if widget.sensor:appId() == 0xFFFF then
     local frame = widget.sensor:popFrame()
     if frame == nil then
@@ -279,7 +278,7 @@ local function wakeup(widget)
         -- print("widget.sensor:value = ", value)
         while parameters[refreshIndex + 1][3] == fieldId do
           if parameters[refreshIndex + 1][5] ~= nil and value ~= nil then
-            lcd.invalidate()
+            invalidateNeeded = true;
           end
           parameters[refreshIndex + 1][5] = value
           if value ~= nil then
@@ -320,6 +319,9 @@ local function wakeup(widget)
       end
     end
   end
+  if invalidateNeeded then
+    lcd.invalidate()
+  end
 end
 
 local function event(widget, category, value, x, y)
@@ -337,7 +339,13 @@ local function event(widget, category, value, x, y)
 end
 
 local function close(widget)
-  widget.sensor:idle(false)
+  local count = 0;
+  while count < 3 do
+    if widget.sensor:idle(false) then
+      count = count + 1
+    end
+  end
+  idle = false
 end
 
 return {name=name, create=create, wakeup=wakeup, event=event, close=close}

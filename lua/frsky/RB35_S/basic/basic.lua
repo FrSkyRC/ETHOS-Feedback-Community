@@ -275,7 +275,7 @@ local function create()
 end
 
 local function wakeup(widget)
-  -- TODO call discover
+  local invalidateNeeded = false
   if widget.sensor:appId() == 0xFFFF then
     local frame = widget.sensor:popFrame()
     if frame == nil then
@@ -301,7 +301,7 @@ local function wakeup(widget)
         -- print("widget.sensor:value = ", value)
         while parameters[refreshIndex + 1][3] == fieldId do
           if parameters[refreshIndex + 1][5] ~= nil and value ~= nil then
-            lcd.invalidate()
+            invalidateNeeded = true;
           end
           parameters[refreshIndex + 1][5] = value
           if value ~= nil then
@@ -341,6 +341,9 @@ local function wakeup(widget)
         requestInProgress = true
       end
     end
+  end
+  if invalidateNeeded then
+    lcd.invalidate()
   end
 end
 
