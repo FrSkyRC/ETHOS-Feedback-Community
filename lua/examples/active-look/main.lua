@@ -1,4 +1,4 @@
--- Lua Glasses Test
+-- Lua ActiveLook glasses test
 
 local function create()
     return {layout=nil, armed=false}
@@ -17,7 +17,7 @@ local function wakeup(context)
 end
 
 local function init()
-    system.registerGlassesWidget({key="engo", name="Engo Lua", create=create, build=build, wakeup=wakeup})
+    system.registerGlassesWidget({key="engo", name="ActiveLook Lua", create=create, build=build, wakeup=wakeup})
 end
 
 return {init=init}
