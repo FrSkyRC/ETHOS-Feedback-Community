@@ -301,10 +301,10 @@ WAITING_FOR_DEVICES,,"Attesa dispositivi...",
 LOCAL_NAME,,"Nome Locale",
 SEARCH_DEVICES,,"Cerca Dispositivi",
 BLUETOOTH_DEVICE_CONNECTED,,"Disp. Bluetooth connesso",
+NOT_CONNECTED,,"Not connected"
 CONFIRM_ALLOW_CONNECTION,,"Permetti connesione?"
 BLUETOOTH_FIRMWARE_NEEDS_UPDATE,,"Necessario aggiornamento firmware Bluetooth!"
 BLUETOOTH_MAINTENANCE,,"Manutenzione Bluetooth"
-CONNECT_LAST_DEVICE,,"Connetti ultimo Disp.",
 DEVICE,,"Dispositivo"
 NO_BLUETOOTH_DEVICE_FOUND,,"Nessun Disp. Bluetooth!",
 SPEAKER_MUTE,,"Altoparlante Muto",
@@ -316,7 +316,6 @@ ROTARY_ENCODER_HALF_STEPS,,"Encoder Rotella passo dimezzato"
 BLUETOOTH_AUDIO,,"Audio Bluetooth"
 NOT_INSTALLED,,"Non Installato (default)"
 INSTALLED_AS_AN_OPTION,,"Installato come opzione"
-RESET_MODULE,,"Reset Modulo",
 HIGH_SPEED,,"Velocità Alta",
 NORMAL_SPEED,,"Velocità Normale",
 MODEL,,"Modello",
