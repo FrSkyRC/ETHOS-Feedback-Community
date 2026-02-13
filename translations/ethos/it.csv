@@ -301,7 +301,7 @@ WAITING_FOR_DEVICES,,"Attesa dispositivi...",
 LOCAL_NAME,,"Nome Locale",
 SEARCH_DEVICES,,"Cerca Dispositivi",
 BLUETOOTH_DEVICE_CONNECTED,,"Disp. Bluetooth connesso",
-NOT_CONNECTED,,"Not connected"
+NOT_CONNECTED,,"Non connesso"
 CONFIRM_ALLOW_CONNECTION,,"Permetti connesione?"
 BLUETOOTH_FIRMWARE_NEEDS_UPDATE,,"Necessario aggiornamento firmware Bluetooth!"
 BLUETOOTH_MAINTENANCE,,"Manutenzione Bluetooth"
