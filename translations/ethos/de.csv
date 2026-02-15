@@ -851,7 +851,7 @@ PLACE_RECEIVER_RIGHT,,"Vert., Pins ↓"
 PLACE_RECEIVER_FORWARD,,"Horiz., Obers., Pins →"
 PLACE_RECEIVER_BACKWARD,,"Horiz., Obers., Pins ←"
 ADD_A_NEW_WEIGHT,,"Gewichtung hinzufügen","Gewichtung hinz."
-ADD_A_NEW_CONDITION,,"Neue Bedingung hinzufügen","Bedingung hinz.
+ADD_A_NEW_CONDITION,,"Neue Bedingung hinzufügen","Bedingung hinz."
 ADD_A_NEW_CURVE,,"Kurve hinzufügen","Kurve hinz."
 AUDIO,,"Audio"
 VOICE,,"Stimme"
