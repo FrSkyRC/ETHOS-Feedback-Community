@@ -1051,7 +1051,8 @@ SPORT_CONNECTOR,,"S.Portコネクタ",,
 CONFIRM_SPORT_USED_BY_SSS,,"S.Port コネクタは%sにより使用中です.\nよろしいですか?",,
 TRAINER_CABLE,,"トレーナーケーブル",,
 BLUETOOTH,,"Bluetooth",,
-ENGO_GLASSES,,"Engo glasses"
+ACTIVELOOK_GLASSES,,"ActiveLook glasses"
+GLASSES,,"Glasses"
 LUA_TASKS,,"Luaタスク",,
 LUA_SOURCES,,"Luaソース",,
 MISSING_SCRIPT_FILE,,"スクリプトファイルなし",,
