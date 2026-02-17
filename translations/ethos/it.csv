@@ -291,7 +291,7 @@ RESET_FLIGHT,,"Reset Volo",
 RESET_TIMERS,,"Reset Timer",
 RESET_TELEMETRY,,"Reset Telemetria",
 HOME,,"Home",
-ADD_AFTER,,"Agg Dopo...",
+ADD_AFTER,,"Aggiungi Dopo...",
 ADD_MIX_FAILED,,"Aggiungi Mix fallito!",
 MAX_MIXES_REACHED,,"Il numero massimo di mixer è stato raggiunto!",
 FIRST_POSITION,,"Prima posizione",
@@ -321,8 +321,8 @@ NORMAL_SPEED,,"Velocità Normale",
 MODEL,,"Modello",
 STEERING,,"Sterzo"
 DUTY_RATIO,,"Duty ratio"
-CYCLE_DURATION,,"Cycle duration"
-RETURN_POSITION,,"Return position"
+CYCLE_DURATION,,"Durata ciclo"
+RETURN_POSITION,,"Posizione di Ritorno"
 STEERING_BRAKE,,"Convergenza Dinamica-Freno"
 CHECKLIST,,"Checklist",
 FILE_MANAGER,,"File Manager",
@@ -437,8 +437,8 @@ PLANE,,"Aereo",
 GLIDER,,"Aliante",
 HELI,,"Elicottero",
 MULTI,,"Multi",
-CAR,,"Car",
-BOAT,,"Boat",
+CAR,,"Auto",
+BOAT,,"Barca",
 OTHER,,"Altro",
 CALIBRATION,,"Calibrazione",
 INPUTS,,"Inputs",
@@ -1052,7 +1052,7 @@ CONFIRM_SPORT_USED_BY_SSS,,"Connettore S.Port in uso ora da %s. Sei sicuro di vo
 TRAINER_CABLE,,"Cavo Trainer",
 BLUETOOTH,,"Bluetooth",
 ACTIVELOOK_GLASSES,,"Occhiali ActiveLook"
-GLASSES,,"Glasses"
+GLASSES,,"Occhiali"
 LUA_TASKS,,"Compiti Lua",
 LUA_SOURCES,,"Sorgenti Lua",
 MISSING_SCRIPT_FILE,,"File script mancante",
