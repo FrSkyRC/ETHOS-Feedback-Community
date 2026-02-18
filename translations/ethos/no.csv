@@ -855,7 +855,7 @@ PLACE_RECEIVER_BACKWARD,,"Sett mottakeren på den andre langsiden\nmed etiketten
 ADD_A_NEW_WEIGHT,,"Legg til ny vekt"
 ADD_A_NEW_CONDITION,,"+ Legg til ny betingelse"
 ADD_A_NEW_CURVE,,"Legg til ny kurve"
-VAR,,"Variabel"
+VAR,,"Var"
 VOLUME,,"Volum"
 SAVE_TO_FLASH,,"Lagre til Flash-minne"
 SAVE_TO_FLASH_MESSAGE,,"Alle innstillinger er korrekt lagret i Flash-minnet"
