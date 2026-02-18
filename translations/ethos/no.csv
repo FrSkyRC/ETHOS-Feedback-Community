@@ -1052,7 +1052,7 @@ CONFIRM_SPORT_USED_BY_SSS,,"S.Port tilkobling brukes av %s. Er du sikker på at 
 TRAINER_CABLE,,"Trainer kabel"
 BLUETOOTH,,"Blåtann"
 ACTIVELOOK_GLASSES,,"ActiveLook briller"
-GLASSES,,"Glasses"
+GLASSES,,"Briller"
 LUA_TASKS,,"LUA oppgaver"
 LUA_SOURCES,,"LUA kilder"
 MISSING_SCRIPT_FILE,,"Script fil mangler"
