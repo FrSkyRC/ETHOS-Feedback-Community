@@ -292,7 +292,7 @@
         "ComponentsNeedToBeUpdated": "Components need to be updated",
         "UpdateComponentToVersion": "Component {{ component }} needs to be updated to version {{ version }}",
         "ConfirmFlashBootloader": "Confirm flashing bootloader",
-        "Bootloader170confirmation": "Upgrading the bootloader to version 1.7.0 will erase all contents on the FLASH drive. Are you sure you want to continue?"
+        "BootloaderUpgradeConfirmation": "Upgrading the bootloader to version {{ version }} will erase all contents on the FLASH drive. Are you sure you want to continue?"
     },
     "RFModule": {
         "RFModule": "RF Module",

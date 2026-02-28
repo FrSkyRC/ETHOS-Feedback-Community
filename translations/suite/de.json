@@ -291,7 +291,7 @@
         "ComponentsNeedToBeUpdated": "Es müssen Komponenten aktualisiert werden!",
         "UpdateComponentToVersion": "Die Komponente {{ component }} muss auf Version {{ version }} aktualisiert werden!",
         "ConfirmFlashBootloader": "Bestätigen Sie das Flashen des Bootloaders",
-        "Bootloader170confirmation": "Durch das Upgrade des Bootloaders auf Version 1.7.0 werden alle Inhalte auf dem FLASH-Laufwerk gelöscht. Möchten Sie wirklich fortfahren?"
+        "BootloaderUpgradeConfirmation": "Durch das Upgrade des Bootloaders auf Version {{ version }} werden alle Inhalte auf dem FLASH-Laufwerk gelöscht. Möchten Sie wirklich fortfahren?"
     },
     "RFModule": {
         "RFModule": "HF-Modul",

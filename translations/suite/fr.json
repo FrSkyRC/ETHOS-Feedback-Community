@@ -291,7 +291,7 @@
         "ComponentsNeedToBeUpdated": "Des composants nécessitent une mise à jour",
         "UpdateComponentToVersion": "Le composant {{ component }} nécessite la mise à jour en version {{ version }}",
         "ConfirmFlashBootloader": "Confirmer mise à jour du bootloader",
-        "Bootloader170confirmation": "Mettre à jour le bootloader en V 1.7.0 effacera la mémoire flash. Continuer ?"
+        "BootloaderUpgradeConfirmation": "Mettre à jour le bootloader en V {{ version }} effacera la mémoire flash. Continuer ?"
     },
     "RFModule": {
         "RFModule": "Module RF",

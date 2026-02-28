@@ -290,7 +290,7 @@
         "ComponentsNeedToBeUpdated": "Komponenty je nutno aktualizovat",
         "UpdateComponentToVersion": "Komponent {{ component }} je třeba aktualizovat na verzi {{ version }}",
         "ConfirmFlashBootloader": "Potvrďte flash bootloaderu",
-        "Bootloader170confirmation": "Aktualizace bootloaderu na verzi 1.7.0 smaže veškerý obsah jednotky \"FLASH\". Opravdu chcete pokračovat?"
+        "BootloaderUpgradeConfirmation": "Aktualizace bootloaderu na verzi {{ version }} smaže veškerý obsah jednotky \"FLASH\". Opravdu chcete pokračovat?"
     },
     "RFModule": {
         "RFModule": "RF modul",

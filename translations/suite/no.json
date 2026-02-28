@@ -292,7 +292,7 @@
         "ComponentsNeedToBeUpdated": "Komponenter trenger å bli oppdatert",
         "UpdateComponentToVersion": "Komponent {{ component }} må oppgraderes til versjon {{ version }}",
         "ConfirmFlashBootloader": "Bekreft 'flashing' av bootloader",
-        "Bootloader170confirmation": "Oppgradering av bootloader til version 1.7.0 sletter alt innhold på FLASH enheten. Er du sikker på at du vil fortsette?"
+        "BootloaderUpgradeConfirmation": "Oppgradering av bootloader til version {{ version }} sletter alt innhold på FLASH enheten. Er du sikker på at du vil fortsette?"
     },
     "RFModule": {
         "RFModule": "RF Modul",
