@@ -579,7 +579,7 @@
         "InternalModule": "Module interne",
         "ExternalModule": "Module externe",
         "DataRate": "Fréquence données",
-        "RemoveThisSensor": "Supprimer ce capteur"
+        "RemoveThisSensor": "Supprimer ce capteur",
+        "OpenTelemetryPanel": "Open telemetry panel"
     }
-
 }
