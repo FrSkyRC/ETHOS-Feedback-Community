@@ -5,6 +5,21 @@ local progressValue = 0
 
 local icon = lcd.loadMask("form.png")
 
+local helpText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae sem at leo consequat pellentesque. \z
+                  AliquamAliquam feugiat viverra quam non tincidunt. Donec purus nibh, bibendum sagittis quam ut, scelerisque \z 
+                  auctorauctor velit.\n\n\z
+                  Integer quam nunc, mollis ac dignissim eu, consectetur sed orci. Nullam eleifend ipsum eu viverra ornare. \n\z 
+                  Phasellus interdum, odio non dictum congue, nulla justo finibus turpis, ut egestas neque nunc eget libero. \z 
+                  Ut quis nulla magna. Pellentesque condimentum et urna vitae eleifend. Aliquam pulvinar diam ac dolor sagittis, \z 
+                  vitae porta est suscipit. Curabitur tempor, magna eget tincidunt interdum, dui quam scelerisque leo,\z 
+                  ullamcorper mattis arcu nulla ut dui. Ut id efficitur velit, cursus volutpat nunc.\n\n\z 
+                  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;\n\n\z
+                  Pellentesque congue sapien ante, vel condimentum enim euismod ut. Morbi vestibulum aliquam nisi, \z
+                  in vehicula urna suscipit sed. Praesent at odio a magna varius viverra. Nam massa est, ultricies id diam eu, \z 
+                  lobortis fermentum ipsum. Quisque maximus dui quis ex consectetur fermentum. \n\n\z 
+                  Quisque eleifend enim nibh, nec commodo risus malesuada id. Mauris efficitur, nibh eget tempus tincidunt, massa \z 
+                  leo malesuada massa, porttitor placerat mi dui vitae mi. Maecenas eros augue, aliquet a tristique aliquet, pharetra ut mauris.\n"
+
 local function fillPanel(data, panel)
     for i = 1, data.count do
         panel:addLine("Line " .. i) 
@@ -39,7 +54,7 @@ local function create()
             form.openDialog({
                 width=w,
                 title="Help",
-                message="Increase D, P, I in order until each wobbles,\nthen back off.\nSet F for a good response in full\nstick flips and rolls.\nIf necessary, tweak P:D ratio\nto set response damping to your liking. Increase O until wobbles occur when jabbing elevator at full collective, back off a bit. Increase B if you want sharper response.\nIncrease D, P, I in order until each wobbles, then back off.\nSet F for a good response in full stick flips and rolls.\nIf necessary, tweak P:D ratio to set response damping to your liking.\nIncrease O until wobbles occur when jabbing elevator at full collective, back off a bit.\nIncrease B if you want sharper response.", 
+                message=helpText, 
                 buttons={{label="OK", action=function() return true end}}, 
                 wakeup=function()
                         lcd.invalidate()
@@ -119,7 +134,7 @@ local function create()
 
     local line = form.addLine("Number example")
     local field = form.addNumberField(line, nil, -100, 100, function() return data.number end, function(newValue) data.number = newValue end)
-    field:help("Cross Coupling:\nStart with a low gain. Increase in small increments\nuntil there is little to not noticeable cross coupling observed.")
+    field:help(helpText)
 
     local line = form.addLine("Multi fields")
     local slots = form.getFieldSlots(line, {0, "-", 0})
