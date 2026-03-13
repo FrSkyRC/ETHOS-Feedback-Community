@@ -580,6 +580,6 @@
         "ExternalModule": "Externý modul",
         "DataRate": "Dátový objem",
         "RemoveThisSensor": "Odstrániť tento senzor",
-        "OpenTelemetryPanel": "Open telemetry panel"
+        "OpenTelemetryPanel": "Otvoriť panel telemetrie"
     }
 }
