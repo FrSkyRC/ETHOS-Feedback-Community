@@ -579,6 +579,7 @@
         "ExternalModule": "External module",
         "DataRate": "Data rate",
         "RemoveThisSensor": "Remove this sensor",
-        "OpenTelemetryPanel": "Open telemetry panel"
+        "OpenTelemetryPanel": "Open telemetry panel",
+        "Screenshot": "Screenshot"
     }
 }

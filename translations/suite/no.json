@@ -581,6 +581,7 @@
         "ExternalModule": "Ekstern modul",
         "DataRate": "Data hastighet",
         "RemoveThisSensor": "Fjern denne sensoren",
-        "OpenTelemetryPanel": "Åpne telemetri-panel"
+        "OpenTelemetryPanel": "Åpne telemetri-panel",
+        "Screenshot": "Screenshot"
     }
 }
