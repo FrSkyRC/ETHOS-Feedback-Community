@@ -560,6 +560,7 @@ KEYBOARD,,"Clavier",
 ENABLE_SLIDER,,"Activer curseur",
 DISABLE_SLIDER,,"Désactiver curseur",
 ALWAYS_ON,,"Toujours",
+ALWAYS_OFF,,"Always OFF"
 YES,,"Oui",
 DIGITAL_RSSI,,"RSSI numérique",
 GYRO,,"Gyro",

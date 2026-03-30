@@ -352,6 +352,7 @@ FUNCTION_SWITCHES_ARE_NOT_IN_SAFE_POSITION,,"Functieschakelaars staan niet in ve
 FAILSAFE_IS_NOT_SET,,"Failsafe niet ingesteld"
 RTC_BATTERY_IS_LOW,,"RTC batterij is bijna leeg"
 ALWAYS_ON,,"Altijd Aan"
+ALWAYS_OFF,,"Always OFF"
 YES,,"Ja"
 DIGITAL_RSSI,,"Digitaal RSSI"
 GYRO,,"Gyro"

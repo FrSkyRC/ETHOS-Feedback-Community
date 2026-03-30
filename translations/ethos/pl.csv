@@ -353,6 +353,7 @@ FUNCTION_SWITCHES_ARE_NOT_IN_SAFE_POSITION,,"Przełączniki programowalne nie s�
 FAILSAFE_IS_NOT_SET,,"Ustaw bezpieczne parametry Failsafe!"
 RTC_BATTERY_IS_LOW,,"Napięcie baterii zegara czasu rzeczywistego (RTC) jest niskie!"
 ALWAYS_ON,,"Zawsze WŁ"
+ALWAYS_OFF,,"Always OFF"
 YES,,"Tak"
 DIGITAL_RSSI,,"Cyfrowe RSSI"
 GYRO,,"Żyroskop"

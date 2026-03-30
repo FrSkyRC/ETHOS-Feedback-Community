@@ -352,6 +352,7 @@ FUNCTION_SWITCHES_ARE_NOT_IN_SAFE_POSITION,,"Chaves de função não estão em p
 FAILSAFE_IS_NOT_SET,,"Failsafe não definido"
 RTC_BATTERY_IS_LOW,,"Tensão da bateria RTC baixa"
 ALWAYS_ON,,"Sempre ligado"
+ALWAYS_OFF,,"Always OFF"
 YES,,"Sim"
 DIGITAL_RSSI,,"RSSI numérico"
 GYRO,,"Gyro"

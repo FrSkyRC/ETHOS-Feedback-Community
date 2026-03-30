@@ -352,6 +352,7 @@ FUNCTION_SWITCHES_ARE_NOT_IN_SAFE_POSITION,,"機能スイッチは安全位置�
 FAILSAFE_IS_NOT_SET,,"フェイルセーフはまだ設定されていません.",,
 RTC_BATTERY_IS_LOW,,"RTCバッテリーは低電圧です.",,
 ALWAYS_ON,,"常にオン",,
+ALWAYS_OFF,,"Always OFF"
 YES,,"はい",,
 DIGITAL_RSSI,,"デジタル RSSI",,
 GYRO,,"ジャイロ",,

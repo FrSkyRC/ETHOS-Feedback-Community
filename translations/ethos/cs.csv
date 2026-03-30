@@ -351,6 +351,7 @@ FUNCTION_SWITCHES_ARE_NOT_IN_SAFE_POSITION,,"Tlačítka funkcí nejsou v bezpeč
 FAILSAFE_IS_NOT_SET,,"Failsafe není nastaven"
 RTC_BATTERY_IS_LOW,,"Baterie RTC je vybitá"
 ALWAYS_ON,,"Vždy zap"
+ALWAYS_OFF,,"Always OFF"
 YES,,"Ano"
 DIGITAL_RSSI,,"Digitální RSSI"
 GYRO,,"Gyro"

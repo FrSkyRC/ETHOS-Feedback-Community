@@ -352,6 +352,7 @@ FUNCTION_SWITCHES_ARE_NOT_IN_SAFE_POSITION,,"חוטב בצמב אל םילנוי
 FAILSAFE_IS_NOT_SET,,"רדגומ אל ףייסלייפ"
 RTC_BATTERY_IS_LOW,,"הכומנ יוביג תללוס"
 ALWAYS_ON,,"קלוד דימת"
+ALWAYS_OFF,,"Always OFF"
 YES,,"ןכ"
 DIGITAL_RSSI,,"ילטיגיד RSSI"
 GYRO,,"ורי'ג"

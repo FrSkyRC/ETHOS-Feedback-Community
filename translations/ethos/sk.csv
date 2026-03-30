@@ -352,6 +352,7 @@ FUNCTION_SWITCHES_ARE_NOT_IN_SAFE_POSITION,,"Funkčné prepínače nie sú v bez
 FAILSAFE_IS_NOT_SET,,"Failsafe nie je nastavený"
 RTC_BATTERY_IS_LOW,,"Batéria RTC je vybitá"
 ALWAYS_ON,,"Vždy zapnuté"
+ALWAYS_OFF,,"Always OFF"
 YES,,"Áno"
 DIGITAL_RSSI,,"Digitálne RSSI"
 GYRO,,"Gyro"

@@ -353,6 +353,7 @@ FUNCTION_SWITCHES_ARE_NOT_IN_SAFE_POSITION,,"Funktionsschalter sind nicht in sic
 FAILSAFE_IS_NOT_SET,,"Failsafe ist nicht eingestellt"
 RTC_BATTERY_IS_LOW,," Uhr/Dat.-Batteriespannung niedrig"
 ALWAYS_ON,,"EIN"
+ALWAYS_OFF,,"Always OFF"
 YES,,"JA"
 DIGITAL_RSSI,,"RSSI digital"
 GYRO,,"Kreisel"

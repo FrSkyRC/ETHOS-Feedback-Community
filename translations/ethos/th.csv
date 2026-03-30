@@ -352,6 +352,7 @@ FUNCTION_SWITCHES_ARE_NOT_IN_SAFE_POSITION,,"Function Switches ไม่อย�
 FAILSAFE_IS_NOT_SET,,"ไม่ได้ตั้งค่า Failsafe ค่ะ"
 RTC_BATTERY_IS_LOW,,"แบตเตอรี่ RTC เหลือน้อยค่ะ"
 ALWAYS_ON,,"เปิดตลอดเวลา"
+ALWAYS_OFF,,"Always OFF"
 YES,,"Yes"
 DIGITAL_RSSI,,"Digital RSSI"
 GYRO,,"Gyro"
