@@ -293,7 +293,6 @@ VALUE1,,"Valeur 1",
 VALUE_X,,"Valeur (X)",
 CHECK_INTERVAL,,"Fréq. vérification",
 ACTIVE_CONDITION,,"Condition",
-ACTIVATION,,"Activation"
 MIN_DURATION,,"Durée mini",
 MAX_DURATION,,"Durée maxi",
 DURATION_LOW,,"Durée inactivité",
