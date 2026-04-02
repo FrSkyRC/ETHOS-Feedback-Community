@@ -54,6 +54,7 @@ VALUE1,,"値 1",,
 VALUE_X,,"値 (X)",,
 CHECK_INTERVAL,,"チェック間隔",,
 ACTIVE_CONDITION,,"アクティブ条件",,
+ACTIVATION,,"Activation"
 MIN_DURATION,,"最小動作持続時間",,
 MAX_DURATION,,"最大動作持続時間",,
 DURATION_LOW,,"非活性時間",,

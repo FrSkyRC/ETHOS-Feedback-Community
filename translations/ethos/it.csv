@@ -54,6 +54,7 @@ VALUE1,,"Valore 1",
 VALUE_X,,"Valore (X)",
 CHECK_INTERVAL,,"Controllo intervallo",
 ACTIVE_CONDITION,,"Attivazione",
+ACTIVATION,,"Activation"
 MIN_DURATION,,"Durata Min",
 MAX_DURATION,,"Durata Max",
 DURATION_LOW,,"Durata inattiva",
