@@ -698,6 +698,7 @@ AND,,"AND",
 OR,,"OR",
 XOR,,"XOR",
 SENSORS,,"Sensori",
+SETTINGS,,"Settings"
 RECEIVERS,,"Riceventi"
 SERVOS,,"Servi"
 FLIGHT_SAFETY,,"Flight-Safety"

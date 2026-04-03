@@ -712,6 +712,7 @@ AND,,"AND",
 OR,,"OR",
 XOR,,"XOR",
 SENSORS,,"Sensors",
+SETTINGS,,"Settings"
 RECEIVERS,,"Receivers"
 SERVOS,,"Servos"
 FLIGHT_SAFETY,,"Flight safety"
