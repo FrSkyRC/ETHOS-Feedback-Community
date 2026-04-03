@@ -713,6 +713,8 @@ OR,,"OR",,
 XOR,,"XOR",,
 SENSORS,,"センサー",,
 SETTINGS,,"Settings"
+COPY_SETTINGS,,"Copy settings"
+PASTE_SETTINGS,,"Paste settings"
 RECEIVERS,,"受信機",,
 SERVOS,,"サーボ",,
 FLIGHT_SAFETY,,"フライト安全",,

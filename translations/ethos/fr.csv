@@ -846,6 +846,8 @@ OR,,"OR",
 XOR,,"XOR",
 SENSORS,,"Capteurs",
 SETTINGS,,"Settings"
+COPY_SETTINGS,,"Copy settings"
+PASTE_SETTINGS,,"Paste settings"
 RECEIVERS,,"Récepteurs",
 SERVOS,,"Servos",
 FLIGHT_SAFETY,,"Sécurité Vol",

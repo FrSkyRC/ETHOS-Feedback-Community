@@ -699,6 +699,8 @@ OR,,"OR",
 XOR,,"XOR",
 SENSORS,,"Sensori",
 SETTINGS,,"Settings"
+COPY_SETTINGS,,"Copy settings"
+PASTE_SETTINGS,,"Paste settings"
 RECEIVERS,,"Riceventi"
 SERVOS,,"Servi"
 FLIGHT_SAFETY,,"Flight-Safety"
