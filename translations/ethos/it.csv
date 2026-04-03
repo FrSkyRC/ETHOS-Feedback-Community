@@ -246,7 +246,7 @@ PERCENT,,"Percentuale",
 DESTINATION,,"Destinazione",
 ENABLE,,"Abilita",
 NO_FUNCTION_YET_PRESS_ADD_TO_CREATE_ONE,,"Nessuna Funzione presente. Seleziona aggiungi per crearne una!",
-NO_TRAINER_YET_PRESS_ADD_TO_CREATE_ONE,,"No trainer yet. Please press the add button to create one!"
+NO_TRAINER_YET_PRESS_ADD_TO_CREATE_ONE,,"Nessun Trainer (A/M) presente. Seleziona aggiungi per crearne uno!"
 SPECIAL_FUNCTIONS,,"Funzioni Speciali",
 NEW_FUNCTION,,"Nuove Funzioni"
 SF,,"SF",
