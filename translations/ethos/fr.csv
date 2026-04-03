@@ -309,7 +309,7 @@ ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_LOGIC_SWITCH,,"Supprimer inter logique ?",
 NO_LOGIC_SWITCH_YET_PRESS_ADD_TO_CREATE_ONE,,"Aucun inter logique. Appuyer sur '+' pour en créer un !",
 ENABLE,,"ON",
 NO_FUNCTION_YET_PRESS_ADD_TO_CREATE_ONE,,"Aucune fonction. Appuyer sur '+' pour en créer une !",
-NO_TRAINER_YET_PRESS_ADD_TO_CREATE_ONE,,"No trainer yet. Please press the add button to create one!"
+NO_TRAINER_YET_PRESS_ADD_TO_CREATE_ONE,,"Aucun mode d'écolage. Appuyer sur '+' pour en créer un !"
 SF,,"SF",
 DISABLE,,"OFF",
 ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_SPECIAL_FUNCTION,,"Supprimer fonction ?",
@@ -561,7 +561,7 @@ KEYBOARD,,"Clavier",
 ENABLE_SLIDER,,"Activer curseur",
 DISABLE_SLIDER,,"Désactiver curseur",
 ALWAYS_ON,,"Toujours",
-ALWAYS_OFF,,"Always OFF"
+ALWAYS_OFF,,"Jamais"
 YES,,"Oui",
 DIGITAL_RSSI,,"RSSI numérique",
 GYRO,,"Gyro",
@@ -846,9 +846,9 @@ AND,,"AND",
 OR,,"OR",
 XOR,,"XOR",
 SENSORS,,"Capteurs",
-SETTINGS,,"Settings"
-COPY_SETTINGS,,"Copy settings"
-PASTE_SETTINGS,,"Paste settings"
+SETTINGS,,"Paramètres"
+COPY_SETTINGS,,"Copier paramètres"
+PASTE_SETTINGS,,"Coller paramètres"
 RECEIVERS,,"Récepteurs",
 SERVOS,,"Servos",
 FLIGHT_SAFETY,,"Sécurité Vol",
