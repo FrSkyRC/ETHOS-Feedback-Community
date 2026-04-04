@@ -248,6 +248,7 @@ CONFIRM_DELETE_SENSORS,,"Supprimer capteurs ?",
 ON,,"ON",
 OFF,,"OFF",
 DISCOVER_NEW_SENSORS,,"Découverte capteurs",
+STOP_DISCOVER,,"Stop discovery"
 DELETE_ALL,,"Tout effacer",
 INDIVIDUAL_RSSI_ALERT_PER_BAND,,"Alertes RSSI par bande",
 CREATE_DIY_SENSOR,,"Capteur perso",
@@ -560,8 +561,8 @@ DISPLAY,,"Affichage",
 KEYBOARD,,"Clavier",
 ENABLE_SLIDER,,"Activer curseur",
 DISABLE_SLIDER,,"Désactiver curseur",
-ALWAYS_ON,,"Toujours",
-ALWAYS_OFF,,"Aucune"
+ALWAYS_ON,,"Toujours ON",
+ALWAYS_OFF,,"Toujours OFF"
 YES,,"Oui",
 DIGITAL_RSSI,,"RSSI numérique",
 GYRO,,"Gyro",

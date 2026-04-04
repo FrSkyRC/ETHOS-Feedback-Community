@@ -228,6 +228,7 @@ CONFIRM_DELETE_SENSORS,,"この操作により全てのセンサーが削除さ�
 ON,,"オン",,
 OFF,,"オフ",,
 DISCOVER_NEW_SENSORS,,"新規センサーを発見",,
+STOP_DISCOVER,,"Stop discovery"
 DELETE_ALL,,"全削除",,
 INDIVIDUAL_RSSI_ALERT_PER_BAND,,"バンド毎の個別 RSSI 警告",,
 CREATE_DIY_SENSOR,,"DIYセンサーを追加",,

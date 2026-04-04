@@ -228,6 +228,7 @@ CONFIRM_DELETE_SENSORS,,"Wszystkie wykryte obecnie czujniki zostaną skasowane.\
 ON,,"WŁ"
 OFF,,"WYŁ"
 DISCOVER_NEW_SENSORS,,"Wykryj podłączone czujniki"
+STOP_DISCOVER,,"Stop discovery"
 DELETE_ALL,,"Skasuj wszystkie"
 INDIVIDUAL_RSSI_ALERT_PER_BAND,,"Individual RSSI alert per band"
 CREATE_DIY_SENSOR,,"Utwórz własny czujnik (DIY)"
