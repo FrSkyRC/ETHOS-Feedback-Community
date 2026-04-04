@@ -561,7 +561,7 @@ KEYBOARD,,"Clavier",
 ENABLE_SLIDER,,"Activer curseur",
 DISABLE_SLIDER,,"Désactiver curseur",
 ALWAYS_ON,,"Toujours",
-ALWAYS_OFF,,"Jamais"
+ALWAYS_OFF,,"Aucune"
 YES,,"Oui",
 DIGITAL_RSSI,,"RSSI numérique",
 GYRO,,"Gyro",
