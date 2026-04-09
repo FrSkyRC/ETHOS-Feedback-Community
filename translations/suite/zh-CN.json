@@ -572,14 +572,14 @@
         "MacroRunningToolTip": "在宏文件运行期间, 触屏和控制面板将被禁用",
         "MacroDebugging": "宏文件正在调试",
         "SyncingFS": "正在同步文件 ...",
-        "AddANewSensor": "Add a new sensor",
-        "RemoveAllSensors": "Remove all sensors",
-        "Module": "Module",
-        "InternalModule": "Internal module",
-        "ExternalModule": "External module",
-        "DataRate": "Data rate",
-        "RemoveThisSensor": "Remove this sensor",
-        "OpenTelemetryPanel": "Open telemetry panel",
-        "Screenshot": "Screenshot"
+        "AddANewSensor": "添加一个新传感器",
+        "RemoveAllSensors": "移除所有传感器",
+        "Module": "模块",
+        "InternalModule": "内置模块",
+        "ExternalModule": "外置模块",
+        "DataRate": "数据速率",
+        "RemoveThisSensor": "移除该传感器",
+        "OpenTelemetryPanel": "打开遥测面板",
+        "Screenshot": "截图"
     }
 }
