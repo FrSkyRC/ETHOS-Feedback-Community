@@ -566,14 +566,14 @@
         "MacroRunningToolTip": "La pantalla táctil y el panel de control estarán desactivados mientras se ejecuta la macro",
         "MacroDebugging": "Depurando macro",
         "SyncingFS": "Sincronizando el sistema de archivos ...",
-        "AddANewSensor": "Add a new sensor",
-        "RemoveAllSensors": "Remove all sensors",
-        "Module": "Module",
-        "InternalModule": "Internal module",
-        "ExternalModule": "External module",
-        "DataRate": "Data rate",
-        "RemoveThisSensor": "Remove this sensor",
-        "OpenTelemetryPanel": "Open telemetry panel",
-        "Screenshot": "Screenshot"
+        "AddANewSensor": "Añadir un nuevo sensor",
+        "RemoveAllSensors": "Eliminar todos los sensores",
+        "Module": "Módulo",
+        "InternalModule": "Módulo Interno",
+        "ExternalModule": "Módulo Externo",
+        "DataRate": "Régimen de datos",
+        "RemoveThisSensor": "Eliminar este sensor",
+        "OpenTelemetryPanel": "Abrir panel de telemetría",
+        "Screenshot": "Captura de pantalla"
     }
 }
