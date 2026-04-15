@@ -1,0 +1,6 @@
+{
+  "ethos.firmware": "X20S_FCC",
+  "ethos.root": "simulator/${config:ethos.firmware}",
+  "ethos.version": "nightly26",
+  "ethosDeployTemplate.deploy.language": "en"
+}

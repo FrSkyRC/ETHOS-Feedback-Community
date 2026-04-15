@@ -1,0 +1,237 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Deploy [SIM Files]",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/.vscode/scripts/deploy.py",
+        "--lang",
+        "${config:ethosDeployTemplate.deploy.language}",
+        "--step",
+        "i18n",
+        "--step",
+        "sensors"
+      ],
+      "options": {
+        "env": {
+          "ETHOS_DEPLOY_LANG": "${config:ethosDeployTemplate.deploy.language}",
+          "ETHOS_FIRMWARE": "${config:ethos.firmware}"
+        }
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Set Deployment Language",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/.vscode/set-language.py",
+        "${input:deployLanguage}"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Deploy Radio",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/.vscode/scripts/deploy.py",
+        "--radio",
+        "--lang",
+        "${config:ethosDeployTemplate.deploy.language}",
+        "--step",
+        "i18n"
+      ],
+      "options": {
+        "env": {
+          "ETHOS_DEPLOY_LANG": "${config:ethosDeployTemplate.deploy.language}"
+        }
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Deploy Radio [Fast]",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/.vscode/scripts/deploy.py",
+        "--fileext",
+        "fast",
+        "--radio",
+        "--lang",
+        "${config:ethosDeployTemplate.deploy.language}",
+        "--step",
+        "i18n"
+      ],
+      "options": {
+        "env": {
+          "ETHOS_DEPLOY_LANG": "${config:ethosDeployTemplate.deploy.language}"
+        }
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Deploy Radio + Serial Debug",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/.vscode/scripts/deploy.py",
+        "--radio",
+        "--radio-debug",
+        "--lang",
+        "${config:ethosDeployTemplate.deploy.language}",
+        "--step",
+        "i18n"
+      ],
+      "options": {
+        "env": {
+          "ETHOS_DEPLOY_LANG": "${config:ethosDeployTemplate.deploy.language}"
+        }
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Deploy Radio + Serial Debug [Fast]",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/.vscode/scripts/deploy.py",
+        "--fileext",
+        "fast",
+        "--radio",
+        "--radio-debug",
+        "--lang",
+        "${config:ethosDeployTemplate.deploy.language}",
+        "--step",
+        "i18n"
+      ],
+      "options": {
+        "env": {
+          "ETHOS_DEPLOY_LANG": "${config:ethosDeployTemplate.deploy.language}"
+        }
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Radio: Serial Debug",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/.vscode/scripts/deploy.py",
+        "--radio",
+        "--connect-only",
+        "--lang",
+        "${config:ethosDeployTemplate.deploy.language}"
+      ],
+      "options": {
+        "env": {
+          "ETHOS_DEPLOY_LANG": "${config:ethosDeployTemplate.deploy.language}"
+        }
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Clear locks",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/.vscode/scripts/deploy.py",
+        "--clear-lock"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "ethos.Start",
+      "type": "process",
+      "command": "${command:ethos.start}",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "ethos.SetFirmware",
+      "type": "process",
+      "command": "${command:ethos.setFirmware}",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "ethos.SetRoot",
+      "type": "process",
+      "command": "${command:ethos.setRoot}",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "ethos.OpenTelemetry",
+      "type": "process",
+      "command": "${command:ethos.openTelemetry}",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "deployLanguage",
+      "type": "pickString",
+      "description": "Select deployment language",
+      "options": [
+        "en",
+        "de"
+      ],
+      "default": "en"
+    }
+  ]
+}

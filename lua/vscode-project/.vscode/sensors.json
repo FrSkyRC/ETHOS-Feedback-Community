@@ -1,0 +1,15 @@
+[
+  {
+    "name": "RSSI",
+    "frames": [
+      {
+        "name": "RSSI",
+        "value": 72,
+        "interval": 200
+      }
+    ],
+    "module": 0,
+    "band": 0,
+    "rx": 0
+  }
+]

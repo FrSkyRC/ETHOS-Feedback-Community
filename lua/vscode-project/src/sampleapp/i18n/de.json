@@ -1,0 +1,6 @@
+{
+  "app": {
+    "title": "VS Code Deploy Vorlage",
+    "message": "Benenne sampleapp um und aktualisiere .vscode/deploy.json, bevor du das in einem echten Projekt verwendest."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "tgt_name": "sampleapp",
+  "serial_vid": "0483",
+  "serial_pid": "5750",
+  "serial_baud": 115200,
+  "serial_retries": 10,
+  "serial_retry_delay": 1.0,
+  "serial_name_hint": "FrSky",
+  "use_ethossuite": false
+}
