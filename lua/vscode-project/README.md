@@ -24,6 +24,16 @@ Start with [docs/setup.md](docs/setup.md).
    py -m pip install -r requirements.txt
    ```
 
+   Manual package list:
+
+   ```powershell
+   py -m pip install tqdm
+   py -m pip install pyserial
+   py -m pip install pywin32
+   py -m pip install hid
+   py -m pip install debugpy
+   ```
+
 4. Edit `.vscode/deploy.json` and set `tgt_name` to your real script folder name.
 5. Rename `src/sampleapp` to match the same `tgt_name`.
 6. Run `Tasks: Run Task` and choose `Deploy [SIM Files]`.

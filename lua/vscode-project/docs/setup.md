@@ -31,6 +31,16 @@ py -m pip install --upgrade pip
 py -m pip install -r requirements.txt
 ```
 
+Manual package install example:
+
+```powershell
+py -m pip install tqdm
+py -m pip install pyserial
+py -m pip install pywin32
+py -m pip install hid
+py -m pip install debugpy
+```
+
 Virtual environment example:
 
 ```powershell
@@ -48,6 +58,8 @@ Packages used by the deploy tooling:
 - `pywin32`: Windows drive detection helpers used by `connect.py`
 - `debugpy`: keeps VS Code launch/debug integration happy
 
+Use `pyserial`, not `serial`, for the serial package install.
+
 ## Windows HID Setup
 
 If `hid` installs but radio control still fails, copy the correct `hidapi.dll` for your machine into `C:\Windows\System32`.
@@ -55,6 +67,11 @@ If `hid` installs but radio control still fails, copy the correct `hidapi.dll` f
 Reference package:
 
 - https://github.com/libusb/hidapi/releases/tag/hidapi-0.15.0
+
+Windows note:
+
+- install the package above
+- copy the DLLs for your architecture into `C:\Windows\System32`
 
 If you prefer to use Ethos Suite instead of direct HID control, add an `ethossuite_bin` entry to `.vscode/deploy.json`.
 
