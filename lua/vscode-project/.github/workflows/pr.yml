@@ -1,0 +1,37 @@
+name: PR Build
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  package:
+    name: Package PR ZIP (${{ matrix.lang }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        lang: [en]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build ZIP artifact
+        run: |
+          python .github/scripts/build-artifact.py \
+            --lang "${{ matrix.lang }}" \
+            --version-suffix "pr-${{ github.event.pull_request.number }}" \
+            --artifact-name "${{ github.event.repository.name }}"
+
+      - name: Upload PR artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ github.event.repository.name }}-pr-${{ github.event.pull_request.number }}-${{ matrix.lang }}
+          path: build/artifacts/*.zip
+          if-no-files-found: error

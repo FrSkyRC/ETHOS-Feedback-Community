@@ -1,6 +1,0 @@
-{
-  "app": {
-    "title": "VS Code Deploy Template",
-    "message": "Rename sampleapp and update .vscode/deploy.json before using this in a real project."
-  }
-}

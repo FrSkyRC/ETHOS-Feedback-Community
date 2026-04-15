@@ -80,16 +80,6 @@
       "preLaunchTask": "Radio: Serial Debug"
     },
     {
-      "name": "Set Deployment Language",
-      "type": "debugpy",
-      "request": "launch",
-      "program": "${workspaceFolder}/.vscode/set-language.py",
-      "args": [
-        "${input:deployLanguage}"
-      ],
-      "console": "integratedTerminal"
-    },
-    {
       "name": "Clear locks",
       "type": "debugpy",
       "request": "launch",
@@ -97,18 +87,6 @@
       "console": "integratedTerminal",
       "justMyCode": true,
       "preLaunchTask": "Clear locks"
-    }
-  ],
-  "inputs": [
-    {
-      "id": "deployLanguage",
-      "type": "pickString",
-      "description": "Select deployment language",
-      "options": [
-        "en",
-        "de"
-      ],
-      "default": "en"
     }
   ]
 }

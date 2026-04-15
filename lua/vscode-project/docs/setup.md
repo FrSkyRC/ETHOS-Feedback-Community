@@ -6,6 +6,8 @@
 - `.vscode/launch.json`: launch profiles that wrap the deploy tasks
 - `.vscode/deploy.json`: project-specific deploy settings
 - `.vscode/scripts/`: Python helper scripts
+- `.github/workflows/`: starter GitHub Actions workflows
+- `.github/scripts/build-artifact.py`: CI packaging helper
 - `src/sampleapp/`: starter source tree that you can rename
 - `requirements.txt`: pip packages used by the deploy helpers
 
@@ -71,8 +73,7 @@ Before using this for a real project:
 1. Rename `src/sampleapp` to your project folder name.
 2. Update `.vscode/deploy.json` so `tgt_name` matches that folder exactly.
 3. Replace the sample Lua files with your real project files.
-4. Update `.vscode/settings.json` if you want a different default firmware or language.
-5. Adjust the task step list if you do not want `i18n` or `sensors`.
+4. Update `.vscode/settings.json` if you want a different default firmware.
 
 ## Folder Conventions
 
@@ -84,17 +85,12 @@ vscode-project/
   src/
     sampleapp/
       main.lua
-      i18n/
-        en.json
-        de.json
   simulator/
 ```
 
 Optional folders supported by the helper scripts:
 
-- `bin/menu/manifest.source.json`
-- `bin/menu/generate.py`
-- `bin/sound-generator/soundpack/<lang>/...`
+- `src/<tgt>/i18n/<lang>.json`
 - `.vscode/sensors.json`
 
 If those optional folders do not exist, the helper scripts skip them cleanly.
@@ -105,7 +101,6 @@ Simulator file deploy:
 
 1. Run `Deploy [SIM Files]`.
 2. Check `simulator/<firmware>/scripts/<tgt_name>/`.
-3. Confirm `simulator/sensors.json` exists after the first simulator deploy.
 
 Simulator launch through VS Code:
 
@@ -122,6 +117,33 @@ Serial-only debug:
 
 1. Run `Radio: Serial Debug`.
 2. Stop it with `Ctrl+C`.
+
+## GitHub Workflow Starter Files
+
+The template includes:
+
+- `.github/workflows/pr.yml`
+- `.github/workflows/push.yml`
+- `.github/workflows/release.yml`
+
+These are intentionally generic:
+
+- `pr.yml` builds ZIP artifacts for pull requests
+- `push.yml` builds ZIP artifacts for `main` and `master`
+- `release.yml` creates a GitHub release for tags matching `release/*`
+
+All three call `.github/scripts/build-artifact.py`, which:
+
+- reads `.vscode/deploy.json`
+- stages `src/<tgt_name>` into `build/<lang>/scripts/<tgt_name>`
+- creates a ZIP in `build/artifacts/`
+
+You will usually want to customize:
+
+- the language matrix in each workflow
+- the release tag pattern
+- the artifact naming convention
+- any optional `--step` arguments if your project uses i18n or simulator sensors
 
 ## Default Config Files
 
@@ -146,8 +168,7 @@ Serial-only debug:
 {
   "ethos.firmware": "X20S_FCC",
   "ethos.root": "simulator/${config:ethos.firmware}",
-  "ethos.version": "nightly26",
-  "ethosDeployTemplate.deploy.language": "en"
+  "ethos.version": "nightly26"
 }
 ```
 
@@ -157,22 +178,20 @@ The deploy helpers support these step names:
 
 - `i18n`: resolves `@i18n(...)@` tags using `src/<tgt>/i18n/<lang>.json`
 - `sensors`: copies `.vscode/sensors.json` to the simulator root
-- `menu`: runs `bin/menu/generate.py` if the menu source exists
-- `soundpack`: copies `bin/sound-generator/soundpack/<lang>/...` into the deploy output
 
 Add them in `tasks.json` like this:
 
 ```json
 "args": [
   "${workspaceFolder}/.vscode/scripts/deploy.py",
-  "--lang",
-  "${config:ethosDeployTemplate.deploy.language}",
   "--step",
   "i18n",
   "--step",
-  "soundpack"
+  "sensors"
 ]
 ```
+
+The foundation template does not enable any of these by default.
 
 ## Troubleshooting
 

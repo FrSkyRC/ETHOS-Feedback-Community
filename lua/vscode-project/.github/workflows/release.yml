@@ -1,0 +1,50 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "release/*"
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    name: Build Release ZIP (${{ matrix.lang }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        lang: [en]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build ZIP artifact
+        run: |
+          VERSION="${GITHUB_REF_NAME#release/}"
+          python .github/scripts/build-artifact.py \
+            --lang "${{ matrix.lang }}" \
+            --version-suffix "${VERSION}" \
+            --artifact-name "${{ github.event.repository.name }}"
+
+      - name: Upload release artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ github.event.repository.name }}-${{ github.ref_name }}-${{ matrix.lang }}
+          path: build/artifacts/*.zip
+          if-no-files-found: error
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: ${{ github.event.repository.name }} ${{ github.ref_name }}
+          files: build/artifacts/*.zip
+          generate_release_notes: true

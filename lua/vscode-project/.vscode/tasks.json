@@ -6,17 +6,10 @@
       "type": "process",
       "command": "python",
       "args": [
-        "${workspaceFolder}/.vscode/scripts/deploy.py",
-        "--lang",
-        "${config:ethosDeployTemplate.deploy.language}",
-        "--step",
-        "i18n",
-        "--step",
-        "sensors"
+        "${workspaceFolder}/.vscode/scripts/deploy.py"
       ],
       "options": {
         "env": {
-          "ETHOS_DEPLOY_LANG": "${config:ethosDeployTemplate.deploy.language}",
           "ETHOS_FIRMWARE": "${config:ethos.firmware}"
         }
       },
@@ -28,32 +21,13 @@
       }
     },
     {
-      "label": "Set Deployment Language",
-      "type": "process",
-      "command": "python",
-      "args": [
-        "${workspaceFolder}/.vscode/set-language.py",
-        "${input:deployLanguage}"
-      ],
-      "problemMatcher": []
-    },
-    {
       "label": "Deploy Radio",
       "type": "process",
       "command": "python",
       "args": [
         "${workspaceFolder}/.vscode/scripts/deploy.py",
-        "--radio",
-        "--lang",
-        "${config:ethosDeployTemplate.deploy.language}",
-        "--step",
-        "i18n"
+        "--radio"
       ],
-      "options": {
-        "env": {
-          "ETHOS_DEPLOY_LANG": "${config:ethosDeployTemplate.deploy.language}"
-        }
-      },
       "problemMatcher": [],
       "presentation": {
         "reveal": "always",
@@ -69,17 +43,8 @@
         "${workspaceFolder}/.vscode/scripts/deploy.py",
         "--fileext",
         "fast",
-        "--radio",
-        "--lang",
-        "${config:ethosDeployTemplate.deploy.language}",
-        "--step",
-        "i18n"
+        "--radio"
       ],
-      "options": {
-        "env": {
-          "ETHOS_DEPLOY_LANG": "${config:ethosDeployTemplate.deploy.language}"
-        }
-      },
       "problemMatcher": [],
       "presentation": {
         "reveal": "always",
@@ -94,17 +59,8 @@
       "args": [
         "${workspaceFolder}/.vscode/scripts/deploy.py",
         "--radio",
-        "--radio-debug",
-        "--lang",
-        "${config:ethosDeployTemplate.deploy.language}",
-        "--step",
-        "i18n"
+        "--radio-debug"
       ],
-      "options": {
-        "env": {
-          "ETHOS_DEPLOY_LANG": "${config:ethosDeployTemplate.deploy.language}"
-        }
-      },
       "problemMatcher": [],
       "presentation": {
         "reveal": "always",
@@ -121,17 +77,8 @@
         "--fileext",
         "fast",
         "--radio",
-        "--radio-debug",
-        "--lang",
-        "${config:ethosDeployTemplate.deploy.language}",
-        "--step",
-        "i18n"
+        "--radio-debug"
       ],
-      "options": {
-        "env": {
-          "ETHOS_DEPLOY_LANG": "${config:ethosDeployTemplate.deploy.language}"
-        }
-      },
       "problemMatcher": [],
       "presentation": {
         "reveal": "always",
@@ -146,15 +93,8 @@
       "args": [
         "${workspaceFolder}/.vscode/scripts/deploy.py",
         "--radio",
-        "--connect-only",
-        "--lang",
-        "${config:ethosDeployTemplate.deploy.language}"
+        "--connect-only"
       ],
-      "options": {
-        "env": {
-          "ETHOS_DEPLOY_LANG": "${config:ethosDeployTemplate.deploy.language}"
-        }
-      },
       "problemMatcher": [],
       "presentation": {
         "reveal": "always",
@@ -220,18 +160,6 @@
         "panel": "shared",
         "clear": true
       }
-    }
-  ],
-  "inputs": [
-    {
-      "id": "deployLanguage",
-      "type": "pickString",
-      "description": "Select deployment language",
-      "options": [
-        "en",
-        "de"
-      ],
-      "default": "en"
     }
   ]
 }

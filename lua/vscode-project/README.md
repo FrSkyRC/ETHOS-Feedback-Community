@@ -7,7 +7,7 @@ It gives you:
 - a ready-made `.vscode/` deploy setup
 - Python helper scripts for simulator and radio deployment
 - a sample `src/<target>` layout
-- example i18n files
+- starter `.github/workflows/` files for PR, push, and release packaging
 - setup notes for Python, pip, VS Code extensions, and Windows HID support
 
 Start with [docs/setup.md](docs/setup.md).
@@ -34,9 +34,18 @@ The deploy script will copy:
 
 If the Ethos VS Code extension is installed, you can also use `Deploy & Launch [SIM]`.
 
+## GitHub Actions
+
+The template now also includes starter workflows under `.github/workflows/`:
+
+- `pr.yml`
+- `push.yml`
+- `release.yml`
+
+They use `.github/scripts/build-artifact.py` to stage `src/<tgt_name>` and produce ZIP artifacts. No extra deploy steps run by default, which keeps the foundation plain and reusable.
+
 ## Template Notes
 
-- `i18n` is enabled in the default deploy tasks.
-- `sensors.json` is copied into the simulator root on simulator deploys.
-- `menu` and `soundpack` helper scripts are included, but they only run when the matching folders exist or when you add the relevant deploy steps.
+- Local deploy is plain file copy by default.
+- Optional `i18n` and `sensors` helpers are included for projects that need them.
 - Radio deploy and serial debug support are included for Windows-based setups.
