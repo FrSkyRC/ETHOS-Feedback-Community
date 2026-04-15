@@ -15,11 +15,12 @@
 
 Install these first:
 
+- `Ethos` by `bsongis` for simulator commands and telemetry windows
 - `Python` by Microsoft
 - `Python Debugger` by Microsoft
-- the `Ethos` extension you already use for `ethos.start`, `ethos.setFirmware`, `ethos.setRoot`, and `ethos.openTelemetry`
+- This is the marketplace entry: `https://marketplace.visualstudio.com/items?itemName=bsongis.ethos`
 
-The bundled `.vscode/extensions.json` recommends the Microsoft Python extensions automatically.
+The bundled `.vscode/extensions.json` recommends both the Ethos extension and the Microsoft Python extensions automatically.
 
 ## Python Setup
 
@@ -104,7 +105,7 @@ Simulator file deploy:
 
 Simulator launch through VS Code:
 
-1. Make sure the Ethos extension is installed and working.
+1. Make sure the `bsongis.ethos` extension is installed and working.
 2. Run `Deploy & Launch [SIM]`.
 
 Radio deploy:
@@ -213,7 +214,7 @@ The foundation template does not enable any of these by default.
 
 `ethos.start` command not found
 
-- Install or re-enable the Ethos VS Code extension
+- Install or re-enable the `bsongis.ethos` VS Code extension
 
 `Python was not found`
 

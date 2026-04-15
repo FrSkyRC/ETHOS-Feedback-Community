@@ -16,6 +16,7 @@ Start with [docs/setup.md](docs/setup.md).
 
 1. Open this folder in VS Code.
 2. Install the recommended extensions from `.vscode/extensions.json`.
+   Make sure this includes the Ethos simulator extension: `bsongis.ethos`.
 3. Install Python packages:
 
    ```powershell
