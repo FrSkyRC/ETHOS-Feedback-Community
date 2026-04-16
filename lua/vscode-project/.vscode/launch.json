@@ -1,0 +1,92 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Deploy [SIM Files]",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/.vscode/scripts/dummy.py",
+      "console": "integratedTerminal",
+      "subProcess": false,
+      "justMyCode": true,
+      "stopOnEntry": false,
+      "preLaunchTask": "Deploy [SIM Files]"
+    },
+    {
+      "name": "Deploy & Launch [SIM]",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/.vscode/scripts/dummy.py",
+      "console": "integratedTerminal",
+      "subProcess": false,
+      "justMyCode": true,
+      "stopOnEntry": false,
+      "preLaunchTask": "Deploy [SIM Files]",
+      "postDebugTask": "ethos.Start"
+    },
+    {
+      "name": "Deploy Radio",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/.vscode/scripts/dummy.py",
+      "console": "integratedTerminal",
+      "subProcess": false,
+      "justMyCode": true,
+      "stopOnEntry": false,
+      "preLaunchTask": "Deploy Radio"
+    },
+    {
+      "name": "Deploy Radio [Fast]",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/.vscode/scripts/dummy.py",
+      "console": "integratedTerminal",
+      "subProcess": false,
+      "justMyCode": true,
+      "stopOnEntry": false,
+      "preLaunchTask": "Deploy Radio [Fast]"
+    },
+    {
+      "name": "Deploy Radio + Serial Debug",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/.vscode/scripts/dummy.py",
+      "console": "integratedTerminal",
+      "subProcess": false,
+      "justMyCode": true,
+      "stopOnEntry": false,
+      "preLaunchTask": "Deploy Radio + Serial Debug"
+    },
+    {
+      "name": "Deploy Radio + Serial Debug [Fast]",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/.vscode/scripts/dummy.py",
+      "console": "integratedTerminal",
+      "subProcess": false,
+      "justMyCode": true,
+      "stopOnEntry": false,
+      "preLaunchTask": "Deploy Radio + Serial Debug [Fast]"
+    },
+    {
+      "name": "Radio: Serial Debug",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/.vscode/scripts/dummy.py",
+      "console": "integratedTerminal",
+      "subProcess": false,
+      "justMyCode": true,
+      "stopOnEntry": false,
+      "preLaunchTask": "Radio: Serial Debug"
+    },
+    {
+      "name": "Clear locks",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/.vscode/scripts/dummy.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "preLaunchTask": "Clear locks"
+    }
+  ]
+}

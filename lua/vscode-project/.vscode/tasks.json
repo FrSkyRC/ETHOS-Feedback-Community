@@ -1,0 +1,165 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Deploy [SIM Files]",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/.vscode/scripts/deploy.py"
+      ],
+      "options": {
+        "env": {
+          "ETHOS_FIRMWARE": "${config:ethos.firmware}"
+        }
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Deploy Radio",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/.vscode/scripts/deploy.py",
+        "--radio"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Deploy Radio [Fast]",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/.vscode/scripts/deploy.py",
+        "--fileext",
+        "fast",
+        "--radio"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Deploy Radio + Serial Debug",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/.vscode/scripts/deploy.py",
+        "--radio",
+        "--radio-debug"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Deploy Radio + Serial Debug [Fast]",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/.vscode/scripts/deploy.py",
+        "--fileext",
+        "fast",
+        "--radio",
+        "--radio-debug"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Radio: Serial Debug",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/.vscode/scripts/deploy.py",
+        "--radio",
+        "--connect-only"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Clear locks",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/.vscode/scripts/deploy.py",
+        "--clear-lock"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "ethos.Start",
+      "type": "process",
+      "command": "${command:ethos.start}",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "ethos.SetFirmware",
+      "type": "process",
+      "command": "${command:ethos.setFirmware}",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "ethos.SetRoot",
+      "type": "process",
+      "command": "${command:ethos.setRoot}",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "ethos.OpenTelemetry",
+      "type": "process",
+      "command": "${command:ethos.openTelemetry}",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    }
+  ]
+}

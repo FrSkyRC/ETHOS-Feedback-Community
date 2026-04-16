@@ -1,0 +1,40 @@
+name: Push Build
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  package:
+    name: Package Push ZIP (${{ matrix.lang }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        lang: [en]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build ZIP artifact
+        run: |
+          SHORT_SHA="${GITHUB_SHA::7}"
+          python .github/scripts/build-artifact.py \
+            --lang "${{ matrix.lang }}" \
+            --version-suffix "commit-${SHORT_SHA}" \
+            --artifact-name "${{ github.event.repository.name }}"
+
+      - name: Upload push artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ github.event.repository.name }}-${{ matrix.lang }}-${{ github.sha }}
+          path: build/artifacts/*.zip
+          if-no-files-found: error
