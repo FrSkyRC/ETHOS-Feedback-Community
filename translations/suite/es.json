@@ -387,7 +387,9 @@
         "OpenWebpage": "Abrir página web",
         "OpenFAQ": "Abrir FAQ",
         "OpenManual": "Abrir manual",
-        "LoadingManuals": "Cargando manuales ..."
+        "LoadingManuals": "Cargando manuales ...",
+        "LuaPackage": "Ethos lua package (ZIP manifest)",
+        "LuaPackageDescription": "A manual to describe the manifest file that should be included in the ETHOS Lua package."
     },
     "BootloaderGuide": {
         "BootloaderGuideTitle": "Es posible que este firmware no permita pasar al modo bootloader automaticamente. Por favor, pase manualmente a modo bootloader, siguiendo estos pasos:",

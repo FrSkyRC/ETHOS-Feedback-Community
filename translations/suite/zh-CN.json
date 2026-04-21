@@ -394,7 +394,9 @@
         "OpenWebpage": "打开网页",
         "OpenFAQ": "打开 FAQ",
         "OpenManual": "打开说明书",
-        "LoadingManuals": "正在载入说明书 ..."
+        "LoadingManuals": "正在载入说明书 ...",
+        "LuaPackage": "Ethos lua package (ZIP manifest)",
+        "LuaPackageDescription": "A manual to describe the manifest file that should be included in the ETHOS Lua package."
     },
     "BootloaderGuide": {
         "BootloaderGuideTitle": "你的固件可能不支持自动切换, 请参照以下步骤手动切换至 Bootloader",

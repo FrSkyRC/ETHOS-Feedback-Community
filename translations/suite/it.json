@@ -393,7 +393,9 @@
         "OpenWebpage": "Apri webpage",
         "OpenFAQ": "Apri FAQ",
         "OpenManual": "Apri manuale",
-        "LoadingManuals": "Carico manuali ..."
+        "LoadingManuals": "Carico manuali ...",
+        "LuaPackage": "Ethos lua package (ZIP manifest)",
+        "LuaPackageDescription": "A manual to describe the manifest file that should be included in the ETHOS Lua package."
     },
     "BootloaderGuide": {
         "BootloaderGuideTitle": "Il tuo firmware potrebbe non supportare l'autoswitching. Siete pregati di seguire le istruzioni per la procedura manuale del bootloader",

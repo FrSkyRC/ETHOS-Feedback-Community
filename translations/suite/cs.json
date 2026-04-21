@@ -393,7 +393,9 @@
         "OpenWebpage": "Otevřít v prohlížeči",
         "OpenFAQ": "Otevřít FAQ",
         "OpenManual": "Otevřít manuál",
-        "LoadingManuals": "Načítám manuály ..."
+        "LoadingManuals": "Načítám manuály ...",
+        "LuaPackage": "Ethos lua package (ZIP manifest)",
+        "LuaPackageDescription": "A manual to describe the manifest file that should be included in the ETHOS Lua package."
     },
     "BootloaderGuide": {
         "BootloaderGuideTitle": "Váš firmware možná nepodporuje automatické přepínání. Přepněte na bootloader ručně podle následujících kroků",

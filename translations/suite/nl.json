@@ -394,7 +394,9 @@
         "OpenWebpage": "Open webpage",
         "OpenFAQ": "Open FAQ",
         "OpenManual": "Open manual",
-        "LoadingManuals": "Loading manuals ..."
+        "LoadingManuals": "Loading manuals ...",
+        "LuaPackage": "Ethos lua package (ZIP manifest)",
+        "LuaPackageDescription": "A manual to describe the manifest file that should be included in the ETHOS Lua package."
     },
     "BootloaderGuide": {
         "BootloaderGuideTitle": "Your firmware may not support auto switching. Please switch to bootloader manually by following the steps",

@@ -395,7 +395,9 @@
         "OpenWebpage": "Abrir página da web",
         "OpenFAQ": "Abrir FAQ",
         "OpenManual": "Open manual",
-        "LoadingManuals": "Loading manuals ..."
+        "LoadingManuals": "Loading manuals ...",
+        "LuaPackage": "Ethos lua package (ZIP manifest)",
+        "LuaPackageDescription": "A manual to describe the manifest file that should be included in the ETHOS Lua package."
     },
     "BootloaderGuide": {
         "BootloaderGuideTitle": "Seu firmware pode não suportar a troca automática. Por favor, mude para o bootloader manualmente seguindo as etapas",

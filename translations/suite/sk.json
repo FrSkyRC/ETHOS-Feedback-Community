@@ -394,7 +394,9 @@
         "OpenWebpage": "Otvoriť webstránku",
         "OpenFAQ": "Otvoriť FAQ",
         "OpenManual": "Otvoriť manuál",
-        "LoadingManuals": "Nahrávanie manuálov ..."
+        "LoadingManuals": "Nahrávanie manuálov ...",
+        "LuaPackage": "Ethos lua package (ZIP manifest)",
+        "LuaPackageDescription": "A manual to describe the manifest file that should be included in the ETHOS Lua package."
     },
     "BootloaderGuide": {
         "BootloaderGuideTitle": "Váš firmvér nemusí podporovať automatické prepínanie. Prepnite na bootloader manuálne podľa nasledujúcich krokov",

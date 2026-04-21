@@ -394,7 +394,9 @@
         "OpenWebpage": "Webseite öffnen",
         "OpenFAQ": "FAQ öffnen",
         "OpenManual": "Handbuch öffnen",
-        "LoadingManuals": "Handbücher laden..."
+        "LoadingManuals": "Handbücher laden...",
+        "LuaPackage": "Ethos lua package (ZIP manifest)",
+        "LuaPackageDescription": "A manual to describe the manifest file that should be included in the ETHOS Lua package."
     },
     "BootloaderGuide": {
         "BootloaderGuideTitle": "Ihre Firmware unterstützt möglicherweise keine automatische Umschaltung. Bitte wechseln Sie manuell zum Bootloader, indem Sie die folgenden Schritte ausführen.",

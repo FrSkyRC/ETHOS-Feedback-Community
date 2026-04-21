@@ -395,7 +395,9 @@
         "OpenWebpage": "Åpne nettside",
         "OpenFAQ": "Åpne FAQ",
         "OpenManual": "Åpne bruksanvisning",
-        "LoadingManuals": "Laster inn bruksanvisninger..."
+        "LoadingManuals": "Laster inn bruksanvisninger...",
+        "LuaPackage": "Ethos lua package (ZIP manifest)",
+        "LuaPackageDescription": "A manual to describe the manifest file that should be included in the ETHOS Lua package."
     },
     "BootloaderGuide": {
         "BootloaderGuideTitle": "Din 'Firmware' støtter muligens ikke automatisk bytte. Vennligst bytt manuelt til 'Bootloader' ved å følge disse trinnene:",
