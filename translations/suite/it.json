@@ -133,12 +133,12 @@
         "PermissionDenied": "Permesso Vietato!",
         "DFUDetected": "Dispositivo DFU rilevato",
         "DFUNotDetected": "Dispositivo DFU non rilevato",
-        "DriverCheckTitle": "DFU driver check",
-        "DriverChecking": "Checking DFU driver ...",
-        "RefreshDriverStatus": "Refresh DFU driver status",
-        "InstallUsbDk": "Install DFU driver",
-        "DriverCheckFailed": "Failed to check DFU driver",
-        "DriverInstallFailed": "Failed to run DFU driver installer"
+        "DriverCheckTitle": "Controllo DFU driver",
+        "DriverChecking": "Controllo driver DFU ...",
+        "RefreshDriverStatus": "Aggiorna stato driver DFU",
+        "InstallUsbDk": "Installa driver DFU",
+        "DriverCheckFailed": "Controllo driver DFU Fallito",
+        "DriverInstallFailed": "Installazione driver DFU Fallita"
     },
     "DownloadCenter": {
         "DownloadCenter": "Centro Download",
