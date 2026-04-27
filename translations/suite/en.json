@@ -132,7 +132,13 @@
         "DFUWriting": "DFU writing, completed {{ value }} % ...",
         "PermissionDenied": "Permission Denied!",
         "DFUDetected": "DFU device detected",
-        "DFUNotDetected": "DFU device not detected"
+        "DFUNotDetected": "DFU device not detected",
+        "DriverCheckTitle": "DFU driver check",
+        "DriverChecking": "Checking DFU driver ...",
+        "RefreshDriverStatus": "Refresh DFU driver status",
+        "InstallUsbDk": "Install DFU driver",
+        "DriverCheckFailed": "DFU driver check failed",
+        "DriverInstallFailed": "DFU driver install failed"
     },
     "DownloadCenter": {
         "DownloadCenter": "Download center",

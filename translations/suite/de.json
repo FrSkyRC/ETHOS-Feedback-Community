@@ -132,7 +132,13 @@
         "DFUWriting": "DFU-Schreiben abgeschlossen {{ value }} %...",
         "PermissionDenied": "Erlaubnis verwehrt!",
         "DFUDetected": "DFU-Gerät erkannt",
-        "DFUNotDetected": "DFU-Gerät nicht erkannt"
+        "DFUNotDetected": "DFU-Gerät nicht erkannt",
+        "DriverCheckTitle": "DFU driver check",
+        "DriverChecking": "Checking DFU driver ...",
+        "RefreshDriverStatus": "Refresh DFU driver status",
+        "InstallUsbDk": "Install DFU driver",
+        "DriverCheckFailed": "DFU driver check failed",
+        "DriverInstallFailed": "DFU driver install failed"
     },
     "DownloadCenter": {
         "DownloadCenter": "Software-Bereich",

@@ -132,7 +132,13 @@
         "DFUWriting": "DFU zápis, OK {{ value }} % ...",
         "PermissionDenied": "Prístup zamietnutý!",
         "DFUDetected": "DFU jednotka rozpoznaná",
-        "DFUNotDetected": "DFU jednotka nenájdená"
+        "DFUNotDetected": "DFU jednotka nenájdená",
+        "DriverCheckTitle": "DFU driver check",
+        "DriverChecking": "Checking DFU driver ...",
+        "RefreshDriverStatus": "Refresh DFU driver status",
+        "InstallUsbDk": "Install DFU driver",
+        "DriverCheckFailed": "DFU driver check failed",
+        "DriverInstallFailed": "DFU driver install failed"
     },
     "DownloadCenter": {
         "DownloadCenter": "Centrum sťahovania",

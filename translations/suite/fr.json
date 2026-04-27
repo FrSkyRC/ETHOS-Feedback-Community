@@ -132,7 +132,13 @@
         "DFUWriting": "Ecriture DFU, en cours {{ value }} % ...",
         "PermissionDenied": "Autorisation refusée !",
         "DFUDetected": "Périphérique DFU trouvé",
-        "DFUNotDetected": "Périphérique DFU non trouvé"
+        "DFUNotDetected": "Périphérique DFU non trouvé",
+        "DriverCheckTitle": "DFU driver check",
+        "DriverChecking": "Checking DFU driver ...",
+        "RefreshDriverStatus": "Refresh DFU driver status",
+        "InstallUsbDk": "Install DFU driver",
+        "DriverCheckFailed": "DFU driver check failed",
+        "DriverInstallFailed": "DFU driver install failed"
     },
     "DownloadCenter": {
         "DownloadCenter": "Centre de téléchargement",

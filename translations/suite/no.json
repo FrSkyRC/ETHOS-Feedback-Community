@@ -132,7 +132,13 @@
         "DFUWriting": "DFU skriving... Fullført {{ value }} % ...",
         "PermissionDenied": "Du har ikke disse tillatelsene!",
         "DFUDetected": "DFU enhet oppdaget",
-        "DFUNotDetected": "DFU enhet ikke oppdaget"
+        "DFUNotDetected": "DFU enhet ikke oppdaget",
+        "DriverCheckTitle": "DFU driver check",
+        "DriverChecking": "Checking DFU driver ...",
+        "RefreshDriverStatus": "Refresh DFU driver status",
+        "InstallUsbDk": "Install DFU driver",
+        "DriverCheckFailed": "DFU driver check failed",
+        "DriverInstallFailed": "DFU driver install failed"
     },
     "DownloadCenter": {
         "DownloadCenter": "Nedlastings-senter",
