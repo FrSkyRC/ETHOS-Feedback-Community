@@ -133,12 +133,12 @@
         "PermissionDenied": "Erlaubnis verwehrt!",
         "DFUDetected": "DFU-Gerät erkannt",
         "DFUNotDetected": "DFU-Gerät nicht erkannt",
-        "DriverCheckTitle": "DFU driver check",
-        "DriverChecking": "Checking DFU driver ...",
-        "RefreshDriverStatus": "Refresh DFU driver status",
-        "InstallUsbDk": "Install DFU driver",
-        "DriverCheckFailed": "Failed to check DFU driver",
-        "DriverInstallFailed": "Failed to run DFU driver installer"
+        "DriverCheckTitle": "DFU-Treiberprüfung",
+        "DriverChecking": "DFU-Treiber wird geprüft...",
+        "RefreshDriverStatus": "DFU-Treiberstatus aktualisieren",
+        "InstallUsbDk": "Installieren Sie den DFU-Treiber",
+        "DriverCheckFailed": "Fehler beim Überprüfen des DFU-Treibers",
+        "DriverInstallFailed": "Fehler beim Ausführen der DFU-Treiberinstallation"
     },
     "DownloadCenter": {
         "DownloadCenter": "Software-Bereich",
