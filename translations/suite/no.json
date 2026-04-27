@@ -137,8 +137,8 @@
         "DriverChecking": "Checking DFU driver ...",
         "RefreshDriverStatus": "Refresh DFU driver status",
         "InstallUsbDk": "Install DFU driver",
-        "DriverCheckFailed": "DFU driver check failed",
-        "DriverInstallFailed": "DFU driver install failed"
+        "DriverCheckFailed": "Failed to check DFU driver",
+        "DriverInstallFailed": "Failed to run DFU driver installer"
     },
     "DownloadCenter": {
         "DownloadCenter": "Nedlastings-senter",
