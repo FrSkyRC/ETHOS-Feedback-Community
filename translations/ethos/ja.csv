@@ -1054,6 +1054,7 @@ COMPETITION_OPTION,,"コンペティション(RSSI とバッテリーのみ)","C
 CONFIRM_SSS_USED_BY_SSS,,"%s は%sにより使用中ですが,この操作より停止されます.\nよろしいですか?",,
 BOTH_MODULES,,"両モジュール",,
 SPORT_CONNECTOR,,"S.Portコネクタ",,
+SPORT_CONNECTOR_POWER,,"S.Port connector power (5V)"
 FBUS_TELEMETRY,,"F.Bus telemetry"
 TRAINER_CABLE,,"トレーナーケーブル",,
 BLUETOOTH,,"Bluetooth",,

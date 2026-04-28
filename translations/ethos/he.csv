@@ -1095,6 +1095,7 @@ COMPETITION_OPTION,,"Competition (only RSSI and Battery)","Competition (RSSI / B
 CONFIRM_SSS_USED_BY_SSS,,"%s is now used by %s. It will be stopped.\nAre you sure you want to continue?"
 BOTH_MODULES,,"Both modules"
 SPORT_CONNECTOR,,"S.Port connector"
+SPORT_CONNECTOR_POWER,,"S.Port connector power (5V)"
 FBUS_TELEMETRY,,"F.Bus telemetry"
 TRAINER_CABLE,,"Trainer Cable"
 BLUETOOTH,,"Bluetooth"
