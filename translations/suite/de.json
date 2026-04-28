@@ -139,14 +139,14 @@
         "InstallUsbDk": "Installieren Sie den DFU-Treiber",
         "DriverCheckFailed": "Fehler beim Überprüfen des DFU-Treibers",
         "DriverInstallFailed": "Fehler beim Ausführen der DFU-Treiberinstallation",
-        "StepWaitDfu": "Wait for DFU device",
-        "StepFlash": "Start flashing",
-        "GuideEthosTitle": "ETHOS radio",
-        "GuideEthosDfu": "With the ETHOS radio powered off, connect it to your computer using a USB cable, then wait until Suite detects DFU mode.",
-        "GuideAegisTitle": "Aegis flight controller",
-        "GuideAegisDfu": "Hold the Bootloader button and connect the flight controller to your computer using a USB cable, then wait until Suite detects DFU mode.",
-        "StepFlashLockedHint": "Bootloader binary selected and DFU device detected. Click the button below to start flashing.",
-        "NoFileSelected": "No bootloader binary selected"
+        "StepWaitDfu": "Warten auf das DFU-Gerät",
+        "StepFlash": "Beginnen Sie mit dem flashen.",
+        "GuideEthosTitle": "ETHOS-Sender",
+        "GuideEthosDfu": "Schalten Sie den ETHOS-Sender aus, verbinden Sie ihn mit einem USB-Kabel mit Ihrem Computer und warten Sie, bis Suite den DFU-Modus erkennt.",
+        "GuideAegisTitle": "Aegis Flugcontroller",
+        "GuideAegisDfu": "Halten Sie die Bootloader-Taste gedrückt und verbinden Sie den Flugcontroller mit einem USB-Kabel mit Ihrem Computer. Warten Sie, bis die Suite den DFU-Modus erkennt.",
+        "StepFlashLockedHint": "Bootloader-Binärdatei ausgewählt und DFU-Gerät erkannt. Klicken Sie auf die Schaltfläche unten, um den Flash-Vorgang zu starten.",
+        "NoFileSelected": "Keine Bootloader-Binärdatei ausgewählt"
     },
     "DownloadCenter": {
         "DownloadCenter": "Software-Bereich",
