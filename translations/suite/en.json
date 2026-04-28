@@ -139,15 +139,14 @@
         "InstallUsbDk": "Install DFU driver",
         "DriverCheckFailed": "Failed to check DFU driver",
         "DriverInstallFailed": "Failed to run DFU driver installer",
-        "StepSelectFile": "Select bootloader file",
         "StepWaitDfu": "Wait for DFU device",
         "StepFlash": "Start flashing",
-        "GuideEthosTitle": "ETHOS transmitter",
-        "GuideEthosDfu": "With the transmitter powered off, connect it to your computer using a USB cable, then wait until Suite detects DFU mode.",
+        "GuideEthosTitle": "ETHOS radio",
+        "GuideEthosDfu": "With the ETHOS radio powered off, connect it to your computer using a USB cable, then wait until Suite detects DFU mode.",
         "GuideAegisTitle": "Aegis flight controller",
         "GuideAegisDfu": "Hold the Bootloader button and connect the flight controller to your computer using a USB cable, then wait until Suite detects DFU mode.",
         "StepFlashLockedHint": "Choose a bootloader file and connect a device in DFU mode to enable flashing.",
-        "NoFileSelected": "No file selected"
+        "NoFileSelected": "No bootloader binary selected"
     },
     "DownloadCenter": {
         "DownloadCenter": "Download center",
