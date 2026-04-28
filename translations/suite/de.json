@@ -138,7 +138,16 @@
         "RefreshDriverStatus": "DFU-Treiberstatus aktualisieren",
         "InstallUsbDk": "Installieren Sie den DFU-Treiber",
         "DriverCheckFailed": "Fehler beim Überprüfen des DFU-Treibers",
-        "DriverInstallFailed": "Fehler beim Ausführen der DFU-Treiberinstallation"
+        "DriverInstallFailed": "Fehler beim Ausführen der DFU-Treiberinstallation",
+        "StepSelectFile": "Select bootloader file",
+        "StepWaitDfu": "Wait for DFU device",
+        "StepFlash": "Start flashing",
+        "GuideEthosTitle": "ETHOS transmitter",
+        "GuideEthosDfu": "With the transmitter powered off, connect it to your computer using a USB cable, then wait until Suite detects DFU mode.",
+        "GuideAegisTitle": "Aegis flight controller",
+        "GuideAegisDfu": "Hold the Bootloader button and connect the flight controller to your computer using a USB cable, then wait until Suite detects DFU mode.",
+        "StepFlashLockedHint": "Choose a bootloader file and connect a device in DFU mode to enable flashing.",
+        "NoFileSelected": "No file selected"
     },
     "DownloadCenter": {
         "DownloadCenter": "Software-Bereich",
