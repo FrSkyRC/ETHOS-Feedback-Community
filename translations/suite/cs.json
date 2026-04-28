@@ -144,7 +144,7 @@
         "GuideEthosDfu": "With the ETHOS radio powered off, connect it to your computer using a USB cable, then wait until Suite detects DFU mode.",
         "GuideAegisTitle": "Aegis flight controller",
         "GuideAegisDfu": "Hold the Bootloader button and connect the flight controller to your computer using a USB cable, then wait until Suite detects DFU mode.",
-        "StepFlashLockedHint": "Choose a bootloader file and connect a device in DFU mode to enable flashing.",
+        "StepFlashLockedHint": "Bootloader binary selected and DFU device detected. Click the button below to start flashing.",
         "NoFileSelected": "No bootloader binary selected"
     },
     "DownloadCenter": {
