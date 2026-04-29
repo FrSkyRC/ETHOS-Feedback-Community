@@ -1057,8 +1057,9 @@ COMPETITION_OPTION,,"Compétition (RSSI et Batterie)",
 CONFIRM_SSS_USED_BY_SSS,,"%s est utilisé par %s, continuer ?",
 BOTH_MODULES,,"Les deux modules",
 SPORT_CONNECTOR,,"Connecteur S.Port",
+TELEMETRY_FORWARDING,,"Telemetry forwarding"
 SPORT_CONNECTOR_POWER,,"S.Port connector power (5V)"
-FBUS_TELEMETRY,,"F.Bus telemetry"
+FBUS_VIA_SPORT_CONNECTOR,,"FBUS via S.Port connector"
 TRAINER_CABLE,,"Cable écolage",
 BLUETOOTH,,"Bluetooth",
 ACTIVELOOK_GLASSES,,"Lunettes ActiveLook",
@@ -1153,7 +1154,7 @@ BIND_CARD,,"Carte appairage",
 WAITING_FOR_NFC_CARD,,"Maintenir la clé NFC proche du panneau NFC pour appairage...",
 BIND_CARD_SUCCESS,,"Appairage carte NFC réussi !",
 BIND_CARD_FAIL,,"Echec appairage carte NFC !",
-BUS_INVERT,F.Bus and F.Port inverted on receiver (Yes / No),"Bus inversé",
+BUS_INVERT,FBUS and F.Port inverted on receiver (Yes / No),"Bus inversé",
 SBEC_INPUT_VOLT,,"Tension entrée SBEC",
 OVER_CURRENT,,"Surintensité",
 READ_MAG_ERROR,,"Erreur lecture aimant",

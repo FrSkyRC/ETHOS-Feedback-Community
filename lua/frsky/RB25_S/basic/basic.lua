@@ -154,7 +154,7 @@ end
 local CHANNEL_CONFIGS = {{"CH1", 0x00}, {"CH2", 0x01}, {"CH3", 0x02}, {"CH4", 0x03}, {"CH5", 0x04}, {"CH6", 0x05}, {"CH7", 0x06}, {"CH8", 0x07},
                          {"CH9", 0x08}, {"CH10", 0x09}, {"CH11", 0x0A}, {"CH12", 0x0B}, {"CH13", 0x0C}, {"CH14", 0x0D}, {"CH15", 0x0E}, {"CH16", 0x0F},
                          {"CH17", 0x10}, {"CH18", 0x11}, {"CH19", 0x12}, {"CH20", 0x13}, {"CH21", 0x14}, {"CH22", 0x15}, {"CH23", 0x16}, {"CH24", 0x17},
-                         {"S.Port", 0x40}, {"S.Bus", 0x80}, {"F.Bus", 0xC0}}
+                         {"S.Port", 0x40}, {"SBUS", 0x80}, {"FBUS", 0xC0}}
 
 local baseParameters = {
   -- { name, type, page, sub, value, min, max }
