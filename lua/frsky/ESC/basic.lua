@@ -31,7 +31,7 @@ local parameters = {
   { fieldFunction = CreateAppIdField, fieldName = "Application Id", pageAddress = 0x8D, valueWrite = valueWrite, extraInfo = {} },
   { fieldFunction = CreateNumberField, fieldName = "Data rate", pageAddress = 0x8E, defaultValue = 1, valueWrite = valueWrite, extraInfo = {min = 0, max = 10, suffix = "00ms"}},
   { fieldFunction = CreateNumberField, fieldName = "Motor pole count", pageAddress = 0x8F, defaultValue = 14, valueWrite = valueWrite, extraInfo = {min = 2, max = 255}},
-  { fieldFunction = CreateNumberField, fieldName = "F.Bus thr. CH(Effective after restart)", pageAddress = 0x90, defaultValue = 1, valueWrite = valueWrite, extraInfo = {min = 1, max = 255}},
+  { fieldFunction = CreateNumberField, fieldName = "FBUS thr. CH(Effective after restart)", pageAddress = 0x90, defaultValue = 1, valueWrite = valueWrite, extraInfo = {min = 1, max = 255}},
   { fieldFunction = CreateChoiceField, fieldName = "High demag prot.", pageAddress = 0x91, valueWrite = valueWrite, extraInfo = {valuePairs = {{"OFF", 0}, {"ON", 1}}} },
 }
 
