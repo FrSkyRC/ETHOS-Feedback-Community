@@ -24,6 +24,8 @@ The bundled `.vscode/extensions.json` recommends both the Ethos extension and th
 
 ## Python Setup
 
+### Windows
+
 PowerShell example:
 
 ```powershell
@@ -50,12 +52,31 @@ py -m pip install --upgrade pip
 py -m pip install -r requirements.txt
 ```
 
-Packages used by the deploy tooling:
+### macOS
+
+macOS requires the native `hidapi` library for USB HID support:
+
+```bash
+# Install hidapi system library
+brew install hidapi
+
+# Create and activate virtual environment
+python3 -m venv .venv
+source .venv/bin/activate
+
+# Install Python packages
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+The `pywin32` package is platform-specific and will not install on macOS (it is skipped automatically by pip).
+
+### Packages used by the deploy tooling:
 
 - `tqdm`: progress bars during copy/update
 - `pyserial`: serial debug console support
 - `hid`: direct USB mode switching for Ethos radios
-- `pywin32`: Windows drive detection helpers used by `connect.py`
+- `pywin32`: Windows drive detection helpers used by `connect.py` (Windows only)
 - `debugpy`: keeps VS Code launch/debug integration happy
 
 Use `pyserial`, not `serial`, for the serial package install.
@@ -72,6 +93,25 @@ Windows note:
 
 - install the package above
 - copy the DLLs for your architecture into `C:\Windows\System32`
+
+## macOS Radio Deployment Support
+
+Radio deployment on macOS works by discovering radio volumes mounted at `/Volumes` and using USB HID for mode switching. The following applies:
+
+**Supported:**
+- ✓ Simulator file deployment (same as Windows/Linux)
+- ✓ Radio USB HID mode switching (`start_usb_debug()`, `stop_usb_debug()`)
+- ✓ Radio drive discovery via mounted volumes (when radio is mounted)
+- ✓ File copying to mounted radio storage
+
+**Not Available:**
+- ✗ Windows-style volume locking (FSCTL_LOCK_VOLUME) — not provided by macOS kernel
+- ✗ Direct volume ejection via `diskutil` is attempted but not guaranteed (best-effort)
+
+**Practical Notes:**
+- The Ethos radio's firmware is designed to handle filesystem operations correctly regardless of OS volume locking state
+- The deployment workflow is sequential and user-initiated, so concurrent access conflicts are unlikely
+- If a radio volume is not discovered, the fallback behavior in `deploy.py` will retry and report diagnostics
 
 If you prefer to use Ethos Suite instead of direct HID control, add an `ethossuite_bin` entry to `.vscode/deploy.json`.
 
@@ -225,9 +265,13 @@ The foundation template does not enable any of these by default.
 
 - Run `py -m pip install hid`
 
-`hidapi.dll is missing`
+`hidapi.dll is missing` (Windows)
 
 - Copy the correct `hidapi.dll` into `C:\Windows\System32`
+
+`Unable to load any of the following libraries: libhidapi...` (macOS)
+
+- On macOS, the native hidapi library must be installed: `brew install hidapi`
 
 `ethos.start` command not found
 
@@ -235,4 +279,4 @@ The foundation template does not enable any of these by default.
 
 `Python was not found`
 
-- Install Python 3 for Windows and reopen VS Code
+- Install Python 3 for your platform and reopen VS Code
