@@ -25,7 +25,7 @@ from connect_base import RadioInformation
 # Select platform-specific implementation
 if platform.system() == "Windows":
     from connect_windows import WindowsRadioInterface as RadioInterface, lock_drive, unmount_drive
-else:
+elif platform.system() == "Darwin":
     from connect_macos import MacOSRadioInterface as RadioInterface
     # Provide no-op implementations for macOS (locking not supported)
     def lock_drive(drive):
@@ -35,6 +35,8 @@ else:
     def unmount_drive(drive):
         """Unmount via diskutil; called by RadioInterface.unmount_drives()."""
         pass
+else:
+    raise SystemExit("System/OS not yet supported")
 
 
 
