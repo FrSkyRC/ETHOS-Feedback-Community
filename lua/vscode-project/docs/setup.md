@@ -71,6 +71,8 @@ python -m pip install -r requirements.txt
 
 The `pywin32` package is platform-specific and will not install on macOS (it is skipped automatically by pip).
 
+In VS Code you must have installed the `Python` by Microsoft, and it is recommended to perform a complete restart of VSCode after (At least Command Palette/Developer: `Reload Window`). Then open Command Palette and use `Python: Set Interpreter`, choose the python in .venv.
+
 ### Packages used by the deploy tooling:
 
 - `tqdm`: progress bars during copy/update

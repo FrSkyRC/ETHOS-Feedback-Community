@@ -4,15 +4,9 @@
     {
       "label": "Deploy [SIM Files]",
       "type": "process",
-      "command": "${workspaceFolder}/.venv/bin/python",
-      "windows": {
-        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
-      },
-      "linux": {
-        "command": "${workspaceFolder}/.venv/bin/python"
-      },
+      "command": "python",
       "osx": {
-        "command": "${workspaceFolder}/.venv/bin/python"
+        "command": "${config:python.defaultInterpreterPath}"
       },
       "args": [
         "${workspaceFolder}/.vscode/scripts/deploy.py"
@@ -32,15 +26,9 @@
     {
       "label": "Deploy Radio",
       "type": "process",
-      "command": "${workspaceFolder}/.venv/bin/python",
-      "windows": {
-        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
-      },
-      "linux": {
-        "command": "${workspaceFolder}/.venv/bin/python"
-      },
+      "command": "python",
       "osx": {
-        "command": "${workspaceFolder}/.venv/bin/python"
+        "command": "${config:python.defaultInterpreterPath}"
       },
       "args": [
         "${workspaceFolder}/.vscode/scripts/deploy.py",
@@ -56,15 +44,9 @@
     {
       "label": "Deploy Radio [Fast]",
       "type": "process",
-      "command": "${workspaceFolder}/.venv/bin/python",
-      "windows": {
-        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
-      },
-      "linux": {
-        "command": "${workspaceFolder}/.venv/bin/python"
-      },
+      "command": "python",
       "osx": {
-        "command": "${workspaceFolder}/.venv/bin/python"
+        "command": "${config:python.defaultInterpreterPath}"
       },
       "args": [
         "${workspaceFolder}/.vscode/scripts/deploy.py",
@@ -82,15 +64,9 @@
     {
       "label": "Deploy Radio + Serial Debug",
       "type": "process",
-      "command": "${workspaceFolder}/.venv/bin/python",
-      "windows": {
-        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
-      },
-      "linux": {
-        "command": "${workspaceFolder}/.venv/bin/python"
-      },
+      "command": "python",
       "osx": {
-        "command": "${workspaceFolder}/.venv/bin/python"
+        "command": "${config:python.defaultInterpreterPath}"
       },
       "args": [
         "${workspaceFolder}/.vscode/scripts/deploy.py",
@@ -107,15 +83,9 @@
     {
       "label": "Deploy Radio + Serial Debug [Fast]",
       "type": "process",
-      "command": "${workspaceFolder}/.venv/bin/python",
-      "windows": {
-        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
-      },
-      "linux": {
-        "command": "${workspaceFolder}/.venv/bin/python"
-      },
+      "command": "python",
       "osx": {
-        "command": "${workspaceFolder}/.venv/bin/python"
+        "command": "${config:python.defaultInterpreterPath}"
       },
       "args": [
         "${workspaceFolder}/.vscode/scripts/deploy.py",
@@ -134,15 +104,9 @@
     {
       "label": "Radio: Serial Debug",
       "type": "process",
-      "command": "${workspaceFolder}/.venv/bin/python",
-      "windows": {
-        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
-      },
-      "linux": {
-        "command": "${workspaceFolder}/.venv/bin/python"
-      },
+      "command": "python",
       "osx": {
-        "command": "${workspaceFolder}/.venv/bin/python"
+        "command": "${config:python.defaultInterpreterPath}"
       },
       "args": [
         "${workspaceFolder}/.vscode/scripts/deploy.py",
@@ -159,15 +123,9 @@
     {
       "label": "Clear locks",
       "type": "process",
-      "command": "${workspaceFolder}/.venv/bin/python",
-      "windows": {
-        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
-      },
-      "linux": {
-        "command": "${workspaceFolder}/.venv/bin/python"
-      },
+      "command": "python",
       "osx": {
-        "command": "${workspaceFolder}/.venv/bin/python"
+        "command": "${config:python.defaultInterpreterPath}"
       },
       "args": [
         "${workspaceFolder}/.vscode/scripts/deploy.py",
@@ -183,15 +141,9 @@
     {
       "label": "Debug Radio Connection",
       "type": "process",
-      "command": "${workspaceFolder}/.venv/bin/python",
-      "windows": {
-        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
-      },
-      "linux": {
-        "command": "${workspaceFolder}/.venv/bin/python"
-      },
+      "command": "python",
       "osx": {
-        "command": "${workspaceFolder}/.venv/bin/python"
+        "command": "${config:python.defaultInterpreterPath}"
       },
       "args": [
         "${workspaceFolder}/.vscode/scripts/debug_connection.py"
@@ -206,15 +158,9 @@
     {
       "label": "Debug Radio Connection: Switch To Serial",
       "type": "process",
-      "command": "${workspaceFolder}/.venv/bin/python",
-      "windows": {
-        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
-      },
-      "linux": {
-        "command": "${workspaceFolder}/.venv/bin/python"
-      },
+      "command": "python",
       "osx": {
-        "command": "${workspaceFolder}/.venv/bin/python"
+        "command": "${config:python.defaultInterpreterPath}"
       },
       "args": [
         "${workspaceFolder}/.vscode/scripts/debug_connection.py",
@@ -231,15 +177,9 @@
     {
       "label": "Debug Radio Connection: Switch To Storage",
       "type": "process",
-      "command": "${workspaceFolder}/.venv/bin/python",
-      "windows": {
-        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
-      },
-      "linux": {
-        "command": "${workspaceFolder}/.venv/bin/python"
-      },
+      "command": "python",
       "osx": {
-        "command": "${workspaceFolder}/.venv/bin/python"
+        "command": "${config:python.defaultInterpreterPath}"
       },
       "args": [
         "${workspaceFolder}/.vscode/scripts/debug_connection.py",
