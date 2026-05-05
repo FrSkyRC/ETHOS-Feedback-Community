@@ -227,6 +227,17 @@
       }
     },
     {
+      "label": "ethos.OpenControls",
+      "type": "process",
+      "command": "${command:ethos.openControls}",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
       "label": "ethos.OpenTelemetry",
       "type": "process",
       "command": "${command:ethos.openTelemetry}",
