@@ -64,6 +64,7 @@ def _connect_usb_debug(action: str):
     mod = _load_connect_module()
     if not mod:
         return False
+    ri = None
     try:
         ri = mod.RadioInterface()
         if action == 'start':
@@ -76,14 +77,30 @@ def _connect_usb_debug(action: str):
             raise ValueError(f"Unknown action: {action}")
         return True
     except BaseException as e:
-        print(f"[CONNECT] USB debug {action} failed ({type(e).__name__}: {e})")
+        err = str(e)
+        # On some macOS setups the HID interface is visible but not openable;
+        # deploy can still proceed using mounted-volume fallback.
+        if "No Ethos compatible HID device found" in err and "vendor present" in err:
+            print(
+                f"[CONNECT] USB debug {action} unavailable (HID seen but not openable in this session); "
+                "continuing with mounted-volume workflow."
+            )
+        else:
+            print(f"[CONNECT] USB debug {action} failed ({type(e).__name__}: {e})")
         return False
+    finally:
+        try:
+            if ri is not None:
+                ri.close()
+        except Exception:
+            pass
 
 def _connect_find_scripts_dir():
     """Return mounted scripts dir using connect.py drive markers, or None."""
     mod = _load_connect_module()
     if not mod:
         return None
+    ri = None
     try:
         ri = mod.RadioInterface()
         ri.scan_for_drives()
@@ -94,6 +111,12 @@ def _connect_find_scripts_dir():
                 return os.path.normpath(os.path.join(root, 'scripts'))
     except BaseException as e:
         print(f"[CONNECT] Drive scan failed ({type(e).__name__}: {e})")
+    finally:
+        try:
+            if ri is not None:
+                ri.close()
+        except Exception:
+            pass
     return None
 
 MIN_ETHOSSUITE_VERSION = "1.7.0"
@@ -988,6 +1011,26 @@ def _find_com_port(vid_hex=None, pid_hex=None, name_hint=None, allow_fuzzy_if_no
     return None
 
 
+def _find_serial_debug_port(vid_hex=None, pid_hex=None, name_hint=None):
+    """Return a likely serial debug device, preferring exact VID:PID matches."""
+    port = _find_com_port(
+        vid_hex=vid_hex,
+        pid_hex=pid_hex,
+        name_hint=name_hint,
+        allow_fuzzy_if_no_vidpid=False,
+    )
+    if port:
+        return port
+
+    # macOS sometimes reports incomplete metadata during re-enumeration.
+    return _find_com_port(
+        vid_hex=None,
+        pid_hex=None,
+        name_hint=name_hint,
+        allow_fuzzy_if_no_vidpid=True,
+    )
+
+
 def tail_serial_debug(vid=DEFAULT_SERIAL_VID, pid=DEFAULT_SERIAL_PID,
                       baud=DEFAULT_SERIAL_BAUD, retries=DEFAULT_SERIAL_RETRIES,
                       delay=DEFAULT_SERIAL_DELAY, newline=b'\n', name_hint="Serial"):
@@ -1001,11 +1044,10 @@ def tail_serial_debug(vid=DEFAULT_SERIAL_VID, pid=DEFAULT_SERIAL_PID,
 
     port = None
     for i in range(retries):
-        port = _find_com_port(vid_hex=vid, pid_hex=pid, name_hint=name_hint,
-                              allow_fuzzy_if_no_vidpid=False)
+        port = _find_serial_debug_port(vid_hex=vid, pid_hex=pid, name_hint=name_hint)
         if port:
             break
-        print(f"[SERIAL] Waiting for COM port ({i+1}/{retries})…")
+        print(f"[SERIAL] Waiting for serial port ({i+1}/{retries})…")
         time.sleep(delay)
 
     if not port:
@@ -1020,7 +1062,7 @@ def tail_serial_debug(vid=DEFAULT_SERIAL_VID, pid=DEFAULT_SERIAL_PID,
             break
         except FileNotFoundError as e:
             print(f"[SERIAL] Open attempt {attempt}/{open_attempts} -> device vanished; rescanning…")
-            port = _find_com_port(vid_hex=vid, pid_hex=pid, name_hint=name_hint)
+            port = _find_serial_debug_port(vid_hex=vid, pid_hex=pid, name_hint=name_hint)
             if not port:
                 import time as _t; _t.sleep(delay)
             continue
@@ -1360,7 +1402,7 @@ def main():
     p.add_argument('--step', dest='steps', action='append',
                    help='Additional deploy steps to run (e.g. i18n, soundpack). '
                         'Can be given multiple times.'
-    )    
+    )
 
     args = p.parse_args()
     DEPLOY_TO_RADIO = args.radio
@@ -1438,14 +1480,20 @@ def main():
 
     if args.radio and args.connect_only:
         # Just enable serial & tail logs; no copying
-        ethos_serial(config.get('ethossuite_bin'), 'start')
-
         v = str(config.get('serial_vid', DEFAULT_SERIAL_VID))
         p = str(config.get('serial_pid', DEFAULT_SERIAL_PID))
         b = int(config.get('serial_baud', DEFAULT_SERIAL_BAUD))
         r = int(config.get('serial_retries', DEFAULT_SERIAL_RETRIES))
         d = float(config.get('serial_retry_delay', DEFAULT_SERIAL_DELAY))
         nh = str(config.get('serial_name_hint', "Serial"))
+
+        existing_port = _find_serial_debug_port(vid_hex=v, pid_hex=p, name_hint=nh)
+        if existing_port:
+            print(f"[SERIAL] Existing serial debug port detected: {existing_port}; skipping HID mode switch.")
+        else:
+            rc, _, _ = ethos_serial(config.get('ethossuite_bin'), 'start')
+            if rc != 0:
+                print("[SERIAL] USB debug start unavailable; continuing to probe for a serial port anyway.")
 
         return tail_serial_debug(vid=v, pid=p, baud=b, retries=r, delay=d, name_hint=nh)
 
@@ -1489,17 +1537,23 @@ def main():
 
     if args.radio and args.radio_debug:
         _kill_previous_tail_if_any()
-        rc, _, _ = ethos_serial(config.get('ethossuite_bin'), 'start')
-        if rc != 0:
-            print("[ETHOS] First --serial start failed; retrying once…")
-            ethos_serial(config.get('ethossuite_bin'), 'start')
-
         v = str(config.get('serial_vid', DEFAULT_SERIAL_VID))
         p = str(config.get('serial_pid', DEFAULT_SERIAL_PID))
         b = int(config.get('serial_baud', DEFAULT_SERIAL_BAUD))
         r = int(config.get('serial_retries', DEFAULT_SERIAL_RETRIES))
         d = float(config.get('serial_retry_delay', DEFAULT_SERIAL_DELAY))
         nh = str(config.get('serial_name_hint', "Serial"))
+
+        existing_port = _find_serial_debug_port(vid_hex=v, pid_hex=p, name_hint=nh)
+        if existing_port:
+            print(f"[SERIAL] Existing serial debug port detected: {existing_port}; skipping HID mode switch.")
+        else:
+            rc, _, _ = ethos_serial(config.get('ethossuite_bin'), 'start')
+            if rc != 0:
+                print("[ETHOS] First --serial start failed; retrying once…")
+                rc, _, _ = ethos_serial(config.get('ethossuite_bin'), 'start')
+                if rc != 0:
+                    print("[SERIAL] USB debug start unavailable; continuing to probe for a serial port anyway.")
 
         tail_serial_debug(vid=v, pid=p, baud=b, retries=r, delay=d, name_hint=nh)
 

@@ -79,8 +79,30 @@
       "stopOnEntry": false,
       "preLaunchTask": "Radio: Serial Debug"
     },
+   {
+      "name": "Simulator: Open Controls",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/.vscode/scripts/dummy.py",
+      "console": "integratedTerminal",
+      "subProcess": false,
+      "justMyCode": true,
+      "stopOnEntry": false,
+      "preLaunchTask": "ethos.OpenControls"
+    },
     {
-      "name": "Clear locks",
+      "name": "Simulator: Open Telemetry",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/.vscode/scripts/dummy.py",
+      "console": "integratedTerminal",
+      "subProcess": false,
+      "justMyCode": true,
+      "stopOnEntry": false,
+      "preLaunchTask": "ethos.OpenTelemetry"
+    },    
+    {
+      "name": "Simulator: Clear Locks",
       "type": "debugpy",
       "request": "launch",
       "program": "${workspaceFolder}/.vscode/scripts/dummy.py",

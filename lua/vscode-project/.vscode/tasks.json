@@ -5,6 +5,9 @@
       "label": "Deploy [SIM Files]",
       "type": "process",
       "command": "python",
+      "osx": {
+        "command": "${config:python.defaultInterpreterPath}"
+      },
       "args": [
         "${workspaceFolder}/.vscode/scripts/deploy.py"
       ],
@@ -24,6 +27,9 @@
       "label": "Deploy Radio",
       "type": "process",
       "command": "python",
+      "osx": {
+        "command": "${config:python.defaultInterpreterPath}"
+      },
       "args": [
         "${workspaceFolder}/.vscode/scripts/deploy.py",
         "--radio"
@@ -39,6 +45,9 @@
       "label": "Deploy Radio [Fast]",
       "type": "process",
       "command": "python",
+      "osx": {
+        "command": "${config:python.defaultInterpreterPath}"
+      },
       "args": [
         "${workspaceFolder}/.vscode/scripts/deploy.py",
         "--fileext",
@@ -56,6 +65,9 @@
       "label": "Deploy Radio + Serial Debug",
       "type": "process",
       "command": "python",
+      "osx": {
+        "command": "${config:python.defaultInterpreterPath}"
+      },
       "args": [
         "${workspaceFolder}/.vscode/scripts/deploy.py",
         "--radio",
@@ -72,6 +84,9 @@
       "label": "Deploy Radio + Serial Debug [Fast]",
       "type": "process",
       "command": "python",
+      "osx": {
+        "command": "${config:python.defaultInterpreterPath}"
+      },
       "args": [
         "${workspaceFolder}/.vscode/scripts/deploy.py",
         "--fileext",
@@ -90,6 +105,9 @@
       "label": "Radio: Serial Debug",
       "type": "process",
       "command": "python",
+      "osx": {
+        "command": "${config:python.defaultInterpreterPath}"
+      },
       "args": [
         "${workspaceFolder}/.vscode/scripts/deploy.py",
         "--radio",
@@ -106,9 +124,67 @@
       "label": "Clear locks",
       "type": "process",
       "command": "python",
+      "osx": {
+        "command": "${config:python.defaultInterpreterPath}"
+      },
       "args": [
         "${workspaceFolder}/.vscode/scripts/deploy.py",
         "--clear-lock"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Debug Radio Connection",
+      "type": "process",
+      "command": "python",
+      "osx": {
+        "command": "${config:python.defaultInterpreterPath}"
+      },
+      "args": [
+        "${workspaceFolder}/.vscode/scripts/debug_connection.py"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Debug Radio Connection: Switch To Serial",
+      "type": "process",
+      "command": "python",
+      "osx": {
+        "command": "${config:python.defaultInterpreterPath}"
+      },
+      "args": [
+        "${workspaceFolder}/.vscode/scripts/debug_connection.py",
+        "--switch",
+        "start"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Debug Radio Connection: Switch To Storage",
+      "type": "process",
+      "command": "python",
+      "osx": {
+        "command": "${config:python.defaultInterpreterPath}"
+      },
+      "args": [
+        "${workspaceFolder}/.vscode/scripts/debug_connection.py",
+        "--switch",
+        "stop"
       ],
       "problemMatcher": [],
       "presentation": {
@@ -143,6 +219,17 @@
       "label": "ethos.SetRoot",
       "type": "process",
       "command": "${command:ethos.setRoot}",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "ethos.OpenControls",
+      "type": "process",
+      "command": "${command:ethos.openControls}",
       "problemMatcher": [],
       "presentation": {
         "reveal": "always",
