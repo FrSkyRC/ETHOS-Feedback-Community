@@ -410,9 +410,9 @@
         "OpenFAQ": "Åpne FAQ",
         "OpenManual": "Åpne bruksanvisning",
         "LoadingManuals": "Laster inn bruksanvisninger...",
-        "ManualAsset": "Manualfil",
-        "NoManualsAvailable": "Ingen manualer tilgjengelig.",
-        "ManualsFetchError": "Kunne ikke laste manualer. Prøv igjen senere.",
+        "ManualAsset": "Fil til brukermanual",
+        "NoManualsAvailable": "Ingen brukermanual tilgjengelig.",
+        "ManualsFetchError": "Kunne ikke laste brukermanual. Prøv igjen senere.",
         "LuaPackage": "Ethos lua pakke (ZIP manifest)",
         "LuaPackageDescription": "En instruksjon for å beskrive 'manifest filen' som bør inkluderes i ETHOS Lua pakken."
     },
