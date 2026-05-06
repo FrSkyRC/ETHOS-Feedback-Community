@@ -402,6 +402,9 @@
         "OpenFAQ": "Abrir FAQ",
         "OpenManual": "Abrir manual",
         "LoadingManuals": "Cargando manuales ...",
+        "ManualAsset": "Archivo del manual",
+        "NoManualsAvailable": "No hay manuales disponibles.",
+        "ManualsFetchError": "No se pudieron cargar los manuales. Inténtelo más tarde.",
         "LuaPackage": "Pauqte Lua de Ethos (manifest.ZIP)",
         "LuaPackageDescription": "Un manual para describir el archivo manifest que debería incluirse en el paquete lua de ETHOS."
     },

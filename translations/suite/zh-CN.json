@@ -409,6 +409,9 @@
         "OpenFAQ": "打开 FAQ",
         "OpenManual": "打开说明书",
         "LoadingManuals": "正在载入说明书 ...",
+        "ManualAsset": "说明书文件",
+        "NoManualsAvailable": "暂无可用说明书。",
+        "ManualsFetchError": "无法加载说明书，请稍后重试。",
         "LuaPackage": "Ethos lua package (ZIP manifest)",
         "LuaPackageDescription": "A manual to describe the manifest file that should be included in the ETHOS Lua package."
     },

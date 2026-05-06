@@ -408,6 +408,9 @@
         "OpenFAQ": "Otevřít FAQ",
         "OpenManual": "Otevřít manuál",
         "LoadingManuals": "Načítám manuály ...",
+        "ManualAsset": "Soubor manuálu",
+        "NoManualsAvailable": "Žádné manuály nejsou k dispozici.",
+        "ManualsFetchError": "Manuály se nepodařilo načíst. Zkuste to prosím později.",
         "LuaPackage": "Ethos lua package (ZIP manifest)",
         "LuaPackageDescription": "A manual to describe the manifest file that should be included in the ETHOS Lua package."
     },

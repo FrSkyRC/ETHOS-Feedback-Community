@@ -409,6 +409,9 @@
         "OpenFAQ": "FAQ öffnen",
         "OpenManual": "Handbuch öffnen",
         "LoadingManuals": "Handbücher laden...",
+        "ManualAsset": "Handbuchdatei",
+        "NoManualsAvailable": "Keine Handbücher verfügbar.",
+        "ManualsFetchError": "Handbücher konnten nicht geladen werden. Bitte versuchen Sie es später erneut.",
         "LuaPackage": "Ethos Lua-Paket (ZIP-Datei)",
         "LuaPackageDescription": "Ein Handbuch zur Beschreibung der Manifestdatei, die im ETHOS Lua-Paket enthalten sein sollte.."
     },
