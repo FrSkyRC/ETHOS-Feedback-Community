@@ -940,6 +940,7 @@ AVERAGE,,"平均値",,
 TOTALIZE,,"積算値",,
 CELL,,"セル電圧",,
 CONSUMPTION,,"消費量",,
+CAPACITY,,"Capacity"
 DISTANCE,,"距離",,
 FALLING_EDGE_OF_SSS_BETWEEN_SSS_AND_SSS,,"%sの↑↓パルス(%s～%s間)",,
 RISING_EDGE_OF_SSS_DURING_SSS,,"%s発生後 %sの↑エッジ",,

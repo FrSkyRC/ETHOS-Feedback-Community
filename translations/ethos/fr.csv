@@ -950,6 +950,7 @@ AVERAGE,,"Moyenne",
 TOTALIZE,,"Total",
 CELL,,"Elément",
 CONSUMPTION,,"Consommation",
+CAPACITY,,"Capacity"
 DISTANCE,,"Distance",
 FALLING_EDGE_OF_SSS_BETWEEN_SSS_AND_SSS,,"↑↓Pulse de %s entre %s et %s",
 RISING_EDGE_OF_SSS_DURING_SSS,,"Front↑ de %s pendant %s",

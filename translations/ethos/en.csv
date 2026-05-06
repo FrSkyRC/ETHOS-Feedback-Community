@@ -940,6 +940,7 @@ AVERAGE,,"Average",
 TOTALIZE,,"Totalize",
 CELL,,"Cell",
 CONSUMPTION,,"Consumption",
+CAPACITY,,"Capacity"
 DISTANCE,,"Distance",
 FALLING_EDGE_OF_SSS_BETWEEN_SSS_AND_SSS,,"↑↓Pulse of %s between %s and %s",
 RISING_EDGE_OF_SSS_DURING_SSS,,"%s after ↑Edge of %s",
