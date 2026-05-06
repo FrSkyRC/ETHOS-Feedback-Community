@@ -928,7 +928,7 @@ AVERAGE,,"Media",
 TOTALIZE,,"Totalizza",
 CELL,,"Cell",
 CONSUMPTION,,"Consumo",
-CAPACITY,,"Capacity"
+CAPACITY,,"Capacità"
 DISTANCE,,"Distanza",
 FALLING_EDGE_OF_SSS_BETWEEN_SSS_AND_SSS,,"↑↓Impulso di %s tra %s e {2}",
 RISING_EDGE_OF_SSS_DURING_SSS,,"%s dopo ↑Soglia di %s",
