@@ -592,8 +592,6 @@
         "SimNotStarted": "Simulator er ikke startet",
         "NoMacroFound": "Ingen tilgjengelig simulator-makro funnet",
         "AutoCentering": "Auto sentrering",
-        "MaintainVertical": "Lås til vertikal bevegelse",
-        "MaintainHorizontal": "Lås til horisontal bevegelse",
         "MidpointSnapping": "Automatisk tilbakeføring til midtpunkt",
         "ClearConsoleOutput": "Slett dataene i konsollvinduet",
         "ReloadSimulator": "Last simulatoren på nytt",
@@ -623,6 +621,13 @@
         "DataRate": "Data hastighet",
         "RemoveThisSensor": "Fjern denne sensoren",
         "OpenTelemetryPanel": "Åpne telemetri-panel",
-        "Screenshot": "Screenshot"
+        "Screenshot": "Screenshot",
+        "LockAxis": "Lock axis"
+    },
+    "AegisUpdater": {
+        "AegisUpdater": "Aegis updater",
+        "SelectAegisFirmware": "Select Aegis firmware",
+        "InterruptFlash": "Interrupt flash",
+        "LeavePageWarning": "Leaving this page may cause a interruption and damage to the device. Are you sure you want to do this?"
     }
 }

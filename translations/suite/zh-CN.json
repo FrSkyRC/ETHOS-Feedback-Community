@@ -590,8 +590,6 @@
         "SimNotStarted": "模拟器未在运行",
         "NoMacroFound": "没有找到可供执行的宏文件",
         "AutoCentering": "自动回中",
-        "MaintainVertical": "保持垂直轴向移动",
-        "MaintainHorizontal": "保持水平轴向移动",
         "MidpointSnapping": "中点吸附",
         "ClearConsoleOutput": "清空控制台输出",
         "ReloadSimulator": "重载模拟器",
@@ -621,6 +619,13 @@
         "DataRate": "数据速率",
         "RemoveThisSensor": "移除该传感器",
         "OpenTelemetryPanel": "打开遥测面板",
-        "Screenshot": "截图"
+        "Screenshot": "截图",
+        "LockAxis": "Lock axis"
+    },
+    "AegisUpdater": {
+        "AegisUpdater": "Aegis updater",
+        "SelectAegisFirmware": "Select Aegis firmware",
+        "InterruptFlash": "Interrupt flash",
+        "LeavePageWarning": "Leaving this page may cause a interruption and damage to the device. Are you sure you want to do this?"
     }
 }

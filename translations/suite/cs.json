@@ -590,8 +590,6 @@
         "SimNotStarted": "Simulátor neběží",
         "NoMacroFound": "Nenalezeno dostupné makro",
         "AutoCentering": "Auto centrování",
-        "MaintainVertical": "Pohyb jen ve vertikální ose",
-        "MaintainHorizontal": "Pohyb jen v horizontální ose",
         "MidpointSnapping": "Přichytávat ke středům",
         "ClearConsoleOutput": "Vyčistit výstup konzole",
         "ReloadSimulator": "Znovu načíst simulátor",
@@ -621,6 +619,13 @@
         "DataRate": "Data rate",
         "RemoveThisSensor": "Remove this sensor",
         "OpenTelemetryPanel": "Open telemetry panel",
-        "Screenshot": "Screenshot"
+        "Screenshot": "Screenshot",
+        "LockAxis": "Lock axis"
+    },
+    "AegisUpdater": {
+        "AegisUpdater": "Aegis updater",
+        "SelectAegisFirmware": "Select Aegis firmware",
+        "InterruptFlash": "Interrupt flash",
+        "LeavePageWarning": "Leaving this page may cause a interruption and damage to the device. Are you sure you want to do this?"
     }
 }
