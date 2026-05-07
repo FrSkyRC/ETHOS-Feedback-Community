@@ -1,7 +1,7 @@
 String name, String context, X20(...) / XE(S) / V20(PRO), X18RS / X14(...) / T14 / V15, All other radios
 TRANSLATION_KEY,,"es"
 TRANSLATION_NAME,,"Español"
-TRANSLATION_FALLBACK_NAME,,"Español"
+TRANSLATION_FALLBACK_NAME,,"Espanol"
 TRANSLATION_FONT_SUBSET,,"latin"
 SPECIAL_CHARS,,"áéíóÓúüñÑ¿?¡!ºª_-+."
 FORMULA,,"Fórmula"
