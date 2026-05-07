@@ -1,0 +1,1 @@
+The Ethos manuals have been moved to the FrSky/ethos-manual repository.
