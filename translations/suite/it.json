@@ -620,7 +620,7 @@
         "RemoveThisSensor": "Rimuovi questo sensore",
         "OpenTelemetryPanel": "Apri Pannello Telemetria",
         "Screenshot": "Cattura Schermo",
-        "LockAxis": "Lock axis"
+        "LockAxis": "Blocca asse"
     },
     "AegisUpdater": {
         "AegisUpdater": "Aggiorna Aegis",
