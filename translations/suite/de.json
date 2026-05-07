@@ -621,12 +621,12 @@
         "RemoveThisSensor": "Diesen Sensor entfernen",
         "OpenTelemetryPanel": "Telemetrie-Panel öffnen",
         "Screenshot": "Screenshot",
-        "LockAxis": "Lock axis"
+        "LockAxis": "Achse sperren"
     },
     "AegisUpdater": {
-        "AegisUpdater": "Aegis updater",
-        "SelectAegisFirmware": "Select Aegis firmware",
-        "InterruptFlash": "Interrupt flash",
-        "LeavePageWarning": "Leaving this page may cause a interruption and damage to the device. Are you sure you want to do this?"
+        "AegisUpdater": "Aegis-Updater",
+        "SelectAegisFirmware": "Aegis-Firmware auswählen",
+        "InterruptFlash": "Interrupt flashen",
+        "LeavePageWarning": "Unterbrechung: Das Verlassen dieser Seite kann zu einer Unterbrechung und Schäden am Gerät führen. Sind Sie sicher, dass Sie dies tun möchten?"
     }
 }
