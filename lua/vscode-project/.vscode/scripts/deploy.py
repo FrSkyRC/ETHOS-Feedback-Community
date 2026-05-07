@@ -1515,13 +1515,17 @@ def main():
 
         targets = [{'name': 'Radio', 'dest': rd, 'simulator': None}]
     else:
-        # SIMULATOR DEPLOY: always to <git_src>\simulator\[firmware]\scripts
+        # SIMULATOR DEPLOY: always to <git_src>/simulator/[firmware][@version?]/scripts
+        DEFAULT_VERSION = "nightly26"
         firmware = os.environ.get("ETHOS_FIRMWARE")
+        version = os.environ.get("ETHOS_VERSION")
         path_parts = [config['git_src'], 'simulator']
         if firmware:
-            path_parts.append(firmware)
+            if version and version != DEFAULT_VERSION:
+                path_parts.append(f"{firmware}@{version}")
+            else:
+                path_parts.append(firmware)
         path_parts.append('scripts')
-
         fixed_dest = os.path.normpath(os.path.join(*path_parts))
         os.makedirs(fixed_dest, exist_ok=True)
         targets = [{'name': 'Simulator', 'dest': fixed_dest, 'simulator': None}]
