@@ -19,10 +19,10 @@ UNIT,,"Unità",
 WRITE_LOGS,,"Scrivi Logs",
 ID,,"ID",
 CENTER,,"Centro",
-LOCKING_ARM_STRENGTH_P1,,"Locking arm strength (P1)"
-LOCKING_ARM_STRENGTH_P2,,"Locking arm strength (P2)"
-FRICTION_D1,,"Friction (D1)"
-FILTER_TD,,"Filter (TD / D2)"
+LOCKING_ARM_STRENGTH_P1,,"Forza di Bloccaggio (P1)"
+LOCKING_ARM_STRENGTH_P2,,"Forza di Bloccaggio (P2)"
+FRICTION_D1,,"Frizione (D1)"
+FILTER_TD,,"Filtro (TD / D2)"
 SUBTRIM,,"Subtrim",
 PWM_CENTER,,"Centro PWM",
 NORMAL,,"Normale",
