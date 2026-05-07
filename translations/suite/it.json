@@ -106,9 +106,9 @@
         "ShowPrereleases": "Mostra pre-releases",
         "VisitThirdparty": "Visita link terze-parti",
         "PathInvalid": "Il percorso file selezionato contiene caratteri non validi, e il file è stato rimosso dalla lista",
-        "OpenFile": "Open file",
-        "Add": "Add",
-        "Upload": "Upload"
+        "OpenFile": "Apri file",
+        "Add": "Aggiungi",
+        "Upload": "Carica"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Scegliere la versione del video component",
