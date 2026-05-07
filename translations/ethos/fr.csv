@@ -133,6 +133,10 @@ THR_TO_RUD,,"Gaz => Dir",
 FLAP,,"Volets",
 AIRBRAKE,,"Aérofrein",
 CENTER,,"Centre",
+LOCKING_ARM_STRENGTH_P1,,"Locking arm strength (P1)"
+LOCKING_ARM_STRENGTH_P2,,"Locking arm strength (P2)"
+FRICTION_D1,,"Friction (D1)"
+FILTER_TD,,"Filter (TD / D2)"
 SUBTRIM,,"Subtrim",
 PWM_CENTER,,"Centre PWM",
 NORMAL,,"Normal",
