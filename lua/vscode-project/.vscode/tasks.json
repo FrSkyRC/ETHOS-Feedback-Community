@@ -24,6 +24,18 @@
       }
     },
     {
+      "label": "Deploy & Launch [SIM]",
+      "type": "process",
+      "command": "${command:ethos.start}",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "dependsOn": "Deploy [SIM Files]"
+    },
+    {
       "label": "Deploy Radio",
       "type": "process",
       "command": "python",
