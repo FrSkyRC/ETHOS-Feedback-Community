@@ -623,9 +623,9 @@
         "LockAxis": "Lock axis"
     },
     "AegisUpdater": {
-        "AegisUpdater": "Aegis updater",
-        "SelectAegisFirmware": "Select Aegis firmware",
-        "InterruptFlash": "Interrupt flash",
-        "LeavePageWarning": "Leaving this page may cause a interruption and damage to the device. Are you sure you want to do this?"
+        "AegisUpdater": "Aggiorna Aegis",
+        "SelectAegisFirmware": "Seleziona firmware Aegis",
+        "InterruptFlash": "Interrompi flash",
+        "LeavePageWarning": "Lasciando questa pagina si potrebbe provocare un interruzione e un danno al dispositivo. Sei sicuro di voler procedere??"
     }
 }
