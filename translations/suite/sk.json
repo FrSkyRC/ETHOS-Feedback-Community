@@ -591,8 +591,6 @@
         "SimNotStarted": "Simulátor nie je spustený",
         "NoMacroFound": "Makro simulátora nie je k dispozícii",
         "AutoCentering": "Auto centrovanie",
-        "MaintainVertical": "Udržiavanie pohybu vertikálna os",
-        "MaintainHorizontal": "Udržiavanie pohybu horizontálna os",
         "MidpointSnapping": "Prichytenie stredu",
         "ClearConsoleOutput": "Vymazať výstup konzoly",
         "ReloadSimulator": "Znovunačítanie simulátora",
@@ -622,6 +620,13 @@
         "DataRate": "Dátový objem",
         "RemoveThisSensor": "Odstrániť tento senzor",
         "OpenTelemetryPanel": "Otvoriť panel telemetrie",
-        "Screenshot": "Screenshot"
+        "Screenshot": "Screenshot",
+        "LockAxis": "Lock axis"
+    },
+    "AegisUpdater": {
+        "AegisUpdater": "Aegis updater",
+        "SelectAegisFirmware": "Select Aegis firmware",
+        "InterruptFlash": "Interrupt flash",
+        "LeavePageWarning": "Leaving this page may cause a interruption and damage to the device. Are you sure you want to do this?"
     }
 }

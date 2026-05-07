@@ -109,7 +109,7 @@
         "OpenFile": "打开文件",
         "Add": "添加",
         "Upload": "上传",
-        "ShowMoreRelease": "You can switch to GitHub in the Suite settings to get more releases."
+        "ShowMoreRelease": "请在设置中将目标服务器更改为 GitHub 以获取更多发布版本."
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "选择你的视频组件版本",
@@ -129,24 +129,24 @@
         "Success": "Bootloader 烧写成功!",
         "Failed": "烧写失败!",
         "FlashingBootloader": "烧写 Bootloader 中...",
-        "DFUWriting": "DFU写入中, 已完成 {{ value }} %...",
+        "DFUWriting": "DFU 写入中, 已完成 {{ value }} %...",
         "PermissionDenied": "权限被拒绝!",
         "DFUDetected": "DFU 设备已连接",
         "DFUNotDetected": "DFU 设备未连接",
-        "DriverCheckTitle": "DFU driver check",
-        "DriverChecking": "Checking DFU driver ...",
-        "RefreshDriverStatus": "Refresh DFU driver status",
-        "InstallUsbDk": "Install DFU driver",
-        "DriverCheckFailed": "Failed to check DFU driver",
-        "DriverInstallFailed": "Failed to run DFU driver installer",
-        "StepWaitDfu": "Wait for DFU device",
-        "StepFlash": "Start flashing",
-        "GuideEthosTitle": "ETHOS radio",
-        "GuideEthosDfu": "With the ETHOS radio powered off, connect it to your computer using a USB cable, then wait until Suite detects DFU mode.",
-        "GuideAegisTitle": "Aegis flight controller",
-        "GuideAegisDfu": "Hold the Bootloader button and connect the flight controller to your computer using a USB cable, then wait until Suite detects DFU mode.",
-        "StepFlashLockedHint": "Bootloader binary selected and DFU device detected. Click the button below to start flashing.",
-        "NoFileSelected": "No bootloader binary selected"
+        "DriverCheckTitle": "DFU 驱动检查",
+        "DriverChecking": "正在检查 DFU 驱动 ...",
+        "RefreshDriverStatus": "刷新 DFU 驱动状态",
+        "InstallUsbDk": "安装 DFU 驱动",
+        "DriverCheckFailed": "检查 DFU 驱动失败",
+        "DriverInstallFailed": "运行 DFU 驱动安装器失败",
+        "StepWaitDfu": "等待 DFU 设备",
+        "StepFlash": "开始烧写",
+        "GuideEthosTitle": "对于 ETHOS 遥控器",
+        "GuideEthosDfu": "将 ETHOS 遥控器关机, 然后使用 USB 线连接到电脑, 然后等待 Suite 检测到 DFU 设备.",
+        "GuideAegisTitle": "对于 Aegis 飞控",
+        "GuideAegisDfu": "按住 Bootloader 按钮, 然后使用 USB 线连接到电脑, 然后等待 Suite 检测到 DFU 设备.",
+        "StepFlashLockedHint": "已选择 Bootloader 文件并检测到 DFU 设备. 点击下面的按钮开始烧写.",
+        "NoFileSelected": "没有选择 Bootloader 文件"
     },
     "DownloadCenter": {
         "DownloadCenter": "下载中心",
@@ -590,8 +590,6 @@
         "SimNotStarted": "模拟器未在运行",
         "NoMacroFound": "没有找到可供执行的宏文件",
         "AutoCentering": "自动回中",
-        "MaintainVertical": "保持垂直轴向移动",
-        "MaintainHorizontal": "保持水平轴向移动",
         "MidpointSnapping": "中点吸附",
         "ClearConsoleOutput": "清空控制台输出",
         "ReloadSimulator": "重载模拟器",
@@ -621,6 +619,13 @@
         "DataRate": "数据速率",
         "RemoveThisSensor": "移除该传感器",
         "OpenTelemetryPanel": "打开遥测面板",
-        "Screenshot": "截图"
+        "Screenshot": "截图",
+        "LockAxis": "Lock axis"
+    },
+    "AegisUpdater": {
+        "AegisUpdater": "Aegis updater",
+        "SelectAegisFirmware": "Select Aegis firmware",
+        "InterruptFlash": "Interrupt flash",
+        "LeavePageWarning": "Leaving this page may cause a interruption and damage to the device. Are you sure you want to do this?"
     }
 }

@@ -584,8 +584,6 @@
         "SimNotStarted": "No está iniciado el Simulador",
         "NoMacroFound": "No se ha encontrado una macro disponible para el simulador",
         "AutoCentering": "Auto-centrado",
-        "MaintainVertical": "Mantener movimiento eje vertical",
-        "MaintainHorizontal": "Mantener movimiento eje horizontal",
         "MidpointSnapping": "Ajuste del punto medio",
         "ClearConsoleOutput": "Borrar salida de consola",
         "ReloadSimulator": "Recargar simulador",
@@ -615,6 +613,13 @@
         "DataRate": "Régimen de datos",
         "RemoveThisSensor": "Eliminar este sensor",
         "OpenTelemetryPanel": "Abrir panel de telemetría",
-        "Screenshot": "Captura de pantalla"
+        "Screenshot": "Captura de pantalla",
+        "LockAxis": "Lock axis"
+    },
+    "AegisUpdater": {
+        "AegisUpdater": "Aegis updater",
+        "SelectAegisFirmware": "Select Aegis firmware",
+        "InterruptFlash": "Interrupt flash",
+        "LeavePageWarning": "Leaving this page may cause a interruption and damage to the device. Are you sure you want to do this?"
     }
 }
