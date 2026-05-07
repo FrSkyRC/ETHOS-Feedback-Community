@@ -491,7 +491,7 @@
         "ManifestInvalidJson": "ethos_lua_manifest.json: JSON non valido.",
         "ManifestInvalidShape": "ethos_lua_manifest.json deve essere un oggetto JSON.",
         "ManifestUnsupportedVersion": "ethos_lua_manifest.json: Versione non supportata (solo versione 1 è supportata).",
-        "ManifestInvalidName": "ethos_lua_manifest.json: \"name\"." invalido o mancante,
+        "ManifestInvalidName": "ethos_lua_manifest.json: \"name\" invalido o mancante.",
         "ManifestInvalidKey": "ethos_lua_manifest.json: \"key\" invalido o mancante (usa lettere, numeri, . _ : - solo, 1-128 chars).",
         "ManifestInvalidVersion": "ethos_lua_manifest.json: \"version\" Invalida (usa forma numerica es: 1.0.0).",
         "ManifestInvalidFolder": "ethos_lua_manifest.json: \"folder\" invalida (nome cartella installazione sotto; 1-64 chars, inizia con una lettera o numero).",
