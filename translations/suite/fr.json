@@ -498,8 +498,8 @@
         "ManifestInvalidFolder": "ethos_lua_manifest.json: non valide \"folder\" (installer nom répertoire sou sscripts; 1-64 car., débutant avec une lettre ou chiffre).",
         "ManifestInvalidFiles": "ethos_lua_manifest.json: \"files\" must be a non-empty array of relative paths.",
         "ManifestUnsafePath": "ethos_lua_manifest.json: unsafe path in \"files\" (no .. or absolute paths).",
-        "ManifestMissingMain": "ethos_lua_manifest.json: \"files\" must include main.lua or main.luac.",
-        "ManifestInvalidReleaseNotes": "ethos_lua_manifest.json: invalid \"releaseNotes\" (must be a string, max 32000 characters).",
+        "ManifestMissingMain": "ethos_lua_manifest.json: \"files\" doit inclure main.lua ou main.luac.",
+        "ManifestInvalidReleaseNotes": "ethos_lua_manifest.json: non valide \"releaseNotes\" (doit être une phrase, 32000 car. max).",
         "ManifestZipEntryMissing": "ethos_lua_manifest.json: a listed file was not found in the .zip.",
         "ManifestGlobNoMatch": "ethos_lua_manifest.json: a wildcard selector in \"files\" matched no file.",
         "ManifestKey": "Script ID",
@@ -526,7 +526,7 @@
         "InstallLatest": "Installer dernière verison",
         "Reinstall": "Reinstaller",
         "ScriptInfo": "Information Script",
-        "NoScriptInfo": "No script information available.",
+        "NoScriptInfo": "Aucune inforation de script disponible.",
         "TheEntireZip": "Le fichier ZIP complet"
     },
     "Updater": {
@@ -621,12 +621,12 @@
         "RemoveThisSensor": "Supprimer ce capteur",
         "OpenTelemetryPanel": "Ouvrir fenêtre télémétrie",
         "Screenshot": "Capture écran",
-        "LockAxis": "Lock axis"
+        "LockAxis": "Vérrouiller axe"
     },
     "AegisUpdater": {
-        "AegisUpdater": "Aegis updater",
-        "SelectAegisFirmware": "Select Aegis firmware",
-        "InterruptFlash": "Interrupt flash",
-        "LeavePageWarning": "Leaving this page may cause a interruption and damage to the device. Are you sure you want to do this?"
+        "AegisUpdater": "Utilitaire mise à jour Aegis",
+        "SelectAegisFirmware": "Selectionner firmware Aegis",
+        "InterruptFlash": "Arrêter mise à jour",
+        "LeavePageWarning": "Quitter cette page peut arrêter la mise à jour et endommager le périphérique. Continuer ?"
     }
 }
