@@ -391,7 +391,7 @@
         "SystemProxy": "Proxy système",
         "CustomProxy": "Proxy perso",
         "ProxyAddress": "Adresse proxy",
-        "ProxyPort": "Port"
+        "ProxyPort": "Port proxy"
     },
     "Documentation": {
         "Documentation": "Documentation",
@@ -412,8 +412,8 @@
         "ManualAsset": "Fichier du manuel",
         "NoManualsAvailable": "Aucun manuel disponible.",
         "ManualsFetchError": "Impossible de charger les manuels. Réessayez plus tard.",
-        "LuaPackage": "Ethos lua package (ZIP manifest)",
-        "LuaPackageDescription": "A manual to describe the manifest file that should be included in the ETHOS Lua package."
+        "LuaPackage": "Fichier lua Ethos lua (ZIP)",
+        "LuaPackageDescription": "Notice pour décrire le contenu d'un fichier ZIP lua ETHOS."
     },
     "BootloaderGuide": {
         "BootloaderGuideTitle": "Ce firmware peut ne pas passer en mode bootloader automatiquement. Procéder manuellement selon les étapes suivantes :",
@@ -476,10 +476,10 @@
         "LuaInstall": "Installer scripts Lua",
         "LuaInstallDescription": "Aide à l'installation de scripts depuis un fichier .zip sur la radio",
         "OpenZip": "Ouvrir .zip",
-        "ShowSelectedZipInfo": "Show info",
-        "InstallSelectedZip": "Install scripts",
-        "SelectedZipFile": "Selected zip file",
-        "NoManifestFound": "No ethos_lua_manifest.json found at zip root.",
+        "ShowSelectedZipInfo": "Afficher info",
+        "InstallSelectedZip": "Installer scripts",
+        "SelectedZipFile": "Fichier Zip sélectionné",
+        "NoManifestFound": "Pas de fichier ethos_lua_manifest.json à la racine du fichier ZIP.",
         "AnalysingFiles": "Analyse fichiers en cours ...",
         "NoFileSelected": "Aucun fichier sélectionnév!",
         "ScriptsInstalled": "Scripts installés",
@@ -489,13 +489,13 @@
         "ScriptsDirectoryNotFound": "Répertoire de scripts non trouvé !",
         "FollowingScriptsFailToInstall": "Erreur d'installation du script suivant",
         "NoScriptsFound": "Aucun script trouvé dans le fichier .zip !",
-        "ManifestInvalidJson": "ethos_lua_manifest.json: invalid JSON.",
-        "ManifestInvalidShape": "ethos_lua_manifest.json must be a JSON object.",
-        "ManifestUnsupportedVersion": "ethos_lua_manifest.json: unsupported manifestVersion (only version 1 is supported).",
-        "ManifestInvalidName": "ethos_lua_manifest.json: invalid or missing \"name\".",
-        "ManifestInvalidKey": "ethos_lua_manifest.json: invalid or missing \"key\" (use letters, digits, . _ : - only, 1-128 chars).",
-        "ManifestInvalidVersion": "ethos_lua_manifest.json: invalid \"version\" (use a numeric form like 1.0.0).",
-        "ManifestInvalidFolder": "ethos_lua_manifest.json: invalid \"folder\" (install directory name under scripts; 1-64 chars, start with letter or digit).",
+        "ManifestInvalidJson": "ethos_lua_manifest.json: fichier  JSON invalide.",
+        "ManifestInvalidShape": "ethos_lua_manifest.json doit être un object JSON.",
+        "ManifestUnsupportedVersion": "ethos_lua_manifest.json: Version non valide (Uniquement version 1 est supportée).",
+        "ManifestInvalidName": "ethos_lua_manifest.json: non valide ou absence \"name\".",
+        "ManifestInvalidKey": "ethos_lua_manifest.json: non valide ou absence \"key\" (utiliser lettres, numéros, . _ : - only, 1-128 car.).",
+        "ManifestInvalidVersion": "ethos_lua_manifest.json: non valide \"version\" (utiliser un format 1.0.0).",
+        "ManifestInvalidFolder": "ethos_lua_manifest.json: non valide \"folder\" (installer nom répertoire sou sscripts; 1-64 car., débutant avec une lettre ou chiffre).",
         "ManifestInvalidFiles": "ethos_lua_manifest.json: \"files\" must be a non-empty array of relative paths.",
         "ManifestUnsafePath": "ethos_lua_manifest.json: unsafe path in \"files\" (no .. or absolute paths).",
         "ManifestMissingMain": "ethos_lua_manifest.json: \"files\" must include main.lua or main.luac.",
@@ -503,9 +503,9 @@
         "ManifestZipEntryMissing": "ethos_lua_manifest.json: a listed file was not found in the .zip.",
         "ManifestGlobNoMatch": "ethos_lua_manifest.json: a wildcard selector in \"files\" matched no file.",
         "ManifestKey": "Script ID",
-        "ManifestFolder": "Install directory",
+        "ManifestFolder": "Installer répertoire",
         "FileSelectors": "File selectors",
-        "ReleaseNote": "ReleaseNote"
+        "ReleaseNote": "Note version"
     },
     "LuaLib": {
         "LuaLib": "Librairie Lua",
