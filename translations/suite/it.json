@@ -633,11 +633,11 @@
         "SelectFirmware": "Seleziona firmware",
         "NoFirmwareSelected": "Nessun firmware selezionato",
         "ComPort": "Porta COM",
-        "FlashingRequestPowerup": "Connecting to device ...",
-        "FlashingRequestVersion": "Requesting version ...",
-        "FlashingTransferringData": "Transferring firmware data {{percent}}% ...",
-        "FlashDoneSuccess": "Firmware update completed successfully.",
-        "FlashDoneError": "Firmware update failed: {{message}}",
-        "FlashingTitle": "Flashing ECOS firmware. Please do not disconnect the device."
+        "FlashingRequestPowerup": "Collegamento al dispositivo ...",
+        "FlashingRequestVersion": "Richiedo Versione ...",
+        "FlashingTransferringData": "Trasferimento dati firmware {{percent}}% ...",
+        "FlashDoneSuccess": "Aggiornamento Firmware completato con successo.",
+        "FlashDoneError": "Aggiornamento Firmware fallito: {{message}}",
+        "FlashingTitle": "Flashing Firmware ECOS. Si prega di non scollegare il dispositivo."
     }
 }
