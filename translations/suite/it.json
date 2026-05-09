@@ -632,6 +632,12 @@
         "Title": "Aggiorna ECOS",
         "SelectFirmware": "Seleziona firmware",
         "NoFirmwareSelected": "Nessun firmware selezionato",
-        "ComPort": "Porta COM"
+        "ComPort": "Porta COM",
+        "FlashingRequestPowerup": "Connecting to device ...",
+        "FlashingRequestVersion": "Requesting version ...",
+        "FlashingTransferringData": "Transferring firmware data {{percent}}% ...",
+        "FlashDoneSuccess": "Firmware update completed successfully.",
+        "FlashDoneError": "Firmware update failed: {{message}}",
+        "FlashingTitle": "Flashing ECOS firmware. Please do not disconnect the device."
     }
 }
