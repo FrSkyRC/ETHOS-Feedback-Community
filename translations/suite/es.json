@@ -623,9 +623,9 @@
         "LeavePageWarning": "Abandonar esta página puede interrumpir la actualización y causar daños al dispositivo. Está seguro de querer hacer esto?"
     },
     "EcosTool": {
-        "Title": "ECOS updater",
-        "SelectFirmware": "Select firmware",
-        "NoFirmwareSelected": "No firmware selected",
-        "ComPort": "COM Port"
+        "Title": "Actualización de ECOS",
+        "SelectFirmware": "Seleccione firmware",
+        "NoFirmwareSelected": "No se ha seleccionado firmware",
+        "ComPort": "Puerto COM"
     }
 }
