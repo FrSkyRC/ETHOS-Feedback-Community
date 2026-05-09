@@ -628,5 +628,11 @@
         "SelectAegisFirmware": "Aegis-Firmware auswählen",
         "InterruptFlash": "Interrupt flashen",
         "LeavePageWarning": "Unterbrechung: Das Verlassen dieser Seite kann zu einer Unterbrechung und Schäden am Gerät führen. Sind Sie sicher, dass Sie dies tun möchten?"
+    },
+    "EcosTool": {
+        "Title": "ECOS updater",
+        "SelectFirmware": "Select firmware",
+        "NoFirmwareSelected": "No firmware selected",
+        "ComPort": "COM Port"
     }
 }

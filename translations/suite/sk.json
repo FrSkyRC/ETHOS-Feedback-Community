@@ -628,5 +628,11 @@
         "SelectAegisFirmware": "Select Aegis firmware",
         "InterruptFlash": "Interrupt flash",
         "LeavePageWarning": "Leaving this page may cause a interruption and damage to the device. Are you sure you want to do this?"
+    },
+    "EcosTool": {
+        "Title": "ECOS updater",
+        "SelectFirmware": "Select firmware",
+        "NoFirmwareSelected": "No firmware selected",
+        "ComPort": "COM Port"
     }
 }

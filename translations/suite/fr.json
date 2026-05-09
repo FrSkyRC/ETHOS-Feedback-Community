@@ -628,5 +628,11 @@
         "SelectAegisFirmware": "Selectionner firmware Aegis",
         "InterruptFlash": "Arrêter mise à jour",
         "LeavePageWarning": "Quitter cette page peut arrêter la mise à jour et endommager le périphérique. Continuer ?"
+    },
+    "EcosTool": {
+        "Title": "ECOS updater",
+        "SelectFirmware": "Select firmware",
+        "NoFirmwareSelected": "No firmware selected",
+        "ComPort": "COM Port"
     }
 }
