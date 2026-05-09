@@ -630,15 +630,15 @@
         "LeavePageWarning": "Unterbrechung: Das Verlassen dieser Seite kann zu einer Unterbrechung und Schäden am Gerät führen. Sind Sie sicher, dass Sie dies tun möchten?"
     },
     "EcosTool": {
-        "Title": "ECOS updater",
-        "SelectFirmware": "Select firmware",
-        "NoFirmwareSelected": "No firmware selected",
+        "Title": "ECOS-Updater",
+        "SelectFirmware": "Firmware auswählen",
+        "NoFirmwareSelected": "NKeine Firmware ausgewählt!",
         "ComPort": "COM Port",
-        "FlashingRequestPowerup": "Connecting to device ...",
-        "FlashingRequestVersion": "Requesting version ...",
-        "FlashingTransferringData": "Transferring firmware data {{percent}}% ...",
-        "FlashDoneSuccess": "Firmware update completed successfully.",
-        "FlashDoneError": "Firmware update failed: {{message}}",
-        "FlashingTitle": "Flashing ECOS firmware. Please do not disconnect the device."
+        "FlashingRequestPowerup": "Verbindung zum Gerät wird hergestellt...",
+        "FlashingRequestVersion": "Version anfordern...",
+        "FlashingTransferringData": "Übertragen von Firmware-Daten {{percent}}% ...",
+        "FlashDoneSuccess": "Firmware-Update erfolgreich abgeschlossen.",
+        "FlashDoneError": "Firmware-Update fehlgeschlagen: {{message}}",
+        "FlashingTitle": "ECOS-Firmware wird geflasht. Bitte trennen Sie das Gerät nicht."
     }
 }
