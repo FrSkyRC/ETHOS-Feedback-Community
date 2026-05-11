@@ -364,6 +364,7 @@ DIGITAL_RSSI,,"デジタル RSSI",,
 GYRO,,"ジャイロ",,
 GYRO_SWITCHES,,"ジャイロスイッチ",,
 LANGUAGE,,"言語",,
+THEME,,"Theme"
 SWITCHES,,"スイッチ",,
 TOP_TOOLBAR,,"トップツールバー",,
 NO,,"いいえ",,

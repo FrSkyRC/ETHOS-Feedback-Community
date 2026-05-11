@@ -364,6 +364,7 @@ DIGITAL_RSSI,,"Digital RSSI",
 GYRO,,"Gyro",
 GYRO_SWITCHES,,"Gyro switches"
 LANGUAGE,,"Language",
+THEME,,"Theme"
 SWITCHES,,"Switches",
 TOP_TOOLBAR,,"Top toolbar",
 NO,,"No",

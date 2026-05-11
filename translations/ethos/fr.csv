@@ -572,6 +572,7 @@ DIGITAL_RSSI,,"RSSI numérique",
 GYRO,,"Gyro",
 GYRO_SWITCHES,,"Inters Gyro",
 LANGUAGE,,"Langue",
+THEME,,"Theme"
 SWITCHES,,"Inters",
 TOP_TOOLBAR,,"Barre infos sup.",
 NO,,"Non",
