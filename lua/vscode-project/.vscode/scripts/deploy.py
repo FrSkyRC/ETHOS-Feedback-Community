@@ -795,6 +795,8 @@ if "tgt_name" not in config or not config["tgt_name"]:
 
 CONFIG_PATH = str(cfg_path)
 
+DEFAULT_VERSION = "nightly26"
+
 pbar = None
 
 # === Ethos Serial + Serial Tail helpers =======================================
@@ -1156,6 +1158,7 @@ def run_step_script(step, out_dir, lang="en"):
         "--out-dir", out_dir,
         "--lang", lang,
         "--git-src", git_src,
+        "--default-version", DEFAULT_VERSION,
     ]
 
     print(f"[STEP] Running '{step}' → {script_path}")
@@ -1516,7 +1519,6 @@ def main():
         targets = [{'name': 'Radio', 'dest': rd, 'simulator': None}]
     else:
         # SIMULATOR DEPLOY: always to <git_src>/simulator/[firmware][@version?]/scripts
-        DEFAULT_VERSION = "nightly26"
         firmware = os.environ.get("ETHOS_FIRMWARE")
         version = os.environ.get("ETHOS_VERSION")
         path_parts = [config['git_src'], 'simulator']
