@@ -496,11 +496,11 @@
         "ManifestInvalidKey": "ethos_lua_manifest.json: non valide ou absence \"key\" (utiliser lettres, numéros, . _ : - only, 1-128 car.).",
         "ManifestInvalidVersion": "ethos_lua_manifest.json: non valide \"version\" (utiliser un format 1.0.0).",
         "ManifestInvalidFolder": "ethos_lua_manifest.json: non valide \"folder\" (installer nom répertoire sou sscripts; 1-64 car., débutant avec une lettre ou chiffre).",
-        "ManifestInvalidFiles": "ethos_lua_manifest.json: \"files\" must be a non-empty array of relative paths.",
-        "ManifestUnsafePath": "ethos_lua_manifest.json: unsafe path in \"files\" (no .. or absolute paths).",
+        "ManifestInvalidFiles": "ethos_lua_manifest.json: \"files\" doit être un tableau non vide des chemins relatifs.",
+        "ManifestUnsafePath": "ethos_lua_manifest.json: répertoire non consistant dans  \"files\" (no .. ou chemin absolu).",
         "ManifestMissingMain": "ethos_lua_manifest.json: \"files\" doit inclure main.lua ou main.luac.",
         "ManifestInvalidReleaseNotes": "ethos_lua_manifest.json: non valide \"releaseNotes\" (doit être une phrase, 32000 car. max).",
-        "ManifestZipEntryMissing": "ethos_lua_manifest.json: a listed file was not found in the .zip.",
+        "ManifestZipEntryMissing": "ethos_lua_manifest.json: liste de fichiers non trouvée dans le .zip.",
         "ManifestGlobNoMatch": "ethos_lua_manifest.json: a wildcard selector in \"files\" matched no file.",
         "ManifestKey": "Script ID",
         "ManifestFolder": "Installer répertoire",
@@ -621,7 +621,7 @@
         "RemoveThisSensor": "Supprimer ce capteur",
         "OpenTelemetryPanel": "Ouvrir fenêtre télémétrie",
         "Screenshot": "Capture écran",
-        "LockAxis": "Vérrouiller axe"
+        "LockAxis": "Verrouiller axe"
     },
     "AegisUpdater": {
         "AegisUpdater": "Utilitaire mise à jour Aegis",
@@ -630,15 +630,15 @@
         "LeavePageWarning": "Quitter cette page peut arrêter la mise à jour et endommager le périphérique. Continuer ?"
     },
     "EcosTool": {
-        "Title": "ECOS updater",
-        "SelectFirmware": "Select firmware",
-        "NoFirmwareSelected": "No firmware selected",
-        "ComPort": "COM Port",
-        "FlashingRequestPowerup": "Connecting to device ...",
-        "FlashingRequestVersion": "Requesting version ...",
-        "FlashingTransferringData": "Transferring firmware data {{percent}}% ...",
-        "FlashDoneSuccess": "Firmware update completed successfully.",
-        "FlashDoneError": "Firmware update failed: {{message}}",
-        "FlashingTitle": "Flashing ECOS firmware. Please do not disconnect the device."
+        "Title": "Mise à jour ECOS",
+        "SelectFirmware": "Sélection firmware",
+        "NoFirmwareSelected": "Aucune firmware sélectionné",
+        "ComPort": "Port COM",
+        "FlashingRequestPowerup": "Connection au périphérique en cours ...",
+        "FlashingRequestVersion": "Nécessite version ...",
+        "FlashingTransferringData": "Transfert données en cours {{percent}}% ...",
+        "FlashDoneSuccess": "Mise à jour Firmware réussi.",
+        "FlashDoneError": "Echec mise à jour Firmware: {{message}}",
+        "FlashingTitle": "Flash firmware ECOS en cours. Ne pas déconnecter le périphérique."
     }
 }
