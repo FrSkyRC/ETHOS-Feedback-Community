@@ -632,7 +632,7 @@
     "EcosTool": {
         "Title": "ECOS-Updater",
         "SelectFirmware": "Firmware auswählen",
-        "NoFirmwareSelected": "NKeine Firmware ausgewählt!",
+        "NoFirmwareSelected": "Keine Firmware ausgewählt!",
         "ComPort": "COM Port",
         "FlashingRequestPowerup": "Verbindung zum Gerät wird hergestellt...",
         "FlashingRequestVersion": "Version anfordern...",
