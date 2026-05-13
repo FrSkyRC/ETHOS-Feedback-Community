@@ -798,6 +798,9 @@ CONFIG_PATH = str(cfg_path)
 # Optional: override the source subdirectory (default "src"). Set to "" to source from repo root.
 SRC_DIR = config.get('src_dir', 'src')
 
+# Optional: override the simulator output directory. Precedence: ETHOS_SIMULATOR_FOLDER env var > deploy.json simulator_dir > "simulator".
+SIM_FOLDER = os.environ.get('ETHOS_SIMULATOR_FOLDER', '').strip() or config.get('simulator_dir', 'simulator')
+
 DEFAULT_VERSION = "nightly26"
 
 pbar = None
@@ -1223,15 +1226,7 @@ def copy_files(src_override, fileext, targets, lang="en", steps=None):
         print(f"[{i}/{len(targets)}] -> {t['name']} @ {dest}")
 
         if not os.path.isdir(dest):
-            fallback = os.path.normpath(os.path.join(git_src, 'simulator', 'scripts'))
-            try:
-                os.makedirs(fallback, exist_ok=True)
-                print(f"[DEST] '{dest}' not found. Using fallback: {fallback}")
-                t['dest'] = fallback
-                dest = fallback
-            except Exception as e:
-                print(f"[DEST ERROR] Could not create fallback folder at {fallback}: {e}")
-                raise
+            raise RuntimeError(f"[DEST ERROR] Target directory not found: {dest!r}")
 
         out_dir = os.path.join(dest, tgt)
 
@@ -1524,7 +1519,7 @@ def main():
         # SIMULATOR DEPLOY: always to <git_src>/simulator/[firmware][@version?]/scripts
         firmware = os.environ.get("ETHOS_FIRMWARE")
         version = os.environ.get("ETHOS_VERSION")
-        path_parts = [config['git_src'], 'simulator']
+        path_parts = [config['git_src'], SIM_FOLDER]
         if firmware:
             if version and version != DEFAULT_VERSION:
                 path_parts.append(f"{firmware}@{version}")
