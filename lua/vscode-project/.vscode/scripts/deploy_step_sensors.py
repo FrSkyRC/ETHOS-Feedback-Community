@@ -47,7 +47,7 @@ def main():
     if args.git_src:
         git_src = Path(args.git_src).resolve()
     else:
-        git_src = Path(__file__).resolve().parents[2]
+        git_src = Path(os.path.abspath(__file__)).parents[2]
 
     src = git_src / ".vscode" / "sensors.json"
     dst = sim_root / "sensors.json"

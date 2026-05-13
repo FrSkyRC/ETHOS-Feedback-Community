@@ -25,7 +25,7 @@ def main():
         git_src = os.path.abspath(args.git_src)
     else:
         # Assume this script is: <git_src>/.vscode/scripts/deploy_step_i18n.py
-        git_src = str(Path(__file__).resolve().parents[2])
+        git_src = str(Path(os.path.abspath(__file__)).parents[2])
 
     # Try language JSON in out_dir first, then fall back to common source locations.
     json_path = os.path.join(out_dir, "i18n", f"{lang}.json")

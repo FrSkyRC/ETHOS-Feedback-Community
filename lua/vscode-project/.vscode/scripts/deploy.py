@@ -758,7 +758,7 @@ def mirror_copy(src_dir, dst_dir, delete_stale=True, ts_slack=2.0):
         print(f"Removed {removed} stale file(s).")
 
 # --- config: derive repo root and load deploy.json ----------------------------
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(os.path.abspath(__file__)).parents[2]
 
 ROOT_CONFIG = ROOT / "deploy.json"
 VSCODE_CONFIG = ROOT / ".vscode/deploy.json"
