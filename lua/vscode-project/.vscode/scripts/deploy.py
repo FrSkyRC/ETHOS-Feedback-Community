@@ -795,6 +795,9 @@ if "tgt_name" not in config or not config["tgt_name"]:
 
 CONFIG_PATH = str(cfg_path)
 
+# Optional: override the source subdirectory (default "src"). Set to "" to source from repo root.
+SRC_DIR = config.get('src_dir', 'src')
+
 DEFAULT_VERSION = "nightly26"
 
 pbar = None
@@ -1235,8 +1238,8 @@ def copy_files(src_override, fileext, targets, lang="en", steps=None):
         # Decide whether to stage locally (recommended for radio when running steps)
         do_stage = bool(DEPLOY_TO_RADIO and DEPLOY_STAGE and steps)
 
-        # Always source from repo src/<tgt>
-        repo_src = os.path.join(git_src, 'src', tgt)
+        # Always source from repo <src_dir>/<tgt> (src_dir from deploy.json, default "src"; "" means repo root)
+        repo_src = os.path.join(git_src, SRC_DIR, tgt) if SRC_DIR else os.path.join(git_src, tgt)
 
         if do_stage:
             print("[STAGE] Staging to local temp, running steps, then copying to radio…")
