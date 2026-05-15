@@ -109,7 +109,8 @@
         "OpenFile": "Åpne fil",
         "Add": "Legg til",
         "Upload": "Last opp",
-        "ShowMoreRelease": "Du kan velge 'GitHub' i innstillingene til 'Suite' for å få flere versjonen."
+        "ShowMoreRelease": "Du kan velge 'GitHub' i innstillingene til 'Suite' for å få flere versjonen.",
+        "Abort": "Abort"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Velg din video-komponent-versjon",

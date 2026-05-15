@@ -109,7 +109,8 @@
         "OpenFile": "Datei öffnen",
         "Add": "Hinzufügen",
         "Upload": "Hochladen",
-        "ShowMoreRelease": "Sie können in den Suite-Einstellungen zu GitHub wechseln, um weitere Releases zu erhalten."
+        "ShowMoreRelease": "Sie können in den Suite-Einstellungen zu GitHub wechseln, um weitere Releases zu erhalten.",
+        "Abort": "Abort"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Wählen Sie Ihre Video-Komponenten-Version",

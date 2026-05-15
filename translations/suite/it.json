@@ -109,7 +109,8 @@
         "OpenFile": "Apri file",
         "Add": "Aggiungi",
         "Upload": "Carica",
-        "ShowMoreRelease": "Puoi Selezionare GitHub nelle impostazioni della Suite per ottenere maggiori releases."
+        "ShowMoreRelease": "Puoi Selezionare GitHub nelle impostazioni della Suite per ottenere maggiori releases.",
+        "Abort": "Abort"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Scegliere la versione del Componente Video",

@@ -105,7 +105,8 @@
         "OpenFile": "Abrir archivo",
         "Add": "Añadir",
         "Upload": "Cargar",
-        "ShowMoreRelease": "Para conseguir más actualizaciones, puede cambar a GitHub en los ajustes de la Suite."
+        "ShowMoreRelease": "Para conseguir más actualizaciones, puede cambar a GitHub en los ajustes de la Suite.",
+        "Abort": "Abort"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Elija su versión de video componente",

@@ -108,7 +108,8 @@
         "OpenFile": "Otevřít soubor",
         "Add": "Přidat",
         "Upload": "Nahrát",
-        "ShowMoreRelease": "Pro získání více vydání přepněte Umístění serveru na Github v Nastavení."
+        "ShowMoreRelease": "Pro získání více vydání přepněte Umístění serveru na Github v Nastavení.",
+        "Abort": "Abort"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Vyberte verzi komponenty videa",

@@ -109,7 +109,8 @@
         "OpenFile": "Ouvrir fichier",
         "Add": "Ajouter",
         "Upload": "Charger",
-        "ShowMoreRelease": "Pour plus de versions, basculer vers le Github dans les paramètres."
+        "ShowMoreRelease": "Pour plus de versions, basculer vers le Github dans les paramètres.",
+        "Abort": "Abort"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Choisir votre version de composant vidéo",

@@ -109,7 +109,8 @@
         "OpenFile": "Otvoriť súbor",
         "Add": "Pridať",
         "Upload": "Nahrať",
-        "ShowMoreRelease": "V nastaveniach môžete prepnúť zdroj na GitHub a získať viac vydaní.."
+        "ShowMoreRelease": "V nastaveniach môžete prepnúť zdroj na GitHub a získať viac vydaní..",
+        "Abort": "Abort"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "Zvoľte verziu vašej zobrazovacej jednotky",

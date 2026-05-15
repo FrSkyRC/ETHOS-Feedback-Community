@@ -109,7 +109,8 @@
         "OpenFile": "打开文件",
         "Add": "添加",
         "Upload": "上传",
-        "ShowMoreRelease": "请在设置中将目标服务器更改为 GitHub 以获取更多发布版本."
+        "ShowMoreRelease": "请在设置中将目标服务器更改为 GitHub 以获取更多发布版本.",
+        "Abort": "Abort"
     },
     "ChooseVideoVersion": {
         "ChooseYourVideoComponentVersion": "选择你的视频组件版本",
