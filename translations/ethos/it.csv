@@ -365,8 +365,8 @@ GYRO,,"Gyro",
 GYRO_SWITCHES,,"Interruttori Gyro"
 LANGUAGE,,"Lingua",
 THEME,,"Tema"
-LIGHT,,"Light"
-DARK,,"Dark"
+LIGHT,,"Chiaro"
+DARK,,"Scuro"
 SWITCHES,,"Interruttori",
 TOP_TOOLBAR,,"Barra Superiore",
 NO,,"No",
