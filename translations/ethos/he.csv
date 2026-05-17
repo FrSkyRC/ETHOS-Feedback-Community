@@ -365,6 +365,8 @@ GYRO,,ורי'ג,,
 GYRO_SWITCHES,,ורי'ג יקספמ,,
 LANGUAGE,,הפש,,
 THEME,, אשונ תכרע,,
+LIGHT,,"Light"
+DARK,,"Dark"
 SWITCHES,,םיגתמ,,
 TOP_TOOLBAR,,ןוילע םילכ לגרס,,
 NO,,אל,,
@@ -550,7 +552,6 @@ CENTER_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,,ךישמהל ידכב 'אבה' ץחל
 MOVE_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,,תמייסש רחאל 'אבה' ץחלו םיחווטה תוצקל תולגלגהו םיקיטסה תא זזה,,
 CALIBRATION_COMPLETE_CLICK_CONFIRM_TO_STORE,,םינותנה תרימשל 'רושיא' ץחל .םלשוה לויכה,,
 BACKLIGHT,,עקר תרואת,,
-DARK_MODE,,ההכ בצמ,,
 HIGHLIGHT_COLOR,,עבצ שגדה,,
 MODEL_NAME,,םש,,
 NO_AIRBRAKES,,ריוא ירוצעמ אלל,,

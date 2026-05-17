@@ -367,6 +367,8 @@ GYRO,,"ジャイロ",,
 GYRO_SWITCHES,,"ジャイロスイッチ",,
 LANGUAGE,,"言語",,
 THEME,,"Theme"
+LIGHT,,"Light"
+DARK,,"Dark"
 SWITCHES,,"スイッチ",,
 TOP_TOOLBAR,,"トップツールバー",,
 NO,,"いいえ",,
@@ -632,7 +634,6 @@ CENTER_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,,"スティック/ポット/スライ�
 MOVE_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,,"スティック/ポット/スライダーをフルレンジに移動し,\n完了したら[次へ]をクリック.","Move the sticks/pots/sliders, click 'Next' when done",
 CALIBRATION_COMPLETE_CLICK_CONFIRM_TO_STORE,,"補正が完了しました.\n[確認]をクリックして設定を保存.","Calibration complete, click 'Confirm' to store it",
 BACKLIGHT,,"バックライト",,
-DARK_MODE,,"ダークモード",,
 HIGHLIGHT_COLOR,,"ハイライトカラー",,
 MODEL_NAME,,"モデル名",,
 NO_AIRBRAKES,,"エアブレーキなし",,

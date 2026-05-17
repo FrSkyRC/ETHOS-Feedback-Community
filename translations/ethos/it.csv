@@ -365,6 +365,8 @@ GYRO,,"Gyro",
 GYRO_SWITCHES,,"Interruttori Gyro"
 LANGUAGE,,"Lingua",
 THEME,,"Tema"
+LIGHT,,"Light"
+DARK,,"Dark"
 SWITCHES,,"Interruttori",
 TOP_TOOLBAR,,"Barra Superiore",
 NO,,"No",
@@ -543,7 +545,6 @@ CENTER_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,,"Centra gli sticks/potenziometri/slid
 MOVE_STICKS_POTS_SLIDERS_AND_CLICK_NEXT,,"Muovi gli sticks/pot./sliders alla corsa max, seleziona 'successivo' appena fatto",
 CALIBRATION_COMPLETE_CLICK_CONFIRM_TO_STORE,,"Calibrazione completa, seleziona 'Conferma' per salvare",
 BACKLIGHT,,"Retroilluminazione",
-DARK_MODE,,"Modo Scuro",
 HIGHLIGHT_COLOR,,"Colore Evidenziato",
 MODEL_NAME,,"Nome",
 NO_AIRBRAKES,,"No aereofreni",
