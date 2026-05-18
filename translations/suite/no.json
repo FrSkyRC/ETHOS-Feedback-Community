@@ -305,7 +305,7 @@
         "ContinueUpdaing": "Fortsett oppdateringen",
         "CheckingComponentsVersion": "Sjekker versjon av komponenter ...",
         "ComponentsNeedToBeUpdated": "Komponenter trenger å bli oppdatert",
-        "UpdateComponentToVersion": "Komponent {{ component }} må oppgraderes til versjon {{ version }}",
+        "UpdateComponentToVersion": "{{ component }} må oppgraderes til versjon {{ version }}",
         "ConfirmFlashBootloader": "Bekreft 'flashing' av bootloader",
         "BootloaderUpgradeConfirmation": "Oppgradering av bootloader til version {{ version }} sletter alt innhold på FLASH enheten. Er du sikker på at du vil fortsette?"
     },
@@ -619,28 +619,28 @@
         "Module": "Modul",
         "InternalModule": "Intern modul",
         "ExternalModule": "Ekstern modul",
-        "DataRate": "Data hastighet",
+        "DataRate": "Datahastighet",
         "RemoveThisSensor": "Fjern denne sensoren",
         "OpenTelemetryPanel": "Åpne telemetri-panel",
-        "Screenshot": "Screenshot",
-        "LockAxis": "Lock axis"
+        "Screenshot": "Skjermbilde",
+        "LockAxis": "Lås akse"
     },
     "AegisUpdater": {
-        "AegisUpdater": "Aegis updater",
-        "SelectAegisFirmware": "Select Aegis firmware",
-        "InterruptFlash": "Interrupt flash",
-        "LeavePageWarning": "Leaving this page may cause a interruption and damage to the device. Are you sure you want to do this?"
+        "AegisUpdater": "Aegis oppdatering",
+        "SelectAegisFirmware": "Velg Aegis firmware",
+        "InterruptFlash": "Avbryt flash",
+        "LeavePageWarning": "Hvis du går bort fra denne siden, kan det føre til forstyrrelse og skade på enheten. Er du sikker på at du vil gjøre dette?"
     },
     "EcosTool": {
-        "Title": "ECOS updater",
-        "SelectFirmware": "Select firmware",
-        "NoFirmwareSelected": "No firmware selected",
+        "Title": "ECOS oppdatering",
+        "SelectFirmware": "Velg firmware",
+        "NoFirmwareSelected": "Ingen firmware valgt",
         "ComPort": "COM Port",
-        "FlashingRequestPowerup": "Connecting to device ...",
-        "FlashingRequestVersion": "Requesting version ...",
-        "FlashingTransferringData": "Transferring firmware data {{percent}}% ...",
-        "FlashDoneSuccess": "Firmware update completed successfully.",
-        "FlashDoneError": "Firmware update failed: {{message}}",
-        "FlashingTitle": "Flashing ECOS firmware. Please do not disconnect the device."
+        "FlashingRequestPowerup": "Kobler til enhet ...",
+        "FlashingRequestVersion": "Spør etter versjon ...",
+        "FlashingTransferringData": "Overfører firmware data {{percent}}% ...",
+        "FlashDoneSuccess": "Firmwareoppdatering fullført.",
+        "FlashDoneError": "Firmwareoppdatering feilet: {{message}}",
+        "FlashingTitle": "Flasher ECOS firmware. Ikke koble fra enheten."
     }
 }
