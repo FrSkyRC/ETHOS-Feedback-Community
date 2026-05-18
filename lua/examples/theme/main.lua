@@ -5,7 +5,6 @@ local function init()
   system.registerTheme({
     key="Dark16", 
     name="Dark (Ethos 1.6)",
-    darkMode=true,
     roundButtons=false,
     focusStyle="invert",
     colors={
@@ -24,14 +23,15 @@ local function init()
         RED, -- INACTIVE_COLOR
         WHITE, -- BUTTON_BORDER_ACTIVE_COLOR
         lcd.GREY(0x20), -- BUTTON_BORDER_COLOR
-    }
+        BLACK, -- TOPLCD_BGCOLOR (XE/S)
+    },
+    toolbarBackground=lcd.loadBitmap("./toolbar_background_16.png"),
   })
 
   -- Colors from the default Dark theme
   -- system.registerTheme({
   --   key="DarkCopy", 
   --   name="Dark (Copy)",
-  --   darkMode=true,
   --   roundButtons=true,
   --   focusStyle="invert",
   --   colors={
@@ -50,6 +50,7 @@ local function init()
   --       RED, -- INACTIVE_COLOR
   --       WHITE, -- BUTTON_BORDER_ACTIVE_COLOR
   --       lcd.RGB(0x45, 0x4E, 0x57), -- BUTTON_BORDER_COLOR
+  --       BLACK, -- TOPLCD_BGCOLOR (XE/S)
   --   }
   -- })
 
@@ -57,7 +58,6 @@ local function init()
   -- system.registerTheme({
   --   key="LighCopy", 
   --   name="Light (Copy)",
-  --   darkMode=false,
   --   roundButtons=true,
   --   focusStyle="invert",
   --   colors={
@@ -76,14 +76,16 @@ local function init()
   --       RED, -- INACTIVE_COLOR
   --       lcd.RGB(0x45, 0x4E, 0x57), -- BUTTON_BORDER_ACTIVE_COLOR
   --       lcd.GREY(0xA0), -- BUTTON_BORDER_COLOR
-  --   }
+  --       WHITE, -- TOPLCD_BGCOLOR (XE/S)
+  --   },
+  --   toolbarBackground="light",
+  --   toolbarLogo="light",
   -- })
 
   -- Colors from the default Dark theme, but with outline focus style (2px border width)
   system.registerTheme({
     key="DOutline", 
     name="Dark Outline",
-    darkMode=true,
     roundButtons=true,
     focusStyle="outline",
     borderWidth=2,
@@ -103,6 +105,7 @@ local function init()
         RED, -- INACTIVE_COLOR
         WHITE, -- BUTTON_BORDER_ACTIVE_COLOR
         lcd.RGB(0x45, 0x4E, 0x57), -- BUTTON_BORDER_COLOR
+        BLACK, -- TOPLCD_BGCOLOR (XE/S)
     }
   })
 end
