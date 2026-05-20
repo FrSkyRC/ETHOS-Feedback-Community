@@ -19,10 +19,10 @@ UNIT,,"単位",,
 WRITE_LOGS,,"ログ記録",,
 ID,,"ID",,
 CENTER,,"センター",,
-LOCKING_ARM_STRENGTH_P1,,"Locking arm strength (P1)"
-LOCKING_ARM_STRENGTH_P2,,"Locking arm strength (P2)"
-FRICTION_D1,,"Friction (D1)"
-FILTER_TD,,"Filter (TD / D2)"
+LOCKING_ARM_STRENGTH_P1,,"ロッキングアームの強度 (P1)"
+LOCKING_ARM_STRENGTH_P2,,"ロッキングアームの強度 (P2)"
+FRICTION_D1,,"フリクション (D1)"
+FILTER_TD,,"フィルター (TD / D2)"
 SUBTRIM,,"サブトリム",,
 PWM_CENTER,,"PWM センター",,
 NORMAL,,"ノーマル",,
@@ -34,7 +34,7 @@ ADD_EXTRA_TRIM,,"新規エキストラトリム追加",,
 EXTRA_TRIM,,"エキストラトリム",,
 SLOW_UP,,"緩加速",,
 MIN,,"最小値",,
-CURVE,,"曲線",,
+CURVE,,"カーブ",,
 MAX,,"最大値",,
 CHANNEL,,"チャンネル",,
 INVERT,,"反転",,
@@ -50,7 +50,7 @@ VALUES,,"値",,
 ADD_A_NEW_VALUE,,"新規値追加",,
 ACTIONS,,"アクション",,
 ADD_A_NEW_ACTION,,"新規アクション追加",,
-ADD_A_NEW_LOGIC_SWITCH,,"+ 新規論理スイッチ追加"
+ADD_A_NEW_LOGIC_SWITCH,,"+ 新規ロジックスイッチ追加"
 DURATION_HIGH,,"動作持続時間",,
 RISING_EDGE,,"立ち上がりエッジ",,
 DURING,,"期間中",,
@@ -86,12 +86,12 @@ MODEL_MATCH,,"モデル ID",,
 MODEL_DATA_LOAD,,"モデルデータ読込",,
 FILE_SIZE,,"ファイルサイズ",,
 MODEL_SELECT,,"モデル選択",,
-NO_MODELS_DIRECTORY,,"モデルディレクトリが存在しません!",,
+NO_MODELS_DIRECTORY,,"モデルディレクトリなし!",,
 ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_MODEL,,"このモデルを削除しますか?",,
 SUCCESS,,"成功!",,
 CLONE_MODEL_SUCCESSFULLY,,"モデルクローンが成功しました!",,
 FILENAME_TOO_LONG,,"ファイル名が長すぎる!",,
-RX_STILL_ON_SELECT_ANOTHER_MODEL,,"受信機はまだ電源オンです.\n別のモデルを選択しますか?",,
+RX_STILL_ON_SELECT_ANOTHER_MODEL,,"受信機の電源がまだオンですが.\n別のモデルに切替しますか?",,
 CONFIRM_SELECT_ANOTHER_MODEL,,"別のモデルを選択しますか?",,
 FILE_NAME,,"ファイル名が長すぎる!",,
 MODEL_TYPE,,"モデルタイプ",,
@@ -123,7 +123,7 @@ SBUS_IN,,"SBUS in",,
 TELEMETRY_25_MW,,"テレメトリパワー減少(25mW)",,
 HIGH_PWM_SPEED,,"高速 PWM",,
 FLIGHT_DATA_RECORDER,,"フライトデータ記録",,
-RX_HAS_NO_FLIGHT_DATA_RECORD,,"この受信機はフライトデータ記録機能が非対応です.",,
+RX_HAS_NO_FLIGHT_DATA_RECORD,,"フライトデータ記録機能が非対応です.",,
 DEVICE_CONFIG,,"デバイス設定",,
 CONFIRM_DELETE_TIMER,,"このタイマーを削除しますか?",,
 TIMER,,"タイマー",,
@@ -131,7 +131,7 @@ MODE,,"モード",,
 PASTE,,"貼り付け",,
 TIMERS,,"タイマー",,
 COPY,,"コピー",,
-NO_TIMER_YET_PRESS_ADD_TO_CREATE_ONE,,"タイマーはまだ設定されません.\n追加ボタンを押してください.",,
+NO_TIMER_YET_PRESS_ADD_TO_CREATE_ONE,,"タイマーはまだ設定されません.\n[+]ボタンを押してください.",,
 ANTENNA,,"アンテナ",,
 POWER_HAS_BEEN_CHANGED_PLEASE_REBIND,,"電源入力が変更されました.\n再ペアリングしてください.",,
 NO_RESPONSE_FROM_MODULE,,"モジュールからの応答がありません!",,
@@ -148,7 +148,7 @@ D,,"D",,
 CONFIRM_DELETE_MIX,,"このミックスを削除しますか?",,
 CONFIRM_DELETE_SSS,,"この%sを削除しますか?",,
 NONE,,"なし",,
-NO_MIX_YET_PRESS_ADD_TO_CREATE_ONE,,"ミックスはまだ設定されません.\n追加ボタンを押してください.",,
+NO_MIX_YET_PRESS_ADD_TO_CREATE_ONE,,"ミックスはまだ設定されません.\n[+]ボタンを押してください.",,
 TYPE,,"タイプ",,
 SHARE,,"シェア",,
 RX,,"受信機",,
@@ -185,9 +185,9 @@ SMOOTH,,"スムーズ",,
 POINT,,"点",,
 POINTS_COUNT,,"点数計算",,
 EASY_MODE,,"簡易モード",,
-LOGIC_SWITCHES,,"論理スイッチ",,
-ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_LOGIC_SWITCH,,"この論理スイッチを削除しますか?",,
-NO_LOGIC_SWITCH_YET_PRESS_ADD_TO_CREATE_ONE,,"論理スイッチはまだ設定されません.\n追加ボタンを押してください.",,
+LOGIC_SWITCHES,,"ロジックスイッチ",,
+ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_LOGIC_SWITCH,,"このロジックスイッチを削除しますか?",,
+NO_LOGIC_SWITCH_YET_PRESS_ADD_TO_CREATE_ONE,,"ロジックスイッチはまだ設定されません.\n[+]ボタンを押してください.",,
 START_CONDITION,,"開始条件",,
 STOP_CONDITION,,"停止条件",,
 TIMER_EDIT,,"タイマーを編集",,
@@ -202,13 +202,13 @@ COUNT_SECONDS,,"秒カウント",,
 START,,"開始",,
 PLAY_FILE,,"ファイルを再生",,
 SPACE_WITH_OTHERS,,"その他...",,
-CONFIRM_DELETE_CURVE,,"この曲線を削除しますか?",,
-CURVE_USED_BY,,"この曲線は下記で使用中：",,
-AND_WITH_TWO_SPACES,,"and",,
-CURVES,,"曲線",,
-NO_CURVE_YET_PRESS_ADD_TO_CREATE_ONE,,"曲線はまだ設定されません.\n追加ボタンを押してください.",,
+CONFIRM_DELETE_CURVE,,"このカーブを削除しますか?",,
+CURVE_USED_BY,,"このカーブは下記で使用中：",,
+AND_WITH_TWO_SPACES,,"と",,
+CURVES,,"カーブ",,
+NO_CURVE_YET_PRESS_ADD_TO_CREATE_ONE,,"カーブはまだ設定されません.\n[+]ボタンを押してください.",,
 VARS,,"変数",,
-NO_VAR_YET_PRESS_ADD_TO_CREATE_ONE,,"変数はまだ設定されません.\n追加ボタンを押してください.",,
+NO_VAR_YET_PRESS_ADD_TO_CREATE_ONE,,"変数はまだ設定されません.\n[+]ボタンを押してください.",,
 ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_VAR,,"この変数を削除しますか?",,
 CONFIRM_RESET_MIXES,,"この操作により全てのミックスがリセットされます.\nよろしいですか?",,
 ELEVATORS,,"エレベーター",,
@@ -231,8 +231,8 @@ CREATE_CALCULATED_SENSOR,,"計算センサーを追加",,
 CONFIRM_DELETE_SENSORS,,"この操作により全てのセンサーが削除されます.\nよろしいですか?",,
 ON,,"オン",,
 OFF,,"オフ",,
-DISCOVER_NEW_SENSORS,,"新規センサーを発見",,
-STOP_DISCOVER,,"Stop discovery"
+DISCOVER_NEW_SENSORS,,"新規センサー検索",,
+STOP_DISCOVER,,"検索停止"
 DELETE_ALL,,"全削除",,
 INDIVIDUAL_RSSI_ALERT_PER_BAND,,"バンド毎の個別 RSSI 警告",,
 CREATE_DIY_SENSOR,,"DIY センサーを追加",,
@@ -248,15 +248,15 @@ CALIBRATING,,"補正中",,
 SXR_CALIBRATION_DESCRIPTION,,"SxR 用ジャイロと加速度計補正",,
 SLAVE_CH,,"スレーブ CH",,
 PERCENT,,"パーセント",,
-DESTINATION,,"目的地",,
+DESTINATION,,"転送先",,
 ENABLE,,"有効化",,
-NO_FUNCTION_YET_PRESS_ADD_TO_CREATE_ONE,,"この機能がまだ設定されなせん.\n追加ボタンを押してください.",,
-NO_TRAINER_YET_PRESS_ADD_TO_CREATE_ONE,,"No trainer yet. Please press the add button to create one!"
-SPECIAL_FUNCTIONS,,"スペシャル機能","Special funcs",
+NO_FUNCTION_YET_PRESS_ADD_TO_CREATE_ONE,,"この機能がまだ設定されなせん.\n[+]ボタンを押してください.",,
+NO_TRAINER_YET_PRESS_ADD_TO_CREATE_ONE,,"トレーナーがまだ設定されなせん.\n[+]ボタンを押してください!"
+SPECIAL_FUNCTIONS,,"特別機能","Special funcs",
 NEW_FUNCTION,,"新しい機能"
 SF,,"SF",,
 DISABLE,,"無効化",,
-ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_SPECIAL_FUNCTION,,"このスペシャル機能を削除しますか?",,
+ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_SPECIAL_FUNCTION,,"この特別機能を削除しますか?",,
 REGISTRATION_OK,,"登録完了",,
 UID,,"UID",,
 REGISTRATION_ID,,"登録 ID",,
@@ -286,7 +286,7 @@ TOP_SCREEN,,"トップスクリーン",,
 CHANGE_LAYOUT,,"レイアウト変更",,
 FULL_SCREEN,,"フルスクリーン表示",,
 WIDGET,,"表示要素",,
-SET_MAIN_SCREEN,,"主表示画面を設定",,
+SET_MAIN_SCREEN,,"ホーム画面を設定",,
 CONFIGURE_WIDGET,,"表示要素を設定",,
 NEW_SCREEN,,"新規表示画面",,
 SCREEN,,"画面",,
@@ -351,24 +351,24 @@ ALERTS,,"アラート",,
 SPECTRUM_ANALYSER,,"スペクトラム",,
 BATTERY,,"バッテリー",,
 CHECKLIST_WARNING,,"チェックリスト警告",,
-RADIO_IS_IN_SILENT_MODE,,"送信機はサイレントモードです.",,
-RADIO_BATTERY_IS_LOW,,"送信機は低電圧です.",,
+RADIO_IS_IN_SILENT_MODE,,"送信機はサイレントモード中です.",,
+RADIO_BATTERY_IS_LOW,,"送信機電圧低下.",,
 THROTTLE_IS_NOT_IDLE,,"スロットルは非アイドル状態です.",,
 ARE_NOT_IN_SAFE_POSITION,,"スイッチは安全位置ではありません.",,
 IS_NOT_IN_SAFE_POSITION,,"スイッチは安全位置ではありません.",,
 FUNCTION_SWITCHES_ARE_NOT_IN_SAFE_POSITION,,"機能スイッチは安全位置ではありません.",,
 FAILSAFE_IS_NOT_SET,,"フェイルセーフはまだ設定されていません.",,
-RTC_BATTERY_IS_LOW,,"RTC バッテリーは低電圧です.",,
+RTC_BATTERY_IS_LOW,,"RTC 電圧低下.",,
 ALWAYS_ON,,"常にオン",,
-ALWAYS_OFF,,"Always OFF"
+ALWAYS_OFF,,"常にオフ"
 YES,,"はい",,
 DIGITAL_RSSI,,"デジタル RSSI",,
 GYRO,,"ジャイロ",,
 GYRO_SWITCHES,,"ジャイロスイッチ",,
 LANGUAGE,,"言語",,
-THEME,,"Theme"
-LIGHT,,"Light"
-DARK,,"Dark"
+THEME,,"テーマ"
+LIGHT,,"ライトモード"
+DARK,,"ダークモード"
 SWITCHES,,"スイッチ",,
 TOP_TOOLBAR,,"トップツールバー",,
 NO,,"いいえ",,
@@ -428,7 +428,7 @@ FLASH_EXTERNAL_MODULE,,"外部モジュールをアップデート",,
 FLASH_EXTERNAL_MULTIMODULE,,"外部マルチモジュールをアップデート",,
 MOVE_HERE,,"ここに移動",,
 OTA_UPDATE_ERROR,,"OTAアップデートエラー",,
-UNSUPPORTED_RX,,"サポートされていない受信機",,
+UNSUPPORTED_RX,,"非対応の受信機です",,
 MAIN_VOLTAGE,,"主電圧",,
 DISPLAY_VOLTAGE_RANGE,,"電圧レンジ表示",,
 LOW_VOLTAGE,,"低電圧",,
@@ -524,8 +524,8 @@ GASSUIT_AVG_FLOW,,"ガソリン 平均流量",,
 BEC_VOLTAGE,,"BEC 電圧",,
 BEC_CURRENT,,"BEC 電流",,
 POWER_900M,,"900M パワー",,
-ROLL_ANGLE,,"ロール角",,
-PITCH_ANGLE,,"ピッチ角",,
+ROLL_ANGLE,,"ロール角度",,
+PITCH_ANGLE,,"ピッチ角度",,
 HYDRAULIC_PRESSURE,,"油圧",,
 INTERNAL_GPS,,"内部 GPS",,
 RAM_AVAILABLE,,"利用可能な RAM",,
@@ -561,11 +561,11 @@ OTHER,,"その他",,
 CALIBRATION,,"補正",,
 INPUTS,,"入力",,
 UPDATE,,"アップデート",,
-SDCARD,,"SDカード",,
+SDCARD,,"SD カード",,
 SDCARD_ERROR,,"SD カードエラー",,
 INVALID_DATA,,"データ不正",,
 FILE_BAD_FORMAT,,"未知のファイル",,
-NO_FILES_ON_SD,,"SD ファイルなし!",,
+NO_FILES_ON_SD,,"SD カードにファイルなし!",,
 READ_ERROR,,"読み込みエラー",,
 WRITE_ERROR,,"書き込みエラー",,
 WRONG_HEADER,,"ヘッダー異常",,
@@ -616,7 +616,7 @@ RECEIVER_TYPE,,"受信機タイプ",,
 BACK,,"バック",,
 INTERNAL,,"内部",,
 EXTERNAL,,"外部",,
-RF_PROTOCOL,,"RFプロトコル",,
+RF_PROTOCOL,,"RF プロトコル",,
 EXTERNAL_RF,,"外部 RF",,
 LOGIC_SWITCH_RANGE,,"レンジ",,
 PLAY_SEQUENCE,,"オーディオ再生",,
@@ -674,7 +674,7 @@ OUTPUT,,"出力モニター",,
 CLOSE,,"閉じる",,
 FLASHING,,"アップデート中 ...",,
 RESET_DEVICE,,"デバイス初期化 ...",,
-LOW_BATTERY,,"送信機低電量!",,
+LOW_BATTERY,,"送信機電量低下!",,
 VOLTAGE_CALIBRATION,,"電圧補正",,
 STARTING_MODEL_WIZARD,,"モデルウィザードを開始中...",,
 RADIO_DATA_LOAD,,"送信機データ読み込み",,
@@ -685,15 +685,15 @@ PREFLIGHT_WARNING,,"フライト前点検警告",,
 NEW_MODEL,,"新しいモデル",,
 STARTING_CALIBRATION,,"補正を開始中...",,
 NO_SD_CARD_WARNING,,"SD カードなし警告",,
-ADD_CURVE_ERROR,,"曲線の追加が失敗しました!",,
+ADD_CURVE_ERROR,,"カーブの追加が失敗しました!",,
 STEP,,"ステップ",,
 AILERON,,"エルロン",,
 ELEVON,,"エレベーター",,
 SPACE_WITH_CHANNEL,,"チャネル",,
 QUESTION_SWAP_SSS_AND_SSS_CHANNELS_SETTINGS,,"%s と %s チャンネルの設定を交換しますか?",,
 INPUT,,"入力",,
-THR_CURVE,,"曲線",,
-PITCH_CURVE,,"ピッチ曲線",,
+THR_CURVE,,"カーブ",,
+PITCH_CURVE,,"ピッチカーブ",,
 THROTTLE_CUT,,"スロットルカット",,
 DELAY_UP,,"最大値で維持",,
 DELAY_MID,,"中点で維持",,
@@ -701,7 +701,7 @@ DELAY_DOWN,,"最小値で維持",,
 NO_DELAY,,"遅延なし",,
 V_TAIL,,"V テール",,
 DATA_REFUSED,,"データ拒否されました",,
-DEVICE_NOT_RESPONDING,,"デバイス応答なし",,
+DEVICE_NOT_RESPONDING,,"デバイスから応答なし",,
 NO_OUTPUT,,"出力なし",,
 WEIGHT_RATES,,"ウエイト / レート",,
 OTHERWISE,,"それ以外の場合","Else",
@@ -722,9 +722,9 @@ AND,,"AND",,
 OR,,"OR",,
 XOR,,"XOR",,
 SENSORS,,"センサー",,
-SETTINGS,,"Settings"
-COPY_SETTINGS,,"Copy settings"
-PASTE_SETTINGS,,"Paste settings"
+SETTINGS,,"設定"
+COPY_SETTINGS,,"設定をコピー"
+PASTE_SETTINGS,,"設定を貼り付け"
 RECEIVERS,,"受信機",,
 SERVOS,,"サーボ",,
 FLIGHT_SAFETY,,"フライト安全",,
@@ -787,8 +787,8 @@ AUTHENTICATION_FAILURE,,"認証失敗",,
 MODULE_NEEDS_UPGRADE,,"モジュールアップグレード要",,
 CLEAR,,"クリア",,
 MIX_SWITCH_DESCRIPTION,,"ミックス有効/無効切替スイッチを選択",,
-MIX_WEIGHT_DESCRIPTION,,"このミックス乗数(%)は入力ソースに適用され,\n曲線適用後にミックス出力値を決定.",,
-MIX_CURVE_DESCRIPTION,,"ミックスの曲線選択してください.\nこの曲線は重み付けパラメータ適用前に計算される.",,
+MIX_WEIGHT_DESCRIPTION,,"このミックス乗数(%)は入力ソースに適用され,\nカーブ適用後にミックス出力値を決定.",,
+MIX_CURVE_DESCRIPTION,,"ミックスのカーブ選択してください.\nこのカーブは重み付けパラメータ適用前に計算される.",,
 MIX_DIFFERENTIAL_DESCRIPTION,,"チャンネルデフ量選択",,
 MIX_OUTPUT_DESCRIPTION,,"ミックスの影響を受けるチャンネルを選択",,
 MIX_INPUT_DESCRIPTION,,"ミックス制御ソース選択",,
@@ -836,7 +836,7 @@ IN_RANGE,,"レンジ内",,
 REPLACE,,"置換",,
 USE_A_SOURCE,,"入力源を使用",,
 CONVERT_TO_VALUE,,"値に変換",,
-SPECIAL,,"スペシャル",,
+SPECIAL,,"特別",,
 MAXIMUM,,"最大",,
 MINIMUM,,"最小",,
 MOMENTARY,,"モメンタリー",,
@@ -878,7 +878,7 @@ PLACE_RECEIVER_FORWARD,,"受信機端子側を右向き",,
 PLACE_RECEIVER_BACKWARD,,"受信機端子側を左向き",,
 ADD_A_NEW_WEIGHT,,"+ 新しいウエイト追加",,
 ADD_A_NEW_CONDITION,,"+ 新規条件追加"
-ADD_A_NEW_CURVE,,"+ 新規曲線追加",,
+ADD_A_NEW_CURVE,,"+ 新規カーブ追加",,
 AUDIO,,"オーディオ",,
 VOICE,,"音声",,
 PRIORITY,,"優先順位"
@@ -892,14 +892,14 @@ RESET_SSS,,"%sをリセット",,
 OPTIONS_3DOTS,,"オプション...",,
 QUESTION_COPY_CHANNEL_NAME,,"チャンネル名が未設定です.\nミックスの名称をコピーしますか?",,
 FLY_BAR_LESS,,"フライバーレス",,
-WING_RUD_ELE_AIL,,"ノーマル尾翼",,
-WING_FLYING,,"デルタ尾翼",,
-WING_VTAIL_AIL,,"V テール尾翼",,
+WING_RUD_ELE_AIL,,"ノーマル",,
+WING_FLYING,,"デルタ",,
+WING_VTAIL_AIL,,"V テール",,
 LEVEL,,"水平",,
 LEVEL_REVERSED,,"逆水平",,
 UPRIGHT,,"正立",,
 UPRIGHT_REVERSED,,"倒立",,
-WING_TYPE,,"主翼タイプ",,
+WING_TYPE,,"翼タイプ",,
 MOUNTING_TYPE,,"搭載方式",,
 SXR_ENABLE,,"SxR 有効化",,
 AIL_INVERTED,,"エルロン出力反転",,
@@ -911,21 +911,21 @@ AUX1_ENABLE,,"AUX1 有効化",,
 AUX2_ENABLE,,"AUX2 有効化",,
 QUICK_MODE,,"クイックモード",,
 SELF_CHECK,,"セルフチェック",,
-STAB_GAIN_OF_AIL,,"エルロン感度(自動安定モード)",,
-STAB_GAIN_OF_ELE,,"エレベーター感度(自動安定モード)",,
-STAB_GAIN_OF_RUD,,"ラダー感度(自動安定モード)",,
-AUTO_LEVEL_GAIN_OF_AIL,,"エルロン感度(補助安定モード)",,
-AUTO_LEVEL_GAIN_OF_ELE,,"エレベーター感度(補助安定モード)",,
-HOVER_GAIN_OF_ELE,,"エレベーターホバリング感度",,
-HOVER_GAIN_OF_RUD,,"ラダーホバリング感度",,
-KNIFE_EDGE_GAIN_OF_AIL,,"エルロンナイフエッジ感度",,
-KNIFE_EDGE_GAIN_OF_RUD,,"ラダーナイフエッジ感度",,
-AUTO_LEVEL_OFFSET_OF_AIL,,"エルロンオフセット角(補助安定モード)",,
-AUTO_LEVEL_OFFSET_OF_ELE,,"エレベーターオフセット角(補助安定モード)",,
-HOVER_OFFSET_ANGLE_OF_ELE,,"エレベーターホバリングオフセット角",,
-HOVER_OFFSET_ANGLE_OF_RUD,,"ラダーホバリングオフセット角",,
-KNIFE_EDGE_OFFSET_OF_AIL,,"エルロンナイフエッジオフセット角",,
-KNIFE_EDGE_OFFSET_OF_RUD,,"ラダーナイフエッジオフセット角",,
+STAB_GAIN_OF_AIL,,"エルロン感度(安定モード)",,
+STAB_GAIN_OF_ELE,,"エレベーター感度(安定モード)",,
+STAB_GAIN_OF_RUD,,"ラダー感度(安定モード)",,
+AUTO_LEVEL_GAIN_OF_AIL,,"エルロン感度(水平モード)",,
+AUTO_LEVEL_GAIN_OF_ELE,,"エレベーター感度(水平モード)",,
+HOVER_GAIN_OF_ELE,,"エレベーター感度(ホバリングモード)",,
+HOVER_GAIN_OF_RUD,,"ラダー感度(ホバリングモード)",,
+KNIFE_EDGE_GAIN_OF_AIL,,"エルロン感度(ナイフエッジモード)",,
+KNIFE_EDGE_GAIN_OF_RUD,,"ラダー感度(ナイフエッジモード)",,
+AUTO_LEVEL_OFFSET_OF_AIL,,"エルロンオフセット(水平モード)",,
+AUTO_LEVEL_OFFSET_OF_ELE,,"エレベーターオフセット(水平モード)",,
+HOVER_OFFSET_ANGLE_OF_ELE,,"エレベーターオフセット(ホバリングモード)",,
+HOVER_OFFSET_ANGLE_OF_RUD,,"ラダーオフセット(ホバリングモード)",,
+KNIFE_EDGE_OFFSET_OF_AIL,,"エルロンオフセット(ナイフエッジモード)",,
+KNIFE_EDGE_OFFSET_OF_RUD,,"ラダーオフセット(ナイフエッジモード)",,
 OUTPUT_VOLTAGE,,"出力電圧",,
 LIPO_VOLTAGE,,"リポ電圧",,
 RB_10_20,,"RB 10/20",,
@@ -948,7 +948,7 @@ AVERAGE,,"平均値",,
 TOTALIZE,,"積算値",,
 CELL,,"セル電圧",,
 CONSUMPTION,,"消費量",,
-CAPACITY,,"Capacity"
+CAPACITY,,"容量"
 DISTANCE,,"距離",,
 FALLING_EDGE_OF_SSS_BETWEEN_SSS_AND_SSS,,"%sの↑↓パルス(%s～%s間)",,
 RISING_EDGE_OF_SSS_DURING_SSS,,"%s発生後 %sの↑エッジ",,
@@ -1003,7 +1003,7 @@ XPOS,,"{HARDWARE_FUNCTION_SWITCHES} ポジションスイーチ",,
 GLOBAL,,"グローバル",,
 _2DOTS,,":",,
 SUMMARY,,"サマリー",,
-CONFIRM_STOP_USING_CURVE,,"この曲線設定を無効化しますか?",,
+CONFIRM_STOP_USING_CURVE,,"このカーブ設定を無効化しますか?",,
 CONFIRM_STOP_USING_RATE,,"このレート設定を無効化しますか?",,
 PATTERN,,"パターン",,
 LAST_POSITION,,"末尾位置",,
@@ -1048,8 +1048,8 @@ OPERATION_MULTIPLY,,"乗算(*)",,
 OPERATION_DIVIDE,,"除算(/)",,
 SQRT,,"平方根",,
 REPURPOSE,,"再割当",,
-SENSOR_CONFLICT_WARNING,,"センサー競合警告",,
-NIGHTLY_BUILD_NOT_FOR_FLYING,,"ナイトリービルド(飛行不可!)",,
+SENSOR_CONFLICT_WARNING,,"センサーID競合警告",,
+NIGHTLY_BUILD_NOT_FOR_FLYING,,"テーストフォーム(飛行禁止!)",,
 READING_FILE,,"ファイル読み込み中...",,
 NOT_ENOUGH_MEMORY,,"メモリ不足",,
 CLEAN_LOGS,,"ログ消去",,
@@ -1062,14 +1062,14 @@ CONFIRM_RESET_SETTINGS,,"設定がデフォルト値にリセットされます.
 COMPETITION_OPTION,,"コンペティション(RSSI とバッテリーのみ)","Competition (RSSI / Batt)",
 CONFIRM_SSS_USED_BY_SSS,,"Bluetooth は%sにより使用中ですが,この操作より停止されます.\nよろしいですか?",,
 BOTH_MODULES,,"両モジュール",,
-SPORT_CONNECTOR,,"S.Portコネクタ",,
-TELEMETRY_FORWARDING,,"Telemetry forwarding"
-SPORT_CONNECTOR_POWER,,"S.Port connector power (5V)"
-FBUS_VIA_SPORT_CONNECTOR,,"FBUS via S.Port connector"
+SPORT_CONNECTOR,,"S.Port コネクタ",,
+TELEMETRY_FORWARDING,,"テレメトリ転送中"
+SPORT_CONNECTOR_POWER,,"S.Port コネクタパワー (5V)"
+FBUS_VIA_SPORT_CONNECTOR,,"S.Portコネクター経由のFBUS"
 TRAINER_CABLE,,"トレーナーケーブル",,
 BLUETOOTH,,"Bluetooth",,
-ACTIVELOOK_GLASSES,,"ActiveLook glasses"
-GLASSES,,"Glasses"
+ACTIVELOOK_GLASSES,,"ActiveLook グラス"
+GLASSES,,"グラス"
 LUA_TASKS,,"Lua タスク",,
 LUA_SOURCES,,"Lua ソース",,
 MISSING_SCRIPT_FILE,,"スクリプトファイルなし",,
@@ -1149,7 +1149,7 @@ BALANCE,,"バランス",,
 BACKUP,,"バックアップ",,
 BALANCE_CHANNELS,,"バランスチャンネル",,
 CHOOSE_CHANNELS,,"チャンネル選択",,
-BALANCE_CURVE,,"バランス曲線",,
+BALANCE_CURVE,,"バランスカーブ",,
 CONFIRM_TO_SHARE_RECEIVER,,"この受信機を共有しますか?",,
 CONFIRM_TO_UNBIND_RECEIVER,,"この受信機のペアリングを解除しますか?",,
 CONFIRM_FRSK_NOT_COMPATIBLE,,"この.frskファイルはデバイス非対応です.\n続行しますか?",,
@@ -1208,19 +1208,19 @@ RIGHT_BRAKE_FORCE,,右ブレーキ力"
 LEFT_BRAKE_FORCE,,"左ブレーキ力"
 BRAKE_VELOCITY_THRESHOLD,,"ブレーキ速度閾値"
 GEAR_UP_BRAKE_FORCE,,"ギアアップブレーキ力"
-BRAKE_STABILIZER_WEIGHT,,"ブレーキ安定化ウエイト"
+BRAKE_STABILIZER_WEIGHT,,"ブレーキ安定ウエイト"
 STEERING_CHANNEL,,"ステアリングチャンネル"
 STEERING_RANGE,,"ステアリングレンジ"
-HEADING_HOLD,,"ヘディングホールド"
-STABILIZED,,"ブレーキ安定化"
-STEERING_STABILIZER_MODE,,"ブレーキ安定化モード"
+HEADING_HOLD,,"針路保持"
+STABILIZED,,"ブレーキ安定"
+STEERING_STABILIZER_MODE,,"ブレーキ安定モード"
 STEERING_STABILIZER_GAIN,,"ステアリングゲイン"
-STEERING_STABILIZER_DIRECTION,,"ステアリング安定化方向"
+STEERING_STABILIZER_DIRECTION,,"ステアリング安定方向"
 STEERING_TRIM,,"ステアリングトリム"
 STALL_CURRENT,,"ストール電流"
 END_CALIBRATION,,"補正を完了"
 END_CALIBRATION_MESSAGE,,"補正を完了中,ダイアログが閉じるまでお待ちください..."
-PGC_CALIBRATE_MESSAGE,,"補正方向ボタンを押下して調整を開始してください.\nPGCのリアルタイム状態表示で指示されたら「停止」を押してください."
+PGC_CALIBRATE_MESSAGE,,"補正方向ボタンを押下して調整を開始してください.\nPGCのリアルタイム状態表示によって「停止」を押してください."
 STOP,,"停止"
 NOSE_DOOR,,"ノーズドア"
 LEFT_DOOR,,"左ドア"
@@ -1229,15 +1229,15 @@ CALIBRATE_CLOSE_POSITION,,"クローズ位置補正"
 CALIBRATE_OPEN_POSITION,,"オープン位置補正"
 SEQUENCER,,"シーケンサー"
 LOOP_MODE,,"ループモード"
-FORWARD_CONDITION,,"前進条件"
-FORWARD_DURATION,,"前進期間"
-BACKWARD_CONDITION,,"後退条件"
-BACKWARD_DURATION,,"後退期間"
-EARLY,,"早期"
+FORWARD_CONDITION,,"順方向実行条件"
+FORWARD_DURATION,,"順方向実行期間"
+BACKWARD_CONDITION,,"逆方向実行条件"
+BACKWARD_DURATION,,"逆方向実行期間"
+EARLY,,"事前に"
 ADD_A_NEW_OUTPUT,,"+ 新規出力追加"
 REMOVE_OUTPUT,,"出力を削除"
-EDIT_CURVE,,"曲線を編集"
-ADD_A_BACKWARD_CURVE,,"後退曲線を追加"
-USE_ONLY_ONE_CURVE,,"単一曲線のみを使用"
-EDIT_BACKWARD_CURVE,,"後退曲線を編集"
-EDIT_FORWARD_CURVE,,"前進曲線を編集"
+EDIT_CURVE,,"カーブを編集"
+ADD_A_BACKWARD_CURVE,,"逆方向カーブを追加"
+USE_ONLY_ONE_CURVE,,"単一カーブのみを使用"
+EDIT_BACKWARD_CURVE,,"逆方向実行カーブを編集"
+EDIT_FORWARD_CURVE,,"順方向実行カーブを編集"
