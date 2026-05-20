@@ -10,7 +10,7 @@ local function init()
     colors={
         WHITE, -- PRIMARY_COLOR
         lcd.GREY(0x40), -- SECONDARY_BGCOLOR
-        0, -- HIGHLIGHT_COLOR (configurable)
+        YELLOW, -- HIGHLIGHT_COLOR (configurable)
         BLACK, -- HIGHLIGHT_INVERT_COLOR
         lcd.GREY(0x70), -- DISABLE_COLOR
         lcd.GREY(0x20), -- PRIMARY_BGCOLOR
@@ -37,7 +37,7 @@ local function init()
   --   colors={
   --       WHITE, -- PRIMARY_COLOR
   --       lcd.RGB(0x29, 0x30, 0x3B), -- SECONDARY_BGCOLOR
-  --       0, -- HIGHLIGHT_COLOR (configurable)
+  --       YELLOW, -- HIGHLIGHT_COLOR (configurable)
   --       BLACK, -- HIGHLIGHT_INVERT_COLOR
   --       lcd.GREY(0x90), -- DISABLE_COLOR
   --       lcd.RGB(0x1F, 0x22, 0x29), -- PRIMARY_BGCOLOR
@@ -63,7 +63,7 @@ local function init()
   --   colors={
   --       lcd.RGB(0x59, 0x57, 0x58), -- PRIMARY_COLOR
   --       lcd.GREY(0xCA), -- SECONDARY_BGCOLOR
-  --       0, -- HIGHLIGHT_COLOR (configurable)
+  --       ORANGE, -- HIGHLIGHT_COLOR (configurable)
   --       WHITE, -- HIGHLIGHT_INVERT_COLOR
   --       lcd.GREY(0x90), -- DISABLE_COLOR
   --       lcd.RGB(0xD6, 0xD6, 0xD6), -- PRIMARY_BGCOLOR
@@ -92,7 +92,7 @@ local function init()
     colors={
         WHITE, -- PRIMARY_COLOR
         lcd.RGB(0x29, 0x30, 0x3B), -- SECONDARY_BGCOLOR
-        0, -- HIGHLIGHT_COLOR (configurable)
+        YELLOW, -- HIGHLIGHT_COLOR (configurable)
         BLACK, -- HIGHLIGHT_INVERT_COLOR
         lcd.GREY(0x90), -- DISABLE_COLOR
         lcd.RGB(0x1F, 0x22, 0x29), -- PRIMARY_BGCOLOR
