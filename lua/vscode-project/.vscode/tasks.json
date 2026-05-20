@@ -13,8 +13,9 @@
       ],
       "options": {
         "env": {
-          "ETHOS_FIRMWARE": "${config:ethos.firmware}",
-          "ETHOS_VERSION": "${config:ethos.version}"
+          "ETHOS_FIRMWARE": "${config:ethos.board}_${config:ethos.protocol}",
+          "ETHOS_VERSION": "${config:ethos.release}",
+          "ETHOS_SIMULATORS_FOLDER": "${config:ethos.simulatorsFolder}"
         }
       },
       "problemMatcher": [],

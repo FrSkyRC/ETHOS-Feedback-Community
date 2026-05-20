@@ -799,7 +799,7 @@ CONFIG_PATH = str(cfg_path)
 SRC_DIR = config.get('src_dir', 'src')
 
 # Optional: override the simulator output directory. Precedence: ETHOS_SIMULATOR_FOLDER env var > deploy.json simulator_dir > "simulator".
-SIM_FOLDER = os.environ.get('ETHOS_SIMULATOR_FOLDER', '').strip() or config.get('simulator_dir', 'simulator')
+SIM_FOLDER = os.environ.get('ETHOS_SIMULATORS_FOLDER', '').strip() or config.get('simulators_dir', 'simulators')
 
 DEFAULT_VERSION = "nightly26"
 
@@ -1516,15 +1516,11 @@ def main():
 
         targets = [{'name': 'Radio', 'dest': rd, 'simulator': None}]
     else:
-        # SIMULATOR DEPLOY: always to <git_src>/simulator/[firmware][@version?]/scripts
+        # SIMULATOR DEPLOY: always to <git_src>/[simulatorsFolder|simulators_dir]/[firmware]@[version]/scripts
         firmware = os.environ.get("ETHOS_FIRMWARE")
         version = os.environ.get("ETHOS_VERSION")
         path_parts = [config['git_src'], SIM_FOLDER]
-        if firmware:
-            if version and version != DEFAULT_VERSION:
-                path_parts.append(f"{firmware}@{version}")
-            else:
-                path_parts.append(firmware)
+        path_parts.append(f"{firmware}@{version}")
         path_parts.append('scripts')
         fixed_dest = os.path.normpath(os.path.join(*path_parts))
         os.makedirs(fixed_dest, exist_ok=True)

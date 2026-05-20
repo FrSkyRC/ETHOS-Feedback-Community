@@ -156,7 +156,7 @@ Optional folders supported by the helper scripts:
 
 If those optional folders do not exist, the helper scripts skip them cleanly.
 
-You may override the stucture in deploy.json by setting the "src_dir" and "simulator_dir".
+You may override the stucture in deploy.json by setting the "src_dir" and "simulators_dir".
 
 ## Running The Template
 
