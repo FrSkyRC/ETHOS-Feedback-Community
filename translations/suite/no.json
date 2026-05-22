@@ -22,7 +22,8 @@
         "WelcomeToEthosSuite": "Velkommen til Ethos Suite",
         "P1": "Før du starter en Firmware-oppdatering, ta en sikkerhetskopi av model.bin og radio.bin filene. 'Ethos Suite' konverterer modeller fra en gammel versjon til en ny versjon, men ikke fra en ny til gammel! Du trenger backup-filene for å gå tilbake til eldre versjoner av Ethos.",
         "P2": "Etter at du har oppdatert, sjekk modellen/modellenes programmering for å være sikker på at alt fungerer korrekt FØR du flyr.",
-        "LatestRelease": "Nyeste utgave er"
+        "LatestRelease": "Nyeste utgave er",
+        "PreReleases": "Pre-Releases"
     },
     "UpdateNews": {
         "UpdateNews": "Nytt i denne oppdateringen"
@@ -623,16 +624,18 @@
         "RemoveThisSensor": "Fjern denne sensoren",
         "OpenTelemetryPanel": "Åpne telemetri-panel",
         "Screenshot": "Skjermbilde",
-        "LockAxis": "Lås akse"
+        "LockAxis": "Lås akse",
+        "DisplayPanel": "Display",
+        "ControlsPanel": "Controls"
     },
     "AegisUpdater": {
-        "AegisUpdater": "Aegis oppdatering",
+        "AegisUpdater": "Aegis flashing tool",
         "SelectAegisFirmware": "Velg Aegis firmware",
         "InterruptFlash": "Avbryt flash",
         "LeavePageWarning": "Hvis du går bort fra denne siden, kan det føre til forstyrrelse og skade på enheten. Er du sikker på at du vil gjøre dette?"
     },
     "EcosTool": {
-        "Title": "ECOS oppdatering",
+        "Title": "ECOS flashing tool",
         "SelectFirmware": "Velg firmware",
         "NoFirmwareSelected": "Ingen firmware valgt",
         "ComPort": "COM Port",

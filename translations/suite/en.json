@@ -22,7 +22,8 @@
         "WelcomeToEthosSuite": "Welcome To Ethos Suite",
         "P1": "Before starting a firmware update, back up the model .bin files and radio.bin file. Ethos Suite does model conversion from an older release to a newer release but not from new to old. The backup files are needed to return to older builds.",
         "P2": "After updating, check the model programming to make sure everything functions correctly before flying.",
-        "LatestRelease": "Latest Release"
+        "LatestRelease": "Latest Release",
+        "PreReleases": "Pre-Releases"
     },
     "UpdateNews": {
         "UpdateNews": "Update news"
@@ -623,16 +624,18 @@
         "RemoveThisSensor": "Remove this sensor",
         "OpenTelemetryPanel": "Open telemetry panel",
         "Screenshot": "Screenshot",
-        "LockAxis": "Lock axis"
+        "LockAxis": "Lock axis",
+        "DisplayPanel": "Display",
+        "ControlsPanel": "Controls"
     },
     "AegisUpdater": {
-        "AegisUpdater": "Aegis updater",
+        "AegisUpdater": "Aegis flashing tool",
         "SelectAegisFirmware": "Select Aegis firmware",
         "InterruptFlash": "Interrupt flash",
         "LeavePageWarning": "Leaving this page may cause a interruption and damage to the device. Are you sure you want to do this?"
     },
     "EcosTool": {
-        "Title": "ECOS updater",
+        "Title": "ECOS flashing tool",
         "SelectFirmware": "Select firmware",
         "NoFirmwareSelected": "No firmware selected",
         "ComPort": "COM Port",

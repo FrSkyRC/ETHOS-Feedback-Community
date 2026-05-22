@@ -22,7 +22,8 @@
         "WelcomeToEthosSuite": "欢迎使用 Ethos Suite",
         "P1": "在进行固件升级前, 请先备份遥控器中的模型文件以及遥控器配置文件 radio.bin, 请注意 Ethos 会自动适配旧版本的模型, 但并不支持读取在较新版本中生成的模型.",
         "P2": "在升级过后, 请先检查模型中的所有配置是否设置妥当, 然后起飞.",
-        "LatestRelease": "最新发布"
+        "LatestRelease": "最新发布",
+        "PreReleases": "Pre-Releases"
     },
     "UpdateNews": {
         "UpdateNews": "更新记录"
@@ -621,16 +622,18 @@
         "RemoveThisSensor": "移除该传感器",
         "OpenTelemetryPanel": "打开遥测面板",
         "Screenshot": "截图",
-        "LockAxis": "Lock axis"
+        "LockAxis": "Lock axis",
+        "DisplayPanel": "Display",
+        "ControlsPanel": "Controls"
     },
     "AegisUpdater": {
-        "AegisUpdater": "Aegis updater",
+        "AegisUpdater": "Aegis flashing tool",
         "SelectAegisFirmware": "Select Aegis firmware",
         "InterruptFlash": "Interrupt flash",
         "LeavePageWarning": "Leaving this page may cause a interruption and damage to the device. Are you sure you want to do this?"
     },
     "EcosTool": {
-        "Title": "ECOS updater",
+        "Title": "ECOS flashing tool",
         "SelectFirmware": "Select firmware",
         "NoFirmwareSelected": "No firmware selected",
         "ComPort": "COM Port",

@@ -22,7 +22,8 @@
         "WelcomeToEthosSuite": "Willkommen in der Ethos Suite",
         "P1": "ACHTUNG! Bevor Sie ein Firmware-Update durchführen, sollten Sie die Dateien model.bin und radio.bin sichern. Die Ethos Suite führt eine Modellkonvertierung von einer älteren Version zu einer neueren Version durch. Aber nicht von einer neuen zu einer alten. Die Sicherungsdateien werden benötigt, um zu älteren Builds zurückzukehren.",
         "P2": "ACHTUNG! Überprüfen Sie nach dem Update und vor dem ersten Flug die Modellprogrammierung, um sicherzustellen, dass alles korrekt funktioniert.",
-        "LatestRelease": "Neueste Version"
+        "LatestRelease": "Neueste Version",
+        "PreReleases": "Pre-Releases"
     },
     "UpdateNews": {
         "UpdateNews": "Update-Informationen"
@@ -622,16 +623,18 @@
         "RemoveThisSensor": "Diesen Sensor entfernen",
         "OpenTelemetryPanel": "Telemetrie-Panel öffnen",
         "Screenshot": "Screenshot",
-        "LockAxis": "Achse sperren"
+        "LockAxis": "Achse sperren",
+        "DisplayPanel": "Display",
+        "ControlsPanel": "Controls"
     },
     "AegisUpdater": {
-        "AegisUpdater": "Aegis-Updater",
+        "AegisUpdater": "Aegis flashing tool",
         "SelectAegisFirmware": "Aegis-Firmware auswählen",
         "InterruptFlash": "Interrupt flashen",
         "LeavePageWarning": "Unterbrechung: Das Verlassen dieser Seite kann zu einer Unterbrechung und Schäden am Gerät führen. Sind Sie sicher, dass Sie dies tun möchten?"
     },
     "EcosTool": {
-        "Title": "ECOS-Updater",
+        "Title": "ECOS flashing tool",
         "SelectFirmware": "Firmware auswählen",
         "NoFirmwareSelected": "Keine Firmware ausgewählt!",
         "ComPort": "COM Port",

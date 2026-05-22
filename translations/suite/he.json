@@ -22,7 +22,8 @@
         "WelcomeToEthosSuite": "ברוך הבא לאתוס סוויט",
         "P1": "לפני תחילת עדכון קושחת השלט מומלץ לגבות את קבצי הmodel.bin והradio.bin שבשלט. האתוס סוויט מבצעת המרה של הנתונים שבשלט לגרסה העדכנית אבל לא מסוגלת להמיר גרסאות אחורה. בכדי לאפשר שחזור נתונים במקרה של שנמוך גרסה יש לגבות את המידע.",
         "P2": "לאחר עדכון הגרסה וודא תקינות ההגדרות של המודלים בכדי לוודא התנהגות תקינה של ההגאים לפני טיסה",
-        "LatestRelease": "שחרור אחרון: {{ release }}"
+        "LatestRelease": "שחרור אחרון: {{ release }}",
+        "PreReleases": "Pre-Releases"
     },
     "UpdateNews": {
         "UpdateNews": "חדשות עדכונים"
@@ -622,16 +623,18 @@
         "RemoveThisSensor": "Remove this sensor",
         "OpenTelemetryPanel": "Open telemetry panel",
         "Screenshot": "Screenshot",
-        "LockAxis": "Lock axis"
+        "LockAxis": "Lock axis",
+        "DisplayPanel": "Display",
+        "ControlsPanel": "Controls"
     },
     "AegisUpdater": {
-        "AegisUpdater": "Aegis updater",
+        "AegisUpdater": "Aegis flashing tool",
         "SelectAegisFirmware": "Select Aegis firmware",
         "InterruptFlash": "Interrupt flash",
         "LeavePageWarning": "Leaving this page may cause a interruption and damage to the device. Are you sure you want to do this?"
     },
     "EcosTool": {
-        "Title": "ECOS updater",
+        "Title": "ECOS flashing tool",
         "SelectFirmware": "Select firmware",
         "NoFirmwareSelected": "No firmware selected",
         "ComPort": "COM Port",

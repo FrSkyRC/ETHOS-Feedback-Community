@@ -22,7 +22,8 @@
         "WelcomeToEthosSuite": "Vítejte v Ethos Suite",
         "P1": "Před zahájením aktualizace firmwaru zálohujte soubory model.bin a radio.bin. Ethos Suite provádí konverzi modelu ze starší verze na novější, ale ne z nové na starou. Záložní soubory jsou potřeba pro návrat ke starším verzím.",
         "P2": "Po aktualizaci zkontrolujte naprogramování modelu před letem, abyste se ujistili, že vše funguje správně.",
-        "LatestRelease": "Poslední verze"
+        "LatestRelease": "Poslední verze",
+        "PreReleases": "Pre-Releases"
     },
     "UpdateNews": {
         "UpdateNews": "Novinky aktualizace"
@@ -621,16 +622,18 @@
         "RemoveThisSensor": "Remove this sensor",
         "OpenTelemetryPanel": "Open telemetry panel",
         "Screenshot": "Screenshot",
-        "LockAxis": "Lock axis"
+        "LockAxis": "Lock axis",
+        "DisplayPanel": "Display",
+        "ControlsPanel": "Controls"
     },
     "AegisUpdater": {
-        "AegisUpdater": "Aegis updater",
+        "AegisUpdater": "Aegis flashing tool",
         "SelectAegisFirmware": "Select Aegis firmware",
         "InterruptFlash": "Interrupt flash",
         "LeavePageWarning": "Leaving this page may cause a interruption and damage to the device. Are you sure you want to do this?"
     },
     "EcosTool": {
-        "Title": "ECOS updater",
+        "Title": "ECOS flashing tool",
         "SelectFirmware": "Select firmware",
         "NoFirmwareSelected": "No firmware selected",
         "ComPort": "COM Port",
