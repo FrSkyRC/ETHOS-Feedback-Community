@@ -16,14 +16,14 @@
         "UserTips": "Recomendaciones:",
         "BootloaderMinVersion": "Antes de poder utilizar la Suite Ethos con una radio FrSky, el bootloader de la radio debe estar como mínimo en versión <b>{{ value }}</b>.",
         "CheckBootloaderVersion": "Mantener la tecla [ENTER] pulsada al encender la radio para entrar en el modo bootloader. El bootloader debe ser versión 1.2.10 o superior a fin de que la radio pueda utilizar la Suite Ethos a través del cable USB.",
-        "UpdateBootloader": "Si el bootloader es inferior a la versión 1.2.10, con la radio apagada conectar la radio al ordenador mediante el cable USB y usar la opción Actualiza F/W con DFU de la Suite Ethos."
+        "UpdateBootloader": "Si el bootloader es inferior a la versión 1.2.10, con la radio apagada conectarla al ordenador mediante el cable USB y usar la opción Actualiza F/W con DFU de la Suite Ethos."
     },
     "Welcome": {
         "WelcomeToEthosSuite": "Bienvenido a la Suite Ethos",
         "P1": "Antes de hacer la actualización del firmware, haga una copia de seguridad de los archivos model.bin y el archivo radio.bin. La Suite Ethos convertirá los modelos de versiones anteriores a la nueva versión, pero no lo hará a la inversa. Para restaurar copias de seguridad anteriores hay que instalar un firmware anterior y hacerlo manualmente.",
         "P2": "Después de actualizar el firmware y antes de volar sus modelos, debe verificar en tierra la programación y el funcionamiento de cada uno de ellos.",
         "LatestRelease": "Versión actualizada",
-        "PreReleases": "Pre-Releases"
+        "PreReleases": "Pre-lanzamientos"
     },
     "UpdateNews": {
         "UpdateNews": "Novedades"
@@ -50,7 +50,7 @@
         "UserBitmaps": "Herramienta de Imágenes",
         "Scripts": "Scripts",
         "Models": "Modelos",
-        "Logs": "Logs",
+        "Logs": "Registros",
         "Screenshots": "Capturas de pantalla",
         "Bootloader": "Bootloader",
         "FRSKFile": "Fichero FRSK",
@@ -162,11 +162,11 @@
         "FRSKFlashSuccessfully": "¡La actualización ha tenido éxito!",
         "FRSKFlashFailed": "¡Error de actualización del archivo FRSK!",
         "FRSKNotMatchVideoComponent": "Este archivo FRSK no es adecuado para su radio. ¡Se cancela la operación!",
-        "FlashFRSKWithoutHardwareInfo": "No podemos obtener información desde su hardware. No podemos determinar si este archivo FRSK es aplicable a su hardware o no. ¿Quiere continuar el flasheo?",
+        "FlashFRSKWithoutHardwareInfo": "No podemos obtener información desde su hardware. No podemos determinar si este archivo FRSK es aplicable a su hardware o no. ¿Quiere continuar la actualización?",
         "DownloadMoreFirmware": "Descargar más firmware",
         "SensorFirmware": "Firmware de Sensores",
         "ReceiverFirmware": "Firmware de Receptores",
-        "LuaScripts": "Lua scripts",
+        "LuaScripts": "Scripts Lua",
         "DownloadFirmware": "Descargar firmware",
         "DownloadScripts": "Descargar scripts",
         "DownloadAssetSuccessfully": "¡El elemento se ha descargado con éxito!",
@@ -211,7 +211,7 @@
         "RepairNotCompleted": "¡Reparación incompleta!",
         "Confirm": "¡Confirme!",
         "ConfirmFormat": "Esta acción borrará todo el contenido de la NAND. Debería efectuar previamente una copia de seguridad de la radio y de los modelos. ¿Confirmar el formateo?",
-        "BootloaderNotSupport": "Se necesita una versión de firmware superior a 1.4.0. Descargarla y volver a ejecutar la herramienta.",
+        "BootloaderNotSupport": "Se necesita una versión de firmware superior a 1.4.0. Descárguela y vuelva a ejecutar la herramienta.",
         "FactorySettingTitle": "Restaurar los ajustes de fábrica",
         "FactorySettingSubTitle": "Restaurar su radio a los ajustes de fábrica.",
         "Restoring": "Restaurando los ajustes de fábrica ...",
@@ -242,7 +242,7 @@
         "Flash": "Flash ({{ size }}):",
         "UpdateSD": "Actualiza la tarjeta SD",
         "UpdateFlash": "Actualiza la memoria Flash",
-        "SelectRelease": "Seleccionar release",
+        "SelectRelease": "Seleccionar lanzamiento",
         "LocalFile": "Archivo local",
         "SelectLocalFirmware": "Seleccione un firmware",
         "AudioLanguages": "Idioma de audio",
@@ -259,7 +259,7 @@
         "CopyingFirmwareToRadio": "Copiando el firmware a la radio ...",
         "UnmountingDrives": "Desconexión de los discos en curso ...",
         "WritingFirmware": "Escribiendo el firmware en la memoria flash ...",
-        "FirmwareFlashSuccess": "¡Actualizado el firmware con éxito!",
+        "FirmwareFlashSuccess": "¡Firmware actualizado con éxito!",
         "FirmwareFlashError": "¡Error de actualización del firmware!",
         "DownloadingSystemFiles": "Descargando archivos de sistema ...",
         "CopyingSystemFilesToRadio": "Copiando archivos de sistema en la radio ...",
@@ -282,16 +282,16 @@
         "DownloadingI18nFiles": "Descargando archivos de i18n",
         "CopyingI18nFiles": "Copiando archivos de i18n",
         "Stable": "Estable",
-        "PreRelease": "Pre-Release",
+        "PreRelease": "Pre-lanzamiento",
         "Nightly": "Nightly",
         "Branch": "Branch",
         "NoCompatibleReleases": "No hay releases compatibles",
-        "LastUpdatedAt": "Última actualización fue",
-        "AudioPathChanged": "Los siguientes directorios de audio del sistema no se usan ya por el firmware debido a la actualización. Se recomienda eliminarlos. ¿Está de acuerdo?",
+        "LastUpdatedAt": "Última actualización se hizo",
+        "AudioPathChanged": "Los siguientes directorios de audio del sistema ya no se usan por el firmware debido a la actualización. Se recomienda eliminarlos. ¿Está de acuerdo?",
         "TestingVersion": "Versión de prueba",
         "GoToModuleManager": "Ir al administrador de módulos",
         "LatestBootloaderRequired": "¡Se requiere actualizar el bootloader!",
-        "ConfirmUpdateBootloaderFirstly": "El firmware seleccionado requiere actualizar el bootloader, o su radio no funcionará correctamente. ¿Confirma quiere actualizar el boorloader antes?",
+        "ConfirmUpdateBootloaderFirstly": "El firmware seleccionado requiere actualizar el bootloader, o su radio no funcionará correctamente. ¿Confirma quiere antes actualizar el boorloader?",
         "ConfirmBackup": "Confirme backup",
         "BackupOrContinueUpdate": "Se recomienda hacer una copia de seguridad de su radio antes de actualizar. ¿Quiere ir a la página de backup, o continuar con la actualización?",
         "GoToBackup": "Vaya a la página de backup",
@@ -369,14 +369,14 @@
         "PopupDialogWhenError": "Mostrar cuadro de diálogo cuando ocurra un error fatal",
         "OpenLogs": "Abrir el directorio de logs",
         "ClearCache": "Borrar el caché",
-        "ClearCacheConfirm": "¿Está seguro que quiere borrar el caché?",
+        "ClearCacheConfirm": "¿Está seguro de querer borrar el caché?",
         "CacheCleared": "¡Caché borrado!",
         "Open": "Abrir",
         "Clear": "Limpiar",
         "LangFileNotFound": "Archivo de idioma no encontrado",
         "UpdateSuite": "Actualizar la Suite",
         "CheckForUpdate": "Comprobar actualizaciones",
-        "AutoUpdateError": "Actualización automática ha fallado",
+        "AutoUpdateError": "La actualización automática ha fallado",
         "DebugMode": "Modo depuración",
         "ExportDebugTraces": "Exportar las trazas de depuración",
         "Export": "Exportar",
@@ -407,7 +407,7 @@
         "ManualAsset": "Archivo del manual",
         "NoManualsAvailable": "No hay manuales disponibles.",
         "ManualsFetchError": "No se pudieron cargar los manuales. Inténtelo más tarde.",
-        "LuaPackage": "Pauqte Lua de Ethos (manifest.ZIP)",
+        "LuaPackage": "Paquete Lua de Ethos (manifest.ZIP)",
         "LuaPackageDescription": "Un manual para describir el archivo manifest que debería incluirse en el paquete lua de ETHOS."
     },
     "BootloaderGuide": {
@@ -500,7 +500,7 @@
         "ManifestKey": "ID del Script",
         "ManifestFolder": "Directorio de Instalación",
         "FileSelectors": "Selectores de archivo",
-        "ReleaseNote": "ReleaseNote"
+        "ReleaseNote": "Nota de la versión"
     },
     "LuaLib": {
         "LuaLib": "Librería Lua",
@@ -518,10 +518,10 @@
         "RadioScripts": "Scripts de la radio",
         "Install": "Instalar",
         "InstalledScript": "Script instalado",
-        "InstallLatest": "Instalar el último",
+        "InstallLatest": "Instalar el más reciente",
         "Reinstall": "Reinstalar",
         "ScriptInfo": "Información del Script",
-        "NoScriptInfo": "No script information available.",
+        "NoScriptInfo": "No hay disponible información del script.",
         "TheEntireZip": "El archivo zip entero"
     },
     "Updater": {
@@ -535,9 +535,9 @@
         "ConfirmCancelDownload": "Confirme cancelar la descarga",
         "ConfirmCancelDownloadLabel": "¿Esta seguro de cancelar la descarga? Puede intentarlo más tarde, pero no se conservará lo que lleve descargado hasta ahora.",
         "NetworkError": "Ha ocurrido un error en la red durante el proceso de descarga de la actualización.",
-        "UpdateDownloadedLabel": "La actualización de la instalación se ha descargado. ¿Quiere instalarla?",
+        "UpdateDownloadedLabel": "Se ha descargado la actualización para la instalación. ¿Quiere instalarla?",
         "InstallUpdate": "Instalar actualización",
-        "DeleteInstaller": "Borrar el instalador",
+        "DeleteInstaller": "Borrar la actualización",
         "ConfirmDeleteInstaller": "¿Está seguro de borrar la actualización?",
         "NewVersionLabel": "Nueva versión disponible"
     },
@@ -578,7 +578,7 @@
         "CurrentLocalSimDir": "Directorio actual del simulador local",
         "OverwriteLocalSimDirQuestion": "Va a sincronizar el contenido de la radio con el directorio del simulador local. Esta acción sobreescribira el contenido del directorio local del simulador. ¿Esta seguro de continuar?",
         "RadioConnectedToSim": "Radio conectada al simulador",
-        "InitFailAndFallBackToDefault": "El directorio seleccionado del simulador no consiguió inicializar los archivos necesarios del simulador por lo que hemos vuelto al directorio por defecto.",
+        "InitFailAndFallBackToDefault": "El directorio seleccionado del simulador no consiguió inicializar los archivos necesarios, por lo que hemos vuelto al directorio por defecto.",
         "ExecSimScript": "Ejecute el macro script del simulador",
         "SelectSyncComponent": "Seleccione los componentes que quiere sincronizar",
         "Synchronize": "Sincronizar",
@@ -617,25 +617,25 @@
         "OpenTelemetryPanel": "Abrir panel de telemetría",
         "Screenshot": "Captura de pantalla",
         "LockAxis": "Bloquear eje",
-        "DisplayPanel": "Display",
-        "ControlsPanel": "Controls"
+        "DisplayPanel": "Pantalla",
+        "ControlsPanel": "Controles"
     },
     "AegisUpdater": {
-        "AegisUpdater": "Aegis flashing tool",
+        "AegisUpdater": "Herramienta de actualización de Aegis",
         "SelectAegisFirmware": "Seleccione firmware Aegis",
         "InterruptFlash": "Interrumpir actualización",
         "LeavePageWarning": "Abandonar esta página puede interrumpir la actualización y causar daños al dispositivo. Está seguro de querer hacer esto?"
     },
     "EcosTool": {
-        "Title": "ECOS flashing tool",
+        "Title": "Herramienta de actualización ECOS",
         "SelectFirmware": "Seleccione firmware",
         "NoFirmwareSelected": "No se ha seleccionado firmware",
         "ComPort": "Puerto COM",
-        "FlashingRequestPowerup": "Connecting to device ...",
-        "FlashingRequestVersion": "Requesting version ...",
-        "FlashingTransferringData": "Transferring firmware data {{percent}}% ...",
-        "FlashDoneSuccess": "Firmware update completed successfully.",
-        "FlashDoneError": "Firmware update failed: {{message}}",
-        "FlashingTitle": "Flashing ECOS firmware. Please do not disconnect the device."
+        "FlashingRequestPowerup": "Conectando al dispositivo ...",
+        "FlashingRequestVersion": "Solicitando versión ...",
+        "FlashingTransferringData": "Transfiriendo datos del firmware {{percent}}% ...",
+        "FlashDoneSuccess": "Actualización firmware completada con éxito.",
+        "FlashDoneError": "Actualización del Firmware ha fallado: {{message}}",
+        "FlashingTitle": "Actualizando firmware ECOS. Por favor, no desconecte el dispositivo."
     }
 }
