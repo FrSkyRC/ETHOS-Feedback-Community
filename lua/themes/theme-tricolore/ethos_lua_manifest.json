@@ -1,0 +1,15 @@
+{
+    "manifestVersion": 1,
+    "name": "Tricolore",
+    "key": "flyingeek-theme-Tricol",
+    "version": "1.0.0",
+    "releaseNotes": {
+        "format": "markdown",
+        "content": "Deep navy with French red accents\n\nby [@flyingeek](https://github.com/flyingeek)\n"
+    },
+    "folder": "theme-tricolore",
+    "files": [
+        "main.lua",
+        "toolbar-*"
+    ]
+}

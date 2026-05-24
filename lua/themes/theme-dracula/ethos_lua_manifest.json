@@ -1,0 +1,15 @@
+{
+    "manifestVersion": 1,
+    "name": "Dracula",
+    "key": "flyingeek-theme-Dracula",
+    "version": "1.0.0",
+    "releaseNotes": {
+        "format": "markdown",
+        "content": "Dark background with vivid purple accents — inspired by the popular Dracula color scheme\n\nby [@flyingeek](https://github.com/flyingeek)\n"
+    },
+    "folder": "theme-dracula",
+    "files": [
+        "main.lua",
+        "toolbar-*"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "manifestVersion": 1,
+    "name": "Grove",
+    "key": "flyingeek-theme-Grove",
+    "version": "1.0.0",
+    "releaseNotes": {
+        "format": "markdown",
+        "content": "Deep forest green with vivid lime highlights\n\nby [@flyingeek](https://github.com/flyingeek)\n"
+    },
+    "folder": "theme-grove",
+    "files": [
+        "main.lua",
+        "toolbar-*"
+    ]
+}
