@@ -1,0 +1,15 @@
+{
+    "manifestVersion": 1,
+    "name": "Tropical Sunset",
+    "key": "flyingeek-theme-Sunset",
+    "version": "1.0.0",
+    "releaseNotes": {
+        "format": "markdown",
+        "content": "Warm magenta-purple canvas with orange and golden yellow\n\nby [@flyingeek](https://github.com/flyingeek)\n"
+    },
+    "folder": "theme-tropical-sunset",
+    "files": [
+        "main.lua",
+        "toolbar-*"
+    ]
+}

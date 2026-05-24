@@ -1,0 +1,15 @@
+{
+    "manifestVersion": 1,
+    "name": "Ocean",
+    "key": "flyingeek-theme-Ocean",
+    "version": "1.0.0",
+    "releaseNotes": {
+        "format": "markdown",
+        "content": "Deep navy blue with royal blue highlights\n\nby [@flyingeek](https://github.com/flyingeek)\n"
+    },
+    "folder": "theme-ocean",
+    "files": [
+        "main.lua",
+        "toolbar-*"
+    ]
+}

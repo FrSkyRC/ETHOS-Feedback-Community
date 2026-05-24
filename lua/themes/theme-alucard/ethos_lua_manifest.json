@@ -1,0 +1,15 @@
+{
+    "manifestVersion": 1,
+    "name": "Alucard",
+    "key": "flyingeek-theme-Alucard",
+    "version": "1.0.0",
+    "releaseNotes": {
+        "format": "markdown",
+        "content": "Light mode counterpart to Dracula\n\nby [@flyingeek](https://github.com/flyingeek)\n"
+    },
+    "folder": "theme-alucard",
+    "files": [
+        "main.lua",
+        "toolbar-*"
+    ]
+}
