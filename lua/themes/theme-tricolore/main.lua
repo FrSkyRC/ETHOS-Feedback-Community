@@ -22,7 +22,7 @@ local function init()
             lcd.RGB(0xED, 0x29, 0x39), -- ACTIVE_COLOR (French red)
             lcd.RGB(0x3A, 0x4E, 0x8A), -- INACTIVE_COLOR (muted navy)
             lcd.RGB(0xED, 0x29, 0x39), -- BUTTON_BORDER_ACTIVE_COLOR (French red)
-            lcd.RGB(0x26, 0x3A, 0x84), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0x1C, 0x2B, 0x63), -- BUTTON_BORDER_COLOR
             lcd.RGB(0xFF, 0x6B, 0x2B), -- WARNING_COLOR (orange — caution, was ERROR_COLOR)
             COLOR_BLACK,               -- SAFE_CONTRASTING_COLOR (10.2:1 on sky blue)
             COLOR_BLACK,               -- TOPLCD_BGCOLOR (XE/S)

@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "name": "Monokai",
     "key": "flyingeek-theme-Monokai",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "releaseNotes": {
         "format": "markdown",
         "content": "Warm olive canvas with cyan and lime green accents — inspired by the iconic Monokai editor theme\n\nby [@flyingeek](https://github.com/flyingeek?tab=repositories&q=topic:ethos)\n"

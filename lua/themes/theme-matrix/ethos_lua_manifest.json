@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "name": "Matrix",
     "key": "flyingeek-theme-Matrix",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "releaseNotes": {
         "format": "markdown",
         "content": "Green-on-black terminal theme inspired by the Matrix digital rain\n\nby [@flyingeek](https://github.com/flyingeek?tab=repositories&q=topic:ethos)\n"

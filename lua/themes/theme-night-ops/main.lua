@@ -23,7 +23,7 @@ local function init()
             lcd.RGB(0xFF, 0x44, 0x00), -- ACTIVE_COLOR (= HIGHLIGHT_COLOR)
             lcd.RGB(0x5A, 0x18, 0x00), -- INACTIVE_COLOR (dim dark ember)
             lcd.RGB(0xFF, 0x44, 0x00), -- BUTTON_BORDER_ACTIVE_COLOR
-            lcd.RGB(0x6B, 0x10, 0x00), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0x40, 0x0A, 0x00), -- BUTTON_BORDER_COLOR
             lcd.RGB(0xFF, 0xAA, 0x00), -- WARNING_COLOR (cockpit amber — hue ~40°, 7.7:1 on PRIMARY)
             COLOR_BLACK,               -- SAFE_CONTRASTING_COLOR (9.9:1 on cockpit green)
             COLOR_BLACK,               -- TOPLCD_BGCOLOR (XE/S)
