@@ -22,7 +22,7 @@ local function init()
             lcd.RGB(0x00, 0xFF, 0x41), -- 12 ACTIVE_COLOR (bright matrix green)
             lcd.RGB(0x00, 0x6B, 0x1A), -- 13 INACTIVE_COLOR (dim dark green — intentionally ghosted)
             lcd.RGB(0x00, 0xFF, 0x41), -- 14 BUTTON_BORDER_ACTIVE_COLOR
-            lcd.RGB(0x00, 0x33, 0x00), -- 15 BUTTON_BORDER_COLOR (same as SECONDARY_BGCOLOR)
+            lcd.RGB(0x00, 0x27, 0x00), -- 15 BUTTON_BORDER_COLOR
             lcd.RGB(0xFF, 0xAA, 0x00), -- 16 WARNING_COLOR (amber)
             COLOR_BLACK,               -- 17 SAFE_CONTRASTING_COLOR (black on chartreuse)
             COLOR_BLACK,               -- 18 TOPLCD_BGCOLOR (XE/S)

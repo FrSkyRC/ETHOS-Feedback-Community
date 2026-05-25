@@ -22,7 +22,7 @@ local function init()
             lcd.RGB(0x00, 0xFF, 0x9F), -- 12 ACTIVE_COLOR               (neon mint, same as SAFE)
             lcd.RGB(0x90, 0x90, 0xC8), -- 13 INACTIVE_COLOR             (muted lavender)
             lcd.RGB(0x00, 0xAA, 0xCC), -- 14 BUTTON_BORDER_ACTIVE_COLOR (dimmed cyan)
-            lcd.RGB(0x1E, 0x1B, 0x5E), -- 15 BUTTON_BORDER_COLOR        (indigo, same as SECONDARY_BGCOLOR)
+            lcd.RGB(0x15, 0x13, 0x42), -- 15 BUTTON_BORDER_COLOR
             lcd.RGB(0xFF, 0x8C, 0x1A), -- 16 WARNING_COLOR              (neon orange)
             lcd.RGB(0x06, 0x05, 0x1A), -- 17 SAFE_CONTRASTING_COLOR     (near-black on mint)
             COLOR_BLACK,               -- 18 TOPLCD_BGCOLOR (XE/S)

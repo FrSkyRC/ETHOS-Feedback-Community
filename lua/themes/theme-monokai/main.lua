@@ -22,7 +22,7 @@ local function init()
             lcd.RGB(0xE6, 0xDB, 0x74), -- 12 ACTIVE_COLOR             (Monokai yellow — 12.9:1 on page)
             lcd.RGB(0x75, 0x71, 0x5E), -- 13 INACTIVE_COLOR           (comment gray — 3.4:1 on page)
             lcd.RGB(0x66, 0xD9, 0xE8), -- 14 BUTTON_BORDER_ACTIVE_COLOR (matches HIGHLIGHT)
-            lcd.RGB(0x49, 0x48, 0x3E), -- 15 BUTTON_BORDER_COLOR      (matches SECONDARY_BGCOLOR)
+            lcd.RGB(0x3D, 0x3C, 0x24), -- 15 BUTTON_BORDER_COLOR
             lcd.RGB(0xFD, 0x97, 0x1F), -- 16 WARNING_COLOR            (Monokai orange — 7.5:1 on canvas)
             lcd.RGB(0x1A, 0x1B, 0x16), -- 17 SAFE_CONTRASTING_COLOR   (near-black on lime)
             COLOR_BLACK,               -- 18 TOPLCD_BGCOLOR (XE/S)

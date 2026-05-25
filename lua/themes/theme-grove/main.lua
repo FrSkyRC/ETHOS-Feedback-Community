@@ -22,7 +22,7 @@ local function init()
             lcd.RGB(0x22, 0xD6, 0x6A), -- ACTIVE_COLOR (vivid spring green)
             lcd.RGB(0x70, 0x9C, 0x7A), -- INACTIVE_COLOR (muted sage — 3.3:1 on PAGE)
             lcd.RGB(0x22, 0xD6, 0x6A), -- BUTTON_BORDER_ACTIVE_COLOR
-            lcd.RGB(0x1C, 0x40, 0x28), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0x16, 0x33, 0x20), -- BUTTON_BORDER_COLOR
             lcd.RGB(0xF4, 0xA0, 0x35), -- WARNING_COLOR (amber — caution, was ERROR_COLOR)
             lcd.RGB(0x06, 0x1A, 0x0E), -- SAFE_CONTRASTING_COLOR
             COLOR_BLACK,               -- TOPLCD_BGCOLOR (XE/S)
