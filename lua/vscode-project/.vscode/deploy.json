@@ -1,5 +1,6 @@
 {
   "tgt_name": "sampleapp",
+  "src_dir": "src",
   "serial_vid": "0483",
   "serial_pid": "5750",
   "serial_baud": 115200,

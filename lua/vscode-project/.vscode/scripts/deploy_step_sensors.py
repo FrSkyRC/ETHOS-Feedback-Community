@@ -10,6 +10,17 @@ def debug(msg):
     print(f"[SENSORS DEBUG] {msg}")
 
 
+def should_run(version, default_version):
+    """Return True if the sensors step should run for this ETHOS_VERSION."""
+    if version is None or version == default_version:
+        return True
+    try:
+        major = int(version.split(".")[0])
+        return major >= 26
+    except (ValueError, IndexError):
+        return False
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Ensure sensors.json exists in the simulator root directory."
@@ -17,7 +28,13 @@ def main():
     parser.add_argument("--out-dir", required=True, help="Output directory (scripts/<tgt>)")
     parser.add_argument("--lang")
     parser.add_argument("--git-src")
+    parser.add_argument("--default-version", default="nightly26")
     args = parser.parse_args()
+
+    version = os.environ.get("ETHOS_VERSION")
+    if not should_run(version, args.default_version):
+        print(f"[SENSORS] Skipping — ETHOS_VERSION={version!r} is < 26")
+        return 0
 
     # out_dir will be: simulator/<fw>/scripts/<tgt>
     out_dir = Path(args.out_dir).resolve()
@@ -30,7 +47,7 @@ def main():
     if args.git_src:
         git_src = Path(args.git_src).resolve()
     else:
-        git_src = Path(__file__).resolve().parents[2]
+        git_src = Path(os.path.abspath(__file__)).parents[2]
 
     src = git_src / ".vscode" / "sensors.json"
     dst = sim_root / "sensors.json"

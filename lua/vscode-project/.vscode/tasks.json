@@ -13,7 +13,9 @@
       ],
       "options": {
         "env": {
-          "ETHOS_FIRMWARE": "${config:ethos.firmware}"
+          "ETHOS_FIRMWARE": "${config:ethos.board}_${config:ethos.protocol}",
+          "ETHOS_VERSION": "${config:ethos.release}",
+          "ETHOS_SIMULATORS_FOLDER": "${config:ethos.simulatorsFolder}"
         }
       },
       "problemMatcher": [],
@@ -22,6 +24,18 @@
         "panel": "shared",
         "clear": true
       }
+    },
+    {
+      "label": "Deploy & Launch [SIM]",
+      "type": "process",
+      "command": "${command:ethos.start}",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "dependsOn": "Deploy [SIM Files]"
     },
     {
       "label": "Deploy Radio",

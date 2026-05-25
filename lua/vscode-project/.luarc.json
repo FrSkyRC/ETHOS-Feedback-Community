@@ -1,0 +1,14 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json",
+  "completion.callSnippet": "Replace",
+  "completion.autoRequire": false,
+  "runtime.version": "Lua 5.4",
+  "runtime.builtin": {
+    "bit": "disable",
+    "bit32": "disable",
+    "coroutine": "disable",
+    "debug": "disable",
+    "ffi": "disable",
+    "jit": "disable"
+  }
+}

@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 simulator/*
 !simulator/.gitkeep
+.venv
+.DS_Store

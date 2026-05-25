@@ -18,9 +18,10 @@ Install these first:
 - `Ethos` by `bsongis` for simulator commands and telemetry windows
 - `Python` by Microsoft
 - `Python Debugger` by Microsoft
+
 - This is the marketplace entry: `https://marketplace.visualstudio.com/items?itemName=bsongis.ethos`
 
-The bundled `.vscode/extensions.json` recommends both the Ethos extension and the Microsoft Python extensions automatically.
+The bundled `.vscode/extensions.json` recommends both the Ethos extension and the Microsoft Python extensions automatically. It also recommends `sumneko.lua` to get autocomplete/lint using [ethos-lua-definitions](https://github.com/flyingeek/ethos-lua-definitions)
 
 ## Python Setup
 
@@ -155,6 +156,8 @@ Optional folders supported by the helper scripts:
 
 If those optional folders do not exist, the helper scripts skip them cleanly.
 
+You may override the stucture in deploy.json by setting the "src_dir" and "simulators_dir".
+
 ## Running The Template
 
 Simulator file deploy:
@@ -212,6 +215,7 @@ You will usually want to customize:
 ```json
 {
   "tgt_name": "sampleapp",
+  "src_dir": "src"
   "serial_vid": "0483",
   "serial_pid": "5750",
   "serial_baud": 115200,

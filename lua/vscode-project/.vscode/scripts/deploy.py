@@ -762,7 +762,7 @@ def mirror_copy(src_dir, dst_dir, delete_stale=True, ts_slack=2.0):
         print(f"Removed {removed} stale file(s).")
 
 # --- config: derive repo root and load deploy.json ----------------------------
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(os.path.abspath(__file__)).parents[2]
 
 ROOT_CONFIG = ROOT / "deploy.json"
 VSCODE_CONFIG = ROOT / ".vscode/deploy.json"
@@ -798,6 +798,14 @@ if "tgt_name" not in config or not config["tgt_name"]:
     sys.exit(1)
 
 CONFIG_PATH = str(cfg_path)
+
+# Optional: override the source subdirectory (default "src"). Set to "" to source from repo root.
+SRC_DIR = config.get('src_dir', 'src')
+
+# Optional: override the simulator output directory. Precedence: ETHOS_SIMULATOR_FOLDER env var > deploy.json simulator_dir > "simulator".
+SIM_FOLDER = os.environ.get('ETHOS_SIMULATORS_FOLDER', '').strip() or config.get('simulators_dir', 'simulators')
+
+DEFAULT_VERSION = "nightly26"
 
 pbar = None
 
@@ -1160,6 +1168,7 @@ def run_step_script(step, out_dir, lang="en"):
         "--out-dir", out_dir,
         "--lang", lang,
         "--git-src", git_src,
+        "--default-version", DEFAULT_VERSION,
     ]
 
     print(f"[STEP] Running '{step}' → {script_path}")
@@ -1221,23 +1230,15 @@ def copy_files(src_override, fileext, targets, lang="en", steps=None):
         print(f"[{i}/{len(targets)}] -> {t['name']} @ {dest}")
 
         if not os.path.isdir(dest):
-            fallback = os.path.normpath(os.path.join(git_src, 'simulator', 'scripts'))
-            try:
-                os.makedirs(fallback, exist_ok=True)
-                print(f"[DEST] '{dest}' not found. Using fallback: {fallback}")
-                t['dest'] = fallback
-                dest = fallback
-            except Exception as e:
-                print(f"[DEST ERROR] Could not create fallback folder at {fallback}: {e}")
-                raise
+            raise RuntimeError(f"[DEST ERROR] Target directory not found: {dest!r}")
 
         out_dir = os.path.join(dest, tgt)
 
         # Decide whether to stage locally (recommended for radio when running steps)
         do_stage = bool(DEPLOY_TO_RADIO and DEPLOY_STAGE and steps)
 
-        # Always source from repo src/<tgt>
-        repo_src = os.path.join(git_src, 'src', tgt)
+        # Always source from repo <src_dir>/<tgt> (src_dir from deploy.json, default "src"; "" means repo root)
+        repo_src = os.path.join(git_src, SRC_DIR, tgt) if SRC_DIR else os.path.join(git_src, tgt)
 
         if do_stage:
             print("[STAGE] Staging to local temp, running steps, then copying to radio…")
@@ -1521,13 +1522,12 @@ def main():
 
         targets = [{'name': 'Radio', 'dest': rd, 'simulator': None}]
     else:
-        # SIMULATOR DEPLOY: always to <git_src>\simulator\[firmware]\scripts
+        # SIMULATOR DEPLOY: always to <git_src>/[simulatorsFolder|simulators_dir]/[firmware]@[version]/scripts
         firmware = os.environ.get("ETHOS_FIRMWARE")
-        path_parts = [config['git_src'], 'simulator']
-        if firmware:
-            path_parts.append(firmware)
+        version = os.environ.get("ETHOS_VERSION")
+        path_parts = [config['git_src'], SIM_FOLDER]
+        path_parts.append(f"{firmware}@{version}")
         path_parts.append('scripts')
-
         fixed_dest = os.path.normpath(os.path.join(*path_parts))
         os.makedirs(fixed_dest, exist_ok=True)
         targets = [{'name': 'Simulator', 'dest': fixed_dest, 'simulator': None}]
