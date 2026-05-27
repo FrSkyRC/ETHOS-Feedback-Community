@@ -22,7 +22,7 @@ local function init()
             lcd.RGB(0xFF, 0x77, 0x00), -- ACTIVE_COLOR (= HIGHLIGHT_COLOR)
             lcd.RGB(0x80, 0x40, 0x90), -- INACTIVE_COLOR (muted violet)
             lcd.RGB(0xFF, 0x77, 0x00), -- BUTTON_BORDER_ACTIVE_COLOR
-            lcd.RGB(0x33, 0x00, 0x54), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0x79, 0x4C, 0x98), -- BUTTON_BORDER_COLOR
             lcd.RGB(0xFF, 0xC2, 0x00), -- WARNING_COLOR (golden amber — hue ~46° distinct from orange HIGHLIGHT, 7.2:1 on PRIMARY)
             lcd.RGB(0x1A, 0x00, 0x28), -- SAFE_CONTRASTING_COLOR
             COLOR_BLACK,               -- TOPLCD_BGCOLOR (XE/S)

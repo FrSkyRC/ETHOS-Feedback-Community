@@ -22,7 +22,7 @@ local function init()
             lcd.RGB(0x08, 0x91, 0x08), -- ACTIVE_COLOR
             lcd.RGB(0x3E, 0x3A, 0x2B), -- INACTIVE_COLOR
             lcd.RGB(0x81, 0x5C, 0xD6), -- BUTTON_BORDER_ACTIVE_COLOR xCF
-            lcd.RGB(0xDE, 0xDC, 0xCF), -- BUTTON_BORDER_COLOR
+            lcd.RGB(0xBC, 0xBA, 0xB3), -- BUTTON_BORDER_COLOR
             lcd.RGB(0xA3, 0x95, 0x14), -- WARNING_COLOR
             lcd.RGB(0xFF, 0xFF, 0xF5), -- SAFE_CONTRASTING_COLOR
             COLOR_WHITE,               -- TOPLCD_BGCOLOR (XE/S)

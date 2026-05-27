@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "name": "Alucard",
     "key": "flyingeek-theme-Alucard",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "releaseNotes": {
         "format": "markdown",
         "content": "Light mode counterpart to Dracula\n\nby [@flyingeek](https://github.com/flyingeek?tab=repositories&q=topic:ethos)\n"
