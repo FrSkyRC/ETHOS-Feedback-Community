@@ -1,0 +1,56 @@
+<svg width="249" height="483" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="249" height="24" rx="3" fill="#D00100" stroke="#808080" stroke-opacity="0.25" stroke-width="0.5"><title>#D00100 · PRIMARY_COLOR</title></rect>
+  <text x="6" y="12.0" dominant-baseline="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">PRIMARY_COLOR</text>
+  <text x="243" y="12.0" dominant-baseline="middle" text-anchor="end" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">#D00100</text>
+  <rect x="0" y="27" width="249" height="24" rx="3" fill="#6B1000" stroke="#808080" stroke-opacity="0.25" stroke-width="0.5"><title>#6B1000 · SECONDARY_BGCOLOR</title></rect>
+  <text x="6" y="39.0" dominant-baseline="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">SECONDARY_BGCOLOR</text>
+  <text x="243" y="39.0" dominant-baseline="middle" text-anchor="end" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">#6B1000</text>
+  <rect x="0" y="54" width="249" height="24" rx="3" fill="#D81800" stroke="#808080" stroke-opacity="0.25" stroke-width="0.5"><title>#D81800 · HIGHLIGHT_COLOR</title></rect>
+  <text x="6" y="66.0" dominant-baseline="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">HIGHLIGHT_COLOR</text>
+  <text x="243" y="66.0" dominant-baseline="middle" text-anchor="end" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">#D81800</text>
+  <rect x="0" y="81" width="249" height="24" rx="3" fill="#000000" stroke="#808080" stroke-opacity="0.25" stroke-width="0.5"><title>#000000 · HIGHLIGHT_CONTRASTING_COLOR</title></rect>
+  <text x="6" y="93.0" dominant-baseline="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">HIGHLIGHT_CONTRASTING_COLOR</text>
+  <text x="243" y="93.0" dominant-baseline="middle" text-anchor="end" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">#000000</text>
+  <rect x="0" y="108" width="249" height="24" rx="3" fill="#C86060" stroke="#808080" stroke-opacity="0.25" stroke-width="0.5"><title>#C86060 · DISABLE_COLOR</title></rect>
+  <text x="6" y="120.0" dominant-baseline="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#000000">DISABLE_COLOR</text>
+  <text x="243" y="120.0" dominant-baseline="middle" text-anchor="end" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#000000">#C86060</text>
+  <rect x="0" y="135" width="249" height="24" rx="3" fill="#180000" stroke="#808080" stroke-opacity="0.25" stroke-width="0.5"><title>#180000 · PRIMARY_BGCOLOR</title></rect>
+  <text x="6" y="147.0" dominant-baseline="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">PRIMARY_BGCOLOR</text>
+  <text x="243" y="147.0" dominant-baseline="middle" text-anchor="end" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">#180000</text>
+  <rect x="0" y="162" width="249" height="24" rx="3" fill="#000000" stroke="#808080" stroke-opacity="0.25" stroke-width="0.5"><title>#000000 · OVERLAY_COLOR</title></rect>
+  <text x="6" y="174.0" dominant-baseline="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">OVERLAY_COLOR</text>
+  <text x="243" y="174.0" dominant-baseline="middle" text-anchor="end" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">#000000</text>
+  <rect x="0" y="189" width="249" height="24" rx="3" fill="#800000" stroke="#808080" stroke-opacity="0.25" stroke-width="0.5"><title>#800000 · SECONDARY_COLOR</title></rect>
+  <text x="6" y="201.0" dominant-baseline="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">SECONDARY_COLOR</text>
+  <text x="243" y="201.0" dominant-baseline="middle" text-anchor="end" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">#800000</text>
+  <rect x="0" y="216" width="249" height="24" rx="3" fill="#44AA44" stroke="#808080" stroke-opacity="0.25" stroke-width="0.5"><title>#44AA44 · SAFE_COLOR</title></rect>
+  <text x="6" y="228.0" dominant-baseline="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#000000">SAFE_COLOR</text>
+  <text x="243" y="228.0" dominant-baseline="middle" text-anchor="end" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#000000">#44AA44</text>
+  <rect x="0" y="243" width="249" height="24" rx="3" fill="#000000" stroke="#808080" stroke-opacity="0.25" stroke-width="0.5"><title>#000000 · PAGE_BGCOLOR</title></rect>
+  <text x="6" y="255.0" dominant-baseline="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">PAGE_BGCOLOR</text>
+  <text x="243" y="255.0" dominant-baseline="middle" text-anchor="end" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">#000000</text>
+  <rect x="0" y="270" width="249" height="24" rx="3" fill="#FF5500" stroke="#808080" stroke-opacity="0.25" stroke-width="0.5"><title>#FF5500 · ERROR_COLOR</title></rect>
+  <text x="6" y="282.0" dominant-baseline="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#000000">ERROR_COLOR</text>
+  <text x="243" y="282.0" dominant-baseline="middle" text-anchor="end" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#000000">#FF5500</text>
+  <rect x="0" y="297" width="249" height="24" rx="3" fill="#FF4400" stroke="#808080" stroke-opacity="0.25" stroke-width="0.5"><title>#FF4400 · ACTIVE_COLOR</title></rect>
+  <text x="6" y="309.0" dominant-baseline="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#000000">ACTIVE_COLOR</text>
+  <text x="243" y="309.0" dominant-baseline="middle" text-anchor="end" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#000000">#FF4400</text>
+  <rect x="0" y="324" width="249" height="24" rx="3" fill="#5A1800" stroke="#808080" stroke-opacity="0.25" stroke-width="0.5"><title>#5A1800 · INACTIVE_COLOR</title></rect>
+  <text x="6" y="336.0" dominant-baseline="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">INACTIVE_COLOR</text>
+  <text x="243" y="336.0" dominant-baseline="middle" text-anchor="end" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">#5A1800</text>
+  <rect x="0" y="351" width="249" height="24" rx="3" fill="#FF4400" stroke="#808080" stroke-opacity="0.25" stroke-width="0.5"><title>#FF4400 · BUTTON_BORDER_ACTIVE_COLOR</title></rect>
+  <text x="6" y="363.0" dominant-baseline="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#000000">BUTTON_BORDER_ACTIVE_COLOR</text>
+  <text x="243" y="363.0" dominant-baseline="middle" text-anchor="end" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#000000">#FF4400</text>
+  <rect x="0" y="378" width="249" height="24" rx="3" fill="#400A00" stroke="#808080" stroke-opacity="0.25" stroke-width="0.5"><title>#400A00 · BUTTON_BORDER_COLOR</title></rect>
+  <text x="6" y="390.0" dominant-baseline="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">BUTTON_BORDER_COLOR</text>
+  <text x="243" y="390.0" dominant-baseline="middle" text-anchor="end" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">#400A00</text>
+  <rect x="0" y="405" width="249" height="24" rx="3" fill="#FFAA00" stroke="#808080" stroke-opacity="0.25" stroke-width="0.5"><title>#FFAA00 · WARNING_COLOR</title></rect>
+  <text x="6" y="417.0" dominant-baseline="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#000000">WARNING_COLOR</text>
+  <text x="243" y="417.0" dominant-baseline="middle" text-anchor="end" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#000000">#FFAA00</text>
+  <rect x="0" y="432" width="249" height="24" rx="3" fill="#000000" stroke="#808080" stroke-opacity="0.25" stroke-width="0.5"><title>#000000 · SAFE_CONTRASTING_COLOR</title></rect>
+  <text x="6" y="444.0" dominant-baseline="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">SAFE_CONTRASTING_COLOR</text>
+  <text x="243" y="444.0" dominant-baseline="middle" text-anchor="end" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">#000000</text>
+  <rect x="0" y="459" width="249" height="24" rx="3" fill="#000000" stroke="#808080" stroke-opacity="0.25" stroke-width="0.5"><title>#000000 · TOPLCD_BGCOLOR</title></rect>
+  <text x="6" y="471.0" dominant-baseline="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">TOPLCD_BGCOLOR</text>
+  <text x="243" y="471.0" dominant-baseline="middle" text-anchor="end" font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" fill="#ffffff">#000000</text>
+</svg>
