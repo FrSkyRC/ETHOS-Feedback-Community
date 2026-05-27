@@ -17,6 +17,7 @@ Using a valid `ethos_lua_manifest.json` is strongly recommended for all third-pa
 | `name` | string | Yes | Display name of the script, max 128 chars. |
 | `key` | string | Yes | Global stable unique ID (reverse-domain style recommended, e.g. `com.example.mywidget`). Allowed chars: letters, digits, `.`, `_`, `:`, `-`; length 1-128; must start with a letter or digit. Used for script identity and upgrade matching. |
 | `version` | string | Yes | Version string that can be parsed as numeric 3-part version (e.g. `1.0.0`, `01.02.03`). |
+| `introduction` | string | No | One sentence introduction for the script, max 1024 chars. |
 | `releaseNotes` | string \| object | No | Release notes. Two forms are supported: (1) string (default rendered as markdown), (2) object `{ "format": "markdown" \| "text", "content": "..." }`. `content` max length is 32000 chars. |
 | `folder` | string | Yes | Install directory under `SCRIPTS:` (`RADIO:/scripts/{folder}/`). Length 1-64, must start with letter/digit, allowed chars: `a-z`, `A-Z`, `0-9`, `.`, `_`, `-`. |
 | `files` | string[] | Yes | File selector array. Supports: (1) exact file path (`main.lua`), (2) single-level wildcard (`i18n/*`), (3) recursive wildcard (`assets/**`). Use `/` separators. `..`, absolute paths, and empty segments are forbidden. After expansion, at least one file must exist and it must include **`main.lua`** or **`main.luac`**. |
