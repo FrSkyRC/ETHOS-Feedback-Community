@@ -18,12 +18,12 @@ local function init()
             lcd.RGB(0x6B, 0x10, 0x40), -- SECONDARY_COLOR        #6B1040 dark cherry captions/icons
             lcd.RGB(0x4B, 0x72, 0x4B), -- SAFE_COLOR             #4B724B sage green
             lcd.RGB(0xFF, 0xB9, 0xDC), -- PAGE_BGCOLOR           #FFB9DC cherry pink
-            lcd.RGB(0xFF, 0x00, 0x04), -- ERROR_COLOR            #FF0004 bright red
+            lcd.RGB(0xC9, 0x00, 0x2F), -- ERROR_COLOR            #C9002F vivid cherry red
             lcd.RGB(0x4B, 0x72, 0x4B), -- ACTIVE_COLOR           #4B724B sage green (= SAFE)
             lcd.RGB(0x6B, 0x10, 0x40), -- INACTIVE_COLOR         #6B1040 dark cherry (= SECONDARY)
             lcd.RGB(0xB5, 0x00, 0x5E), -- BUTTON_BORDER_ACTIVE_COLOR #B5005E deep cherry (= HIGHLIGHT)
-            lcd.RGB(0xD8, 0x84, 0xB1), -- BUTTON_BORDER_COLOR    #D884B1 medium rose
-            lcd.RGB(0x8C, 0x74, 0x00), -- WARNING_COLOR          #8C7400 golden yellow
+            lcd.RGB(0xF2, 0xAC, 0xD2), -- BUTTON_BORDER_COLOR    #F2ACD2 soft pink
+            lcd.RGB(0xE1, 0x71, 0x01), -- WARNING_COLOR          #E17101 vivid orange
             lcd.RGB(0xFF, 0xE8, 0xF0), -- SAFE_CONTRASTING_COLOR #FFE8F0 pale blush on green
             COLOR_WHITE,               -- TOPLCD_BGCOLOR (XE/S)
         },

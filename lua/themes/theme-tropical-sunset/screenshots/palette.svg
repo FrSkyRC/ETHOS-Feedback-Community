@@ -1,16 +1,16 @@
 <svg width="375" height="24" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="24" height="24" rx="3" fill="#FFE8A0" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"/>
-  <rect x="27" y="0" width="24" height="24" rx="3" fill="#3A0060" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"/>
-  <rect x="54" y="0" width="24" height="24" rx="3" fill="#FF4500" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"/>
-  <rect x="81" y="0" width="24" height="24" rx="3" fill="#CC78A0" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"/>
-  <rect x="108" y="0" width="24" height="24" rx="3" fill="#5D005C" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"/>
-  <rect x="135" y="0" width="24" height="24" rx="3" fill="#FFD700" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"/>
-  <rect x="162" y="0" width="24" height="24" rx="3" fill="#00FF88" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"/>
-  <rect x="189" y="0" width="24" height="24" rx="3" fill="#260045" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"/>
-  <rect x="216" y="0" width="24" height="24" rx="3" fill="#FF2244" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"/>
-  <rect x="243" y="0" width="24" height="24" rx="3" fill="#FF7700" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"/>
-  <rect x="270" y="0" width="24" height="24" rx="3" fill="#804090" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"/>
-  <rect x="297" y="0" width="24" height="24" rx="3" fill="#FF7700" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"/>
-  <rect x="324" y="0" width="24" height="24" rx="3" fill="#330054" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"/>
-  <rect x="351" y="0" width="24" height="24" rx="3" fill="#FFC200" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"/>
+  <rect x="0" y="0" width="24" height="24" rx="3" fill="#FFE8A0" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"><title>#FFE8A0 · PRIMARY_COLOR</title></rect>
+  <rect x="27" y="0" width="24" height="24" rx="3" fill="#3A0060" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"><title>#3A0060 · SECONDARY_BGCOLOR</title></rect>
+  <rect x="54" y="0" width="24" height="24" rx="3" fill="#FF4500" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"><title>#FF4500 · HIGHLIGHT_COLOR</title></rect>
+  <rect x="81" y="0" width="24" height="24" rx="3" fill="#CC78A0" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"><title>#CC78A0 · DISABLE_COLOR</title></rect>
+  <rect x="108" y="0" width="24" height="24" rx="3" fill="#5D005C" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"><title>#5D005C · PRIMARY_BGCOLOR</title></rect>
+  <rect x="135" y="0" width="24" height="24" rx="3" fill="#FFD700" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"><title>#FFD700 · SECONDARY_COLOR</title></rect>
+  <rect x="162" y="0" width="24" height="24" rx="3" fill="#00FF88" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"><title>#00FF88 · SAFE_COLOR</title></rect>
+  <rect x="189" y="0" width="24" height="24" rx="3" fill="#260045" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"><title>#260045 · PAGE_BGCOLOR</title></rect>
+  <rect x="216" y="0" width="24" height="24" rx="3" fill="#FF2244" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"><title>#FF2244 · ERROR_COLOR</title></rect>
+  <rect x="243" y="0" width="24" height="24" rx="3" fill="#FF7700" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"><title>#FF7700 · ACTIVE_COLOR</title></rect>
+  <rect x="270" y="0" width="24" height="24" rx="3" fill="#804090" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"><title>#804090 · INACTIVE_COLOR</title></rect>
+  <rect x="297" y="0" width="24" height="24" rx="3" fill="#FF7700" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"><title>#FF7700 · BUTTON_BORDER_ACTIVE_COLOR</title></rect>
+  <rect x="324" y="0" width="24" height="24" rx="3" fill="#794C98" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"><title>#794C98 · BUTTON_BORDER_COLOR</title></rect>
+  <rect x="351" y="0" width="24" height="24" rx="3" fill="#FFC200" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.5"><title>#FFC200 · WARNING_COLOR</title></rect>
 </svg>

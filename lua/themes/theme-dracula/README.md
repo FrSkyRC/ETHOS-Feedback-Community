@@ -20,4 +20,8 @@ Note : Ethos ≥ 26.1.0-RC3 is required
 
 ## Palette
 
-![Dracula Palette](screenshots/palette.svg)
+![Palette](screenshots/palette.svg)
+
+## Color Roles
+
+![Color Roles](screenshots/palette-roles.svg)
