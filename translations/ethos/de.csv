@@ -135,7 +135,7 @@ NO_TIMER_YET_PRESS_ADD_TO_CREATE_ONE,,"Keine Stoppuhr vorhanden. Zum Erstellen P
 ANTENNA,,"Antenne"
 POWER_HAS_BEEN_CHANGED_PLEASE_REBIND,,"Sendeleistung verändert, bitte neu binden!"
 NO_RESPONSE_FROM_MODULE,,"Modul antwortet nicht!"
-POWER,,"Stromversorgung"
+POWER,,"Sendeleistung"
 BAUDRATE,,"Baudrate"
 ARMING_CONDITION,,"Scharfschalten"
 WAITING_FOR_MODULE,,"Warten auf HF-Modul..."
