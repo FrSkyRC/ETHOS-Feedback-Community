@@ -622,27 +622,27 @@
         "DataRate": "Dátový objem",
         "RemoveThisSensor": "Odstrániť tento senzor",
         "OpenTelemetryPanel": "Otvoriť panel telemetrie",
-        "Screenshot": "Screenshot",
+        "Screenshot": "Snímka obrazovky",
         "LockAxis": "Lock axis",
-        "DisplayPanel": "Display",
-        "ControlsPanel": "Controls"
+        "DisplayPanel": "Obrazovka",
+        "ControlsPanel": "Ovládací panel"
     },
     "AegisUpdater": {
-        "AegisUpdater": "Aegis flashing tool",
-        "SelectAegisFirmware": "Select Aegis firmware",
-        "InterruptFlash": "Interrupt flash",
-        "LeavePageWarning": "Leaving this page may cause a interruption and damage to the device. Are you sure you want to do this?"
+        "AegisUpdater": "Program na nahrávanie firmvéru pre Aegis",
+        "SelectAegisFirmware": "Vyberte Aegis firmvér",
+        "InterruptFlash": "Prerušiť nahrávanie firmvéru",
+        "LeavePageWarning": "Opustenie tejto stránky môže spôsobiť prerušenie a poškodenie zariadenia. Ste si istý, že to chcete urobiť?"
     },
     "EcosTool": {
-        "Title": "ECOS flashing tool",
-        "SelectFirmware": "Select firmware",
-        "NoFirmwareSelected": "No firmware selected",
+        "Title": "Program na nahrávanie firmvéru pre ECOS",
+        "SelectFirmware": "Vyberte firmvér",
+        "NoFirmwareSelected": "Nebol zvolený žiaden firmvér",
         "ComPort": "COM Port",
-        "FlashingRequestPowerup": "Connecting to device ...",
-        "FlashingRequestVersion": "Requesting version ...",
-        "FlashingTransferringData": "Transferring firmware data {{percent}}% ...",
-        "FlashDoneSuccess": "Firmware update completed successfully.",
-        "FlashDoneError": "Firmware update failed: {{message}}",
-        "FlashingTitle": "Flashing ECOS firmware. Please do not disconnect the device."
+        "FlashingRequestPowerup": "Pripájanie k zariadeniu ...",
+        "FlashingRequestVersion": "Zisťovanie verzie ...",
+        "FlashingTransferringData": "Prebieha prenos údajov firmvéru {{percent}}% ...",
+        "FlashDoneSuccess": "Aktualizácia firmvéru bola úspešne dokončená.",
+        "FlashDoneError": "Aktualizácia firmvéru zlyhala: {{message}}",
+        "FlashingTitle": "Prebieha nahrávanie firmvéru ECOS. Neodpájajte zariadenie, prosím."
     }
 }
