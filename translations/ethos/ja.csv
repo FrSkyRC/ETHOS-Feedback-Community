@@ -1,7 +1,7 @@
 String name, String context, X20(...) / XE(S) / V20(PRO), X18RS / X14(...) / T14 / V15, All other radios
 TRANSLATION_KEY,,"ja",,
 TRANSLATION_NAME,,"日本語",,
-TRANSLATION_FALLBACK_NAME,,"日本語",,
+TRANSLATION_FALLBACK_NAME,,"Japanese",,
 TRANSLATION_FONT_SUBSET,,,,
 SPECIAL_CHARS,,"_-+.",,
 FORMULA,,"フォーミュラ",,
