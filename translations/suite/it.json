@@ -624,16 +624,16 @@
         "Screenshot": "Cattura Schermo",
         "LockAxis": "Blocca asse",
         "DisplayPanel": "Display",
-        "ControlsPanel": "Controls"
+        "ControlsPanel": "Controlli"
     },
     "AegisUpdater": {
-        "AegisUpdater": "Aegis flashing tool",
+        "AegisUpdater": "Strumento Flash Aegis",
         "SelectAegisFirmware": "Seleziona firmware Aegis",
         "InterruptFlash": "Interrompi flash",
         "LeavePageWarning": "Lasciando questa pagina si potrebbe provocare un interruzione e un danno al dispositivo. Sei sicuro di voler procedere??"
     },
     "EcosTool": {
-        "Title": "ECOS flashing tool",
+        "Title": "Strumento Flash ECOS",
         "SelectFirmware": "Seleziona firmware",
         "NoFirmwareSelected": "Nessun firmware selezionato",
         "ComPort": "Porta COM",
