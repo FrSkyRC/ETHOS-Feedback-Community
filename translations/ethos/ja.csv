@@ -51,6 +51,7 @@ ADD_A_NEW_VALUE,,"新規値追加",,
 ACTIONS,,"アクション",,
 ADD_A_NEW_ACTION,,"新規アクション追加",,
 ADD_A_NEW_LOGIC_SWITCH,,"+ 新規ロジックスイッチ追加"
+ADD_A_NEW_VAR,,"+ Add a new var"
 DURATION_HIGH,,"動作持続時間",,
 RISING_EDGE,,"立ち上がりエッジ",,
 DURING,,"期間中",,

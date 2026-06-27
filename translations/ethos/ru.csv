@@ -52,6 +52,7 @@ ADD_A_NEW_VALUE,,+Добавить новую величину,,,
 ACTIONS,,Действие,,,
 ADD_A_NEW_ACTION,,+Добавить новое действие,,,
 ADD_A_NEW_LOGIC_SWITCH,,+Добавить новый логический выключатель,,,
+ADD_A_NEW_VAR,,"+ Add a new var"
 DURATION_HIGH,,Время активности,,,
 RISING_EDGE,,Передний фронт,,,
 DURING,,В течении,,,

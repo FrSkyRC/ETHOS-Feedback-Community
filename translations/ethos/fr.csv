@@ -291,6 +291,7 @@ ADD_A_NEW_VALUE,,"Ajouter valeur",
 ACTIONS,,"Actions",
 ADD_A_NEW_ACTION,,"Ajouter action",
 ADD_A_NEW_LOGIC_SWITCH,,"Ajouter inter logique",
+ADD_A_NEW_VAR,,"+ Add a new var"
 DURATION_HIGH,,"Durée activité",
 RISING_EDGE,,"Chang. état",
 DURING,,"Pendant",
