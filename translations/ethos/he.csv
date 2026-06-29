@@ -1120,6 +1120,7 @@ FILE_PATH,,ץבוק ביתנ,,
 TEXT,,טסקט,,
 DOCUMENTS,,םיכמסמ,,
 USB_MODE_PRESELECTION,,דומ לש שארמ הריחב USB,,
+SHUTDOWN_DELAY,,"Shutdown delay"
 USB_MODE,,דומ USB,,
 JOYSTICK,,קיטסיו'ג,,
 SERIAL,,ילאיריס,,

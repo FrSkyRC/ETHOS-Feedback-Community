@@ -1079,6 +1079,7 @@ FILE_PATH,,"Percorso File",
 TEXT,,"Testo",
 DOCUMENTS,,"Documenti",
 USB_MODE_PRESELECTION,,"Preselezione Modo USB",
+SHUTDOWN_DELAY,,"Shutdown delay"
 USB_MODE,,"Modo USB",
 JOYSTICK,,"Joystick",
 SERIAL,,"Seriale",

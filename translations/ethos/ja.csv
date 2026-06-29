@@ -1081,6 +1081,7 @@ FILE_PATH,,"ファイルパス",,
 TEXT,,"テキスト",,
 DOCUMENTS,,"ドキュメント",,
 USB_MODE_PRESELECTION,,"USB モード事前選択",,
+SHUTDOWN_DELAY,,"Shutdown delay"
 USB_MODE,,"USB モード",,
 JOYSTICK,,"ジョイスティック",,
 SERIAL,,"シリアル",,
