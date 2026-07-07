@@ -51,6 +51,7 @@ ADD_A_NEW_VALUE,,"+ Aggiungi un nuovo valore",
 ACTIONS,,"Azioni",
 ADD_A_NEW_ACTION,,"+ Aggiungi una nuova Azione",
 ADD_A_NEW_LOGIC_SWITCH,,"+ Aggiungi un nuovo Int. Logico"
+ADD_A_NEW_VAR,,"+ Aggiungi una nuova var"
 DURATION_HIGH,,"Durata attiva",
 RISING_EDGE,,"Innalza Soglia",
 DURING,,"Durante",
@@ -1078,6 +1079,7 @@ FILE_PATH,,"Percorso File",
 TEXT,,"Testo",
 DOCUMENTS,,"Documenti",
 USB_MODE_PRESELECTION,,"Preselezione Modo USB",
+SHUTDOWN_DELAY,,"Ritardo Spegnimento"
 USB_MODE,,"Modo USB",
 JOYSTICK,,"Joystick",
 SERIAL,,"Seriale",

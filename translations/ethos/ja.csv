@@ -1,7 +1,7 @@
 String name, String context, X20(...) / XE(S) / V20(PRO), X18RS / X14(...) / T14 / V15, All other radios
 TRANSLATION_KEY,,"ja",,
 TRANSLATION_NAME,,"日本語",,
-TRANSLATION_FALLBACK_NAME,,"日本語",,
+TRANSLATION_FALLBACK_NAME,,"Japanese",,
 TRANSLATION_FONT_SUBSET,,,,
 SPECIAL_CHARS,,"_-+.",,
 FORMULA,,"フォーミュラ",,
@@ -51,6 +51,7 @@ ADD_A_NEW_VALUE,,"新規値追加",,
 ACTIONS,,"アクション",,
 ADD_A_NEW_ACTION,,"新規アクション追加",,
 ADD_A_NEW_LOGIC_SWITCH,,"+ 新規ロジックスイッチ追加"
+ADD_A_NEW_VAR,,"+ Add a new var"
 DURATION_HIGH,,"動作持続時間",,
 RISING_EDGE,,"立ち上がりエッジ",,
 DURING,,"期間中",,
@@ -1080,6 +1081,7 @@ FILE_PATH,,"ファイルパス",,
 TEXT,,"テキスト",,
 DOCUMENTS,,"ドキュメント",,
 USB_MODE_PRESELECTION,,"USB モード事前選択",,
+SHUTDOWN_DELAY,,"Shutdown delay"
 USB_MODE,,"USB モード",,
 JOYSTICK,,"ジョイスティック",,
 SERIAL,,"シリアル",,
