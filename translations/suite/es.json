@@ -123,7 +123,7 @@
         "CAUTION": "¡ATENCIÓN!",
         "NotSuitable": "El archivo FRSK no es adecuado para su radio. ¡Este archivo podría bloquear su radio!",
         "UnknownFile": "Archivo desconocido. ¡Este archivo podría bloquear su radio!",
-        "ClickToFlash": "Hacer click aquí para comenzar la carga del firmware",
+        "ClickToFlash": "Haga click aquí para comenzar la carga del firmware",
         "Success": "¡La actualización ha tenido éxito!",
         "Failed": "¡La actualización ha fallado!",
         "FlashingBootloader": "Carga del bootloader en curso ...",
@@ -152,7 +152,7 @@
         "SelectFRSK": "Seleccionar un archivo FRSK",
         "FileInfo": "Información del archivo:",
         "CAUTION": "¡ATENCIÓN!",
-        "ClickToFlash": "Hacer click para comenzar la actualización",
+        "ClickToFlash": "Haga click para comenzar la actualización",
         "FlashingDevice": "Actualización en curso ...",
         "Success": "¡La actualización ha tenido éxito!",
         "Failed": "¡La actualización ha fallado!",
@@ -412,9 +412,9 @@
     },
     "BootloaderGuide": {
         "BootloaderGuideTitle": "Es posible que este firmware no permita pasar al modo bootloader automaticamente. Por favor, pase manualmente a modo bootloader, siguiendo estos pasos:",
-        "BootloaderGuideStep1": "Desconectar el cable USB y apagar la radio",
-        "BootloaderGuideStep2": "Mantener pulsada la tecla ENTER y pulsar el botón de Encendido. Aparece el mensaje \"Bootloader\" en la pantalla",
-        "BootloaderGuideStep3": "Conectar la radio al ordenador. El mensage \"USB Conectado\" aparecerá en la pantalla",
+        "BootloaderGuideStep1": "Desconecte el cable USB y apague la radio",
+        "BootloaderGuideStep2": "Mantenga pulsada la tecla ENTER y pulse el botón de Encendido. Aparecerá el mensaje \"Bootloader\" en la pantalla",
+        "BootloaderGuideStep3": "Conecte la radio al ordenador. El mensage \"USB Conectado\" aparecerá en la pantalla",
         "WaitingForBootloader": "Esperando modo bootloader ..."
     },
     "FirmwareGuide": {
@@ -425,23 +425,23 @@
         "WaitingForFirmware": "Esperando Firmware"
     },
     "FrskGuide": {
-        "FrskGuideTitle": "La actualización no se ha podido terminar. Cargar el archivo .frsk manualmente, siguiendo los siguientes pasos:",
-        "FrskGuideStep1": "Desconectar el cable USB y apagar la radio. Después encenderla de nuevo, seleccionar el menú de sistema y después administrador de archivos",
-        "FrskGuideStep2": "Seleccionar el archivo device.frsk corrrespondiente a la NAND de tu radio, desde la tarjeta SD",
-        "FrskGuideStep3": "Flashear su dispositivo seleccionando la opción en el menú",
-        "FrskGuideFinish": "Conectar la radio de nuevo y pulsar sobre el botón \"Terminar\" cuando la actualización se haya completado"
+        "FrskGuideTitle": "La actualización no se ha podido terminar. Cargue el archivo .frsk manualmente, siguiendo los siguientes pasos:",
+        "FrskGuideStep1": "Desconecte el cable USB y apague la radio. Después enciéndala de nuevo, seleccione el menú de sistema y después administrador de archivos",
+        "FrskGuideStep2": "Seleccione desde la tarjeta SD el archivo device.frsk corrrespondiente a la NAND de su radio.",
+        "FrskGuideStep3": "Flashee su dispositivo seleccionando la opción en el menú",
+        "FrskGuideFinish": "Conecte la radio de nuevo y pulse sobre el botón \"Terminar\" cuando la actualización se haya completado"
     },
     "FlashGuide": {
         "FlashGuideTitle": "La actualización no se ha realizado. Si quiere hacerlo manualmente, siga los siguientes pasos:",
-        "FlashGuideStep": "Su archivo firmware.bin está listo. Desconectar el cable USB. La actualización va a comenzar",
-        "FlashGuideFinish": "Conectar la radio de nuevo y seleccionar el botón \"Terminar\" cuando la actualización haya finalizado"
+        "FlashGuideStep": "Su archivo firmware.bin está listo. Desconecte el cable USB. La actualización va a comenzar",
+        "FlashGuideFinish": "Conecte la radio de nuevo y seleccione el botón \"Terminar\" cuando la actualización haya finalizado"
     },
     "NandBootloaderGuide": {
         "NandBootloaderGuideTitle": "El bootloader no está actualizado. Haga el favor de hacer la actualización manualmente siguiendo estos pasos:",
-        "NandBootloaderGuideStep1": "Verificar que los drivers de la DFU están correctamente instalados",
-        "NandBootloaderGuideStep2": "Elegir en Github el bootloader correspondienta a la radio",
-        "NandBootloaderGuideStep3": "Conectar la radio de nuevo",
-        "NandBootloaderGuideStep4": "Utilizar la herramienta DFU Flasher, elegir el bootloader.frsk previamente descargado y hacer click en \"Flash\""
+        "NandBootloaderGuideStep1": "Verifique que los drivers de la DFU están correctamente instalados",
+        "NandBootloaderGuideStep2": "Elija en Github el bootloader correspondienta a la radio",
+        "NandBootloaderGuideStep3": "Conecte la radio de nuevo",
+        "NandBootloaderGuideStep4": "Utilice la herramienta DFU Flasher, elija el bootloader.frsk previamente descargado y haga click en \"Flash\""
     },
     "LanguageManager": {
         "LanguageManager": "Administración de Idiomas",
