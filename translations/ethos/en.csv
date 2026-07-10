@@ -851,6 +851,11 @@ STRENGTH,,"Strength",
 AM,,"AM",
 PM,,"PM",
 PLAY_VARIO,,"Play vario",
+PLAY_LED,,"Play LED"
+LED_CONSTANT,,"Constant"
+LED_BLINK,,"Blink"
+ON_DURATION,,"On duration"
+OFF_DURATION,,"Off duration"
 RF_ALWAYS_OFF,,"Special mode, RF will always be OFF.",
 STAB_FUNC,,"Stable function",
 RX_PROTOCOL,,"RX protocol",
