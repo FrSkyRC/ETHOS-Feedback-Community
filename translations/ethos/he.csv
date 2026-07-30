@@ -871,6 +871,9 @@ STRENGTH,,המצוע,,
 AM,,AM,,
 PM,,PM,,
 PLAY_VARIO,,וירו ארקה,,
+PLAY_LED,,"Play LED"
+LED_CONSTANT,,"Constant"
+LED_BLINK,,"Blink"
 RF_ALWAYS_OFF,,יובכ דימת היהי רודישה - דחוימ בצמ,,
 STAB_FUNC,,בוציי תייצקנופ,,
 RX_PROTOCOL,,טלקמ לוקוטורפ,,
@@ -1282,3 +1285,15 @@ ADD_A_BACKWARD_CURVE,,ירוחא ףרג ףסוה,,
 USE_ONLY_ONE_CURVE,,דבלב דחא ףרגב שמתסה,,
 EDIT_BACKWARD_CURVE,,ירוחא ףרג ךורע,,
 EDIT_FORWARD_CURVE,,ימדק ףרג ךורע,,
+TRIM_T1_CW,,"T1 CW"
+TRIM_T1_CCW,,"T1 CCW"
+TRIM_T2_CW,,"T2 CW"
+TRIM_T2_CCW,,"T2 CCW"
+TRIM_T3_CW,,"T3 CW"
+TRIM_T3_CCW,,"T3 CCW"
+TRIM_T4_CW,,"T4 CW"
+TRIM_T4_CCW,,"T4 CCW"
+TRIM_T5_POS,,"T5 +"
+TRIM_T5_NEG,,"T5 -"
+TRIM_T6_POS,,"T6 +"
+TRIM_T6_NEG,,"T6 -"
