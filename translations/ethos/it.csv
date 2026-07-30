@@ -841,8 +841,6 @@ PLAY_VARIO,,"Esegui vario",
 PLAY_LED,,"Play LED"
 LED_CONSTANT,,"Constant"
 LED_BLINK,,"Blink"
-ON_DURATION,,"On duration"
-OFF_DURATION,,"Off duration"
 RF_ALWAYS_OFF,,"Modo Speciale, RF spenta.",
 STAB_FUNC,,"Funzione Stabile",
 RX_PROTOCOL,,"Protocollo RX",

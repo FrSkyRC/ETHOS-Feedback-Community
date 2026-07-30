@@ -875,8 +875,6 @@ PLAY_VARIO,,"播放速率"
 PLAY_LED,,"播放 LED"
 LED_CONSTANT,,"常亮"
 LED_BLINK,,"闪烁"
-ON_DURATION,,"点亮时长"
-OFF_DURATION,,"熄灭时长"
 RF_ALWAYS_OFF,,"特殊模式，射频将始终关闭。",
 RF_ALWAYS_OFF,,"特殊模式, 射频模块将关闭"
 STAB_FUNC,,"自稳功能"
