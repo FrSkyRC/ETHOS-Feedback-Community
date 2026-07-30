@@ -3,7 +3,7 @@ TRANSLATION_KEY,,"fr",
 TRANSLATION_NAME,,"Français",
 TRANSLATION_FALLBACK_NAME,,"Francais"
 TRANSLATION_FONT_SUBSET,,"latin"
-SPECIAL_CHARS,,"äöüûùàçéèê_-+.",
+SPECIAL_CHARS,,"äöüûùàçéèê_-+*/<=>.",
 MODEL,,"Modèle",
 STEERING,,"Direction"
 DUTY_RATIO,,"Ratio cycle"

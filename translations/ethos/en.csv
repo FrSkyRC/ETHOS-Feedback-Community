@@ -3,7 +3,7 @@ TRANSLATION_KEY,,"en",
 TRANSLATION_NAME,,"English",
 TRANSLATION_FALLBACK_NAME,,"English"
 TRANSLATION_FONT_SUBSET,,""
-SPECIAL_CHARS,,"_-+."
+SPECIAL_CHARS,,"_-+*/~:<=>°%$&()[]."
 FORMULA,,"Formula",
 CALCULATED_SENSOR,,"Calculated sensor",
 NAME,,"Name",
