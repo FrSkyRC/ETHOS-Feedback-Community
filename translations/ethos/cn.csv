@@ -872,7 +872,7 @@ AM,,"AM"
 PM,,"PM"
 SILENT,,"静音"
 PLAY_VARIO,,"播放速率"
-PLAY_LED,,"播放 LED"
+LED,,"LED"
 LED_CONSTANT,,"常亮"
 LED_BLINK,,"闪烁"
 RF_ALWAYS_OFF,,"特殊模式，射频将始终关闭。",

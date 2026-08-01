@@ -871,7 +871,7 @@ STRENGTH,,המצוע,,
 AM,,AM,,
 PM,,PM,,
 PLAY_VARIO,,וירו ארקה,,
-PLAY_LED,,"Play LED"
+LED,,"LED"
 LED_CONSTANT,,"Constant"
 LED_BLINK,,"Blink"
 RF_ALWAYS_OFF,,יובכ דימת היהי רודישה - דחוימ בצמ,,

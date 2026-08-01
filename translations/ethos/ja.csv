@@ -853,7 +853,7 @@ STRENGTH,,"強さ",,
 AM,,"AM",,
 PM,,"PM",,
 PLAY_VARIO,,"バリオ再生",,
-PLAY_LED,,"Play LED"
+LED,,"LED"
 LED_CONSTANT,,"Constant"
 LED_BLINK,,"Blink"
 RF_ALWAYS_OFF,,"特殊モード(RF 常時オフ)",,
