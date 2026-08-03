@@ -1,605 +1,607 @@
-path,text to play,options,description
-system/0.wav,0,,
-system/1.wav,1,,
-system/2.wav,2,,
-system/3.wav,3,,
-system/4.wav,4,,
-system/5.wav,5,,
-system/6.wav,6,,
-system/7.wav,7,,
-system/8.wav,8,,
-system/9.wav,9,,
-system/10.wav,10,,
-system/11.wav,11,,
-system/12.wav,12,,
-system/13.wav,13,,
-system/14.wav,14,,
-system/15.wav,15,,
-system/16.wav,16,,
-system/17.wav,17,,
-system/18.wav,18,,
-system/19.wav,19,,
-system/20.wav,20,,
-system/21.wav,21,,
-system/22.wav,22,,
-system/23.wav,23,,
-system/24.wav,24,,
-system/25.wav,25,,
-system/26.wav,26,,
-system/27.wav,27,,
-system/28.wav,28,,
-system/29.wav,29,,
-system/30.wav,30,,
-system/31.wav,31,,
-system/32.wav,32,,
-system/33.wav,33,,
-system/34.wav,34,,
-system/35.wav,35,,
-system/36.wav,36,,
-system/37.wav,37,,
-system/38.wav,38,,
-system/39.wav,39,,
-system/40.wav,40,,
-system/41.wav,41,,
-system/42.wav,42,,
-system/43.wav,43,,
-system/44.wav,44,,
-system/45.wav,45,,
-system/46.wav,46,,
-system/47.wav,47,,
-system/48.wav,48,,
-system/49.wav,49,,
-system/50.wav,50,,
-system/51.wav,51,,
-system/52.wav,52,,
-system/53.wav,53,,
-system/54.wav,54,,
-system/55.wav,55,,
-system/56.wav,56,,
-system/57.wav,57,,
-system/58.wav,58,,
-system/59.wav,59,,
-system/60.wav,60,,
-system/61.wav,61,,
-system/62.wav,62,,
-system/63.wav,63,,
-system/64.wav,64,,
-system/65.wav,65,,
-system/66.wav,66,,
-system/67.wav,67,,
-system/68.wav,68,,
-system/69.wav,69,,
-system/70.wav,70,,
-system/71.wav,71,,
-system/72.wav,72,,
-system/73.wav,73,,
-system/74.wav,74,,
-system/75.wav,75,,
-system/76.wav,76,,
-system/77.wav,77,,
-system/78.wav,78,,
-system/79.wav,79,,
-system/80.wav,80,,
-system/81.wav,81,,
-system/82.wav,82,,
-system/83.wav,83,,
-system/84.wav,84,,
-system/85.wav,85,,
-system/86.wav,86,,
-system/87.wav,87,,
-system/88.wav,88,,
-system/89.wav,89,,
-system/90.wav,90,,
-system/91.wav,91,,
-system/92.wav,92,,
-system/93.wav,93,,
-system/94.wav,94,,
-system/95.wav,95,,
-system/96.wav,96,,
-system/97.wav,97,,
-system/98.wav,98,,
-system/99.wav,99,,
-system/100.wav,100,,
-system/200.wav,200,,
-system/300.wav,300,,
-system/400.wav,400,,
-system/500.wav,500,,
-system/600.wav,600,,
-system/700.wav,700,,
-system/800.wav,800,,
-system/900.wav,900,,
-system/mvolt.wav,millivolt,,
-system/mvolts.wav,millivolt,,
-system/volt.wav,volt,,
-system/volts.wav,volt,,
-system/mamp.wav,milliamper,,
-system/mamps.wav,milliamper,,
-system/amp.wav,amper,,
-system/amps.wav,amper,,
-system/mah.wav,milliamper ora,,
-system/mahs.wav,milliamper ora,,
-system/ah.wav,amper ora,,
-system/ahs.wav,amper ora,,
-system/mwatt.wav,millivat,,
-system/mwatts.wav,millivat,,
-system/watt.wav,vatt,,
-system/watts.wav,vatt,,
-system/cm.wav,centimetro,,
-system/cms.wav,centimeteri,,
-system/meter.wav,metro,,
-system/meters.wav,metri,,
-system/kilometer.wav,chilometro,,
-system/kilometers.wav,chilometri,,
-system/mile.wav,mile,,
-system/miles.wav,miles,,
-system/nmile.wav,nautical mile,,
-system/nmiles.wav,nautical miles,,
-system/foot.wav,piede,,
-system/feet.wav,piedi,,
-system/cmps.wav,centimetro al secondo,,
-system/cmsps.wav,centimetri al secondo,,
-system/meterps.wav,metro al secondo,,
-system/metersps.wav,metri al secondo,,
-system/meterpm.wav,metro al minute,,
-system/meterspm.wav,metri al minute,,
-system/footps.wav,piede al secondo,,
-system/feetps.wav,piedi al secondo,,
-system/footpm.wav,piede al minute,,
-system/feetpm.wav,piedi al minute,,
-system/kph.wav,chilometro all'ora,,
-system/ksph.wav,chilometri all'ora,,
-system/mph.wav,miglio all'ora,,
-system/msph.wav,miglia all'ora,,
-system/knot.wav,knot,,
-system/knots.wav,knots,,
-system/celsius.wav,grado celsius,,
-system/celsiuss.wav,gradi celsius,,
-system/fahrenheit.wav,grado fahrenheit,,
-system/fahrenheits.wav,gradi fahrenheit,,
-system/percent.wav,percento,,
-system/percents.wav,percento,,
-system/microsecond.wav,microsecondo,,
-system/microseconds.wav,microsecondi,,
-system/millisecond.wav,millisecondo,,
-system/milliseconds.wav,millisecondi,,
-system/second.wav,secondo,,
-system/seconds.wav,secondi,,
-system/minute.wav,minuto,,
-system/minutes.wav,minuti,,
-system/hour.wav,ora,,
-system/hours.wav,ore,,
-system/db.wav,db,,
-system/dbs.wav,db,,
-system/dbm.wav,dbm,,
-system/hz.wav,hertz,,
-system/mhz.wav,mega hertz,,
-system/g.wav,g,,
-system/degree.wav,grado,,
-system/degrees.wav,gradi,,
-system/rad.wav,rad,,
-system/ml.wav,millilitro,,
-system/mls.wav,millilitri,,
-system/mlpm.wav,millilitro per minuto,,
-system/mlpms.wav,millilitri per minuto,,
-system/mlpp.wav,millilitro per impulso,,
-system/mlpps.wav,millilitri per impulso,,
-system/rpm.wav,giro al minuto,,
-system/rpms.wav,giri al minuto,,
-system/degreeps.wav,grado al secondo,,
-system/degreesps.wav,gradi al secondo,,
-system/mg.wav,milligrammo,,
-system/mgs.wav,milligrammi,,
-system/gram.wav,grammo,,
-system/grams.wav,grammi,,
-system/kg.wav,kilogrammo,,
-system/kgs.wav,kilogrammi,,
-system/t.wav,tonnelata,,
-system/ts.wav,tonnelate,,
-system/kt.wav,kilotonnelata,,
-system/kts.wav,kilotonnelate,,
-system/pa.wav, pascal,,
-system/pas.wav, pascal,,
-system/kpa.wav, kilopascal,,
-system/kpas.wav, kilopascal,,
-system/mpa.wav, megapascal,,
-system/mpas.wav, megapascal,,
-system/bar.wav, bar,,
-system/bars.wav, bars,,
-system/psi.wav,libbra per pollice quadrato,,
-system/psis.wav,libbre per pollice quadrato,,
-system/minus.wav,meno,,
-system/and.wav,e,,
-system/thousand.wav,mila,,
-system/thousands.wav,mille,,
-system/point1.wav,punto uno,,
-system/point2.wav,punto due,,
-system/point3.wav,punto  tre,,
-system/point4.wav,punto quattro,,
-system/point5.wav,punto cinque,,
-system/point6.wav,punto sei,,
-system/point7.wav,punto sette,,
-system/point8.wav,punto otto,,
-system/point9.wav,punto nove,,
-system/hello.wav,Benvenuto in Ethos,,
-system/down.wav,Giù,,
-system/middle.wav,Metà,,
-system/up.wav,Sù,,
-system/trim-center.wav,trim centrato,,
-system/trim-max.wav,trim massimo,,
-system/trim-min.wav,trim minimo,,
-system/no-failsafe.wav,Failsafe non impostato,,
-system/inactivity.wav,Radio inattiva,,
-system/modelfile-version-error.wav,Dati del modello errati,,
-system/pot-warning.wav,Attenzione potenziometro,,
-system/low-battery.wav,La batteria della radio è scarica,,
-system/no-sound.wav,La radio è in modalità silenziosa,,
-system/low-rtc-battery.wav,La batteria dell'RTC è scarica,,
-system/switch-warning.wav,attenzione interruttore,,
-system/swr-warning.wav,Attenzione SWR Antenna Esterna,,
-system/system-file-version-error.wav,Versione errata dei dati radio,,
-system/rssi-lost.wav,attenzione segnale radio perso,,
-system/rssi-recovered.wav,attenzione segnale radio recuperata,,
-system/rssi-critical-warning.wav,Attenzione segnale radio RSSI critico,,
-system/rssi-low-warning.wav,Attenzione  segnale radio RSSI basso,,
-system/rssi-ext-lost.wav,attenzione segnale radio del modulo esterno persa,,
-system/rssi-ext-recovered.wav,attenzione segnale radio del modulo esterno recuperata,,
-system/rssi-ext-critical-warning.wav,attenzione segnale radio RSSI modulo esterno critico,,
-system/rssi-ext-low-warning.wav,attenzione segnale radio RSSI  modulo esterno basso,,
-system/rssi-int-lost.wav,attenzione segnale radio del modulo interno perso,,
-system/rssi-int-recovered.wav,attenzione segnale radio del modulo interno recuperata,,
-system/rssi-int-critical-warning.wav,attenzione segnale radio del modulo interno RSSI critico,,
-system/rssi-int-low-warning.wav,attenzione segnale radio del modulo interno RSSI basso,,
-system/rssi-2g4-lost.wav,2 giga 4 telemetria persa,,
-system/rssi-2g4-recovered.wav,2 giga 4 telemetria recuperata,,
-system/rssi-2g4-critical-warning.wav,attenzione 2 giga 4 RSSI critico,,
-system/rssi-2g4-low-warning.wav,attenzione 2 giga 4 RSSI basso,,
-system/rssi-lora-lost.wav,lora telemetria persa,,
-system/rssi-lora-recovered.wav,lora telemetria recuperata,,
-system/rssi-lora-critical-warning.wav,Attenzione RSSI lora critico,,
-system/rssi-lora-low-warning.wav,Attenzione RSSI lora basso,,
-system/rssi-900m-lost.wav,900 mega telemetria persa,,
-system/rssi-900m-recovered.wav,900 mega telemetria recuperata,,
-system/rssi-900m-critical-warning.wav,Attenzione RSSI 900 mega critico,,
-system/rssi-900m-low-warning.wav,attenzione RSSI 900 mega basso,,
-system/rssi-int2g4-lost.wav,Attenzione segnale radio del modulo interno da 2 giga e 4 perso,,
-system/rssi-int2g4-recovered.wav,Attenzione segnale radio del modulo interno da 2 giga e 4 recuperato,,
-system/rssi-int2g4-critical-warning.wav,Attenzione segnale radio del modulo interno da 2 giga e 4 critico,,
-system/rssi-int2g4-low-warning.wav,attenzione segnale radio basso del modulo interno da 2 giga e 4,,
-system/rssi-intlora-lost.wav,telemetria Lora modulo interno persa,,
-system/rssi-intlora-recovered.wav,Telemetria lora modulo interno recuperata,,
-system/rssi-intlora-critical-warning.wav,attenzione RSSI modulo interno critico,,
-system/rssi-intlora-low-warning.wav,Attenzione RSSI LORA modulo interno basso,,
-system/rssi-int900m-lost.wav,Attenzione segnale radio del modulo interno da 900 megaerz perso,,
-system/rssi-int900m-recovered.wav,Attenzione segnale radio del modulo interno da 900 megaerz recuperato,,
-system/rssi-int900m-critical-warning.wav,Attenzione segnale radio del modulo interno da 900 megaerz critico,,
-system/rssi-int900m-low-warning.wav,Attenzione segnale radio del modulo interno da 900 megaerz basso,,
-system/rssi-ext2g4-lost.wav,telemetria 2 giga 4 modulo esterno persa,,
-system/rssi-ext2g4-recovered.wav,telemetria 2 giga 4 modulo esterno recuperata,,
-system/rssi-ext2g4-critical-warning.wav,attenzione RSSI 2 giga 4 modulo esteno critico,,
-system/rssi-ext2g4-low-warning.wav,attenzione RSSI 2 giga 4 modulo esteno basso,,
-system/rssi-extlora-lost.wav,Telemetria lora modulo esterno perso,,
-system/rssi-extlora-recovered.wav,telemetria lora modulo esterno recuperata,,
-system/rssi-extlora-critical-warning.wav,attenzione RSSI LORA modulo esterno critico,,
-system/rssi-extlora-low-warning.wav,attenzione RSSI LORA modulo esterno basso,,
-system/rssi-ext900m-lost.wav,Telemetria 900 mega modulo esterno persa,,
-system/rssi-ext900m-recovered.wav,Telemetria 900 mega modulo esterno recuperata,,
-system/rssi-ext900m-critical-warning.wav,attenzione RSSI 900 mega critico,,
-system/rssi-ext900m-low-warning.wav,attenzione RSSI 900 mega basso,,
-system/trainer-lost.wav,Radio allievo disconnessa,,
-system/trainer-recovered.wav,Radio allievo connessa,,
-system/no-calibration.wav,Gli stic non sono calibrati,,
-system/Gas-warning.wav,Comando motore non al minimo,,
-system/register.wav,Registrazione,,
-system/bind.wav,Collegamento,,
-system/range-check.wav,Test di portata,,
-system/rx-on-warning.wav,Il ricevitore è ancora acceso,,
-system/sensor-lost.wav,Sensore perso,,
-system/sensor-conflict.wav,Conflitto di sensore,,
-system/vfr-low-warning.wav,Attenzione VFR basso,,
-system/function-switches-warning.wav,Attenzione interruttori funzione,,
-fm-2.wav,Fase di volo due,,
-fm-3.wav,Fase di volo tre,,
-fm-4.wav,Fase di volo quattro,,
-fm-5.wav,Fase di volo cinque,,
-fm-6.wav,Fase di volo sei,,
-fm-7.wav,Fase di volo sette,,
-fm-8.wav,Fase di volo otto,,
-fm-9.wav,Fase di volo nove,,
-fm-10.wav,Fase di volo dieci,,
-fm-power.wav,Fase di volo a motore,,
-fm-land.wav,Fase di volo atterraggio,,
-fm-float.wav,Fase di volo galleggiamento,,
-fm-speed.wav,Fase di volo veloce,,
-fm-fast.wav,Fase di volo rapida,,
-fm-normal.wav,Fase di volo normale,,
-fm-cruise.wav,Fase di volo di crociera,,
-fm-acro.wav,Fase di volo acrobatico,,
-fm-race.wav,Fase di volo gara,,
-fm-launch.wav,Fase di volo decollo,,
-fm-ping.wav,fase di volo ping,,
-fm-thermal.wav,Fase di volo in termica,,
-fm-thermal-left.wav,Fase di volo in termica a sinistra,,
-fm-thermal-right.wav,Fase di volo in termica a destra,,
-fm-stabilize.wav,Fase di volo stabilizzata,,
-fm-horizon.wav,Fase di volo orizzontale,,
-fm-angle.wav,Fase di volo angolare,,
-fm-minimo-1.wav,Fase di volo al minimo 1,,
-fm-minimo-2.wav,Fase di volo al minimo 2,,
-vario-on.wav,variometro acceso,,
-vario-off.wav,variometro spento,,
-rate-low.wav,escursione minima,,
-rate-medium.wav,escursione media,,
-rate-high.wav,escursione alta,,
-take-off.wav,decollo,,
-sport.wav,sport,,
-pattern.wav,pattern,,
-3d.wav,3D,,
-atterraggio.wav,atterraggio,,
-on.wav,on,,
-off.wav,off,,
-freni-on.wav,freni on,,
-freni-off.wav,freni off,,
-butterfly-on.wav,butterfly on,,
-butterfly-off.wav,butterfly off,,
-flaps-1.wav,flap uno,,
-flaps-2.wav,Flap due,,
-flaps-3.wav,Flap tre,,
-flaps-4.wav,Flap quattro,,
-flaps-5.wav,Flap cinque,,
-ruote-freni-on.wav,Freno delle ruote attivo,,
-ruote-freni-off.wav,Freno delle ruote disattivato,,
-return-to-home.wav,return to home,,
-manuale.wav,manuale,,
-auto.wav,auto,,
-osd.wav,OSD,,
-turtle-on.wav,modo turtle on,,
-turtle-off.wav,modoturtle off,,
-flip.wav,flip,,
-autorotazione.wav,autorotazione,,
-telemetria.wav,telemetria,,
-telemetria-log-on.wav,log telemetria on,,
-telemetry-log-off.wav,log telemetria off,,
-vtx-on.wav,VTX accesa,,
-vtx-off.wav,VTX spenta,,
-Inizia.wav,inizia,,
-stop.wav,stop,,
-luci-on.wav,luci on,,
-luci-off.wav,luci off,,
-Gas-cut.wav,Gas cut,,
-Gas-hold.wav,Gas hold,,
-osd-on.wav,OSD on,,
-osd-off.wav,OSD off,,
-timer1-reset.wav,reset timer 1,,
-timer2-reset.wav,reset timer 2,,
-timer3-reset.wav,reset timer 3,,
-Pannello-touch-connesso.wav,Pannello touch connesso,,
-Pannello-touch-disconnesso.wav,Pannello touch disconnesso,,
-aereofreno-chiuso.wav,aereofreno chiuso,,
-aereofreno-aperto.wav,aereofreno aperto,,
-attivo.wav,attivo,,
-attivato.wav,attivato,,
-acrobatic.wav,acrobatico,,
-acrobatic-3d.wav,acrobatico 3D,,
-Alettoni-3d.wav,Alettoni 3D,,
-Alettoni-low.wav,Alettoni basso,,
-Alettoni-high.wav,Alettoni alto,,
-Alettoni-medium.wav,Alettoni medio,,
-aereofreno.wav,aereofreno,,
-autoatterraggio.wav,atterraggio automatico,,
-autotune.wav,autotune,,
-circolare.wav,circolare,,
-crociera.wav,crociera,,
-autodecollo.wav,autodecollo,,
-fly-by-wire-A.wav,fly by wire A,,
-fly-by-wire-B.wav,fly by wire B,,
-autoguidato.wav,autoguidato,,
-loiter.wav,loiter,,
-auto-stabilizzato.wav,auto stabilizzato,,
-fm-attitude.wav,Fase di volo attitudine,,
-valido.wav,valido,,
-bombe-via.wav,bombe fuori,,
-bombe-sgancia.wav,Sgancia bombe,,
-cerca.wav,cerca,,
-bar.wav,bar,,
-centra-camera.wav,camera centrata,,
-camera-fissa.wav,camera fissa,,
-camera-manuale.wav,camera manuale,,
-fm-climb.wav,Fase Volo ascesa,,
-crow-off.wav,crow off,,
-crow-on.wav,crow on,,
-deattivato.wav,deattivato,,
-dlg.wav,D L G,,
-disingaggiato.wav,disingaggiato,,
-ingaggiato.wav,ingaggiato,,
-instant-trim.wav,Trim instantantaneo,,
-elevatore-3D.wav,elevatore 3D,,
-elevatore-high.wav,elevatore high,,
-elevatore-low.wav,elevatore low,,
-elevatore-medium.wav,elevatore medium,,
-motore.wav,motore,,
-motore-off.wav,motore off,,
-motore-on.wav,motore on,,
-motore-armato.wav,motore armato,,
-motore-disarmato.wav,motore disarmato,,
-motori-armati.wav,motori armati,,
-motori-disarmati.wav,motori disarmati,,
-trainer.wav,trainer,,
-accensione-on.wav,accensione on,,
-accensione-off.wav,accensione off,,
-entra-pattern-attesa.wav,entra pattern attesa,,
-flaps-full.wav,flaps full,,
-flaps-metà.wav,flaps metà,,
-flaps-giu.wav,flaps giu,,
-flaps-su.wav,flaps su,,
-flaps-Alettoni-mix.wav,mix flaps Alettoni,,
-flaps-normali.wav,flaps normali,,
-failsafe-off.wav,failsafe off,,
-failsafe-on.wav,failsafe on,,
-alafissa.wav,ala fissa,,
-carrello-giu.wav,carrello giu,,
-carrello-up.wav,carrello su,,
-gimbal-attiva.wav,gimbal attiva,,
-gimbal-off.wav,gimbal off,,
-gimbal-on.wav,gimbal on,,
-gps.wav,G P S,,
-gps-on.wav,G P S on,,
-gps-off.wav,G P S off,,
-orribile.wav,orribile,,
-head-tracker.wav,head tracker,,
-head-tracker-on.wav,head tracker on,,
-head-tracker-off.wav,head tracker off,,
-minimo-giu.wav,minimo giu,,
-minimo-su.wav,minimo su,,
-accensione-attiva.wav,accensione attiva,,
-accensione-deattivata.wav,accensione deattivata,,
-modo-lancio.wav,modo lancio,,
-modo atterraggio.wav,modo atterraggio,,
-errato.wav,errato,,
-fm-livellato.wav,Fase volo livellato,,
-fm-ricerca.wav,Fase Volo ricerca,,
-minore.wav,minore,,
-negativo.wav,negativo,,
-paracadute.wav,paracadute,,
-paracadute-lanciato.wav,paracadute lanciato,,
-paracadute-rilasciato.wav,parachute rilasciato,,
-Percorso-planata.wav,percorso planata,,
-positivo.wav,positivo,,
-power.wav,power,,
-Planata-power.wav,Planat power,,
-reflex.wav,reflex,,
-timone-3D.wav,timone 3D,,
-timone-low.wav,timone low,,
-timone-high.wav,timone high,,
-timone-medium.wav,timone medium,,
-situazione-normale.wav,situazione normale,,
-fumo-off.wav,fumo off,,
-fumo-on.wav,fumo on,,
-snap-roll.wav,snap roll,,
-spoiler-chiuso.wav,spoiler chiuso,,
-spoiler-aperto.wav,spoiler aperto,,
-Alettoni.wav,Alettoni,,
-Alettonis.wav,Alettonis,,
-elevatore.wav,elevatore,,
-timone.wav,timone,,
-Gas.wav,Gas,,
-stabilizzazione-off.wav,stabilizzazione off,,
-stabilizzazione-on.wav,stabilizzazione on,,
-Gas-attivo.wav,Gas attivo,,
-thermica.wav,thermica,,
-Gas-rilasciato.wav,Gas rilasciato,,
-tempo.wav,tempo,,
-treset.wav,time reset,,
-timer-1-on.wav,timer 1 on,,
-timer-1-off.wav,timer 1 off,,
-timer-2-on.wav,timer 2 on,,
-timer-2-off.wav,timer 2 off,,
-timer-3-on.wav,timer 3 on,,
-timer-3-off.wav,timer 3 off,,
-su.wav,su,,
-qualunque.wav,qualunque,,
-timer-1-trascorso.wav,timer 1 trascorso,,
-timer-2-trascorso.wav,timer 2 trascorso,,
-timer-3-trascorso.wav,timer 3 trascorso,,
-3d-pitch-attivo.wav,3d pitch attivo,,
-3d-pitch-off.wav,3d pitch off,,
-altitudine-limite.wav,limite altitudine,,
-altitudine-limite-off.wav,limite altitude,,
-auto-atterraggio.wav,auto atterraggio,,
-auto-atterraggio-off.wav,auto atterraggio off,,
-modo-automatico.wav,modo automatico,,
-calibrazione.wav,calibrazione,,
-geo-fence-attiva.wav,geo fence attiva,,
-geo-fence-off.wav,geo fence off,,
-gyro-rate-mode.wav,modo percentuale gyro,,
-hover.wav,hover,,
-knife-edge.wav,knife edge,,
-motore-non-armato.wav,motore non armato,,
-Tieni-posizione-off.wav,Mantieni posizione off,,
-power-mode.wav,modo power,,
-pronto-disarmare.wav,pronto a disarmare,,
-return-to-home off.wav,return to home off,,
-Gas-minimo-prima-armare.wav,Gas al minimo prima di disarmare,,
-stabilize-mode.wav,stabilize mode,,
-RSSI-bassa-per-1-second.wav,R S S I bassa per 1 secondo,,
-vfr-basso.wav,V F R basso,,
-vfr-critico.wav,V F R critico,,
-Valori-3D-off.wav,Valori 3D off,,
-Valori 3D-on.wav,Valori 3D on,,
-acro-mode.wav,acro mode,,
-mantieni-altitudine.wav,Mantieni altitudine,,
-angle-mode.wav,modo angle mode,,
-arma-motori.wav,arm motori,,
-modo-auto-livello.wav,modo auto livello,,
-autotune-mode.wav,modo autotune,,
-batteria-critica.wav,batteria critica,,
-camber.wav,camber,,
-camber-centrato.wav,camber centrato,,
-camber-off.wav,camber off,,
-camber-on.wav,camber on,,
-modo cerchio.wav,modo cerchio,,
-modo crociera.wav,modo crociera,,
-heading-hold-active.wav,heading hold active,,
-escursionialte.wav,escursioni alte,,
-modo-horizon.wav,modo horizon,,
-minimo-su-uno.wav,minimo su uno,,
-minimo-su-due.wav,minimo su due,,
-batteria-bassa.wav,batteria bassa,,
-Mantieni-posizione.wav,mantieni posizione,,
-modo-race.wav,Modo race,,
-Modo-autolivella.wav,modo autolivella,,
-modo-velocità.wav,modo velocità,,
-modo termica.wav,modo termica,,
-Gas-disabilitato.wav,Gas disabilitato,,
-modo-zoom.wav,modo zoom,,
-minimo-su-tre.wav,minimo up three,,
-aperto.wav,aperto,,
-chiuso.wav,chiuso,,
-inseriti.wav,inseriti,,
-didinseriti.wav,disinseriti,,
-Carr-apert.wav,Carrello aperto,,
-Carr-chiuso.wav,Carrello chiuso,,
-Sgancia.wav,Traino Sganciato,,
-Aggancia.wav,Traino agganciato,,
-carb-ap.wav,Carburatore aperto,,
-Carb-chiuso.wav,Carburatore chiuso,,
-registratore.wav,Registratore,,
-registratore_on.wav,Registratore attivo,,
-registratore_off.wav,Registratore disattivato,,
-fumi.wav,Fumogeno,,
-video.wav,Video,,
-fumi_on.wav,Fumogeno attivo,,
-fumi_off.wav,Fumogeno disattivato,,
-volt-rx.wav,Tensione ricevente,,
-volt-tx.wav,tensione radio,,
-volt-lipo.wav,tensione lipo,,
-rssi.wav,Segnale radio rssi,,
-Temp-esc.wav,Temperatura esc,,
-Temp-mot.wav,Temperatura motore,,
-Temp-serv.wav,Temperatura servo,,
-Carburante.wav,Carburante,,
-carb-liv.wav,Livello carburante,,
-Carb-crit.wav,Livello carburante critico,,
-Lipo-crit.wav,Tensione Lipo critica,,
-Lipo-cell.wav,Tensione celle critica,,
-flap-atte.wav,Flap atterraggio,,
-Flap-avv.wav,Flap avvicinamento,,
-Flap-off.wav,Flap rientrati,,
-Flap-dec.wav,Flap decollo,,
-Batt-modello-bassa.wav,Batteria modello bassa,,
-Batt-modello-crit.wav,Batteria modello critica,,
-gyro_on.wav,Giroscopio attivo,,
-gyro_off.wav,Giroscopio disattivato,,
-emergenza.wav,Emergenza,,
-gyro.wav,Giroscopio,,
-retrospinta-attivata.wav,spinta inversa attivata,,
-calibrato-con-alettoni-ridotti.wav,calibrato con alettoni ridotti,,
-calibrato-flap-neutri.wav,calibrato flap neutri,,
-motore-al-minimo-prima-armare.wav, motore al minimo prima di armare,,
-modo-avvicinamento.wav, Modo Avvicinamento,,
-crociera.wav, crociera,,
-velocità.wav, velocità,,
-modo-sport.wav, modo sport,,
-modo-competizione.wav, modo competizione,,
-minimo-alto-disarma-stop.wav, minimo alto disarma per fermare,,
-batteria-ricevente-bassa.wav, Batteria ricevente bassa,,
-avvicinamento.wav, avvicinamento,,
+filename,text
+highalpha.wav,Modo Hight  Alfa
+system/0.wav,0
+system/1.wav,1
+system/2.wav,2
+system/3.wav,3
+system/4.wav,4
+system/5.wav,5
+system/6.wav,6
+system/7.wav,7
+system/8.wav,8
+system/9.wav,9
+system/10.wav,10
+system/11.wav,11
+system/12.wav,12
+system/13.wav,13
+system/14.wav,14
+system/15.wav,15
+system/16.wav,16
+system/17.wav,17
+system/18.wav,18
+system/19.wav,19
+system/20.wav,20
+system/21.wav,21
+system/22.wav,22
+system/23.wav,23
+system/24.wav,24
+system/25.wav,25
+system/26.wav,26
+system/27.wav,27
+system/28.wav,28
+system/29.wav,29
+system/30.wav,30
+system/31.wav,31
+system/32.wav,32
+system/33.wav,33
+system/34.wav,34
+system/35.wav,35
+system/36.wav,36
+system/37.wav,37
+system/38.wav,38
+system/39.wav,39
+system/40.wav,40
+system/41.wav,41
+system/42.wav,42
+system/43.wav,43
+system/44.wav,44
+system/45.wav,45
+system/46.wav,46
+system/47.wav,47
+system/48.wav,48
+system/49.wav,49
+system/50.wav,50
+system/51.wav,51
+system/52.wav,52
+system/53.wav,53
+system/54.wav,54
+system/55.wav,55
+system/56.wav,56
+system/57.wav,57
+system/58.wav,58
+system/59.wav,59
+system/60.wav,60
+system/61.wav,61
+system/62.wav,62
+system/63.wav,63
+system/64.wav,64
+system/65.wav,65
+system/66.wav,66
+system/67.wav,67
+system/68.wav,68
+system/69.wav,69
+system/70.wav,70
+system/71.wav,71
+system/72.wav,72
+system/73.wav,73
+system/74.wav,74
+system/75.wav,75
+system/76.wav,76
+system/77.wav,77
+system/78.wav,78
+system/79.wav,79
+system/80.wav,80
+system/81.wav,81
+system/82.wav,82
+system/83.wav,83
+system/84.wav,84
+system/85.wav,85
+system/86.wav,86
+system/87.wav,87
+system/88.wav,88
+system/89.wav,89
+system/90.wav,90
+system/91.wav,91
+system/92.wav,92
+system/93.wav,93
+system/94.wav,94
+system/95.wav,95
+system/96.wav,96
+system/97.wav,97
+system/98.wav,98
+system/99.wav,99
+system/100.wav,100
+system/200.wav,200
+system/300.wav,300
+system/400.wav,400
+system/500.wav,500
+system/600.wav,600
+system/700.wav,700
+system/800.wav,800
+system/900.wav,900
+system/mvolt.wav,millivolt
+system/mvolts.wav,millivolt
+system/volt.wav,volt
+system/volts.wav,volt
+system/mamp.wav,milliamper
+system/mamps.wav,milliamper
+system/amp.wav,amper
+system/amps.wav,amper
+system/mah.wav,milliamper ora
+system/mahs.wav,milliamper ora
+system/ah.wav,amper ora
+system/ahs.wav,amper ora
+system/mwatt.wav,millivat
+system/mwatts.wav,millivat
+system/watt.wav,vatt
+system/watts.wav,vatt
+system/cm.wav,centimetro
+system/cms.wav,centimeteri
+system/meter.wav,metro
+system/meters.wav,metri
+system/kilometer.wav,chilometro
+system/kilometers.wav,chilometri
+system/mile.wav,mile
+system/miles.wav,miles
+system/nmile.wav,nautical mile
+system/nmiles.wav,nautical miles
+system/foot.wav,piede
+system/feet.wav,piedi
+system/cmps.wav,centimetro al secondo
+system/cmsps.wav,centimetri al secondo
+system/meterps.wav,metro al secondo
+system/metersps.wav,metri al secondo
+system/meterpm.wav,metro al minute
+system/meterspm.wav,metri al minute
+system/footps.wav,piede al secondo
+system/feetps.wav,piedi al secondo
+system/footpm.wav,piede al minute
+system/feetpm.wav,piedi al minute
+system/kph.wav,chilometro all'ora
+system/ksph.wav,chilometri all'ora
+system/mph.wav,miglio all'ora
+system/msph.wav,miglia all'ora
+system/knot.wav,knot
+system/knots.wav,knots
+system/celsius.wav,grado celsius
+system/celsiuss.wav,gradi celsius
+system/fahrenheit.wav,grado fahrenheit
+system/fahrenheits.wav,gradi fahrenheit
+system/percent.wav,percento
+system/percents.wav,percento
+system/microsecond.wav,microsecondo
+system/microseconds.wav,microsecondi
+system/millisecond.wav,millisecondo
+system/milliseconds.wav,millisecondi
+system/second.wav,secondo
+system/seconds.wav,secondi
+system/minute.wav,minuto
+system/minutes.wav,minuti
+system/hour.wav,ora
+system/hours.wav,ore
+system/db.wav,db
+system/dbs.wav,db
+system/dbm.wav,dbm
+system/hz.wav,hertz
+system/mhz.wav,mega hertz
+system/g.wav,g
+system/degree.wav,grado
+system/degrees.wav,gradi
+system/rad.wav,rad
+system/ml.wav,millilitro
+system/mls.wav,millilitri
+system/mlpm.wav,millilitro per minuto
+system/mlpms.wav,millilitri per minuto
+system/mlpp.wav,millilitro per impulso
+system/mlpps.wav,millilitri per impulso
+system/rpm.wav,giro al minuto
+system/rpms.wav,giri al minuto
+system/degreeps.wav,grado al secondo
+system/degreesps.wav,gradi al secondo
+system/mg.wav,milligrammo
+system/mgs.wav,milligrammi
+system/gram.wav,grammo
+system/grams.wav,grammi
+system/kg.wav,kilogrammo
+system/kgs.wav,kilogrammi
+system/t.wav,tonnelata
+system/ts.wav,tonnelate
+system/kt.wav,kilotonnelata
+system/kts.wav,kilotonnelate
+system/pa.wav,pascal
+system/pas.wav,pascal
+system/kpa.wav,kilopascal
+system/kpas.wav,kilopascal
+system/mpa.wav,megapascal
+system/mpas.wav,megapascal
+system/bar.wav,bar
+system/bars.wav,bars
+system/psi.wav,libbra per pollice quadrato
+system/psis.wav,libbre per pollice quadrato
+system/minus.wav,meno
+system/and.wav,e
+system/thousand.wav,mila
+system/thousands.wav,mille
+system/point1.wav,punto uno
+system/point2.wav,punto due
+system/point3.wav,punto  tre
+system/point4.wav,punto quattro
+system/point5.wav,punto cinque
+system/point6.wav,punto sei
+system/point7.wav,punto sette
+system/point8.wav,punto otto
+system/point9.wav,punto nove
+system/hello.wav,Benvenuto in Ethos
+system/down.wav,Giù
+system/middle.wav,Metà
+system/up.wav,Sù
+system/trim-center.wav,trim centrato
+system/trim-max.wav,trim massimo
+system/trim-min.wav,trim minimo
+system/no-failsafe.wav,Failsafe non impostato
+system/inactivity.wav,Radio inattiva
+system/modelfile-version-error.wav,Dati del modello errati
+system/pot-warning.wav,Attenzione potenziometro
+system/low-battery.wav,La batteria della radio è scarica
+system/no-sound.wav,La radio è in modalità silenziosa
+system/low-rtc-battery.wav,La batteria dell'RTC è scarica
+system/switch-warning.wav,attenzione interruttore
+system/swr-warning.wav,Attenzione SWR Antenna Esterna
+system/system-file-version-error.wav,Versione errata dei dati radio
+system/rssi-lost.wav,attenzione segnale radio perso
+system/rssi-recovered.wav,attenzione segnale radio recuperata
+system/rssi-critical-warning.wav,Attenzione segnale radio RSSI critico
+system/rssi-low-warning.wav,Attenzione  segnale radio RSSI basso
+system/rssi-ext-lost.wav,attenzione segnale radio del modulo esterno persa
+system/rssi-ext-recovered.wav,attenzione segnale radio del modulo esterno recuperata
+system/rssi-ext-critical-warning.wav,attenzione segnale radio RSSI modulo esterno critico
+system/rssi-ext-low-warning.wav,attenzione segnale radio RSSI  modulo esterno basso
+system/rssi-int-lost.wav,attenzione segnale radio del modulo interno perso
+system/rssi-int-recovered.wav,attenzione segnale radio del modulo interno recuperata
+system/rssi-int-critical-warning.wav,attenzione segnale radio del modulo interno RSSI critico
+system/rssi-int-low-warning.wav,attenzione segnale radio del modulo interno RSSI basso
+system/rssi-2g4-lost.wav,2 giga 4 telemetria persa
+system/rssi-2g4-recovered.wav,2 giga 4 telemetria recuperata
+system/rssi-2g4-critical-warning.wav,attenzione 2 giga 4 RSSI critico
+system/rssi-2g4-low-warning.wav,attenzione 2 giga 4 RSSI basso
+system/rssi-lora-lost.wav,lora telemetria persa
+system/rssi-lora-recovered.wav,lora telemetria recuperata
+system/rssi-lora-critical-warning.wav,Attenzione RSSI lora critico
+system/rssi-lora-low-warning.wav,Attenzione RSSI lora basso
+system/rssi-900m-lost.wav,900 mega telemetria persa
+system/rssi-900m-recovered.wav,900 mega telemetria recuperata
+system/rssi-900m-critical-warning.wav,Attenzione RSSI 900 mega critico
+system/rssi-900m-low-warning.wav,attenzione RSSI 900 mega basso
+system/rssi-int2g4-lost.wav,Attenzione segnale radio del modulo interno da 2 giga e 4 perso
+system/rssi-int2g4-recovered.wav,Attenzione segnale radio del modulo interno da 2 giga e 4 recuperato
+system/rssi-int2g4-critical-warning.wav,Attenzione segnale radio del modulo interno da 2 giga e 4 critico
+system/rssi-int2g4-low-warning.wav,attenzione segnale radio basso del modulo interno da 2 giga e 4
+system/rssi-intlora-lost.wav,telemetria Lora modulo interno persa
+system/rssi-intlora-recovered.wav,Telemetria lora modulo interno recuperata
+system/rssi-intlora-critical-warning.wav,attenzione RSSI modulo interno critico
+system/rssi-intlora-low-warning.wav,Attenzione RSSI LORA modulo interno basso
+system/rssi-int900m-lost.wav,Attenzione segnale radio del modulo interno da 900 megaerz perso
+system/rssi-int900m-recovered.wav,Attenzione segnale radio del modulo interno da 900 megaerz recuperato
+system/rssi-int900m-critical-warning.wav,Attenzione segnale radio del modulo interno da 900 megaerz critico
+system/rssi-int900m-low-warning.wav,Attenzione segnale radio del modulo interno da 900 megaerz basso
+system/rssi-ext2g4-lost.wav,telemetria 2 giga 4 modulo esterno persa
+system/rssi-ext2g4-recovered.wav,telemetria 2 giga 4 modulo esterno recuperata
+system/rssi-ext2g4-critical-warning.wav,attenzione RSSI 2 giga 4 modulo esteno critico
+system/rssi-ext2g4-low-warning.wav,attenzione RSSI 2 giga 4 modulo esteno basso
+system/rssi-extlora-lost.wav,Telemetria lora modulo esterno perso
+system/rssi-extlora-recovered.wav,telemetria lora modulo esterno recuperata
+system/rssi-extlora-critical-warning.wav,attenzione RSSI LORA modulo esterno critico
+system/rssi-extlora-low-warning.wav,attenzione RSSI LORA modulo esterno basso
+system/rssi-ext900m-lost.wav,Telemetria 900 mega modulo esterno persa
+system/rssi-ext900m-recovered.wav,Telemetria 900 mega modulo esterno recuperata
+system/rssi-ext900m-critical-warning.wav,attenzione RSSI 900 mega critico
+system/rssi-ext900m-low-warning.wav,attenzione RSSI 900 mega basso
+system/trainer-lost.wav,Radio allievo disconnessa
+system/trainer-recovered.wav,Radio allievo connessa
+system/no-calibration.wav,Gli stic non sono calibrati
+system/Gas-warning.wav,Comando motore non al minimo
+system/register.wav,Registrazione
+system/bind.wav,Collegamento
+system/range-check.wav,Test di portata
+system/rx-on-warning.wav,Il ricevitore è ancora acceso
+system/sensor-lost.wav,Sensore perso
+system/sensor-conflict.wav,Conflitto di sensore
+system/vfr-low-warning.wav,Attenzione VFR basso
+system/function-switches-warning.wav,Attenzione interruttori funzione
+fm-2.wav,Fase di volo due
+fm-3.wav,Fase di volo tre
+fm-4.wav,Fase di volo quattro
+fm-5.wav,Fase di volo cinque
+fm-6.wav,Fase di volo sei
+fm-7.wav,Fase di volo sette
+fm-8.wav,Fase di volo otto
+fm-9.wav,Fase di volo nove
+fm-10.wav,Fase di volo dieci
+fm-power.wav,Fase di volo a motore
+fm-land.wav,Fase di volo atterraggio
+fm-float.wav,Fase di volo galleggiamento
+fm-speed.wav,Fase di volo veloce
+fm-fast.wav,Fase di volo rapida
+fm-normal.wav,Fase di volo normale
+fm-cruise.wav,Fase di volo di crociera
+fm-acro.wav,Fase di volo acrobatico
+fm-race.wav,Fase di volo gara
+fm-launch.wav,Fase di volo decollo
+fm-ping.wav,fase di volo ping
+fm-thermal.wav,Fase di volo in termica
+fm-thermal-left.wav,Fase di volo in termica a sinistra
+fm-thermal-right.wav,Fase di volo in termica a destra
+fm-stabilize.wav,Fase di volo stabilizzata
+fm-horizon.wav,Fase di volo orizzontale
+fm-angle.wav,Fase di volo angolare
+fm-minimo-1.wav,Fase di volo al minimo 1
+fm-minimo-2.wav,Fase di volo al minimo 2
+vario-on.wav,variometro acceso
+vario-off.wav,variometro spento
+rate-low.wav,escursione minima
+rate-medium.wav,escursione media
+rate-high.wav,escursione alta
+take-off.wav,decollo
+sport.wav,sport
+pattern.wav,pattern
+3d.wav,3D
+atterraggio.wav,atterraggio
+on.wav,on
+off.wav,off
+freni-on.wav,freni on
+freni-off.wav,freni off
+butterfly-on.wav,butterfly on
+butterfly-off.wav,butterfly off
+flaps-1.wav,flap uno
+flaps-2.wav,Flap due
+flaps-3.wav,Flap tre
+flaps-4.wav,Flap quattro
+flaps-5.wav,Flap cinque
+ruote-freni-on.wav,Freno delle ruote attivo
+ruote-freni-off.wav,Freno delle ruote disattivato
+return-to-home.wav,return to home
+manuale.wav,manuale
+auto.wav,auto
+osd.wav,OSD
+turtle-on.wav,modo turtle on
+turtle-off.wav,modoturtle off
+flip.wav,flip
+autorotazione.wav,autorotazione
+telemetria.wav,telemetria
+telemetria-log-on.wav,log telemetria on
+telemetry-log-off.wav,log telemetria off
+vtx-on.wav,VTX accesa
+vtx-off.wav,VTX spenta
+Inizia.wav,inizia
+stop.wav,stop
+luci-on.wav,luci on
+luci-off.wav,luci off
+Gas-cut.wav,Gas cut
+Gas-hold.wav,Gas hold
+osd-on.wav,OSD on
+osd-off.wav,OSD off
+timer1-reset.wav,reset timer 1
+timer2-reset.wav,reset timer 2
+timer3-reset.wav,reset timer 3
+Pannello-touch-connesso.wav,Pannello touch connesso
+Pannello-touch-disconnesso.wav,Pannello touch disconnesso
+aereofreno-chiuso.wav,aereofreno chiuso
+aereofreno-aperto.wav,aereofreno aperto
+attivo.wav,attivo
+attivato.wav,attivato
+acrobatic.wav,acrobatico
+acrobatic-3d.wav,acrobatico 3D
+Alettoni-3d.wav,Alettoni 3D
+Alettoni-low.wav,Alettoni basso
+Alettoni-high.wav,Alettoni alto
+Alettoni-medium.wav,Alettoni medio
+aereofreno.wav,aereofreno
+autoatterraggio.wav,atterraggio automatico
+autotune.wav,autotune
+circolare.wav,circolare
+crociera.wav,crociera
+autodecollo.wav,autodecollo
+fly-by-wire-A.wav,fly by wire A
+fly-by-wire-B.wav,fly by wire B
+autoguidato.wav,autoguidato
+loiter.wav,loiter
+auto-stabilizzato.wav,auto stabilizzato
+fm-attitude.wav,Fase di volo attitudine
+valido.wav,valido
+bombe-via.wav,bombe fuori
+bombe-sgancia.wav,Sgancia bombe
+cerca.wav,cerca
+bar.wav,bar
+centra-camera.wav,camera centrata
+camera-fissa.wav,camera fissa
+camera-manuale.wav,camera manuale
+fm-climb.wav,Fase Volo ascesa
+crow-off.wav,crow off
+crow-on.wav,crow on
+deattivato.wav,deattivato
+dlg.wav,D L G
+disingaggiato.wav,disingaggiato
+ingaggiato.wav,ingaggiato
+instant-trim.wav,Trim instantantaneo
+elevatore-3D.wav,elevatore 3D
+elevatore-high.wav,elevatore high
+elevatore-low.wav,elevatore low
+elevatore-medium.wav,elevatore medium
+motore.wav,motore
+motore-off.wav,motore off
+motore-on.wav,motore on
+motore-armato.wav,motore armato
+motore-disarmato.wav,motore disarmato
+motori-armati.wav,motori armati
+motori-disarmati.wav,motori disarmati
+trainer.wav,trainer
+accensione-on.wav,accensione on
+accensione-off.wav,accensione off
+entra-pattern-attesa.wav,entra pattern attesa
+flaps-full.wav,flaps full
+flaps-metà.wav,flaps metà
+flaps-giu.wav,flaps giu
+flaps-su.wav,flaps su
+flaps-Alettoni-mix.wav,mix flaps Alettoni
+flaps-normali.wav,flaps normali
+failsafe-off.wav,failsafe off
+failsafe-on.wav,failsafe on
+alafissa.wav,ala fissa
+carrello-giu.wav,carrello giu
+carrello-up.wav,carrello su
+gimbal-attiva.wav,gimbal attiva
+gimbal-off.wav,gimbal off
+gimbal-on.wav,gimbal on
+gps.wav,G P S
+gps-on.wav,G P S on
+gps-off.wav,G P S off
+orribile.wav,orribile
+head-tracker.wav,head tracker
+head-tracker-on.wav,head tracker on
+head-tracker-off.wav,head tracker off
+minimo-giu.wav,minimo giu
+minimo-su.wav,minimo su
+accensione-attiva.wav,accensione attiva
+accensione-deattivata.wav,accensione deattivata
+modo-lancio.wav,modo lancio
+modo atterraggio.wav,modo atterraggio
+errato.wav,errato
+fm-livellato.wav,Fase volo livellato
+fm-ricerca.wav,Fase Volo ricerca
+minore.wav,minore
+negativo.wav,negativo
+paracadute.wav,paracadute
+paracadute-lanciato.wav,paracadute lanciato
+paracadute-rilasciato.wav,parachute rilasciato
+Percorso-planata.wav,percorso planata
+positivo.wav,positivo
+power.wav,power
+Planata-power.wav,Planat power
+reflex.wav,reflex
+timone-3D.wav,timone 3D
+timone-low.wav,timone low
+timone-high.wav,timone high
+timone-medium.wav,timone medium
+situazione-normale.wav,situazione normale
+fumo-off.wav,fumo off
+fumo-on.wav,fumo on
+snap-roll.wav,snap roll
+spoiler-chiuso.wav,spoiler chiuso
+spoiler-aperto.wav,spoiler aperto
+Alettoni.wav,Alettoni
+Alettonis.wav,Alettonis
+elevatore.wav,elevatore
+timone.wav,timone
+Gas.wav,Gas
+stabilizzazione-off.wav,stabilizzazione off
+stabilizzazione-on.wav,stabilizzazione on
+Gas-attivo.wav,Gas attivo
+thermica.wav,thermica
+Gas-rilasciato.wav,Gas rilasciato
+tempo.wav,tempo
+treset.wav,time reset
+timer-1-on.wav,timer 1 on
+timer-1-off.wav,timer 1 off
+timer-2-on.wav,timer 2 on
+timer-2-off.wav,timer 2 off
+timer-3-on.wav,timer 3 on
+timer-3-off.wav,timer 3 off
+su.wav,su
+qualunque.wav,qualunque
+timer-1-trascorso.wav,timer 1 trascorso
+timer-2-trascorso.wav,timer 2 trascorso
+timer-3-trascorso.wav,timer 3 trascorso
+3d-pitch-attivo.wav,3d pitch attivo
+3d-pitch-off.wav,3d pitch off
+altitudine-limite.wav,limite altitudine
+altitudine-limite-off.wav,limite altitude
+auto-atterraggio.wav,auto atterraggio
+auto-atterraggio-off.wav,auto atterraggio off
+modo-automatico.wav,modo automatico
+calibrazione.wav,calibrazione
+geo-fence-attiva.wav,geo fence attiva
+geo-fence-off.wav,geo fence off
+gyro-rate-mode.wav,modo percentuale gyro
+hover.wav,hover
+knife-edge.wav,knife edge
+motore-non-armato.wav,motore non armato
+Tieni-posizione-off.wav,Mantieni posizione off
+power-mode.wav,modo power
+pronto-disarmare.wav,pronto a disarmare
+return-to-home off.wav,return to home off
+Gas-minimo-prima-armare.wav,Gas al minimo prima di disarmare
+stabilize-mode.wav,stabilize mode
+RSSI-bassa-per-1-second.wav,R S S I bassa per 1 secondo
+vfr-basso.wav,V F R basso
+vfr-critico.wav,V F R critico
+Valori-3D-off.wav,Valori 3D off
+Valori 3D-on.wav,Valori 3D on
+acro-mode.wav,acro mode
+mantieni-altitudine.wav,Mantieni altitudine
+angle-mode.wav,modo angle mode
+arma-motori.wav,arm motori
+modo-auto-livello.wav,modo auto livello
+autotune-mode.wav,modo autotune
+batteria-critica.wav,batteria critica
+camber.wav,camber
+camber-centrato.wav,camber centrato
+camber-off.wav,camber off
+camber-on.wav,camber on
+modo cerchio.wav,modo cerchio
+modo crociera.wav,modo crociera
+heading-hold-active.wav,heading hold active
+escursionialte.wav,escursioni alte
+modo-horizon.wav,modo horizon
+minimo-su-uno.wav,minimo su uno
+minimo-su-due.wav,minimo su due
+batteria-bassa.wav,batteria bassa
+Mantieni-posizione.wav,mantieni posizione
+modo-race.wav,Modo race
+Modo-autolivella.wav,modo autolivella
+modo-velocità.wav,modo velocità
+modo termica.wav,modo termica
+Gas-disabilitato.wav,Gas disabilitato
+modo-zoom.wav,modo zoom
+minimo-su-tre.wav,minimo up three
+aperto.wav,aperto
+chiuso.wav,chiuso
+inseriti.wav,inseriti
+didinseriti.wav,disinseriti
+Carr-apert.wav,Carrello aperto
+Carr-chiuso.wav,Carrello chiuso
+Sgancia.wav,Traino Sganciato
+Aggancia.wav,Traino agganciato
+carb-ap.wav,Carburatore aperto
+Carb-chiuso.wav,Carburatore chiuso
+registratore.wav,Registratore
+registratore_on.wav,Registratore attivo
+registratore_off.wav,Registratore disattivato
+fumi.wav,Fumogeno
+video.wav,Video
+fumi_on.wav,Fumogeno attivo
+fumi_off.wav,Fumogeno disattivato
+volt-rx.wav,Tensione ricevente
+volt-tx.wav,tensione radio
+volt-lipo.wav,tensione lipo
+rssi.wav,Segnale radio rssi
+Temp-esc.wav,Temperatura esc
+Temp-mot.wav,Temperatura motore
+Temp-serv.wav,Temperatura servo
+Carburante.wav,Carburante
+carb-liv.wav,Livello carburante
+Carb-crit.wav,Livello carburante critico
+Lipo-crit.wav,Tensione Lipo critica
+Lipo-cell.wav,Tensione celle critica
+flap-atte.wav,Flap atterraggio
+Flap-avv.wav,Flap avvicinamento
+Flap-off.wav,Flap rientrati
+Flap-dec.wav,Flap decollo
+Batt-modello-bassa.wav,Batteria modello bassa
+Batt-modello-crit.wav,Batteria modello critica
+gyro_on.wav,Giroscopio attivo
+gyro_off.wav,Giroscopio disattivato
+emergenza.wav,Emergenza
+gyro.wav,Giroscopio
+retrospinta-attivata.wav,spinta inversa attivata
+calibrato-con-alettoni-ridotti.wav,calibrato con alettoni ridotti
+calibrato-flap-neutri.wav,calibrato flap neutri
+motore-al-minimo-prima-armare.wav,motore al minimo prima di armare
+modo-avvicinamento.wav,Modo Avvicinamento
+crociera.wav,crociera
+velocità.wav,velocità
+modo-sport.wav,modo sport
+modo-competizione.wav,modo competizione
+minimo-alto-disarma-stop.wav,minimo alto disarma per fermare
+batteria-ricevente-bassa.wav,Batteria ricevente bassa
+avvicinamento.wav,avvicinamento
+Highalpha.wav,Modo Hight Alfa
