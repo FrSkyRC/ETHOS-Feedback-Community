@@ -470,7 +470,6 @@
         "CloseFile": "Close file",
         "RefreshData": "Refresh data",
         "Channels": "Channels",
-        "SelectAll": "Select all",
         "ChartTitle": "CSV data overview",
         "ChartHint": "Scroll to zoom time · Ctrl+scroll to zoom Y · Drag to pan · Hover for values · Double-click to lock focus",
         "ChartHintSwapped": "Scroll to zoom Y · Ctrl+scroll to zoom time · Drag to pan · Hover for values · Double-click to lock focus",
@@ -492,7 +491,8 @@
         "ErrorNoNumericColumns": "No numeric columns found. This tool only supports CSV files with numeric values.",
         "ErrorReadFailed": "Failed to read the selected file.",
         "ScrollToZoomX": "Scroll to zoom X",
-        "ScrollToZoomY": "Scroll to zoom Y"
+        "ScrollToZoomY": "Scroll to zoom Y",
+        "ResetColors": "Reset colors"
     },
     "DownloadCenter": {
         "DownloadCenter": "FrSky product list",

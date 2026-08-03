@@ -674,13 +674,13 @@
         "RemoveFromHistory": "Odstranit ze seznamu posledních souborů",
         "ResetView": "Resetovat zobrazení",
         "RowCount": "{{ count }} řádků",
-        "SelectAll": "Vybrat vše",
         "SelectFile": "Vybrat CSV soubor",
         "Title": "Prohlížeč logů",
         "UnlockFocus": "Odemknout",
         "RevealInFolder": "Zobrazit ve složce",
         "ChartHintSwapped": "Kolečko zoomuje Y · Ctrl+kolečko zoomuje čas · Přetažením posouváte čas · Najetím zobrazte hodnoty · Dvoj klik uzamkne hodnoty",
         "ScrollToZoomX": "Scroll to zoom X",
-        "ScrollToZoomY": "Scroll to zoom Y"
+        "ScrollToZoomY": "Scroll to zoom Y",
+        "ResetColors": "Reset colors"
     }
 }

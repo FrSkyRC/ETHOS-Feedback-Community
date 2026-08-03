@@ -674,13 +674,13 @@
         "RemoveFromHistory": "Quitar de archivos recientes",
         "ResetView": "Restablecer vista",
         "RowCount": "{{ count }} filas",
-        "SelectAll": "Seleccionar todo",
         "SelectFile": "Seleccionar archivo CSV",
         "Title": "Analizador de CSV",
         "UnlockFocus": "Desbloquear",
         "RevealInFolder": "Mostrar en carpeta",
         "ChartHintSwapped": "Deslizar para ampliar Y · Ctrl+deslizar para ampliar tiempo · Arrastre para mover · Pasa el cursor para ver los valores · Haga doble clic para bloquear el enfoque",
         "ScrollToZoomX": "Deslizar para ampliar X",
-        "ScrollToZoomY": "Deslizar para ampliar Y"
+        "ScrollToZoomY": "Deslizar para ampliar Y",
+        "ResetColors": "Reset colors"
     }
 }

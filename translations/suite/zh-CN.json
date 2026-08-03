@@ -470,7 +470,6 @@
         "CloseFile": "关闭文件",
         "RefreshData": "刷新数据",
         "Channels": "通道",
-        "SelectAll": "全选",
         "ChartTitle": "CSV 数据总览",
         "ChartHint": "滚轮缩放时间 · Ctrl+滚轮缩放 Y 轴 · 拖拽平移 · 悬停查看数值 · 双击锁定焦点",
         "ChartHintSwapped": "滚轮缩放 Y 轴 · Ctrl+滚轮缩放时间 · 拖拽平移 · 悬停查看数值 · 双击锁定焦点",
@@ -492,7 +491,8 @@
         "ErrorNoNumericColumns": "未找到数值列. 本工具仅支持数值类型的 CSV 文件.",
         "ErrorReadFailed": "读取所选文件失败",
         "ScrollToZoomX": "滚动缩放 X 轴",
-        "ScrollToZoomY": "滚动缩放 Y 轴"
+        "ScrollToZoomY": "滚动缩放 Y 轴",
+        "ResetColors": "Reset colors"
     },
     "DownloadCenter": {
         "DownloadCenter": "FrSky 产品列表",

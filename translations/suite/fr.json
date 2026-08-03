@@ -674,13 +674,13 @@
         "RemoveFromHistory": "Remove from recent files",
         "ResetView": "Reset view",
         "RowCount": "{{ count }} rows",
-        "SelectAll": "Select all",
         "SelectFile": "Select CSV file",
         "Title": "Log viewer",
         "UnlockFocus": "Unlock",
         "RevealInFolder": "Show in folder",
         "ChartHintSwapped": "Scroll to zoom Y · Ctrl+scroll to zoom time · Drag to pan · Hover for values · Double-click to lock focus",
         "ScrollToZoomX": "Scroll to zoom X",
-        "ScrollToZoomY": "Scroll to zoom Y"
+        "ScrollToZoomY": "Scroll to zoom Y",
+        "ResetColors": "Reset colors"
     }
 }
