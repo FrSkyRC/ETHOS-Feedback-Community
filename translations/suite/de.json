@@ -681,6 +681,6 @@
         "ChartHintSwapped": "Scrollen zum Zoomen der Y-Achse · Strg + Scrollen zum Zoomen der Zeitachse · Ziehen zum Verschieben · Mauszeiger für Werte · Doppelklick zum Fixieren des Fokus",
         "ScrollToZoomX": "Scrollen, um X-Achse zu zoomen",
         "ScrollToZoomY": "Scrollen, um Y-Achse zu zoomen",
-        "ResetColors": "Reset colors"
+        "ResetColors": "Farben zurücksetzen"
     }
 }
