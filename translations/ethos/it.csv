@@ -838,9 +838,6 @@ STRENGTH,,"Intensità",
 AM,,"AM",
 PM,,"PM",
 PLAY_VARIO,,"Esegui vario",
-LED,,"LED"
-LED_CONSTANT,,"Fisso"
-LED_BLINK,,"Lampeggiante"
 RF_ALWAYS_OFF,,"Modo Speciale, RF spenta.",
 STAB_FUNC,,"Funzione Stabilizzazione",
 RX_PROTOCOL,,"Protocollo RX",

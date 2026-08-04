@@ -331,9 +331,6 @@ LOCK_TOUCHSCREEN,,"Verrouillage écran",
 SCREENSHOT,,"Capture écran",
 PLAY_VALUE,,"Lire valeur",
 PLAY_VARIO,,"Lire vario",
-LED,,"LED"
-LED_CONSTANT,,"Constant"
-LED_BLINK,,"Blink"
 SPACE_WITH_OTHERS,," Autres ...",
 CONFIRM_DELETE_CURVE,,"Supprimer courbe ?",
 CURVE_USED_BY,,"Courbe utilisée :",

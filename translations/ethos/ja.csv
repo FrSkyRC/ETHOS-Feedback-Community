@@ -853,9 +853,6 @@ STRENGTH,,"強さ",,
 AM,,"AM",,
 PM,,"PM",,
 PLAY_VARIO,,"バリオ再生",,
-LED,,"LED"
-LED_CONSTANT,,"Constant"
-LED_BLINK,,"Blink"
 RF_ALWAYS_OFF,,"特殊モード(RF 常時オフ)",,
 STAB_FUNC,,""スタビライズ機能",,
 RX_PROTOCOL,,"RX プロトコル",,
