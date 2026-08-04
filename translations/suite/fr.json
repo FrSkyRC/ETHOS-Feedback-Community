@@ -11,7 +11,7 @@
             "Stable": "Stable",
             "WebTitle": "ethos.frsky-rc.com",
             "PrereleaseRequiresGithub": "Veuillez basculer sur le serveur Github pour utiliser les pré-versions",
-            "ReleasedAt": "Released at"
+            "ReleasedAt": "Publié le"
         },
         "EthosSum": {
             "QuickCardNewsDesc": "Afficher l'historique des firmwares ETHOS et des notes de version.",
@@ -23,7 +23,7 @@
             "QuickCardAudioManagerDesc": "Transcode and manage audio files for ETHOS radios",
             "Connected": "Connecté",
             "ConnectedTo": "Connecté à {{ name }}.",
-            "RadioInformation": "Radio information",
+            "RadioInformation": "Information radio",
             "FirmwareVersion": "Version Firmware",
             "BootloaderVersion": "Version Bootloader",
             "InternalModuleVersion": "Version module interne",
@@ -38,17 +38,17 @@
             "MaxHeight": "Hauteur Max",
             "TranscodingImages": "Conversion images en cours ...",
             "TheFollowingImagesFailedToTranscode": "Echec de conversion des images suivantes :",
-            "AddImagesOrDrop": "Add images or drop files",
-            "ListSubtitle": "Select images, then adjust crop and size before transcoding",
-            "ResolutionSettings": "Resolution settings",
+            "AddImagesOrDrop": "Ajouter des images ou glisser des fichiers",
+            "ListSubtitle": "Sélectionner des images, recadrer, redimensionner avec changement de format",
+            "ResolutionSettings": "Paramètres résolution",
             "SupportedFormats": "Supports PNG, JPG, BMP, and SVG.",
-            "OutputDetails": "Output details",
-            "Fill": "Fill",
-            "Fit": "Fit",
-            "Stretch": "Stretch",
+            "OutputDetails": "Détails",
+            "Fill": "Remplir",
+            "Fit": "Ajuster",
+            "Stretch": "Etendre",
             "SelectImageToEdit": "Select an image to adjust output",
-            "OutputSize": "Output size",
-            "KeepAspectRatio": "Keep aspect ratio"
+            "OutputSize": "Taille fichier destination",
+            "KeepAspectRatio": "Conserver les proportions"
         },
         "Audio": {
             "AudioManager": "Gestionnaire audio",
