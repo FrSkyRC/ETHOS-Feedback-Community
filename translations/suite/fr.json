@@ -40,22 +40,22 @@
             "TheFollowingImagesFailedToTranscode": "Echec de conversion des images suivantes :",
             "AddImagesOrDrop": "Ajouter des images ou glisser des fichiers",
             "ListSubtitle": "Sélectionner des images, recadrer, redimensionner avec changement de format",
-            "ResolutionSettings": "Paramètres résolution",
-            "SupportedFormats": "Supports PNG, JPG, BMP, and SVG.",
+            "ResolutionSettings": "Résolution",
+            "SupportedFormats": "Fichiers supportés PNG, JPG, BMP, and SVG.",
             "OutputDetails": "Détails",
             "Fill": "Remplir",
             "Fit": "Ajuster",
             "Stretch": "Etendre",
-            "SelectImageToEdit": "Select an image to adjust output",
+            "SelectImageToEdit": "Sélectionner l'image à modifier",
             "OutputSize": "Taille fichier destination",
             "KeepAspectRatio": "Conserver les proportions"
         },
         "Audio": {
             "AudioManager": "Gestionnaire audio",
             "TranscodingAudios": "Conversion audio en cours ...",
-            "AddAudioOrDrop": "Add audio files",
-            "ListSubtitle": "Select or drag audio assets for firmware integration.",
-            "SupportedFormats": "Supports .WAV, .MP3 etc."
+            "AddAudioOrDrop": "Ajouter fichiers audio",
+            "ListSubtitle": "Sélectionner ou glisser des fichiers audio pour intégration au firmware.",
+            "SupportedFormats": "Fichiers supportés .WAV, .MP3 etc."
         },
         "Repair": {
             "RepairTool": "Outil de réparation",
@@ -71,7 +71,7 @@
             "FactorySettingSubTitle": "Réinitalisation radio aux paramètres usine.",
             "Restoring": "Réinitialisation en cours ...",
             "RestoreSucceed": "Réinitialisation terminée ! Redémarrer la radio manuellement.",
-            "ConfirmRestore": "This operation will delete all the settings on your radio. Please make sure you have backed up your radio settings. Do you want to continue restoring?"
+            "ConfirmRestore": "Attention, cette opération va effacer vos paramètres radio. Vérifier votre sauvegarde. Confirmer la restauration ?"
         },
         "RadioInfo": {
             "ManageEthos": "Gérer ETHOS",
