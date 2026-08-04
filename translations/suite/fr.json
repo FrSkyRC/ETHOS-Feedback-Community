@@ -124,12 +124,12 @@
             "UpdateComponentToVersion": "Le composant {{ component }} nécessite la mise à jour en version {{ version }}",
             "ConfirmFlashBootloader": "Confirmer mise à jour du bootloader",
             "BootloaderUpgradeConfirmation": "Mettre à jour le bootloader en V {{ version }} effacera la mémoire flash. Continuer ?",
-            "ComponentReleaseNotFound": "Cannot find component release when updating {{ component }}. Selected target version {{ version }}.",
-            "ReleaseAssetsNotFound": "Cannot find asset {{ asset }} in release {{ version }}.",
-            "ConfirmSwitchToTesting": "Switch to testing branch",
-            "TestingBranchWarning": "The testing branch is for testing only and is not recommended for actual flying. Are you sure you want to switch to the testing branch?",
-            "NoLanguageSelected": "No language selected",
-            "EthosMode": "ETHOS mode"
+            "ComponentReleaseNotFound": "Version non trouvée lors de la mise à jour {{ component }}. Choississer la version cible {{ version }}.",
+            "ReleaseAssetsNotFound": "Aucune ressource détectée {{ asset }} dans le version {{ version }}.",
+            "ConfirmSwitchToTesting": "Basculer vers la branche test",
+            "TestingBranchWarning": "Cette branche est réservée pour les tests. Ne pas utiliser pour les vols. Continuer ?",
+            "NoLanguageSelected": "Aucune langue sélectionnée",
+            "EthosMode": "Mode ETHOS"
         },
         "Module": {
             "RFModule": "Module RF",
