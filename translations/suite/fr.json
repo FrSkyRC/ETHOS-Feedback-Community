@@ -2,34 +2,34 @@
     "Main": {
         "Tools": "Outils",
         "Others": "Autres",
-        "Devices": "Devices"
+        "Devices": "Périphériques"
     },
     "Ethos": {
         "News": {
             "UpdateNews": "Nouveautés",
-            "Prerelease": "Pre-release",
+            "Prerelease": "Pré-versions",
             "Stable": "Stable",
             "WebTitle": "ethos.frsky-rc.com",
-            "PrereleaseRequiresGithub": "Please switch to GitHub server to enable pre-releases",
+            "PrereleaseRequiresGithub": "Veuillez basculer sur le serveur Github pour utiliser les pré-versions",
             "ReleasedAt": "Released at"
         },
         "EthosSum": {
-            "QuickCardNewsDesc": "List the ETHOS firmware upgrade history and release notes.",
-            "QuickCardEthosWebDesc": "Visit the official ETHOS website",
-            "QuickCardSimulatorDesc": "Run the ETHOS simulator on your computer to test models and settings",
-            "QuickCardLuaLibDesc": "Install, update, and manage Lua scripts and packages on your radio.",
-            "QuickCardLuaDevDesc": "Develop, package, and debug Lua scripts for ETHOS",
+            "QuickCardNewsDesc": "Afficher l'historique des firmwares ETHOS et des notes de version.",
+            "QuickCardEthosWebDesc": "Visiter le site officiel ETHOS",
+            "QuickCardSimulatorDesc": "Lancer le simulateur ETHOS pour testers vos modèles et paramètres",
+            "QuickCardLuaLibDesc": "Installer, mettre à jour, gérer les scripts Lua et extensions sur votre radio.",
+            "QuickCardLuaDevDesc": "Développer, assembler et débugger les scripts Lua pour ETHOS",
             "QuickCardImageManagerDesc": "Transcode and manage bitmap files for ETHOS radios",
             "QuickCardAudioManagerDesc": "Transcode and manage audio files for ETHOS radios",
-            "Connected": "Connected",
-            "ConnectedTo": "Connected to {{ name }}.",
+            "Connected": "Connecté",
+            "ConnectedTo": "Connecté à {{ name }}.",
             "RadioInformation": "Radio information",
-            "FirmwareVersion": "Firmware version",
-            "BootloaderVersion": "Bootloader version",
-            "InternalModuleVersion": "Internal module version",
-            "NoInternalModule": "No internal module detected.",
-            "SDCard": "SD card",
-            "InternalStorage": "Internal storage"
+            "FirmwareVersion": "Version Firmware",
+            "BootloaderVersion": "Version Bootloader",
+            "InternalModuleVersion": "Version module interne",
+            "NoInternalModule": "Aucun module interne détecté.",
+            "SDCard": "Carte SD",
+            "InternalStorage": "Stockage interne"
         },
         "Image": {
             "ImageManager": "Gestionnaire image",
