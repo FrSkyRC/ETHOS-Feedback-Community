@@ -126,10 +126,10 @@
             "BootloaderUpgradeConfirmation": "Aktualizace bootloaderu na verzi {{ version }} smaže veškerý obsah jednotky \"FLASH\". Opravdu chcete pokračovat?",
             "ComponentReleaseNotFound": "Při aktualizaci {{ component }} nezjištěna verze komponentu. Vybraná cílová verze je {{ version }}.",
             "ReleaseAssetsNotFound": "Ve verzi {{ version }} nenalezen zdroj {{ asset }}.",
-            "ConfirmSwitchToTesting": "Switch to testing branch",
-            "TestingBranchWarning": "The testing branch is for testing only and is not recommended for actual flying. Are you sure you want to switch to the testing branch?",
-            "NoLanguageSelected": "No language selected",
-            "EthosMode": "ETHOS mode"
+            "ConfirmSwitchToTesting": "Přepnout do testovací větve",
+            "TestingBranchWarning": "Testovací větev je určena pouze pro testování a nedoporučuje se pro skutečné létání. Jste si jisti, že chcete přepnout do testovací větve?",
+            "NoLanguageSelected": "Není vybrán žádný jazyk",
+            "EthosMode": "ETHOS mód"
         },
         "Module": {
             "RFModule": "RF modul",
@@ -181,8 +181,8 @@
             "ManifestGlobNoMatch": "ethos_lua_manifest.json: regulární výraz ve \"files\" se neshoduje s žádným souborem.",
             "ManifestKey": "Script ID",
             "ManifestFolder": "Instalační adresář",
-            "FileSelectors": "File selectors",
-            "ReleaseNote": "ReleaseNote",
+            "FileSelectors": "Výběr souborů",
+            "ReleaseNote": "Poznámka k vydání",
             "ManifestInvalidIntroduction": "ethos_lua_manifest.json: neplatné \"introduction\" (musí být řetězec, max 1024 znaků)."
         },
         "LuaLib": {
@@ -461,7 +461,7 @@
         "StepSelectFileHint": "Vyberte .frsk nebo .bin soubor bootloaderu"
     },
     "DownloadCenter": {
-        "DownloadCenter": "FrSky product list",
+        "DownloadCenter": "Seznam produktů FrSky",
         "FlashingDevice": "Aktualizuji zařízení...",
         "DownloadingFRSK": "Stahuji .frsk...",
         "ZipError": "Chyba souboru ZIP. Měli by jste stáhnout .frsk soubor manálně.",
@@ -600,7 +600,7 @@
         "LuaPackage": "ETHOS lua balíček (ZIP manifest)",
         "LuaPackageDescription": "Manuál popisující manifest soubor, který by měl být přiložen v ETHOS Lua balíčku.",
         "ECOSGithub": "ECOS GitHub",
-        "ECOSGithubDescription": "Link to the ECOS-Feedback-Community on GitHub. Users can submit issues to the ECOS development team."
+        "ECOSGithubDescription": "Odkaz na komunitu ECOS-Feedback-Community na GitHubu. Uživatelé mohou odesílat problémy vývojovému týmu ECOS."
     },
     "Updater": {
         "NewVersionAvailable": "Nová verze Suitu {{ version }} je k dispozici!",
@@ -679,8 +679,8 @@
         "UnlockFocus": "Odemknout",
         "RevealInFolder": "Zobrazit ve složce",
         "ChartHintSwapped": "Kolečko zoomuje Y · Ctrl+kolečko zoomuje čas · Přetažením posouváte čas · Najetím zobrazte hodnoty · Dvoj klik uzamkne hodnoty",
-        "ScrollToZoomX": "Scroll to zoom X",
-        "ScrollToZoomY": "Scroll to zoom Y",
-        "ResetColors": "Reset colors"
+        "ScrollToZoomX": "Posunutím zvětšíte X",
+        "ScrollToZoomY": "Posunutím zvětšíte Y",
+        "ResetColors": "Obnovit nastavení barvy"
     }
 }
