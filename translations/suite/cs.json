@@ -43,12 +43,12 @@
             "ResolutionSettings": "Nasatavení rozlišení",
             "SupportedFormats": "Podporuje PNG, JPG, BMP a SVG.",
             "OutputDetails": "Output details",
-            "Fill": "Fill",
-            "Fit": "Fit",
-            "Stretch": "Stretch",
-            "SelectImageToEdit": "Select an image to adjust output",
-            "OutputSize": "Output size",
-            "KeepAspectRatio": "Keep aspect ratio"
+            "Fill": "Vyplnit",
+            "Fit": "Přizpůsobit",
+            "Stretch": "Roztáhnout",
+            "SelectImageToEdit": "Vyberte obrázek pro úpravu výstupu",
+            "OutputSize": "Velikost výstupu",
+            "KeepAspectRatio": "Zachovat poměr stran"
         },
         "Audio": {
             "AudioManager": "Správce zvuků",
@@ -216,7 +216,7 @@
             "Radio": "Model rádia",
             "Release": "Verze vydání",
             "Protocol": "Protokol",
-            "StartSim": "Start simulátoru",
+            "StartSim": "Spustit simulátor",
             "NoSupportedSim": "Nenalezen podporovaný simulátor",
             "DownloadingSimulator": "Stahuji simulátor ...",
             "InitSimulatorFailed": "Nepodařilo se inicializovat simulátor",
@@ -334,7 +334,7 @@
         "InvalidFRSKFile": "Chybný soubor .frsk!",
         "ConnectionNotDetected": "Zapojení rádia není detekováno!",
         "ConnectYourRadio": "Zapněte rádio a zvolte Bootloader nebo ETHOS podle výše uvedeného návodu. Poté připojte počítač pomocí kabelu USB.",
-        "Flash": "Zápis",
+        "Flash": "Zapsat",
         "Download": "Stáhnout",
         "CannotReadModuleInfo": "Není možné získat informace o interním modulu",
         "WaitingDisk": "Čekám na disk...",
@@ -425,7 +425,7 @@
             "NandBootloaderGuideStep1": "Ujistěte se, že váš počítač má správně nainstalovaný ovladač DFU",
             "NandBootloaderGuideStep2": "Navštivte GitHub a stáhněte si bootloader vašeho odpovídajícího rádia",
             "NandBootloaderGuideStep3": "Připojte vypnuté rádio",
-            "NandBootloaderGuideStep4": "Přejděte na DFU flasher, vyberte bootloader.frsk, který jste právě stáhli, a klikněte na \"Zápis\""
+            "NandBootloaderGuideStep4": "Přejděte na DFU flasher, vyberte bootloader.frsk, který jste právě stáhli, a klikněte na \"Zapsat\""
         },
         "AudioPreview": {
             "Pause": "Pauza",
