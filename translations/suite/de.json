@@ -290,7 +290,7 @@
             "SystemComponents": "Systemkomponenten",
             "Title": "Sicherung und Wiederherstellung",
             "NoComponentsOnDisk": "Auf diesem Datenträger sind keine Komponenten verfügbar.",
-            "RestoreTargetDisk": "Restore to"
+            "RestoreTargetDisk": "Zurücksetzen auf"
         },
         "AppTitle": "ETHOS"
     },
