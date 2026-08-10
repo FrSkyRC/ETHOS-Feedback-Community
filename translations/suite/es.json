@@ -270,7 +270,8 @@
             "StartRestore": "Comenzar restauración",
             "SystemComponents": "Componentes del sistema",
             "Title": "Copias de seguridad y restauración",
-            "NoComponentsOnDisk": "No hay componentes disponibles en este disco"
+            "NoComponentsOnDisk": "No hay componentes disponibles en este disco",
+            "RestoreTargetDisk": "Restore to"
         },
         "Image": {
             "AddImagesOrDrop": "Añadir imágenes o arrastrar archivos",

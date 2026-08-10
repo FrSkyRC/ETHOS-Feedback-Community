@@ -289,7 +289,8 @@
             "StartRestore": "Lancer restauration",
             "SystemComponents": "Composants système",
             "Title": "Sauvegarde et restauration",
-            "NoComponentsOnDisk": "Aucun composant disponible sur ce disque"
+            "NoComponentsOnDisk": "Aucun composant disponible sur ce disque",
+            "RestoreTargetDisk": "Restore to"
         },
         "AppTitle": "ETHOS"
     },

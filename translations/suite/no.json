@@ -289,7 +289,8 @@
             "StartRestore": "Start gjenoppretting",
             "SystemComponents": "Systemkomponenter",
             "Title": "Sikkerhetskopi og gjenoppretting",
-            "NoComponentsOnDisk": "Ingen komponenter tilgjengelig på denne disken"
+            "NoComponentsOnDisk": "Ingen komponenter tilgjengelig på denne disken",
+            "RestoreTargetDisk": "Restore to"
         },
         "AppTitle": "ETHOS"
     },

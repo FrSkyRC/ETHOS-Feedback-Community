@@ -289,7 +289,8 @@
             "StartRestore": "Spustit obnovu",
             "SystemComponents": "Systémové komponenty",
             "Title": "Záloha a obnova",
-            "NoComponentsOnDisk": "Na tomto disku nejsou dostupné žádné komponenty"
+            "NoComponentsOnDisk": "Na tomto disku nejsou dostupné žádné komponenty",
+            "RestoreTargetDisk": "Restore to"
         },
         "AppTitle": "ETHOS"
     },

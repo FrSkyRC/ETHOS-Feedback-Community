@@ -289,7 +289,8 @@
             "StartRestore": "Start restore",
             "SystemComponents": "System components",
             "Title": "Backup & recovery",
-            "NoComponentsOnDisk": "No componenets available on this disk"
+            "NoComponentsOnDisk": "No componenets available on this disk",
+            "RestoreTargetDisk": "Restore to"
         },
         "AppTitle": "ETHOS"
     },

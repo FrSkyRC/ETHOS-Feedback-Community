@@ -30,7 +30,8 @@
             "Advanced": "高级",
             "SelectBackupHint": "请从列表中选择一份备份以查看详情并恢复.",
             "BackupSuccessBanner": "备份成功完成, 文件已保存为 {{ file }}.",
-            "NoComponentsOnDisk": "此磁盘上没有可供选择的组件"
+            "NoComponentsOnDisk": "此磁盘上没有可供选择的组件",
+            "RestoreTargetDisk": "恢复到"
         },
         "EthosSum": {
             "QuickCardNewsDesc": "查看 ETHOS 固件升级历史与发布说明",

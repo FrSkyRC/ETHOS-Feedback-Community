@@ -30,7 +30,8 @@
             "Advanced": "Advanced",
             "SelectBackupHint": "Select a backup from the list to view details and restore",
             "BackupSuccessBanner": "Backup completed successfully. File saved as {{ file }}",
-            "NoComponentsOnDisk": "No componenets available on this disk"
+            "NoComponentsOnDisk": "No componenets available on this disk",
+            "RestoreTargetDisk": "Restore to"
         },
         "EthosSum": {
             "QuickCardNewsDesc": "View ETHOS firmware update history and release notes",
