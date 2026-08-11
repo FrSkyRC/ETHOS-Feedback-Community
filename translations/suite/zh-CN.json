@@ -635,7 +635,7 @@
         "LuaPackage": "ETHOS Lua 包 (ZIP 清单)",
         "LuaPackageDescription": "说明 ETHOS Lua 包中应包含的 manifest 文件的手册.",
         "ECOSGithub": "ECOS GitHub",
-        "ECOSGithubDescription": "Link to the ECOS-Feedback-Community on GitHub. Users can submit issues to the ECOS development team."
+        "ECOSGithubDescription": "这将引导您前往 ECOS 的 GitHub 反馈社区. 用户可以在此向 ECOS 开发团队提交 bug."
     },
     "Updater": {
         "NewVersionAvailable": "Suite {{ version }} 已发布",
