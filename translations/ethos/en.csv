@@ -779,7 +779,7 @@ NS,,"NS",
 DEFAULT_FLIGHT_MODE,,"Default flight mode",
 DEFAULT_DRIVE_MODE,,"Default drive mode"
 SKIP_ON_STARTUP,,"Skip on startup",
-LOW_VALUE_WARNING,,"Low value warning",
+LOW_VALUE,,"Low value",
 CRITICAL_VALUE,,"Critical value",
 UPGRADE_MODULE,,"Upgrade module",
 AUTHENTICATION_FAILURE,,"Authentication failure",

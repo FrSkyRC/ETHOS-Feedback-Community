@@ -765,7 +765,7 @@ NS,,"NS",
 DEFAULT_FLIGHT_MODE,,"Fase di Volo Standard",
 DEFAULT_DRIVE_MODE,,"Fase di Guida Standard"
 SKIP_ON_STARTUP,,"Tralascia all'Avvio",
-LOW_VALUE_WARNING,,"Avviso Valore Basso",
+LOW_VALUE,,"Valore Basso",
 CRITICAL_VALUE,,"Valore Critico",
 UPGRADE_MODULE,,"Aggiorna modulo",
 AUTHENTICATION_FAILURE,,"Autenticazione fallita",
