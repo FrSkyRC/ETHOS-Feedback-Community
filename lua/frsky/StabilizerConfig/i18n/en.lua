@@ -66,19 +66,7 @@ return {
   OpenGyroMode = "Gyro mode not enabled",
   ConfirmOpenGyroMode = "Do you want to enable \"Gyro mode\"?",
 
-  CaliSR6Step1 = "Place your SR6 horizontal, top side up.",
-  CaliSR6Step2 = "Place your SR6 horizontal, top side down.",
-  CaliSR6Step3 = "Place your SR6 vertical, ANT down.",
-  CaliSR6Step4 = "Place your SR6 vertical, ANT up.",
-  CaliSR6Step5 = "Place your SR6 with ANT right, top side facing you.",
-  CaliSR6Step6 = "Place your SR6 with ANT right, back side facing you.",
-
-  CaliCommonStep1 = "Place your Stabilizer Rx horizontal with the front facing up.",
-  CaliCommonStep2 = "Place your Stabilizer Rx horizontal with the back facing up.",
-  CaliCommonStep3 = "Place your Stabilizer Rx vertical on its short side with the label tilted to the left.",
-  CaliCommonStep4 = "Place your Stabilizer Rx vertical on its short side with the label tilted to the right.",
-  CaliCommonStep5 = "Place your Stabilizer Rx on its narrow long side with the label the right way up.",
-  CaliCommonStep6 = "Place your Stabilizer Rx on its narrow long side with the label upside down.",
+  PositionRX = "Please position your receiver as shown in the image",
 
   CaliFinished = "Calibration finished. You can exit this page now",
 

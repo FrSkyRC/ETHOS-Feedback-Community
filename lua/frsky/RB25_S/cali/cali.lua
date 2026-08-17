@@ -19,12 +19,12 @@ local calibrationState = CALIBRATION_INIT
 local nextOpTime
 
 local SXR_CALI_HINTS = {
-  "Place your RB25 horizontal, top side up.",
-  "Place your RB25 horizontal, top side down.",
-  "Place your RB25 vertical, battery pins down.",
-  "Place your RB25 vertical, battery pins up.",
-  "Place your RB25 front side facing you, label oriented.",
-  "Place your RB25 front side facing you, label upside down.",
+  "Place your RB25S horizontal, top side up.",
+  "Place your RB25S horizontal, top side down.",
+  "Place your RB25S vertical, battery pins down.",
+  "Place your RB25S vertical, battery pins up.",
+  "Place your RB25S label facing you, battery pound to the left.",
+  "Place your RB25S downside facing you, NFC remote connector side to left.",
 }
 
 local idle = false
@@ -64,7 +64,6 @@ local function paint(widget)
 end
 
 local function wakeup(widget)
-  -- TODO call discover
   if widget.sensor:appId() == 0xFFFF then
     local frame = widget.sensor:popFrame()
     if frame == nil then
@@ -80,13 +79,13 @@ local function wakeup(widget)
   end
   if calibrationState == CALIBRATION_WRITE then
     print("CALIBRATION_WRITE")
-    if widget.sensor:writeParameter(0x60, step) == true then
+    if widget.sensor:writeParameter(0xB2, step) == true then
       print("widget.sensor:writeParameter")
       calibrationState = CALIBRATION_READ
     end
   elseif calibrationState == CALIBRATION_READ then
     print("CALIBRATION_READ")
-    if widget.sensor:requestParameter(0x60) == true then
+    if widget.sensor:requestParameter(0xB2) == true then
       print("widget.sensor:requestParameter")
       calibrationState = CALIBRATION_WAIT
       nextOpTime = os.clock() + 3
@@ -95,7 +94,7 @@ local function wakeup(widget)
     local value = widget.sensor:getParameter()
     if value then
       local fieldId = value % 256
-      if fieldId == 0x60 then
+      if fieldId == 0xB2 then
         if step == 5 then
           calibrationState = CALIBRATION_OK
           bitmap = lcd.loadBitmap("cali/cali_ok.png")
@@ -125,8 +124,12 @@ local function event(widget, category, value, x, y)
 end
 
 local function close(widget)
-  print("close()")
-  widget.sensor:idle(false)
+  local count = 0;
+  while count < 3 do
+    if widget.sensor:idle(false) then
+      count = count + 1
+    end
+  end
   idle = false
 end
 

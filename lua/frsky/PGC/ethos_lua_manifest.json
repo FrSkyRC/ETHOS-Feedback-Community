@@ -1,0 +1,14 @@
+{
+  "manifestVersion": 1,
+  "name": "PGC",
+  "key": "org.frsky-ethos.pgc",
+  "version": "1.0.3",
+  "folder": "PGC",
+  "releaseNotes": {
+    "format": "markdown",
+    "content": "## Introduction\n\nConfig script for FrSky PGC.\n\n## Fix\n\n\nFix an issue in Ethos 1.6.2 that could cause a read failure.\n\nIf you are running Ethos 1.6.0 or later, you can find it in the Device Config menu."
+  },
+  "files": [
+    "**"
+  ]
+}

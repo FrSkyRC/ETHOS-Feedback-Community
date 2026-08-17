@@ -1,0 +1,14 @@
+{
+  "manifestVersion": 1,
+  "name": "Layout 1 + 3",
+  "key": "org.frsky-ethos.layout1p3",
+  "version": "1.0.0",
+  "folder": "Layout1P3",
+  "releaseNotes": {
+    "format": "markdown",
+    "content": "## Introduction\n\nA layout for an 800×480 resolution screen that serves as a prerequisite for the 'Jet dashboard widget' script. It features one large entry on the top and three smaller entries at the bottom."
+  },
+  "files": [
+    "**"
+  ]
+}

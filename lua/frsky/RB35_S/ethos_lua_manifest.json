@@ -1,0 +1,14 @@
+{
+  "manifestVersion": 1,
+  "name": "RB35(S)",
+  "key": "org.frsky-ethos.rb35s",
+  "version": "2.1.6",
+  "folder": "RB35_S",
+  "releaseNotes": {
+    "format": "markdown",
+    "content": "## Introduction\n\nConfig script for FrSky RB35 and RB35S.\n\n## Enhancement\n\n- Added and updated relevant configuration items to support the RB35(S) firmware update version 3.0.5.\n- Added the option to enable/disable switching ability between different Gyro banks.\n\nIf you are running Ethos 1.6.0 or later, you can find it in the Device Config menu."
+  },
+  "files": [
+    "**"
+  ]
+}

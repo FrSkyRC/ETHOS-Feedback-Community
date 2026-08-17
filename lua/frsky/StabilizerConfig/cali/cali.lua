@@ -28,6 +28,9 @@ local function isSR6Mini()
 end
 
 local function hasBasicConfiguration()
+  if TEST then
+    return false
+  end
   if not Product.exist() or Product.family ~= 2 then
     return false
   end
@@ -60,11 +63,7 @@ local CALI_LABELS = {
 }
 
 local function getCaliBitmapPath()
-  if isSR6Mini() then
-    return GlobalPath .. "cali/cali_sr6_" .. step .. ".png"
-  else
-    return GlobalPath .. "cali/cali_" .. step .. ".png"
-  end
+  return "cali/" .. Product.caliPrefix .. "/cali_" .. (step + 1) .. ".png"
 end
 
 local function getCaliLabel()
@@ -80,6 +79,20 @@ local function getCaliLabel()
 end
 
 local function doCalibrate()
+  if TEST then
+    if step == 5 then
+      step = 6
+      if caliButton ~= nil then
+        caliButton:enable(false)
+      end
+      nextStep = true
+    else
+      step = (step + 1) % 6
+      nextStep = true
+    end
+    nextStep = true
+    return
+  end
   local button = {{label = "Close", action = function ()
     Dialog.closeDialog()
   end}}
@@ -133,6 +146,11 @@ local function pageInit()
   gyroModeCheck = hasBasicConfiguration() and GYRO_MODE_CHECK_REQUEST or GYRO_MODE_CHECK_PASS
 
   local line = form.addLine("", nil, false)
+  -- local rect = form.getFieldSlots(line, {STR("NoArrowHint"), "- ? -", "- "..STR("Calibrate").." -"})
+  -- form.addStaticText(line, rect[1], STR("NoArrowHint"))
+  -- form.addTextButton(line, rect[2], "?", function()
+  --   Dialog.openDialog({title = STR("NoArrowHint"), message = STR("FindAnArrow"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}}})
+  -- end)
   caliButton = form.addTextButton(line, nil, STR("Calibrate"), function() doCalibrate() end)
   caliButton:enable(gyroModeCheck == GYRO_MODE_CHECK_PASS)
 
@@ -143,18 +161,33 @@ local function paint()
   local width, height = lcd.getWindowSize()
 
   lcd.color(lcd.GREY(0xFF))
-  local tw, th = lcd.getTextSize(getCaliLabel())
-  lcd.drawText(width / 2, height / 3, getCaliLabel(), CENTERED)
-  if gyroModeCheck == GYRO_MODE_CHECK_PASS and (step < 6 or calibrationState ~= CALIBRATION_OK) then
-    lcd.drawText(width / 2, height / 3 + th, STR("PressCaliToStart"), CENTERED)
+  if step >= 6 then
+    lcd.drawText(width / 2, height / 3, STR("CaliFinished"), CENTERED)
+  else
+    local tw, th = lcd.getTextSize(STR("PositionRX"))
+    lcd.drawText(width / 2, height / 3, STR("PositionRX"), CENTERED)
+    if gyroModeCheck == GYRO_MODE_CHECK_PASS and (step < 6 or calibrationState ~= CALIBRATION_INIT) then
+      lcd.drawText(width / 2, height / 3 + th, STR("PressCaliToStart"), CENTERED)
+    end
   end
 
   if bitmap ~= nil then
     local w = bitmap:width()
     local h = bitmap:height()
-    local x = width / 2 - w / 2
-    local y = height / 3 * 2 - h / 2
-    lcd.drawBitmap(x, y, bitmap)
+    -- local y = height / 3 * 2 - h / 2
+    local y = height / 2
+    if height / 2 < 200 then
+      if step >= 6 then
+        local x = width / 2 - w / 2
+        lcd.drawBitmap(x, y, bitmap)
+      else
+        local x = width / 2 - 105
+        lcd.drawBitmap(x, y, bitmap, 210, 150)
+      end
+    else
+      local x = width / 2 - w / 2
+      lcd.drawBitmap(x, y, bitmap)
+    end
   end
 end
 
@@ -199,7 +232,7 @@ local function wakeup()
       bitmap = lcd.loadBitmap(getCaliBitmapPath())
       Dialog.closeDialog()
     else
-      bitmap = lcd.loadBitmap(GlobalPath .. "cali/cali_ok.png")
+      bitmap = lcd.loadBitmap("cali/cali_ok.png")
       Dialog.message(STR("CalibrationFinished"))
     end
     nextStep = false

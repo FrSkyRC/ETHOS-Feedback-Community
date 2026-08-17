@@ -66,19 +66,7 @@ return {
   OpenGyroMode = "Kreiselmodus nicht aktiviert!",
   ConfirmOpenGyroMode = "Möchen Sie den \"Gyro mode\" aktivieren?",
 
-  CaliSR6Step1 = "Legen Sie den SR6 horizontal mit der Oberseite nach oben.",
-  CaliSR6Step2 = "Legen Sie den SR6 horizontal mit der Oberseite nach unten.",
-  CaliSR6Step3 = "Stellen Sie Ihr SR6 senkrecht, ANT nach unten.",
-  CaliSR6Step4 = "Stellen Sie Ihre SR6 senkrecht auf, ANT nach oben.",
-  CaliSR6Step5 = "Legen Sie Ihre SR6 mit der ANT rechts, oberen Seite zu Ihnen.",
-  CaliSR6Step6 = "Legen Sie Ihre SR6 mit der ANT rechts, untere Seite zu Ihnen.",
-
-  CaliCommonStep1 = "Legen Sie den Kreisel-RX horizontal mit der Oberseite nach oben.",
-  CaliCommonStep2 = "Legen Sie den Kreisel-RX horizontal mit der Oberseite nach unten.",
-  CaliCommonStep3 = "Stellen Sie Ihren Kreisel-Rx senkrecht auf, Beschriftung zeigt nach links.",
-  CaliCommonStep4 = "Stellen Sie Ihren Kreisel-Rx senkrecht auf, Beschriftung zeigt nach rechts.",
-  CaliCommonStep5 = "Legen Sie Ihren Kreisel-Rx auf die lange schmale Seite, Beschriftung wird normal angezeigt",
-  CaliCommonStep6 = "Legen Sie Ihren Kreisel Rx auf die lange schmale Seite, Beschriftung steht auf dem Kopf.",
+  PositionRX = "Bitte positionieren Sie Ihren Empfänger wie in der Abbildung gezeigt.",
 
   CaliFinished = "Kalibrierung beendet. Sie können diese Seite jetzt verlassen",
 
