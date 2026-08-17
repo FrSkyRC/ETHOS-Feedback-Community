@@ -13,7 +13,7 @@ local pages = { basic }
 local icon = lcd.loadBitmap("xact.png");
 
 local function init()
-  system.registerDeviceConfig({category = DEVICE_CATEGORY_SENSORS, name = name, bitmap = icon, appIdStart = 0x6800, appIdEnd = 0x680F, version = LUA_VERSION, pages = pages})
+  system.registerDeviceConfig({category = DEVICE_CATEGORY_SERVOS, name = name, bitmap = icon, appIdStart = 0x6800, appIdEnd = 0x680F, version = LUA_VERSION, pages = pages})
 end
 
 return { init = init }
