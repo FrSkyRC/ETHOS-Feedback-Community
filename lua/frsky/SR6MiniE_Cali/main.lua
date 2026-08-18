@@ -1,4 +1,4 @@
--- SRX Calibration
+local LUA_VERSION = "1.0.4";
 
 local translations = {en="SR6Mini(E) Cali"}
 
@@ -81,20 +81,20 @@ local function wakeup(widget)
     end
     if calibrationState == CALIBRATION_WRITE then
       print("CALIBRATION_WRITE")
-      if widget.sensor:writeParameter(0x60, step) == true then
+      if widget.sensor:writeParameter(0xB2, step) == true then
         calibrationState = CALIBRATION_READ
         lcd.invalidate()
       end
     elseif calibrationState == CALIBRATION_READ then
       print("CALIBRATION_READ")
-      if widget.sensor:requestParameter(0x60) == true then
+      if widget.sensor:requestParameter(0xB2) == true then
         calibrationState = CALIBRATION_WAIT
       end
     elseif calibrationState == CALIBRATION_WAIT then
       local value = widget.sensor:getParameter()
       if value then
         local fieldId = value % 256
-        if fieldId == 0x60 then
+        if fieldId == 0xB2 then
           if step == 5 then
             calibrationState = CALIBRATION_OK
             bitmap = lcd.loadBitmap("/scripts/SR6MiniE_Cali/cali_ok.png")
@@ -112,8 +112,14 @@ end
 
 local icon = lcd.loadMask("srx.png")
 
+local page = {name = name, icon = icon, create = create, wakeup = wakeup, paint=paint}
+
 local function init()
-  system.registerSystemTool({name=name, icon=icon, create=create, paint=paint, wakeup=wakeup})
+  if system.registerDeviceConfig ~= nil then
+    system.registerDeviceConfig({category = DEVICE_CATEGORY_RECEIVERS, name = name, bitmap = icon, appIdStart = 0x0C30, appIdEnd = 0x0C30, version = LUA_VERSION, pages = { page }})
+  else
+    system.registerSystemTool(page)
+  end
 end
 
 return {init=init}

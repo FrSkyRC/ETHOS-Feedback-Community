@@ -1,7 +1,6 @@
-local LUA_VERSION = "3.0.6";
+local LUA_VERSION = "3.0.12";
 
 TEST = false
-GlobalPath = ""
 
 local REMOTE_VERSION_CONSTRAINT = function (major, minor, revision)
   if major > 3 then
@@ -19,14 +18,14 @@ local REMOTE_VERSION_CONSTRAINT = function (major, minor, revision)
   end
 end
 
-local CommonFile = assert(loadfile(GlobalPath .. "common.lua"))()
+local CommonFile = assert(loadfile("common.lua"))()
 Product = CommonFile.Product
 Module = CommonFile.Module
 Sensor = CommonFile.Sensor
 Dialog = CommonFile.Dialog
 Progress = CommonFile.Progress
 
-STR = assert(loadfile(GlobalPath .. "i18n/i18n.lua"))().translate
+STR = assert(loadfile("i18n/i18n.lua"))().translate
 
 local function name()
   return STR("ScriptName")
@@ -71,12 +70,13 @@ local REMOTE_DEVICE = {address = 0xFE, state = STATE_READ, field = nil, label = 
   Product.family = (value >> 8) & 0xFF
   Product.id = (value >> 16) & 0xFF
   print("Remote device family: " .. Product.family .. ", product: " .. Product.id)
-  local FrSkyProducts = assert(loadfile(GlobalPath .. "products.lua"))()
+  local FrSkyProducts = assert(loadfile("products.lua"))()
   for i, family in pairs(FrSkyProducts) do
     if family.ID == Product.family then
       for j, product in pairs(family.Products) do
         if product.ID == Product.id then
           Product.supportFields = product.SupportFields
+          Product.caliPrefix = product.CaliPrefix
           if task.field ~= nil then
             task.field:value(product.Name)
             task.state = STATE_PASS
@@ -119,20 +119,20 @@ local function clearAllTasks()
   Product.resetProduct()
 end
 
-local pages = {{file = assert(loadfile(GlobalPath .. "basic/basic.lua")()), label = STR("BasicConfig")},
+local pages = {{file = assert(loadfile("basic/basic.lua")()), label = STR("BasicConfig")},
                {
                  name = STR("StabilizerGroup1"),
                  subPages = {
-                   {file = assert(loadfile(GlobalPath .. "group1/precali1.lua")()), label = STR("Calibration")},
-                   {file = assert(loadfile(GlobalPath .. "group1/stab1.lua")()), label = STR("Configuration")},}
+                   {file = assert(loadfile("group1/precali1.lua")()), label = STR("Calibration")},
+                   {file = assert(loadfile("group1/stab1.lua")()), label = STR("Configuration")},}
                  },
                {
                  name = STR("StabilizerGroup2"),
                  subPages = {
-                   {file = assert(loadfile(GlobalPath .. "group2/precali2.lua")()), label = STR("Calibration")},
-                   {file = assert(loadfile(GlobalPath .. "group2/stab2.lua")()), label = STR("Configuration")},}
+                   {file = assert(loadfile("group2/precali2.lua")()), label = STR("Calibration")},
+                   {file = assert(loadfile("group2/stab2.lua")()), label = STR("Configuration")},}
                  },
-               {file = assert(loadfile(GlobalPath .. "cali/cali.lua")()), label = STR("SixAxisCali")}}
+               {file = assert(loadfile("cali/cali.lua")()), label = STR("SixAxisCali")}}
 
 local currentPage = nil
 
@@ -189,7 +189,7 @@ local function buildBackupForm(ePanel, focusRefresh)
     if not Progress.isDialogOpen() then
       saveLoadState = LOAD_STATE_READ
       backupAddress = FIRST_ADDRESS
-      Progress.openWaitDialog({title = STR("Loading"), message = STR("LoadingConfigurations", {progress = "0"}), close = function ()
+      Progress.openProgressDialog({title = STR("Loading"), message = STR("LoadingConfigurations", {progress = "0"}), close = function ()
         file:close()
         file = nil
         print("Close file: ", restoreFileName)
@@ -266,7 +266,7 @@ local function buildBackupForm(ePanel, focusRefresh)
       if file ~= nil then
         backupAddress = FIRST_ADDRESS
         saveLoadState = SAVE_STATE_REQUEST_CURRENT
-        Progress.openWaitDialog({title = STR("Saving"), message = STR("SavingConfigurations", {progress = "0"}), close = function ()
+        Progress.openProgressDialog({title = STR("Saving"), message = STR("SavingConfigurations", {progress = "0"}), close = function ()
           file:close()
           file = nil
           print("Close file: ", fileName)
@@ -344,7 +344,7 @@ local function buildpage()
   buildBackupForm(configureForm)
 
   for index, page in pairs(pages) do
-    for i, supportField in pairs(Product.supportFields) do
+    for _, supportField in pairs(Product.supportFields) do
       if supportField == index then
         if page.name ~= nil then
           local line = form.addLine(page.name)
@@ -414,9 +414,10 @@ end
 local function checkNextTask()
   local allPass = true
   if TEST then
-    Product.supportFields = {1, 2, 3, 4}
+    Product.supportFields = {2, 3, 4}
     Product.family = 2
-    Product.id = 79
+    Product.id = 68
+    Product.caliPrefix = "td_sr6"
   end
 
   for i, task in pairs(tasks) do

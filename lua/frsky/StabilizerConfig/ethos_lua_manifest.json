@@ -1,0 +1,14 @@
+{
+  "manifestVersion": 1,
+  "name": "StabilizerConfig",
+  "key": "org.frsky-ethos.stabilizerconfig",
+  "version": "3.0.12",
+  "folder": "StabilizerConfig",
+  "releaseNotes": {
+    "format": "markdown",
+    "content": "## Introduction\n\nConfig script for FrSky stabilizer receiver.\n\n## Update\n\n- Introduce JA translation\n\n- CN translation update\n\n- New designed UI.\n- Refine and categorize configuration items.\n- Add a responsive configuration wizard process.\n- Solution for Calibration Interface.\n- Support for new receivers.\n- Translation updated.\n- Translation for Chinese added (Only support ETHOS version later than 1.7.0).\n\n## Enhancement\n\n- Add special calibration bitmaps and labels when script detects it is a SR6 Mini (E).\n- Add a quick activation dialog when \"Gyro mode\" check fails.\n\n## Fixes\n\n- Fix the issue where configuring with an external module using scripts was not working.\n- Fix an issue in Ethos 1.6.2 that could cause a read failure.\n- Fix the issue where the script fails to load properly when certain languages are selected.\n- Fix the issue where six-axis calibration does not work properly with certain receivers.\n- Enlarged the bitmaps for receivers on the calibration page.\n\nIf you are running Ethos 1.6.0 or later, you can find it in the Device Config menu."
+  },
+  "files": [
+    "**"
+  ]
+}

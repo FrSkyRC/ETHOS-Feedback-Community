@@ -63,27 +63,15 @@ return {
   WaitUntilCali = "Espere hasta que la calibración haya terminado ...",
   PressCaliToStart = "Presione el botón \"Calibrar\" para empezar",
   CalibrationFinished = "¡Calibración terminada!",
-  OpenGyroMode = "Gyro mode not enabled",
-  ConfirmOpenGyroMode = "Do you want to enable \"Gyro mode\"?",
+  OpenGyroMode = "Modo Giro no activado",
+  ConfirmOpenGyroMode = "¿Quiere activar \"modo Giro\"?",
 
-  CaliSR6Step1 = "Coloque su SR6 horizontal, parte superior hacia arriba.",
-  CaliSR6Step2 = "Coloque su SR6 horizontal, parte superior hacia abajo.",
-  CaliSR6Step3 = "Coloque su SR6 vertical, con la antena hacia abajo.",
-  CaliSR6Step4 = "Coloque su SR6 vertical, con la antena hacia arriba.",
-  CaliSR6Step5 = "Coloque su SR6 con la antena hacia la derecha, y la parte de arriba hacia usted.",
-  CaliSR6Step6 = "Coloque su SR6 con la antena a la derecha, y la parte de abajo hacia usted.",
-
-  CaliCommonStep1 = "Coloque su Rx estabilizado horizontal con el frontal hacia arriba.",
-  CaliCommonStep2 = "Coloque su Rx estabilizado horizontal con la parte de abajo hacia arriba.",
-  CaliCommonStep3 = "Coloque su Rx estabilizado vertical en su lado corto con la etiqueta vuelta hacia la izquierda.",
-  CaliCommonStep4 = "Coloque su Rx estabilizado vertical en su lado corto con la etiqueda vuelta a la derecha.",
-  CaliCommonStep5 = "Coloque su Rx estabilizado vertical en el lado largo y estrecho con la etiqueta de lado derecho hacia arriba.",
-  CaliCommonStep6 = "Coloque su Rx estabilizado vertical con el lado largo y estrecho con la etiqueta hacia abajo.",
+  PositionRX = "Por favor, ponga su receptor como se muestra en la imagen",
 
   CaliFinished = "Calibración terminada. Ya puede salir de esta página",
 
   CheckingGyroMode = "Comprobando el modo giro ...",
-  GyroModeDisabled = "Please ENABLE the \"Gyro mode\" in Basic Configuration",
+  GyroModeDisabled = "Por favor, ACTIVE el \"modo Giro\" en la configuración básica",
 
   PreCaliLevelCali = "Calibración de nivelación",
   PreCaliStickCenter = "Calibración de centrado palanca",

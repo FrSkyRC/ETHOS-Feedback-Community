@@ -1,340 +1,569 @@
--- RB25S Stab Configure
+TEST = false
+RB25GlobalPath = "stab/"
 
-local translations = {en="RB25S stab"}
-
-local function name(widget)
-  local locale = system.getLocale()
-  return translations[locale] or translations["en"]
-end
-
-local requestInProgress = false
-local refreshIndex = 0
-local modifications = {}
-local fields = {}
-local page = 0
-local pages = {"Stable system 1", "Stable system 2"}
-local parameters = {}
-local parametersGroup = {}
-local idle = false
-
-local function getValue(parameter)
-  if parameter[5] == nil then
-    return 0
-  else
-    local sub = parameter[4]
-    local value = ((parameter[5] >> (8 * (sub - 1))) & 0xFF)
-    if #parameter >= 9 then
-      value = value - parameter[9]
-    end
-    return value
-  end
-end
-
-local function setValue(parameter, value)
-  local sub = parameter[4]
-  local D1 = parameter[5] & 0xFF
-  local D2 = (parameter[5] >> 8) & 0xFF
-  local D3 = (parameter[5] >> 16) & 0xFF
-
-  if #parameter >= 9 then
-    value = value + parameter[9]
-  end
-
-  if sub == 1 then
-    D1 = value
-  elseif sub == 2 then
-    D2 = value
-  elseif sub == 3 then
-    D3 = value
-  end
-  value = D1 + D2 * 256 + D3 * 256 * 256
-  local fieldId = parameter[3]
-  modifications[#modifications+1] = {fieldId, value}
-  for index = 1, #fields do
-    if fields[index] then
-      fields[index]:enable(false)
-    end
-  end
-end
-
-local function createNumberField(line, parameter)
-  local field = form.addNumberField(line, nil, parameter[6], parameter[7], function() return getValue(parameter) end, function(value) setValue(parameter, value) end)
-  field:enableInstantChange(false)
-  if #parameter >= 8 then
-    field:suffix(parameter[8])
-  end
-  if #parameter >= 10 then
-    field:prefix(parameter[10])
-  end
-  field:enable(false)
-  return field
-end
-
-local function createChoiceField(line, parameter)
-  local field = form.addChoiceField(line, nil, parameter[6], function() return getValue(parameter) end, function(value) setValue(parameter, value) end)
-  field:enable(false)
-  return field
-end
-
-local function createTextButton(line, parameter)
-  local field = form.addTextButton(line, nil, parameter[6], function() return setValue(parameter, parameter[7]) end)
-  field:enable(false)
-  return field
-end
-
-local function createTextButton(line, parameter)
-  local field = form.addTextButton(line, nil, parameter[6], function() setValue(parameter, parameter[7]) end)
-  field:enable(false)
-  return field
-end
-
-local function createResetButton(line, parameter)
-  local field = form.addTextButton(line, nil, parameter[6], function()
-    local buttons = {
-      {label="Cancel", action=function () return true end},
-      {label="Reset", action=function() setValue(parameter, parameter[7]) end},
-    }
-    local dialog = form.openDialog({
-      title="Confirm reset",
-      message="Settings are about to be reset.\nPlease confirm to continue.",
-      width=system.getVersion().lcdWidth * 2 / 3,
-      buttons=buttons
-    })
-  end)
-  field:enable(false)
-  return field
-end
-
-local parameters1 = {
-  -- { name, type, page, sub, value, min, max, unit, offset }
-  {"Reset", createResetButton, 0xA5, 3, nil, "Start", 0x81},
-  {"Stabilizing", createChoiceField, 0xA5, 1, nil, {{"Off", 0}, {"On", 1}} },
-  {"Self check", createTextButton, 0xA5, 2, nil, "Start", 1},
-  {"Quick mode", createChoiceField, 0xA6, 1, nil, {{"Disable", 0}, {"Enable", 1}} },
-
-  {"Wing type", createChoiceField, 0xA6, 2, nil, {{"Normal", 0}, {"Delta", 1}, {"VTail", 2}} },
-  {"Mounting type", createChoiceField, 0xA6, 3, nil, {{"Horizontal", 0}, {"Horizontal reverse", 1}, {"Vertical", 2}, {"Vertical reverse", 3}} },
-
-  {"CH1 mode", createChoiceField, 0xA7, 1, nil, {{"AIL1", 0}, {"AUX", 1}} },
-  {"CH2 mode", createChoiceField, 0xA7, 2, nil, {{"ELE1", 0}, {"AUX", 1}} },
-  {"CH4 mode", createChoiceField, 0xA7, 3, nil, {{"RUD", 0}, {"AUX", 1}} },
-  {"CH5 mode", createChoiceField, 0xA8, 1, nil, {{"AIL2", 0}, {"AUX", 1}} },
-  {"CH6 mode", createChoiceField, 0xA8, 2, nil, {{"ELE2", 0}, {"AUX", 1}} },
-
-  {"AIL inverted", createChoiceField, 0xA9, 1, nil, {{"Off", 0}, {"On", 0xFF}} },
-  {"ELE inverted", createChoiceField, 0xA9, 2, nil, {{"Off", 0}, {"On", 0xFF}} },
-  {"RUD inverted", createChoiceField, 0xA9, 3, nil, {{"Off", 0}, {"On", 0xFF}} },
-  {"AIL2 inverted", createChoiceField, 0xAA, 1, nil, {{"Off", 0}, {"On", 0xFF}} },
-  {"ELE2 inverted", createChoiceField, 0xAA, 2, nil, {{"Off", 0}, {"On", 0xFF}} },
-
-  {"AIL stab gain", createNumberField, 0xAB, 1, nil, 0, 200, "%"},
-  {"ELE stab gain", createNumberField, 0xAB, 2, nil, 0, 200, "%"},
-  {"RUD stab gain", createNumberField, 0xAB, 3, nil, 0, 200, "%"},
-  {"AIL auto 1v1 gain", createNumberField, 0xAC, 1, nil, 0, 200, "%"},
-  {"ELE auto 1v1 gain", createNumberField, 0xAC, 2, nil, 0, 200, "%"},
-  {"ELE hover gain", createNumberField, 0xAD, 2, nil, 0, 200, "%"},
-  {"RUD hover gain", createNumberField, 0xAD, 3, nil, 0, 200, "%"},
-  {"AIL knife gain", createNumberField, 0xAE, 1, nil, 0, 200, "%"},
-  {"RUD knife gain", createNumberField, 0xAE, 3, nil, 0, 200, "%"},
-
-  {"AIL auto 1v1 offset", createNumberField, 0xAF, 1, nil, -20, 20, "%", 0x80},
-  {"ELE auto 1v1 offset", createNumberField, 0xAF, 2, nil, -20, 20, "%", 0x80},
-  {"ELE hover offset", createNumberField, 0xB0, 2, nil, -20, 20, "%", 0x80},
-  {"RUD hover offset", createNumberField, 0xB0, 3, nil, -20, 20, "%", 0x80},
-  {"AIL knife offset", createNumberField, 0xB1, 1, nil, -20, 20, "%", 0x80},
-  {"RUD knife offset", createNumberField, 0xB1, 3, nil, -20, 20, "%", 0x80},
-
-  {"Roll degree", createNumberField, 0xB3, 1, nil, 0, 80, "°"},
-  {"Pitch degree", createNumberField, 0xB3, 2, nil, 0, 80, "°"},
-
-  {"AIL1 stick priority", createNumberField, 0xB4, 1, nil, 0, 100, "%"},
-  {"AIL1 rev. stick priority", createNumberField, 0xB4, 2, nil, 0, 100, "%", 0, "-"},
-  {"ELE1 stick priority", createNumberField, 0xB5, 1, nil, 0, 100, "%"},
-  {"ELE1 rev. stick priority", createNumberField, 0xB5, 2, nil, 0, 100, "%", 0, "-"},
-  {"RUD stick priority", createNumberField, 0xB6, 1, nil, 0, 100, "%"},
-  {"RUD rev. stick priority", createNumberField, 0xB6, 2, nil, 0, 100, "%", 0, "-"},
-  {"AIL2 stick priority", createNumberField, 0xB7, 1, nil, 0, 100, "%"},
-  {"AIL2 rev. stick priority", createNumberField, 0xB7, 2, nil, 0, 100, "%", 0, "-"},
-  {"ELE2 stick priority", createNumberField, 0xB8, 1, nil, 0, 100, "%"},
-  {"ELE2 rev. stick priority", createNumberField, 0xB8, 2, nil, 0, 100, "%", 0, "-"},
-}
-
-local parameters2 = {
-  -- { name, type, page, sub, value, min, max, unit, offset }
-  {"Reset", createResetButton, 0xC0, 3, nil, "Start", 0x81},
-  {"Stabilizing", createChoiceField, 0xC0, 1, nil, {{"Off", 0}, {"On", 1}} },
-  {"Self check", createTextButton, 0xC0, 2, nil, "Start", 1},
-  {"Quick mode", createChoiceField, 0xC1, 1, nil, {{"Disable", 0}, {"Enable", 1}} },
-
-  {"Wing type", createChoiceField, 0xC1, 2, nil, {{"Normal", 0}, {"Delta", 1}, {"VTail", 2}} },
-  {"Mounting type", createChoiceField, 0xC1, 3, nil, {{"Horizontal", 0}, {"Horizontal reverse", 1}, {"Vertical", 2}, {"Vertical reverse", 3}} },
-
-  {"CH7 mode", createChoiceField, 0xC2, 1, nil, {{"AIL3", 0}, {"AUX", 1}} },
-  {"CH8 mode", createChoiceField, 0xC2, 2, nil, {{"ELE3", 0}, {"AUX", 1}} },
-  {"CH9 mode", createChoiceField, 0xC2, 3, nil, {{"RUD2", 0}, {"AUX", 1}} },
-  {"CH10 mode", createChoiceField, 0xC3, 1, nil, {{"AIL4", 0}, {"AUX", 1}} },
-  {"CH11 mode", createChoiceField, 0xC3, 2, nil, {{"ELE4", 0}, {"AUX", 1}} },
-
-  {"AIL3 inverted", createChoiceField, 0xC4, 1, nil, {{"Off", 0}, {"On", 0xFF}} },
-  {"ELE3 inverted", createChoiceField, 0xC4, 2, nil, {{"Off", 0}, {"On", 0xFF}} },
-  {"RUD2 inverted", createChoiceField, 0xC4, 3, nil, {{"Off", 0}, {"On", 0xFF}} },
-  {"AIL4 inverted", createChoiceField, 0xC5, 1, nil, {{"Off", 0}, {"On", 0xFF}} },
-  {"ELE4 inverted", createChoiceField, 0xC5, 2, nil, {{"Off", 0}, {"On", 0xFF}} },
-
-  {"AIL3-4 stab gain", createNumberField, 0xC6, 1, nil, 0, 200, "%"},
-  {"ELE3-4 stab gain", createNumberField, 0xC6, 2, nil, 0, 200, "%"},
-  {"RUD2 stab gain", createNumberField, 0xC6, 3, nil, 0, 200, "%"},
-  {"AIL3-4 auto 1v1 gain", createNumberField, 0xC7, 1, nil, 0, 200, "%"},
-  {"ELE3-4 auto 1v1 gain", createNumberField, 0xC7, 2, nil, 0, 200, "%"},
-  {"ELE3-4 hover gain", createNumberField, 0xC8, 2, nil, 0, 200, "%"},
-  {"RUD2 hover gain", createNumberField, 0xC8, 3, nil, 0, 200, "%"},
-  {"AIL3-4 knife gain", createNumberField, 0xC9, 1, nil, 0, 200, "%"},
-  {"RUD2 knife gain", createNumberField, 0xC9, 3, nil, 0, 200, "%"},
-
-  {"AIL3-4 auto 1v1 offset", createNumberField, 0xCA, 1, nil, -20, 20, "%", 0x80},
-  {"ELE3-4 auto 1v1 offset", createNumberField, 0xCA, 2, nil, -20, 20, "%", 0x80},
-  {"ELE3-4 hover offset", createNumberField, 0xCB, 2, nil, -20, 20, "%", 0x80},
-  {"RUD2 hover offset", createNumberField, 0xCB, 3, nil, -20, 20, "%", 0x80},
-  {"AIL3-4 knife offset", createNumberField, 0xCC, 1, nil, -20, 20, "%", 0x80},
-  {"RUD2 knife offset", createNumberField, 0xCC, 3, nil, -20, 20, "%", 0x80},
-
-  {"Roll degree", createNumberField, 0xCD, 1, nil, 0, 80, "°"},
-  {"Pitch degree", createNumberField, 0xCD, 2, nil, 0, 80, "°"},
-
-  {"AIL3 stick priority", createNumberField, 0xCE, 1, nil, 0, 100, "%"},
-  {"AIL3 rev. stick priority", createNumberField, 0xCE, 2, nil, 0, 100, "%", 0, "-"},
-  {"ELE3 stick priority", createNumberField, 0xCF, 1, nil, 0, 100, "%"},
-  {"ELE3 rev. stick priority", createNumberField, 0xCF, 2, nil, 0, 100, "%", 0, "-"},
-  {"RUD2 stick priority", createNumberField, 0xD0, 1, nil, 0, 100, "%"},
-  {"RUD2 rev. stick priority", createNumberField, 0xD0, 2, nil, 0, 100, "%", 0, "-"},
-  {"AIL4 stick priority", createNumberField, 0xD1, 1, nil, 0, 100, "%"},
-  {"AIL4 rev. stick priority", createNumberField, 0xD1, 2, nil, 0, 100, "%", 0, "-"},
-  {"ELE4 stick priority", createNumberField, 0xD2, 1, nil, 0, 100, "%"},
-  {"ELE4 rev. stick priority", createNumberField, 0xD2, 2, nil, 0, 100, "%", 0, "-"},
-}
-
-
-local function runPage(step)
-  page = page + step
-  if page > 2 then
-    page = 2
-  elseif page < 1 then
-    page = 1
-  end
-
-  requestInProgress = false
-  refreshIndex = 0
-  modifications = {}
-  fields = {}
-  form.clear()
-  parameters = parametersGroup[page]
-
-  local line = form.addLine(pages[page])
-  form.addStaticText(line, nil, page.."/"..#pages)
-
-  for index = 1, #parameters do
-    local parameter = parameters[index]
-    local line = form.addLine(parameter[1])
-    local field = parameter[2](line, parameter)
-    fields[index] = field
-  end
-
-end
-
-local function create()
-  requestInProgress = false
-  refreshIndex = 0
-  modifications = {}
-  fields = {}
-  parametersGroup = {parameters1, parameters2}
-  page = 1
-
-  local sensor = sport.getSensor({appIdStart=0x0F10, appIdEnd=0x0F1F});
-
-  print("widget.sensor:appId = ", sensor:appId())
-
-  runPage(0)
-
-  return {sensor=sensor}
-end
-
-local function wakeup(widget)
-  -- TODO call discover
-  if widget.sensor:appId() == 0xFFFF then
-    local frame = widget.sensor:popFrame()
-    if frame == nil then
-      return
-    end
-    widget.sensor:module(frame:module())
-    widget.sensor:band(frame:band())
-    widget.sensor:rx(frame:rx())
-    widget.sensor:appId(frame:appId())
-  end
-  if idle == false then
-    widget.sensor:idle()
-    idle = true
-  end
-  if requestInProgress then
-    local value = widget.sensor:getParameter()
-    -- print("widget.sensor:getParameter = ", value)
-    if value then
-      local fieldId = value % 256
-      local parameter = parameters[refreshIndex + 1]
-      if fieldId == parameter[3] then
-        value = math.floor(value / 256)
-        while (parameters[refreshIndex + 1][3] == fieldId)
-        do
-          parameters[refreshIndex + 1][5] = value
-          if value ~= nil then
-            if fields[refreshIndex + 1] then
-              fields[refreshIndex + 1]:enable(true)
-            end
-          end
-          refreshIndex = refreshIndex + 1
-          if refreshIndex > (#parameters - 1) then break end
-        end
-        requestInProgress = false
-      end
+local REMOTE_VERSION_CONSTRAINT = function (major, minor, revision)
+  if major > 3 then
+    return true
+  elseif major == 3 then
+    if minor > 0 then
+      return true
+    elseif minor == 0 then
+      return revision >= 0
     else
-      requestInProgress = false
+      return false
     end
-  else
-    if #modifications > 0 then
-      -- print("writeParameter", modifications[1][1], modifications[1][2])
-      if widget.sensor:writeParameter(modifications[1][1], modifications[1][2]) == true then
-        if modifications[1][1] == 0x13 then -- appId changed
-          widget.sensor:appId(0x0F10 + ((modifications[1][2] >> 8) & 0xFF))
-        end
-        refreshIndex = 0
-        requestInProgress = false
-        modifications[1] = nil
-      end
-    elseif refreshIndex <= (#parameters - 1) then
-      local parameter = parameters[refreshIndex + 1]
-      -- print("requestParameter", parameter[3])
-      if widget.sensor:requestParameter(parameter[3]) then
-        requestInProgress = true
-      end
-    end
-  end
-end
-
-local function event(widget, category, value, x, y)
-  -- print("Event received:", category, value, x, y, KEY_EXIT_BREAK)
-  if category == EVT_KEY and value == KEY_PAGE_UP then
-    runPage(-1)
-    system.killEvents(KEY_PAGE_DOWN);
-    return true
-  elseif category == EVT_KEY and value == KEY_PAGE_DOWN then
-    runPage(1)
-    return true
   else
     return false
   end
 end
 
-local function close(widget)
-  widget.sensor:idle(false)
+local CommonFile = assert(loadfile(RB25GlobalPath .. "common.lua"))()
+Product = CommonFile.Product
+Module = CommonFile.Module
+Sensor = CommonFile.Sensor
+Dialog = CommonFile.Dialog
+Progress = CommonFile.Progress
+
+STR = assert(loadfile(RB25GlobalPath .. "i18n/i18n.lua"))().translate
+
+local function name()
+  return STR("ScriptName")
 end
 
-return {name=name, create=create, wakeup=wakeup, event=event, close=close}
+-- Data related
+local STATE_READ = 1
+local STATE_RECEIVE = 2
+local STATE_FINISHED = 3
+local STATE_PASS = 4
+
+local nextOpTime = nil
+local finalTime = nil
+local OPERATION_TIMEOUT = 1 -- second(s)
+local MAX_TIMEOUT = 10
+
+local createNeeded = false
+local createFunction = nil
+
+local file = nil
+local SAVE_STATE_REQUEST_NEXT = 0
+local SAVE_STATE_REQUEST_CURRENT = 1
+local SAVE_STATE_RESPONSE = 2
+local SAVE_STATE_FINISH = 3
+local LOAD_STATE_READ = 0
+local LOAD_STATE_WRITE = 1
+local LOAD_STATE_FINISH = 2
+local saveLoadState = SAVE_STATE_REQUEST_CURRENT
+local FIRST_ADDRESS = 0xA5
+local LAST_ADDRESS = 0xD2
+local backupAddress = FIRST_ADDRESS
+local fileSize = nil
+local fileLine = nil
+local loadSize = nil
+local function isAddressSupportBackup(address)
+  return (address >= 0xA5 and address <= 0xB1)
+      or (address >= 0xB3 and address <= 0xB8)
+      or (address >= 0xC0 and address <= 0xD2)
+end
+
+local REMOTE_DEVICE = {address = 0xFE, state = STATE_READ, field = nil, label = STR("RemoteDevice"), dataHandler = function (value, task)
+  Product.family = (value >> 8) & 0xFF
+  Product.id = (value >> 16) & 0xFF
+  print("Remote device family: " .. Product.family .. ", product: " .. Product.id)
+  local FrSkyProducts = assert(loadfile(RB25GlobalPath .. "products.lua"))()
+  for i, family in pairs(FrSkyProducts) do
+    if family.ID == Product.family then
+      for j, product in pairs(family.Products) do
+        if product.ID == Product.id then
+          Product.supportFields = product.SupportFields
+          Product.caliPrefix = product.CaliPrefix
+          if task.field ~= nil then
+            task.field:value(product.Name)
+            task.state = STATE_PASS
+            return
+          end
+        end
+      end
+    end
+  end
+  if task.field ~= nil then
+    task.field:value(STR("UnsupportDevice"))
+  end
+end}
+local REMOTE_VERSION = {address = 0xFF, state = STATE_READ, field = nil, label = STR("RemoteVersion"), dataHandler = function (value, task)
+  local major = (value >> 8) & 0xFF
+  local minor = (value >> 16) & 0xFF
+  local revision = (value >> 24) & 0xFF
+  local remoteVersion = string.format("%d.%d.%d", major, minor, revision)
+  print("Remote version: " .. remoteVersion)
+  if REMOTE_VERSION_CONSTRAINT(major, minor, revision) then
+    if task.field ~= nil then
+      task.field:value(remoteVersion)
+      task.state = STATE_PASS
+    end
+  else
+    if task.field ~= nil then
+      task.field:value(STR("UncompitableVersion"))
+    end
+  end
+end}
+
+local BANK = {address = 0xFD, state = STATE_READ, field = nil, label = "Current gyro memory", dataHandler = function (value, task)
+  local bank = ((value >> 8) & 0xFF) + 1
+  if task.field ~= nil then
+    task.field:value("Bank " .. bank)
+    task.state = STATE_PASS
+  end
+end}
+local tasks = {REMOTE_DEVICE, REMOTE_VERSION, BANK}
+local currentTask = nil
+local function clearAllTasks()
+  for _, task in pairs(tasks) do
+    task.state = STATE_READ
+    if task.field ~= nil then
+      task.field:value(STR("Reading"))
+    end
+  end
+  Product.resetProduct()
+end
+
+local pages = {{file = assert(loadfile(RB25GlobalPath .. "basic/basic.lua")()), label = STR("BasicConfig")},
+               {
+                 name = STR("StabilizerGroup1"),
+                 subPages = {
+                   {file = assert(loadfile(RB25GlobalPath .. "group1/precali1.lua")()), label = STR("Calibration")},
+                   {file = assert(loadfile(RB25GlobalPath .. "group1/stab1.lua")()), label = STR("Configuration")},}
+                 },
+               {
+                 name = STR("StabilizerGroup2"),
+                 subPages = {
+                   {file = assert(loadfile(RB25GlobalPath .. "group2/precali2.lua")()), label = STR("Calibration")},
+                   {file = assert(loadfile(RB25GlobalPath .. "group2/stab2.lua")()), label = STR("Configuration")},}
+                 },
+               {file = assert(loadfile(RB25GlobalPath .. "cali/cali.lua")()), label = STR("SixAxisCali")}}
+
+local currentPage = nil
+
+local function getPage(page)
+  return page.file
+end
+
+local restoreFileName = ""
+local function buildBackupForm(ePanel, focusRefresh)
+  if ePanel == nil then
+    return
+  end
+  ePanel:clear()
+
+  local ePanelLine = ePanel:addLine("")
+  local slots = form.getFieldSlots(ePanelLine, {270, "- "..STR("Load").." -","- "..STR("Save").." -"})
+
+  form.addFileField(ePanelLine, slots[1], "", "csv+ext", function ()
+    return restoreFileName
+  end, function (newFile)
+    restoreFileName = newFile
+  end)
+
+  form.addTextButton(ePanelLine, slots[2], STR("Load"), function()
+    print("Load pressed")
+    file = nil
+    fileSize = nil
+    fileLine = nil
+    loadSize = 0
+    if not restoreFileName or restoreFileName == "" then
+      Dialog.openDialog({title = STR("NoFileSelected"), message = STR("SelectFileFirstly"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
+      return
+    end
+
+    file = io.open(restoreFileName, "r+")
+    if file == nil then
+      Dialog.openDialog({title = STR("LoadFailed"), message = STR("FileReadError"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
+      return
+    end
+
+    print("Open file: ", restoreFileName)
+    local status, size = pcall(function()
+      local size = file:seek("end")
+      file:seek("set")
+      return size
+    end)
+
+    if status then
+      fileSize = size
+    else
+      print("file:seek() is not supported")
+    end
+
+    if not Progress.isDialogOpen() then
+      saveLoadState = LOAD_STATE_READ
+      backupAddress = FIRST_ADDRESS
+      Progress.openProgressDialog({title = STR("Loading"), message = STR("LoadingConfigurations", {progress = "0"}), close = function ()
+        file:close()
+        file = nil
+        print("Close file: ", restoreFileName)
+        Progress.clearDialog()
+      end, wakeup = function ()
+        if saveLoadState == LOAD_STATE_READ then
+          fileLine = file:read("l")
+          saveLoadState = LOAD_STATE_WRITE
+
+        elseif saveLoadState == LOAD_STATE_WRITE then
+          if fileLine == nil then
+            saveLoadState = LOAD_STATE_FINISH
+            Progress.message(STR("ConfigFileLoaded", {name = '\n' .. restoreFileName}))
+            Progress.value(100)
+            return
+          end
+
+          local lineData = {}
+          for value in fileLine:gmatch("([^,]+)") do
+            lineData[#lineData + 1] = tonumber(value)
+            if #lineData >= 2 then
+              break
+            end
+          end
+          if lineData[1] ~= nil and lineData[2] ~= nil and Sensor.writeParameter(lineData[1], lineData[2]) then
+            print("Sensor.writeParameter: " .. string.format("%X", lineData[1]) .. ", value: ", string.format("%X", lineData[2]))
+            saveLoadState = LOAD_STATE_READ
+            loadSize = loadSize + #fileLine + 1
+            local progress
+            if fileSize then
+              progress = math.ceil(loadSize * 100 / fileSize)
+            else
+              progress = math.ceil((backupAddress - FIRST_ADDRESS) * 100 / (LAST_ADDRESS - FIRST_ADDRESS + 1))
+              backupAddress = backupAddress + 1
+            end
+            Progress.message(STR("LoadingConfigurations", {progress = "" .. progress}))
+            Progress.value(progress)
+            fileLine = nil
+          end
+        end
+      end})
+    else
+      file:close()
+      file = nil
+    end
+  end)
+
+  local button = form.addTextButton(ePanelLine, slots[3], STR("Save"), function()
+    file = nil
+    if not Progress.isDialogOpen() then
+      print("Save pressed")
+      local configPrefix = model.name():gsub("%s", "_")
+      local configSuffix = ".csv"
+      local fileName = configPrefix .. configSuffix
+      file = io.open(fileName, "r")
+      if file ~= nil then
+        for i = 2, 99 do
+          fileName = configPrefix .. string.format("%02d", i) .. configSuffix
+          file = io.open(fileName, "r")
+          if file == nil then
+            break
+          end
+          file:close()
+          if i == 99 then
+            print("File name not available")
+            Dialog.openDialog({title = STR("SaveFailed"), message = STR("CannotSaveToFile"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
+            return
+          end
+        end
+      end
+
+      print("Open file: ", fileName)
+      file = io.open(fileName, "w+")
+      if file ~= nil then
+        backupAddress = FIRST_ADDRESS
+        saveLoadState = SAVE_STATE_REQUEST_CURRENT
+        Progress.openProgressDialog({title = STR("Saving"), message = STR("SavingConfigurations", {progress = "0"}), close = function ()
+          file:close()
+          file = nil
+          print("Close file: ", fileName)
+          -- E.M. will be raised
+          -- buildBackupForm(ePanel, true)
+          Progress.clearDialog()
+        end, wakeup = function ()
+          if TEST then
+            if file:seek("end") == 0 then
+              file:write("A5,0,\n")
+              file:seek("set")
+            end
+            return
+          end
+
+          if saveLoadState == SAVE_STATE_RESPONSE then
+            local value = Sensor.getParameter()
+            -- print("Get value: ", value)
+            if (value ~= nil) and (value & 0xFF == backupAddress) then
+              local address = value & 0xFF
+              value = value >> 8
+              local output = "" .. address .. "," .. value .. ",\n"
+              file:write(output)
+              print("Save value: ", output)
+              local progress = math.ceil((backupAddress - FIRST_ADDRESS) * 100 / (LAST_ADDRESS - FIRST_ADDRESS + 1))
+              Progress.message(STR("SavingConfigurations", {progress = "" .. progress}))
+              Progress.value(progress)
+              saveLoadState = SAVE_STATE_REQUEST_NEXT
+            elseif os.clock() > nextOpTime then
+              saveLoadState = SAVE_STATE_REQUEST_CURRENT
+            end
+
+          elseif saveLoadState ~= SAVE_STATE_FINISH then
+            if saveLoadState == SAVE_STATE_REQUEST_NEXT then
+              backupAddress = backupAddress + 1
+              while not isAddressSupportBackup(backupAddress) do
+                if backupAddress > LAST_ADDRESS then
+                  saveLoadState = SAVE_STATE_FINISH
+                  Progress.message(STR("ConfigSaveToFile", {fileName = fileName}))
+                  Progress.value(100)
+                  return
+                end
+                backupAddress = backupAddress + 1
+              end
+              saveLoadState = SAVE_STATE_REQUEST_CURRENT
+            end
+
+            if Sensor.requestParameter(backupAddress) then
+              print("Request address: ", string.format("%X", backupAddress))
+              saveLoadState = SAVE_STATE_RESPONSE
+              nextOpTime = os.clock() + OPERATION_TIMEOUT
+            end
+          end
+        end})
+      else
+        print("Error open file")
+        Dialog.openDialog({title = STR("SaveFailed"), message = STR("FSError"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}}})
+      end
+    end
+  end)
+
+  if focusRefresh then
+    button:focus()
+  else
+    ePanel:open(false)
+  end
+end
+
+local function buildpage()
+  if not Product.exist() then
+    return
+  end
+
+  local configureForm = form.addExpansionPanel(STR("SaveAndLoad"))
+  buildBackupForm(configureForm)
+
+  for index, page in pairs(pages) do
+    for _, supportField in pairs(Product.supportFields) do
+      if supportField == index then
+        if page.name ~= nil then
+          local line = form.addLine(page.name)
+          local fieldLabels = {}
+          for j, subPage in pairs(page.subPages) do
+            fieldLabels[#fieldLabels + 1] = "_ "..subPage.label.." _"
+          end
+          local slots = form.getFieldSlots(line, fieldLabels)
+          for j, subPage in pairs(page.subPages) do
+            form.addTextButton(line, slots[j], subPage.label, function()
+              form.clear()
+              local backLine = form.addLine(page.name .. " " .. subPage.label)
+              local rect = form.getFieldSlots(backLine, {nil})
+              form.addTextButton(backLine, rect[1], STR("Back"), function ()
+                if currentPage ~= nil then
+                  if getPage(currentPage).close ~= nil then
+                    getPage(currentPage).close()
+                  end
+                  currentPage = nil
+                  if createFunction ~= nil then
+                    createFunction()
+                  end
+                  lcd.invalidate()
+                  return true
+                end
+              end)
+              currentPage = subPage
+              if getPage(currentPage).pageInit ~= nil then
+                getPage(currentPage).pageInit()
+              end
+            end)
+          end
+
+        else
+          local line = form.addLine(page.label)
+          form.addTextButton(line, nil, STR("Open"), function()
+            form.clear()
+            local backLine = form.addLine(page.label)
+            local rect = form.getFieldSlots(backLine, {nil})
+            form.addTextButton(backLine, rect[1], STR("Back"), function ()
+              if currentPage ~= nil then
+                if getPage(currentPage).close ~= nil then
+                  getPage(currentPage).close()
+                end
+                currentPage = nil
+                if createFunction ~= nil then
+                  createFunction()
+                end
+                lcd.invalidate()
+                return true
+              end
+            end)
+            currentPage = page
+            if getPage(currentPage).pageInit ~= nil then
+              getPage(currentPage).pageInit()
+            end
+          end)
+        end
+
+        goto continue
+      end
+    end
+    ::continue::
+  end
+end
+
+local function checkNextTask()
+  local allPass = true
+  if TEST then
+    Product.supportFields = {2, 3, 4}
+    Product.family = 2
+    Product.id = 68
+    Product.caliPrefix = "td_sr6"
+  end
+
+  for i, task in pairs(tasks) do
+    if TEST then
+      task.state = STATE_PASS
+    end
+    if task.state ~= STATE_PASS then
+      allPass = false
+    end
+    if task.state < STATE_FINISHED then
+      print("Current task address: ", task.address)
+      finalTime = os.clock() + (MAX_TIMEOUT / #tasks)
+      return task
+    end
+  end
+
+  if allPass and Product.exist() then
+    buildpage()
+  end
+  print("All task finished")
+  return nil
+end
+
+local function taskInit()
+  print("Task init")
+  clearAllTasks()
+  currentTask = checkNextTask()
+  nextOpTime = os.clock() + OPERATION_TIMEOUT
+end
+
+createFunction = function ()
+  if TEST then
+    print("Test mode enabled")
+  end
+  taskInit()
+
+  form.clear()
+
+  local line
+  -- local line = form.addLine(STR("ScriptVersion"))
+  -- form.addStaticText(line, nil, LUA_VERSION)
+
+  for i, task in pairs(tasks) do
+    line = form.addLine(task.label)
+    task.field = form.addStaticText(line, nil, STR("Reading"))
+  end
+
+  line = form.addLine(STR("Module"))
+  form.addChoiceField(line, nil, {{STR("Internal"), Module.INTERNAL_MODULE}, {STR("External"), Module.EXTERNAL_MODULE}}, function() return Module.CurrentModule end, function(value)
+    Sensor.setModule(value)
+    createNeeded = true
+  end)
+
+  if TEST then
+    buildpage()
+  end
+  return {}
+end
+
+local function wakeup()
+  if createNeeded then
+    if createFunction ~= nil then
+      createFunction()
+    end
+    createNeeded = false
+  end
+  if currentPage ~= nil then
+    if getPage(currentPage).wakeup ~= nil then
+      getPage(currentPage).wakeup()
+    end
+  else
+    if currentTask == nil then
+      return
+    end
+
+    if currentTask.state == STATE_READ or os.clock() >= nextOpTime then
+      if Sensor.requestParameter(currentTask.address) then
+        print("sensor:requestParameter(), address: ", currentTask.address)
+        currentTask.state = STATE_RECEIVE
+        nextOpTime = os.clock() + OPERATION_TIMEOUT
+      end
+
+    elseif currentTask.state == STATE_RECEIVE then
+      local value = Sensor.getParameter()
+      if value == nil then
+        return
+      end
+
+      print("Sensor.getParameter(): " .. value)
+      if value & 0xFF ~= currentTask.address then
+        return
+      end
+
+      currentTask.state = STATE_FINISHED
+      currentTask.dataHandler(value, currentTask)
+      currentTask = checkNextTask()
+    end
+
+    if os.clock() >= finalTime and currentTask ~= nil then
+      print("Retries reached")
+      currentTask.state = STATE_FINISHED
+      if currentTask.field ~= nil then
+        currentTask.field:value(STR("UnableToRead"))
+      end
+      currentTask = checkNextTask()
+    end
+  end
+end
+
+local function paint()
+  if currentPage ~= nil and getPage(currentPage).paint ~= nil then
+    getPage(currentPage).paint()
+  end
+end
+
+local function event(pagesData, category, value, x, y)
+  if currentPage ~= nil and getPage(currentPage).event ~= nil then
+    if getPage(currentPage).event(pagesData, category, value, x, y) then
+      return true
+    end
+  end
+
+  if category == EVT_KEY and value == KEY_EXIT_BREAK then
+    if currentPage ~= nil then
+      if getPage(currentPage).close ~= nil then
+        getPage(currentPage).close()
+      end
+      currentPage = nil
+      if createFunction ~= nil then
+        createFunction()
+      end
+      lcd.invalidate()
+      return true
+    end
+  end
+end
+
+local function close()
+  currentPage = nil
+end
+
+return {name = name, create = createFunction, wakeup = wakeup, paint = paint, event = event, close = close}

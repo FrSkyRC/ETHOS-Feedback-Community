@@ -1,0 +1,14 @@
+{
+  "manifestVersion": 1,
+  "name": "Jet dashboard widget",
+  "key": "org.frsky-ethos.jetwidget",
+  "version": "1.0.0",
+  "folder": "JetWidget",
+  "releaseNotes": {
+    "format": "markdown",
+    "content": "## Introduction\n\nTurbine ecu widget developed and tested for use with Swiwin turbine ECUs. Can work with other turbine brands but will require manual configuration.\n\nIf you are running Ethos 1.6.0 or later, you can find it in the Device Config menu."
+  },
+  "files": [
+    "**"
+  ]
+}

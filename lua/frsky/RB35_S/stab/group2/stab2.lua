@@ -1,0 +1,352 @@
+local requestInProgress = false
+local refreshIndex = 0
+local modifications = {}
+local fields = {}
+
+local function getValue(parameter)
+  if parameter[5] == nil then
+    return 0
+  else
+    local sub = parameter[4]
+    local value
+    if type(sub) == 'table' then
+      value = 0
+      for vi, pi in ipairs(sub) do
+        local v = ((parameter[5] >> (8 * (pi - 1))) & 0xFF)
+        value = value | (v << (8 * (vi - 1)))
+      end
+    elseif type(sub) == 'number' then
+      value = ((parameter[5] >> (8 * (sub - 1))) & 0xFF)
+    else
+      value = parameter[5]
+    end
+    if #parameter >= 9 then
+      value = value - parameter[9]
+    end
+    return value
+  end
+end
+
+local function setValue(parameter, value)
+  local sub = parameter[4]
+  local byte = {};
+  byte[1] = parameter[5] & 0xFF
+  byte[2] = (parameter[5] >> 8) & 0xFF
+  byte[3] = (parameter[5] >> 16) & 0xFF
+
+  if #parameter >= 9 then
+    value = value + parameter[9]
+  end
+
+  if type(sub) == 'table' then
+    for vi, pi in ipairs(sub) do
+      byte[pi] = (value >> (8 * (vi - 1))) & 0xFF
+    end
+    value = byte[1] + byte[2] * 256 + byte[3] * 256 * 256
+  elseif type(sub) == 'number' then
+    byte[sub] = value
+    value = byte[1] + byte[2] * 256 + byte[3] * 256 * 256
+  end
+  local fieldId = parameter[3]
+  modifications[#modifications+1] = {fieldId, value}
+  for index = 2, #fields do
+    if fields[index] then
+      fields[index]:enable(false)
+    end
+  end
+end
+
+local function createNumberField(line, parameter)
+  local field = form.addNumberField(line, nil, parameter[6], parameter[7], function() return getValue(parameter) end, function(value) setValue(parameter, value) end)
+  field:enableInstantChange(false)
+  if #parameter >= 8 then
+    field:suffix(parameter[8])
+  end
+  if #parameter >= 10 then
+    field:prefix(parameter[10])
+  end
+  field:enable(false)
+  return field
+end
+
+local function createChoiceField(line, parameter)
+  local field = form.addChoiceField(line, nil, parameter[6], function() return getValue(parameter) end, function(value) setValue(parameter, value) end)
+  field:enable(false)
+  return field
+end
+
+-- local function createTextButton(line, parameter)
+--   local field = form.addTextButton(line, nil, parameter[6], function() setValue(parameter, parameter[7]) end)
+--   field:enable(false)
+--   return field
+-- end
+
+local function createResetButton(line, parameter)
+  local field = form.addTextButton(line, nil, parameter[6], function()
+    local buttons = {
+      {label="Cancel", action=function () return true end},
+      {label="Reset", action=function() setValue(parameter, parameter[7]) return true end},
+    }
+    form.openDialog({
+      title="Confirm reset",
+      message="Settings are about to be reset.\nPlease confirm to continue.",
+      buttons=buttons
+    })
+  end)
+  field:enable(false)
+  return field
+end
+
+local parameters = {
+  -- { name, type, page, sub, value, min, max, unit, offset }
+  {STR("Reset"), createResetButton, 0xC0, 3, nil, STR("Start"), 0x81},
+  {STR("Stabilizer"), createChoiceField, 0xC0, 1, nil, {{STR("Off"), 0}, {STR("On"), 1}} },
+  -- {"Self check", createTextButton, 0xC0, 2, nil, "Start", 1},
+  -- {STR("QuickMode"), createChoiceField, 0xC1, 1, nil, {{STR("Disable"), 0}, {STR("Enable"), 1}} },
+
+  {STR("WingType"), createChoiceField, 0xC1, 2, nil, {{STR("Normal"), 0}, {STR("Delta"), 1}, {STR("VTail"), 2}} },
+  {STR("MountingType"), createChoiceField, 0xC1, 3, nil, {{STR("Horizontal"), 0}, {STR("HorizontalRev"), 1}, {STR("Vertical"), 2}, {STR("VerticalRev"), 3}} },
+
+  {"Gyro mode switch", createNumberField, 0xD4, 2, nil, 0, 23, "", -1, "CH "},
+  {"Gyro mode at -100%", createChoiceField, 0xD6, 1, nil, {{"Stabilization", 0}, {"Auto level", 1}, {"Hover", 2}, {"Knife edge", 3}, {"Off", 4}, {"Heading hold", 5}}},
+  {"Gyro mode at 0%", createChoiceField, 0xD6, 2, nil, {{"Stabilization", 0}, {"Auto level", 1}, {"Hover", 2}, {"Knife edge", 3}, {"Off", 4}, {"Heading hold", 5}}},
+  {"Gyro mode at 100%", createChoiceField, 0xD6, 3, nil, {{"Stabilization", 0}, {"Auto level", 1}, {"Hover", 2}, {"Knife edge", 3}, {"Off", 4}, {"Heading hold", 5}}},
+
+
+  {STR("CHMode", {CH = "CH7"}), createChoiceField, 0xC2, 1, nil, {{"AIL3", 0}, {"AUX", 1}} },
+  {STR("CHMode", {CH = "CH8"}), createChoiceField, 0xC2, 2, nil, {{"ELE3", 0}, {"AUX", 1}} },
+  {STR("CHMode", {CH = "CH9"}), createChoiceField, 0xC2, 3, nil, {{"RUD2", 0}, {"AUX", 1}} },
+  {STR("CHMode", {CH = "CH10"}), createChoiceField, 0xC3, 1, nil, {{"AIL4", 0}, {"AUX", 1}} },
+  {STR("CHMode", {CH = "CH11"}), createChoiceField, 0xC3, 2, nil, {{"ELE4", 0}, {"AUX", 1}} },
+
+  {STR("CHInvert", {CH = "AIL3"}), createChoiceField, 0xC4, 1, nil, {{STR("Off"), 0}, {STR("On"), 0xFF}} },
+  {STR("CHInvert", {CH = "ELE3"}), createChoiceField, 0xC4, 2, nil, {{STR("Off"), 0}, {STR("On"), 0xFF}} },
+  {STR("CHInvert", {CH = "RUD2"}), createChoiceField, 0xC4, 3, nil, {{STR("Off"), 0}, {STR("On"), 0xFF}} },
+  {STR("CHInvert", {CH = "AIL4"}), createChoiceField, 0xC5, 1, nil, {{STR("Off"), 0}, {STR("On"), 0xFF}} },
+  {STR("CHInvert", {CH = "ELE4"}), createChoiceField, 0xC5, 2, nil, {{STR("Off"), 0}, {STR("On"), 0xFF}} },
+
+  {"Gain adj. CH", createNumberField, 0xD4, 1, nil, 0, 23, "", -1, "CH "},
+  {STR("CHStabGain", {CH = "AIL3-4"}), createNumberField, 0xC6, 1, nil, 0, 200, "%"},
+  {STR("CHStabGain", {CH = "ELE3-4"}), createNumberField, 0xC6, 2, nil, 0, 200, "%"},
+  {STR("CHStabGain", {CH = "RUD2"}), createNumberField, 0xC6, 3, nil, 0, 200, "%"},
+  {STR("CHAutoLvlGain", {CH = "AIL3-4"}), createNumberField, 0xC7, 1, nil, 0, 200, "%"},
+  {STR("CHAutoLvlGain", {CH = "ELE3-4"}), createNumberField, 0xC7, 2, nil, 0, 200, "%"},
+  {STR("CHHoverGain", {CH = "ELE3-4"}), createNumberField, 0xC8, 2, nil, 0, 200, "%"},
+  {STR("CHHoverGain", {CH = "RUD2"}), createNumberField, 0xC8, 3, nil, 0, 200, "%"},
+  {STR("CHKnifeGain", {CH = "AIL3-4"}), createNumberField, 0xC9, 1, nil, 0, 200, "%"},
+  {STR("CHKnifeGain", {CH = "RUD2"}), createNumberField, 0xC9, 3, nil, 0, 200, "%"},
+  {"Heading hold gain roll", createNumberField, 0xD5, 1, nil, 0, 255, "%"},
+  {"Heading hold gain pitch", createNumberField, 0xD5, 2, nil, 0, 255, "%"},
+  {"Heading hold gain yaw", createNumberField, 0xD5, 3, nil, 0, 255, "%"},
+
+  {STR("CHAutoLvlOffset", {CH = "AIL3-4"}), createNumberField, 0xCA, 1, nil, -20, 20, "%", 0x80},
+  {STR("CHAutoLvlOffset", {CH = "ELE3-4"}), createNumberField, 0xCA, 2, nil, -20, 20, "%", 0x80},
+  {STR("CHHoverOffset", {CH = "ELE3-4"}), createNumberField, 0xCB, 2, nil, -20, 20, "%", 0x80},
+  {STR("CHHoverOffset", {CH = "RUD2"}), createNumberField, 0xCB, 3, nil, -20, 20, "%", 0x80},
+  {STR("CHKnifeOffset", {CH = "AIL3-4"}), createNumberField, 0xCC, 1, nil, -20, 20, "%", 0x80},
+  {STR("CHKnifeOffset", {CH = "RUD2"}), createNumberField, 0xCC, 3, nil, -20, 20, "%", 0x80},
+
+  {STR("RollDegree"), createNumberField, 0xCD, 1, nil, 0, 80, "°"},
+  {STR("PitchDegree"), createNumberField, 0xCD, 2, nil, 0, 80, "°"},
+
+  {STR("CHStickPriority", {CH = "AIL3"}), createNumberField, 0xCE, 1, nil, 0, 100, "%"},
+  {STR("CHRevStickPriority", {CH = "AIL3"}), createNumberField, 0xCE, 2, nil, 0, 100, "%", 0, "-"},
+  {STR("CHStickPriority", {CH = "ELE3"}), createNumberField, 0xCF, 1, nil, 0, 100, "%"},
+  {STR("CHRevStickPriority", {CH = "ELE3"}), createNumberField, 0xCF, 2, nil, 0, 100, "%", 0, "-"},
+  {STR("CHStickPriority", {CH = "RUD2"}), createNumberField, 0xD0, 1, nil, 0, 100, "%"},
+  {STR("CHRevStickPriority", {CH = "RUD2"}), createNumberField, 0xD0, 2, nil, 0, 100, "%", 0, "-"},
+  {STR("CHStickPriority", {CH = "AIL4"}), createNumberField, 0xD1, 1, nil, 0, 100, "%"},
+  {STR("CHRevStickPriority", {CH = "AIL4"}), createNumberField, 0xD1, 2, nil, 0, 100, "%", 0, "-"},
+  {STR("CHStickPriority", {CH = "ELE4"}), createNumberField, 0xD2, 1, nil, 0, 100, "%"},
+  {STR("CHRevStickPriority", {CH = "ELE2"}), createNumberField, 0xD2, 2, nil, 0, 100, "%", 0, "-"},
+  -- {"Heading hold", createChoiceField, 0xD5, 1, nil, {{STR("Off"), 0}, {STR("On"), 1}}},
+  -- {"Angle velocity roll", createNumberField, 0xD5, {2, 3}, nil, 0, 1000, " deg"},
+  -- {"Angle V. gain pitch", createNumberField, 0xD6, 1, nil, 0, 200, "%"},
+  -- {"Angle velocity pitch", createNumberField, 0xD6, {2, 3}, nil, 0, 1000, " deg"},
+  -- {"Angle V. gain yaw", createNumberField, 0xD7, 1, nil, 0, 200, "%"},
+  -- {"Angle velocity yaw", createNumberField, 0xD7, {2, 3}, nil, 0, 1000, " deg"},
+}
+
+local restoreFileName = ""
+local addressIndex = 3
+local valueIndex = 5
+local function buildBackupForm(ePanel, focusRefresh)
+  ePanel:clear()
+
+  local ePanelLine = ePanel:addLine("")
+  local slots = form.getFieldSlots(ePanelLine, {270, "- "..STR("Load").." -","- "..STR("Save").." -"})
+
+  form.addFileField(ePanelLine, slots[1], "", "csv+ext", function ()
+    return restoreFileName
+  end, function (newFile)
+    restoreFileName = newFile
+  end)
+
+  form.addTextButton(ePanelLine, slots[2], STR("Load"), function()
+    if refreshIndex == 0 then
+      Dialog.openDialog({title = STR("LoadFailed"), message = STR("ReadSettingsFirstly"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
+      return
+    end
+
+    if not restoreFileName or restoreFileName == "" then
+      Dialog.openDialog({title = STR("NoFileSelected"), message = STR("SelectFileFirstly"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
+      return
+    end
+
+    local file = io.open(restoreFileName, "r+")
+    if file == nil then
+      Dialog.openDialog({title = STR("LoadFailed"), message = STR("FileReadError"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
+      return
+    end
+
+    local line = file:read("l")
+    while line do
+      local lineData = {}
+      for value in line:gmatch("([^,]+)") do
+        lineData[#lineData + 1] = tonumber(value)
+        if #lineData >= 2 then
+          break
+        end
+      end
+      if lineData[1] ~= nil and lineData[2] ~= nil then
+        modifications[#modifications + 1] = {lineData[1], lineData[2]}
+      end
+      line = file:read("l")
+    end
+    file:close()
+    for index = 1, #fields do
+      if fields[index] then
+        fields[index]:enable(false)
+      end
+    end
+    Dialog.openDialog({title = STR("ConfigurationLoaded"), message = STR("ConfigFileLoaded", {name = '\n' .. restoreFileName}), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
+  end)
+
+  local button = form.addTextButton(ePanelLine, slots[3], "Save", function()
+    if refreshIndex == 0 then
+      Dialog.openDialog({title = STR("SaveFailed"), message = STR("ReadSettingsFirstly"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
+      return
+    end
+
+    local output = ""
+    local addresses = {}
+    local fullTable = parameters
+
+    for pi = 1, #fullTable do
+      local find = false
+      local param = fullTable[pi]
+      for ai = 1, #addresses do
+        if addresses[ai] == param[addressIndex] then
+          find = true
+          break
+        end
+      end
+      if not find and param[valueIndex] ~= nil then
+        output = output .. param[addressIndex] .. "," .. param[valueIndex] .. ",\n"
+        addresses[#addresses + 1] = param[addressIndex]
+      end
+    end
+
+    local file
+    local configPrefix = model.name():gsub("%s", "_")
+    local configSuffix = ".csv"
+    local fileName = configPrefix .. configSuffix
+    file = io.open(fileName, "r")
+    if file ~= nil then
+      for i = 2, 99 do
+        fileName = configPrefix .. string.format("%02d", i) .. configSuffix
+        file = io.open(fileName, "r")
+        if file == nil then
+          break
+        end
+        file:close()
+        if i == 99 then
+          Dialog.openDialog({title = STR("SaveFailed"), message = STR("CannotSaveToFile"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
+          return
+        end
+      end
+    end
+
+    file = io.open(fileName, "w+")
+    if file ~= nil then
+      file:write(output)
+      file:close()
+      Dialog.openDialog({title = STR("configurationSaved"), message = STR("ConfigSaveToFile", {fileName = "\n"..fileName}) .. fileName, buttons = {{label = STR("OK"), action = function ()
+        Dialog.closeDialog()
+        buildBackupForm(ePanel, true)
+      end}},})
+    else
+      Dialog.openDialog({title = STR("SaveFailed"), message = STR("FSError"), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
+    end
+  end)
+  if focusRefresh then
+    button:focus()
+  else
+    ePanel:open(false)
+  end
+end
+
+local function pageInit()
+  requestInProgress = false
+  refreshIndex = 0
+  modifications = {}
+  fields = {}
+
+  local configureForm = form.addExpansionPanel(STR("SaveAndLoad"))
+  buildBackupForm(configureForm)
+
+  for index = 1, #parameters do
+    local parameter = parameters[index]
+    local line = form.addLine(parameter[1])
+    local field = parameter[2](line, parameter)
+    fields[index] = field
+  end
+end
+
+local function wakeup(widget)
+  if requestInProgress then
+    local value = Sensor.getParameter()
+    -- print("widget.sensor:getParameter = ", value)
+    if value then
+      local fieldId = value % 256
+      local parameter = parameters[refreshIndex + 1]
+      if fieldId == parameter[3] then
+        value = math.floor(value / 256)
+        while (parameters[refreshIndex + 1][3] == fieldId)
+        do
+          parameters[refreshIndex + 1][5] = value
+          if value ~= nil then
+            if fields[refreshIndex + 1] then
+              fields[refreshIndex + 1]:enable(true)
+            end
+          end
+          refreshIndex = refreshIndex + 1
+          if refreshIndex > (#parameters - 1) then break end
+        end
+        requestInProgress = false
+      end
+    else
+      requestInProgress = false
+    end
+  else
+    if #modifications > 0 then
+      -- print("writeParameter", modifications[1][1], modifications[1][2])
+      if Sensor.writeParameter(modifications[1][1], modifications[1][2]) == true then
+        if modifications[1][1] == 0x13 then -- appId changed
+          Sensor.appId(Sensor.APPID + ((modifications[1][2] >> 8) & 0xFF))
+        end
+        refreshIndex = 0
+        requestInProgress = false
+        table.remove(modifications, 1)
+      end
+    elseif refreshIndex <= (#parameters - 1) then
+      local parameter = parameters[refreshIndex + 1]
+      -- print("requestParameter", parameter[3])
+      if Sensor.requestParameter(parameter[3]) then
+        requestInProgress = true
+      end
+    end
+  end
+end
+
+return {pageInit = pageInit, wakeup = wakeup}

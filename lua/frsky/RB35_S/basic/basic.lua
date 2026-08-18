@@ -154,7 +154,7 @@ end
 local CHANNEL_CONFIGS = {{"CH1", 0x00}, {"CH2", 0x01}, {"CH3", 0x02}, {"CH4", 0x03}, {"CH5", 0x04}, {"CH6", 0x05}, {"CH7", 0x06}, {"CH8", 0x07},
                          {"CH9", 0x08}, {"CH10", 0x09}, {"CH11", 0x0A}, {"CH12", 0x0B}, {"CH13", 0x0C}, {"CH14", 0x0D}, {"CH15", 0x0E}, {"CH16", 0x0F},
                          {"CH17", 0x10}, {"CH18", 0x11}, {"CH19", 0x12}, {"CH20", 0x13}, {"CH21", 0x14}, {"CH22", 0x15}, {"CH23", 0x16}, {"CH24", 0x17},
-                         {"S.Port", 0x40}, {"SBUS", 0x80}, {"FBUS", 0xC0}}
+                         {"S.Port", 0x40}, {"S.Bus", 0x80}, {"F.Bus", 0xC0}}
 
 local CHANNEL_LOG = {{"CH1", 0x00}, {"CH2", 0x01}, {"CH3", 0x02}, {"CH4", 0x03}, {"CH5", 0x84}, {"CH6", 0x85}, {"CH7", 0x86}, {"CH8", 0x87},
                          {"CH9", 0x88}, {"CH10", 0x89}, {"CH11", 0x8A}, {"CH12", 0x0B}, {"CH13", 0x0C}, {"CH14", 0x0D}, {"CH15", 0x0E}, {"CH16", 0x0F},
@@ -275,7 +275,7 @@ local function create()
 end
 
 local function wakeup(widget)
-  -- TODO call discover
+  local invalidateNeeded = false
   if widget.sensor:appId() == 0xFFFF then
     local frame = widget.sensor:popFrame()
     if frame == nil then
@@ -301,7 +301,7 @@ local function wakeup(widget)
         -- print("widget.sensor:value = ", value)
         while parameters[refreshIndex + 1][3] == fieldId do
           if parameters[refreshIndex + 1][5] ~= nil and value ~= nil then
-            lcd.invalidate()
+            invalidateNeeded = true;
           end
           parameters[refreshIndex + 1][5] = value
           if value ~= nil then
@@ -341,6 +341,9 @@ local function wakeup(widget)
         requestInProgress = true
       end
     end
+  end
+  if invalidateNeeded then
+    lcd.invalidate()
   end
 end
 

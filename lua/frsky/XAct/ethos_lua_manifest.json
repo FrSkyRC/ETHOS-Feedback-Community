@@ -1,0 +1,14 @@
+{
+  "manifestVersion": 1,
+  "name": "XAct",
+  "key": "org.frsky-ethos.xact",
+  "version": "2.0.2",
+  "folder": "XAct",
+  "releaseNotes": {
+    "format": "markdown",
+    "content": "## Introduction\n\nConfiguration script for FrSky XAct.\n\n## V2.0.1\n\n- Introduced more configurable parameters for XAct.\n\nIf you are running Ethos 1.6.0 or later, you can find it in the Device Config menu."
+  },
+  "files": [
+    "**"
+  ]
+}

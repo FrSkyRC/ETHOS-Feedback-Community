@@ -23,8 +23,8 @@ local SXR_CALI_HINTS = {
   "Place your RB35 horizontal, top side down.",
   "Place your RB35 vertical, battery pins down.",
   "Place your RB35 vertical, battery pins up.",
-  "Place your RB35 front side facing you, label oriented.",
-  "Place your RB35 front side facing you, label upside down.",
+  "Place your RB35 label facing you, battery pound to the left.",
+  "Place your RB35 downside facing you, NFC remote connector side to left.",
 }
 
 local idle = false
@@ -64,7 +64,6 @@ local function paint(widget)
 end
 
 local function wakeup(widget)
-  -- TODO call discover
   if widget.sensor:appId() == 0xFFFF then
     local frame = widget.sensor:popFrame()
     if frame == nil then

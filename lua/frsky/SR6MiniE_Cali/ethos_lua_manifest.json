@@ -1,0 +1,14 @@
+{
+  "manifestVersion": 1,
+  "name": "SR6MiniE Cali",
+  "key": "org.frsky-ethos.sr6miniecali",
+  "version": "1.0.4",
+  "folder": "SR6MiniE_Cali",
+  "releaseNotes": {
+    "format": "markdown",
+    "content": "## Introduction\n\nCalibration script for FrSky SR6 Mini E..\n\n## Fixes\n\n- Fixed the issue of calibration failure.\n\nIf you are running Ethos 1.6.0 or later, you can find it in the Device Config menu."
+  },
+  "files": [
+    "**"
+  ]
+}

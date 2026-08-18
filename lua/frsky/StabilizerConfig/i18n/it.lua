@@ -66,19 +66,7 @@ return {
   OpenGyroMode = "Gyro non abilitato",
   ConfirmOpenGyroMode = "Vuoi abilitare \"Gyro mode\"?",
 
-  CaliSR6Step1 = "Metti la SR6 orizzontale, parte superiore su.",
-  CaliSR6Step2 = "Metti la SR6 orizzontale, parte superiore giù.",
-  CaliSR6Step3 = "Metti la SR6 verticale, ANT giù.",
-  CaliSR6Step4 = "Metti la SR6 verticale, ANT su.",
-  CaliSR6Step5 = "Metti la SR6 con ANT destra, parte superiore frontale a te.",
-  CaliSR6Step6 = "Metti la SR6 con ANT destra, parte posteriore frontale a te.",
-
-  CaliCommonStep1 = "Metti la Rx Stabilizzata orizzontale con la parte superiore su.",
-  CaliCommonStep2 = "Metti la Rx Stabilizzata orizzontale con la parte inferiore su.",
-  CaliCommonStep3 = "Metti la Rx Stabilizzata verticale con etichetta girata a sinistra.",
-  CaliCommonStep4 = "Metti la Rx Stabilizzata verticale con etichetta girata a destra.",
-  CaliCommonStep5 = "Metti la Rx Stabilizzata verticale con etichetta faccia sopra.",
-  CaliCommonStep6 = "Metti la Rx Stabilizzata verticale con etichetta faccia sotto.",
+  PositionRX = "Metti la ricevente come nell'immagine",
 
   CaliFinished = "Calibrazione completata. Puoi uscire da questa pagina",
 
