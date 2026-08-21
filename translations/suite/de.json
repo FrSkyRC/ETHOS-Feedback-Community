@@ -271,11 +271,11 @@
             "ControlsPanel": "Steuerelemente",
             "TelemetryPanel": "Telemetrie",
             "ConsolePanel": "Konsole",
-            "SimUnresponsiveTitle": "Simulator not responding",
-            "SimUnresponsiveMessage": "The ETHOS simulator appears to have stopped responding. Do you need to force-close it?",
-            "CloseSimulator": "Close simulator",
-            "FailToOpenSimWindow": "Failed to open the simulator window",
-            "ContinueWaiting": "Keep waiting"
+            "SimUnresponsiveTitle": "Simulator reagiert nicht",
+            "SimUnresponsiveMessage": "Der ETHOS-Simulator reagiert anscheinend nicht mehr. Möchten Sie ihn zwangsweise beenden?",
+            "CloseSimulator": "Simulator schließen",
+            "FailToOpenSimWindow": "Das Simulatorfenster konnte nicht geöffnet werden.",
+            "ContinueWaiting": "WWeiter warten."
         },
         "BackupRecovery": {
             "Advanced": "Erweitert",
@@ -688,6 +688,6 @@
         "ScrollToZoomX": "Scrollen, um X-Achse zu zoomen",
         "ScrollToZoomY": "Scrollen, um Y-Achse zu zoomen",
         "ResetColors": "Farben zurücksetzen",
-        "ReferenceLine": "Reference line"
+        "ReferenceLine": "Bezugslinie"
     }
 }
