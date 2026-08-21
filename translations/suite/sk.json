@@ -221,7 +221,7 @@
             "DownloadingSimulator": "Sťahovanie simulátora ...",
             "InitSimulatorFailed": "Nepodarilo sa inicializovať simulátor",
             "FailToPrepareSimDir": "Pri príprave potrebného adresára pre simulátor sa vyskytla chyba.",
-            "StopSimulator": "Stop simulátora",
+            "StopSimulator": "Stop simulator",
             "UploadFiles": "Nahrávanie súborov",
             "FileUploadedAndReloadSimQuestion": "Súbory boli úspešne nahrané. Je potrebné reštartovať simulátor, aby sa súbory načítali.",
             "SwitchPageQuestion": "Simulátor sa čoskoro zastaví. Naozaj chcete pokračovať?",
@@ -270,7 +270,12 @@
             "DisplayPanel": "Display",
             "ControlsPanel": "Controls",
             "TelemetryPanel": "Telemetry",
-            "ConsolePanel": "Console"
+            "ConsolePanel": "Console",
+            "SimUnresponsiveTitle": "Simulator not responding",
+            "SimUnresponsiveMessage": "The ETHOS simulator appears to have stopped responding. Do you need to force-close it?",
+            "CloseSimulator": "Close simulator",
+            "FailToOpenSimWindow": "Failed to open the simulator window",
+            "ContinueWaiting": "Keep waiting"
         },
         "BackupRecovery": {
             "Advanced": "Advanced",

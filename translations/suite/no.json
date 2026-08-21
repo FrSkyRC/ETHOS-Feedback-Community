@@ -221,7 +221,7 @@
             "DownloadingSimulator": "Laster ned simulator ...",
             "InitSimulatorFailed": "Initialisering av simulator feilet",
             "FailToPrepareSimDir": "En feil oppstod under klargjøring av filmappen til simulatoren",
-            "StopSimulator": "Stopp simulator",
+            "StopSimulator": "Stop simulator",
             "UploadFiles": "Last opp filer",
             "FileUploadedAndReloadSimQuestion": "Filene ble lastet opp som de skulle. Trenger du å omstarte simulatoren for å aktivere filene?",
             "SwitchPageQuestion": "Simulatoren stopper. Er du sikker på at du vil fortsette?",
@@ -270,7 +270,12 @@
             "DisplayPanel": "Skjerm",
             "ControlsPanel": "Kontroller",
             "TelemetryPanel": "Telemetri",
-            "ConsolePanel": "Konsoll"
+            "ConsolePanel": "Konsoll",
+            "SimUnresponsiveTitle": "Simulator not responding",
+            "SimUnresponsiveMessage": "The ETHOS simulator appears to have stopped responding. Do you need to force-close it?",
+            "CloseSimulator": "Close simulator",
+            "FailToOpenSimWindow": "Failed to open the simulator window",
+            "ContinueWaiting": "Keep waiting"
         },
         "BackupRecovery": {
             "Advanced": "Avansert",

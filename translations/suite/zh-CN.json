@@ -290,7 +290,12 @@
             "DisplayPanel": "显示",
             "ControlsPanel": "控制",
             "TelemetryPanel": "遥测",
-            "ConsolePanel": "控制台"
+            "ConsolePanel": "控制台",
+            "SimUnresponsiveTitle": "模拟器无响应",
+            "SimUnresponsiveMessage": "The ETHOS simulator appears to have stopped responding. Do you need to force-close it?",
+            "CloseSimulator": "关闭模拟器",
+            "FailToOpenSimWindow": "无法打开模拟器窗口",
+            "ContinueWaiting": "继续等待"
         },
         "AppTitle": "ETHOS"
     },

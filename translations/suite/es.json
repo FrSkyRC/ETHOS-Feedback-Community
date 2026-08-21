@@ -202,7 +202,7 @@
             "DownloadingSimulator": "Descargando simulador ...",
             "InitSimulatorFailed": "Fallo al iniciar simulador",
             "FailToPrepareSimDir": "Ha ocurrido un error mientras se preparaba el directorio necesario para el simulador",
-            "StopSimulator": "Parar simulador",
+            "StopSimulator": "Stop simulator",
             "UploadFiles": "Cargar archivos",
             "FileUploadedAndReloadSimQuestion": "Ficheros cargados con éxito. Necesita reiniciar el simulador para cargar los archivos",
             "SwitchPageQuestion": "El simulador se va a detener. ¿Esta seguro de continuar?",
@@ -251,7 +251,12 @@
             "DisplayPanel": "Pantalla",
             "ControlsPanel": "Controles",
             "TelemetryPanel": "Telemetría",
-            "ConsolePanel": "Consola"
+            "ConsolePanel": "Consola",
+            "SimUnresponsiveTitle": "Simulator not responding",
+            "SimUnresponsiveMessage": "The ETHOS simulator appears to have stopped responding. Do you need to force-close it?",
+            "CloseSimulator": "Close simulator",
+            "FailToOpenSimWindow": "Failed to open the simulator window",
+            "ContinueWaiting": "Keep waiting"
         },
         "BackupRecovery": {
             "Advanced": "Avanzado",
