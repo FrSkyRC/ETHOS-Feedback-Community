@@ -687,6 +687,7 @@
         "ChartHintSwapped": "Deslizar para ampliar Y · Ctrl+deslizar para ampliar tiempo · Arrastre para mover · Pasa el cursor para ver los valores · Haga doble clic para bloquear el enfoque",
         "ScrollToZoomX": "Deslizar para ampliar X",
         "ScrollToZoomY": "Deslizar para ampliar Y",
-        "ResetColors": "Restablecer colores"
+        "ResetColors": "Restablecer colores",
+        "ReferenceLine": "Reference line"
     }
 }

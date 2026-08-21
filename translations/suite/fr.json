@@ -687,6 +687,7 @@
         "ChartHintSwapped": "Défiler pour zoomer sur l'axe Y· Ctrl+Défilement pour zoomer l'heure· Glisser pour déplacer la vue · Survolez pour afficher les valeurs · Double-cliquez pour verrouiller la mise au point",
         "ScrollToZoomX": "Défiler pour zoomer sur l'axe X",
         "ScrollToZoomY": "Défiler pour zoomer sur l'axe Y",
-        "ResetColors": "RAZ coluleurs"
+        "ResetColors": "RAZ coluleurs",
+        "ReferenceLine": "Reference line"
     }
 }

@@ -498,7 +498,8 @@
         "ErrorReadFailed": "Failed to read the selected file.",
         "ScrollToZoomX": "Scroll to zoom X",
         "ScrollToZoomY": "Scroll to zoom Y",
-        "ResetColors": "Reset colors"
+        "ResetColors": "Reset colors",
+        "ReferenceLine": "Reference line"
     },
     "DownloadCenter": {
         "DownloadCenter": "FrSky product list",

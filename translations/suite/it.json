@@ -687,6 +687,7 @@
         "ChartHintSwapped": "Scorri per zoom Y · Ctrl+scorri per zoom Ora/durata · Trascina per pan · Passa su per valori · Doppio-click per bloccare Focus",
         "ScrollToZoomX": "Scorri per ingrandire X",
         "ScrollToZoomY": "Scorri per ingrandire Y",
-        "ResetColors": "Ripristina colori"
+        "ResetColors": "Ripristina colori",
+        "ReferenceLine": "Reference line"
     }
 }

@@ -687,6 +687,7 @@
         "ChartHintSwapped": "Kolečko zoomuje Y · Ctrl+kolečko zoomuje čas · Přetažením posouváte čas · Najetím zobrazte hodnoty · Dvoj klik uzamkne hodnoty",
         "ScrollToZoomX": "Posunutím zvětšíte X",
         "ScrollToZoomY": "Posunutím zvětšíte Y",
-        "ResetColors": "Obnovit nastavení barvy"
+        "ResetColors": "Obnovit nastavení barvy",
+        "ReferenceLine": "Reference line"
     }
 }

@@ -498,7 +498,8 @@
         "ErrorReadFailed": "读取所选文件失败",
         "ScrollToZoomX": "滚动缩放 X 轴",
         "ScrollToZoomY": "滚动缩放 Y 轴",
-        "ResetColors": "Reset colors"
+        "ResetColors": "Reset colors",
+        "ReferenceLine": "Reference line"
     },
     "DownloadCenter": {
         "DownloadCenter": "FrSky 产品列表",
