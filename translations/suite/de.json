@@ -221,7 +221,7 @@
             "DownloadingSimulator": "Simulator herunterladen...",
             "InitSimulatorFailed": "Simulator konnte nicht initialisiert werden",
             "FailToPrepareSimDir": "Bei der Erstellung des erforderlichen Verzeichnisses für den Simulator ist ein Fehler aufgetreten",
-            "StopSimulator": "Stop simulator",
+            "StopSimulator": "Simulator stoppen",
             "UploadFiles": "Dateien hochladen",
             "FileUploadedAndReloadSimQuestion": "Dateien erfolgreich hochgeladen. Möchten Sie den Simulator neu starten, um die Dateien zu laden?",
             "SwitchPageQuestion": "Der Simulator wird angehalten. Möchten Sie wirklich fortfahren?",
