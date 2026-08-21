@@ -90,7 +90,7 @@ return {
   Stabilizer = "安定機能",
   QuickMode = "クイックモード",
   WingType = "ウィングタイプ",
-  Normal = "ノーマル（通常固定翼）",
+  Normal = "従来型",
   Delta = "デルタ",
   VTail = "Vテール",
   MountingType = "実装方向",
