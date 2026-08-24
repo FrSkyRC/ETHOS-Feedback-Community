@@ -510,8 +510,8 @@
         "TargetUpdateRequiresBasicComponent": "{{ targetComponent }} {{ targetVersion }} richiedono {{ requireComponent }} {{ requireVersion }}.",
         "ConfirmFlashComponentFirst": "Flash {{ requireComponent }} prima?",
         "ConfirmRequirementsVersion": "Prima di proseguire, si prega di verificare che il numero di versione dei componenti sopra indicati sia conforme ai requisiti",
-        "FlashRequiredComponents": "Flash required component(s)",
-        "ShowInTheProdcutsList": "Show details in the FrSky product list"
+        "FlashRequiredComponents": "Flash dei componenti richiesti",
+        "ShowInTheProdcutsList": "Mostra dettagli nella lista prodotti FrSky"
     },
     "Model": {
         "BackupLocation": "Posizione Backup",
@@ -693,6 +693,6 @@
         "ScrollToZoomX": "Scorri per ingrandire X",
         "ScrollToZoomY": "Scorri per ingrandire Y",
         "ResetColors": "Ripristina colori",
-        "ReferenceLine": "Reference line"
+        "ReferenceLine": "Linea di riferimento"
     }
 }
