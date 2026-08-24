@@ -224,7 +224,7 @@
             "StopSimulator": "Stop simulator",
             "UploadFiles": "Nahrávanie súborov",
             "FileUploadedAndReloadSimQuestion": "Súbory boli úspešne nahrané. Je potrebné reštartovať simulátor, aby sa súbory načítali.",
-            "SwitchPageQuestion": "Simulátor sa čoskoro zastaví. Naozaj chcete pokračovať?",
+            "SwitchPageQuestion": "You are about to leave this page. Would you like to suspend the simulator and keep it running in the background, or close the simulator?",
             "NoDestDirSelected": "Nie je vybraný žiadny cieľový adresár!",
             "SyncRadioFilesToLocalSimulator": "Synchronizácia rádiových súborov s lokálnym simulátorom",
             "OpenLocalSimDir": "Otvoriť lokálny adresár simulátora",
@@ -277,7 +277,8 @@
             "FailToOpenSimWindow": "Failed to open the simulator window",
             "ContinueWaiting": "Keep waiting",
             "LoadLastLayout": "Load last page layout",
-            "LoadLastControls": "Load last control positions"
+            "LoadLastControls": "Load last control positions",
+            "SuspendSimulator": "Suspend"
         },
         "BackupRecovery": {
             "Advanced": "Advanced",

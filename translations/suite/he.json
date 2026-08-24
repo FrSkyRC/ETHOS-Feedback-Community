@@ -224,7 +224,7 @@
             "StopSimulator": "Stop simulator",
             "UploadFiles": "Upload files",
             "FileUploadedAndReloadSimQuestion": "Files uploaded successfully. Do you need to restart the simulator to load the files?",
-            "SwitchPageQuestion": "The simulator is about to stop. Are you sure you want to continue?",
+            "SwitchPageQuestion": "You are about to leave this page. Would you like to suspend the simulator and keep it running in the background, or close the simulator?",
             "NoDestDirSelected": "No destination directory selected!",
             "SyncRadioFilesToLocalSimulator": "Sync radio files to local simulator",
             "OpenLocalSimDir": "Open local simulator directory",
@@ -277,7 +277,8 @@
             "FailToOpenSimWindow": "Failed to open the simulator window",
             "ContinueWaiting": "Keep waiting",
             "LoadLastLayout": "Load last page layout",
-            "LoadLastControls": "Load last control positions"
+            "LoadLastControls": "Load last control positions",
+            "SuspendSimulator": "Suspend"
         },
         "BackupRecovery": {
             "Advanced": "Advanced",

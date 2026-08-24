@@ -224,7 +224,7 @@
             "StopSimulator": "Simulator stoppen",
             "UploadFiles": "Dateien hochladen",
             "FileUploadedAndReloadSimQuestion": "Dateien erfolgreich hochgeladen. Möchten Sie den Simulator neu starten, um die Dateien zu laden?",
-            "SwitchPageQuestion": "Der Simulator wird angehalten. Möchten Sie wirklich fortfahren?",
+            "SwitchPageQuestion": "You are about to leave this page. Would you like to suspend the simulator and keep it running in the background, or close the simulator?",
             "NoDestDirSelected": "Es wurde kein Zielverzeichnis ausgewählt!",
             "SyncRadioFilesToLocalSimulator": "Synchronisieren Sie die Senderdateien mit dem lokalen Simulator.",
             "OpenLocalSimDir": "Öffnen Sie das lokale Simulatorverzeichnis.",
@@ -277,7 +277,8 @@
             "FailToOpenSimWindow": "Das Simulatorfenster konnte nicht geöffnet werden.",
             "ContinueWaiting": "WWeiter warten.",
             "LoadLastLayout": "Load last page layout",
-            "LoadLastControls": "Load last control positions"
+            "LoadLastControls": "Load last control positions",
+            "SuspendSimulator": "Suspend"
         },
         "BackupRecovery": {
             "Advanced": "Erweitert",

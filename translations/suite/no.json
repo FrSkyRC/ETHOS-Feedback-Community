@@ -224,7 +224,7 @@
             "StopSimulator": "Stop simulator",
             "UploadFiles": "Last opp filer",
             "FileUploadedAndReloadSimQuestion": "Filene ble lastet opp som de skulle. Trenger du å omstarte simulatoren for å aktivere filene?",
-            "SwitchPageQuestion": "Simulatoren stopper. Er du sikker på at du vil fortsette?",
+            "SwitchPageQuestion": "You are about to leave this page. Would you like to suspend the simulator and keep it running in the background, or close the simulator?",
             "NoDestDirSelected": "Målmappe er ikke valgt!",
             "SyncRadioFilesToLocalSimulator": "Synkroniser radioens filer til lokal simulator",
             "OpenLocalSimDir": "Åpne lokal simulator-mappe",
@@ -277,7 +277,8 @@
             "FailToOpenSimWindow": "Failed to open the simulator window",
             "ContinueWaiting": "Keep waiting",
             "LoadLastLayout": "Load last page layout",
-            "LoadLastControls": "Load last control positions"
+            "LoadLastControls": "Load last control positions",
+            "SuspendSimulator": "Suspend"
         },
         "BackupRecovery": {
             "Advanced": "Avansert",

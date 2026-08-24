@@ -244,7 +244,7 @@
             "StopSimulator": "停止模拟器",
             "UploadFiles": "上传文件",
             "FileUploadedAndReloadSimQuestion": "文件上传完成, 需要现在重启模拟器来载入文件吗?",
-            "SwitchPageQuestion": "该操作会使模拟器停止, 您确定要继续吗?",
+            "SwitchPageQuestion": "即将离开此页面, 是否需要挂起模拟器使其继续在后台运行，或者关闭模拟器?",
             "NoDestDirSelected": "没有选择目标目录",
             "SyncRadioFilesToLocalSimulator": "将遥控器中内容同步到本地模拟器目录中",
             "OpenLocalSimDir": "打开本地模拟器目录",
@@ -297,7 +297,8 @@
             "FailToOpenSimWindow": "无法打开模拟器窗口",
             "ContinueWaiting": "继续等待",
             "LoadLastLayout": "载入最后页面布局",
-            "LoadLastControls": "载入最后硬件位置"
+            "LoadLastControls": "载入最后硬件位置",
+            "SuspendSimulator": "挂起"
         },
         "AppTitle": "ETHOS"
     },
