@@ -295,7 +295,9 @@
             "SimUnresponsiveMessage": "The ETHOS simulator appears to have stopped responding. Do you need to force-close it?",
             "CloseSimulator": "Close simulator",
             "FailToOpenSimWindow": "Failed to open the simulator view",
-            "ContinueWaiting": "Keep waiting"
+            "ContinueWaiting": "Keep waiting",
+            "LoadLastLayout": "Load last page layout",
+            "LoadLastControls": "Load last control positions"
         },
         "AppTitle": "ETHOS"
     },

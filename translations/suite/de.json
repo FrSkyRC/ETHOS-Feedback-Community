@@ -275,7 +275,9 @@
             "SimUnresponsiveMessage": "Der ETHOS-Simulator reagiert anscheinend nicht mehr. Möchten Sie ihn zwangsweise beenden?",
             "CloseSimulator": "Simulator schließen",
             "FailToOpenSimWindow": "Das Simulatorfenster konnte nicht geöffnet werden.",
-            "ContinueWaiting": "WWeiter warten."
+            "ContinueWaiting": "WWeiter warten.",
+            "LoadLastLayout": "Load last page layout",
+            "LoadLastControls": "Load last control positions"
         },
         "BackupRecovery": {
             "Advanced": "Erweitert",

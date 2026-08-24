@@ -295,7 +295,9 @@
             "SimUnresponsiveMessage": "The ETHOS simulator appears to have stopped responding. Do you need to force-close it?",
             "CloseSimulator": "关闭模拟器",
             "FailToOpenSimWindow": "无法打开模拟器窗口",
-            "ContinueWaiting": "继续等待"
+            "ContinueWaiting": "继续等待",
+            "LoadLastLayout": "载入最后页面布局",
+            "LoadLastControls": "载入最后硬件位置"
         },
         "AppTitle": "ETHOS"
     },
