@@ -687,7 +687,7 @@
         "RowCount": "{{ count }} colonne",
         "SelectFile": "Seleziona File CSV",
         "Title": "Analizzatore CSV",
-        "UnlockFocus": "Sblocca",
+        "UnlockFocus": "Sblocca ",
         "RevealInFolder": "Mostra nella cartella",
         "ChartHintSwapped": "Scorri per zoom Y · Ctrl+scorri per zoom Ora/durata · Trascina per pan · Passa su per valori · Doppio-click per bloccare Focus",
         "ScrollToZoomX": "Scorri per ingrandire X",
