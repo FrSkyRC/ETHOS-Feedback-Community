@@ -509,7 +509,9 @@
         "ComponentNotMeetRequirements": "Některé komponenty nedosahují požadované verze pro zápis",
         "TargetUpdateRequiresBasicComponent": "{{ targetComponent }} {{ targetVersion }} vyžaduje {{ requireComponent }} {{ requireVersion }}.",
         "ConfirmFlashComponentFirst": "Zapsat nejprve {{ requireComponent }}?",
-        "ConfirmRequirementsVersion": "Před pokračováním prosím zkontrolujte, že číslo verze komponentů splňuje požadavky"
+        "ConfirmRequirementsVersion": "Před pokračováním prosím zkontrolujte, že číslo verze komponentů splňuje požadavky",
+        "FlashRequiredComponents": "Flash required component(s)",
+        "ShowInTheProdcutsList": "Show details in the FrSky product list"
     },
     "Model": {
         "BackupLocation": "Umístění zálohy",

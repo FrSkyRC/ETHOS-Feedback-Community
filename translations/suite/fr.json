@@ -509,7 +509,9 @@
         "ComponentNotMeetRequirements": "Certains coomposants ne répondent pas aux critères de version pour une mise à jour",
         "TargetUpdateRequiresBasicComponent": "{{ targetComponent }} {{ targetVersion }} nécessite {{ requireComponent }} {{ requireVersion }}.",
         "ConfirmFlashComponentFirst": "Flasher {{ requireComponent }} en premier?",
-        "ConfirmRequirementsVersion": "Vérifier que le numéro de version est compatible avant de poursuivre"
+        "ConfirmRequirementsVersion": "Vérifier que le numéro de version est compatible avant de poursuivre",
+        "FlashRequiredComponents": "Flash required component(s)",
+        "ShowInTheProdcutsList": "Show details in the FrSky product list"
     },
     "Model": {
         "BackupLocation": "Emplacement de la sauvegarde",

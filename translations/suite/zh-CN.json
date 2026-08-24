@@ -544,7 +544,9 @@
         "ComponentNotMeetRequirements": "部分组件版本不满足烧写所需的版本要求",
         "TargetUpdateRequiresBasicComponent": "{{ targetComponent }} {{ targetVersion }} 需要配合 {{ requireComponent }} {{ requireVersion }} 使用.",
         "ConfirmFlashComponentFirst": "是否先烧写 {{ requireComponent }}?",
-        "ConfirmRequirementsVersion": "请确认上述组件的版本号已满足要求后再继续"
+        "ConfirmRequirementsVersion": "请确认上述组件的版本号已满足要求后再继续",
+        "FlashRequiredComponents": "Flash required component(s)",
+        "ShowInTheProdcutsList": "Show details in the FrSky product list"
     },
     "Model": {
         "BackupLocation": "备份位置",

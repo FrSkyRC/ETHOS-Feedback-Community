@@ -509,7 +509,9 @@
         "ComponentNotMeetRequirements": "Some components do not meet the required version for flashing",
         "TargetUpdateRequiresBasicComponent": "{{ targetComponent }} {{ targetVersion }} requires {{ requireComponent }} {{ requireVersion }}.",
         "ConfirmFlashComponentFirst": "Flash {{ requireComponent }} first?",
-        "ConfirmRequirementsVersion": "Please check that the version number of the above components has met the requirements before continuing"
+        "ConfirmRequirementsVersion": "Please check that the version number of the above components has met the requirements before continuing",
+        "FlashRequiredComponents": "Flash required component(s)",
+        "ShowInTheProdcutsList": "Show details in the FrSky product list"
     },
     "Model": {
         "BackupLocation": "Hvor vil du lagre sikkerhetskopien?",
