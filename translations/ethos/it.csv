@@ -229,7 +229,7 @@ ROLL,,"Roll",
 FUNCTION_SWITCHES,,"Interruttori Funzione",
 RESET_ALL_MIXES,,"Reset Tutti i Mixer",
 CREATE_CALCULATED_SENSOR,,"Crea sensore calcolato",
-DELETE_ALL_SENSORS,,"Delete all sensors"
+DELETE_ALL_SENSORS,,"Cancella tutti i sensori"
 CONFIRM_DELETE_SENSORS,,"Tutti i sensori saranno cancellati\nSicuro di voler continuare?",
 ON,,"ON",
 OFF,,"OFF",
