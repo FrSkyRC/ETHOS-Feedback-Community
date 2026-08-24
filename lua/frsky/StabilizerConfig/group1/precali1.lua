@@ -113,7 +113,7 @@ local function startCalibration(state)
 end
 
 local function pageInit()
-  local line = form.addLine("Level calibration")
+  local line = form.addLine(STR("PreCaliLevelCali"))
   form.addTextButton(line, nil, STR("Start"), function ()
     startCalibration(0x01)
   end)

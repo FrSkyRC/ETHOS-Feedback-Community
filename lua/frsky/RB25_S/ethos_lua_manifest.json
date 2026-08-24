@@ -2,11 +2,11 @@
   "manifestVersion": 1,
   "name": "RB25(S)",
   "key": "org.frsky-ethos.rb25s",
-  "version": "2.1.7",
+  "version": "2.1.8",
   "folder": "RB25_S",
   "releaseNotes": {
     "format": "markdown",
-    "content": "## Introduction\n\nConfig script for FrSky RB25 and RB25S.\n\n## Enhancement\n\n- Added and updated relevant configuration items to support the RB25(S) firmware update version 3.0.5.\n- Added the option to enable/disable switching ability between different Gyro banks.\n\n## Fixes\n\n- Fixed the issue of calibration failure.\n\nIf you are running Ethos 1.6.0 or later, you can find it in the Device Config menu."
+    "content": "## Introduction\n\nConfig script for FrSky RB25 and RB25S.\n\n## Enhancement\n\n- Added and updated relevant configuration items to support the RB25(S) firmware update version 3.0.5.\n- Added the option to enable/disable switching ability between different Gyro banks.\n\n## Fixes\n\n- Fixed the issue of calibration failure.\n\n##2.1.8\n\n- Added missing translation string.\n\nIf you are running Ethos 1.6.0 or later, you can find it in the Device Config menu."
   },
   "files": [
     "**"

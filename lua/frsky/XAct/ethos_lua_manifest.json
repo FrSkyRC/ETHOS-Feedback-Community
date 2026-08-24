@@ -6,7 +6,7 @@
   "folder": "XAct",
   "releaseNotes": {
     "format": "markdown",
-    "content": "## Introduction\n\nConfiguration script for FrSky XAct.\n\n## V2.0.1\n\n- Introduced more configurable parameters for XAct.\n\nIf you are running Ethos 1.6.0 or later, you can find it in the Device Config menu."
+    "content": "## Introduction\n\nConfiguration script for FrSky XAct.\n\n## V2.0.1\n\n- Introduced more configurable parameters for XAct.\n\n## V2.0.2\n\n- Move to device config category Servos.\n\nIf you are running Ethos 1.6.0 or later, you can find it in the Device Config menu."
   },
   "files": [
     "**"
