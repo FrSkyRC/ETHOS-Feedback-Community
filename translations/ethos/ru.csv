@@ -230,6 +230,7 @@ ROLL,,Крен,,,
 FUNCTION_SWITCHES,,Функциональный переключатель,,,
 RESET_ALL_MIXES,,Сброс всех микшеров,,,
 CREATE_CALCULATED_SENSOR,,Создать вычисляемый датчик,,,
+DELETE_ALL_SENSORS,,"Delete all sensors"
 CONFIRM_DELETE_SENSORS,,Все датчики будут удалены. Вы уверены что хотите продолжить?,,,
 ON,,ВКЛ,,,
 OFF,,ВЫКЛ,,,

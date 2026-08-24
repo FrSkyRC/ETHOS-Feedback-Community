@@ -229,6 +229,7 @@ ROLL,,לוגלג,,
 FUNCTION_SWITCHES,,םיילנויצקנופ םיגתמ,,
 RESET_ALL_MIXES,,םירסקימה לכ תא ספא,,
 CREATE_CALCULATED_SENSOR,,בשוחמ ןשייח רוצ,,
+DELETE_ALL_SENSORS,,"Delete all sensors"
 CONFIRM_DELETE_SENSORS,,? חוטב ךנה םאה \n. ורסוי םינשייחה לכ,,
 ON,,לעפומ,,
 OFF,,יובכ,,

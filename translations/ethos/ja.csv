@@ -229,6 +229,7 @@ ROLL,,"ロール",,
 FUNCTION_SWITCHES,,"機能スイッチ",,
 RESET_ALL_MIXES,,"全ミックスをリセット",,
 CREATE_CALCULATED_SENSOR,,"計算センサー作成",,
+DELETE_ALL_SENSORS,,"Delete all sensors"
 CONFIRM_DELETE_SENSORS,,"この操作により全てのセンサーが削除されます.\nよろしいですか?",,
 ON,,"オン",,
 OFF,,"オフ",,

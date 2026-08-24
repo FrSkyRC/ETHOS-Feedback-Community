@@ -229,6 +229,7 @@ ROLL,,"Roll",
 FUNCTION_SWITCHES,,"Function switches",
 RESET_ALL_MIXES,,"Reset all mixes",
 CREATE_CALCULATED_SENSOR,,"Create calculated sensor",
+DELETE_ALL_SENSORS,,"Delete all sensors"
 CONFIRM_DELETE_SENSORS,,"All the sensors will be removed.\nAre you sure you want to continue?",
 ON,,"ON",
 OFF,,"OFF",

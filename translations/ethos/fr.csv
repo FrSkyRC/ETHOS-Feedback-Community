@@ -248,6 +248,7 @@ HOLD,,"Maintien",
 NO_PULSES,,"Aucun signal",
 NOT_SET,,"Non défini",
 CREATE_CALCULATED_SENSOR,,"Capteur calculé",
+DELETE_ALL_SENSORS,,"Effacer tous les capteurs"
 CONFIRM_DELETE_SENSORS,,"Supprimer capteurs ?",
 ON,,"ON",
 OFF,,"OFF",
