@@ -130,7 +130,7 @@
             "TestingBranchWarning": "Test versjonene er kun for testing og er ikke anbefalt for flyving. Er du sikker på at du vil bytte til test versjonen?",
             "NoLanguageSelected": "Språk ikke valgt",
             "EthosMode": "ETHOS modus",
-            "EarlyAccess": "Early access"
+            "EarlyAccess": "Tidligtilgang"
         },
         "Module": {
             "RFModule": "RF Modul",
