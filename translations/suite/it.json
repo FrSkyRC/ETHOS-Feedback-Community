@@ -129,7 +129,8 @@
             "ConfirmSwitchToTesting": "Passa al ramo di test",
             "TestingBranchWarning": "Il ramo di test è solo per scopi di sviluppo e non è raccomandato per il volo reale. Sei sicuro di voler passare al ramo di test?",
             "NoLanguageSelected": "Nessuna lingua selezionata",
-            "EthosMode": "Modo ETHOS"
+            "EthosMode": "Modo ETHOS",
+            "EarlyAccess": "Early access"
         },
         "Module": {
             "RFModule": "Modulo RF",

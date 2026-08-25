@@ -149,7 +149,8 @@
             "ConfirmSwitchToTesting": "正在切换到测试分支",
             "TestingBranchWarning": "测试分支仅用于测试, 不建议用于实际飞行. 您确定要切换到测试分支吗?",
             "NoLanguageSelected": "未选择语言",
-            "EthosMode": "ETHOS 模式"
+            "EthosMode": "ETHOS 模式",
+            "EarlyAccess": "尝鲜版"
         },
         "Module": {
             "RFModule": "射频模块",

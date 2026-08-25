@@ -129,7 +129,8 @@
             "ConfirmSwitchToTesting": "Přepnout do testovací větve",
             "TestingBranchWarning": "Testovací větev je určena pouze pro testování a nedoporučuje se pro skutečné létání. Jste si jisti, že chcete přepnout do testovací větve?",
             "NoLanguageSelected": "Není vybrán žádný jazyk",
-            "EthosMode": "ETHOS mód"
+            "EthosMode": "ETHOS mód",
+            "EarlyAccess": "Early access"
         },
         "Module": {
             "RFModule": "RF modul",

@@ -129,7 +129,8 @@
             "ConfirmSwitchToTesting": "Zum Test-Zweig wechseln",
             "TestingBranchWarning": "Der Testzweig dient ausschließlich Testzwecken und wird für den tatsächlichen Flugbetrieb nicht empfohlen. Möchtest du wirklich zum Testzweig wechseln?",
             "NoLanguageSelected": "Keine Sprache ausgewählt!",
-            "EthosMode": "ETHOS-Modus"
+            "EthosMode": "ETHOS-Modus",
+            "EarlyAccess": "Early access"
         },
         "Module": {
             "RFModule": "HF-Modul",

@@ -110,7 +110,8 @@
             "ConfirmSwitchToTesting": "Cambiar a una Branch de pruebas",
             "TestingBranchWarning": "Esta brach de pruebas solo sirve para pruebas y no está recomendada para volar. ¿Está seguro de querer cambiar a una Brach de pruebas?",
             "NoLanguageSelected": "No se ha seleccionado idioma",
-            "EthosMode": "Modo ETHOS"
+            "EthosMode": "Modo ETHOS",
+            "EarlyAccess": "Early access"
         },
         "Module": {
             "RFModule": "Módulo de RF",

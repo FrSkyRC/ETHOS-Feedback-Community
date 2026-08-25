@@ -129,7 +129,8 @@
             "ConfirmSwitchToTesting": "Basculer vers la branche test",
             "TestingBranchWarning": "Cette branche est réservée pour les tests. Ne pas utiliser pour les vols. Continuer ?",
             "NoLanguageSelected": "Aucune langue sélectionnée",
-            "EthosMode": "Mode ETHOS"
+            "EthosMode": "Mode ETHOS",
+            "EarlyAccess": "Early access"
         },
         "Module": {
             "RFModule": "Module RF",

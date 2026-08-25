@@ -129,7 +129,8 @@
             "ConfirmSwitchToTesting": "Switch to testing branch",
             "TestingBranchWarning": "The testing branch is for testing only and is not recommended for actual flying. Are you sure you want to switch to the testing branch?",
             "NoLanguageSelected": "No language selected",
-            "EthosMode": "ETHOS mode"
+            "EthosMode": "ETHOS mode",
+            "EarlyAccess": "Early access"
         },
         "Module": {
             "RFModule": "RF module",
