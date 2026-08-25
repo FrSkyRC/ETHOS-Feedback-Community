@@ -130,7 +130,7 @@
             "TestingBranchWarning": "Il ramo di test è solo per scopi di sviluppo e non è raccomandato per il volo reale. Sei sicuro di voler passare al ramo di test?",
             "NoLanguageSelected": "Nessuna lingua selezionata",
             "EthosMode": "Modo ETHOS",
-            "EarlyAccess": "Early access"
+            "EarlyAccess": "Accesso Anticipato"
         },
         "Module": {
             "RFModule": "Modulo RF",
