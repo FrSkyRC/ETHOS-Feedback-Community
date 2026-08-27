@@ -690,7 +690,7 @@
         "Title": "Log viewer",
         "UnlockFocus": "Odomknúť",
         "RevealInFolder": "Zobraziť v priečinku",
-        "ChartHintSwapped": "Skroluj na priblíženie Y· Ctrl+scroll na priblíženie času · Drag to pan · Hover for values · Dojklik na uzamknutie focusu",
+        "ChartHintSwapped": "Skroluj na priblíženie Y· Ctrl+scroll na priblíženie času · Potiahnutím posúvaš· Nabehnutím zobraz hodnoty · Dojklik na uzamknutie focusu",
         "ScrollToZoomX": "Skroluj na priblíženie X",
         "ScrollToZoomY": "Skroluj na priblíženie Y",
         "ResetColors": "Resetovať farby",
