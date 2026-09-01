@@ -279,14 +279,14 @@
             "StartRestore": "Comenzar restauración",
             "SystemComponents": "Componentes del sistema",
             "Title": "Copias de seguridad y restauración",
-            "NoComponentsOnDisk": "No hay componentes disponibles en este disco",
-            "RestoreTargetDisk": "Restaurar en",
+            "NoComponentsOnDrive": "No hay componentes disponibles en este disco",
+            "RestoreTargetDrive": "Restaurar en",
             "BackupModeComponent": "By component",
-            "BackupModeFullDisk": "Full disk",
-            "FullDiskHint": "Backup all files on the selected disk except .cpuid identity markers.",
-            "FullDiskRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
-            "FullDiskLabel": "Full disk",
-            "SelectDisksToBackup": "Select disks to backup"
+            "BackupModeFullDrive": "Full disk",
+            "FullDriveHint": "Backup all files on the selected disk except .cpuid identity markers.",
+            "FullDriveRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
+            "FullDriveLabel": "Full disk",
+            "SelectDrivesToBackup": "Select disks to backup"
         },
         "Image": {
             "AddImagesOrDrop": "Añadir imágenes o arrastrar archivos",
@@ -349,7 +349,7 @@
         "Flash": "Actualizar",
         "Download": "Descargar",
         "CannotReadModuleInfo": "Incapaz de obtener información del módulo interno",
-        "WaitingDisk": "Esperando al disco ...",
+        "WaitingDrive": "Esperando al disco ...",
         "WaitingModuleInfo": "Esperando información del modulo ...",
         "AbortedWithUnknownStatus": "Operación cancelada por razones desconocidas",
         "ReceiveFailStatus": "Ha fallado la operación. La radio ha reportado un error",
@@ -380,7 +380,7 @@
         "FlashFailed": "¡La actualización ha fallado!",
         "FlashingBootloader": "Carga del bootloader en curso ...",
         "GuideConnectFinish": "Conectar la radio de nuevo y pulsar sobre el botón \"Terminar\" cuando la actualización se haya completado",
-        "CannotReadDisk": "¡No se puede leer el disco de la radio!",
+        "CannotReadDrive": "¡No se puede leer el disco de la radio!",
         "SwitchingToMassStorage": "Cambiando a modo de almacenamiento masivo ...",
         "AdminRequired": "Se requieren privilegios de administrador.",
         "Warning": "Advertencia",
@@ -402,7 +402,7 @@
         "InternalModule": "Módulo Interno",
         "ExternalModule": "Módulo Externo",
         "Bluetooth": "Bluetooth",
-        "ConnotReadDiskForComponent": "No se puede leer el disco de la radio cuando se está intentando operarla {{ componentName }}",
+        "ConnotReadDriveForComponent": "No se puede leer el disco de la radio cuando se está intentando operarla {{ componentName }}",
         "StorageFreeOfTotal": "{{free}} libres de {{total}}"
     },
     "Components": {

@@ -298,14 +298,14 @@
             "StartRestore": "Spustit obnovu",
             "SystemComponents": "Systémové komponenty",
             "Title": "Záloha a obnova",
-            "NoComponentsOnDisk": "Na tomto disku nejsou dostupné žádné komponenty",
-            "RestoreTargetDisk": "Restore to",
+            "NoComponentsOnDrive": "Na tomto disku nejsou dostupné žádné komponenty",
+            "RestoreTargetDrive": "Restore to",
             "BackupModeComponent": "By component",
-            "BackupModeFullDisk": "Full disk",
-            "FullDiskHint": "Backup all files on the selected disk except .cpuid identity markers.",
-            "FullDiskRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
-            "FullDiskLabel": "Full disk",
-            "SelectDisksToBackup": "Select disks to backup"
+            "BackupModeFullDrive": "Full disk",
+            "FullDriveHint": "Backup all files on the selected disk except .cpuid identity markers.",
+            "FullDriveRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
+            "FullDriveLabel": "Full disk",
+            "SelectDrivesToBackup": "Select disks to backup"
         },
         "AppTitle": "ETHOS"
     },
@@ -353,7 +353,7 @@
         "Flash": "Zapsat",
         "Download": "Stáhnout",
         "CannotReadModuleInfo": "Není možné získat informace o interním modulu",
-        "WaitingDisk": "Čekám na disk...",
+        "WaitingDrive": "Čekám na disk...",
         "WaitingModuleInfo": "Čekám na informace o modulu ...",
         "AbortedWithUnknownStatus": "Operace přerušena s neznámým stavem",
         "ReceiveFailStatus": "Operace se nezdařila. Rádio vrátilo chybu!",
@@ -386,7 +386,7 @@
         "FlashFailed": "Zápis selhal!",
         "FlashingBootloader": "Aktualizuji bootloader...",
         "GuideConnectFinish": "Znovu připojte rádio a po dokončení aktualizace klikněte na tlačítko \"Dokončit\"",
-        "CannotReadDisk": "Nemohu přečíst disk rádia!",
+        "CannotReadDrive": "Nemohu přečíst disk rádia!",
         "SwitchingToMassStorage": "Přepínám do režimu mass storage ...",
         "AdminRequired": "Vyžadována práva Administrátora.",
         "Warning": "Pozor",
@@ -402,7 +402,7 @@
         "InternalModule": "Interní modul",
         "ExternalModule": "Externí modul",
         "Bluetooth": "Bluetooth",
-        "ConnotReadDiskForComponent": "Disk rádia nelze přečíst při provozu {{ componentName }}",
+        "ConnotReadDriveForComponent": "Disk rádia nelze přečíst při provozu {{ componentName }}",
         "StorageFreeOfTotal": "{{free}} volno z {{total}}"
     },
     "Components": {

@@ -298,14 +298,14 @@
             "StartRestore": "Start restore",
             "SystemComponents": "System components",
             "Title": "Backup & recovery",
-            "NoComponentsOnDisk": "No componenets available on this disk",
-            "RestoreTargetDisk": "Restore to",
+            "NoComponentsOnDrive": "No componenets available on this disk",
+            "RestoreTargetDrive": "Restore to",
             "BackupModeComponent": "By component",
-            "BackupModeFullDisk": "Full disk",
-            "FullDiskHint": "Backup all files on the selected disk except .cpuid identity markers.",
-            "FullDiskRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
-            "FullDiskLabel": "Full disk",
-            "SelectDisksToBackup": "Select disks to backup"
+            "BackupModeFullDrive": "Full disk",
+            "FullDriveHint": "Backup all files on the selected disk except .cpuid identity markers.",
+            "FullDriveRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
+            "FullDriveLabel": "Full disk",
+            "SelectDrivesToBackup": "Select disks to backup"
         },
         "AppTitle": "ETHOS"
     },
@@ -352,7 +352,7 @@
         "Flash": "Flash",
         "Download": "Baixar",
         "CannotReadModuleInfo": "Unable to get internal module information",
-        "WaitingDisk": "Aguardando disco...",
+        "WaitingDrive": "Aguardando disco...",
         "WaitingModuleInfo": "Waiting for module information ...",
         "AbortedWithUnknownStatus": "Operação abortada com status desconhecido",
         "ReceiveFailStatus": "Operação falhou. O rádio retornou um erro!",
@@ -386,7 +386,7 @@
         "FlashFailed": "Falha ao flashar!",
         "FlashingBootloader": "Flashando o bootloader...",
         "GuideConnectFinish": "Conecte seu rádio novamente e clique no botão \"Concluir\" quando a atualização estiver completa",
-        "CannotReadDisk": "Cannot read radio disk!",
+        "CannotReadDrive": "Cannot read radio disk!",
         "SwitchingToMassStorage": "Switching to mass storage mode ...",
         "AdminRequired": "Administrator privileges required.",
         "Warning": "Warning",
@@ -402,7 +402,7 @@
         "InternalModule": "Internal module",
         "ExternalModule": "External module",
         "Bluetooth": "Bluetooth",
-        "ConnotReadDiskForComponent": "Cannot read radio disk when trying to operate {{ componentName }}",
+        "ConnotReadDriveForComponent": "Cannot read radio disk when trying to operate {{ componentName }}",
         "StorageFreeOfTotal": "{{free}} free of {{total}}"
     },
     "Components": {

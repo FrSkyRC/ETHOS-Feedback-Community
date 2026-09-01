@@ -30,14 +30,14 @@
             "Advanced": "高级",
             "SelectBackupHint": "请从列表中选择一份备份以查看详情并恢复.",
             "BackupSuccessBanner": "备份成功完成, 文件已保存为 {{ file }}.",
-            "NoComponentsOnDisk": "此磁盘上没有可供选择的组件",
-            "RestoreTargetDisk": "恢复到",
+            "NoComponentsOnDrive": "此磁盘上没有可供选择的组件",
+            "RestoreTargetDrive": "恢复到",
             "BackupModeComponent": "按组件",
-            "BackupModeFullDisk": "整盘",
-            "FullDiskHint": "备份所选磁盘上的全部文件（不含 .cpuid 身份标识文件）。",
-            "FullDiskRestoreWarning": "将以备份内容覆盖整个目标磁盘，磁盘中不在备份内的文件将被删除。",
-            "FullDiskLabel": "整盘备份",
-            "SelectDisksToBackup": "选择要备份的磁盘"
+            "BackupModeFullDrive": "整盘",
+            "FullDriveHint": "备份所选磁盘上的全部文件（不含 .cpuid 身份标识文件）。",
+            "FullDriveRestoreWarning": "将以备份内容覆盖整个目标磁盘，磁盘中不在备份内的文件将被删除。",
+            "FullDriveLabel": "整盘备份",
+            "SelectDrivesToBackup": "选择要备份的磁盘"
         },
         "EthosSum": {
             "QuickCardNewsDesc": "查看 ETHOS 固件升级历史与发布说明",
@@ -354,7 +354,7 @@
         "Flash": "烧录",
         "Download": "下载",
         "CannotReadModuleInfo": "无法获得内置模块信息",
-        "WaitingDisk": "正在等待磁盘...",
+        "WaitingDrive": "正在等待磁盘...",
         "WaitingModuleInfo": "正在等待内置模块信息 ...",
         "AbortedWithUnknownStatus": "该操作因为未知的错误而被停止",
         "ReceiveFailStatus": "操作失败, 遥控器返回了一个错误",
@@ -390,7 +390,7 @@
         "FlashFailed": "烧录失败",
         "FlashingBootloader": "烧录 Bootloader 中...",
         "GuideConnectFinish": "当烧录任务完成后, 重新连接遥控器并点击 \"完成\" 按钮",
-        "CannotReadDisk": "无法读取遥控器磁盘",
+        "CannotReadDrive": "无法读取遥控器磁盘",
         "SwitchingToMassStorage": "正在切换到大容量存储模式 ...",
         "AdminRequired": "需要管理员权限",
         "Warning": "警告",
@@ -402,7 +402,7 @@
         "InternalModule": "内置模块",
         "ExternalModule": "外置模块",
         "Bluetooth": "蓝牙",
-        "ConnotReadDiskForComponent": "尝试操作 {{ componentName }} 时无法读取遥控器磁盘",
+        "ConnotReadDriveForComponent": "尝试操作 {{ componentName }} 时无法读取遥控器磁盘",
         "StorageFreeOfTotal": "{{free}} free of {{total}}"
     },
     "Components": {

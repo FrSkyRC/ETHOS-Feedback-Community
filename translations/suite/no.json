@@ -298,14 +298,14 @@
             "StartRestore": "Start gjenoppretting",
             "SystemComponents": "Systemkomponenter",
             "Title": "Sikkerhetskopi og gjenoppretting",
-            "NoComponentsOnDisk": "Ingen komponenter tilgjengelig på denne disken",
-            "RestoreTargetDisk": "Restore to",
+            "NoComponentsOnDrive": "Ingen komponenter tilgjengelig på denne disken",
+            "RestoreTargetDrive": "Restore to",
             "BackupModeComponent": "By component",
-            "BackupModeFullDisk": "Full disk",
-            "FullDiskHint": "Backup all files on the selected disk except .cpuid identity markers.",
-            "FullDiskRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
-            "FullDiskLabel": "Full disk",
-            "SelectDisksToBackup": "Select disks to backup"
+            "BackupModeFullDrive": "Full disk",
+            "FullDriveHint": "Backup all files on the selected disk except .cpuid identity markers.",
+            "FullDriveRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
+            "FullDriveLabel": "Full disk",
+            "SelectDrivesToBackup": "Select disks to backup"
         },
         "AppTitle": "ETHOS"
     },
@@ -352,7 +352,7 @@
         "Flash": "Flash",
         "Download": "Last ned",
         "CannotReadModuleInfo": "Klarer ikke å hente intern-modul informasjon",
-        "WaitingDisk": "Venter på disken...",
+        "WaitingDrive": "Venter på disken...",
         "WaitingModuleInfo": "Venter på modul-informasjon ...",
         "AbortedWithUnknownStatus": "Operasjonen ble avsluttet med ukjent status",
         "ReceiveFailStatus": "Operasjonen feilet. Radioen har sendt tilbake en feil!",
@@ -386,7 +386,7 @@
         "FlashFailed": "'Flashing' feilet!",
         "FlashingBootloader": "'Flasher' Bootloader-fil...",
         "GuideConnectFinish": "Koble radioen til datamaskinen med USB-kabel og klikk \"Ferdig\"-knappen når 'Flashingen' er utført",
-        "CannotReadDisk": "Kan ikke lese disken på radioen!",
+        "CannotReadDrive": "Kan ikke lese disken på radioen!",
         "SwitchingToMassStorage": "Bytter til 'mass storage' modus ...",
         "AdminRequired": "Administrator-rettigheter påkrevd.",
         "Warning": "Advarsel",
@@ -402,7 +402,7 @@
         "InternalModule": "Intern modul",
         "ExternalModule": "Ekstern modul",
         "Bluetooth": "Blåtann",
-        "ConnotReadDiskForComponent": "Kan ikke lese radio disken under behandling av {{ componentName }}",
+        "ConnotReadDriveForComponent": "Kan ikke lese radio disken under behandling av {{ componentName }}",
         "StorageFreeOfTotal": "{{free}} ledig av {{total}}"
     },
     "Components": {

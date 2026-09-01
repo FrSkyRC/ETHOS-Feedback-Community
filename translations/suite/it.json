@@ -298,14 +298,14 @@
             "StartRestore": "Inizia Ripristino",
             "SystemComponents": "Componenti Sistema",
             "Title": "Backup & Ripristino",
-            "NoComponentsOnDisk": "Nessun componente disponibile su disco",
-            "RestoreTargetDisk": "Restore to",
+            "NoComponentsOnDrive": "Nessun componente disponibile su disco",
+            "RestoreTargetDrive": "Restore to",
             "BackupModeComponent": "By component",
-            "BackupModeFullDisk": "Full disk",
-            "FullDiskHint": "Backup all files on the selected disk except .cpuid identity markers.",
-            "FullDiskRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
-            "FullDiskLabel": "Full disk",
-            "SelectDisksToBackup": "Select disks to backup"
+            "BackupModeFullDrive": "Full disk",
+            "FullDriveHint": "Backup all files on the selected disk except .cpuid identity markers.",
+            "FullDriveRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
+            "FullDriveLabel": "Full disk",
+            "SelectDrivesToBackup": "Select disks to backup"
         },
         "AppTitle": "ETHOS"
     },
@@ -352,7 +352,7 @@
         "Flash": "Flash",
         "Download": "Download",
         "CannotReadModuleInfo": "Impossibile ottenere informazioni modulo",
-        "WaitingDisk": "In attesa del disco...",
+        "WaitingDrive": "In attesa del disco...",
         "WaitingModuleInfo": "In attesa informazioni modulo ...",
         "AbortedWithUnknownStatus": "Operazione annullata con stato sconosciuto",
         "ReceiveFailStatus": "Operazione fallita. La Radio ha riportato un errore!",
@@ -386,7 +386,7 @@
         "FlashFailed": "Flashing fallito!",
         "FlashingBootloader": "Flash del bootloader...",
         "GuideConnectFinish": "Collega la radio di nuovo e clicca sul bottone \"Finish\" appena finita la procedura di flash",
-        "CannotReadDisk": "Impossibile leggere il disco Radio!",
+        "CannotReadDrive": "Impossibile leggere il disco Radio!",
         "SwitchingToMassStorage": "Passaggio al modo disco ...",
         "AdminRequired": "Privilegi Amministratore richiesti.",
         "Warning": "Attenzione- Warning",
@@ -402,7 +402,7 @@
         "InternalModule": "Modulo Interno",
         "ExternalModule": "Modulo Esterno",
         "Bluetooth": "Bluetooth",
-        "ConnotReadDiskForComponent": "Impossibile leggere il disco della radio durante il tentativo di usare {{ componentName }}",
+        "ConnotReadDriveForComponent": "Impossibile leggere il disco della radio durante il tentativo di usare {{ componentName }}",
         "StorageFreeOfTotal": "{{free}} libero di {{total}}"
     },
     "Components": {

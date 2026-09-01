@@ -298,14 +298,14 @@
             "StartRestore": "Wiederherstellung starten",
             "SystemComponents": "Systemkomponenten",
             "Title": "Sicherung und Wiederherstellung",
-            "NoComponentsOnDisk": "Auf diesem Datenträger sind keine Komponenten verfügbar.",
-            "RestoreTargetDisk": "Zurücksetzen auf",
+            "NoComponentsOnDrive": "Auf diesem Datenträger sind keine Komponenten verfügbar.",
+            "RestoreTargetDrive": "Zurücksetzen auf",
             "BackupModeComponent": "By component",
-            "BackupModeFullDisk": "Full disk",
-            "FullDiskHint": "Backup all files on the selected disk except .cpuid identity markers.",
-            "FullDiskRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
-            "FullDiskLabel": "Full disk",
-            "SelectDisksToBackup": "Select disks to backup"
+            "BackupModeFullDrive": "Full disk",
+            "FullDriveHint": "Backup all files on the selected disk except .cpuid identity markers.",
+            "FullDriveRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
+            "FullDriveLabel": "Full disk",
+            "SelectDrivesToBackup": "Select disks to backup"
         },
         "AppTitle": "ETHOS"
     },
@@ -352,7 +352,7 @@
         "Flash": "Flashen",
         "Download": "Herunterladen",
         "CannotReadModuleInfo": "Informationen zum internen Modul können nicht abgerufen werden.",
-        "WaitingDisk": "Warten auf Laufwerk...",
+        "WaitingDrive": "Warten auf Laufwerk...",
         "WaitingModuleInfo": "Warten auf Modulinformationen...",
         "AbortedWithUnknownStatus": "Vorgang mit unbekanntem Status abgebrochen",
         "ReceiveFailStatus": "Vorgang fehlgeschlagen. Der Sender hat einen Fehler gemeldet!",
@@ -386,7 +386,7 @@
         "FlashFailed": "Flashen fehlerhaft!",
         "FlashingBootloader": "Flashen des Bootloaders...",
         "GuideConnectFinish": "Schließen Sie Ihren Sender erneut an und klicken Sie auf die Schaltfläche \"Fertigstellen\", wenn das Flashen abgeschlossen ist.",
-        "CannotReadDisk": "Sender-Laufwerk kann nicht gelesen werden!",
+        "CannotReadDrive": "Sender-Laufwerk kann nicht gelesen werden!",
         "SwitchingToMassStorage": "Umschalten in den Massenspeichermodus...",
         "AdminRequired": "Administratorrechte erforderlich.",
         "Warning": "Warnung",
@@ -402,7 +402,7 @@
         "InternalModule": "Internes Modul",
         "ExternalModule": "Externes Modul",
         "Bluetooth": "Bluetooth",
-        "ConnotReadDiskForComponent": "Beim Versuch, {{ componentName }} zu bedienen, kann das Sender-LW nicht gelesen werden",
+        "ConnotReadDriveForComponent": "Beim Versuch, {{ componentName }} zu bedienen, kann das Sender-LW nicht gelesen werden",
         "StorageFreeOfTotal": "{{free}} frei von {{total}}"
     },
     "Components": {

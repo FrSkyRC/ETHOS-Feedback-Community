@@ -30,14 +30,14 @@
             "Advanced": "Advanced",
             "SelectBackupHint": "Select a backup from the list to view details and restore",
             "BackupSuccessBanner": "Backup completed successfully. File saved as {{ file }}",
-            "NoComponentsOnDisk": "No componenets available on this disk",
-            "RestoreTargetDisk": "Restore to",
+            "NoComponentsOnDrive": "No componenets available on this drive",
+            "RestoreTargetDrive": "Restore to",
             "BackupModeComponent": "By component",
-            "BackupModeFullDisk": "Full disk",
-            "FullDiskHint": "Backup all files on the selected disk except .cpuid identity markers.",
-            "FullDiskRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
-            "FullDiskLabel": "Full disk",
-            "SelectDisksToBackup": "Select disks to backup"
+            "BackupModeFullDrive": "Full drive",
+            "FullDriveHint": "Backup all files on the selected drive except .cpuid identity markers.",
+            "FullDriveRestoreWarning": "This will overwrite the entire target drive with the backup contents. Files not in the backup will be removed.",
+            "FullDriveLabel": "Full drive",
+            "SelectDrivesToBackup": "Select drives to backup"
         },
         "EthosSum": {
             "QuickCardNewsDesc": "View ETHOS firmware update history and release notes",
@@ -354,7 +354,7 @@
         "Flash": "Flash",
         "Download": "Download",
         "CannotReadModuleInfo": "Unable to get internal module information",
-        "WaitingDisk": "Waiting for disk ...",
+        "WaitingDrive": "Waiting for drive ...",
         "WaitingModuleInfo": "Waiting for module information ...",
         "AbortedWithUnknownStatus": "Operation aborted with unknown status",
         "ReceiveFailStatus": "Operation failed. The radio returned an error",
@@ -391,7 +391,7 @@
         "FlashFailed": "Flashing failed",
         "FlashingBootloader": "Flashing bootloader ...",
         "GuideConnectFinish": "Connect your radio again and click on the \"finish\" button when the flashing is complete",
-        "CannotReadDisk": "Cannot read radio disk",
+        "CannotReadDrive": "Cannot read radio drive",
         "SwitchingToMassStorage": "Switching to mass storage mode ...",
         "AdminRequired": "Administrator privileges required",
         "Warning": "Warning",
@@ -402,7 +402,7 @@
         "InternalModule": "Internal module",
         "ExternalModule": "External module",
         "Bluetooth": "Bluetooth",
-        "ConnotReadDiskForComponent": "Cannot read radio disk when trying to operate {{ componentName }}",
+        "ConnotReadDriveForComponent": "Cannot read radio drive when trying to operate {{ componentName }}",
         "StorageFreeOfTotal": "{{free}} free of {{total}}"
     },
     "Components": {

@@ -298,14 +298,14 @@
             "StartRestore": "Štart obnovenia",
             "SystemComponents": "Systémové komponenty",
             "Title": "Zálohovanie a obnovenie",
-            "NoComponentsOnDisk": "Na tomto disku nie sú k dispozícii žiadne komponenty",
-            "RestoreTargetDisk": "Obnoviť na",
+            "NoComponentsOnDrive": "Na tomto disku nie sú k dispozícii žiadne komponenty",
+            "RestoreTargetDrive": "Obnoviť na",
             "BackupModeComponent": "By component",
-            "BackupModeFullDisk": "Full disk",
-            "FullDiskHint": "Backup all files on the selected disk except .cpuid identity markers.",
-            "FullDiskRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
-            "FullDiskLabel": "Full disk",
-            "SelectDisksToBackup": "Select disks to backup"
+            "BackupModeFullDrive": "Full disk",
+            "FullDriveHint": "Backup all files on the selected disk except .cpuid identity markers.",
+            "FullDriveRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
+            "FullDriveLabel": "Full disk",
+            "SelectDrivesToBackup": "Select disks to backup"
         },
         "AppTitle": "ETHOS"
     },
@@ -352,7 +352,7 @@
         "Flash": "Zápis",
         "Download": "Sťahovanie",
         "CannotReadModuleInfo": "Neviem načítať informácie o internom module",
-        "WaitingDisk": "Čakám na disk...",
+        "WaitingDrive": "Čakám na disk...",
         "WaitingModuleInfo": "Čakám na informácie o module ...",
         "AbortedWithUnknownStatus": "Operácia zastavená s neznámym stavom",
         "ReceiveFailStatus": "Operácia zlyhala. Rádio vrátilo chybu!",
@@ -386,7 +386,7 @@
         "FlashFailed": "Aktualizácia zlyhala!",
         "FlashingBootloader": "Nahrávam bootloader...",
         "GuideConnectFinish": "Znova pripojte rádio a kliknite na \"Finish\" tlačidlo po dokončení aktualizácie",
-        "CannotReadDisk": "Cannot read radio disk!",
+        "CannotReadDrive": "Cannot read radio disk!",
         "SwitchingToMassStorage": "Prepnutie na režim hromadného úložiska ...",
         "AdminRequired": "Vyžadujú sa oprávnenia správcu.",
         "Warning": "Upozornenie",
@@ -402,7 +402,7 @@
         "InternalModule": "Interný modul",
         "ExternalModule": "Externý modul",
         "Bluetooth": "Bluetooth",
-        "ConnotReadDiskForComponent": "Nie je možné čítať rádiový disk pri pokuse o prevádzku {{ componentName }}",
+        "ConnotReadDriveForComponent": "Nie je možné čítať rádiový disk pri pokuse o prevádzku {{ componentName }}",
         "StorageFreeOfTotal": "{{free}} free of {{total}}"
     },
     "Components": {

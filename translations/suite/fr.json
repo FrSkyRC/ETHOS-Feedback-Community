@@ -298,14 +298,14 @@
             "StartRestore": "Lancer restauration",
             "SystemComponents": "Composants système",
             "Title": "Sauvegarde et restauration",
-            "NoComponentsOnDisk": "Aucun composant disponible sur ce disque",
-            "RestoreTargetDisk": "Restaurer vers",
+            "NoComponentsOnDrive": "Aucun composant disponible sur ce disque",
+            "RestoreTargetDrive": "Restaurer vers",
             "BackupModeComponent": "By component",
-            "BackupModeFullDisk": "Full disk",
-            "FullDiskHint": "Backup all files on the selected disk except .cpuid identity markers.",
-            "FullDiskRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
-            "FullDiskLabel": "Full disk",
-            "SelectDisksToBackup": "Select disks to backup"
+            "BackupModeFullDrive": "Full disk",
+            "FullDriveHint": "Backup all files on the selected disk except .cpuid identity markers.",
+            "FullDriveRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
+            "FullDriveLabel": "Full disk",
+            "SelectDrivesToBackup": "Select disks to backup"
         },
         "AppTitle": "ETHOS"
     },
@@ -351,7 +351,7 @@
         "Flash": "Flash",
         "Download": "Télécharger",
         "CannotReadModuleInfo": "Information du module externe non disponible",
-        "WaitingDisk": "En attente du disque ...",
+        "WaitingDrive": "En attente du disque ...",
         "WaitingModuleInfo": "Information du module en cours...",
         "AbortedWithUnknownStatus": "Opération annulée sans raison connue",
         "ReceiveFailStatus": "Echec opération. La radio renvoie une erreur !",
@@ -385,7 +385,7 @@
         "FlashFailed": "Echec de la mise à jour !",
         "FlashingBootloader": "Mise à jour du bootloader en cours ...",
         "GuideConnectFinish": "Reconnecter votre radio et appuyer sur le bouton \"Terminer\" quand la mise à jour est finie",
-        "CannotReadDisk": "Lecture disque radio impossible !",
+        "CannotReadDrive": "Lecture disque radio impossible !",
         "SwitchingToMassStorage": "Bascule en mode stockage de masse ...",
         "AdminRequired": "Droits administrateur requis",
         "Warning": "Attention",
@@ -402,7 +402,7 @@
         "InternalModule": "Module interne",
         "ExternalModule": "Module externe",
         "Bluetooth": "Bluetooth",
-        "ConnotReadDiskForComponent": "Lecture disque impossible pour exécuter {{ componentName }}",
+        "ConnotReadDriveForComponent": "Lecture disque impossible pour exécuter {{ componentName }}",
         "StorageFreeOfTotal": "{{free}} libre sur {{total}}"
     },
     "Components": {
