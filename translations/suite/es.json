@@ -280,7 +280,13 @@
             "SystemComponents": "Componentes del sistema",
             "Title": "Copias de seguridad y restauración",
             "NoComponentsOnDisk": "No hay componentes disponibles en este disco",
-            "RestoreTargetDisk": "Restaurar en"
+            "RestoreTargetDisk": "Restaurar en",
+            "BackupModeComponent": "By component",
+            "BackupModeFullDisk": "Full disk",
+            "FullDiskHint": "Backup all files on the selected disk except .cpuid identity markers.",
+            "FullDiskRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
+            "FullDiskLabel": "Full disk",
+            "SelectDisksToBackup": "Select disks to backup"
         },
         "Image": {
             "AddImagesOrDrop": "Añadir imágenes o arrastrar archivos",

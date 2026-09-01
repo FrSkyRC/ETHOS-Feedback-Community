@@ -31,7 +31,13 @@
             "SelectBackupHint": "Select a backup from the list to view details and restore",
             "BackupSuccessBanner": "Backup completed successfully. File saved as {{ file }}",
             "NoComponentsOnDisk": "No componenets available on this disk",
-            "RestoreTargetDisk": "Restore to"
+            "RestoreTargetDisk": "Restore to",
+            "BackupModeComponent": "By component",
+            "BackupModeFullDisk": "Full disk",
+            "FullDiskHint": "Backup all files on the selected disk except .cpuid identity markers.",
+            "FullDiskRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
+            "FullDiskLabel": "Full disk",
+            "SelectDisksToBackup": "Select disks to backup"
         },
         "EthosSum": {
             "QuickCardNewsDesc": "View ETHOS firmware update history and release notes",

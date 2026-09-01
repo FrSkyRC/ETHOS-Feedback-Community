@@ -299,7 +299,13 @@
             "SystemComponents": "Systemkomponenten",
             "Title": "Sicherung und Wiederherstellung",
             "NoComponentsOnDisk": "Auf diesem Datenträger sind keine Komponenten verfügbar.",
-            "RestoreTargetDisk": "Zurücksetzen auf"
+            "RestoreTargetDisk": "Zurücksetzen auf",
+            "BackupModeComponent": "By component",
+            "BackupModeFullDisk": "Full disk",
+            "FullDiskHint": "Backup all files on the selected disk except .cpuid identity markers.",
+            "FullDiskRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
+            "FullDiskLabel": "Full disk",
+            "SelectDisksToBackup": "Select disks to backup"
         },
         "AppTitle": "ETHOS"
     },

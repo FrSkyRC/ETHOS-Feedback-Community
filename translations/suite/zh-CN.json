@@ -31,7 +31,13 @@
             "SelectBackupHint": "请从列表中选择一份备份以查看详情并恢复.",
             "BackupSuccessBanner": "备份成功完成, 文件已保存为 {{ file }}.",
             "NoComponentsOnDisk": "此磁盘上没有可供选择的组件",
-            "RestoreTargetDisk": "恢复到"
+            "RestoreTargetDisk": "恢复到",
+            "BackupModeComponent": "按组件",
+            "BackupModeFullDisk": "整盘",
+            "FullDiskHint": "备份所选磁盘上的全部文件（不含 .cpuid 身份标识文件）。",
+            "FullDiskRestoreWarning": "将以备份内容覆盖整个目标磁盘，磁盘中不在备份内的文件将被删除。",
+            "FullDiskLabel": "整盘备份",
+            "SelectDisksToBackup": "选择要备份的磁盘"
         },
         "EthosSum": {
             "QuickCardNewsDesc": "查看 ETHOS 固件升级历史与发布说明",
