@@ -299,13 +299,13 @@
             "SystemComponents": "Componenti Sistema",
             "Title": "Backup & Ripristino",
             "NoComponentsOnDrive": "Nessun componente disponibile su disco",
-            "RestoreTargetDrive": "Restore to",
-            "BackupModeComponent": "By component",
-            "BackupModeFullDrive": "Full disk",
-            "FullDriveHint": "Backup all files on the selected disk except .cpuid identity markers.",
-            "FullDriveRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
-            "FullDriveLabel": "Full disk",
-            "SelectDrivesToBackup": "Select disks to backup"
+            "RestoreTargetDrive": "Ripristina su",
+            "BackupModeComponent": "Per Componente",
+            "BackupModeFullDrive": "Tutto il Disco",
+            "FullDriveHint": "Esegui il backup di tutti i file presenti sul disco selezionato, ad eccezione dei marcatori di identità .cpuid.",
+            "FullDriveRestoreWarning": "Questa operazione sovrascriverà l'intero disco di destinazione con il contenuto del backup. I file non presenti nel backup verranno eliminati.",
+            "FullDriveLabel": "Tutto il Disco",
+            "SelectDrivesToBackup": "Seleziona i dischi di cui eseguire il backup"
         },
         "AppTitle": "ETHOS"
     },
