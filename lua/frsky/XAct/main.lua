@@ -1,12 +1,24 @@
-local LUA_VERSION = "2.0.1";
-local nameI18n = {en = "XAct"}
+local LUA_VERSION = "2.0.3";
 
-local function name()
-  local locale = system.getLocale()
-  return nameI18n[locale] or nameI18n["en"]
+local env = setmetatable({}, { __index = _G })
+env._G = env
+
+function env.loadfile(path, mode, givenEnv)
+  return _G.loadfile(path, mode, givenEnv or env)
 end
 
-local basic = assert(loadfile("basic.lua"))()
+local function import(path)
+  return assert(env.loadfile(path))()
+end
+
+local STR = import("i18n/i18n.lua").translate
+env.STR = STR
+
+local function name()
+  return STR("ScriptName")
+end
+
+local basic = import("basic.lua")
 
 local pages = { basic }
 
