@@ -300,12 +300,12 @@
             "Title": "Zálohovanie a obnovenie",
             "NoComponentsOnDrive": "Na tomto disku nie sú k dispozícii žiadne komponenty",
             "RestoreTargetDrive": "Obnoviť na",
-            "BackupModeComponent": "By component",
-            "BackupModeFullDrive": "Full disk",
-            "FullDriveHint": "Backup all files on the selected disk except .cpuid identity markers.",
-            "FullDriveRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
-            "FullDriveLabel": "Full disk",
-            "SelectDrivesToBackup": "Select disks to backup"
+            "BackupModeComponent": "Podľa komponentu",
+            "BackupModeFullDrive": "Disk plný",
+            "FullDriveHint": "Zálohovanie všetkých súborov na vybranom disku okrem značiek identity .cpuid.",
+            "FullDriveRestoreWarning": "Týmto sa prepíše celý cieľový disk so záložným obsahom. Súbory, ktoré nie sú v zálohe, budú odstránené.",
+            "FullDriveLabel": "Disk plný",
+            "SelectDrivesToBackup": "Vyberte disk na zálohovanie"
         },
         "AppTitle": "ETHOS"
     },
@@ -386,7 +386,7 @@
         "FlashFailed": "Aktualizácia zlyhala!",
         "FlashingBootloader": "Nahrávam bootloader...",
         "GuideConnectFinish": "Znova pripojte rádio a kliknite na \"Finish\" tlačidlo po dokončení aktualizácie",
-        "CannotReadDrive": "Cannot read radio disk!",
+        "CannotReadDrive": "Nemožno čítať disk rádia!",
         "SwitchingToMassStorage": "Prepnutie na režim hromadného úložiska ...",
         "AdminRequired": "Vyžadujú sa oprávnenia správcu.",
         "Warning": "Upozornenie",
