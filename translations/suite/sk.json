@@ -279,7 +279,8 @@
             "ContinueWaiting": "Ďalej čakaj",
             "LoadLastLayout": "Načítať rozloženie poslednej strany",
             "LoadLastControls": "Načítať posledné polohy ovládacích prvkov",
-            "SuspendSimulator": "Pozastaviť"
+            "SuspendSimulator": "Pozastaviť",
+            "ScreenshotCopied": "Screenshot copied to clipboard"
         },
         "BackupRecovery": {
             "Advanced": "Pokročilý",

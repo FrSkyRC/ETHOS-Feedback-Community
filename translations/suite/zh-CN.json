@@ -305,7 +305,8 @@
             "ContinueWaiting": "继续等待",
             "LoadLastLayout": "载入最后页面布局",
             "LoadLastControls": "载入最后硬件位置",
-            "SuspendSimulator": "挂起"
+            "SuspendSimulator": "挂起",
+            "ScreenshotCopied": "截图已复制到剪贴板"
         },
         "AppTitle": "ETHOS"
     },

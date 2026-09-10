@@ -279,7 +279,8 @@
             "ContinueWaiting": "Keep waiting",
             "LoadLastLayout": "Load last page layout",
             "LoadLastControls": "Load last control positions",
-            "SuspendSimulator": "Suspend"
+            "SuspendSimulator": "Suspend",
+            "ScreenshotCopied": "Screenshot copied to clipboard"
         },
         "BackupRecovery": {
             "Advanced": "Avanzato",
