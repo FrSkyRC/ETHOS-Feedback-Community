@@ -276,11 +276,11 @@
             "SimUnresponsiveMessage": "Der ETHOS-Simulator reagiert anscheinend nicht mehr. Möchten Sie ihn zwangsweise beenden?",
             "CloseSimulator": "Simulator schließen",
             "FailToOpenSimWindow": "Das Simulatorfenster konnte nicht geöffnet werden.",
-            "ContinueWaiting": "WWeiter warten.",
-            "LoadLastLayout": "Load last page layout",
-            "LoadLastControls": "Load last control positions",
-            "SuspendSimulator": "Suspend",
-            "ScreenshotCopied": "Screenshot copied to clipboard"
+            "ContinueWaiting": "Weiter warten.",
+            "LoadLastLayout": "Letztes Seitenlayout laden",
+            "LoadLastControls": "Letzte Steuerpositionen laden",
+            "SuspendSimulator": "Aussetzen",
+            "ScreenshotCopied": "Screenshot in die Zwischenablage kopiert"
         },
         "BackupRecovery": {
             "Advanced": "Erweitert",
@@ -301,12 +301,12 @@
             "Title": "Sicherung und Wiederherstellung",
             "NoComponentsOnDrive": "Auf diesem Datenträger sind keine Komponenten verfügbar.",
             "RestoreTargetDrive": "Zurücksetzen auf",
-            "BackupModeComponent": "By component",
-            "BackupModeFullDrive": "Full disk",
-            "FullDriveHint": "Backup all files on the selected disk except .cpuid identity markers.",
-            "FullDriveRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
-            "FullDriveLabel": "Full disk",
-            "SelectDrivesToBackup": "Select disks to backup"
+            "BackupModeComponent": "Nach Komponente",
+            "BackupModeFullDrive": "Volle Festplatte",
+            "FullDriveHint": "Sichern Sie alle Dateien auf dem ausgewählten Datenträger mit Ausnahme der .cpuid-Identitätsmarkierungen.",
+            "FullDriveRestoreWarning": "Dadurch wird die gesamte Zielfestplatte mit dem Inhalt des Backups überschrieben. Dateien, die nicht im Backup enthalten sind, werden entfernt.",
+            "FullDriveLabel": "Volle Festplatte!",
+            "SelectDrivesToBackup": "Zu sichernde Datenträger auswählen"
         },
         "AppTitle": "ETHOS"
     },
@@ -518,8 +518,8 @@
         "TargetUpdateRequiresBasicComponent": "{{ targetComponent }} {{ targetVersion }} erfordert {{ requireComponent }} {{ requireVersion }}.",
         "ConfirmFlashComponentFirst": "Zuerst {{ requireComponent }} flashen?",
         "ConfirmRequirementsVersion": "Stellen Sie sicher, dass die Versionsnummern der oben genannten Komponenten die Anforderungen erfüllen, bevor Sie fortfahren.",
-        "FlashRequiredComponents": "Flash required component(s)",
-        "ShowInTheProdcutsList": "Show details in the FrSky product list"
+        "FlashRequiredComponents": "Für das Flashen erforderliche Komponente(n)",
+        "ShowInTheProdcutsList": "Details in der FrSky-Produktliste anzeigen"
     },
     "Model": {
         "BackupLocation": "Sicherungspfad",
