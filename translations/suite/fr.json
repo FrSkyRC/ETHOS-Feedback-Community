@@ -48,7 +48,8 @@
             "Stretch": "Etendre",
             "SelectImageToEdit": "Sélectionner l'image à modifier",
             "OutputSize": "Taille fichier destination",
-            "KeepAspectRatio": "Conserver les proportions"
+            "KeepAspectRatio": "Conserver les proportions",
+            "CustomSize": "Custom size"
         },
         "Audio": {
             "AudioManager": "Gestionnaire audio",

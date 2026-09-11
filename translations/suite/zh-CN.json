@@ -74,7 +74,8 @@
             "Stretch": "拉伸",
             "SelectImageToEdit": "选择图片并调整",
             "OutputSize": "图片大小",
-            "KeepAspectRatio": "保持长宽比例"
+            "KeepAspectRatio": "保持长宽比例",
+            "CustomSize": "Custom size"
         },
         "Audio": {
             "AudioManager": "音频管理器",

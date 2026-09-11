@@ -48,7 +48,8 @@
             "Stretch": "Roztáhnout",
             "SelectImageToEdit": "Vyberte obrázek pro úpravu výstupu",
             "OutputSize": "Velikost výstupu",
-            "KeepAspectRatio": "Zachovat poměr stran"
+            "KeepAspectRatio": "Zachovat poměr stran",
+            "CustomSize": "Custom size"
         },
         "Audio": {
             "AudioManager": "Správce zvuků",

@@ -48,7 +48,8 @@
             "Stretch": "Strecken",
             "SelectImageToEdit": "Wählen Sie ein Bild aus, um die Ausgabe anzupassen.",
             "OutputSize": "Ausgabegröße",
-            "KeepAspectRatio": "Seitenverhältnis beibehalten"
+            "KeepAspectRatio": "Seitenverhältnis beibehalten",
+            "CustomSize": "Custom size"
         },
         "Audio": {
             "AudioManager": "Audio-Verwaltung",

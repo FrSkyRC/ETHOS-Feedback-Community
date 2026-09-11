@@ -48,7 +48,8 @@
             "Stretch": "Strekk",
             "SelectImageToEdit": "Velg et bilde for å justere innstillingene",
             "OutputSize": "Størrelse på bilde",
-            "KeepAspectRatio": "Behold størrelsesforhold"
+            "KeepAspectRatio": "Behold størrelsesforhold",
+            "CustomSize": "Custom size"
         },
         "Audio": {
             "AudioManager": "Lydhåndterer",

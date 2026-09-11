@@ -306,7 +306,8 @@
             "Stretch": "Estirar",
             "SelectImageToEdit": "Seleccione una imagen para ajustar el resultado",
             "OutputSize": "Tamaño del resultado",
-            "KeepAspectRatio": "Mantener la relación de aspecto"
+            "KeepAspectRatio": "Mantener la relación de aspecto",
+            "CustomSize": "Custom size"
         },
         "AppTitle": "ETHOS"
     },

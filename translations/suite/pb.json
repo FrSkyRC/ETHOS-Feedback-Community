@@ -48,7 +48,8 @@
             "Stretch": "Stretch",
             "SelectImageToEdit": "Select an image to adjust output",
             "OutputSize": "Output size",
-            "KeepAspectRatio": "Keep aspect ratio"
+            "KeepAspectRatio": "Keep aspect ratio",
+            "CustomSize": "Custom size"
         },
         "Audio": {
             "AudioManager": "Gerenciador de Áudio",

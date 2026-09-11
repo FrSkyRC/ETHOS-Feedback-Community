@@ -48,7 +48,8 @@
             "Stretch": "Allunga",
             "SelectImageToEdit": "Seleziona un immagine per per regolare l'output",
             "OutputSize": "Dimensione Output",
-            "KeepAspectRatio": "Mantieni le proporzioni"
+            "KeepAspectRatio": "Mantieni le proporzioni",
+            "CustomSize": "Custom size"
         },
         "Audio": {
             "AudioManager": "Manager Audio",
