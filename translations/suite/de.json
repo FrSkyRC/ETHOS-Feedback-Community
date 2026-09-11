@@ -49,7 +49,7 @@
             "SelectImageToEdit": "Wählen Sie ein Bild aus, um die Ausgabe anzupassen.",
             "OutputSize": "Ausgabegröße",
             "KeepAspectRatio": "Seitenverhältnis beibehalten",
-            "CustomSize": "Custom size"
+            "CustomSize": "Individuelle Größe"
         },
         "Audio": {
             "AudioManager": "Audio-Verwaltung",
