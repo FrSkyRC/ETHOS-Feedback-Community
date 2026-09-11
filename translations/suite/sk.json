@@ -49,7 +49,7 @@
             "SelectImageToEdit": "Vyberte obrázok na úpravu výstupu.",
             "OutputSize": "Veľkosť výstupu",
             "KeepAspectRatio": "Zachovať pomer strán",
-            "CustomSize": "Custom size"
+            "CustomSize": "Vlastný pomer strán"
         },
         "Audio": {
             "AudioManager": "Správca zvukov",
