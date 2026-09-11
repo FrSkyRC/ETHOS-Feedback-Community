@@ -49,7 +49,7 @@
             "SelectImageToEdit": "Seleziona un immagine per per regolare l'output",
             "OutputSize": "Dimensione Output",
             "KeepAspectRatio": "Mantieni le proporzioni",
-            "CustomSize": "Custom size"
+            "CustomSize": "Dimensione personalizzata"
         },
         "Audio": {
             "AudioManager": "Manager Audio",
