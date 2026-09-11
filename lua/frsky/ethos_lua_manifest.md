@@ -5,7 +5,7 @@ This document explains how to prepare a ETHOS Lua script ZIP package that can be
 ## Overview
 
 - Package format: **ZIP**
-- A root-level `ethos_lua_manifest.json` is required in the ZIP (case-insensitive filename), Ethos Suite installs **strictly by manifest**: it copies only paths resolved from `files` and writes an installed `ethos_lua_manifest.json` into the target script directory. **If `ethos_lua_manifest.json` exists but is invalid, installation fails.**
+- A root-level `ethos_lua_manifest.json` is required in the ZIP (case-insensitive filename), Suite installs **strictly by manifest**: it copies only paths resolved from `files` and writes an installed `ethos_lua_manifest.json` into the target script directory. **If `ethos_lua_manifest.json` exists but is invalid, installation fails.**
 
 Using a valid `ethos_lua_manifest.json` is strongly recommended for all third-party developers so script identity, versioning, and install scope are predictable.
 
@@ -29,7 +29,16 @@ Using a valid `ethos_lua_manifest.json` is strongly recommended for all third-pa
 - All paths are relative to ZIP root, e.g. `lib/helper.lua`, `i18n/en.txt`.
 - Forbidden: `../`, `..`, absolute paths starting with `/`, drive-letter absolute paths.
 - ZIP entry matching uses normalized forward slashes and is case-insensitive.
-- `folder` and ZIP internal structure are **independent**: `folder` defines install root `RADIO:/scripts/{folder}/`, while selected relative paths from `files` are preserved under that root.
+- `folder` defines install root `RADIO:/scripts/{folder}/`. Resolved paths from `files` are copied under that root; if a path's first segment equals `folder` (case-insensitive), that segment is omitted (see below).
+
+### Case: first path segment equals `folder`
+
+When a resolved ZIP path starts with `{folder}/` (case-insensitive), the leading `{folder}/` is stripped on install:
+
+- `folder = "C"`, `files = ["C/main.lua"]` → `RADIO:/scripts/C/main.lua`
+- `folder = "C"`, `files = ["C/**"]` → `RADIO:/scripts/C/...` (not `RADIO:/scripts/C/C/...`)
+
+Other top-level directories are preserved:
 
 ### Case: `folder=A` but ZIP root only contains `B/`
 
@@ -43,14 +52,7 @@ Install result:
 
 - `RADIO:/scripts/A/B/...`
 
-not:
-
-- `RADIO:/scripts/A/...`
-
-Current spec does **not** support stripping the outer directory (e.g. `B`) automatically. If you want files directly under `A`, either:
-
-1. Repackage so script files are placed at ZIP root and point `files` to root paths;
-2. List exact source paths in `files` to match desired layout (not ideal for large packages).
+If you want files directly under `A` without the extra `B/` segment, either repackage with files at ZIP root, or set `folder` to match the ZIP's top-level directory name so the matching segment is stripped (see above).
 
 ## Minimal Example
 
@@ -131,7 +133,7 @@ bitmaps/icon.png
 4. `version` is incremented per release.
 5. `folder` does not unintentionally conflict with existing script directories.
 6. `files` covers all required files and includes `main.lua` or `main.luac`.
-7. Test installation locally through Ethos Suite and verify behavior on radio.
+7. Test installation locally through Suite and verify behavior on radio.
 
 ## Relationship with Installed Metadata
 
