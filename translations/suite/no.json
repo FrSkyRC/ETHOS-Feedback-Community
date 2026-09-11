@@ -302,11 +302,11 @@
             "Title": "Sikkerhetskopi og gjenoppretting",
             "NoComponentsOnDrive": "Ingen komponenter tilgjengelig på denne disken",
             "RestoreTargetDrive": "Gjenopprett til",
-            "BackupModeComponent": "Via komponent",
+            "BackupModeComponent": "Velg filer",
             "BackupModeFullDrive": "Disk full",
             "FullDriveHint": "Sikkerhetskopier alle filer på den valgte disken bortsett fra .cpuid identitets markører.",
             "FullDriveRestoreWarning": "Dette vil overskrive hele måldisken med sikkerhetskopien. Filer som ikke er i sikkerhetskopien blir fjernet.",
-            "FullDriveLabel": "Disk full",
+            "FullDriveLabel": "Hele disken",
             "SelectDrivesToBackup": "Velg disk som skal tas sikkerhetskopi av"
         },
         "AppTitle": "ETHOS"
