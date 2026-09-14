@@ -361,6 +361,7 @@ FAILSAFE_IS_NOT_SET,,"Failsafe non impostato",
 RTC_BATTERY_IS_LOW,,"Batteria RTC Scarica",
 ALWAYS_ON,,"Attivo",
 ALWAYS_OFF,,"Disattivo"
+REDUCED_POWER,,"Reduced power"
 YES,,"Si",
 DIGITAL_RSSI,,"RSSI Digitale",
 GYRO,,"Gyro",

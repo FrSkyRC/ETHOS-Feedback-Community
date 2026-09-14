@@ -363,6 +363,7 @@ FAILSAFE_IS_NOT_SET,,"フェイルセーフはまだ設定されていません.
 RTC_BATTERY_IS_LOW,,"RTC 電圧低下.",,
 ALWAYS_ON,,"常にオン",,
 ALWAYS_OFF,,"常にオフ"
+REDUCED_POWER,,"Reduced power"
 YES,,"はい",,
 DIGITAL_RSSI,,"デジタル RSSI",,
 GYRO,,"ジャイロ",,
