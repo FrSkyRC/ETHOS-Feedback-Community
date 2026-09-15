@@ -273,15 +273,15 @@
             "ControlsPanel": "Contrôle",
             "TelemetryPanel": "Telemetrie",
             "ConsolePanel": "Console",
-            "SimUnresponsiveTitle": "Simulator not responding",
-            "SimUnresponsiveMessage": "The ETHOS simulator appears to have stopped responding. Do you need to force-close it?",
-            "CloseSimulator": "Close simulator",
-            "FailToOpenSimWindow": "Failed to open the simulator window",
-            "ContinueWaiting": "Keep waiting",
-            "LoadLastLayout": "Load last page layout",
-            "LoadLastControls": "Load last control positions",
-            "SuspendSimulator": "Suspend",
-            "ScreenshotCopied": "Screenshot copied to clipboard"
+            "SimUnresponsiveTitle": "Le simulateur ne répond pas",
+            "SimUnresponsiveMessage": "Le simulateur ETHOS semble ne plus répondre. Forcer la fermeture?",
+            "CloseSimulator": "Fermer simulateur",
+            "FailToOpenSimWindow": "Echec d'ouverture de la fenêtre du simulateur",
+            "ContinueWaiting": "Patienter ....",
+            "LoadLastLayout": "Charger la dernière disposition",
+            "LoadLastControls": "Charger les dernières positions des controles",
+            "SuspendSimulator": "Suspendre",
+            "ScreenshotCopied": "Capture d'écran dans le presse-papier"
         },
         "BackupRecovery": {
             "Advanced": "Advancé",
@@ -302,12 +302,12 @@
             "Title": "Sauvegarde et restauration",
             "NoComponentsOnDrive": "Aucun composant disponible sur ce disque",
             "RestoreTargetDrive": "Restaurer vers",
-            "BackupModeComponent": "By component",
-            "BackupModeFullDrive": "Full disk",
-            "FullDriveHint": "Backup all files on the selected disk except .cpuid identity markers.",
-            "FullDriveRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
-            "FullDriveLabel": "Full disk",
-            "SelectDrivesToBackup": "Select disks to backup"
+            "BackupModeComponent": "Par composant",
+            "BackupModeFullDrive": "Disque plein",
+            "FullDriveHint": "Sauvegarde tous les fichiers à l'exception du fichier d'identification .cpuid.",
+            "FullDriveRestoreWarning": "Récriture de la sauvegarde complète. Les fichiers absents de la sauvegarde seront effacés.",
+            "FullDriveLabel": "Disque plein",
+            "SelectDrivesToBackup": "Choisir le disque de sauvegarde"
         },
         "AppTitle": "ETHOS"
     },
@@ -380,9 +380,9 @@
         "PathInvalid": "Le répertoire sélectionné contient des caractères non valides, et le fichier a été retiré de la liste",
         "Add": "Ajouter",
         "ShowMoreRelease": "Pour plus de versions, basculer vers le GitHub dans les paramètres.",
-        "Abort": "Abort",
-        "BackToTop": "Back to top",
-        "Latest": "Latest",
+        "Abort": "Annuler",
+        "BackToTop": "Retour en haut",
+        "Latest": "Dernier",
         "Caution": "ATTENTION !",
         "FlashFailed": "Echec de la mise à jour !",
         "FlashingBootloader": "Mise à jour du bootloader en cours ...",
@@ -394,8 +394,8 @@
         "SelectOrDropFile": "Sélectionner un fichier, ou glisser un fichier dans la zone",
         "ChangeFolder": "Changer répertoire",
         "OpenFolder": "Ouvrir répertoire",
-        "CompatibleFormatsLabel": "Compatible format(s): ",
-        "GuidedFlow": "Guided flow",
+        "CompatibleFormatsLabel": "Format(s) compatible(s): ",
+        "GuidedFlow": "Flux guidé",
         "NoFileSelected": "Aucun fichier sélectionné",
         "Open": "Ouvrir",
         "TranscodeFinished": "Transcodage terminé !",
@@ -519,8 +519,8 @@
         "TargetUpdateRequiresBasicComponent": "{{ targetComponent }} {{ targetVersion }} nécessite {{ requireComponent }} {{ requireVersion }}.",
         "ConfirmFlashComponentFirst": "Flasher {{ requireComponent }} en premier?",
         "ConfirmRequirementsVersion": "Vérifier que le numéro de version est compatible avant de poursuivre",
-        "FlashRequiredComponents": "Flash required component(s)",
-        "ShowInTheProdcutsList": "Show details in the FrSky product list"
+        "FlashRequiredComponents": "Le flash nécessite le(s) composant(s)",
+        "ShowInTheProdcutsList": "Afficher les détails dans la liste des produits FrSky"
     },
     "Model": {
         "BackupLocation": "Emplacement de la sauvegarde",
@@ -619,7 +619,7 @@
         "ManualsFetchError": "Impossible de charger les manuels. Réessayez plus tard.",
         "LuaPackage": "Fichier lua ETHOS lua (ZIP)",
         "LuaPackageDescription": "Notice pour décrire le contenu d'un fichier ZIP lua ETHOS.",
-        "ECOSGithub": "ECOS GitHub",
+        "ECOSGithub": "Github ECOS",
         "ECOSGithubDescription": "Lien vers ECOS-Feedback-Community on GitHub. Les utilisateurs peuvent soumettre des requêtes pour l'équipe DEV."
     },
     "Updater": {
@@ -628,7 +628,7 @@
         "Updated": "A jour",
         "DownloadUpdater": "Télécharger mise à jour",
         "UpdaterNotFound": "Lien de téléchargement de la mise à jour non trouvé",
-        "DownloadingUpdater": "Downloading updater ...",
+        "DownloadingUpdater": "Téléchargement en cours ...",
         "ConfirmCancelDownload": "Confirmer l'annulation du téléchargement",
         "ConfirmCancelDownloadLabel": "Annuler la téléchargement ? Le processus devra être recommencer depuis le début.",
         "NetworkError": "Erreur de réseau pour le téléchargement de la mise à jour.",
@@ -656,7 +656,7 @@
         "ComPort": "Port COM",
         "FlashingRequestPowerup": "Connection au périphérique en cours ...",
         "FlashingRequestVersion": "Nécessite version ...",
-        "FlashingTransferringData": "Transferring firmware data ...",
+        "FlashingTransferringData": "Transfert données en cours ...",
         "FlashDoneSuccess": "Mise à jour Firmware réussi.",
         "FlashDoneError": "Echec mise à jour Firmware: {{message}}",
         "FlashingTitle": "Flash firmware ECOS en cours. Ne pas déconnecter le périphérique.",
@@ -686,7 +686,7 @@
         "FocusTime": "Heure",
         "NoChannelsSelected": "Select one or more channels on the left to display values.",
         "NoRecentFiles": "Aucun fichiers CSV ouverts récemment.",
-        "NumericOnlyHint": "Colomnes non-numériques (ex: date, heure, texte) sont ignorées. Les cellules vides sont autorisées.",
+        "NumericOnlyHint": "Colones non-numériques (ex: date, heure, texte) sont ignorées. Les cellules vides sont autorisées.",
         "OpenCsv": "Ouvriri fichier CSV",
         "RecentFiles": "Fichiers récents",
         "RecentFilesHint": "Jusqu'à 10 fichiers récents. Cliquez sur la ligne pour ouvrir le fichier.",
@@ -701,7 +701,7 @@
         "ChartHintSwapped": "Défiler pour zoomer sur l'axe Y· Ctrl+Défilement pour zoomer l'heure· Glisser pour déplacer la vue · Survolez pour afficher les valeurs · Double-cliquez pour verrouiller la mise au point",
         "ScrollToZoomX": "Défiler pour zoomer sur l'axe X",
         "ScrollToZoomY": "Défiler pour zoomer sur l'axe Y",
-        "ResetColors": "RAZ coluleurs",
-        "ReferenceLine": "Reference line"
+        "ResetColors": "RAZ couleurs",
+        "ReferenceLine": "Ligne référence"
     }
 }
