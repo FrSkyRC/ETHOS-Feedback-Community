@@ -569,7 +569,7 @@ ENABLE_SLIDER,,"Activer curseur",
 DISABLE_SLIDER,,"Désactiver curseur",
 ALWAYS_ON,,"Toujours ON",
 ALWAYS_OFF,,"Toujours OFF"
-REDUCED_POWER,,"Reduced power"
+REDUCED_POWER,,"Puissance réduite"
 YES,,"Oui",
 DIGITAL_RSSI,,"RSSI numérique",
 GYRO,,"Gyro",
