@@ -634,7 +634,8 @@
         "ProxyAddress": "Proxy address",
         "ProxyPort": "Port",
         "SuiteVersion": "Suite version",
-        "ForceRefetch": "Force re-fetch all server resources"
+        "ForceRefetch": "Force re-fetch all server resources",
+        "AliServer": "Alibaba cloud"
     },
     "Documentation": {
         "Documentation": "Documentation",

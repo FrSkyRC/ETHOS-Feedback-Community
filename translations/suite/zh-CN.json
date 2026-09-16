@@ -75,7 +75,7 @@
             "SelectImageToEdit": "选择图片并调整",
             "OutputSize": "图片大小",
             "KeepAspectRatio": "保持长宽比例",
-            "CustomSize": "Custom size"
+            "CustomSize": "自定义大小"
         },
         "Audio": {
             "AudioManager": "音频管理器",
@@ -405,7 +405,7 @@
         "ExternalModule": "外置模块",
         "Bluetooth": "蓝牙",
         "ConnotReadDriveForComponent": "尝试操作 {{ componentName }} 时无法读取遥控器磁盘",
-        "StorageFreeOfTotal": "{{free}} free of {{total}}"
+        "StorageFreeOfTotal": "{{free}} 可用, 共 {{total}}"
     },
     "Components": {
         "ChooseVideo": {
@@ -634,7 +634,8 @@
         "ProxyAddress": "代理地址",
         "ProxyPort": "端口号",
         "SuiteVersion": "Suite 版本",
-        "ForceRefetch": "强制重新拉取所有服务器资源"
+        "ForceRefetch": "强制重新拉取所有服务器资源",
+        "AliServer": "阿里云服务器"
     },
     "Documentation": {
         "Documentation": "文档",

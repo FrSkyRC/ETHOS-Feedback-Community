@@ -599,7 +599,8 @@
         "SuiteVersion": "Suite-Version",
         "MoreSettings": "Weitere Einstellungen",
         "ProxySettings": "Proxy-Einstellungen",
-        "ForceRefetch": "Alle Serverressourcen erneut abrufen erzwingen"
+        "ForceRefetch": "Alle Serverressourcen erneut abrufen erzwingen",
+        "AliServer": "Alibaba cloud"
     },
     "Documentation": {
         "Documentation": "Dokumentationen",

@@ -599,7 +599,8 @@
         "SuiteVersion": "Verzia Suite",
         "MoreSettings": "Viac nastavení",
         "ProxySettings": "Proxy nastavenia",
-        "ForceRefetch": "Sila na opätovné získanie všetkých zdrojov servera"
+        "ForceRefetch": "Sila na opätovné získanie všetkých zdrojov servera",
+        "AliServer": "Alibaba cloud"
     },
     "Documentation": {
         "Documentation": "Dokumentácia",
