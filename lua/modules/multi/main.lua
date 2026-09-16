@@ -1,3 +1,4 @@
+local LUA_VERSION = "26.1.1";
 -- Multimodule protocols
 
 local FAILSAFE = 1
@@ -92,7 +93,7 @@ local function init()
     system.registerMultimoduleProtocol("Scanner", 54)
     system.registerMultimoduleProtocol("Shenqi", 19, {variants={"Shenqi"}})
     system.registerMultimoduleProtocol("Skyartec", 68)
-    system.registerMultimoduleProtocol("SLT", 11, {variants={"SLT_V1", "SLT_V2", "Q100", "Q200", "MR100"}})
+    system.registerMultimoduleProtocol("SLT", 11, {variants={"SLT_V1", "SLT_V2", "Q100", "Q200", "MR100", "V1_4CH", "RF_SIM", "SLT6TX"}})
     system.registerMultimoduleProtocol("Spektrum", 6, {variants={"DSM2-1F", "DSM2-2F", "DSMX-1F", "DSMX-2F", "AUTO", "DSMR-1F"}, minChannels=3, maxChannels=12, options={DSM2_ENABLE_MAX_THROW_OPTION, DSM2_SERVO_REFRESH_RATE_OPTION, DISABLE_TELEMETRY_OPTION, DISABLE_CH_MAPPING_OPTION, LOW_POWER_OPTION}})
     system.registerMultimoduleProtocol("SymaX", 10, {variants={"SYMAX", "SYMAX5C"}})
     system.registerMultimoduleProtocol("Tiger", 61)
