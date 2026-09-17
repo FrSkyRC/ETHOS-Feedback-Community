@@ -375,7 +375,7 @@
         "PathInvalid": "La localización del archivo contiene caracteres inválidos, y el archivo se ha eliminado de la lista",
         "Add": "Añadir",
         "ShowMoreRelease": "Para conseguir más actualizaciones, puede cambar a GitHub en los ajustes de la Suite.",
-        "Abort": "Abortar",
+        "Abort": "Abort",
         "BackToTop": "Volver arriba",
         "Latest": "Más reciente",
         "Caution": "¡ATENCIÓN!",
@@ -405,7 +405,10 @@
         "ExternalModule": "Módulo Externo",
         "Bluetooth": "Bluetooth",
         "ConnotReadDriveForComponent": "No se puede leer el disco de la radio cuando se está intentando operarla {{ componentName }}",
-        "StorageFreeOfTotal": "{{free}} libres de {{total}}"
+        "StorageFreeOfTotal": "{{free}} libres de {{total}}",
+        "ContinueCurrentOperation": "Continue current operation",
+        "AbortOperation": "Abort operation",
+        "AbortOperationWarning": "Aborting the current operation may damage your device. Confirm that you want to abort. Press and hold to abort."
     },
     "Components": {
         "ChooseVideo": {

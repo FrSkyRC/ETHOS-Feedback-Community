@@ -381,7 +381,7 @@
         "PathInvalid": "Der ausgewählte Dateipfad enthält ungültige Zeichen und die Datei wurde aus der Liste entfernt.",
         "Add": "Hinzufügen",
         "ShowMoreRelease": "Sie können in den Suite-Einstellungen zu GitHub wechseln, um weitere Releases zu erhalten.",
-        "Abort": "Abbrechen",
+        "Abort": "Abort",
         "BackToTop": "Nach oben",
         "Latest": "Letzte",
         "Caution": "VORSICHT!",
@@ -405,7 +405,10 @@
         "ExternalModule": "Externes Modul",
         "Bluetooth": "Bluetooth",
         "ConnotReadDriveForComponent": "Beim Versuch, {{ componentName }} zu bedienen, kann das Sender-LW nicht gelesen werden",
-        "StorageFreeOfTotal": "{{free}} frei von {{total}}"
+        "StorageFreeOfTotal": "{{free}} frei von {{total}}",
+        "ContinueCurrentOperation": "Continue current operation",
+        "AbortOperation": "Abort operation",
+        "AbortOperationWarning": "Aborting the current operation may damage your device. Confirm that you want to abort. Press and hold to abort."
     },
     "Components": {
         "ChooseVideo": {

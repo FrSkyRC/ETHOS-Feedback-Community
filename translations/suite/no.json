@@ -405,7 +405,10 @@
         "ExternalModule": "Ekstern modul",
         "Bluetooth": "Blåtann",
         "ConnotReadDriveForComponent": "Kan ikke lese radio disken under behandling av {{ componentName }}",
-        "StorageFreeOfTotal": "{{free}} ledig av {{total}}"
+        "StorageFreeOfTotal": "{{free}} ledig av {{total}}",
+        "ContinueCurrentOperation": "Continue current operation",
+        "AbortOperation": "Abort operation",
+        "AbortOperationWarning": "Aborting the current operation may damage your device. Confirm that you want to abort. Press and hold to abort."
     },
     "Components": {
         "ChooseVideo": {

@@ -381,7 +381,7 @@
         "PathInvalid": "Il percorso file selezionato contiene caratteri non validi, e il file è stato rimosso dalla lista",
         "Add": "Aggiungi",
         "ShowMoreRelease": "Puoi Selezionare GitHub nelle impostazioni della Suite per ottenere maggiori releases.",
-        "Abort": "Annulla",
+        "Abort": "Abort",
         "BackToTop": "Torna Su",
         "Latest": "Ultima",
         "Caution": "ATTENZIONE!",
@@ -405,7 +405,10 @@
         "ExternalModule": "Modulo Esterno",
         "Bluetooth": "Bluetooth",
         "ConnotReadDriveForComponent": "Impossibile leggere il disco della radio durante il tentativo di usare {{ componentName }}",
-        "StorageFreeOfTotal": "{{free}} libero di {{total}}"
+        "StorageFreeOfTotal": "{{free}} libero di {{total}}",
+        "ContinueCurrentOperation": "Continue current operation",
+        "AbortOperation": "Abort operation",
+        "AbortOperationWarning": "Aborting the current operation may damage your device. Confirm that you want to abort. Press and hold to abort."
     },
     "Components": {
         "ChooseVideo": {

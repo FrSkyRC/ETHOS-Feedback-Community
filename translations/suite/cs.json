@@ -381,7 +381,7 @@
         "PathInvalid": "Vybraná cesta k souboru obsahuje neplatné znaky a soubor byl odstraněn ze seznamu",
         "Add": "Přidat",
         "ShowMoreRelease": "Pro získání více vydání přepněte Umístění serveru na GitHub v Nastavení.",
-        "Abort": "Přerušit",
+        "Abort": "Abort",
         "BackToTop": "Zpět nahoru",
         "Latest": "Aktuální",
         "Caution": "Pozor!",
@@ -405,7 +405,10 @@
         "ExternalModule": "Externí modul",
         "Bluetooth": "Bluetooth",
         "ConnotReadDriveForComponent": "Disk rádia nelze přečíst při provozu {{ componentName }}",
-        "StorageFreeOfTotal": "{{free}} volno z {{total}}"
+        "StorageFreeOfTotal": "{{free}} volno z {{total}}",
+        "ContinueCurrentOperation": "Continue current operation",
+        "AbortOperation": "Abort operation",
+        "AbortOperationWarning": "Aborting the current operation may damage your device. Confirm that you want to abort. Press and hold to abort."
     },
     "Components": {
         "ChooseVideo": {

@@ -380,7 +380,7 @@
         "PathInvalid": "Le répertoire sélectionné contient des caractères non valides, et le fichier a été retiré de la liste",
         "Add": "Ajouter",
         "ShowMoreRelease": "Pour plus de versions, basculer vers le GitHub dans les paramètres.",
-        "Abort": "Annuler",
+        "Abort": "Abort",
         "BackToTop": "Retour en haut",
         "Latest": "Dernier",
         "Caution": "ATTENTION !",
@@ -405,7 +405,10 @@
         "ExternalModule": "Module externe",
         "Bluetooth": "Bluetooth",
         "ConnotReadDriveForComponent": "Lecture disque impossible pour exécuter {{ componentName }}",
-        "StorageFreeOfTotal": "{{free}} libre sur {{total}}"
+        "StorageFreeOfTotal": "{{free}} libre sur {{total}}",
+        "ContinueCurrentOperation": "Continue current operation",
+        "AbortOperation": "Abort operation",
+        "AbortOperationWarning": "Aborting the current operation may damage your device. Confirm that you want to abort. Press and hold to abort."
     },
     "Components": {
         "ChooseVideo": {

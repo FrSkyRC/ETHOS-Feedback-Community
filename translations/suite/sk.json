@@ -381,7 +381,7 @@
         "PathInvalid": "Zvolená cesta k súboru obsahuje neplatné znaky, súbor bude odstránený zo zoznamu",
         "Add": "Pridať",
         "ShowMoreRelease": "V nastaveniach môžete prepnúť zdroj na GitHub a získať viac vydaní..",
-        "Abort": "Zastaviť",
+        "Abort": "Abort",
         "BackToTop": "Späť hore",
         "Latest": "Posledný",
         "Caution": "Pozor!",
@@ -405,7 +405,10 @@
         "ExternalModule": "Externý modul",
         "Bluetooth": "Bluetooth",
         "ConnotReadDriveForComponent": "Nie je možné čítať rádiový disk pri pokuse o prevádzku {{ componentName }}",
-        "StorageFreeOfTotal": "{{free}} free of {{total}}"
+        "StorageFreeOfTotal": "{{free}} free of {{total}}",
+        "ContinueCurrentOperation": "Continue current operation",
+        "AbortOperation": "Abort operation",
+        "AbortOperationWarning": "Aborting the current operation may damage your device. Confirm that you want to abort. Press and hold to abort."
     },
     "Components": {
         "ChooseVideo": {

@@ -405,7 +405,10 @@
         "ExternalModule": "External module",
         "Bluetooth": "Bluetooth",
         "ConnotReadDriveForComponent": "Cannot read radio drive when trying to operate {{ componentName }}",
-        "StorageFreeOfTotal": "{{free}} free of {{total}}"
+        "StorageFreeOfTotal": "{{free}} free of {{total}}",
+        "ContinueCurrentOperation": "Continue current operation",
+        "AbortOperation": "Abort operation",
+        "AbortOperationWarning": "Aborting the current operation may damage your device. Confirm that you want to abort. Press and hold to abort."
     },
     "Components": {
         "ChooseVideo": {

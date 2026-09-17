@@ -382,7 +382,7 @@
         "PathInvalid": "所选文件的路径包含非法字符, 相关文件已从列表中移除",
         "Add": "添加",
         "ShowMoreRelease": "请在设置中将目标服务器更改为 GitHub 以获取更多发布版本.",
-        "Abort": "中止",
+        "Abort": "中断",
         "BackToTop": "返回顶部",
         "NoFileSelected": "没有选择文件",
         "CompatibleFormatsLabel": "兼容格式:",
@@ -405,7 +405,10 @@
         "ExternalModule": "外置模块",
         "Bluetooth": "蓝牙",
         "ConnotReadDriveForComponent": "尝试操作 {{ componentName }} 时无法读取遥控器磁盘",
-        "StorageFreeOfTotal": "{{free}} 可用, 共 {{total}}"
+        "StorageFreeOfTotal": "{{free}} 可用, 共 {{total}}",
+        "ContinueCurrentOperation": "继续当前操作",
+        "AbortOperation": "中断操作",
+        "AbortOperationWarning": "中断当前操作可能会对你的设备造成损坏，请确认是否需要中断当前操作，长按以进行中断"
     },
     "Components": {
         "ChooseVideo": {
