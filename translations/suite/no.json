@@ -132,8 +132,8 @@
             "NoLanguageSelected": "Språk ikke valgt",
             "EthosMode": "ETHOS modus",
             "EarlyAccess": "Tidligtilgang",
-            "MultipleCpuidFiles": "Multiple identity files",
-            "MultipleCpuidFilesMessage": "Multiple matching .cpuid files were found on radio drive {{ drive }}. Remove the extra .cpuid files, then reconnect the radio."
+            "MultipleCpuidFiles": "Flere radio-ID filer funnet",
+            "MultipleCpuidFilesMessage": "Flere like .cpuid filer er funnet på radio-diken {{ drive }}. Fjern den/de ekstra .cpuid filen/e og koble til radioen på nytt"
         },
         "Module": {
             "RFModule": "RF Modul",
