@@ -131,7 +131,9 @@
             "TestingBranchWarning": "Testovacia verzia slúži len na testovanie a neodporúča sa na samotné lietanie. Naozaj chcete prejsť na testovaciu verziu?",
             "NoLanguageSelected": "Nebol vybraný žiadny jazyk",
             "EthosMode": "ETHOS mód",
-            "EarlyAccess": "Predbežný prístup"
+            "EarlyAccess": "Predbežný prístup",
+            "MultipleCpuidFiles": "Multiple identity files",
+            "MultipleCpuidFilesMessage": "Multiple matching .cpuid files were found on radio drive {{ drive }}. Remove the extra .cpuid files, then reconnect the radio."
         },
         "Module": {
             "RFModule": "RF Modul",

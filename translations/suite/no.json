@@ -131,7 +131,9 @@
             "TestingBranchWarning": "Test versjonene er kun for testing og er ikke anbefalt for flyving. Er du sikker på at du vil bytte til test versjonen?",
             "NoLanguageSelected": "Språk ikke valgt",
             "EthosMode": "ETHOS modus",
-            "EarlyAccess": "Tidligtilgang"
+            "EarlyAccess": "Tidligtilgang",
+            "MultipleCpuidFiles": "Multiple identity files",
+            "MultipleCpuidFilesMessage": "Multiple matching .cpuid files were found on radio drive {{ drive }}. Remove the extra .cpuid files, then reconnect the radio."
         },
         "Module": {
             "RFModule": "RF Modul",

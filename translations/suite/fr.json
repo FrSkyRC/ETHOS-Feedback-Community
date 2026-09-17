@@ -131,7 +131,9 @@
             "TestingBranchWarning": "Cette branche est réservée pour les tests. Ne pas utiliser pour les vols. Continuer ?",
             "NoLanguageSelected": "Aucune langue sélectionnée",
             "EthosMode": "Mode ETHOS",
-            "EarlyAccess": "Early access"
+            "EarlyAccess": "Early access",
+            "MultipleCpuidFiles": "Multiple identity files",
+            "MultipleCpuidFilesMessage": "Multiple matching .cpuid files were found on radio drive {{ drive }}. Remove the extra .cpuid files, then reconnect the radio."
         },
         "Module": {
             "RFModule": "Module RF",

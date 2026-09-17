@@ -131,7 +131,9 @@
             "TestingBranchWarning": "Il ramo di test è solo per scopi di sviluppo e non è raccomandato per il volo reale. Sei sicuro di voler passare al ramo di test?",
             "NoLanguageSelected": "Nessuna lingua selezionata",
             "EthosMode": "Modo ETHOS",
-            "EarlyAccess": "Accesso Anticipato"
+            "EarlyAccess": "Accesso Anticipato",
+            "MultipleCpuidFiles": "Multiple identity files",
+            "MultipleCpuidFilesMessage": "Multiple matching .cpuid files were found on radio drive {{ drive }}. Remove the extra .cpuid files, then reconnect the radio."
         },
         "Module": {
             "RFModule": "Modulo RF",
