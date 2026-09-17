@@ -131,9 +131,9 @@
             "TestingBranchWarning": "Der Testzweig dient ausschließlich Testzwecken und wird für den tatsächlichen Flugbetrieb nicht empfohlen. Möchtest du wirklich zum Testzweig wechseln?",
             "NoLanguageSelected": "Keine Sprache ausgewählt!",
             "EthosMode": "ETHOS-Modus",
-            "EarlyAccess": "Early access",
-            "MultipleCpuidFiles": "Multiple identity files",
-            "MultipleCpuidFilesMessage": "Multiple matching .cpuid files were found on radio drive {{ drive }}. Remove the extra .cpuid files, then reconnect the radio."
+            "EarlyAccess": "Vorab-Version",
+            "MultipleCpuidFiles": "Mehrere Identitätsdateien",
+            "MultipleCpuidFilesMessage": "Auf dem Senderlaufwerk {{ drive }} wurden mehrere übereinstimmende .cpuid-Dateien gefunden. Entfernen Sie die zusätzlichen .cpuid-Dateien und schließen Sie den Sender anschließend wieder an."
         },
         "Module": {
             "RFModule": "HF-Modul",
