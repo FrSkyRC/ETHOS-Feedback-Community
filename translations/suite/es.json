@@ -111,9 +111,9 @@
             "TestingBranchWarning": "Esta brach de pruebas solo sirve para pruebas y no está recomendada para volar. ¿Está seguro de querer cambiar a una Brach de pruebas?",
             "NoLanguageSelected": "No se ha seleccionado idioma",
             "EthosMode": "Modo ETHOS",
-            "EarlyAccess": "Early access",
-            "MultipleCpuidFiles": "Multiple identity files",
-            "MultipleCpuidFilesMessage": "Multiple matching .cpuid files were found on radio drive {{ drive }}. Remove the extra .cpuid files, then reconnect the radio."
+            "EarlyAccess": "Acceso anticipado",
+            "MultipleCpuidFiles": "Archivos de identidad múltiple",
+            "MultipleCpuidFilesMessage": "Se han encontrado en el disco {{ drive }} de la radio múltiples archivos .cpuid. Elimine los archivos .cpuid no necesarios y reconecte la radio."
         },
         "Module": {
             "RFModule": "Módulo de RF",
@@ -205,10 +205,10 @@
             "DownloadingSimulator": "Descargando simulador ...",
             "InitSimulatorFailed": "Fallo al iniciar simulador",
             "FailToPrepareSimDir": "Ha ocurrido un error mientras se preparaba el directorio necesario para el simulador",
-            "StopSimulator": "Stop simulator",
+            "StopSimulator": "Parar simulador",
             "UploadFiles": "Cargar archivos",
             "FileUploadedAndReloadSimQuestion": "Ficheros cargados con éxito. Necesita reiniciar el simulador para cargar los archivos",
-            "SwitchPageQuestion": "You are about to leave this page. Would you like to suspend the simulator and keep it running in the background, or close the simulator?",
+            "SwitchPageQuestion": "Va a abandonar esta página. ¿Quiere suspender la simulación y mantenerla funcionando en background, o cerrar el simulador?",
             "NoDestDirSelected": "¡No se ha seleccionado un directorio de destino!",
             "SyncRadioFilesToLocalSimulator": "Sincroniza los archivos de la radio con los del simulador local",
             "OpenLocalSimDir": "Abra el directorio del simulador local",
@@ -255,15 +255,15 @@
             "ControlsPanel": "Controles",
             "TelemetryPanel": "Telemetría",
             "ConsolePanel": "Consola",
-            "SimUnresponsiveTitle": "Simulator not responding",
-            "SimUnresponsiveMessage": "The ETHOS simulator appears to have stopped responding. Do you need to force-close it?",
-            "CloseSimulator": "Close simulator",
-            "FailToOpenSimWindow": "Failed to open the simulator window",
-            "ContinueWaiting": "Keep waiting",
-            "LoadLastLayout": "Load last page layout",
-            "LoadLastControls": "Load last control positions",
-            "SuspendSimulator": "Suspend",
-            "ScreenshotCopied": "Screenshot copied to clipboard"
+            "SimUnresponsiveTitle": "Simulator no responde",
+            "SimUnresponsiveMessage": "Parece que el simulador ETHOS ha dejado de responder. ¿Necesita forzar su cierre?",
+            "CloseSimulator": "Cerrar simulador",
+            "FailToOpenSimWindow": "No se ha podido abrir la ventana del simulador",
+            "ContinueWaiting": "Siga esperando",
+            "LoadLastLayout": "Cargar la última plantilla de página",
+            "LoadLastControls": "Cargar las últimas posiciones de control",
+            "SuspendSimulator": "Suspender",
+            "ScreenshotCopied": "Se ha copiado la pantalla en el portapapeles"
         },
         "BackupRecovery": {
             "Advanced": "Avanzado",
@@ -284,12 +284,12 @@
             "Title": "Copias de seguridad y restauración",
             "NoComponentsOnDrive": "No hay componentes disponibles en este disco",
             "RestoreTargetDrive": "Restaurar en",
-            "BackupModeComponent": "By component",
-            "BackupModeFullDrive": "Full disk",
-            "FullDriveHint": "Backup all files on the selected disk except .cpuid identity markers.",
-            "FullDriveRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
-            "FullDriveLabel": "Full disk",
-            "SelectDrivesToBackup": "Select disks to backup"
+            "BackupModeComponent": "Por componente",
+            "BackupModeFullDrive": "Todo el dico",
+            "FullDriveHint": "Haga copia de seguridad de todos los archivos del disco seleccionado, excepto los marcados como .cpuid.",
+            "FullDriveRestoreWarning": "Esta acción sobreescribirá la totalidad del disco con el contenido del backup. Los archivos que no estén en el backup serán eliminados.",
+            "FullDriveLabel": "Todo el disco",
+            "SelectDrivesToBackup": "Seleccione el disco para backup"
         },
         "Image": {
             "AddImagesOrDrop": "Añadir imágenes o arrastrar archivos",
@@ -298,7 +298,7 @@
             "MaxHeight": "Máx altura",
             "MaxWidth": "Máx anchura",
             "ResolutionSettings": "Ajustes de resolución",
-            "SupportedFormats": "Suporta PNG, JPG, BMP, y SVG.",
+            "SupportedFormats": "Soporta PNG, JPG, BMP, y SVG.",
             "TheFollowingImagesFailedToTranscode": "Ha fallado la transcodificación de las siguientes imágenes:",
             "TranscodingImages": "Transcodificando imágenes ...",
             "Transparent": "Transparente",
@@ -362,7 +362,7 @@
         "Language": "Idioma",
         "DestinationPathNotExists": "¡La dirección de destino no existe!",
         "RefreshingRadioInformation": "Actualizando la información de la radio ...",
-        "ModuleVersion": "Version del módulo:",
+        "ModuleVersion": "Versión del módulo:",
         "VideoComponentVersion": "Versión de vídeo componente:",
         "FSError": "¡Error de operación en el archivo! Se cancela la operación.",
         "OnlineSettingsNotFound": "La configuración online no se ha cargado con éxito.",
@@ -377,7 +377,7 @@
         "PathInvalid": "La localización del archivo contiene caracteres inválidos, y el archivo se ha eliminado de la lista",
         "Add": "Añadir",
         "ShowMoreRelease": "Para conseguir más actualizaciones, puede cambar a GitHub en los ajustes de la Suite.",
-        "Abort": "Abort",
+        "Abort": "Abortar",
         "BackToTop": "Volver arriba",
         "Latest": "Más reciente",
         "Caution": "¡ATENCIÓN!",
@@ -408,9 +408,9 @@
         "Bluetooth": "Bluetooth",
         "ConnotReadDriveForComponent": "No se puede leer el disco de la radio cuando se está intentando operarla {{ componentName }}",
         "StorageFreeOfTotal": "{{free}} libres de {{total}}",
-        "ContinueCurrentOperation": "Continue current operation",
-        "AbortOperation": "Abort operation",
-        "AbortOperationWarning": "Aborting the current operation may damage your device. Confirm that you want to abort. Press and hold to abort."
+        "ContinueCurrentOperation": "Continue la operación actual",
+        "AbortOperation": "Abortar la operación",
+        "AbortOperationWarning": "Abortar la operación actual puede dañar su dispositivo. Confirme que quiere abortarla. Mantenga presionado para abortarla."
     },
     "Components": {
         "ChooseVideo": {
@@ -460,7 +460,7 @@
         "BootloaderInfo": "Información del Bootloader:",
         "NotSuitable": "El archivo FRSK no es adecuado para su radio. ¡Este archivo podría bloquear su radio!",
         "Success": "¡La actualización ha tenido éxito!",
-        "DFUWriting": "DFU writing ...",
+        "DFUWriting": "Escribiendo DFU ...",
         "PermissionDenied": "¡Denegado el acceso!",
         "DFUNotDetected": "No se detecta dispositivo DFU",
         "DriverCheckTitle": "Comprobando nombre del driver DFU",
@@ -524,8 +524,8 @@
         "TargetUpdateRequiresBasicComponent": "{{ targetComponent }} {{ targetVersion }} requiere {{ requireComponent }} {{ requireVersion }}.",
         "ConfirmFlashComponentFirst": "¿Actualizar {{ requireComponent }} primero?",
         "ConfirmRequirementsVersion": "Compruebe, antes de continuar, que el número de versión de los componentes de arriba reunen los requisitos",
-        "FlashRequiredComponents": "Flash required component(s)",
-        "ShowInTheProdcutsList": "Show details in the FrSky product list"
+        "FlashRequiredComponents": "Actualiza componente(s) necesario(s)",
+        "ShowInTheProdcutsList": "Muestra detalles de la lista de productos FrSky"
     },
     "Model": {
         "BackupLocation": "Seleccione directorio de descarga",
@@ -634,7 +634,7 @@
         "Updated": "Actualizado",
         "DownloadUpdater": "Descargue la actualización",
         "UpdaterNotFound": "No se ha encontrado la url de descarga de la actualización",
-        "DownloadingUpdater": "Downloading updater ...",
+        "DownloadingUpdater": "Descargando actualizador ...",
         "ConfirmCancelDownload": "Confirme cancelar la descarga",
         "ConfirmCancelDownloadLabel": "¿Esta seguro de cancelar la descarga? Puede intentarlo más tarde, pero no se conservará lo que lleve descargado hasta ahora.",
         "NetworkError": "Ha ocurrido un error en la red durante el proceso de descarga de la actualización.",
@@ -662,7 +662,7 @@
         "ComPort": "Puerto COM",
         "FlashingRequestPowerup": "Conectando al dispositivo ...",
         "FlashingRequestVersion": "Solicitando versión ...",
-        "FlashingTransferringData": "Transferring firmware data ...",
+        "FlashingTransferringData": "Transfiriendo datos del firmware ...",
         "FlashDoneSuccess": "Actualización del firmware completada con éxito.",
         "FlashDoneError": "Actualización firmware ha fallado: {{message}}",
         "FlashingTitle": "Actualizando firmware ECOS. Por favor, no desconecte el dispositivo.",
@@ -708,6 +708,6 @@
         "ScrollToZoomX": "Deslizar para ampliar X",
         "ScrollToZoomY": "Deslizar para ampliar Y",
         "ResetColors": "Restablecer colores",
-        "ReferenceLine": "Reference line"
+        "ReferenceLine": "Línea de referencia"
     }
 }
