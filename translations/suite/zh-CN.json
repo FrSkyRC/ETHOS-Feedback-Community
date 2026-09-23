@@ -34,8 +34,8 @@
             "RestoreTargetDrive": "恢复到",
             "BackupModeComponent": "按组件",
             "BackupModeFullDrive": "整盘",
-            "FullDriveHint": "备份所选磁盘上的全部文件（不含 .cpuid 身份标识文件）。",
-            "FullDriveRestoreWarning": "将以备份内容覆盖整个目标磁盘，磁盘中不在备份内的文件将被删除。",
+            "FullDriveHint": "备份所选磁盘上的全部文件（不含 .cpuid 身份标识文件）",
+            "FullDriveRestoreWarning": "将以备份内容覆盖整个目标磁盘, 磁盘中不在备份内的文件将被删除",
             "FullDriveLabel": "整盘备份",
             "SelectDrivesToBackup": "选择要备份的磁盘"
         },
@@ -159,7 +159,7 @@
             "EthosMode": "ETHOS 模式",
             "EarlyAccess": "尝鲜版",
             "MultipleCpuidFiles": "检测到多个身份文件",
-            "MultipleCpuidFilesMessage": "检测到遥控器盘符 {{ drive }} 中存在多个匹配的 .cpuid，请检查并删除多余 .cpuid 文件，然后重新连接遥控器"
+            "MultipleCpuidFilesMessage": "检测到遥控器盘符 {{ drive }} 中存在多个匹配的 .cpuid, 请检查并删除多余 .cpuid 文件, 然后重新连接遥控器"
         },
         "Module": {
             "RFModule": "射频模块",
@@ -254,7 +254,7 @@
             "StopSimulator": "停止模拟器",
             "UploadFiles": "上传文件",
             "FileUploadedAndReloadSimQuestion": "文件上传完成, 需要现在重启模拟器来载入文件吗?",
-            "SwitchPageQuestion": "即将离开此页面, 是否需要挂起模拟器使其继续在后台运行，或者关闭模拟器?",
+            "SwitchPageQuestion": "即将离开此页面, 是否需要挂起模拟器使其继续在后台运行, 或者关闭模拟器?",
             "NoDestDirSelected": "没有选择目标目录",
             "SyncRadioFilesToLocalSimulator": "将遥控器中内容同步到本地模拟器目录中",
             "OpenLocalSimDir": "打开本地模拟器目录",
@@ -410,7 +410,7 @@
         "StorageFreeOfTotal": "{{free}} 可用, 共 {{total}}",
         "ContinueCurrentOperation": "继续当前操作",
         "AbortOperation": "中断操作",
-        "AbortOperationWarning": "中断当前操作可能会对你的设备造成损坏，请确认是否需要中断当前操作，长按以进行中断"
+        "AbortOperationWarning": "中断当前操作可能会对你的设备造成损坏, 请确认是否需要中断当前操作, 长按以进行中断"
     },
     "Components": {
         "ChooseVideo": {
