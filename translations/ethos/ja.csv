@@ -725,6 +725,7 @@ AND,,"AND",,
 OR,,"OR",,
 XOR,,"XOR",,
 SENSORS,,"センサー",,
+SENSORS_MANUFACTURER,,"Sensors manufacturer"
 SETTINGS,,"設定"
 COPY_SETTINGS,,"設定をコピー"
 PASTE_SETTINGS,,"設定を貼り付け"

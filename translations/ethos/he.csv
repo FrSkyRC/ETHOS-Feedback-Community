@@ -735,6 +735,7 @@ AND,,ו,,
 OR,,וא,,
 XOR,,XOR,,
 SENSORS,,םינשייח,,
+SENSORS_MANUFACTURER,,"Sensors manufacturer"
 SETTINGS,,תורדגה,,
 COPY_SETTINGS,,תורדגה קתעה,,
 PASTE_SETTINGS,,תורדגה קבדה,,

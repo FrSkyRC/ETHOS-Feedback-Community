@@ -856,6 +856,7 @@ AND,,"AND",
 OR,,"OR",
 XOR,,"XOR",
 SENSORS,,"Capteurs",
+SENSORS_MANUFACTURER,,"Fabricant capteurs"
 SETTINGS,,"Paramètres",
 COPY_SETTINGS,,"Copier paramètres",
 PASTE_SETTINGS,,"Coller paramètres",

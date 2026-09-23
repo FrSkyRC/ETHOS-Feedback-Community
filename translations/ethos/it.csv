@@ -709,6 +709,7 @@ AND,,"AND",
 OR,,"OR",
 XOR,,"XOR",
 SENSORS,,"Sensori",
+SENSORS_MANUFACTURER,,"Sensors manufacturer"
 SETTINGS,,"Settaggi"
 COPY_SETTINGS,,"Copia settaggi"
 PASTE_SETTINGS,,"Incolla settaggi"
