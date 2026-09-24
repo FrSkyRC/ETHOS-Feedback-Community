@@ -708,6 +708,7 @@
         "ScrollToZoomX": "Scrollen, um X-Achse zu zoomen",
         "ScrollToZoomY": "Scrollen, um Y-Achse zu zoomen",
         "ResetColors": "Farben zurücksetzen",
-        "ReferenceLine": "Bezugslinie"
+        "ReferenceLine": "Bezugslinie",
+        "Detail": "Detail"
     }
 }

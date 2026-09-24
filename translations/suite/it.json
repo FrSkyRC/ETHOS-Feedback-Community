@@ -708,6 +708,7 @@
         "ScrollToZoomX": "Scorri per ingrandire X",
         "ScrollToZoomY": "Scorri per ingrandire Y",
         "ResetColors": "Ripristina colori",
-        "ReferenceLine": "Linea di riferimento"
+        "ReferenceLine": "Linea di riferimento",
+        "Detail": "Detail"
     }
 }

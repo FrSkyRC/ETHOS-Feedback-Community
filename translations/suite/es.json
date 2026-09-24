@@ -708,6 +708,7 @@
         "ScrollToZoomX": "Deslizar para ampliar X",
         "ScrollToZoomY": "Deslizar para ampliar Y",
         "ResetColors": "Restablecer colores",
-        "ReferenceLine": "Línea de referencia"
+        "ReferenceLine": "Línea de referencia",
+        "Detail": "Detail"
     }
 }

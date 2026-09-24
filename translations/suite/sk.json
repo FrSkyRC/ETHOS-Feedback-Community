@@ -708,6 +708,7 @@
         "ScrollToZoomX": "Skroluj na priblíženie X",
         "ScrollToZoomY": "Skroluj na priblíženie Y",
         "ResetColors": "Resetovať farby",
-        "ReferenceLine": "Referenčná čiara"
+        "ReferenceLine": "Referenčná čiara",
+        "Detail": "Detail"
     }
 }

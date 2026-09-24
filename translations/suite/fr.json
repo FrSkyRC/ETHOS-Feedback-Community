@@ -708,6 +708,7 @@
         "ScrollToZoomX": "Défiler pour zoomer sur l'axe X",
         "ScrollToZoomY": "Défiler pour zoomer sur l'axe Y",
         "ResetColors": "RAZ couleurs",
-        "ReferenceLine": "Ligne référence"
+        "ReferenceLine": "Ligne référence",
+        "Detail": "Detail"
     }
 }
