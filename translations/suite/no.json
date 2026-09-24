@@ -132,8 +132,8 @@
             "NoLanguageSelected": "Språk ikke valgt",
             "EthosMode": "ETHOS modus",
             "EarlyAccess": "Tidligtilgang",
-            "MultipleCpuidFiles": "Flere radio-ID filer funnet",
-            "MultipleCpuidFilesMessage": "Flere like .cpuid filer er funnet på radio-diken {{ drive }}. Fjern den/de ekstra .cpuid filen/e og koble til radioen på nytt"
+            "MultipleCpuidFiles": "Multiple identity files detected",
+            "MultipleCpuidFilesMessage": "Multiple matching .cpuid files were detected on drive {{ drive }}. Please remove the extra .cpuid files manually, or let Suite remove all .cpuid files for you. After reconnecting the transmitter, ETHOS will create the correct identity file."
         },
         "Module": {
             "RFModule": "RF Modul",

@@ -158,8 +158,8 @@
             "NoLanguageSelected": "未选择语言",
             "EthosMode": "ETHOS 模式",
             "EarlyAccess": "尝鲜版",
-            "MultipleCpuidFiles": "检测到多个身份文件",
-            "MultipleCpuidFilesMessage": "检测到遥控器盘符 {{ drive }} 中存在多个匹配的 .cpuid, 请检查并删除多余 .cpuid 文件, 然后重新连接遥控器"
+            "MultipleCpuidFiles": "检测到多个身份标识文件",
+            "MultipleCpuidFilesMessage": "在驱动器 {{ drive }} 上检测到多个匹配的 .cpuid 文件, 请自行移除多余的 .cpuid 文件, 或让 Suite 帮助移除所有的 .cpuid 文件, 在重新连接遥控器以后, ETHOS 会创建正确的身份识别文件."
         },
         "Module": {
             "RFModule": "射频模块",
