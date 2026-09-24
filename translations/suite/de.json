@@ -132,9 +132,9 @@
             "NoLanguageSelected": "Keine Sprache ausgewählt!",
             "EthosMode": "ETHOS-Modus",
             "EarlyAccess": "Vorab-Version",
-            "MultipleCpuidFiles": "Multiple identity files detected",
-            "MultipleCpuidFilesMessage": "Multiple matching .cpuid files were detected on drive {{ drive }}. Please remove the extra .cpuid files manually, or let Suite remove all .cpuid files for you. After reconnecting the transmitter, ETHOS will create the correct identity file.",
-            "RemoveAllCpuidFiles": "Remove all identity files"
+            "MultipleCpuidFiles": "Mehrere Identitätsdateien (.cpuid) erkannt",
+            "MultipleCpuidFilesMessage": "Auf Laufwerk {{ drive }} wurden mehrere übereinstimmende .cpuid-Dateien gefunden. Bitte entfernen Sie die zusätzlichen .cpuid-Dateien manuell oder lassen Sie die Suite alle .cpuid-Dateien für Sie entfernen. Nach dem erneuten Anschließen des Senders erstellt ETHOS die korrekte Identitätsdatei.",
+            "RemoveAllCpuidFiles": "Alle Identitätsdateien (.cpuid) entfernen"
         },
         "Module": {
             "RFModule": "HF-Modul",
