@@ -132,9 +132,9 @@
             "NoLanguageSelected": "Nessuna lingua selezionata",
             "EthosMode": "Modo ETHOS",
             "EarlyAccess": "Accesso Anticipato",
-            "MultipleCpuidFiles": "Multiple identity files detected",
-            "MultipleCpuidFilesMessage": "Multiple matching .cpuid files were detected on drive {{ drive }}. Please remove the extra .cpuid files manually, or let Suite remove all .cpuid files for you. After reconnecting the transmitter, ETHOS will create the correct identity file.",
-            "RemoveAllCpuidFiles": "Remove all identity files"
+            "MultipleCpuidFiles": "Sono stati rilevati più file di identità",
+            "MultipleCpuidFilesMessage": "Sono stati rilevati più file .cpuid corrispondenti sull'unità {{ drive }}. Si prega di rimuovere manualmente i file .cpuid in eccesso oppure di lasciare che Suite li elimini automaticamente. Dopo aver ricollegato il trasmettitore, ETHOS creerà il file di identità corretto.",
+            "RemoveAllCpuidFiles": "Rimuovi tutti i file di identità"
         },
         "Module": {
             "RFModule": "Modulo RF",
@@ -142,7 +142,7 @@
             "FirmwareDetail": "Dettagli Firmware",
             "ReleaseId": "Release del file",
             "Compatibility": "Compatibilità",
-            "NoModuleFirmware": "Nessun Firmaware del modulo è disponibile online per questa radio."
+            "NoModuleFirmware": "Nessun Firmware del modulo è disponibile online per questa radio."
         },
         "LuaDev": {
             "LuaDevTool": "Strumenti di sviluppo LUA",
