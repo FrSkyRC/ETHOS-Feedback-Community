@@ -133,8 +133,8 @@
             "EthosMode": "Mode ETHOS",
             "EarlyAccess": "Early access",
             "MultipleCpuidFiles": "Multiple identity files detected",
-            "MultipleCpuidFilesMessage": "Multiple matching .cpuid files were detected on drive {{ drive }}. Please remove the extra .cpuid files manually, or let Suite remove all .cpuid files for you. After reconnecting the transmitter, ETHOS will create the correct identity file.",
-            "RemoveAllCpuidFiles": "Remove all identity files"
+            "MultipleCpuidFilesMessage": "Plusieurs fichiers .cpuid files détectés {{ drive }}. Supprimer manuellement le fichier inutile ou bien laisser Suite le faire ? Après reconnection de la radio, Suite recréera les fichiers d'identification automatiquement.",
+            "RemoveAllCpuidFiles": "Supprimer tous les fichiers d'identification"
         },
         "Module": {
             "RFModule": "Module RF",
@@ -226,10 +226,10 @@
             "DownloadingSimulator": "Téléchargement simulateur en cours ...",
             "InitSimulatorFailed": "Erreur initialisation du simulateur",
             "FailToPrepareSimDir": "Une erreur est survenue lors de la création du répertoire du simulateur",
-            "StopSimulator": "Stop simulator",
-            "UploadFiles": "Télecharger fichiers",
+            "StopSimulator": "Arrêter le simulateur",
+            "UploadFiles": "Télécharger fichiers",
             "FileUploadedAndReloadSimQuestion": "Téléchargement fichiers réussi. Redemarrer le simulateur pour charger les fichiers ?",
-            "SwitchPageQuestion": "You are about to leave this page. Would you like to suspend the simulator and keep it running in the background, or close the simulator?",
+            "SwitchPageQuestion": "En fermant cette page, souhaitez-vous quitter le simulateur ou bien le laisser en arrière plan ?",
             "NoDestDirSelected": "Pas de répertoire de destination sélectionné !",
             "SyncRadioFilesToLocalSimulator": "Sync. fichiers radio avec le simulateur local",
             "OpenLocalSimDir": "Ouvrir le répertoire local du simulateur",
@@ -274,7 +274,7 @@
             "LockAxis": "Verrouiller axe",
             "DisplayPanel": "Affichage",
             "ControlsPanel": "Contrôle",
-            "TelemetryPanel": "Telemetrie",
+            "TelemetryPanel": "Télémétrie",
             "ConsolePanel": "Console",
             "SimUnresponsiveTitle": "Le simulateur ne répond pas",
             "SimUnresponsiveMessage": "Le simulateur ETHOS semble ne plus répondre. Forcer la fermeture?",
@@ -409,9 +409,9 @@
         "Bluetooth": "Bluetooth",
         "ConnotReadDriveForComponent": "Lecture disque impossible pour exécuter {{ componentName }}",
         "StorageFreeOfTotal": "{{free}} libre sur {{total}}",
-        "ContinueCurrentOperation": "Continue current operation",
-        "AbortOperation": "Abort operation",
-        "AbortOperationWarning": "Aborting the current operation may damage your device. Confirm that you want to abort. Press and hold to abort."
+        "ContinueCurrentOperation": "Poursuivre opération en cours",
+        "AbortOperation": "Annuler l'opération",
+        "AbortOperationWarning": "Annuler l'opération peux endommager votre périphérique. Maintenir enfoncer pour confirmer annulation."
     },
     "Components": {
         "ChooseVideo": {
@@ -461,7 +461,7 @@
         "BootloaderInfo": "Info du Bootloader :",
         "NotSuitable": "Ce fichier .frsk ne convient pas pour votre radio. Poursuivre pourrait bloquer votre radio !",
         "Success": "Mise à jour du Bootloader réussie !",
-        "DFUWriting": "DFU writing ...",
+        "DFUWriting": "DFU en cours ...",
         "PermissionDenied": "Autorisation refusée !",
         "DFUNotDetected": "Périphérique DFU non trouvé",
         "DriverCheckTitle": "DFU driver check",
@@ -606,7 +606,7 @@
         "MoreSettings": "plus de paramètres",
         "ProxySettings": "Paramètres proxy",
         "ForceRefetch": "Forcer le rechargement de toutes les ressources du serveur",
-        "AliServer": "Alibaba cloud"
+        "AliServer": "Cloud Alibaba"
     },
     "Documentation": {
         "Documentation": "Documentation",
@@ -620,7 +620,7 @@
         "EthosGithubDescription": "Lien vers ETHOS-Feedback-Community GitHub, hébergeant les versions ETHOS. Vous pouvez y signaler des bugs pour l'équipe de développement. Merci d'effectuer une recherche avant le signalement pour éviter des doublons.",
         "OpenWebpage": "Ouvrir dans le navigateur",
         "OpenFAQ": "Ouvrir",
-        "LoadingManuals": "Téléchargement manuels en cours ...",
+        "LoadingManuals": "Téléchargement manuel en cours ...",
         "ManualAsset": "Fichier du manuel",
         "NoManualsAvailable": "Aucun manuel disponible.",
         "ManualsFetchError": "Impossible de charger les manuels. Réessayez plus tard.",
@@ -710,6 +710,6 @@
         "ScrollToZoomY": "Défiler pour zoomer sur l'axe Y",
         "ResetColors": "RAZ couleurs",
         "ReferenceLine": "Ligne référence",
-        "Detail": "Detail"
+        "Detail": "Détail"
     }
 }
