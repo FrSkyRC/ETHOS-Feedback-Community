@@ -607,14 +607,14 @@
         "ProxySettings": "Proxy-Einstellungen",
         "ForceRefetch": "Alle Serverressourcen erneutes abrufen erzwingen",
         "AliServer": "Alibaba Cloud",
-        "ScreenshotShortcut": "Screenshot shortcut",
-        "ScreenshotShortcutHint": "Click the field, then press a key combination",
-        "ScreenshotPressKeys": "Press a shortcut",
-        "ScreenshotCopyClipboard": "Copy to clipboard",
-        "ScreenshotSaveToPath": "Save to path",
-        "ScreenshotSavePath": "Save path",
-        "ScreenshotFilePrefix": "File name prefix",
-        "ScreenshotOptions": "Screenshot options"
+        "ScreenshotShortcut": "Screenshot-Tastenkombination",
+        "ScreenshotShortcutHint": "Klicken Sie auf das Feld und drücken Sie dann eine Tastenkombination.",
+        "ScreenshotPressKeys": "Drücken Sie eine Tastenkombination.",
+        "ScreenshotCopyClipboard": "In die Zwischenablage kopieren",
+        "ScreenshotSaveToPath": "Unter dem Pfad speichern",
+        "ScreenshotSavePath": "Speicherpfad",
+        "ScreenshotFilePrefix": "Dateinamen-Präfix",
+        "ScreenshotOptions": "Screenshot-Optionen"
     },
     "Documentation": {
         "Documentation": "Dokumentationen",
