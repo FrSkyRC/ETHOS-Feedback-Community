@@ -642,7 +642,15 @@
         "ProxyPort": "端口号",
         "SuiteVersion": "Suite 版本",
         "ForceRefetch": "强制重新拉取所有服务器资源",
-        "AliServer": "阿里云服务器"
+        "AliServer": "阿里云服务器",
+        "ScreenshotShortcut": "Screenshot shortcut",
+        "ScreenshotShortcutHint": "Click the field, then press a key combination",
+        "ScreenshotPressKeys": "Press a shortcut",
+        "ScreenshotCopyClipboard": "Copy to clipboard",
+        "ScreenshotSaveToPath": "Save to path",
+        "ScreenshotSavePath": "Save path",
+        "ScreenshotFilePrefix": "File name prefix",
+        "ScreenshotOptions": "Screenshot options"
     },
     "Documentation": {
         "Documentation": "文档",

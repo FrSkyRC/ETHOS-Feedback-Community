@@ -606,7 +606,15 @@
         "MoreSettings": "Settaggi aggiuntivi",
         "ProxySettings": "Settaggi Proxy",
         "ForceRefetch": "Forza il ricaricamento di tutte le risorse del server",
-        "AliServer": "Alibaba Cloud"
+        "AliServer": "Alibaba Cloud",
+        "ScreenshotShortcut": "Screenshot shortcut",
+        "ScreenshotShortcutHint": "Click the field, then press a key combination",
+        "ScreenshotPressKeys": "Press a shortcut",
+        "ScreenshotCopyClipboard": "Copy to clipboard",
+        "ScreenshotSaveToPath": "Save to path",
+        "ScreenshotSavePath": "Save path",
+        "ScreenshotFilePrefix": "File name prefix",
+        "ScreenshotOptions": "Screenshot options"
     },
     "Documentation": {
         "Documentation": "Documentazione",

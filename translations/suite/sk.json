@@ -606,7 +606,15 @@
         "MoreSettings": "Viac nastavení",
         "ProxySettings": "Proxy nastavenia",
         "ForceRefetch": "Sila na opätovné získanie všetkých zdrojov servera",
-        "AliServer": "Alibaba cloud"
+        "AliServer": "Alibaba cloud",
+        "ScreenshotShortcut": "Screenshot shortcut",
+        "ScreenshotShortcutHint": "Click the field, then press a key combination",
+        "ScreenshotPressKeys": "Press a shortcut",
+        "ScreenshotCopyClipboard": "Copy to clipboard",
+        "ScreenshotSaveToPath": "Save to path",
+        "ScreenshotSavePath": "Save path",
+        "ScreenshotFilePrefix": "File name prefix",
+        "ScreenshotOptions": "Screenshot options"
     },
     "Documentation": {
         "Documentation": "Dokumentácia",
