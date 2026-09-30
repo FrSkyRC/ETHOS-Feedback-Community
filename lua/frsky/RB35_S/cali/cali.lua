@@ -43,7 +43,6 @@ end
 local function paint(widget)
   local width, height = lcd.getWindowSize()
 
-  print("lcd:paint()")
   lcd.drawText(width / 2, 10, "Calibration of SxR Gyros and Accelerometers", CENTERED)
 
   if calibrationState == CALIBRATION_OK then
