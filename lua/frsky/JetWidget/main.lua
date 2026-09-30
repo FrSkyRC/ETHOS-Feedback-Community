@@ -4,23 +4,6 @@
 -- Bitmap resources
 local pumpPanel, pumpPointer, rpmPanel, rpmPointer, egtPanel, egtPointer, speedPanel, speedPointer
 
--- Values
-local altValue = 0
-local altUnit = ""
-
-local fuelValue = 0
-
-local rpmValue = 0
-local rpmUnit = ""
-
-local pumpValue = 0
-
-local egtValue = 0
-local egtUnit = ""
-
-local speedValue = 0
-local speedUnit = ""
-
 local function calRotaryAngle(percent)
   local angle = 315 + percent * 270 / 100
   while angle > 360 do
@@ -48,7 +31,9 @@ local function create()
     speedPanel = lcd.loadBitmap("speed_panel.png")
     speedPointer = lcd.loadBitmap("speed_pointer.png")
   end
-  return { maxFuel = 100, maxRpm = 100, maxEgt = 100, maxSpeed = 100 }
+  return { maxFuel = 100, maxRpm = 100, maxEgt = 100, maxSpeed = 100,
+           altValue = 0, altUnit = "", fuelValue = 0, rpmValue = 0, rpmUnit = "",
+           pumpValue = 0, egtValue = 0, egtUnit = "", speedValue = 0, speedUnit = "" }
 end
 
 local function build(widget)
@@ -99,14 +84,14 @@ local VALUE_PER_BIG_CURSOR = 10
 
 local function paintAltitude(widget)
   lcd.font(FONT_S)
-  local textW, textH = lcd.getTextSize(altValue)
+  local textW, textH = lcd.getTextSize(widget.altValue)
 
-  local ceilValue = math.ceil(altValue)
+  local ceilValue = math.ceil(widget.altValue)
   local adj = ceilValue % VALUE_PER_CURSOR
   if adj ~= 0 then
     ceilValue = ceilValue + (VALUE_PER_CURSOR - adj)
   end
-  local ceilY = widget.altArea.y - PIXEL_PER_CURSOR * (ceilValue - altValue) / VALUE_PER_CURSOR
+  local ceilY = widget.altArea.y - PIXEL_PER_CURSOR * (ceilValue - widget.altValue) / VALUE_PER_CURSOR
   while ceilY > 0 do
     ceilY = ceilY - PIXEL_PER_CURSOR
     ceilValue = ceilValue + VALUE_PER_CURSOR
@@ -137,10 +122,10 @@ local function paintAltitude(widget)
   lcd.drawLine(widget.altArea.x, widget.altArea.y, widget.altArea.x + PIXEL_PER_CURSOR / 2, widget.altArea.y + PIXEL_PER_CURSOR / 2)
   lcd.drawLine(widget.altArea.x + PIXEL_PER_CURSOR / 2, widget.altArea.y + PIXEL_PER_CURSOR / 2, widget.altArea.x + PIXEL_PER_CURSOR / 2 + textW + 10, widget.altArea.y + PIXEL_PER_CURSOR / 2)
   lcd.drawLine(widget.altArea.x + PIXEL_PER_CURSOR / 2 + textW + 10, widget.altArea.y - PIXEL_PER_CURSOR / 2, widget.altArea.x + PIXEL_PER_CURSOR / 2 + textW + 10, widget.altArea.y + PIXEL_PER_CURSOR / 2)
-  lcd.drawText(widget.altArea.x + PIXEL_PER_CURSOR / 2 + 5, widget.altArea.y - textH / 2, altValue)
+  lcd.drawText(widget.altArea.x + PIXEL_PER_CURSOR / 2 + 5, widget.altArea.y - textH / 2, widget.altValue)
 
   local maxW = lcd.getTextSize("-9999")
-  lcd.drawText(widget.altArea.x + 5 + maxW, widget.altArea.h - textH * 2, altUnit)
+  lcd.drawText(widget.altArea.x + 5 + maxW, widget.altArea.h - textH * 2, widget.altUnit)
   lcd.drawText(widget.altArea.x + 5 + maxW, widget.altArea.h - textH, "Altitude")
 end
 
@@ -151,27 +136,27 @@ local function paintFuel(widget)
   lcd.drawLine(widget.fuelArea.x, widget.fuelArea.h / 2, widget.fuelArea.x + widget.fuelArea.w, widget.fuelArea.h / 2)
   lcd.drawLine(widget.fuelArea.x, widget.fuelArea.h * 3 / 4, widget.fuelArea.x + widget.fuelArea.w, widget.fuelArea.h * 3 / 4)
   lcd.drawLine(widget.fuelArea.x, widget.fuelArea.h - 1, widget.fuelArea.x + widget.fuelArea.w, widget.fuelArea.h - 1)
-  lcd.drawFilledRectangle(widget.fuelArea.x + widget.fuelArea.w - 3, 0, widget.fuelArea.x + widget.fuelArea.w, widget.fuelArea.h)
+  lcd.drawFilledRectangle(widget.fuelArea.x + widget.fuelArea.w - 3, 0, 3, widget.fuelArea.h)
 
   local textW, textH = lcd.getTextSize("E")
   lcd.drawText(widget.fuelArea.x - textW, 0, "F", RIGHT)
   lcd.drawText(widget.fuelArea.x - textW, (widget.fuelArea.h - textH) / 2, "1/2", RIGHT)
   lcd.drawText(widget.fuelArea.x - textW, widget.fuelArea.h - textH, "E", RIGHT)
 
-  local y = widget.fuelArea.h * (widget.maxFuel - fuelValue) / widget.maxFuel
+  local y = widget.fuelArea.h * (widget.maxFuel - widget.fuelValue) / widget.maxFuel
   lcd.drawFilledRectangle(widget.fuelArea.x + widget.fuelArea.w / 2, y, widget.fuelArea.w / 2, widget.fuelArea.h - y)
 end
 
 local function paint(widget)
-  local textW, textH = lcd.getTextSize(rpmValue)
+  local textW, textH = lcd.getTextSize(widget.rpmValue)
 
   -- RPM
   if rpmPanel ~= nil and rpmPointer ~= nil then
     lcd.drawBitmap(widget.rpmPanelLeft, widget.rpmPanelTop, rpmPanel)
     lcd.color(lcd.GREY(0xFF))
-    lcd.drawText(widget.rpmPanelLeft + rpmPanel:width() / 2, widget.rpmPanelTop + rpmPanel:height() / 2 + textH, rpmValue, CENTERED)
-    lcd.drawText(widget.rpmPanelLeft + rpmPanel:width() / 2, widget.rpmPanelTop + rpmPanel:height() / 2 + textH * 2, rpmUnit, CENTERED)
-    local angle = calRotaryAngleWithLimit(0, rpmValue, widget.maxRpm)
+    lcd.drawText(widget.rpmPanelLeft + rpmPanel:width() / 2, widget.rpmPanelTop + rpmPanel:height() / 2 + textH, widget.rpmValue, CENTERED)
+    lcd.drawText(widget.rpmPanelLeft + rpmPanel:width() / 2, widget.rpmPanelTop + rpmPanel:height() / 2 + textH * 2, widget.rpmUnit, CENTERED)
+    local angle = calRotaryAngleWithLimit(0, widget.rpmValue, widget.maxRpm)
     lcd.drawBitmap(widget.rpmPointerLeft, widget.rpmPointerTop, rpmPointer:rotate(angle))
   end
 
@@ -179,9 +164,9 @@ local function paint(widget)
   if speedPanel ~= nil and speedPointer ~= nil then
     lcd.drawBitmap(widget.speedPanelLeft, widget.speedPanelTop, speedPanel)
     lcd.color(lcd.GREY(0xFF))
-    lcd.drawText(widget.speedPanelLeft + speedPanel:width() / 2, widget.speedPanelTop + speedPanel:height() / 2 + textH, speedValue, CENTERED)
-    lcd.drawText(widget.speedPanelLeft + speedPanel:width() / 2, widget.speedPanelTop + speedPanel:height() / 2 + textH * 2, speedUnit, CENTERED)
-    local angle = calRotaryAngleWithLimit(0, speedValue, widget.maxSpeed)
+    lcd.drawText(widget.speedPanelLeft + speedPanel:width() / 2, widget.speedPanelTop + speedPanel:height() / 2 + textH, widget.speedValue, CENTERED)
+    lcd.drawText(widget.speedPanelLeft + speedPanel:width() / 2, widget.speedPanelTop + speedPanel:height() / 2 + textH * 2, widget.speedUnit, CENTERED)
+    local angle = calRotaryAngleWithLimit(0, widget.speedValue, widget.maxSpeed)
     lcd.drawBitmap(widget.speedPointerLeft, widget.speedPointerTop, speedPointer:rotate(angle))
   end
 
@@ -189,8 +174,8 @@ local function paint(widget)
   if egtPanel ~= nil and egtPointer ~= nil then
     lcd.drawBitmap(widget.egtPanelLeft, widget.egtPanelTop, egtPanel)
     lcd.color(lcd.GREY(0xFF))
-    lcd.drawText(widget.egtPanelLeft + egtPanel:width() / 2, widget.egtPanelTop + egtPanel:height() / 2 + textH, math.floor(egtValue) .. egtUnit, CENTERED)
-    local angle = calRotaryAngleWithLimit(0, egtValue, widget.maxEgt)
+    lcd.drawText(widget.egtPanelLeft + egtPanel:width() / 2, widget.egtPanelTop + egtPanel:height() / 2 + textH, math.floor(widget.egtValue) .. widget.egtUnit, CENTERED)
+    local angle = calRotaryAngleWithLimit(0, widget.egtValue, widget.maxEgt)
     lcd.drawBitmap(widget.egtPointerLeft, widget.egtPointerTop, egtPointer:rotate(angle))
   end
 
@@ -198,8 +183,8 @@ local function paint(widget)
   if pumpPanel ~= nil and pumpPointer ~= nil then
     lcd.drawBitmap(widget.pumpPanelLeft, widget.pumpPanelTop, pumpPanel)
     lcd.color(lcd.GREY(0xFF))
-    lcd.drawText(widget.pumpPanelLeft + pumpPanel:width() / 2, widget.pumpPanelTop + pumpPanel:height() / 2 + textH, math.floor(pumpValue) .. "%", CENTERED)
-    local angle = calRotaryAngleWithLimit(0, pumpValue, 100)
+    lcd.drawText(widget.pumpPanelLeft + pumpPanel:width() / 2, widget.pumpPanelTop + pumpPanel:height() / 2 + textH, math.floor(widget.pumpValue) .. "%", CENTERED)
+    local angle = calRotaryAngleWithLimit(0, widget.pumpValue, 100)
     lcd.drawBitmap(widget.pumpPointerLeft, widget.pumpPointerTop, pumpPointer:rotate(angle))
   end
 
@@ -214,13 +199,13 @@ local function wakeup(widget)
   local invalidateNeeded = false
   if widget.altSource ~= nil then
     local newValue = widget.altSource:value()
-    if altValue ~= newValue then
-      altValue = newValue
+    if widget.altValue ~= newValue then
+      widget.altValue = newValue
       invalidateNeeded = true
     end
     local newUnit = widget.altSource:stringUnit() or ""
-    if altUnit ~= newUnit then
-      altUnit = newUnit
+    if widget.altUnit ~= newUnit then
+      widget.altUnit = newUnit
       invalidateNeeded = true
     end
   end
@@ -228,13 +213,13 @@ local function wakeup(widget)
   if widget.rpmSource ~= nil and widget.maxRpm ~= nil then
     local newValue = widget.rpmSource:value()
     newValue = limit(0, newValue, widget.maxRpm)
-    if rpmValue ~= newValue then
-      rpmValue = newValue
+    if widget.rpmValue ~= newValue then
+      widget.rpmValue = newValue
       invalidateNeeded = true
     end
     local newUnit = widget.rpmSource:stringUnit() or ""
-    if rpmUnit ~= newUnit then
-      rpmUnit = newUnit
+    if widget.rpmUnit ~= newUnit then
+      widget.rpmUnit = newUnit
       invalidateNeeded = true
     end
   end
@@ -242,13 +227,13 @@ local function wakeup(widget)
   if widget.speedSource ~= nil and widget.maxSpeed ~= nil then
     local newValue = widget.speedSource:value()
     newValue = limit(0, newValue, widget.maxSpeed)
-    if speedValue ~= newValue then
-      speedValue = newValue
+    if widget.speedValue ~= newValue then
+      widget.speedValue = newValue
       invalidateNeeded = true
     end
     local newUnit = widget.speedSource:stringUnit() or ""
-    if speedUnit ~= newUnit then
-      speedUnit = newUnit
+    if widget.speedUnit ~= newUnit then
+      widget.speedUnit = newUnit
       invalidateNeeded = true
     end
   end
@@ -256,8 +241,8 @@ local function wakeup(widget)
   if widget.fuelSource ~= nil and widget.maxFuel ~= nil then
     local newValue = widget.fuelSource:value()
     newValue = limit(0, newValue, widget.maxFuel)
-    if fuelValue ~= newValue then
-      fuelValue = newValue
+    if widget.fuelValue ~= newValue then
+      widget.fuelValue = newValue
       invalidateNeeded = true
     end
   end
@@ -265,8 +250,8 @@ local function wakeup(widget)
   if widget.pumpSource ~= nil then
     local newValue = widget.pumpSource:value()
     newValue = limit(0, newValue, 100)
-    if pumpValue ~= newValue then
-      pumpValue = newValue
+    if widget.pumpValue ~= newValue then
+      widget.pumpValue = newValue
       invalidateNeeded = true
     end
   end
@@ -274,13 +259,13 @@ local function wakeup(widget)
   if widget.egtSource ~= nil and widget.maxEgt ~= nil then
     local newValue = widget.egtSource:value()
     newValue = limit(0, newValue, widget.maxEgt)
-    if egtValue ~= newValue then
-      egtValue = newValue
+    if widget.egtValue ~= newValue then
+      widget.egtValue = newValue
       invalidateNeeded = true
     end
     local newUnit = widget.egtSource:stringUnit() or ""
-    if egtUnit ~= newUnit then
-      egtUnit = newUnit
+    if widget.egtUnit ~= newUnit then
+      widget.egtUnit = newUnit
       invalidateNeeded = true
     end
   end
@@ -304,7 +289,7 @@ local function configure(widget)
     end
   end)
   line = panel:addLine("Max RPM")
-  rpmMaxEdit = form.addNumberField(line, nil, 0, 10000, function() return widget.maxRpm end, function(newValue) widget.maxRpm = newValue end)
+  rpmMaxEdit = form.addNumberField(line, nil, 1, 10000, function() return widget.maxRpm end, function(newValue) widget.maxRpm = newValue end)
   if widget.rpmSource ~= nil then
     rpmMaxEdit:suffix(widget.rpmSource:stringUnit())
   end
@@ -319,7 +304,7 @@ local function configure(widget)
     end
   end)
   line = panel:addLine("Max Speed")
-  speedMaxEdit = form.addNumberField(line, nil, 0, 10000, function() return widget.maxSpeed end, function(newValue) widget.maxSpeed = newValue end)
+  speedMaxEdit = form.addNumberField(line, nil, 1, 10000, function() return widget.maxSpeed end, function(newValue) widget.maxSpeed = newValue end)
   if widget.speedSource ~= nil then
     speedMaxEdit:suffix(widget.speedSource:stringUnit())
   end
@@ -334,7 +319,7 @@ local function configure(widget)
     end
   end)
   line = panel:addLine("Max fuel")
-  maxFuelEdit = form.addNumberField(line, nil, 0, 10000, function() return widget.maxFuel end, function(newValue) widget.maxFuel = newValue end)
+  maxFuelEdit = form.addNumberField(line, nil, 1, 10000, function() return widget.maxFuel end, function(newValue) widget.maxFuel = newValue end)
   if widget.fuelSource ~= nil then
     maxFuelEdit:suffix(widget.fuelSource:stringUnit())
   end
@@ -349,9 +334,9 @@ local function configure(widget)
     end
   end)
   line = panel:addLine("Max EGT")
-  egtMaxEdit = form.addNumberField(line, nil, 0, 10000, function() return widget.maxEgt end, function(newValue) widget.maxEgt = newValue end)
+  egtMaxEdit = form.addNumberField(line, nil, 1, 10000, function() return widget.maxEgt end, function(newValue) widget.maxEgt = newValue end)
   if widget.egtSource ~= nil then
-    maxFuelEdit:suffix(widget.egtSource:stringUnit())
+    egtMaxEdit:suffix(widget.egtSource:stringUnit())
   end
 
   line = form.addLine("Pump source")
@@ -362,16 +347,16 @@ local function read(widget)
   widget.altSource = storage.read("altSource")
 
   widget.rpmSource = storage.read("rpmSource")
-  widget.maxRpm = storage.read("maxRpm")
+  widget.maxRpm = storage.read("maxRpm") or 100
 
   widget.speedSource = storage.read("speedSource")
-  widget.maxSpeed = storage.read("maxSpeed")
+  widget.maxSpeed = storage.read("maxSpeed") or 100
 
   widget.fuelSource = storage.read("fuelSource")
-  widget.maxFuel = storage.read("maxFuel")
+  widget.maxFuel = storage.read("maxFuel") or 100
 
   widget.egtSource = storage.read("egtSource")
-  widget.maxEgt = storage.read("maxEgt")
+  widget.maxEgt = storage.read("maxEgt") or 100
 
   widget.pumpSource = storage.read("pumpSource")
 end
