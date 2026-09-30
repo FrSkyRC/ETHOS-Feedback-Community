@@ -15,13 +15,13 @@ local parameters = {
   { fieldFunction = CreateChoiceField, fieldName = "3D Mode(Effective after restart)", pageAddress = 0x87, valueWrite = valueWrite, extraInfo = {valuePairs = {{"OFF", 0}, {"ON", 1}}} },
   { fieldFunction = CreateNumberField, fieldName = "Current calibration", pageAddress = 0x88, defaultValue = 100, valueWrite = valueWrite, extraInfo = {min = 75, max = 125, suffix = "%"}},
   { fieldFunction = CreateNumberField, fieldName = "Current limit", pageAddress = 0x89, defaultValue = 40, getValue = function (value)
-    return value / 100
+    return value // 100
   end, setValue = function(param, newValue)
     param.value = newValue * 100
     param.state = FieldState.DIRTY
   end, valueWrite = valueWrite, extraInfo = {min = 0, max = 655, suffix = "A"}},
   { fieldFunction = CreateNumberField, fieldName = "BEC voltage", pageAddress = 0x8A, defaultValue = 50, getValue = function (value)
-    return value / 10
+    return value // 10
   end, setValue = function(param, newValue)
     param.value = newValue * 10
     param.state = FieldState.DIRTY
