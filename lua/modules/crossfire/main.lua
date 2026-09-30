@@ -85,7 +85,7 @@ end
 local function setCurrentDevice(device)
   deviceId = device.id
   fields = {}
-  fieldsCount = device.fieldsCount
+  local fieldsCount = device.fieldsCount
   for i = 1, device.fieldsCount do 
     fields[i] = {} 
   end
@@ -105,7 +105,6 @@ local function parseDeviceInfoMessage(data)
   local device = getDevice(name)
   if device == nil then
     device = createDevice(id, name, data[offset + 12])
-    isElrsTx = (parseValue(data, offset, 4) == 0x454C5253 and deviceId == 0xEE) or nil -- SerialNumber = 'E L R S' and ID is TX module
     devices[#devices + 1] = device
     if device.fieldsCount > 0 then
       local line = form.addLine(name, currentExpansionPanel)
@@ -172,7 +171,7 @@ local function parseParameterInfoMessage(data)
         field.values, offset = parseChoiceValues(fieldData, offset)
         field.value = fieldData[offset]
         field.unit = parseString(fieldData, offset + 4)
-        if field.widget == nil then
+        if field.widget == nil and field.hidden == 0 then
           local line = form.addLine(field.name, currentExpansionPanel)
           field.widget = form.addChoiceField(line, nil, field.values, 
             function()
@@ -190,8 +189,10 @@ local function parseParameterInfoMessage(data)
         -- print("Status: " .. field.status .. ", Info: " .. field.info)
         if field.dialog then
           if field.status == 0 then
+            -- Command finished: close the dialog and stop polling it
             field.dialog:close()
-            -- field.dialog = nil
+            field.dialog = nil
+            fieldPopup = nil
           else
             if field.status == 3 then
               field.dialog:buttons({
@@ -199,18 +200,28 @@ local function parseParameterInfoMessage(data)
                   label = "OK",
                   action = function()
                     pushFrame(0x2D, {deviceId, handsetId, field.id, 4}) -- lcsConfirmed
-                    fieldTimeout = os.time() + field.timeout / 100 -- we are expecting an immediate response
+                    fieldTime = os.clock() + field.timeout / 100 -- we are expecting an immediate response
                     field.status = 4
                   end
                 }, 
-                {label = "Cancel"}
+                {
+                  label = "Cancel",
+                  action = function()
+                    pushFrame(0x2D, {deviceId, handsetId, field.id, 5}) -- lcsCancelled
+                    fieldPopup = nil
+                    field.dialog = nil
+                    return true
+                  end
+                }
               })
             else
               field.dialog:buttons({
                 {
                   label = "Cancel",
                   action = function()
+                    pushFrame(0x2D, {deviceId, handsetId, field.id, 5}) -- lcsCancelled
                     fieldPopup = nil
+                    field.dialog = nil
                     return true
                   end
                 }
@@ -218,7 +229,7 @@ local function parseParameterInfoMessage(data)
             end
             field.dialog:message(field.info)
           end
-        elseif field.widget == nil then
+        elseif field.widget == nil and field.hidden == 0 then
           local line = form.addLine("", currentExpansionPanel)
           field.widget = form.addTextButton(line, nil, field.name, function()
             if field.status < 4 then
@@ -229,7 +240,9 @@ local function parseParameterInfoMessage(data)
                 {
                   label = "Cancel",
                   action = function()
+                    pushFrame(0x2D, {deviceId, handsetId, field.id, 5}) -- lcsCancelled
                     fieldPopup = nil
+                    field.dialog = nil
                     return true
                   end
                 }
@@ -243,7 +256,7 @@ local function parseParameterInfoMessage(data)
           local line = form.addLine(field.name, currentExpansionPanel)
           field.widget = form.addStaticText(line, nil, field.value)
         end
-      elseif field.type == 11 then
+      elseif field.type == 11 and field.hidden == 0 then
         currentExpansionPanel = form.addExpansionPanel(field.name)
         currentParent = field
       else
@@ -261,7 +274,7 @@ local function wakeup(widget)
 
   local time = os.clock()
   while true do
-    command, data = popFrame()
+    local command, data = popFrame()
     if command == nil then
       break
     elseif command == 0x29 then
