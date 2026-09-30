@@ -84,13 +84,13 @@ end
 local function createResetButton(line, parameter)
   local field = form.addTextButton(line, nil, parameter[6], function()
     local buttons = {
-      {label="Cancel", action=function () return true end},
-      {label="Reset", action=function() setValue(parameter, parameter[7]) return true end},
+      {label = STR("Cancel"), action=function () return true end},
+      {label = STR("Reset"), action=function() setValue(parameter, parameter[7]) return true end},
     }
     form.openDialog({
-      title="Confirm reset",
-      message="Settings are about to be reset.\nPlease confirm to continue.",
-      buttons=buttons
+      title = STR("ConfirmReset"),
+      message = STR("ResetLabel"),
+      buttons = buttons
     })
   end)
   field:enable(false)
@@ -219,7 +219,7 @@ local function buildBackupForm(ePanel, focusRefresh)
         fields[index]:enable(false)
       end
     end
-    Dialog.openDialog({title = STR("ConfigurationLoaded"), message = STR("ConfigFileLoaded", {name = '\n' .. restoreFileName}), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
+    Dialog.openDialog({title = STR("ConfigurationLoaded"), message = STR("ConfigFileLoaded", {file = '\n' .. restoreFileName}), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
   end)
 
   local button = form.addTextButton(ePanelLine, slots[3], "Save", function()
@@ -271,7 +271,7 @@ local function buildBackupForm(ePanel, focusRefresh)
     if file ~= nil then
       file:write(output)
       file:close()
-      Dialog.openDialog({title = STR("configurationSaved"), message = STR("ConfigSaveToFile", {fileName = "\n"..fileName}) .. fileName, buttons = {{label = STR("OK"), action = function ()
+      Dialog.openDialog({title = STR("configurationSaved"), message = STR("ConfigSaveToFile", {fileName = "\n"..fileName}), buttons = {{label = STR("OK"), action = function ()
         Dialog.closeDialog()
         buildBackupForm(ePanel, true)
       end}},})
