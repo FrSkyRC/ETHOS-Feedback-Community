@@ -199,7 +199,7 @@ local function wakeup(widget)
         end
         refreshIndex = 0
         requestInProgress = false
-        modifications[1] = nil
+        table.remove(modifications, 1)
       end
     elseif refreshIndex <= (#parameters - 1) then
       local parameter = parameters[refreshIndex + 1]
@@ -215,12 +215,7 @@ local function wakeup(widget)
 end
 
 local function close(widget)
-  local count = 0;
-  while count < 3 do
-    if widget.sensor:idle(false) then
-      count = count + 1
-    end
-  end
+  widget.sensor:idle(false)
   idle = false
 end
 
