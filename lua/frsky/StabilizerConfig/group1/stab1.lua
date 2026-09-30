@@ -190,7 +190,7 @@ local function buildBackupForm(ePanel, focusRefresh)
         fields[index]:enable(false)
       end
     end
-    Dialog.openDialog({title = STR("ConfigurationLoaded"), message = STR("ConfigFileLoaded", {name = '\n' .. restoreFileName}), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
+    Dialog.openDialog({title = STR("ConfigurationLoaded"), message = STR("ConfigFileLoaded", {file = '\n' .. restoreFileName}), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
   end)
 
   local button = form.addTextButton(ePanelLine, slots[3], STR("Save"), function()
@@ -242,7 +242,7 @@ local function buildBackupForm(ePanel, focusRefresh)
     if file ~= nil then
       file:write(output)
       file:close()
-      Dialog.openDialog({title = STR("configurationSaved"), message = STR("ConfigSaveToFile", {fileName = "\n"..fileName}) .. fileName, buttons = {{label = STR("OK"), action = function ()
+      Dialog.openDialog({title = STR("configurationSaved"), message = STR("ConfigSaveToFile", {fileName = "\n"..fileName}), buttons = {{label = STR("OK"), action = function ()
         Dialog.closeDialog()
         buildBackupForm(ePanel, true)
       end}},})
