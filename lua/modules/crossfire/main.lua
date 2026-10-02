@@ -71,7 +71,7 @@ local function parseString(data, offset)
     offset = offset + 1
   end
 
-  return result, offset + 1, collectgarbage("collect")
+  return result, offset + 1
 end
 
 local function parseValue(data, offset, size)
@@ -85,12 +85,11 @@ end
 local function setCurrentDevice(device)
   deviceId = device.id
   fields = {}
-  local fieldsCount = device.fieldsCount
   for i = 1, device.fieldsCount do 
     fields[i] = {} 
   end
   loadQ = {}
-  for fieldId = fieldsCount, 1, -1 do 
+  for fieldId = device.fieldsCount, 1, -1 do 
     loadQ[#loadQ + 1] = fieldId 
   end
   fieldChunk = 0
@@ -133,7 +132,7 @@ local function parseChoiceValues(data, offset)
   end
 
   values[#values + 1] = {opt, #values}
-  return values, offset + 1, collectgarbage("collect")
+  return values, offset + 1
 end
 
 local function parseParameterInfoMessage(data)
