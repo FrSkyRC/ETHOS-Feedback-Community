@@ -12,6 +12,7 @@ local GYRO_MODE_CHECK_REJECT = 3
 local GYRO_MODE_CHECK_GIVEUP = 4
 local GYRO_MODE_CHECK_CHANGE = 5
 local gyroModeCheck = GYRO_MODE_CHECK_REQUEST
+local gyroModeValue = 0 -- last 3 data bytes read from 0xA4, so enabling gyro mode keeps the other bytes
 local GYRO_MODE_CHECK_DETAIL = {address = 0xA4, passFunction = function(value4Bytes) return ((value4Bytes >> 8) & 0xFF) > 0  end}
 
 local step = 0
@@ -93,7 +94,7 @@ local function doCalibrate()
     nextStep = true
     return
   end
-  local button = {{label = "Close", action = function ()
+  local button = {{label = STR("Close"), action = function ()
     Dialog.closeDialog()
   end}}
 
@@ -186,6 +187,7 @@ local function wakeup()
   elseif gyroModeCheck == GYRO_MODE_CHECK_RESPONSE then
     local value = Sensor.getParameter()
     if value and value % 256 == GYRO_MODE_CHECK_DETAIL.address then
+      gyroModeValue = (value >> 8) & 0xFFFFFF
       if GYRO_MODE_CHECK_DETAIL.passFunction(value) then
         gyroModeCheck = GYRO_MODE_CHECK_PASS
         if caliButton ~= nil then
@@ -199,7 +201,8 @@ local function wakeup()
       gyroModeCheck = GYRO_MODE_CHECK_REQUEST
     end
   elseif gyroModeCheck == GYRO_MODE_CHECK_CHANGE then
-    if Sensor.writeParameter(GYRO_MODE_CHECK_DETAIL.address, 1) then
+    -- Set gyro mode (byte 1) to Basic, keep the other bytes (e.g. ADV config)
+    if Sensor.writeParameter(GYRO_MODE_CHECK_DETAIL.address, (gyroModeValue & 0xFFFF00) | 0x01) then
       gyroModeCheck = GYRO_MODE_CHECK_REQUEST
     end
   elseif gyroModeCheck == GYRO_MODE_CHECK_REJECT then
