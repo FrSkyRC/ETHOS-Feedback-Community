@@ -31,7 +31,7 @@ local FrSkyProducts = {
     Name = "Sensor",
     Products = {
       -- {ID = 0, Name = "Test Device", SupportFields = {1, 2, 3, 4, 5}}
-      { ID = 22, Name = "RB35(S)", SupportFields = { 1, 2, 3 }, CaliPrefix = "rb35s" }
+      { ID = 22, Name = "RB35(S)", SupportFields = { 1, 2, 3 }, CaliPrefix = "rb_35s" }
     }
   },
 }

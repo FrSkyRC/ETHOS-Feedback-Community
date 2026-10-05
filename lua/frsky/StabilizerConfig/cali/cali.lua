@@ -12,6 +12,7 @@ local GYRO_MODE_CHECK_REJECT = 3
 local GYRO_MODE_CHECK_GIVEUP = 4
 local GYRO_MODE_CHECK_CHANGE = 5
 local gyroModeCheck = GYRO_MODE_CHECK_REQUEST
+local gyroModeValue = 0 -- last 3 data bytes read from 0xA4, so enabling gyro mode keeps the other bytes
 local GYRO_MODE_CHECK_DETAIL = {address = 0xA4, passFunction = function(value4Bytes) return ((value4Bytes >> 8) & 0xFF) > 0  end}
 
 local step = 0
@@ -93,7 +94,7 @@ local function doCalibrate()
     nextStep = true
     return
   end
-  local button = {{label = "Close", action = function ()
+  local button = {{label = STR("Close"), action = function ()
     Dialog.closeDialog()
   end}}
 
@@ -157,18 +158,45 @@ local function pageInit()
   bitmap = lcd.loadBitmap(getCaliBitmapPath())
 end
 
+-- Split text into lines that fit within maxWidth
+local function wrapText(text, maxWidth)
+  local lines = {}
+  local current = ""
+  for word in text:gmatch("%S+") do
+    local candidate = current == "" and word or (current .. " " .. word)
+    if current ~= "" and lcd.getTextSize(candidate) > maxWidth then
+      lines[#lines + 1] = current
+      current = word
+    else
+      current = candidate
+    end
+  end
+  if current ~= "" then
+    lines[#lines + 1] = current
+  end
+  return lines
+end
+
 local function paint()
   local width, height = lcd.getWindowSize()
 
-  lcd.color(lcd.GREY(0xFF))
+  local lines
   if step >= 6 then
-    lcd.drawText(width / 2, height / 3, STR("CaliFinished"), CENTERED)
+    lines = {STR("CaliFinished")}
+  elseif gyroModeCheck ~= GYRO_MODE_CHECK_PASS then
+    lines = wrapText(getCaliLabel(), width - 20)
   else
-    local tw, th = lcd.getTextSize(STR("PositionRX"))
-    lcd.drawText(width / 2, height / 3, STR("PositionRX"), CENTERED)
-    if gyroModeCheck == GYRO_MODE_CHECK_PASS and (step < 6 or calibrationState ~= CALIBRATION_INIT) then
-      lcd.drawText(width / 2, height / 3 + th, STR("PressCaliToStart"), CENTERED)
+    local instruction = STR("CaliStep", {step = step + 1, total = 6}) .. " " .. (getCaliLabel() or STR("PositionRX"))
+    lines = wrapText(instruction, width - 20)
+    if #lines == 1 then
+      lines[2] = STR("PressCaliToStart")
     end
+  end
+
+  lcd.color(lcd.GREY(0xFF))
+  local _, th = lcd.getTextSize("A")
+  for i, text in ipairs(lines) do
+    lcd.drawText(width / 2, height / 3 + (i - 1) * th, text, CENTERED)
   end
 
   if bitmap ~= nil then
@@ -200,6 +228,7 @@ local function wakeup()
   elseif gyroModeCheck == GYRO_MODE_CHECK_RESPONSE then
     local value = Sensor.getParameter()
     if value and value % 256 == GYRO_MODE_CHECK_DETAIL.address then
+      gyroModeValue = (value >> 8) & 0xFFFFFF
       if GYRO_MODE_CHECK_DETAIL.passFunction(value) then
         gyroModeCheck = GYRO_MODE_CHECK_PASS
         if caliButton ~= nil then
@@ -213,7 +242,8 @@ local function wakeup()
       gyroModeCheck = GYRO_MODE_CHECK_REQUEST
     end
   elseif gyroModeCheck == GYRO_MODE_CHECK_CHANGE then
-    if Sensor.writeParameter(GYRO_MODE_CHECK_DETAIL.address, 1) then
+    -- Set gyro mode (byte 1) to Basic, keep the other bytes (e.g. ADV config)
+    if Sensor.writeParameter(GYRO_MODE_CHECK_DETAIL.address, (gyroModeValue & 0xFFFF00) | 0x01) then
       gyroModeCheck = GYRO_MODE_CHECK_REQUEST
     end
   elseif gyroModeCheck == GYRO_MODE_CHECK_REJECT then

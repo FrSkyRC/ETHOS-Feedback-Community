@@ -202,7 +202,7 @@ local function buildBackupForm(ePanel, focusRefresh)
         elseif saveLoadState == LOAD_STATE_WRITE then
           if fileLine == nil then
             saveLoadState = LOAD_STATE_FINISH
-            Progress.message(STR("ConfigFileLoaded", {name = '\n' .. restoreFileName}))
+            Progress.message(STR("ConfigFileLoaded", {file = '\n' .. restoreFileName}))
             Progress.value(100)
             return
           end
