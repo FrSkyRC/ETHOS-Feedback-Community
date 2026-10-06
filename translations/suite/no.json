@@ -607,13 +607,13 @@
         "ProxySettings": "Proxy innstillinger",
         "ForceRefetch": "Tving innlasting av alle server ressurser",
         "AliServer": "Alibaba cloud",
-        "ScreenshotShortcut": "Skjermbilde kortkommando",
+        "ScreenshotShortcut": "Kortkommando for skjermbilde",
         "ScreenshotShortcutHint": "Klikk i feltet og velg en tastaturkombinasjon",
-        "ScreenshotPressKeys": "Trykk en kortkommando",
+        "ScreenshotPressKeys": "Tast en kortkommando",
         "ScreenshotCopyClipboard": "Kopier til utklippstavlen",
         "ScreenshotSaveToPath": "Lagre til filbane",
         "ScreenshotSavePath": "Lagre filbane",
-        "ScreenshotFilePrefix": "File name prefix",
+        "ScreenshotFilePrefix": "Tekst foran filnavnet",
         "ScreenshotOptions": "Skjermbildevalg"
     },
     "Documentation": {
