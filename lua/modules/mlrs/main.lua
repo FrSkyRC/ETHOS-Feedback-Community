@@ -25,8 +25,6 @@ local function create()
   currentExpansionPanel = nil
   if crsf.getSensor then
     local sensor = crsf.getSensor()
-    popFrame = function() return sensor:popFrame() end
-    pushFrame = function(x, y) return sensor:pushFrame(x, y) end
     return {sensor=sensor}
   else
     local sensor = {}
@@ -56,7 +54,7 @@ local function parseString(data, offset)
     offset = offset + 1
   end
 
-  return result, offset + 1, collectgarbage("collect")
+  return result, offset + 1
 end
 
 local function parseValue(data, offset, size)
@@ -75,10 +73,8 @@ end
 
 local function reloadRelatedFields(field)
   for i = #fields, 1, -1 do
-    if fields[i] ~= field and fields[i].parent == field.parent then
-      if fields[i].widget ~= nil then
-        fields[i].widget:enable(false)
-      end
+    if fields[i] ~= field and fields[i].parent == field.parent and fields[i].widget ~= nil then
+      fields[i].widget:enable(false)
       loadQ[#loadQ + 1] = i
     end
   end
@@ -87,7 +83,6 @@ end
 local function setCurrentDevice(device)
   deviceId = device.id
   fields = {}
-  fieldsCount = device.fieldsCount
   for i = 1, device.fieldsCount do 
     fields[i] = {} 
   end
@@ -105,7 +100,6 @@ local function parseDeviceInfoMessage(data)
   local device = getDevice(name)
   if device == nil then
     device = createDevice(id, name, data[offset + 12])
-    isElrsTx = (parseValue(data, offset, 4) == 0x454C5253 and deviceId == 0xEE) or nil -- SerialNumber = 'E L R S' and ID is TX module
     devices[#devices + 1] = device
     if device.fieldsCount > 0 then
       local line = form.addLine(name, currentExpansionPanel)
@@ -134,7 +128,7 @@ local function parseChoiceValues(data, offset)
   end
 
   values[#values + 1] = {opt, #values}
-  return values, offset + 1, collectgarbage("collect")
+  return values, offset + 1
 end
 
 -- UINT8 (0) / UINT16 (2)
@@ -182,6 +176,7 @@ local function addChoiceLine(widget, field, name, fieldData, offset)
       function(value)
         field.value = value
         widget.sensor:pushFrame(0x2D, {deviceId, handsetId, field.id, value})
+        reloadRelatedFields(field)
       end)
     if field.widget.title ~= nil then
       field.widget:title(name)
@@ -203,6 +198,9 @@ local function addInfoLine(field, name, fieldData, offset)
   if field.widget == nil then
     local line = form.addLine(name, currentExpansionPanel)
     field.widget = form.addStaticText(line, nil, field.value)
+  else
+    field.widget:value(field.value)
+    field.widget:enable(true)
   end
 end
 
@@ -214,8 +212,10 @@ local function addCommandLine(widget, field, name, fieldData, offset)
   -- print("Status: " .. field.status .. ", Info: " .. field.info)
   if field.dialog then
     if field.status == 0 then
+      -- Command finished: close the dialog and stop polling it
       field.dialog:close()
-      -- field.dialog = nil
+      field.dialog = nil
+      fieldPopup = nil
     else
       if field.status == 3 then
         field.dialog:buttons({
@@ -223,11 +223,19 @@ local function addCommandLine(widget, field, name, fieldData, offset)
             label = "OK",
             action = function()
               widget.sensor:pushFrame(0x2D, {deviceId, handsetId, field.id, 4}) -- lcsConfirmed
-              fieldTimeout = os.time() + field.timeout / 100 -- we are expecting an immediate response
+              fieldTime = os.clock() + field.timeout / 100 -- we are expecting an immediate response
               field.status = 4
             end
           }, 
-          {label = "Cancel"}
+          {
+            label = "Cancel",
+            action = function()
+              widget.sensor:pushFrame(0x2D, {deviceId, handsetId, field.id, 5}) -- lcsCancelled
+              fieldPopup = nil
+              field.dialog = nil
+              return true
+            end
+          }
         })
       else
         field.dialog:buttons({
@@ -236,6 +244,7 @@ local function addCommandLine(widget, field, name, fieldData, offset)
             action = function()
               widget.sensor:pushFrame(0x2D, {deviceId, handsetId, field.id, 5}) -- lcsCancelled
               fieldPopup = nil
+              field.dialog = nil
               return true
             end
           }
@@ -256,12 +265,15 @@ local function addCommandLine(widget, field, name, fieldData, offset)
             action = function()
               widget.sensor:pushFrame(0x2D, {deviceId, handsetId, field.id, 5}) -- lcsCancelled
               fieldPopup = nil
+              field.dialog = nil
               return true
             end
           }
         })
       end
     end)
+  else
+    field.widget:enable(true)
   end
 end
 
@@ -324,7 +336,7 @@ end
 local function wakeup(widget)
   local time = os.clock()
   while true do
-    command, data = widget.sensor:popFrame()
+    local command, data = widget.sensor:popFrame()
     if command == nil then
       break
     elseif command == 0x29 then
