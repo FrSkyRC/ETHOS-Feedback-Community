@@ -378,6 +378,7 @@ TOP_TOOLBAR,,"Displaylinje øverst"
 NO,,"Nei"
 BRIGHTNESS,,"Lysstyrke"
 KEYS,,"Taster"
+TOUCH,,"Berøring",
 WAKE_UP,,"Våkne"
 DIGITAL_VOLTAGE,,"Numerisk visning av Voltstyrke"
 SLEEP,,"Dvale"

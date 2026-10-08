@@ -376,6 +376,7 @@ TOP_TOOLBAR,,"Górna belka ekranu"
 NO,,"Nie"
 BRIGHTNESS,,"Jasność"
 KEYS,,"Przyciski"
+TOUCH,,"Dotyk",
 WAKE_UP,,"Wybudzanie"
 DIGITAL_VOLTAGE,,"Cyfrowe napięcie"
 SLEEP,,"Wygaszanie"

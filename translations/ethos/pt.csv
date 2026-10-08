@@ -375,6 +375,7 @@ TOP_TOOLBAR,,"Barra superior"
 NO,,"Não"
 BRIGHTNESS,,"Luminosidade"
 KEYS,,"Toques"
+TOUCH,,"Ecrã",
 WAKE_UP,,"Activar"
 DIGITAL_VOLTAGE,,"Tensão digital"
 SLEEP,,"Hibernar"

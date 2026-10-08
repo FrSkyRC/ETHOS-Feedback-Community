@@ -375,6 +375,7 @@ TOP_TOOLBAR,,"แถบเครื่องมือด้านบน"
 NO,,"No"
 BRIGHTNESS,,"ความสว่าง"
 KEYS,,"Keys"
+TOUCH,,"สัมผัส",
 WAKE_UP,,"Wake up"
 DIGITAL_VOLTAGE,,"Digital voltage"
 SLEEP,,"Sleep"

@@ -375,6 +375,7 @@ TOP_TOOLBAR,,"Üst araç çubuğu"
 NO,,"Hayır"
 BRIGHTNESS,,"Parlaklık"
 KEYS,,"Tuşlar"
+TOUCH,,"Dokunma",
 WAKE_UP,,"Uyan"
 DIGITAL_VOLTAGE,,"Dijital voltaj"
 SLEEP,,"Uyku"

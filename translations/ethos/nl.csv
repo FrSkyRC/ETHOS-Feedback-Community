@@ -375,6 +375,7 @@ TOP_TOOLBAR,,"Bovenste werkbalk"
 NO,,"Nee"
 BRIGHTNESS,,"Helderheid"
 KEYS,,"Toetsen"
+TOUCH,,"Touch",
 WAKE_UP,,"Wakker maken"
 DIGITAL_VOLTAGE,,"Digitale Voltage"
 SLEEP,,"Slaap"

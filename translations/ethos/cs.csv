@@ -374,6 +374,7 @@ TOP_TOOLBAR,,"Horní panel"
 NO,,"Ne"
 BRIGHTNESS,,"Jas"
 KEYS,,"Klávesy"
+TOUCH,,"Dotyk",
 WAKE_UP,,"Probudit"
 DIGITAL_VOLTAGE,,"Napětí čísly"
 SLEEP,,"Spánek"

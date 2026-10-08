@@ -375,6 +375,7 @@ TOP_TOOLBAR,,"Barra superior herramientas"
 NO,,"No"
 BRIGHTNESS,,"Brillo"
 KEYS,,"Teclas"
+TOUCH,,"Táctil",
 WAKE_UP,,"Activar"
 DIGITAL_VOLTAGE,,"Voltaje digital"
 SLEEP,,"Suspender"

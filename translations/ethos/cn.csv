@@ -374,6 +374,7 @@ TOP_TOOLBAR,,"顶部工具栏"
 NO,,"否"
 BRIGHTNESS,,"亮度"
 KEYS,,"按键"
+TOUCH,,"触摸",
 WAKE_UP,,"唤醒"
 DIGITAL_VOLTAGE,,"数字化电压"
 SLEEP,,"睡眠时间"

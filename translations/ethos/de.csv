@@ -375,6 +375,7 @@ TOP_TOOLBAR,,"Symbolleiste oben"
 NO,,"NEIN"
 BRIGHTNESS,,"Helligkeit"
 KEYS,,"Tasten"
+TOUCH,,"Touch",
 WAKE_UP,,"Bildschirm einschalten durch"
 DIGITAL_VOLTAGE,,"Senderakkuspannung digital","Senderakkuspannung"
 SLEEP,,"Helligkeit reduzieren nach"
