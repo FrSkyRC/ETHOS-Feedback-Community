@@ -49,7 +49,7 @@
             "SelectImageToEdit": "Vyberte obrázek pro úpravu výstupu",
             "OutputSize": "Velikost výstupu",
             "KeepAspectRatio": "Zachovat poměr stran",
-            "CustomSize": "Custom size"
+            "CustomSize": "Vlastní velikost"
         },
         "Audio": {
             "AudioManager": "Správce zvuků",
@@ -131,10 +131,10 @@
             "TestingBranchWarning": "Testovací větev je určena pouze pro testování a nedoporučuje se pro skutečné létání. Jste si jisti, že chcete přepnout do testovací větve?",
             "NoLanguageSelected": "Není vybrán žádný jazyk",
             "EthosMode": "ETHOS mód",
-            "EarlyAccess": "Early access",
-            "MultipleCpuidFiles": "Multiple identity files detected",
-            "MultipleCpuidFilesMessage": "Multiple matching .cpuid files were detected on drive {{ drive }}. Please remove the extra .cpuid files manually, or let Suite remove all .cpuid files for you. After reconnecting the transmitter, ETHOS will create the correct identity file.",
-            "RemoveAllCpuidFiles": "Remove all identity files"
+            "EarlyAccess": "Předběžný přístup",
+            "MultipleCpuidFiles": "Zjištěno více souborů identity",
+            "MultipleCpuidFilesMessage": "Na disku {{ drive }} bylo nalezeno více souborů .cpuid. Odstraňte prosím nadbytečné soubory .cpuid ručně, nebo nechte Suite, aby všechny soubory .cpuid odstranila za vás. Po opětovném připojení vysílače systém ETHOS vytvoří správný identifikační soubor.",
+            "RemoveAllCpuidFiles": "Odstarnit všechny soubory identit"
         },
         "Module": {
             "RFModule": "RF modul",
@@ -276,15 +276,15 @@
             "ControlsPanel": "Ovládací prvky",
             "DisplayPanel": "Displej",
             "TelemetryPanel": "Telemetrie",
-            "SimUnresponsiveTitle": "Simulator not responding",
-            "SimUnresponsiveMessage": "The ETHOS simulator appears to have stopped responding. Do you need to force-close it?",
-            "CloseSimulator": "Close simulator",
-            "FailToOpenSimWindow": "Failed to open the simulator window",
-            "ContinueWaiting": "Keep waiting",
-            "LoadLastLayout": "Load last page layout",
-            "LoadLastControls": "Load last control positions",
-            "SuspendSimulator": "Suspend",
-            "ScreenshotCopied": "Screenshot copied to clipboard"
+            "SimUnresponsiveTitle": "Simulátor neodpovídá",
+            "SimUnresponsiveMessage": "Zdá se, že simulátor ETHOS přestal reagovat. Chcete jej vynuceně ukončit?",
+            "CloseSimulator": "Zavřít simulátor",
+            "FailToOpenSimWindow": "Nepodařilo se otevřít okno simulátoru",
+            "ContinueWaiting": "Vydržte",
+            "LoadLastLayout": "Načíst poslední rozvržení stránky",
+            "LoadLastControls": "Načíst poslední pozice ovládacích prvků",
+            "SuspendSimulator": "Pozastavit",
+            "ScreenshotCopied": "Snímek obrazovky zkopírován do schránky"
         },
         "BackupRecovery": {
             "Advanced": "Pokročilé",
@@ -304,13 +304,13 @@
             "SystemComponents": "Systémové komponenty",
             "Title": "Záloha a obnova",
             "NoComponentsOnDrive": "Na tomto disku nejsou dostupné žádné komponenty",
-            "RestoreTargetDrive": "Restore to",
-            "BackupModeComponent": "By component",
-            "BackupModeFullDrive": "Full disk",
-            "FullDriveHint": "Backup all files on the selected disk except .cpuid identity markers.",
-            "FullDriveRestoreWarning": "This will overwrite the entire target disk with the backup contents. Files not in the backup will be removed.",
-            "FullDriveLabel": "Full disk",
-            "SelectDrivesToBackup": "Select disks to backup"
+            "RestoreTargetDrive": "Obnovit do",
+            "BackupModeComponent": "Podle komponenty",
+            "BackupModeFullDrive": "Plný disk",
+            "FullDriveHint": "Zálohujte všechny soubory na vybraném disku kromě identifikačních značek .cpuid.",
+            "FullDriveRestoreWarning": "Tímto se celý cílový disk přepíše obsahem zálohy. Soubory, které nejsou součástí zálohy, budou odstraněny.",
+            "FullDriveLabel": "Plný disk",
+            "SelectDrivesToBackup": "Vyberte disky k zálohování"
         },
         "AppTitle": "ETHOS"
     },
@@ -409,9 +409,9 @@
         "Bluetooth": "Bluetooth",
         "ConnotReadDriveForComponent": "Disk rádia nelze přečíst při provozu {{ componentName }}",
         "StorageFreeOfTotal": "{{free}} volno z {{total}}",
-        "ContinueCurrentOperation": "Continue current operation",
-        "AbortOperation": "Abort operation",
-        "AbortOperationWarning": "Aborting the current operation may damage your device. Confirm that you want to abort. Press and hold to abort."
+        "ContinueCurrentOperation": "Pokračovat v současné operaci",
+        "AbortOperation": "Zrušit operaci",
+        "AbortOperationWarning": "Přerušení probíhající operace může poškodit vaše zařízení. Potvrďte, že chcete operaci přerušit. Pro přerušení stiskněte a podržte."
     },
     "Components": {
         "ChooseVideo": {
@@ -525,8 +525,8 @@
         "TargetUpdateRequiresBasicComponent": "{{ targetComponent }} {{ targetVersion }} vyžaduje {{ requireComponent }} {{ requireVersion }}.",
         "ConfirmFlashComponentFirst": "Zapsat nejprve {{ requireComponent }}?",
         "ConfirmRequirementsVersion": "Před pokračováním prosím zkontrolujte, že číslo verze komponentů splňuje požadavky",
-        "FlashRequiredComponents": "Flash required component(s)",
-        "ShowInTheProdcutsList": "Show details in the FrSky product list"
+        "FlashRequiredComponents": "Zapsat potřebné komponenty",
+        "ShowInTheProdcutsList": "Zobrazit podrobnosti v seznamu produktů FrSky"
     },
     "Model": {
         "BackupLocation": "Umístění zálohy",
@@ -607,14 +607,14 @@
         "ProxySettings": "Nastavení proxy",
         "ForceRefetch": "Znovu natáhnout všechny zdroje ze serveru",
         "AliServer": "Alibaba cloud",
-        "ScreenshotShortcut": "Screenshot shortcut",
-        "ScreenshotShortcutHint": "Click the field, then press a key combination",
-        "ScreenshotPressKeys": "Press a shortcut",
-        "ScreenshotCopyClipboard": "Copy to clipboard",
-        "ScreenshotSaveToPath": "Save to path",
-        "ScreenshotSavePath": "Save path",
-        "ScreenshotFilePrefix": "File name prefix",
-        "ScreenshotOptions": "Screenshot options"
+        "ScreenshotShortcut": "Zkratka pro snímek obrazovky",
+        "ScreenshotShortcutHint": "Klikněte na pole a poté stiskněte kombinaci kláves",
+        "ScreenshotPressKeys": "Stiskněte klávesovou zkratku",
+        "ScreenshotCopyClipboard": "Kopírovat do schránky",
+        "ScreenshotSaveToPath": "Uložit do cesty",
+        "ScreenshotSavePath": "Cesta k uložení",
+        "ScreenshotFilePrefix": "Předpona názvu souboru",
+        "ScreenshotOptions": "Možnosti snímku obrazovky"
     },
     "Documentation": {
         "Documentation": "Dokumentace",
