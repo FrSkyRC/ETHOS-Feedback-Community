@@ -694,7 +694,7 @@
         "LeavePageWarning": "离开此页面可能导致刷写中断并损坏设备, 确定要离开吗?",
         "AppTitle": "Aegis",
         "StepSelectFirmware": "选择固件文件",
-        "StepSelectFirmwareHint": "选择 .apj 格式的 Aegis 固件包",
+        "StepSelectFirmwareHint": "选择 Aegis 固件",
         "StepFlash": "开始刷写",
         "StepFlashHint": "点击 \"刷写\" 启动 Aegis 更新程序",
         "StepConnectFc": "接入 Aegis 飞控",

@@ -664,7 +664,7 @@
         "StepFlash": "Spustit zápis",
         "StepFlashHint": "Stiskněte Zápis pro spuštění Aegis updateru",
         "StepSelectFirmware": "Vyberte soubor firmware",
-        "StepSelectFirmwareHint": "Vyberte .apj balíček Aegis firmware"
+        "StepSelectFirmwareHint": "Vyberte balíček Aegis firmware"
     },
     "Ecos": {
         "SelectFirmware": "Vyberte firmware",

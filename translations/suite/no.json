@@ -664,7 +664,7 @@
         "StepFlash": "Starter 'flashing'",
         "StepFlashHint": "Klikk 'Flash' for å starte Aegis oppdatering",
         "StepSelectFirmware": "Velg 'firmware' fil",
-        "StepSelectFirmwareHint": "Velg en .apj 'Aegis firmware' pakke"
+        "StepSelectFirmwareHint": "Velg en Aegis firmware pakke"
     },
     "Ecos": {
         "SelectFirmware": "Velg firmware",

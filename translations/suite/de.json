@@ -664,7 +664,7 @@
         "StepFlash": "Mit dem Flashen beginnen",
         "StepFlashHint": "Klicken Sie auf Flash, um den Aegis-Updater zu starten.",
         "StepSelectFirmware": "Firmware-Datei auswählen",
-        "StepSelectFirmwareHint": "Wählen Sie ein .apj-Aegis-Firmwarepaket aus."
+        "StepSelectFirmwareHint": "Wählen Sie ein Aegis-Firmwarepaket aus."
     },
     "Ecos": {
         "SelectFirmware": "Firmware auswählen",

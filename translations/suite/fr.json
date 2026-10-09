@@ -664,7 +664,7 @@
         "StepFlash": "Démarrer le flashage",
         "StepFlashHint": "Cliquer sur Flasher pour lancer l'outil de mise à jour Aegis",
         "StepSelectFirmware": "Sélectionner le fichier firmware",
-        "StepSelectFirmwareHint": "Choisir un paquet .apj Aegis firmware"
+        "StepSelectFirmwareHint": "Choisir un paquet Aegis firmware"
     },
     "Ecos": {
         "SelectFirmware": "Sélection firmware",

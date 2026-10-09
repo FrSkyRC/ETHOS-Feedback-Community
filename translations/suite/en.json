@@ -694,7 +694,7 @@
         "LeavePageWarning": "Leaving this page may interrupt flashing and damage the device. Are you sure you want to continue?",
         "AppTitle": "Aegis",
         "StepSelectFirmware": "Select firmware file",
-        "StepSelectFirmwareHint": "Choose an .apj Aegis firmware package",
+        "StepSelectFirmwareHint": "Choose an Aegis firmware",
         "StepFlash": "Start flashing",
         "StepFlashHint": "Click \"Flash\" to launch the Aegis updater",
         "StepConnectFc": "Connect Aegis flight controller",

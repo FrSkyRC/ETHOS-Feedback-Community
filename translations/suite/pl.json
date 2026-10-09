@@ -694,7 +694,7 @@
         "LeavePageWarning": "Opuszczenie tej strony może przerwać wgrywanie i uszkodzić urządzenie. Czy na pewno kontynuować?",
         "AppTitle": "Aegis",
         "StepSelectFirmware": "Wybierz plik firmware",
-        "StepSelectFirmwareHint": "Wybierz pakiet firmware Aegis .apj",
+        "StepSelectFirmwareHint": "Wybierz pakiet firmware Aegis",
         "StepFlash": "Rozpocznij wgrywanie",
         "StepFlashHint": "Kliknij \"Wgraj\", aby uruchomić aktualizator Aegis",
         "StepConnectFc": "Podłącz kontroler lotu Aegis",

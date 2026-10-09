@@ -664,7 +664,7 @@
         "StepFlash": "Štart zapisovania",
         "StepFlashHint": "Kliknutím na položku Zápis spustite aktualizáciu Aegis",
         "StepSelectFirmware": "Vyberte súbor firmvéru",
-        "StepSelectFirmwareHint": "Vyberte si balík firmvéru .apj Aegis"
+        "StepSelectFirmwareHint": "Vyberte si balík firmvéru Aegis"
     },
     "Ecos": {
         "SelectFirmware": "Vyberte si firmvér",
