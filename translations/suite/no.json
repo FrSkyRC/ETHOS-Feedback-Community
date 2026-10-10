@@ -134,7 +134,9 @@
             "EarlyAccess": "Tidligtilgang",
             "MultipleCpuidFiles": "Flere ID-filer (.cpuid) oppdaget",
             "MultipleCpuidFilesMessage": "Flere like .cpuid filer (ID-filer) er funnet på {{ drive }}. Vennligst fjern den ekstra .cpuid filen manuellt, eller la Suite fjerne alle .cpuid filene for deg. ETHOS vil lage ny, korrekt .cpuid-fil når du kobler til radioen på nytt.",
-            "RemoveAllCpuidFiles": "Fjern alle .cpuid-filer"
+            "RemoveAllCpuidFiles": "Fjern alle .cpuid-filer",
+            "FirmwareNotAllowed": "Firmware not allowed",
+            "RadioMinVersionLabel": "This batch of {{radio}} only supports versions above {{minVersion}}"
         },
         "Module": {
             "RFModule": "RF Modul",

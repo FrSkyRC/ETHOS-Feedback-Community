@@ -114,7 +114,9 @@
             "EarlyAccess": "Acceso anticipado",
             "MultipleCpuidFiles": "Se han detectado múltiples archivos de identidad",
             "MultipleCpuidFilesMessage": "Se han detectado varios archivos .cpuid iguales en la unidad {{ drive }}. Elimine manualmente los archivos .cpuid no necesarios, o deje que la Suite elimine todos los archivos .cpuid por usted. Después de volver a conectar la emisora, ETHOS creará un archivo correcto de identidad.",
-            "RemoveAllCpuidFiles": "Borrar todos los archivos de identidad"
+            "RemoveAllCpuidFiles": "Borrar todos los archivos de identidad",
+            "FirmwareNotAllowed": "Firmware not allowed",
+            "RadioMinVersionLabel": "This batch of {{radio}} only supports versions above {{minVersion}}"
         },
         "Module": {
             "RFModule": "Módulo de RF",

@@ -134,7 +134,9 @@
             "EarlyAccess": "Předběžný přístup",
             "MultipleCpuidFiles": "Zjištěno více souborů identity",
             "MultipleCpuidFilesMessage": "Na disku {{ drive }} bylo nalezeno více souborů .cpuid. Odstraňte prosím nadbytečné soubory .cpuid ručně, nebo nechte Suite, aby všechny soubory .cpuid odstranila za vás. Po opětovném připojení vysílače systém ETHOS vytvoří správný identifikační soubor.",
-            "RemoveAllCpuidFiles": "Odstarnit všechny soubory identit"
+            "RemoveAllCpuidFiles": "Odstarnit všechny soubory identit",
+            "FirmwareNotAllowed": "Firmware not allowed",
+            "RadioMinVersionLabel": "This batch of {{radio}} only supports versions above {{minVersion}}"
         },
         "Module": {
             "RFModule": "RF modul",

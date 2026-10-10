@@ -160,7 +160,9 @@
             "EarlyAccess": "Wczesny dostęp",
             "MultipleCpuidFiles": "Wykryto wiele plików identyfikacyjnych",
             "MultipleCpuidFilesMessage": "Na dysku {{ drive }} wykryto wiele pasujących plików .cpuid. Usuń ręcznie dodatkowe pliki .cpuid lub pozwól Suite usunąć wszystkie pliki .cpuid. Po ponownym podłączeniu radia ETHOS utworzy prawidłowy plik identyfikacyjny.",
-            "RemoveAllCpuidFiles": "Usuń wszystkie pliki identyfikacyjne"
+            "RemoveAllCpuidFiles": "Usuń wszystkie pliki identyfikacyjne",
+            "FirmwareNotAllowed": "Firmware not allowed",
+            "RadioMinVersionLabel": "This batch of {{radio}} only supports versions above {{minVersion}}"
         },
         "Module": {
             "RFModule": "Moduł nadawczy",

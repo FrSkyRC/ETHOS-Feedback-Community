@@ -134,7 +134,9 @@
             "EarlyAccess": "Early access",
             "MultipleCpuidFiles": "Multiple identity files detected",
             "MultipleCpuidFilesMessage": "Plusieurs fichiers .cpuid files détectés {{ drive }}. Supprimer manuellement le fichier inutile ou bien laisser Suite le faire ? Après reconnection de la radio, Suite recréera les fichiers d'identification automatiquement.",
-            "RemoveAllCpuidFiles": "Supprimer tous les fichiers d'identification"
+            "RemoveAllCpuidFiles": "Supprimer tous les fichiers d'identification",
+            "FirmwareNotAllowed": "Firmware not allowed",
+            "RadioMinVersionLabel": "This batch of {{radio}} only supports versions above {{minVersion}}"
         },
         "Module": {
             "RFModule": "Module RF",

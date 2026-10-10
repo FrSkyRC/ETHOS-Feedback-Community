@@ -134,7 +134,9 @@
             "EarlyAccess": "Vorab-Version",
             "MultipleCpuidFiles": "Mehrere Identitätsdateien (.cpuid) erkannt",
             "MultipleCpuidFilesMessage": "Auf Laufwerk {{ drive }} wurden mehrere übereinstimmende .cpuid-Dateien gefunden. Bitte entfernen Sie die zusätzlichen .cpuid-Dateien manuell oder lassen Sie die Suite alle .cpuid-Dateien für Sie entfernen. Nach dem erneuten Anschließen des Senders erstellt ETHOS die korrekte Identitätsdatei.",
-            "RemoveAllCpuidFiles": "Alle Identitätsdateien (.cpuid) entfernen"
+            "RemoveAllCpuidFiles": "Alle Identitätsdateien (.cpuid) entfernen",
+            "FirmwareNotAllowed": "Firmware not allowed",
+            "RadioMinVersionLabel": "This batch of {{radio}} only supports versions above {{minVersion}}"
         },
         "Module": {
             "RFModule": "HF-Modul",
