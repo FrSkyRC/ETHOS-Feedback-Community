@@ -30,7 +30,7 @@ local parameters = {
   end, extraInfo = {min = 1, max = 24, prefix = "CH"}},
   { fieldFunction = CreateNumberField, fieldName = STR("Center"), pageAddress = 0x08, valueRead = function(value)
     value = value & 0xFF
-    return value > value and value - 256 or value
+    return value > 127 and value - 256 or value
   end, extraInfo = {min = -125, max = 125}},
   { fieldFunction = CreateNumberField, fieldName = STR("HoldingStrength"), pageAddress = 0x11, getValue = function(value)
     return value ~= nil and value or 10
@@ -73,7 +73,7 @@ local function create(module, appId)
     lastSaveTime = os.clock()
     saveStep = 0
     writeDialog = form.openDialog({title = STR("Saving"), message = STR("WritingSaveCommand"), closeWhenClickOutside = false, buttons= {
-      {label = "Cancel", action = function()
+      {label = STR("Cancel"), action = function()
         if writeDialog ~= nil then
           writeDialog:close()
           writeDialog = nil
