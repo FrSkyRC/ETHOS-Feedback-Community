@@ -216,9 +216,9 @@
             "ReleaseNotes": "Note di Rilascio",
             "ScriptDeleted": "Script rimosso dalla radio.",
             "Upgrade": "Aggiorna",
-            "Readme": "README",
-            "FrSkyScripts": "FrSky scripts",
-            "ThirdpartyScripts": "Third-party scripts"
+            "Readme": "LEGGIMI",
+            "FrSkyScripts": "Scripts FrSky",
+            "ThirdpartyScripts": "Scripts Terze parti"
         },
         "Simulator": {
             "EthosSimulator": "Simulatore ETHOS",
