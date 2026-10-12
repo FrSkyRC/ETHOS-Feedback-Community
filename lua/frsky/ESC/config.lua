@@ -124,6 +124,9 @@ function CreateNumberField(param)
   end
   if param.extraInfo.prec then
     field:decimals(param.extraInfo.prec)
+    if field.defaultStep then
+      field:defaultStep(1)
+    end
   end
   if param.extraInfo.text then
     field:text(param.extraInfo.text)
