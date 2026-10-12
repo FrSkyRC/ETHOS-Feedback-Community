@@ -216,12 +216,13 @@
             "ReleaseNotes": "Poznámky vydání",
             "ScriptDeleted": "Skript odstraněn z rádia.",
             "Upgrade": "Aktualizovat",
-            "AvailableScripts": "Dostupné skripty"
+            "Readme": "README",
+            "FrSkyScripts": "FrSky scripts",
+            "ThirdpartyScripts": "Third-party scripts"
         },
         "Simulator": {
             "EthosSimulator": "ETHOS simulátor",
             "Radio": "Model rádia",
-            "Release": "Verze vydání",
             "Protocol": "Protokol",
             "StartSim": "Spustit simulátor",
             "NoSupportedSim": "Nenalezen podporovaný simulátor",
@@ -413,7 +414,8 @@
         "StorageFreeOfTotal": "{{free}} volno z {{total}}",
         "ContinueCurrentOperation": "Pokračovat v současné operaci",
         "AbortOperation": "Zrušit operaci",
-        "AbortOperationWarning": "Přerušení probíhající operace může poškodit vaše zařízení. Potvrďte, že chcete operaci přerušit. Pro přerušení stiskněte a podržte."
+        "AbortOperationWarning": "Přerušení probíhající operace může poškodit vaše zařízení. Potvrďte, že chcete operaci přerušit. Pro přerušení stiskněte a podržte.",
+        "Release": "Verze vydání"
     },
     "Components": {
         "ChooseVideo": {

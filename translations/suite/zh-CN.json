@@ -242,12 +242,13 @@
             "ReleaseNotes": "发布说明",
             "ScriptDeleted": "脚本已从遥控器移除",
             "Upgrade": "升级",
-            "AvailableScripts": "可用的脚本"
+            "Readme": "README",
+            "FrSkyScripts": "FrSky官方脚本",
+            "ThirdpartyScripts": "第三方脚本"
         },
         "Simulator": {
             "EthosSimulator": "ETHOS 模拟器",
             "Radio": "遥控器",
-            "Release": "发布版本",
             "Protocol": "地区版本",
             "StartSim": "启动模拟器",
             "NoSupportedSim": "没有找到合适的模拟器",
@@ -413,7 +414,8 @@
         "StorageFreeOfTotal": "{{free}} 可用, 共 {{total}}",
         "ContinueCurrentOperation": "继续当前操作",
         "AbortOperation": "中断操作",
-        "AbortOperationWarning": "中断当前操作可能会对你的设备造成损坏, 请确认是否需要中断当前操作, 长按以进行中断"
+        "AbortOperationWarning": "中断当前操作可能会对你的设备造成损坏, 请确认是否需要中断当前操作, 长按以进行中断",
+        "Release": "发布版本"
     },
     "Components": {
         "ChooseVideo": {

@@ -242,12 +242,13 @@
             "ScriptInfo": "Informacje o skrypcie",
             "NoScriptInfo": "Brak informacji o skrypcie",
             "TheEntireZip": "Cały plik zip",
-            "AvailableScripts": "Dostępne skrypty"
+            "Readme": "README",
+            "FrSkyScripts": "FrSky scripts",
+            "ThirdpartyScripts": "Third-party scripts"
         },
         "Simulator": {
             "EthosSimulator": "Symulator ETHOS",
             "Radio": "Radio",
-            "Release": "Wydanie",
             "Protocol": "Protokół",
             "StartSim": "Uruchom symulator",
             "NoSupportedSim": "Nie znaleziono obsługiwanego symulatora",
@@ -413,7 +414,8 @@
         "StorageFreeOfTotal": "Wolne {{free}} z {{total}}",
         "ContinueCurrentOperation": "Kontynuuj bieżącą operację",
         "AbortOperation": "Przerwij operację",
-        "AbortOperationWarning": "Przerwanie bieżącej operacji może uszkodzić urządzenie. Potwierdź przerwanie. Naciśnij i przytrzymaj, aby przerwać."
+        "AbortOperationWarning": "Przerwanie bieżącej operacji może uszkodzić urządzenie. Potwierdź przerwanie. Naciśnij i przytrzymaj, aby przerwać.",
+        "Release": "Wydanie"
     },
     "Components": {
         "ChooseVideo": {

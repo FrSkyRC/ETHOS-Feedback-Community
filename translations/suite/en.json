@@ -242,12 +242,13 @@
             "ScriptInfo": "Script information",
             "NoScriptInfo": "No script information available",
             "TheEntireZip": "The entire zip file",
-            "AvailableScripts": "Available scripts"
+            "Readme": "README",
+            "FrSkyScripts": "FrSky scripts",
+            "ThirdpartyScripts": "Third-party scripts"
         },
         "Simulator": {
             "EthosSimulator": "ETHOS simulator",
             "Radio": "Radio",
-            "Release": "Release",
             "Protocol": "Protocol",
             "StartSim": "Start simulator",
             "NoSupportedSim": "No supported simulator found",
@@ -413,7 +414,8 @@
         "StorageFreeOfTotal": "{{free}} free of {{total}}",
         "ContinueCurrentOperation": "Continue current operation",
         "AbortOperation": "Abort operation",
-        "AbortOperationWarning": "Aborting the current operation may damage your device. Confirm that you want to abort. Press and hold to abort."
+        "AbortOperationWarning": "Aborting the current operation may damage your device. Confirm that you want to abort. Press and hold to abort.",
+        "Release": "Release"
     },
     "Components": {
         "ChooseVideo": {

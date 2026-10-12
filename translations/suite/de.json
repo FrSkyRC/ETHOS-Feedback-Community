@@ -216,12 +216,13 @@
             "ReleaseNotes": "Release notes",
             "ScriptDeleted": "Das Skript wurde aus dem Senderprogramm entfernt.",
             "Upgrade": "Upgrade",
-            "AvailableScripts": "Verfügbare Skripte"
+            "Readme": "README",
+            "FrSkyScripts": "FrSky scripts",
+            "ThirdpartyScripts": "Third-party scripts"
         },
         "Simulator": {
             "EthosSimulator": "ETHOS-Simulator",
             "Radio": "Sender",
-            "Release": "Version",
             "Protocol": "Protokoll",
             "StartSim": "Simulator starten",
             "NoSupportedSim": "Es wurde kein unterstützter Simulator gefunden",
@@ -413,7 +414,8 @@
         "StorageFreeOfTotal": "{{free}} frei von {{total}}",
         "ContinueCurrentOperation": "Aktuellen Betrieb fortsetzen",
         "AbortOperation": "Vorgang abbrechen",
-        "AbortOperationWarning": "Das Abbrechen des aktuellen Vorgangs kann Ihr Gerät beschädigen. Bestätigen Sie, dass Sie abbrechen möchten. Zum Abbrechen gedrückt halten."
+        "AbortOperationWarning": "Das Abbrechen des aktuellen Vorgangs kann Ihr Gerät beschädigen. Bestätigen Sie, dass Sie abbrechen möchten. Zum Abbrechen gedrückt halten.",
+        "Release": "Version"
     },
     "Components": {
         "ChooseVideo": {

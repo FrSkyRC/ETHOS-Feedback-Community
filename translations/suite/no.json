@@ -216,12 +216,13 @@
             "ReleaseNotes": "Lanseringsnotater",
             "ScriptDeleted": "Script fjernet fra radio.",
             "Upgrade": "Oppgrader",
-            "AvailableScripts": "Tilgjengelige script"
+            "Readme": "README",
+            "FrSkyScripts": "FrSky scripts",
+            "ThirdpartyScripts": "Third-party scripts"
         },
         "Simulator": {
             "EthosSimulator": "ETHOS Simulator",
             "Radio": "Radio",
-            "Release": "Utgave",
             "Protocol": "Protokoll",
             "StartSim": "Start simulator",
             "NoSupportedSim": "Ingen støttet simulator funnet",
@@ -413,7 +414,8 @@
         "StorageFreeOfTotal": "{{free}} ledig av {{total}}",
         "ContinueCurrentOperation": "Continue current operation",
         "AbortOperation": "Abort operation",
-        "AbortOperationWarning": "Aborting the current operation may damage your device. Confirm that you want to abort. Press and hold to abort."
+        "AbortOperationWarning": "Aborting the current operation may damage your device. Confirm that you want to abort. Press and hold to abort.",
+        "Release": "Utgave"
     },
     "Components": {
         "ChooseVideo": {

@@ -196,12 +196,13 @@
             "ReleaseNotes": "Notas del release",
             "ScriptDeleted": "Quitado el Script de la radio.",
             "Upgrade": "Actualizar",
-            "AvailableScripts": "Scripts disponibles"
+            "Readme": "README",
+            "FrSkyScripts": "FrSky scripts",
+            "ThirdpartyScripts": "Third-party scripts"
         },
         "Simulator": {
             "EthosSimulator": "Simulador ETHOS",
             "Radio": "Radio",
-            "Release": "Versión",
             "Protocol": "Protocolo",
             "StartSim": "Iniciar simulador",
             "NoSupportedSim": "No se ha encontrado simulador soportado",
@@ -413,7 +414,8 @@
         "StorageFreeOfTotal": "{{free}} libres de {{total}}",
         "ContinueCurrentOperation": "Continue la operación actual",
         "AbortOperation": "Abortar la operación",
-        "AbortOperationWarning": "Abortar la operación actual puede dañar su dispositivo. Confirme que quiere abortarla. Mantenga presionado para abortarla."
+        "AbortOperationWarning": "Abortar la operación actual puede dañar su dispositivo. Confirme que quiere abortarla. Mantenga presionado para abortarla.",
+        "Release": "Versión"
     },
     "Components": {
         "ChooseVideo": {
