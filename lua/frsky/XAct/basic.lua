@@ -30,7 +30,7 @@ local parameters = {
   end, extraInfo = {min = 1, max = 24, prefix = "CH"}},
   { fieldFunction = CreateNumberField, fieldName = STR("Center"), pageAddress = 0x08, valueRead = function(value)
     value = value & 0xFF
-    return value > value and value - 256 or value
+    return value > 127 and value - 256 or value
   end, extraInfo = {min = -125, max = 125}},
   { fieldFunction = CreateNumberField, fieldName = STR("HoldingStrength"), pageAddress = 0x11, getValue = function(value)
     return value ~= nil and value or 10
@@ -52,7 +52,7 @@ local parameters = {
 local function create(module, appId)
   series65build = false
 
-  local appRange = {appIdStart = 0x6800, appIdEnd = 0x680F}
+  local appRange = {appIdStart = 0x6800, appIdEnd = 0x680F, module = 0xFFFF}
 
   local sensor = sport.getSensor(appRange)
 

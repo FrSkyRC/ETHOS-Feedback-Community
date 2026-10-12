@@ -298,7 +298,7 @@ function ConfigWakeup(data)
         ReceiveValueHandler()
       end
       requestInProgress = false
-    elseif lastRquestTime + 1 < os.time() then
+    elseif lastRquestTime + 1 < os.clock() then
       requestInProgress = false
     end
   else
@@ -307,7 +307,7 @@ function ConfigWakeup(data)
         if data.sensor:requestParameter(parameter.pageAddress) then
           print("data.sensor:requestParameter(0x" .. string.format("%02X", parameter.pageAddress) .. ")")
           requestInProgress = true
-          lastRquestTime = os.time()
+          lastRquestTime = os.clock()
           if parameter.tryTimes == nil then
             parameter.tryTimes = 1
           else

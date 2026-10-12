@@ -27,7 +27,7 @@ local parameters = {
   {fieldFunction = CreateNumberField, fieldName = "Left brake level", pageAddress = 0xA3, defaultValue = 10, extraInfo = {min = 10, max = 100, suffix = "%"}},
   {fieldFunction = CreateNumberField, fieldName = "Brake velocity threshold", pageAddress = 0xA4, defaultValue = 5, extraInfo = {min = 4, max = 50, text = function(value) return (value == 4) and ("Off") or ("" .. value / 10) end}},
   {fieldFunction = CreateNumberField, fieldName = "Gear up brake level", pageAddress = 0xA5, extraInfo = {min = 0, max = 50, suffix = "%"}},
-  {fieldFunction = CreateNumberField, fieldName = "Brake self-stab weight", pageAddress = 0xA6, extraInfo = {min = 0, max = 30}},
+  -- {fieldFunction = CreateNumberField, fieldName = "Brake self-stab weight", pageAddress = 0xA6, extraInfo = {min = 0, max = 30}},
   -- {fieldFunction = CreateChoiceField, fieldName = "Brake self-stab mode", pageAddress = 0x98, defaultValue = 1, extraInfo = {valuePairs = {{"Addition", 1}, {"Subtraction", 2}}}},
   {fieldFunction = CreateNumberField, fieldName = "Steer channel", pageAddress = 0xB0, defaultValue = 1, extraInfo = {min = 1, max = 24, prefix = "CH"}},
   {fieldFunction = CreateNumberField, fieldName = "Steer range", pageAddress = 0xB1, defaultValue = 10, extraInfo = {min = 10, max = 100, suffix = "%"}},
@@ -39,7 +39,7 @@ local parameters = {
 local function create()
   Params = parameters
   ConfigCreate()
-  return {sensor = sport.getSensor({appIdStart = 0x1040, appIdEnd = 0x104F}), needIdle = true}
+  return {sensor = sport.getSensor({appIdStart = 0x1040, appIdEnd = 0x104F, module = 0xFFFF}), needIdle = true}
 end
 
 return {create = create, name = "PGC", wakeup = ConfigWakeup, close = ConfigClose}

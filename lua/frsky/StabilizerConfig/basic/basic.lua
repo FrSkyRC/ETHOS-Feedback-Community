@@ -35,6 +35,10 @@ local function setValue(parameter, value)
   end
   value = D1 + D2 * 256 + D3 * 256 * 256
   local fieldId = parameter[3]
+  if TEST then
+    parameter[5] = value
+    return
+  end
   modifications[#modifications+1] = {fieldId, value}
   for index = 1, #fields do
     if fields[index] then
@@ -52,13 +56,13 @@ local function createNumberField(line, parameter)
   if #parameter >= 10 then
     field:prefix(parameter[10])
   end
-  field:enable(false)
+  field:enable(TEST)
   return field
 end
 
 local function createChoiceField(line, parameter)
   local field = form.addChoiceField(line, nil, parameter[6], function() return getValue(parameter) end, function(value) setValue(parameter, value) end)
-  field:enable(false)
+  field:enable(TEST)
   return field
 end
 
@@ -126,7 +130,7 @@ local function buildBackupForm(ePanel, focusRefresh)
         fields[index]:enable(false)
       end
     end
-    Dialog.openDialog({title = STR("ConfigurationLoaded"), message = STR("ConfigFileLoaded", {name = '\n' .. restoreFileName}), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
+    Dialog.openDialog({title = STR("ConfigurationLoaded"), message = STR("ConfigFileLoaded", {file = '\n' .. restoreFileName}), buttons = {{label = STR("OK"), action = function () Dialog.closeDialog() end}},})
   end)
 
   local button = form.addTextButton(ePanelLine, slots[3], STR("Save"), function()
@@ -189,7 +193,7 @@ local function buildBackupForm(ePanel, focusRefresh)
   if focusRefresh then
     button:focus()
   else
-    ePanel:open(false)
+    ePanel:open(TEST)
   end
 end
 
@@ -204,10 +208,16 @@ local function pageInit()
     local line = form.addLine(parameter[1])
     local field = parameter[2](line, parameter)
     fields[index] = field
+    if TEST then
+      parameter[5] = 0
+    end
   end
 end
 
 local function wakeup(widget)
+  if TEST then
+    return
+  end
   if requestInProgress then
     local value = Sensor.getParameter()
     -- print("Sensor.getParameter = ", value)

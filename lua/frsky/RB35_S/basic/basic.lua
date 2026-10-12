@@ -266,7 +266,7 @@ local function create()
   parametersGroup = {baseParameters, channelParameters, failsafeParameters}
   page = 1
 
-  local sensor = sport.getSensor({appIdStart=0x0F00, appIdEnd=0x0F0F});
+  local sensor = sport.getSensor({appIdStart=0x0F00, appIdEnd=0x0F0F, module=0xFFFF})
   -- print("widget.sensor:appId = ", sensor:appId())
 
   runPage(0)

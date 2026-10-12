@@ -21,7 +21,7 @@ return {
   RotateMode = "Modalità rotazione",
   SaveToFlash = "Salva su Flash",
   Saving = "Salvataggio",
-  WritingSaveCommand = "Scrittura del comando "save" ...",
+  WritingSaveCommand = "Scrittura del comando \"save\" ...",
   SaveSuccessfully = "Salvataggio effettuato con successo!",
   Cancel = "Annulla",
 }

@@ -38,7 +38,7 @@ local parameters = {
 local function create()
   Params = parameters
   ConfigCreate()
-  local sensor = sport.getSensor({appIdStart = 0x0E50, appIdEnd = 0x0E5F})
+  local sensor = sport.getSensor({appIdStart = 0x0E50, appIdEnd = 0x0E5F, module = 0xFFFF})
   return {sensor = sensor, needIdle = true}
 end
 

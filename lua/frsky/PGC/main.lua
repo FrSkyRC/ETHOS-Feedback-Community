@@ -1,4 +1,4 @@
-local LUA_VERSION = "1.0.3";
+local LUA_VERSION = "1.0.5";
 local nameI18n = {en = "PGC"}
 
 local function name()

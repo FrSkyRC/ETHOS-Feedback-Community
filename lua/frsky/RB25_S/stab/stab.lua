@@ -1,5 +1,18 @@
-TEST = false
-RB25GlobalPath = "stab/"
+local env = setmetatable({}, { __index = _G })
+env._G = env
+
+function env.loadfile(path, mode, givenEnv)
+  return _G.loadfile(path, mode, givenEnv or env)
+end
+
+local function import(path)
+  return assert(env.loadfile(path))()
+end
+
+local TEST = false
+local RB25GlobalPath = "stab/"
+env.TEST = TEST
+env.RB25GlobalPath = RB25GlobalPath
 
 local REMOTE_VERSION_CONSTRAINT = function (major, minor, revision)
   if major > 3 then
@@ -17,14 +30,20 @@ local REMOTE_VERSION_CONSTRAINT = function (major, minor, revision)
   end
 end
 
-local CommonFile = assert(loadfile(RB25GlobalPath .. "common.lua"))()
-Product = CommonFile.Product
-Module = CommonFile.Module
-Sensor = CommonFile.Sensor
-Dialog = CommonFile.Dialog
-Progress = CommonFile.Progress
+local CommonFile = import(RB25GlobalPath .. "common.lua")
+local Product = CommonFile.Product
+local Module = CommonFile.Module
+local Sensor = CommonFile.Sensor
+local Dialog = CommonFile.Dialog
+local Progress = CommonFile.Progress
+env.Product = Product
+env.Module = Module
+env.Sensor = Sensor
+env.Dialog = Dialog
+env.Progress = Progress
 
-STR = assert(loadfile(RB25GlobalPath .. "i18n/i18n.lua"))().translate
+local STR = import(RB25GlobalPath .. "i18n/i18n.lua").translate
+env.STR = STR
 
 local function name()
   return STR("ScriptName")
@@ -69,7 +88,7 @@ local REMOTE_DEVICE = {address = 0xFE, state = STATE_READ, field = nil, label = 
   Product.family = (value >> 8) & 0xFF
   Product.id = (value >> 16) & 0xFF
   print("Remote device family: " .. Product.family .. ", product: " .. Product.id)
-  local FrSkyProducts = assert(loadfile(RB25GlobalPath .. "products.lua"))()
+  local FrSkyProducts = import(RB25GlobalPath .. "products.lua")
   for i, family in pairs(FrSkyProducts) do
     if family.ID == Product.family then
       for j, product in pairs(family.Products) do
@@ -126,20 +145,20 @@ local function clearAllTasks()
   Product.resetProduct()
 end
 
-local pages = {{file = assert(loadfile(RB25GlobalPath .. "basic/basic.lua")()), label = STR("BasicConfig")},
+local pages = {{file = import(RB25GlobalPath .. "basic/basic.lua"), label = STR("BasicConfig")},
                {
                  name = STR("StabilizerGroup1"),
                  subPages = {
-                   {file = assert(loadfile(RB25GlobalPath .. "group1/precali1.lua")()), label = STR("Calibration")},
-                   {file = assert(loadfile(RB25GlobalPath .. "group1/stab1.lua")()), label = STR("Configuration")},}
+                   {file = import(RB25GlobalPath .. "group1/precali1.lua"), label = STR("Calibration")},
+                   {file = import(RB25GlobalPath .. "group1/stab1.lua"), label = STR("Configuration")},}
                  },
                {
                  name = STR("StabilizerGroup2"),
                  subPages = {
-                   {file = assert(loadfile(RB25GlobalPath .. "group2/precali2.lua")()), label = STR("Calibration")},
-                   {file = assert(loadfile(RB25GlobalPath .. "group2/stab2.lua")()), label = STR("Configuration")},}
+                   {file = import(RB25GlobalPath .. "group2/precali2.lua"), label = STR("Calibration")},
+                   {file = import(RB25GlobalPath .. "group2/stab2.lua"), label = STR("Configuration")},}
                  },
-               {file = assert(loadfile(RB25GlobalPath .. "cali/cali.lua")()), label = STR("SixAxisCali")}}
+               {file = import(RB25GlobalPath .. "cali/cali.lua"), label = STR("SixAxisCali")}}
 
 local currentPage = nil
 
@@ -209,7 +228,7 @@ local function buildBackupForm(ePanel, focusRefresh)
         elseif saveLoadState == LOAD_STATE_WRITE then
           if fileLine == nil then
             saveLoadState = LOAD_STATE_FINISH
-            Progress.message(STR("ConfigFileLoaded", {name = '\n' .. restoreFileName}))
+            Progress.message(STR("ConfigFileLoaded", {file = restoreFileName}))
             Progress.value(100)
             return
           end

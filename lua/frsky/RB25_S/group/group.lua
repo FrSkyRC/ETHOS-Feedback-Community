@@ -96,6 +96,7 @@ end
 
 local parameters = {
   {"Current gyro memory", createGroupField, 0xFD, 1, nil, 0, 15 },
+  {"Gyro memory ON/OFF", createChoiceField, 0xFD, 3, nil, { {"OFF", 0x00}, {"ON", 0x01}} },
   {"Gyro memory switch CH.", createCHField, 0xFD, 2, nil, 0, 23 },
   {"G.Mem bank at CH -100%", createGroupField, 0xFB, 1, nil, 0, 15 },
   {"G.Mem bank at CH 0%", createGroupField, 0xFB, 2, nil, 0, 15 },
@@ -113,7 +114,7 @@ local function create()
   modifications = {}
   fields = {}
 
-  local sensor = sport.getSensor({appIdStart=0x0F10, appIdEnd=0x0F1F});
+  local sensor = sport.getSensor({appIdStart=0x0F10, appIdEnd=0x0F1F, module=0xFFFF})
 
   for index = 1, #parameters do
     local parameter = parameters[index]

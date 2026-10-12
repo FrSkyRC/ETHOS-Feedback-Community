@@ -1,6 +1,18 @@
-local LUA_VERSION = "3.0.13";
+local LUA_VERSION = "3.0.15";
 
-TEST = false
+local env = setmetatable({}, { __index = _G })
+env._G = env
+
+function env.loadfile(path, mode, givenEnv)
+  return _G.loadfile(path, mode, givenEnv or env)
+end
+
+local function import(path)
+  return assert(env.loadfile(path))()
+end
+
+local TEST = false
+env.TEST = TEST
 
 local REMOTE_VERSION_CONSTRAINT = function (major, minor, revision)
   if major > 3 then
@@ -18,14 +30,20 @@ local REMOTE_VERSION_CONSTRAINT = function (major, minor, revision)
   end
 end
 
-local CommonFile = assert(loadfile("common.lua"))()
-Product = CommonFile.Product
-Module = CommonFile.Module
-Sensor = CommonFile.Sensor
-Dialog = CommonFile.Dialog
-Progress = CommonFile.Progress
+local CommonFile = import("common.lua")
+local Product = CommonFile.Product
+local Module = CommonFile.Module
+local Sensor = CommonFile.Sensor
+local Dialog = CommonFile.Dialog
+local Progress = CommonFile.Progress
+env.Product = Product
+env.Module = Module
+env.Sensor = Sensor
+env.Dialog = Dialog
+env.Progress = Progress
 
-STR = assert(loadfile("i18n/i18n.lua"))().translate
+local STR = import("i18n/i18n.lua").translate
+env.STR = STR
 
 local function name()
   return STR("ScriptName")
@@ -70,7 +88,7 @@ local REMOTE_DEVICE = {address = 0xFE, state = STATE_READ, field = nil, label = 
   Product.family = (value >> 8) & 0xFF
   Product.id = (value >> 16) & 0xFF
   print("Remote device family: " .. Product.family .. ", product: " .. Product.id)
-  local FrSkyProducts = assert(loadfile("products.lua"))()
+  local FrSkyProducts = import("products.lua")
   for i, family in pairs(FrSkyProducts) do
     if family.ID == Product.family then
       for j, product in pairs(family.Products) do
@@ -119,20 +137,20 @@ local function clearAllTasks()
   Product.resetProduct()
 end
 
-local pages = {{file = assert(loadfile("basic/basic.lua")()), label = STR("BasicConfig")},
+local pages = {{file = import("basic/basic.lua"), label = STR("BasicConfig")},
                {
                  name = STR("StabilizerGroup1"),
                  subPages = {
-                   {file = assert(loadfile("group1/precali1.lua")()), label = STR("Calibration")},
-                   {file = assert(loadfile("group1/stab1.lua")()), label = STR("Configuration")},}
+                   {file = import("group1/precali1.lua"), label = STR("Calibration")},
+                   {file = import("group1/stab1.lua"), label = STR("Configuration")},}
                  },
                {
                  name = STR("StabilizerGroup2"),
                  subPages = {
-                   {file = assert(loadfile("group2/precali2.lua")()), label = STR("Calibration")},
-                   {file = assert(loadfile("group2/stab2.lua")()), label = STR("Configuration")},}
+                   {file = import("group2/precali2.lua"), label = STR("Calibration")},
+                   {file = import("group2/stab2.lua"), label = STR("Configuration")},}
                  },
-               {file = assert(loadfile("cali/cali.lua")()), label = STR("SixAxisCali")}}
+               {file = import("cali/cali.lua"), label = STR("SixAxisCali")}}
 
 local currentPage = nil
 
@@ -202,7 +220,7 @@ local function buildBackupForm(ePanel, focusRefresh)
         elseif saveLoadState == LOAD_STATE_WRITE then
           if fileLine == nil then
             saveLoadState = LOAD_STATE_FINISH
-            Progress.message(STR("ConfigFileLoaded", {name = '\n' .. restoreFileName}))
+            Progress.message(STR("ConfigFileLoaded", {file = restoreFileName}))
             Progress.value(100)
             return
           end
@@ -331,7 +349,7 @@ local function buildBackupForm(ePanel, focusRefresh)
   if focusRefresh then
     button:focus()
   else
-    ePanel:open(false)
+    ePanel:open(TEST)
   end
 end
 
@@ -413,12 +431,6 @@ end
 
 local function checkNextTask()
   local allPass = true
-  if TEST then
-    Product.supportFields = {2, 3, 4}
-    Product.family = 2
-    Product.id = 68
-    Product.caliPrefix = "td_sr6"
-  end
 
   for i, task in pairs(tasks) do
     if TEST then
@@ -471,6 +483,9 @@ createFunction = function ()
   end)
 
   if TEST then
+    -- TD SR6 (family 2, id 39), firmware 3.0.0 — SupportFields {1,2,3,4}
+    REMOTE_DEVICE.dataHandler(0xFE | (3 << 8) | (23 << 16), REMOTE_DEVICE)
+    REMOTE_VERSION.dataHandler(0xFF | (3 << 8), REMOTE_VERSION)
     buildpage()
   end
   return {}

@@ -117,7 +117,7 @@ local function create()
   modifications = {}
   fields = {}
 
-  local sensor = sport.getSensor({appIdStart=0x0F00, appIdEnd=0x0F0F});
+  local sensor = sport.getSensor({appIdStart=0x0F00, appIdEnd=0x0F0F, module=0xFFFF})
 
   for index = 1, #parameters do
     local parameter = parameters[index]

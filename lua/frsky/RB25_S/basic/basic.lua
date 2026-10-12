@@ -244,7 +244,7 @@ local function create()
   parametersGroup = {baseParameters, channelParameters, failsafeParameters}
   page = 1
 
-  local sensor = sport.getSensor({appIdStart=0x0F10, appIdEnd=0x0F1F});
+  local sensor = sport.getSensor({appIdStart=0x0F10, appIdEnd=0x0F1F, module=0xFFFF})
 
   runPage(0)
 

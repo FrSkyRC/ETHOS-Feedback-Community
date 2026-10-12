@@ -1,4 +1,4 @@
-local LUA_VERSION = "2.1.8";
+local LUA_VERSION = "2.1.12";
 
 local translations = {en="RB25/25S Config"}
 

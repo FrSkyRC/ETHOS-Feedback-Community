@@ -33,7 +33,7 @@ local function create()
   calibrationState = CALIBRATION_INIT
   idle = false
 
-  local sensor = sport.getSensor({appIdStart=0x0F10, appIdEnd=0x0F1F});
+  local sensor = sport.getSensor({appIdStart=0x0F10, appIdEnd=0x0F1F, module=0xFFFF})
 
   bitmap = lcd.loadBitmap("cali/cali_"..step..".png")
 

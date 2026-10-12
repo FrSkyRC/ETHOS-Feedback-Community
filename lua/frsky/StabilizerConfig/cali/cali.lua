@@ -160,7 +160,7 @@ end
 local function paint()
   local width, height = lcd.getWindowSize()
 
-  lcd.color(lcd.GREY(0xFF))
+  lcd.color(lcd.darkMode() and lcd.GREY(0xFF) or lcd.GREY(0))
   if step >= 6 then
     lcd.drawText(width / 2, height / 3, STR("CaliFinished"), CENTERED)
   else

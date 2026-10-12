@@ -160,7 +160,7 @@ end
 local function paint()
   local width, height = lcd.getWindowSize()
 
-  lcd.color(lcd.GREY(0xFF))
+  lcd.color(lcd.darkMode() and lcd.GREY(0xFF) or lcd.GREY(0))
   local tw, th = lcd.getTextSize(STR("PositionRX"))
   lcd.drawText(width / 2, height / 3, STR("PositionRX"), CENTERED)
   if gyroModeCheck == GYRO_MODE_CHECK_PASS and (step < 6 or calibrationState ~= CALIBRATION_INIT) then
