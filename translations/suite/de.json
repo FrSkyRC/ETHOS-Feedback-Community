@@ -216,9 +216,9 @@
             "ReleaseNotes": "Release notes",
             "ScriptDeleted": "Das Skript wurde aus dem Senderprogramm entfernt.",
             "Upgrade": "Upgrade",
-            "Readme": "README",
-            "FrSkyScripts": "FrSky scripts",
-            "ThirdpartyScripts": "Third-party scripts"
+            "Readme": "Lies mich",
+            "FrSkyScripts": "FrSky-Skripte",
+            "ThirdpartyScripts": "Skripte von Drittanbietern"
         },
         "Simulator": {
             "EthosSimulator": "ETHOS-Simulator",
