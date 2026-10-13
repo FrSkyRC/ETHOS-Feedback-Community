@@ -75,13 +75,13 @@ end
 local function createResetButton(line, parameter)
   local field = form.addTextButton(line, nil, parameter[6], function()
     local buttons = {
-      {label="Cancel", action=function () return true end},
-      {label="Reset", action=function() setValue(parameter, parameter[7]) return true end},
+      {label = STR("Cancel"), action=function () return true end},
+      {label = STR("Reset"), action=function() setValue(parameter, parameter[7]) return true end},
     }
     form.openDialog({
-      title="Confirm reset",
-      message="Settings are about to be reset.\nPlease confirm to continue.",
-      buttons=buttons
+      title = STR("ConfirmReset"),
+      message = STR("ResetLabel"),
+      buttons = buttons
     })
   end)
   field:enable(TEST)
