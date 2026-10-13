@@ -10,12 +10,12 @@ FieldState = {
 }
 
 local function getValue(param)
-  if param.getValue ~= nil then
-    return param.getValue(param.value)
-  end
-
   if param.value == nil then
     return param.defaultValue ~= nil and param.defaultValue or 0
+  end
+
+  if param.getValue ~= nil then
+    return param.getValue(param.value)
   else
     if param.valueIndex then
       return (param.value >> ((param.valueIndex - 1) * 8)) & 0xFF
@@ -288,7 +288,7 @@ function ConfigWakeup(data)
           parameter.state = FieldState.RECEIVED
           parameter.tryTimes = nil
           if parameter.field ~= nil then
-            if parameter.extraInfo.disable ~= nil or not parameter.extraInfo.disable then
+            if parameter.extraInfo == nil or not parameter.extraInfo.disable then
               parameter.field:enable(true)
             end
           end
@@ -344,7 +344,7 @@ function ConfigWakeup(data)
 end
 
 function ConfigClose(data)
-  if data.needIdle then
+  if data ~= nil and (data.needIdle == nil or data.needIdle) then
     data.sensor:idle(false)
   end
 end
