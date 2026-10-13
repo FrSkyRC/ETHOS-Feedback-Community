@@ -1,4 +1,4 @@
-local LUA_VERSION = "2.0.5";
+local LUA_VERSION = "2.0.6";
 
 local env = setmetatable({}, { __index = _G })
 env._G = env

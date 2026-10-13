@@ -1,3 +1,4 @@
+PROTOCOL_NAME = "protocol_fbus"
 assert(loadfile("config/config.lua"))()
 
 local series65Parameters = {
@@ -73,7 +74,7 @@ local function create(module, appId)
     lastSaveTime = os.clock()
     saveStep = 0
     writeDialog = form.openDialog({title = STR("Saving"), message = STR("WritingSaveCommand"), closeWhenClickOutside = false, buttons= {
-      {label = "Cancel", action = function()
+      {label = STR("Cancel"), action = function()
         if writeDialog ~= nil then
           writeDialog:close()
           writeDialog = nil
