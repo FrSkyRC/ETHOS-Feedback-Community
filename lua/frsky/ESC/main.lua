@@ -1,4 +1,4 @@
-local LUA_VERSION = "1.1.6";
+local LUA_VERSION = "1.1.7";
 local nameI18n = {en = "ESC"}
 
 local function name()
