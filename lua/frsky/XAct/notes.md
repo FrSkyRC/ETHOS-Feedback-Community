@@ -23,4 +23,8 @@ Configuration script for FrSky XAct.
 
 - Fixed an issue where device could not be configured when telemetry data was received from an external module.
 
+## V2.0.6
+
+- Added missing translation.
+
 If you are running Ethos 1.6.0 or later, you can find it in the Device Config menu.

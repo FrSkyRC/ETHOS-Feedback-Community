@@ -1,3 +1,4 @@
+PROTOCOL_NAME = "protocol_fbus"
 assert(loadfile("config/config.lua"))()
 
 local series65Parameters = {
