@@ -591,6 +591,8 @@ LEFT_SHORT,,"L"
 RIGHT_SHORT,,"R"
 RIGHT,,"right",
 LEFT,,"left",
+FRONT,,"front",
+REAR,,"rear",
 TOP,,"Top",
 BOTTOM,,"Bottom",
 TIMER_UP,,"Up",

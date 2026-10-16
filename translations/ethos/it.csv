@@ -485,6 +485,8 @@ LEFT_SHORT,,"Sx"
 RIGHT_SHORT,,"Dx"
 RIGHT,,"Destra",
 LEFT,,"Sinistra",
+FRONT,,"Anteriore",
+REAR,,"Posteriore",
 TOP,,"Sopra",
 BOTTOM,,"Sotto",
 TIMER_UP,,"Tim.Su",
