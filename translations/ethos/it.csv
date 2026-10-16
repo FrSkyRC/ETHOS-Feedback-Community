@@ -1086,7 +1086,7 @@ USB_MODE_PRESELECTION,,"Preselezione Modo USB",
 SHUTDOWN_DELAY,,"Ritardo Spegnimento"
 USB_MODE,,"Modo USB",
 JOYSTICK,,"Joystick",
-SERIAL,,"Seriale",
+EXTERNAL_CONTROL,,"Seriale",
 SELECT_MODEL_AT_POWER_ON,,"Seleziona modello all'accensione",
 LOAD_MODEL,,"Carica modello",
 TELEMETRY_ACTIVE,,"Telemetria Attiva",

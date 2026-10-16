@@ -1089,7 +1089,7 @@ USB_MODE_PRESELECTION,,"Mode USB par défaut",
 SHUTDOWN_DELAY,,"Shutdown delay"
 USB_MODE,,"Mode USB",
 JOYSTICK,,"Joystick",
-SERIAL,,"Série",
+EXTERNAL_CONTROL,,"Contrôle externe",
 SELECT_MODEL_AT_POWER_ON,,"Choix modèle au démarrage",
 LOAD_MODEL,,"Charger modèle",
 TELEMETRY_ACTIVE,,"Télémétrie active",

@@ -1088,7 +1088,7 @@ USB_MODE_PRESELECTION,,"USB モード事前選択",,
 SHUTDOWN_DELAY,,"Shutdown delay"
 USB_MODE,,"USB モード",,
 JOYSTICK,,"ジョイスティック",,
-SERIAL,,"シリアル",,
+EXTERNAL_CONTROL,,"シリアル",,
 SELECT_MODEL_AT_POWER_ON,,"起動時モデル選択",,
 LOAD_MODEL,,"モデル読み込み",,
 TELEMETRY_ACTIVE,,"テレメトリデータがある",,

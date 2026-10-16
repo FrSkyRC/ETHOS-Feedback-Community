@@ -1089,7 +1089,7 @@ USB_MODE_PRESELECTION,,"USB mode preselection",
 SHUTDOWN_DELAY,,"Shutdown delay"
 USB_MODE,,"USB mode",
 JOYSTICK,,"Joystick",
-SERIAL,,"Serial",
+EXTERNAL_CONTROL,,"External control",
 SELECT_MODEL_AT_POWER_ON,,"Select model at power on",
 LOAD_MODEL,,"Load model",
 TELEMETRY_ACTIVE,,"Telemetry active",
