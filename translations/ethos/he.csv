@@ -1129,7 +1129,7 @@ USB_MODE_PRESELECTION,,דומ לש שארמ הריחב USB,,
 SHUTDOWN_DELAY,,"Shutdown delay"
 USB_MODE,,דומ USB,,
 JOYSTICK,,קיטסיו'ג,,
-EXTERNAL_CONTROL,,ילאיריס,,
+EXTERNAL_CONTROL,,שליטה חיצונית,,
 SELECT_MODEL_AT_POWER_ON,,הקלדהב לדומ רחב,,
 LOAD_MODEL,,לדומ ןעט,,
 TELEMETRY_ACTIVE,,הליעפ הירטמלט,,
