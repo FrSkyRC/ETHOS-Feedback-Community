@@ -217,8 +217,8 @@
             "ScriptDeleted": "Script fjernet fra radio.",
             "Upgrade": "Oppgrader",
             "Readme": "README",
-            "FrSkyScripts": "FrSky scripts",
-            "ThirdpartyScripts": "Third-party scripts"
+            "FrSkyScripts": "FrSky script",
+            "ThirdpartyScripts": "Tredjeparts script"
         },
         "Simulator": {
             "EthosSimulator": "ETHOS Simulator",
@@ -412,9 +412,9 @@
         "Bluetooth": "Blåtann",
         "ConnotReadDriveForComponent": "Kan ikke lese radio disken under behandling av {{ componentName }}",
         "StorageFreeOfTotal": "{{free}} ledig av {{total}}",
-        "ContinueCurrentOperation": "Continue current operation",
-        "AbortOperation": "Abort operation",
-        "AbortOperationWarning": "Aborting the current operation may damage your device. Confirm that you want to abort. Press and hold to abort.",
+        "ContinueCurrentOperation": "Fortsett gjeldende prosess",
+        "AbortOperation": "Avslutt prosess",
+        "AbortOperationWarning": "Hvis du avslutter gjeldende prosess kan enheten din bli skadet. Bekreft at du ønsker å avslutte. Trykk og hold for å avslutte.",
         "Release": "Utgave"
     },
     "Components": {
