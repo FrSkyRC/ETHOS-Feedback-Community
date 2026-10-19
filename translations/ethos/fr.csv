@@ -1089,6 +1089,7 @@ TEXT,,"Texte",
 DOCUMENTS,,"Documents",
 USB_MODE_PRESELECTION,,"Mode USB par défaut",
 SHUTDOWN_DELAY,,"Shutdown delay"
+DEVELOPER_MODE,,"Mode développeur"
 USB_MODE,,"Mode USB",
 JOYSTICK,,"Joystick",
 EXTERNAL_CONTROL,,"Contrôle externe",

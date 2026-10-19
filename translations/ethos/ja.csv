@@ -1088,6 +1088,7 @@ TEXT,,"テキスト",,
 DOCUMENTS,,"ドキュメント",,
 USB_MODE_PRESELECTION,,"USB モード事前選択",,
 SHUTDOWN_DELAY,,"Shutdown delay"
+DEVELOPER_MODE,,"開発者モード"
 USB_MODE,,"USB モード",,
 JOYSTICK,,"ジョイスティック",,
 EXTERNAL_CONTROL,,"外部制御",,

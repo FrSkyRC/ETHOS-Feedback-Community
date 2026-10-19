@@ -1127,6 +1127,7 @@ TEXT,,טסקט,,
 DOCUMENTS,,םיכמסמ,,
 USB_MODE_PRESELECTION,,דומ לש שארמ הריחב USB,,
 SHUTDOWN_DELAY,,"Shutdown delay"
+DEVELOPER_MODE,,"מצב מפתח"
 USB_MODE,,דומ USB,,
 JOYSTICK,,קיטסיו'ג,,
 EXTERNAL_CONTROL,,שליטה חיצונית,,

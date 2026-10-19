@@ -1090,6 +1090,7 @@ TEXT,,Text,,,
 DOCUMENTS,,Documents,,,
 USB_MODE_PRESELECTION,,USB mode preselection,,,
 SHUTDOWN_DELAY,,"Shutdown delay"
+DEVELOPER_MODE,,"Режим разработчика"
 USB_MODE,,USB mode,,,
 JOYSTICK,,Joystick,,,
 EXTERNAL_CONTROL,,Внешнее управление,,,
