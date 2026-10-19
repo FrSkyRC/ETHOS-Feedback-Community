@@ -132,11 +132,11 @@
             "NoLanguageSelected": "Nebol vybraný žiadny jazyk",
             "EthosMode": "ETHOS mód",
             "EarlyAccess": "Predbežný prístup",
-            "MultipleCpuidFiles": "Multiple identity files detected",
-            "MultipleCpuidFilesMessage": "Multiple matching .cpuid files were detected on drive {{ drive }}. Please remove the extra .cpuid files manually, or let Suite remove all .cpuid files for you. After reconnecting the transmitter, ETHOS will create the correct identity file.",
-            "RemoveAllCpuidFiles": "Remove all identity files",
-            "FirmwareNotAllowed": "Firmware not allowed",
-            "RadioMinVersionLabel": "This batch of {{radio}} only supports versions above {{minVersion}}"
+            "MultipleCpuidFiles": "Zistené viaceré súbory totožnosti",
+            "MultipleCpuidFilesMessage": "Na disku boli zistené viaceré zodpovedajúce súbory .cpuid {{ drive }}. Odstráňte ďalšie súbory .cpuid manuálne, aleb4o nechajte Suite odstrániť všetky súbory .cpuid pre vás. Po opätovnom pripojení vysielača ETHOS vytvorí správny súbor totožnosti.",
+            "RemoveAllCpuidFiles": "Odstránenie všetkých súborov totožnosti",
+            "FirmwareNotAllowed": "Firmvér nie je povolený",
+            "RadioMinVersionLabel": "Táto šarža z {{radio}}  podporuje iba vyššie uvedené verzie {{minVersion}}"
         },
         "Module": {
             "RFModule": "RF Modul",
@@ -163,9 +163,9 @@
             "MultipleFrskyPortDetected": "Viacero portov pre Frsky rádio bolo nájdených. Prosím vyberte port, ktorý chcete otvoriť pre ladenie.",
             "LuaInstall": "Inštalácia Lua skriptov",
             "LuaInstallDescription": "Pomoc pri inštalácii skriptov z .zip súboru do rádia",
-            "ShowSelectedZipInfo": "Show info",
-            "InstallSelectedZip": "Install scripts",
-            "SelectedZipFile": "Selected zip file",
+            "ShowSelectedZipInfo": "Zobraziť informácie",
+            "InstallSelectedZip": "Inštalácia skriptov",
+            "SelectedZipFile": "Vybraný súbor zip",
             "NoManifestFound": "Súbor ethos_lua_manifest.json nebol nájdený v zip root.",
             "NoFileSelected": "Súbor nebol vybratý!",
             "ScriptsInstalled": "Skripty naištalované",
@@ -411,10 +411,10 @@
         "ExternalModule": "Externý modul",
         "Bluetooth": "Bluetooth",
         "ConnotReadDriveForComponent": "Nie je možné čítať rádiový disk pri pokuse o prevádzku {{ componentName }}",
-        "StorageFreeOfTotal": "{{free}} free of {{total}}",
-        "ContinueCurrentOperation": "Continue current operation",
-        "AbortOperation": "Abort operation",
-        "AbortOperationWarning": "Aborting the current operation may damage your device. Confirm that you want to abort. Press and hold to abort.",
+        "StorageFreeOfTotal": "{{free}} voľné z {{total}}",
+        "ContinueCurrentOperation": "Pokračovať v aktuálnej operácii",
+        "AbortOperation": "Zrušiť operáciu",
+        "AbortOperationWarning": "Prerušenie aktuálnej operácie môže poškodiť vaše zariadenie. Potvrďte, že chcete potratiť. Stlačte a držte pre zrušenie.",
         "Release": "Vydanie"
     },
     "Components": {
@@ -456,8 +456,8 @@
             "NandBootloaderGuideStep4": "Prejdite na DFU inštalátor, vyberte bootloader.frsk, ktorý ste si práve stiahli, a kliknite \"Zápis\""
         },
         "AudioPreview": {
-            "Pause": "Pause",
-            "Play": "Play"
+            "Pause": "Pauza",
+            "Play": "Hrať"
         }
     },
     "Dfu": {
@@ -611,14 +611,14 @@
         "ProxySettings": "Proxy nastavenia",
         "ForceRefetch": "Sila na opätovné získanie všetkých zdrojov servera",
         "AliServer": "Alibaba cloud",
-        "ScreenshotShortcut": "Screenshot shortcut",
-        "ScreenshotShortcutHint": "Click the field, then press a key combination",
-        "ScreenshotPressKeys": "Press a shortcut",
-        "ScreenshotCopyClipboard": "Copy to clipboard",
+        "ScreenshotShortcut": "SOdkaz obrazovky",
+        "ScreenshotShortcutHint": "Kliknite na pole a potom stlačte kombináciu klávesov",
+        "ScreenshotPressKeys": "Stlačte odkaz",
+        "ScreenshotCopyClipboard": "Kópírovať do schránky",
         "ScreenshotSaveToPath": "Save to path",
         "ScreenshotSavePath": "Save path",
-        "ScreenshotFilePrefix": "File name prefix",
-        "ScreenshotOptions": "Screenshot options"
+        "ScreenshotFilePrefix": "Predpona názvu súboru",
+        "ScreenshotOptions": "Možnosti snímky obrazovky"
     },
     "Documentation": {
         "Documentation": "Dokumentácia",
@@ -647,7 +647,7 @@
         "Updated": "Aktualizované",
         "DownloadUpdater": "Sťahovanie inštalátora",
         "UpdaterNotFound": "Webová adresa na stiahnutie inštalátora sa nenašla",
-        "DownloadingUpdater": "Downloading updater ...",
+        "DownloadingUpdater": "Sťahovanie aktualizácie ...",
         "ConfirmCancelDownload": "Potvrďte zrušenie sťahovania",
         "ConfirmCancelDownloadLabel": "Naozaj chcete zrušiť sťahovanie? Sťahovanie môžete reštartovať neskôr, ale priebeh sa nezachová.",
         "NetworkError": "Počas procesu sťahovania aktualizátora sa vyskytla chyba siete.",
