@@ -33,4 +33,8 @@ Config script for FrSky RB25 and RB25S.
 - Added missing gyro ON/OFF configuration
 - Fixed an issue where device could not be configured when telemetry data was received from an external module.
 
+## V2.1.13
+
+- Add missing translation strings in some pages.
+
 If you are running Ethos 1.6.0 or later, you can find it in the Device Config menu.
