@@ -123,8 +123,12 @@ local function event(widget, category, value, x, y)
 end
 
 local function close(widget)
-  print("close()")
-  widget.sensor:idle(false)
+  local count = 0;
+  while count < 3 do
+    if widget.sensor:idle(false) then
+      count = count + 1
+    end
+  end
   idle = false
 end
 
