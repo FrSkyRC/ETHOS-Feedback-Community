@@ -93,7 +93,7 @@ local function doCalibrate()
     nextStep = true
     return
   end
-  local button = {{label = "Close", action = function ()
+  local button = {{label = STR("Close"), action = function ()
     Dialog.closeDialog()
   end}}
 
@@ -157,18 +157,41 @@ local function pageInit()
   bitmap = lcd.loadBitmap(getCaliBitmapPath())
 end
 
+-- Split text into lines that fit within maxWidth
+local function wrapText(text, maxWidth)
+  local lines = {}
+  local current = ""
+  for word in text:gmatch("%S+") do
+    local candidate = current == "" and word or (current .. " " .. word)
+    if current ~= "" and lcd.getTextSize(candidate) > maxWidth then
+      lines[#lines + 1] = current
+      current = word
+    else
+      current = candidate
+    end
+  end
+  if current ~= "" then
+    lines[#lines + 1] = current
+  end
+  return lines
+end
+
 local function paint()
   local width, height = lcd.getWindowSize()
 
-  lcd.color(lcd.darkMode() and lcd.GREY(0xFF) or lcd.GREY(0))
+  local lines
   if step >= 6 then
-    lcd.drawText(width / 2, height / 3, STR("CaliFinished"), CENTERED)
+    lines = {STR("CaliFinished")}
+  elseif gyroModeCheck ~= GYRO_MODE_CHECK_PASS then
+    lines = wrapText(getCaliLabel(), width - 20)
   else
-    local tw, th = lcd.getTextSize(STR("PositionRX"))
-    lcd.drawText(width / 2, height / 3, STR("PositionRX"), CENTERED)
-    if gyroModeCheck == GYRO_MODE_CHECK_PASS and (step < 6 or calibrationState ~= CALIBRATION_INIT) then
-      lcd.drawText(width / 2, height / 3 + th, STR("PressCaliToStart"), CENTERED)
-    end
+    lines = {STR("PositionRX"), STR("PressCaliToStart")}
+  end
+
+  lcd.color(lcd.darkMode() and lcd.GREY(0xFF) or lcd.GREY(0))
+  local _, th = lcd.getTextSize("A")
+  for i, text in ipairs(lines) do
+    lcd.drawText(width / 2, height / 3 + (i - 1) * th, text, CENTERED)
   end
 
   if bitmap ~= nil then
