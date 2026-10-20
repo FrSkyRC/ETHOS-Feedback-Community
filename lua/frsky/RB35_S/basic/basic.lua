@@ -147,8 +147,7 @@ local function createTextButton(line, parameter)
 end
 
 local function createStaticText(line, parameter)
-  form.addStaticText(line, nil, tostring(parameter[6]))
-  return nil
+  return form.addStaticText(line, nil, "-")
 end
 
 local CHANNEL_CONFIGS = {{"CH1", 0x00}, {"CH2", 0x01}, {"CH3", 0x02}, {"CH4", 0x03}, {"CH5", 0x04}, {"CH6", 0x05}, {"CH7", 0x06}, {"CH8", 0x07},
@@ -304,6 +303,9 @@ local function wakeup(widget)
             invalidateNeeded = true;
           end
           parameters[refreshIndex + 1][5] = value
+          if parameters[refreshIndex + 1][2] == createStaticText and fields[refreshIndex + 1] then
+            fields[refreshIndex + 1]:value(tostring(getValue(parameters[refreshIndex + 1])))
+          end
           if value ~= nil then
             if fields[refreshIndex + 1] then
               if type(fields[refreshIndex + 1]) == "table" then
@@ -332,7 +334,7 @@ local function wakeup(widget)
         end
         refreshIndex = 0
         requestInProgress = false
-        modifications[1] = nil
+        table.remove(modifications, 1)
       end
     elseif refreshIndex <= (#parameters - 1) then
       local parameter = parameters[refreshIndex + 1]

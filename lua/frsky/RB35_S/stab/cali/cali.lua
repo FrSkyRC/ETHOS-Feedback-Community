@@ -93,7 +93,7 @@ local function doCalibrate()
     nextStep = true
     return
   end
-  local button = {{label = "Close", action = function ()
+  local button = {{label = STR("Close"), action = function ()
     Dialog.closeDialog()
   end}}
 

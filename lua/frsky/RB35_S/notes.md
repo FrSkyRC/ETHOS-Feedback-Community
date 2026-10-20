@@ -28,4 +28,8 @@ Config script for FrSky RB35 and RB35S.
 
 - Fixed an issue where device could not be configured when telemetry data was received from an external module.
 
+## V2.1.12
+
+- Add missing translation strings in some pages.
+
 If you are running Ethos 1.6.0 or later, you can find it in the Device Config menu.
