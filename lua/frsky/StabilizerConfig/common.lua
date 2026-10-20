@@ -8,6 +8,19 @@ end
 Product.exist = function ()
   return Product.family ~= nil and Product.id ~= nil and Product.supportFields ~= nil and Product.caliPrefix ~= nil
 end
+Product.supportTwoGroupsStabilizer = function ()
+  local support =  Product.supportFields
+  if support == nil then
+    return false
+  end
+
+  for _, supportField in pairs(support) do
+    if supportField == 3 then
+      return true
+    end
+  end
+  return false
+end
 
 local Module = {}
 Module.INTERNAL_MODULE = 0x00

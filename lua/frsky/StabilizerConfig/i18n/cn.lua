@@ -15,6 +15,7 @@ return {
 
   BasicConfig = "基础设置",
   StabilizerGroup1 = "自稳功能组 1",
+  StabilizerConfig = "自稳功能设置",
   StabilizerGroup2 = "自稳功能组 2",
   SixAxisCali = "6 轴校准",
   Calibration = "校准",
@@ -85,6 +86,10 @@ return {
 
   ConfirmToBegin = "请确认以开始",
 
+  GainControlCH = "Gain control CH.",
+  ModeControlCH = "Mode control CH.",
+  DefaultGain = "Default gain (100%)",
+  CH = "CH{{ CH }}",
   ConfirmReset = "确认重置",
   ResetLabel = "设置将被重置, 请确认以继续.",
   Stabilizer = "自稳功能",

@@ -365,6 +365,9 @@ local function buildpage()
     for _, supportField in pairs(Product.supportFields) do
       if supportField == index then
         if page.name ~= nil then
+          if supportField == 2 and not Product.supportTwoGroupsStabilizer() then
+            page.name = STR("StabilizerConfig")
+          end
           local line = form.addLine(page.name)
           local fieldLabels = {}
           for j, subPage in pairs(page.subPages) do
@@ -431,6 +434,12 @@ end
 
 local function checkNextTask()
   local allPass = true
+  if TEST then
+    Product.supportFields = {2, 4}
+    Product.family = 2
+    Product.id = 81
+    Product.caliPrefix = "sr6bl15a"
+  end
 
   for i, task in pairs(tasks) do
     if TEST then
