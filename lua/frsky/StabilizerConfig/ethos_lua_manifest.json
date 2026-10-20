@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "name": "StabilizerConfig",
   "key": "org.frsky-ethos.stabilizerconfig",
-  "version": "3.0.15",
+  "version": "3.0.16",
   "folder": "StabilizerConfig",
   "releaseNotes": {
     "format": "markdown",

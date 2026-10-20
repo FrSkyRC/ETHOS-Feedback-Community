@@ -12,7 +12,6 @@ local GYRO_MODE_CHECK_REJECT = 3
 local GYRO_MODE_CHECK_GIVEUP = 4
 local GYRO_MODE_CHECK_CHANGE = 5
 local gyroModeCheck = GYRO_MODE_CHECK_REQUEST
-local gyroModeValue = 0 -- last 3 data bytes read from 0xA4, so enabling gyro mode keeps the other bytes
 local GYRO_MODE_CHECK_DETAIL = {address = 0xA4, passFunction = function(value4Bytes) return ((value4Bytes >> 8) & 0xFF) > 0  end}
 
 local step = 0
@@ -186,11 +185,7 @@ local function paint()
   elseif gyroModeCheck ~= GYRO_MODE_CHECK_PASS then
     lines = wrapText(getCaliLabel(), width - 20)
   else
-    local instruction = STR("CaliStep", {step = step + 1, total = 6}) .. " " .. (getCaliLabel() or STR("PositionRX"))
-    lines = wrapText(instruction, width - 20)
-    if #lines == 1 then
-      lines[2] = STR("PressCaliToStart")
-    end
+    lines = {STR("PositionRX"), STR("PressCaliToStart")}
   end
 
   lcd.color(lcd.darkMode() and lcd.GREY(0xFF) or lcd.GREY(0))
@@ -228,7 +223,6 @@ local function wakeup()
   elseif gyroModeCheck == GYRO_MODE_CHECK_RESPONSE then
     local value = Sensor.getParameter()
     if value and value % 256 == GYRO_MODE_CHECK_DETAIL.address then
-      gyroModeValue = (value >> 8) & 0xFFFFFF
       if GYRO_MODE_CHECK_DETAIL.passFunction(value) then
         gyroModeCheck = GYRO_MODE_CHECK_PASS
         if caliButton ~= nil then
@@ -242,8 +236,7 @@ local function wakeup()
       gyroModeCheck = GYRO_MODE_CHECK_REQUEST
     end
   elseif gyroModeCheck == GYRO_MODE_CHECK_CHANGE then
-    -- Set gyro mode (byte 1) to Basic, keep the other bytes (e.g. ADV config)
-    if Sensor.writeParameter(GYRO_MODE_CHECK_DETAIL.address, (gyroModeValue & 0xFFFF00) | 0x01) then
+    if Sensor.writeParameter(GYRO_MODE_CHECK_DETAIL.address, 1) then
       gyroModeCheck = GYRO_MODE_CHECK_REQUEST
     end
   elseif gyroModeCheck == GYRO_MODE_CHECK_REJECT then
