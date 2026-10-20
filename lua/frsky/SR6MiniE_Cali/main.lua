@@ -1,4 +1,4 @@
-local LUA_VERSION = "1.0.4";
+local LUA_VERSION = "1.0.5";
 
 local translations = {en="SR6Mini(E) Cali"}
 
