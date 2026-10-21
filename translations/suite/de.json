@@ -486,14 +486,14 @@
         "StepSelectFile": "DFU-Datei auswählen",
         "StepSelectFileHint": "Wählen Sie eine .frsk- oder .bin-Bootloader-Binärdatei aus.",
         "InstallDriver": "Installieren Sie den DFU-Treiber",
-        "DriverInstallCancelled": "DFU driver install was cancelled. Administrator permission is required.",
-        "DriverInstallReboot": "DFU driver installed. Restart Windows before using it.",
-        "DriverInstallReconnect": "DFU driver installed. Unplug the device and reconnect it in DFU mode.",
-        "DriverInstalled": "DFU driver installed. It will be used when a device is connected in DFU mode.",
-        "SourceLocal": "Local file",
-        "SelectRadio": "Select radio",
-        "NoBootloaders": "No bootloader found on this server.",
-        "BootloaderLoading": "Loading bootloaders ..."
+        "DriverInstallCancelled": "Die Installation des DFU-Treibers wurde abgebrochen. Es sind Administratorrechte erforderlich.",
+        "DriverInstallReboot": "DFU-Treiber installiert. Starten Sie Windows neu, bevor Sie ihn verwenden.",
+        "DriverInstallReconnect": "DFU-Treiber installiert. Trennen Sie das Gerät und schließen Sie es erneut im DFU-Modus an.",
+        "DriverInstalled": "DFU-Treiber installiert. Er kommt zum Einsatz, wenn ein Gerät im DFU-Modus angeschlossen wird.",
+        "SourceLocal": "Lokale Datei",
+        "SelectRadio": "Sender auswählen",
+        "NoBootloaders": "Auf diesem Server wurde kein Bootloader gefunden.",
+        "BootloaderLoading": "Lade Bootloader..."
     },
     "DownloadCenter": {
         "DownloadCenter": "FrSky-Produktliste",
