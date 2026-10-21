@@ -471,12 +471,10 @@
         "DriverCheckTitle": "DFU-Treiberprüfung",
         "DriverChecking": "DFU-Treiber wird geprüft...",
         "RefreshDriverStatus": "DFU-Treiberstatus aktualisieren",
-        "InstallUsbDk": "Installieren Sie den DFU-Treiber",
         "DriverCheckFailed": "Fehler beim Überprüfen des DFU-Treibers",
         "DriverInstallFailed": "Fehler beim Ausführen der DFU-Treiberinstallation",
         "StepFlash": "Beginnen Sie mit dem flashen.",
         "GuideEthosDfu": "Schalten Sie den ETHOS-Sender aus, verbinden Sie ihn mit einem USB-Kabel mit Ihrem Computer und warten Sie, bis Suite den DFU-Modus erkennt.",
-        "GuideAegisDfu": "Halten Sie die Bootloader-Taste gedrückt und verbinden Sie den Flugcontroller mit einem USB-Kabel mit Ihrem Computer. Warten Sie, bis die Suite den DFU-Modus erkennt.",
         "ConnectHintTitle": "Verbinden Sie Ihr Gerät.",
         "FlashDfuBinary": "DFU-Binärdatei flashen",
         "PageDescription": "Zurückliegende-Firmware-Wiederherstellung und Bootloader-Updates über das Device Firmware Upgrade (DFU)-Protokoll.",
@@ -486,7 +484,16 @@
         "StatusDeviceNotConnected": "Kein DFU-Gerät",
         "StepFlashHint": "Verbinden Sie das Gerät und starten Sie den Flash-Vorgang.",
         "StepSelectFile": "DFU-Datei auswählen",
-        "StepSelectFileHint": "Wählen Sie eine .frsk- oder .bin-Bootloader-Binärdatei aus."
+        "StepSelectFileHint": "Wählen Sie eine .frsk- oder .bin-Bootloader-Binärdatei aus.",
+        "InstallDriver": "Installieren Sie den DFU-Treiber",
+        "DriverInstallCancelled": "DFU driver install was cancelled. Administrator permission is required.",
+        "DriverInstallReboot": "DFU driver installed. Restart Windows before using it.",
+        "DriverInstallReconnect": "DFU driver installed. Unplug the device and reconnect it in DFU mode.",
+        "DriverInstalled": "DFU driver installed. It will be used when a device is connected in DFU mode.",
+        "SourceLocal": "Local file",
+        "SelectRadio": "Select radio",
+        "NoBootloaders": "No bootloader found on this server.",
+        "BootloaderLoading": "Loading bootloaders ..."
     },
     "DownloadCenter": {
         "DownloadCenter": "FrSky-Produktliste",
@@ -510,7 +517,15 @@
         "ReadmeLoadFailed": "Das Release für diese Firmware konnten nicht geladen werden.",
         "SelectProductHint": "Wählen Sie ein Produkt aus der Liste aus, um Firmware und Downloads anzuzeigen.",
         "NoProductsInList": "Es konnten keine Produkte geladen werden. Bitte versuchen Sie es später erneut.",
-        "ProductsListPartial": "Einige Produkte oder Kategorien konnten aufgrund von Server-Datenfehlern nicht geladen werden. Es werden alle verfügbaren Einträge angezeigt."
+        "ProductsListPartial": "Einige Produkte oder Kategorien konnten aufgrund von Server-Datenfehlern nicht geladen werden. Es werden alle verfügbaren Einträge angezeigt.",
+        "SearchProducts": "Search products",
+        "Favorites": "Favorites",
+        "NoFavorites": "No favorited products yet",
+        "AddFavorite": "Add to favorites",
+        "RemoveFavorite": "Remove from favorites",
+        "NoSearchResults": "No products match this search",
+        "CollapseAll": "Collapse all",
+        "ClearSearch": "Clear search"
     },
     "VersionTag": {
         "FetchingFromServer": "Vom Server abrufen...",

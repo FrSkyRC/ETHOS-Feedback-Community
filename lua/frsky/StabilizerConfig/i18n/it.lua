@@ -15,6 +15,7 @@ return {
 
   BasicConfig = "Config. Base",
   StabilizerGroup1 = "Gruppo Stabilizzazione 1",
+  StabilizerConfig = "Stabilizer config",
   StabilizerGroup2 = "Gruppo Stabilizzazione 2",
   SixAxisCali = "Calibrazione 6-assi",
   Calibration = "Calibrazione",
@@ -85,6 +86,10 @@ return {
 
   ConfirmToBegin = "Si prega di confermare per iniziare",
 
+  GainControlCH = "Gain control CH.",
+  ModeControlCH = "Mode control CH.",
+  DefaultGain = "Default gain (100%)",
+  CH = "CH{{ CH }}",
   ConfirmReset = "Conferma reset",
   ResetLabel = "I settaggi stanno per essere resettati.\nSi prega di confermare per continuare.",
   Stabilizer = "Stabilizzatore",

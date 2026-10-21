@@ -270,6 +270,31 @@ local function pageInit()
   local configureForm = form.addExpansionPanel(STR("SaveAndLoad"))
   buildBackupForm(configureForm)
 
+  for i = #parameters, 1, -1 do
+    if parameters[i][3] == 0xBA then
+      table.remove(parameters, i)
+    end
+  end
+
+  if not Product.supportTwoGroupsStabilizer() then
+    for pageA9Index, param in pairs(parameters) do
+      if param[3] == 0xA9 then
+        for i = #parameters, pageA9Index, -1 do
+          parameters[i + 2] = parameters[i]
+        end
+        parameters[pageA9Index] = {STR("GainControlCH"), createChoiceField, 0xBA, 1, 0x600, { {STR("DefaultGain"), 0},
+          {STR("CH", {CH = "7"}), 6}, {STR("CH", {CH = "8"}), 7}, {STR("CH", {CH = "9"}), 8}, {STR("CH", {CH = "10"}), 9}, {STR("CH", {CH = "11"}), 10}, {STR("CH", {CH = "12"}), 11}, {STR("CH", {CH = "13"}), 12}, {STR("CH", {CH = "14"}), 13}, {STR("CH", {CH = "15"}), 14},
+          {STR("CH", {CH = "16"}), 15}, {STR("CH", {CH = "17"}), 16}, {STR("CH", {CH = "18"}), 17}, {STR("CH", {CH = "19"}), 18}, {STR("CH", {CH = "20"}), 19}, {STR("CH", {CH = "21"}), 20}, {STR("CH", {CH = "22"}), 21}, {STR("CH", {CH = "23"}), 22}, {STR("CH", {CH = "24"}), 23}
+        }}
+        parameters[pageA9Index + 1] = {STR("ModeControlCH"), createChoiceField, 0xBA, 2, 0x600, {
+          {STR("CH", {CH = "7"}), 6}, {STR("CH", {CH = "8"}), 7}, {STR("CH", {CH = "9"}), 8}, {STR("CH", {CH = "10"}), 9}, {STR("CH", {CH = "11"}), 10}, {STR("CH", {CH = "12"}), 11}, {STR("CH", {CH = "13"}), 12}, {STR("CH", {CH = "14"}), 13}, {STR("CH", {CH = "15"}), 14},
+          {STR("CH", {CH = "16"}), 15}, {STR("CH", {CH = "17"}), 16}, {STR("CH", {CH = "18"}), 17}, {STR("CH", {CH = "19"}), 18}, {STR("CH", {CH = "20"}), 19}, {STR("CH", {CH = "21"}), 20}, {STR("CH", {CH = "22"}), 21}, {STR("CH", {CH = "23"}), 22}, {STR("CH", {CH = "24"}), 23}
+        }}
+        break
+      end
+    end
+  end
+
   for index = 1, #parameters do
     local parameter = parameters[index]
     local line = form.addLine(parameter[1])

@@ -42,7 +42,8 @@ Config script for FrSky stabilizer receiver.
 
 ## V3.0.16
 
+- Introduce the support for SR6BL15A
 - Improve label display in calibration page.
-- Add missing translation strings in some pages
+- Add missing translation strings in some pages.
 
 If you are running Ethos 1.6.0 or later, you can find it in the Device Config menu.

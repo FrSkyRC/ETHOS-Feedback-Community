@@ -51,7 +51,7 @@ ADD_A_NEW_VALUE,,"新規値追加",,
 ACTIONS,,"アクション",,
 ADD_A_NEW_ACTION,,"新規アクション追加",,
 ADD_A_NEW_LOGIC_SWITCH,,"+ 新規ロジックスイッチ追加"
-ADD_A_NEW_VAR,,"+ Add a new var"
+ADD_A_NEW_VAR,,"+ 新規変数追加"
 DURATION_HIGH,,"動作持続時間",,
 RISING_EDGE,,"立ち上がりエッジ",,
 DURING,,"期間中",,
@@ -229,7 +229,7 @@ ROLL,,"ロール",,
 FUNCTION_SWITCHES,,"機能スイッチ",,
 RESET_ALL_MIXES,,"全ミックスをリセット",,
 CREATE_CALCULATED_SENSOR,,"計算センサー作成",,
-DELETE_ALL_SENSORS,,"Delete all sensors"
+DELETE_ALL_SENSORS,,"すべてのセンサーを削除"
 CONFIRM_DELETE_SENSORS,,"この操作により全てのセンサーが削除されます.\nよろしいですか?",,
 ON,,"オン",,
 OFF,,"オフ",,
@@ -755,8 +755,8 @@ PITCH_TO_RUD,,"ピッチ => ラダー",,
 MISSING_BASIC_MIX,,"基本的なミックスが欠けている",,
 MISSING_ENOUGH_CHANNEL,,"利用可能なチャンネル数が不足",,
 NOT_SUITABLE_FOR_THIS_MODEL,,"このミックス設定はお使いのモデルに適していない",,
-THR_TO_ELE,,"スロットル => エルロン",,
-THR_TO_RUD,,"スロットル => ラダー",,
+THR_TO_ELE,,"スロットル =>\n エルロン",,
+THR_TO_RUD,,"スロットル =>\n ラダー",,
 TEMPERATURE,,"温度",,
 DATA_RATE,,"データレート",,
 GPS,,"GPS",,
@@ -1243,7 +1243,7 @@ FORWARD_CONDITION,,"フォワード実行条件"
 FORWARD_DURATION,,"フォワード実行期間"
 BACKWARD_CONDITION,,"リバース実行条件"
 BACKWARD_DURATION,,"リバース実行期間"
-EARLY,,"事前に"
+EARLY,,"打ち切り"
 ADD_A_NEW_OUTPUT,,"+ 新規出力追加"
 REMOVE_OUTPUT,,"出力削除"
 EDIT_CURVE,,"カーブ編集"

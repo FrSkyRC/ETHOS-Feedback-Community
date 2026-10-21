@@ -471,12 +471,10 @@
         "DriverCheckTitle": "Controllo DFU driver",
         "DriverChecking": "Controllo driver DFU ...",
         "RefreshDriverStatus": "Aggiorna stato driver DFU",
-        "InstallUsbDk": "Installa driver DFU",
         "DriverCheckFailed": "Controllo driver DFU Fallito",
         "DriverInstallFailed": "Installazione driver DFU Fallita",
         "StepFlash": "Inizio flashing",
         "GuideEthosDfu": "Con la radio ETHOS spenta, collegarla al computer con un cavo USB, e attendere il rilevamento del modo DFU.",
-        "GuideAegisDfu": "Tenere premuto il bottone Bootloader e collegare il Flight Controller al computer utilizzando un cavo USB, attendere che la Suite rilevi il modo DFU.",
         "ConnectHintTitle": "Collega il tuo dispositivo",
         "FlashDfuBinary": "Flash binario DFU",
         "PageDescription": "Recupero del firmware di basso livello (HW-Low-level) e aggiornamento bootloader attraverso il protocollo Device Firmware Upgrade (DFU).",
@@ -486,7 +484,16 @@
         "StatusDeviceNotConnected": "Nessun dispositivo DFU",
         "StepFlashHint": "Collega il dispositivo e inizia il Flashing",
         "StepSelectFile": "Seleziona file DFU",
-        "StepSelectFileHint": "Scegli un file binario bootloader .frsk o .bin"
+        "StepSelectFileHint": "Scegli un file binario bootloader .frsk o .bin",
+        "InstallDriver": "Installa driver DFU",
+        "DriverInstallCancelled": "DFU driver install was cancelled. Administrator permission is required.",
+        "DriverInstallReboot": "DFU driver installed. Restart Windows before using it.",
+        "DriverInstallReconnect": "DFU driver installed. Unplug the device and reconnect it in DFU mode.",
+        "DriverInstalled": "DFU driver installed. It will be used when a device is connected in DFU mode.",
+        "SourceLocal": "Local file",
+        "SelectRadio": "Select radio",
+        "NoBootloaders": "No bootloader found on this server.",
+        "BootloaderLoading": "Loading bootloaders ..."
     },
     "DownloadCenter": {
         "DownloadCenter": "Elenco Prodotti FrSky",
@@ -510,7 +517,15 @@
         "ReadmeLoadFailed": "Npn è possibile caricare le note di rilascio per questo firmware.",
         "SelectProductHint": "Seleziona un prodotto dalla lista per vedere firmware e downloads",
         "NoProductsInList": "Nessun prodotto può essere caricato. Si prega di riprovare più tardi.",
-        "ProductsListPartial": "Qualche prodotto o categoria non possono essere caricate a causa di errore server. Mostro tutte le opzioni disponibili."
+        "ProductsListPartial": "Qualche prodotto o categoria non possono essere caricate a causa di errore server. Mostro tutte le opzioni disponibili.",
+        "SearchProducts": "Search products",
+        "Favorites": "Favorites",
+        "NoFavorites": "No favorited products yet",
+        "AddFavorite": "Add to favorites",
+        "RemoveFavorite": "Remove from favorites",
+        "NoSearchResults": "No products match this search",
+        "CollapseAll": "Collapse all",
+        "ClearSearch": "Clear search"
     },
     "VersionTag": {
         "FetchingFromServer": "Recupero dal server ...",

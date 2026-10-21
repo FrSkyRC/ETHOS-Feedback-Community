@@ -15,6 +15,7 @@ return {
 
   BasicConfig = "Grundeinstellungen",
   StabilizerGroup1 = "Kanalgruppe 1",
+  StabilizerConfig = "Stabilizer config",
   StabilizerGroup2 = "Kanalgruppe 2",
   SixAxisCali = "6-Achs-Kalibrierung",
   Calibration = "Knüppelwege",
@@ -85,6 +86,10 @@ return {
 
   ConfirmToBegin = "Bitte bestätigen Sie, um zu beginnen",
 
+  GainControlCH = "Gain control CH.",
+  ModeControlCH = "Mode control CH.",
+  DefaultGain = "Default gain (100%)",
+  CH = "CH{{ CH }}",
   ConfirmReset = "Rückstellung bestätigen",
   ResetLabel = "Die Einstellungen werden gleich zurückgesetzt.\nBestätigen Sie bitte, um fortzufahren.",
   Stabilizer = "Stabilisierung",

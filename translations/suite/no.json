@@ -471,12 +471,10 @@
         "DriverCheckTitle": "DFU driver sjekk",
         "DriverChecking": "Sjekker DFU driver ...",
         "RefreshDriverStatus": "Gjenoppfrisk DFU driver status",
-        "InstallUsbDk": "Installer DFU driver",
         "DriverCheckFailed": "Sjekk DFU driver feilet",
         "DriverInstallFailed": "Kjøring av DFU driver installerer feilet",
         "StepFlash": "Start 'Flashing'",
         "GuideEthosDfu": "Med ETHOS radioen avslått, koble den til din datamaskin med en USB kabel. Vent til Suite oppdager 'DFU modus'.",
-        "GuideAegisDfu": "Hold Bootloader-knappen og koble 'flight controlleren' til din datamaskin med en USB kabel. Vent til Suite oppdager 'DFU modus'.",
         "ConnectHintTitle": "Koble til din enhet",
         "FlashDfuBinary": "Flash 'DFU binary'",
         "PageDescription": "Low-level firmware recovery and bootloader updates via the device firmware upgrade (DFU) protocol.",
@@ -486,7 +484,16 @@
         "StatusDeviceNotConnected": "No DFU device",
         "StepFlashHint": "Connect the device and start flashing",
         "StepSelectFile": "Select DFU file",
-        "StepSelectFileHint": "Choose a .frsk or .bin bootloader binary"
+        "StepSelectFileHint": "Choose a .frsk or .bin bootloader binary",
+        "InstallDriver": "Installer DFU driver",
+        "DriverInstallCancelled": "DFU driver install was cancelled. Administrator permission is required.",
+        "DriverInstallReboot": "DFU driver installed. Restart Windows before using it.",
+        "DriverInstallReconnect": "DFU driver installed. Unplug the device and reconnect it in DFU mode.",
+        "DriverInstalled": "DFU driver installed. It will be used when a device is connected in DFU mode.",
+        "SourceLocal": "Local file",
+        "SelectRadio": "Select radio",
+        "NoBootloaders": "No bootloader found on this server.",
+        "BootloaderLoading": "Loading bootloaders ..."
     },
     "DownloadCenter": {
         "DownloadCenter": "FrSky product list",
@@ -510,7 +517,15 @@
         "ReadmeLoadFailed": "Could not load release notes for this firmware.",
         "SelectProductHint": "Select a product from the list to view firmware and downloads",
         "NoProductsInList": "No products could be loaded. Please try again later.",
-        "ProductsListPartial": "Some products or categories could not be loaded due to server data errors. Showing all available entries."
+        "ProductsListPartial": "Some products or categories could not be loaded due to server data errors. Showing all available entries.",
+        "SearchProducts": "Search products",
+        "Favorites": "Favorites",
+        "NoFavorites": "No favorited products yet",
+        "AddFavorite": "Add to favorites",
+        "RemoveFavorite": "Remove from favorites",
+        "NoSearchResults": "No products match this search",
+        "CollapseAll": "Collapse all",
+        "ClearSearch": "Clear search"
     },
     "VersionTag": {
         "FetchingFromServer": "Henter fra server ...",

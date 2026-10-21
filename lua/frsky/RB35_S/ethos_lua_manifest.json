@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "name": "RB35(S)",
   "key": "org.frsky-ethos.rb35s",
-  "version": "2.1.11",
+  "version": "2.1.12",
   "folder": "RB35_S",
   "releaseNotes": {
     "format": "markdown",

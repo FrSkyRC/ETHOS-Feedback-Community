@@ -481,12 +481,19 @@
         "DriverCheckTitle": "DFU driver check",
         "DriverChecking": "Checking DFU driver ...",
         "RefreshDriverStatus": "Refresh DFU driver status",
-        "InstallUsbDk": "Install DFU driver",
         "DriverCheckFailed": "Failed to check DFU driver",
         "DriverInstallFailed": "Failed to run DFU driver installer",
         "StepFlash": "Start flashing",
         "GuideEthosDfu": "With the ETHOS radio powered off, connect it to your computer using a USB cable, then wait until Suite detects DFU mode.",
-        "GuideAegisDfu": "Hold the bootloader button and connect the flight controller to your computer using a USB cable, then wait until Suite detects DFU mode."
+        "InstallDriver": "Install DFU driver",
+        "DriverInstallCancelled": "DFU driver install was cancelled. Administrator permission is required.",
+        "DriverInstallReboot": "DFU driver installed. Restart Windows before using it.",
+        "DriverInstallReconnect": "DFU driver installed. Unplug the device and reconnect it in DFU mode.",
+        "DriverInstalled": "DFU driver installed. It will be used when a device is connected in DFU mode.",
+        "SourceLocal": "Local file",
+        "SelectRadio": "Select radio",
+        "NoBootloaders": "No bootloader found on this server.",
+        "BootloaderLoading": "Loading bootloaders ..."
     },
     "LogViewer": {
         "Title": "Log viewer",
@@ -546,7 +553,15 @@
         "NoFirmware": "No firmware files available for this product.",
         "SelectedProduct": "Selected product",
         "ProductsListPartial": "Some products or categories could not be loaded due to server data errors. Showing all available entries.",
-        "NoProductsInList": "No products could be loaded. Please try again later."
+        "NoProductsInList": "No products could be loaded. Please try again later.",
+        "SearchProducts": "Search products",
+        "Favorites": "Favorites",
+        "NoFavorites": "No favorited products yet",
+        "AddFavorite": "Add to favorites",
+        "RemoveFavorite": "Remove from favorites",
+        "NoSearchResults": "No products match this search",
+        "CollapseAll": "Collapse all",
+        "ClearSearch": "Clear search"
     },
     "VersionTag": {
         "FetchingFromServer": "Fetching from the server ...",

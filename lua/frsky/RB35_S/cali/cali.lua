@@ -43,7 +43,6 @@ end
 local function paint(widget)
   local width, height = lcd.getWindowSize()
 
-  print("lcd:paint()")
   lcd.drawText(width / 2, 10, "Calibration of SxR Gyros and Accelerometers", CENTERED)
 
   if calibrationState == CALIBRATION_OK then
@@ -124,8 +123,12 @@ local function event(widget, category, value, x, y)
 end
 
 local function close(widget)
-  print("close()")
-  widget.sensor:idle(false)
+  local count = 0;
+  while count < 3 do
+    if widget.sensor:idle(false) then
+      count = count + 1
+    end
+  end
   idle = false
 end
 

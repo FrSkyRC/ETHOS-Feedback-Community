@@ -471,12 +471,10 @@
         "DriverCheckTitle": "Kontrola DFU driveru",
         "DriverChecking": "Kontroluji DFU driver ...",
         "RefreshDriverStatus": "Obnovit stav DFU driveru",
-        "InstallUsbDk": "Instalovat DFU driver",
         "DriverCheckFailed": "Kontrola DFU driveru selhala",
         "DriverInstallFailed": "Instalace DFU driveru selhala",
         "StepFlash": "Spustit zápis",
         "GuideEthosDfu": "Připojte vypnuté ETHOS rádio k počítači pomocí USB kabelu a počkejte, až Suite detekuje DFU režim.",
-        "GuideAegisDfu": "Držte tlačítko Bootloader a připojte flight kontrolér k počítači pomocí USB kabelu a počkejte, až Suite detekuje DFU režim.",
         "ConnectHintTitle": "Připojte vaše zařízení",
         "FlashDfuBinary": "Zápis DFU binárního souboru",
         "PageDescription": "Nízkoúrovňová obnova firmware a bootloaderu pomocí Device Firmware Upgrade (DFU) protokolu.",
@@ -486,7 +484,16 @@
         "StatusDeviceNotConnected": "Žádné DFU zařízení",
         "StepFlashHint": "Připojte zařízení a spusťte zápis",
         "StepSelectFile": "Vyberte DFU soubor",
-        "StepSelectFileHint": "Vyberte .frsk nebo .bin soubor bootloaderu"
+        "StepSelectFileHint": "Vyberte .frsk nebo .bin soubor bootloaderu",
+        "InstallDriver": "Instalovat DFU driver",
+        "DriverInstallCancelled": "DFU driver install was cancelled. Administrator permission is required.",
+        "DriverInstallReboot": "DFU driver installed. Restart Windows before using it.",
+        "DriverInstallReconnect": "DFU driver installed. Unplug the device and reconnect it in DFU mode.",
+        "DriverInstalled": "DFU driver installed. It will be used when a device is connected in DFU mode.",
+        "SourceLocal": "Local file",
+        "SelectRadio": "Select radio",
+        "NoBootloaders": "No bootloader found on this server.",
+        "BootloaderLoading": "Loading bootloaders ..."
     },
     "DownloadCenter": {
         "DownloadCenter": "Seznam produktů FrSky",
@@ -510,7 +517,15 @@
         "ReadmeLoadFailed": "Nemohu nahrát poznámky k vydání pro tento firmware.",
         "SelectProductHint": "Vyberte produkt ze seznamu pro zobrazení firmware a souborů ke stažení",
         "NoProductsInList": "Nepodařilo se načíst produkty. Prosím, zkuste to později znovu.",
-        "ProductsListPartial": "Některé produkty nebo kategorie nešly načíst kvůli chybám dat na serveru. Zobrazuji všechny dostupné záznamy."
+        "ProductsListPartial": "Některé produkty nebo kategorie nešly načíst kvůli chybám dat na serveru. Zobrazuji všechny dostupné záznamy.",
+        "SearchProducts": "Search products",
+        "Favorites": "Favorites",
+        "NoFavorites": "No favorited products yet",
+        "AddFavorite": "Add to favorites",
+        "RemoveFavorite": "Remove from favorites",
+        "NoSearchResults": "No products match this search",
+        "CollapseAll": "Collapse all",
+        "ClearSearch": "Clear search"
     },
     "VersionTag": {
         "FetchingFromServer": "Získávám ze serveru ...",

@@ -210,7 +210,7 @@ local function wakeup(widget)
         end
         refreshIndex = 0
         requestInProgress = false
-        modifications[1] = nil
+        table.remove(modifications, 1)
       end
     elseif refreshIndex <= (#parameters - 1) then
       local parameter = parameters[refreshIndex + 1]

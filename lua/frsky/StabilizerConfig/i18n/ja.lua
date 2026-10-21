@@ -15,6 +15,7 @@ return {
 
   BasicConfig = "基本設定",
   StabilizerGroup1 = "安定機能グループ 1",
+  StabilizerConfig = "Stabilizer config",
   StabilizerGroup2 = "安定機能グループ 2",
   SixAxisCali = "6軸キャリブレーション",
   Calibration = "キャリブレーション",
@@ -85,6 +86,10 @@ return {
 
   ConfirmToBegin = "開始を確認",
 
+  GainControlCH = "Gain control CH.",
+  ModeControlCH = "Mode control CH.",
+  DefaultGain = "Default gain (100%)",
+  CH = "CH{{ CH }}",
   ConfirmReset = "リセットを確認",
   ResetLabel = "設定がリセットされます, よろしければ続行してください.",
   Stabilizer = "安定機能",

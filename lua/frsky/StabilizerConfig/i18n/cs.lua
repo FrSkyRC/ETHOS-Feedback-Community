@@ -14,6 +14,7 @@ UnableToRead = "Nelze načíst",
 
   BasicConfig = "Základní nastavení",
   StabilizerGroup1 = "Stabilizační skupina 1",
+  StabilizerConfig = "Stabilizer config",
   StabilizerGroup2 = "Stabilizační skupina 2",
   SixAxisCali = "Kalibrace 6ti os",
   Calibration = "Kalibrace",
@@ -87,6 +88,10 @@ UnableToRead = "Nelze načíst",
 
   ConfirmToBegin = "Potvrďte prosím zahájení",
 
+  GainControlCH = "Gain control CH.",
+  ModeControlCH = "Mode control CH.",
+  DefaultGain = "Default gain (100%)",
+  CH = "CH{{ CH }}",
   ConfirmReset = "Potvrdit resetování",
   ResetLabel = "Nastavení budou resetována.\nPotvrďte prosím pokračování.",
   Stabilizer = "Stabilizátor",
