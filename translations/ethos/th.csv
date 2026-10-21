@@ -1143,6 +1143,7 @@ FILE_ALREADY_EXISTS,,"มีไฟล์ชื่อนี้อยู่ค่�
 MODEL_RUNTIME,,"Model runtime"
 RADIO_RUNTIME,,"Radio runtime"
 WAITING_FOR_SIGNAL,,"กําลังรอสัญญาณค่ะ"
+VIDEO,,"วิดีโอ"
 CONFIRM_RESET_RUNTIME,,"Runtime จะถูกรีเซ็ต\n จะทำต่อมั้ยคะ"
 BANK,,"Bank"
 POWER_SWITCH,,"Switch เปิด"
