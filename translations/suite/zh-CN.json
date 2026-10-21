@@ -492,7 +492,6 @@
         "DriverInstalled": "DFU 驱动已安装。设备以 DFU 模式连接后会自动使用。",
         "SourceLocal": "本地文件",
         "SelectRadio": "选择遥控器",
-        "ShowPrerelease": "显示预发布 Bootloader",
         "NoBootloaders": "此服务器上没有找到 Bootloader。",
         "BootloaderLoading": "正在加载 Bootloader ..."
     },
