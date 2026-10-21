@@ -471,7 +471,6 @@
         "DriverCheckTitle": "DFU-Treiberprüfung",
         "DriverChecking": "DFU-Treiber wird geprüft...",
         "RefreshDriverStatus": "DFU-Treiberstatus aktualisieren",
-        "InstallUsbDk": "Installieren Sie den DFU-Treiber",
         "DriverCheckFailed": "Fehler beim Überprüfen des DFU-Treibers",
         "DriverInstallFailed": "Fehler beim Ausführen der DFU-Treiberinstallation",
         "StepFlash": "Beginnen Sie mit dem flashen.",
@@ -486,7 +485,12 @@
         "StatusDeviceNotConnected": "Kein DFU-Gerät",
         "StepFlashHint": "Verbinden Sie das Gerät und starten Sie den Flash-Vorgang.",
         "StepSelectFile": "DFU-Datei auswählen",
-        "StepSelectFileHint": "Wählen Sie eine .frsk- oder .bin-Bootloader-Binärdatei aus."
+        "StepSelectFileHint": "Wählen Sie eine .frsk- oder .bin-Bootloader-Binärdatei aus.",
+        "InstallDriver": "Installieren Sie den DFU-Treiber",
+        "DriverInstallCancelled": "DFU driver install was cancelled. Administrator permission is required.",
+        "DriverInstallReboot": "DFU driver installed. Restart Windows before using it.",
+        "DriverInstallReconnect": "DFU driver installed. Unplug the device and reconnect it in DFU mode.",
+        "DriverInstalled": "DFU driver installed. It will be used when a device is connected in DFU mode."
     },
     "DownloadCenter": {
         "DownloadCenter": "FrSky-Produktliste",

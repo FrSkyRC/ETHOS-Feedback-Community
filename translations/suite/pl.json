@@ -481,12 +481,16 @@
         "DriverCheckTitle": "Sprawdzanie sterownika DFU",
         "DriverChecking": "Sprawdzanie sterownika DFU ...",
         "RefreshDriverStatus": "Odśwież stan sterownika DFU",
-        "InstallUsbDk": "Zainstaluj sterownik DFU",
         "DriverCheckFailed": "Nie udało się sprawdzić sterownika DFU",
         "DriverInstallFailed": "Nie udało się uruchomić instalatora sterownika DFU",
         "StepFlash": "Rozpocznij wgrywanie",
         "GuideEthosDfu": "Przy wyłączonym radiu ETHOS podłącz je do komputera kablem USB i poczekaj, aż Suite wykryje tryb DFU.",
-        "GuideAegisDfu": "Przytrzymaj przycisk bootloadera i podłącz kontroler lotu do komputera kablem USB, a następnie poczekaj, aż Suite wykryje tryb DFU."
+        "GuideAegisDfu": "Przytrzymaj przycisk bootloadera i podłącz kontroler lotu do komputera kablem USB, a następnie poczekaj, aż Suite wykryje tryb DFU.",
+        "InstallDriver": "Zainstaluj sterownik DFU",
+        "DriverInstallCancelled": "DFU driver install was cancelled. Administrator permission is required.",
+        "DriverInstallReboot": "DFU driver installed. Restart Windows before using it.",
+        "DriverInstallReconnect": "DFU driver installed. Unplug the device and reconnect it in DFU mode.",
+        "DriverInstalled": "DFU driver installed. It will be used when a device is connected in DFU mode."
     },
     "LogViewer": {
         "Title": "Przeglądarka logów",

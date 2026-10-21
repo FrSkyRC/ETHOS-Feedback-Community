@@ -481,12 +481,16 @@
         "DriverCheckTitle": "DFU 驱动检查",
         "DriverChecking": "正在检查 DFU 驱动 ...",
         "RefreshDriverStatus": "刷新 DFU 驱动状态",
-        "InstallUsbDk": "安装 DFU 驱动",
         "DriverCheckFailed": "检查 DFU 驱动失败",
         "DriverInstallFailed": "运行 DFU 驱动安装器失败",
         "StepFlash": "开始烧录",
         "GuideEthosDfu": "将 ETHOS 遥控器关机, 然后使用 USB 线连接到电脑, 并等待 Suite 检测到 DFU 设备.",
-        "GuideAegisDfu": "按住 Bootloader 按钮, 然后使用 USB 线连接到电脑, 并等待 Suite 检测到 DFU 设备."
+        "GuideAegisDfu": "按住 Bootloader 按钮, 然后使用 USB 线连接到电脑, 并等待 Suite 检测到 DFU 设备.",
+        "InstallDriver": "安装 DFU 驱动",
+        "DriverInstallCancelled": "已取消安装 DFU 驱动。需要管理员权限。",
+        "DriverInstallReboot": "DFU 驱动已安装。使用前请重启 Windows。",
+        "DriverInstallReconnect": "DFU 驱动已安装。请拔出设备，再以 DFU 模式重新连接。",
+        "DriverInstalled": "DFU 驱动已安装。设备以 DFU 模式连接后会自动使用。"
     },
     "LogViewer": {
         "Title": "日志查看器",

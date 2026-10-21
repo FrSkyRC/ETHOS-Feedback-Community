@@ -471,7 +471,6 @@
         "DriverCheckTitle": "DFU driver sjekk",
         "DriverChecking": "Sjekker DFU driver ...",
         "RefreshDriverStatus": "Gjenoppfrisk DFU driver status",
-        "InstallUsbDk": "Installer DFU driver",
         "DriverCheckFailed": "Sjekk DFU driver feilet",
         "DriverInstallFailed": "Kjøring av DFU driver installerer feilet",
         "StepFlash": "Start 'Flashing'",
@@ -486,7 +485,12 @@
         "StatusDeviceNotConnected": "No DFU device",
         "StepFlashHint": "Connect the device and start flashing",
         "StepSelectFile": "Select DFU file",
-        "StepSelectFileHint": "Choose a .frsk or .bin bootloader binary"
+        "StepSelectFileHint": "Choose a .frsk or .bin bootloader binary",
+        "InstallDriver": "Installer DFU driver",
+        "DriverInstallCancelled": "DFU driver install was cancelled. Administrator permission is required.",
+        "DriverInstallReboot": "DFU driver installed. Restart Windows before using it.",
+        "DriverInstallReconnect": "DFU driver installed. Unplug the device and reconnect it in DFU mode.",
+        "DriverInstalled": "DFU driver installed. It will be used when a device is connected in DFU mode."
     },
     "DownloadCenter": {
         "DownloadCenter": "FrSky product list",
