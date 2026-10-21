@@ -546,7 +546,15 @@
         "NoFirmware": "No firmware files available for this product.",
         "SelectedProduct": "Selected product",
         "ProductsListPartial": "Some products or categories could not be loaded due to server data errors. Showing all available entries.",
-        "NoProductsInList": "No products could be loaded. Please try again later."
+        "NoProductsInList": "No products could be loaded. Please try again later.",
+        "SearchProducts": "Search products",
+        "Favorites": "Favorites",
+        "NoFavorites": "No favorited products yet",
+        "AddFavorite": "Add to favorites",
+        "RemoveFavorite": "Remove from favorites",
+        "NoSearchResults": "No products match this search",
+        "CollapseAll": "Collapse all",
+        "ClearSearch": "Clear search"
     },
     "VersionTag": {
         "FetchingFromServer": "Fetching from the server ...",

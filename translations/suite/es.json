@@ -510,7 +510,15 @@
         "ReadmeLoadFailed": "No se pudieron cargar las notas de este lanzamiento del firmware.",
         "SelectProductHint": "Seleccione un producto de la lista, para ver el firmware y las descargas",
         "NoProductsInList": "No se pudo cargar ningún producto. Inténtelo de nuevo más tarde.",
-        "ProductsListPartial": "Algunos productos o categorias no pudieron cargarse debido a errores en los datos del servidor. Mostrando todas las entradas disponibles."
+        "ProductsListPartial": "Algunos productos o categorias no pudieron cargarse debido a errores en los datos del servidor. Mostrando todas las entradas disponibles.",
+        "SearchProducts": "Search products",
+        "Favorites": "Favorites",
+        "NoFavorites": "No favorited products yet",
+        "AddFavorite": "Add to favorites",
+        "RemoveFavorite": "Remove from favorites",
+        "NoSearchResults": "No products match this search",
+        "CollapseAll": "Collapse all",
+        "ClearSearch": "Clear search"
     },
     "VersionTag": {
         "FetchingFromServer": "Obteniendo desde el servidor ...",

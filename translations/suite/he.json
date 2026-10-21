@@ -510,7 +510,15 @@
         "ReadmeLoadFailed": "Could not load release notes for this firmware.",
         "SelectProductHint": "Select a product from the list to view firmware and downloads",
         "NoProductsInList": "No products could be loaded. Please try again later.",
-        "ProductsListPartial": "Some products or categories could not be loaded due to server data errors. Showing all available entries."
+        "ProductsListPartial": "Some products or categories could not be loaded due to server data errors. Showing all available entries.",
+        "SearchProducts": "Search products",
+        "Favorites": "Favorites",
+        "NoFavorites": "No favorited products yet",
+        "AddFavorite": "Add to favorites",
+        "RemoveFavorite": "Remove from favorites",
+        "NoSearchResults": "No products match this search",
+        "CollapseAll": "Collapse all",
+        "ClearSearch": "Clear search"
     },
     "VersionTag": {
         "FetchingFromServer": "Fetching from the server ...",

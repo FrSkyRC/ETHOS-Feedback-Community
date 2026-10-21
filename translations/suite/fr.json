@@ -510,7 +510,15 @@
         "ReadmeLoadFailed": "Chargement notes de version impossible pour ce firmware.",
         "SelectProductHint": "Sélectionner un produit depuis la liste pour voir et télécharger le firmware",
         "NoProductsInList": "Chargement produit impossible. Essayer ultérieurement.",
-        "ProductsListPartial": "Certains produits ou catégories ne peuvent être charger depuis le serveur. Affichage des données disponibles."
+        "ProductsListPartial": "Certains produits ou catégories ne peuvent être charger depuis le serveur. Affichage des données disponibles.",
+        "SearchProducts": "Search products",
+        "Favorites": "Favorites",
+        "NoFavorites": "No favorited products yet",
+        "AddFavorite": "Add to favorites",
+        "RemoveFavorite": "Remove from favorites",
+        "NoSearchResults": "No products match this search",
+        "CollapseAll": "Collapse all",
+        "ClearSearch": "Clear search"
     },
     "VersionTag": {
         "FetchingFromServer": "Récupération depuis le serveur...",

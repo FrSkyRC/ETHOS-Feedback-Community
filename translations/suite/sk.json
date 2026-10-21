@@ -510,7 +510,15 @@
         "ReadmeLoadFailed": "Nemohli sme načítať poznámky o uvoľnení pre tento firmvér.",
         "SelectProductHint": "Vyberte produkt zo zoznamu na zobrazenie firmvéru a sťahovanie",
         "NoProductsInList": "Žiadne produkty sa nedajú načítať. Skúste to prosím neskôr.",
-        "ProductsListPartial": "Niektoré produkty alebo kategórie nebolo možné načítať z dôvodu chýb v údajoch servera. Zobrazujem všetky dostupné vstupy."
+        "ProductsListPartial": "Niektoré produkty alebo kategórie nebolo možné načítať z dôvodu chýb v údajoch servera. Zobrazujem všetky dostupné vstupy.",
+        "SearchProducts": "Search products",
+        "Favorites": "Favorites",
+        "NoFavorites": "No favorited products yet",
+        "AddFavorite": "Add to favorites",
+        "RemoveFavorite": "Remove from favorites",
+        "NoSearchResults": "No products match this search",
+        "CollapseAll": "Collapse all",
+        "ClearSearch": "Clear search"
     },
     "VersionTag": {
         "FetchingFromServer": "Načítavanie zo servera ...",

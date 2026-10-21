@@ -546,7 +546,15 @@
         "NoFirmware": "Brak plików firmware dla tego produktu.",
         "SelectedProduct": "Wybrany produkt",
         "ProductsListPartial": "Nie udało się wczytać niektórych produktów lub kategorii z powodu błędów danych serwera. Wyświetlane są wszystkie dostępne pozycje.",
-        "NoProductsInList": "Nie udało się wczytać żadnych produktów. Spróbuj ponownie później."
+        "NoProductsInList": "Nie udało się wczytać żadnych produktów. Spróbuj ponownie później.",
+        "SearchProducts": "Search products",
+        "Favorites": "Favorites",
+        "NoFavorites": "No favorited products yet",
+        "AddFavorite": "Add to favorites",
+        "RemoveFavorite": "Remove from favorites",
+        "NoSearchResults": "No products match this search",
+        "CollapseAll": "Collapse all",
+        "ClearSearch": "Clear search"
     },
     "VersionTag": {
         "FetchingFromServer": "Pobieranie z serwera ...",

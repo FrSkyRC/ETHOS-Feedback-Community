@@ -510,7 +510,15 @@
         "ReadmeLoadFailed": "Nemohu nahrát poznámky k vydání pro tento firmware.",
         "SelectProductHint": "Vyberte produkt ze seznamu pro zobrazení firmware a souborů ke stažení",
         "NoProductsInList": "Nepodařilo se načíst produkty. Prosím, zkuste to později znovu.",
-        "ProductsListPartial": "Některé produkty nebo kategorie nešly načíst kvůli chybám dat na serveru. Zobrazuji všechny dostupné záznamy."
+        "ProductsListPartial": "Některé produkty nebo kategorie nešly načíst kvůli chybám dat na serveru. Zobrazuji všechny dostupné záznamy.",
+        "SearchProducts": "Search products",
+        "Favorites": "Favorites",
+        "NoFavorites": "No favorited products yet",
+        "AddFavorite": "Add to favorites",
+        "RemoveFavorite": "Remove from favorites",
+        "NoSearchResults": "No products match this search",
+        "CollapseAll": "Collapse all",
+        "ClearSearch": "Clear search"
     },
     "VersionTag": {
         "FetchingFromServer": "Získávám ze serveru ...",

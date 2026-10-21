@@ -510,7 +510,15 @@
         "ReadmeLoadFailed": "Das Release für diese Firmware konnten nicht geladen werden.",
         "SelectProductHint": "Wählen Sie ein Produkt aus der Liste aus, um Firmware und Downloads anzuzeigen.",
         "NoProductsInList": "Es konnten keine Produkte geladen werden. Bitte versuchen Sie es später erneut.",
-        "ProductsListPartial": "Einige Produkte oder Kategorien konnten aufgrund von Server-Datenfehlern nicht geladen werden. Es werden alle verfügbaren Einträge angezeigt."
+        "ProductsListPartial": "Einige Produkte oder Kategorien konnten aufgrund von Server-Datenfehlern nicht geladen werden. Es werden alle verfügbaren Einträge angezeigt.",
+        "SearchProducts": "Search products",
+        "Favorites": "Favorites",
+        "NoFavorites": "No favorited products yet",
+        "AddFavorite": "Add to favorites",
+        "RemoveFavorite": "Remove from favorites",
+        "NoSearchResults": "No products match this search",
+        "CollapseAll": "Collapse all",
+        "ClearSearch": "Clear search"
     },
     "VersionTag": {
         "FetchingFromServer": "Vom Server abrufen...",

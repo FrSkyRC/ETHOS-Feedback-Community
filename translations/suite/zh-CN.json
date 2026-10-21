@@ -546,7 +546,15 @@
         "NoFirmware": "此产品暂无可用固件文件",
         "SelectedProduct": "已选产品",
         "ProductsListPartial": "部分产品或分类因服务器数据异常未能加载, 已显示所有可用项.",
-        "NoProductsInList": "未能加载任何产品, 请稍后再试."
+        "NoProductsInList": "未能加载任何产品, 请稍后再试.",
+        "SearchProducts": "搜索产品",
+        "Favorites": "已收藏",
+        "NoFavorites": "还没有收藏的产品",
+        "AddFavorite": "加入收藏",
+        "RemoveFavorite": "取消收藏",
+        "NoSearchResults": "没有符合条件的产品",
+        "CollapseAll": "全部折叠",
+        "ClearSearch": "清空搜索"
     },
     "VersionTag": {
         "FetchingFromServer": "正在从服务器拉取 ...",

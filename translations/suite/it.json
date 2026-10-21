@@ -510,7 +510,15 @@
         "ReadmeLoadFailed": "Npn è possibile caricare le note di rilascio per questo firmware.",
         "SelectProductHint": "Seleziona un prodotto dalla lista per vedere firmware e downloads",
         "NoProductsInList": "Nessun prodotto può essere caricato. Si prega di riprovare più tardi.",
-        "ProductsListPartial": "Qualche prodotto o categoria non possono essere caricate a causa di errore server. Mostro tutte le opzioni disponibili."
+        "ProductsListPartial": "Qualche prodotto o categoria non possono essere caricate a causa di errore server. Mostro tutte le opzioni disponibili.",
+        "SearchProducts": "Search products",
+        "Favorites": "Favorites",
+        "NoFavorites": "No favorited products yet",
+        "AddFavorite": "Add to favorites",
+        "RemoveFavorite": "Remove from favorites",
+        "NoSearchResults": "No products match this search",
+        "CollapseAll": "Collapse all",
+        "ClearSearch": "Clear search"
     },
     "VersionTag": {
         "FetchingFromServer": "Recupero dal server ...",
