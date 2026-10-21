@@ -475,7 +475,6 @@
         "DriverInstallFailed": "Nepodarilo sa spustiť inštalátor ovládača DFU",
         "StepFlash": "Štart zápisu",
         "GuideEthosDfu": "S vypnutým rádiom ETHOS ho pripojte k počítaču pomocou kábla USB a potom počkajte, kým Suite nedetekuje režim DFU.",
-        "GuideAegisDfu": "Podržte tlačidlo zavádzacieho zariadenia a pripojte rádio k počítaču pomocou kábla USB a potom počkajte, kým Suite rozpozná režim DFU.",
         "ConnectHintTitle": "Pripojte svoje zariadenie",
         "FlashDfuBinary": "Zápis DFU (.bin)",
         "PageDescription": "Nízkoúrovňové obnovenie firmvéru a aktualizácie bootloadera prostredníctvom protokolu aktualizácie firmvéru zariadenia (DFU).",
@@ -490,7 +489,12 @@
         "DriverInstallCancelled": "DFU driver install was cancelled. Administrator permission is required.",
         "DriverInstallReboot": "DFU driver installed. Restart Windows before using it.",
         "DriverInstallReconnect": "DFU driver installed. Unplug the device and reconnect it in DFU mode.",
-        "DriverInstalled": "DFU driver installed. It will be used when a device is connected in DFU mode."
+        "DriverInstalled": "DFU driver installed. It will be used when a device is connected in DFU mode.",
+        "SourceLocal": "Local file",
+        "SelectRadio": "Select radio",
+        "ShowPrerelease": "Show pre-release bootloaders",
+        "NoBootloaders": "No bootloader found on this server.",
+        "BootloaderLoading": "Loading bootloaders ..."
     },
     "DownloadCenter": {
         "DownloadCenter": "FrSky produktový list",

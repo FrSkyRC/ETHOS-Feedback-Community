@@ -475,7 +475,6 @@
         "DriverInstallFailed": "Echec installation driver DFU",
         "StepFlash": "Lancer flashage",
         "GuideEthosDfu": "Avec la radio éteinte, connecter par cable à un port USB, attendre que Suite détecte le mode DFU.",
-        "GuideAegisDfu": "Maintenir le bouton bootLoader et connecter la radio par cable à un port USB, et attendre la détection du mode DFU.",
         "ConnectHintTitle": "Connecter votre périphérique",
         "FlashDfuBinary": "Flasher fichier binaire DFU",
         "PageDescription": "Restauration firmware et mise à jour bootLoader avec le protocole DFU (Device Firmware Update).",
@@ -490,7 +489,12 @@
         "DriverInstallCancelled": "DFU driver install was cancelled. Administrator permission is required.",
         "DriverInstallReboot": "DFU driver installed. Restart Windows before using it.",
         "DriverInstallReconnect": "DFU driver installed. Unplug the device and reconnect it in DFU mode.",
-        "DriverInstalled": "DFU driver installed. It will be used when a device is connected in DFU mode."
+        "DriverInstalled": "DFU driver installed. It will be used when a device is connected in DFU mode.",
+        "SourceLocal": "Local file",
+        "SelectRadio": "Select radio",
+        "ShowPrerelease": "Show pre-release bootloaders",
+        "NoBootloaders": "No bootloader found on this server.",
+        "BootloaderLoading": "Loading bootloaders ..."
     },
     "DownloadCenter": {
         "DownloadCenter": "Liste des produits FrSky",

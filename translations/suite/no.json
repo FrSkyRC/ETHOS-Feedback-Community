@@ -475,7 +475,6 @@
         "DriverInstallFailed": "Kjøring av DFU driver installerer feilet",
         "StepFlash": "Start 'Flashing'",
         "GuideEthosDfu": "Med ETHOS radioen avslått, koble den til din datamaskin med en USB kabel. Vent til Suite oppdager 'DFU modus'.",
-        "GuideAegisDfu": "Hold Bootloader-knappen og koble 'flight controlleren' til din datamaskin med en USB kabel. Vent til Suite oppdager 'DFU modus'.",
         "ConnectHintTitle": "Koble til din enhet",
         "FlashDfuBinary": "Flash 'DFU binary'",
         "PageDescription": "Low-level firmware recovery and bootloader updates via the device firmware upgrade (DFU) protocol.",
@@ -490,7 +489,12 @@
         "DriverInstallCancelled": "DFU driver install was cancelled. Administrator permission is required.",
         "DriverInstallReboot": "DFU driver installed. Restart Windows before using it.",
         "DriverInstallReconnect": "DFU driver installed. Unplug the device and reconnect it in DFU mode.",
-        "DriverInstalled": "DFU driver installed. It will be used when a device is connected in DFU mode."
+        "DriverInstalled": "DFU driver installed. It will be used when a device is connected in DFU mode.",
+        "SourceLocal": "Local file",
+        "SelectRadio": "Select radio",
+        "ShowPrerelease": "Show pre-release bootloaders",
+        "NoBootloaders": "No bootloader found on this server.",
+        "BootloaderLoading": "Loading bootloaders ..."
     },
     "DownloadCenter": {
         "DownloadCenter": "FrSky product list",
