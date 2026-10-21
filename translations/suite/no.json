@@ -49,7 +49,7 @@
             "SelectImageToEdit": "Velg et bilde for å justere innstillingene",
             "OutputSize": "Størrelse på bilde",
             "KeepAspectRatio": "Behold størrelsesforhold",
-            "CustomSize": "Custom size"
+            "CustomSize": "Egendefinert størrelse"
         },
         "Audio": {
             "AudioManager": "Lydhåndterer",
@@ -216,7 +216,7 @@
             "ReleaseNotes": "Lanseringsnotater",
             "ScriptDeleted": "Script fjernet fra radio.",
             "Upgrade": "Oppgrader",
-            "Readme": "README",
+            "Readme": "LES MEG",
             "FrSkyScripts": "FrSky script",
             "ThirdpartyScripts": "Tredjeparts script"
         },
@@ -232,7 +232,7 @@
             "StopSimulator": "Stop simulator",
             "UploadFiles": "Last opp filer",
             "FileUploadedAndReloadSimQuestion": "Filene ble lastet opp som de skulle. Trenger du å omstarte simulatoren for å aktivere filene?",
-            "SwitchPageQuestion": "You are about to leave this page. Would you like to suspend the simulator and keep it running in the background, or close the simulator?",
+            "SwitchPageQuestion": "Du forlater denne siden. Ønsker du å pause simulatoren og holde den aktiv i bakgrunnen, eller avslutte simulatoren?",
             "NoDestDirSelected": "Målmappe er ikke valgt!",
             "SyncRadioFilesToLocalSimulator": "Synkroniser radioens filer til lokal simulator",
             "OpenLocalSimDir": "Åpne lokal simulator-mappe",
@@ -252,12 +252,12 @@
             "ReloadSimulator": "Last simulatoren på nytt",
             "ReloadSimQuestion": "Ønsker du å laste simulatoren på nytt?",
             "HowToUploadFilesToSim": "Hvordan laste opp filer til simulatoren?",
-            "UploadFilesStep1": "Åpne den lokale simolator-mappen",
+            "UploadFilesStep1": "Åpne den lokale simulator-mappen",
             "UploadFilesStep2": "Legg filer/mapper i den lokale simulator-mappen. Filbanen bør være\n> ${PathToLocalSimulator}/.simulator/${ReleaseTagName}/persist/${RadioName}/",
             "UploadFilesStep3": "Last den kjørende simulatoren på nytt",
-            "OpenConsolePanel": "Åpne konsoll panel",
-            "OpenControlsPanel": "Åpne kontroll panel",
-            "OpenDisplayPanel": "Åpne display panel",
+            "OpenConsolePanel": "Åpne konsollpanel",
+            "OpenControlsPanel": "Åpne kontrollpanel",
+            "OpenDisplayPanel": "Åpne displaypanel",
             "ToggleMute": "Demping På/Av",
             "PauseMacro": "Pause makro",
             "StopMacro": "Stopp makro",
@@ -279,15 +279,15 @@
             "ControlsPanel": "Kontroller",
             "TelemetryPanel": "Telemetri",
             "ConsolePanel": "Konsoll",
-            "SimUnresponsiveTitle": "Simulator not responding",
-            "SimUnresponsiveMessage": "The ETHOS simulator appears to have stopped responding. Do you need to force-close it?",
-            "CloseSimulator": "Close simulator",
-            "FailToOpenSimWindow": "Failed to open the simulator window",
-            "ContinueWaiting": "Keep waiting",
-            "LoadLastLayout": "Load last page layout",
-            "LoadLastControls": "Load last control positions",
-            "SuspendSimulator": "Suspend",
-            "ScreenshotCopied": "Screenshot copied to clipboard"
+            "SimUnresponsiveTitle": "Simulatoren svarer ikke",
+            "SimUnresponsiveMessage": "ETHOS simulatoren virker som den har stoppet. Trenger du å tvinge den til å avslutte?",
+            "CloseSimulator": "Lukk simulator",
+            "FailToOpenSimWindow": "Feilet å åpne simulator vinduet",
+            "ContinueWaiting": "Vennligst vent",
+            "LoadLastLayout": "Last inn siste sideoppsett",
+            "LoadLastControls": "Last inn siste posisjon av kontrollene",
+            "SuspendSimulator": "Pause",
+            "ScreenshotCopied": "Skjermbilde kopiert til utklippstavlen"
         },
         "BackupRecovery": {
             "Advanced": "Avansert",
@@ -507,25 +507,25 @@
         "DownloadMoreFirmware": "Last ned ytterlig 'firmware'",
         "SensorFirmware": "Sensor 'firmware'",
         "ReceiverFirmware": "Mottaker 'firmware'",
-        "DownloadAssetSuccessfully": "Produkt elementer har blitt lastet ned vellykket!",
+        "DownloadAssetSuccessfully": "Produkt elementer har blitt vellykket lastet ned!",
         "NoFRSKFileFound": "Ingen .frsk fil funnet i den nedlastede .zip filen",
         "MultipleFRSKDetected": "Flere tilgjengelige .frsk filer funnet. Vennligst velg den .frsk filen du ønsker å 'flashe'",
-        "SelectedProduct": "Selected product",
-        "AvailableFirmwareVersions": "Available firmware versions",
-        "Manual": "Manual",
-        "NoFirmware": "No firmware files available for this product.",
-        "ReadmeLoadFailed": "Could not load release notes for this firmware.",
-        "SelectProductHint": "Select a product from the list to view firmware and downloads",
-        "NoProductsInList": "No products could be loaded. Please try again later.",
-        "ProductsListPartial": "Some products or categories could not be loaded due to server data errors. Showing all available entries.",
-        "SearchProducts": "Search products",
-        "Favorites": "Favorites",
-        "NoFavorites": "No favorited products yet",
-        "AddFavorite": "Add to favorites",
-        "RemoveFavorite": "Remove from favorites",
-        "NoSearchResults": "No products match this search",
-        "CollapseAll": "Collapse all",
-        "ClearSearch": "Clear search"
+        "SelectedProduct": "Valgte produkter",
+        "AvailableFirmwareVersions": "Tilgjengelige 'Firmware' versjoner",
+        "Manual": "Manuell",
+        "NoFirmware": "Ingen 'Firmware-filer' tilgjengelig for dette produktet.",
+        "ReadmeLoadFailed": "Kunne ikke laste inn 'Versjons notat' for denne 'Firmwaren'.",
+        "SelectProductHint": "Velg ett produkt fra listen for å se 'Firmware' og nedlastinger",
+        "NoProductsInList": "Ingen produkter kunne lastes inn. Prøv igjen senere.",
+        "ProductsListPartial": "Noen produkter eller kategorier kunne ikke lastes inn på grunn av problemer med server. Viser tilgjengelige oppføringer.",
+        "SearchProducts": "Søk produkter",
+        "Favorites": "Favoritter",
+        "NoFavorites": "Ingen favorittprodukter ennå",
+        "AddFavorite": "Legg til favoritter",
+        "RemoveFavorite": "Fjern fra favoritter",
+        "NoSearchResults": "Ingen produkter matcher dette søket",
+        "CollapseAll": "Slå sammen alt",
+        "ClearSearch": "Fjern søk"
     },
     "VersionTag": {
         "FetchingFromServer": "Henter fra server ...",
@@ -540,12 +540,12 @@
         "MissingRequiredComponentVersion": "Mangler nødvendig komponent-versjon",
         "TargetFirmwareNotCompatible": "{{ targetComponent }} firmware versjon {{ targetVersion }} trenger å bli brukt med {{ requireComponent }} firmware versjon {{ requireVersion }}.",
         "CheckRxVersion": "Vennligst sørg for at 'Firmwaren' i mottakerne som skal brukes med denne modulen også er oppdatert til versjon {{ version }} eller nyere.",
-        "ComponentNotMeetRequirements": "Some components do not meet the required version for flashing",
-        "TargetUpdateRequiresBasicComponent": "{{ targetComponent }} {{ targetVersion }} requires {{ requireComponent }} {{ requireVersion }}.",
-        "ConfirmFlashComponentFirst": "Flash {{ requireComponent }} first?",
-        "ConfirmRequirementsVersion": "Please check that the version number of the above components has met the requirements before continuing",
-        "FlashRequiredComponents": "Flash required component(s)",
-        "ShowInTheProdcutsList": "Show details in the FrSky product list"
+        "ComponentNotMeetRequirements": "Noen komponenter møter ikke kravet til spesifisert versjon for å 'Flashes'",
+        "TargetUpdateRequiresBasicComponent": "{{ targetComponent }} {{ targetVersion }} krever {{ requireComponent }} {{ requireVersion }}.",
+        "ConfirmFlashComponentFirst": "'Flash' {{ requireComponent }} først?",
+        "ConfirmRequirementsVersion": "Vennligst sjekk at versjonsnummeret til komponenten over matcher kravene før du går videre",
+        "FlashRequiredComponents": "'Flash' nødvendige komponent(er)",
+        "ShowInTheProdcutsList": "Vis detaljer i FrSky produktlisten"
     },
     "Model": {
         "BackupLocation": "Hvor vil du lagre sikkerhetskopien?",
@@ -585,8 +585,8 @@
         "BackupNotMatchRadio": "Denne sikkerhetskopien passer ikke med denne radioen. Ønsker du å fortsette?",
         "WritingBackupFile": "Skriver sikkerhetskopi-fil(er)...",
         "CreateAtVersion": "Opprett som versjon",
-        "Boat": "Boat",
-        "Car": "Car"
+        "Boat": "Båt",
+        "Car": "Bil"
     },
     "About": {
         "About": "Om",
@@ -654,7 +654,7 @@
         "LuaPackage": "ETHOS lua pakke (ZIP manifest)",
         "LuaPackageDescription": "En instruksjon for å beskrive 'manifest filen' som bør inkluderes i ETHOS Lua pakken.",
         "ECOSGithub": "ECOS GitHub",
-        "ECOSGithubDescription": "Link to the ECOS-Feedback-Community on GitHub. Users can submit issues to the ECOS development team."
+        "ECOSGithubDescription": "Lenke til 'ECOS-Feedback-Community' på GitHub. Brukere kan formidle problemer til 'ECOS development' teamet."
     },
     "Updater": {
         "NewVersionAvailable": "En ny 'FrSky Suite'-version, versjon {{ version }}, er tilgjengelig!",
@@ -662,7 +662,7 @@
         "Updated": "Oppdatert",
         "DownloadUpdater": "Last ned oppdateringsfil",
         "UpdaterNotFound": "Nedlastings-URL til oppdateringsfilen ikke funnet",
-        "DownloadingUpdater": "Downloading updater ...",
+        "DownloadingUpdater": "Laster ned oppdaterings fil ...",
         "ConfirmCancelDownload": "Bekreft at du ønsker å kansellere nedlastingen",
         "ConfirmCancelDownloadLabel": "Er du sikker på at du ønsker å kansellere nedlastingen? Du kan restarte nedlastingen senere, men fremdriften vil ikke bli beholdt.",
         "NetworkError": "En nettverksfeil oppstod mens nedlastingen av oppdateringsfilen foregikk.",
@@ -680,7 +680,7 @@
         "ConnectHintTitle": "Koble til din enhet",
         "StepConnectFc": "Koble til 'Aegis flight controller'",
         "StepConnectFcHint": "Følg beskjedene i konsollen for å koble til din Aegis FC",
-        "StepFlash": "Starter 'flashing'",
+        "StepFlash": "Starter 'Flashing'",
         "StepFlashHint": "Klikk 'Flash' for å starte Aegis oppdatering",
         "StepSelectFirmware": "Velg 'firmware' fil",
         "StepSelectFirmwareHint": "Velg en Aegis firmware pakke"
@@ -737,6 +737,6 @@
         "ScrollToZoomY": "Rull for å forstørre Y",
         "ResetColors": "Tilbakestill farger",
         "ReferenceLine": "Referanselinje",
-        "Detail": "Detalje"
+        "Detail": "Detalj"
     }
 }
