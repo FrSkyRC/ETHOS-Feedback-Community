@@ -147,7 +147,8 @@ local function createTextButton(line, parameter)
 end
 
 local function createStaticText(line, parameter)
-  return form.addStaticText(line, nil, "-")
+  form.addStaticText(line, nil, "-")
+  return nil
 end
 
 local CHANNEL_CONFIGS = {{"CH1", 0x00}, {"CH2", 0x01}, {"CH3", 0x02}, {"CH4", 0x03}, {"CH5", 0x04}, {"CH6", 0x05}, {"CH7", 0x06}, {"CH8", 0x07},

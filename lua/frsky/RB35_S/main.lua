@@ -1,4 +1,4 @@
-local LUA_VERSION = "2.1.12";
+local LUA_VERSION = "2.1.13";
 
 local translations = {en="RB35/35S Config"}
 

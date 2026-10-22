@@ -32,4 +32,8 @@ Config script for FrSky RB35 and RB35S.
 
 - Add missing translation strings in some pages.
 
+## V2.1.13
+
+- Fix the basic page parameters reading failure.
+
 If you are running Ethos 1.6.0 or later, you can find it in the Device Config menu.
