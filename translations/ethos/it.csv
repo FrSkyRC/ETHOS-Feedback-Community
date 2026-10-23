@@ -322,6 +322,7 @@ DIST_ADDRESS,,"Indirizzo Dist",
 CONNECTING,,"Connessione",
 ROTARY_ENCODER_HALF_STEPS,,"Encoder Rotella passo dimezzato"
 BLUETOOTH_AUDIO,,"Audio Bluetooth"
+HDMI_OUT,,"Uscita HDMI"
 NOT_INSTALLED,,"Non Installato (default)"
 INSTALLED_AS_AN_OPTION,,"Installato come opzione"
 HIGH_SPEED,,"Velocità Alta",
