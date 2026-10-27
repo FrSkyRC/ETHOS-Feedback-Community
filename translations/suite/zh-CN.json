@@ -2,7 +2,12 @@
     "Main": {
         "Tools": "工具",
         "Others": "其他",
-        "Devices": "设备"
+        "Devices": "设备",
+        "NetOnline": "在线",
+        "NetConnectionError": "网络连接错误",
+        "NetProgress": "正在加载 {{done}}/{{total}}",
+        "NetAllLoaded": "所有在线资源已加载",
+        "NetFailed": "失败：{{name}}"
     },
     "Ethos": {
         "News": {

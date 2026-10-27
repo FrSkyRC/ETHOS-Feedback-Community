@@ -2,7 +2,12 @@
     "Main": {
         "Tools": "Utilità",
         "Others": "Altro",
-        "Devices": "Dispositivi"
+        "Devices": "Dispositivi",
+        "NetOnline": "Online",
+        "NetConnectionError": "Network connection error",
+        "NetProgress": "Loading {{done}}/{{total}}",
+        "NetAllLoaded": "All online resources loaded",
+        "NetFailed": "Failed: {{name}}"
     },
     "Ethos": {
         "News": {

@@ -2,7 +2,12 @@
     "Main": {
         "Tools": "Gereedschap",
         "Others": "Others",
-        "Devices": "Devices"
+        "Devices": "Devices",
+        "NetOnline": "Online",
+        "NetConnectionError": "Network connection error",
+        "NetProgress": "Loading {{done}}/{{total}}",
+        "NetAllLoaded": "All online resources loaded",
+        "NetFailed": "Failed: {{name}}"
     },
     "Ethos": {
         "News": {

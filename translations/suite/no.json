@@ -2,7 +2,12 @@
     "Main": {
         "Tools": "Verktøy",
         "Others": "Annet",
-        "Devices": "Enheter"
+        "Devices": "Enheter",
+        "NetOnline": "Online",
+        "NetConnectionError": "Network connection error",
+        "NetProgress": "Loading {{done}}/{{total}}",
+        "NetAllLoaded": "All online resources loaded",
+        "NetFailed": "Failed: {{name}}"
     },
     "Ethos": {
         "News": {
