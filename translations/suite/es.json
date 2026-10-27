@@ -3,11 +3,11 @@
         "Tools": "Herramientas",
         "Others": "Otros",
         "Devices": "Dispositivos",
-        "NetOnline": "Online",
-        "NetConnectionError": "Network connection error",
-        "NetProgress": "Loading {{done}}/{{total}}",
-        "NetAllLoaded": "All online resources loaded",
-        "NetFailed": "Failed: {{name}}"
+        "NetOnline": "En línea",
+        "NetConnectionError": "Error de conexión de red",
+        "NetProgress": "Cargando {{done}}/{{total}}",
+        "NetAllLoaded": "Cargados todos los recursos en línea",
+        "NetFailed": "Fallo: {{name}}"
     },
     "Ethos": {
         "News": {
