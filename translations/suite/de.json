@@ -4,10 +4,10 @@
         "Others": "Weitere Infos",
         "Devices": "Geräte",
         "NetOnline": "Online",
-        "NetConnectionError": "Network connection error",
-        "NetProgress": "Loading {{done}}/{{total}}",
-        "NetAllLoaded": "All online resources loaded",
-        "NetFailed": "Failed: {{name}}"
+        "NetConnectionError": "Netzwerkverbindungsfehler",
+        "NetProgress": "Laden {{done}}/{{total}}",
+        "NetAllLoaded": "Alle Online-Daten geladen",
+        "NetFailed": "Fehlgeschlagen: {{name}}"
     },
     "Ethos": {
         "News": {
