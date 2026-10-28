@@ -4,10 +4,10 @@
         "Others": "Iné",
         "Devices": "Zariadenia",
         "NetOnline": "Online",
-        "NetConnectionError": "Network connection error",
-        "NetProgress": "Loading {{done}}/{{total}}",
-        "NetAllLoaded": "All online resources loaded",
-        "NetFailed": "Failed: {{name}}"
+        "NetConnectionError": "Chyba sieťového pripojenia",
+        "NetProgress": "Načítavanie {{done}}/{{total}}",
+        "NetAllLoaded": "Všetky online zdroje načítané",
+        "NetFailed": "Chyba: {{name}}"
     },
     "Ethos": {
         "News": {
