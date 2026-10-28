@@ -638,9 +638,9 @@
         "ScreenshotSaveToPath": "Salva nel percorso",
         "ScreenshotSavePath": "Salva percorso",
         "ScreenshotFilePrefix": "Prefisso del nome del file",
-        "ScreenshotOptions": "Screenshot options"
+        "ScreenshotOptions": "Opzioni di screenshot"
     },
-    "Documentation": {Opzioni di screenshot
+    "Documentation": {
         "Documentation": "Documentazione",
         "LuaDoc": "Lua docs",
         "LuaDocDescription": "Documentazione di supporto per comporre i propri Lua scripts.",
