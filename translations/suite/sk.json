@@ -103,8 +103,8 @@
             "WritingFirmware": "Nahrávam operačný systém...",
             "DownloadingSystemFiles": "Sťahovanie systémových súborov ...",
             "CopyingSystemFilesToRadio": "Kopírovanie systémových súborov do rádia ...",
-            "DownloadingAudioPack": "Sťahovanie {{ lang }} zvukového balíka...",
-            "CopyingAudioPackToRadio": "Kopírovanie {{ lang }} zvukového balíka do rádia...",
+            "DownloadingAudioPack": "Sťahovanie zvukového balíka {{ lang }} ...",
+            "CopyingAudioPackToRadio": "Kopírovanie zvukového balíka {{ lang }} do rádia...",
             "UpdateSuccess": "Aktualizácia ukončená",
             "WriteBootloader": "Aktualizovať bootloader",
             "DownloadingBootloader": "Sťahovanie bootloadera...",
@@ -444,7 +444,7 @@
             "WaitingForFirmware": "Čaká sa na firmvér..."
         },
         "DialogFrskGuide": {
-            "FrskGuideTitle": "Automatický zápis sa nespustil úspešne. Aktualizujte súbor .frsk manuálne podľa nasledujúcich kkrokov",
+            "FrskGuideTitle": "Automatický zápis sa nespustil úspešne. Aktualizujte súbor .frsk manuálne podľa nasledujúcich krokov",
             "FrskGuideStep1": "Odpojte kábel USB a vstúpte do ponuky Systém - Správca súborov",
             "FrskGuideStep2": "Nájdite súbor device.frsk v pamäti NAND alebo na SD karte",
             "FrskGuideStep3": "Aktualizujte svoje zariadenie výberom možnosti v rozbaľovacej ponuke"
@@ -491,14 +491,14 @@
         "StepSelectFile": "Vyberte DFU súbor",
         "StepSelectFileHint": "Zvoľte .frsk alebo .bin bootloader súbor",
         "InstallDriver": "Inštalácia DFU ovládača",
-        "DriverInstallCancelled": "DFU driver install was cancelled. Administrator permission is required.",
-        "DriverInstallReboot": "DFU driver installed. Restart Windows before using it.",
-        "DriverInstallReconnect": "DFU driver installed. Unplug the device and reconnect it in DFU mode.",
-        "DriverInstalled": "DFU driver installed. It will be used when a device is connected in DFU mode.",
-        "SourceLocal": "Local file",
-        "SelectRadio": "Select radio",
-        "NoBootloaders": "No bootloader found on this server.",
-        "BootloaderLoading": "Loading bootloaders ..."
+        "DriverInstallCancelled": "Inštalácia ovládača DFU bola zrušená. Je potrebné povolenie správcu.",
+        "DriverInstallReboot": "Ovládač DFU nainštalovaný. Reštartujte systému Windows pred jeho použitím.",
+        "DriverInstallReconnect": "Ovládač DFU nainštalovaný. Odpojte zariadenie a znova ho pripojte v režime DFU.",
+        "DriverInstalled": "Ovládač DFU nainštalovaný. Bude sa používať pri pripojení zariadenia v režime DFU.",
+        "SourceLocal": "Lokálny súbor",
+        "SelectRadio": "Zvoľte rádio",
+        "NoBootloaders": "Na tomto serveri sa nenašiel žiadny bootloader.",
+        "BootloaderLoading": "Načítanie bootloaderov ..."
     },
     "DownloadCenter": {
         "DownloadCenter": "FrSky produktový list",
@@ -523,14 +523,14 @@
         "SelectProductHint": "Vyberte produkt zo zoznamu na zobrazenie firmvéru a sťahovanie",
         "NoProductsInList": "Žiadne produkty sa nedajú načítať. Skúste to prosím neskôr.",
         "ProductsListPartial": "Niektoré produkty alebo kategórie nebolo možné načítať z dôvodu chýb v údajoch servera. Zobrazujem všetky dostupné vstupy.",
-        "SearchProducts": "Search products",
-        "Favorites": "Favorites",
-        "NoFavorites": "No favorited products yet",
-        "AddFavorite": "Add to favorites",
-        "RemoveFavorite": "Remove from favorites",
-        "NoSearchResults": "No products match this search",
-        "CollapseAll": "Collapse all",
-        "ClearSearch": "Clear search"
+        "SearchProducts": "Hľadať produkty",
+        "Favorites": "Obľúbené",
+        "NoFavorites": "Žiadne obľúbené produkty",
+        "AddFavorite": "Pridať do obľúbených",
+        "RemoveFavorite": "Odstrániť z obľúbených",
+        "NoSearchResults": "Žiadne produkty sa nezhodujú s týmto vyhľadávaním",
+        "CollapseAll": "Zbaliť všetky",
+        "ClearSearch": "Zmazať vyhľadávanie"
     },
     "VersionTag": {
         "FetchingFromServer": "Načítavanie zo servera ...",
