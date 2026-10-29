@@ -196,7 +196,7 @@
             "FileSelectors": "Dateiauswahl",
             "ReleaseNote": "Versionshinweise",
             "ManifestInvalidIntroduction": "ethos_lua_manifest.json: Ungültige \"introduction\" (muss ein Text sein, max. 1024 Zeichen).",
-            "SaveLog": "Save log to file"
+            "SaveLog": "Log in Datei speichern"
         },
         "LuaLib": {
             "LuaLib": "Lua-Bibliothek",
