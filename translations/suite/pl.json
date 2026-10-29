@@ -221,7 +221,8 @@
             "ManifestKey": "ID skryptu",
             "ManifestFolder": "Katalog instalacyjny",
             "FileSelectors": "Selektory plików",
-            "ReleaseNote": "Informacje o wydaniu"
+            "ReleaseNote": "Informacje o wydaniu",
+            "SaveLog": "Save log to file"
         },
         "LuaLib": {
             "LuaLib": "Biblioteka Lua",

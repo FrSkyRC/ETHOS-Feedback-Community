@@ -221,7 +221,8 @@
             "ManifestFolder": "安装目录",
             "FileSelectors": "文件选择器",
             "ReleaseNote": "发布说明",
-            "ManifestInvalidIntroduction": "ethos_lua_manifest.json: \"introduction\" 无效 (必须为字符串, 最长 1024 个字符)."
+            "ManifestInvalidIntroduction": "ethos_lua_manifest.json: \"introduction\" 无效 (必须为字符串, 最长 1024 个字符).",
+            "SaveLog": "Save log to file"
         },
         "LuaLib": {
             "LuaLib": "Lua 管理中心",

@@ -195,7 +195,8 @@
             "ManifestFolder": "Installer mappe",
             "FileSelectors": "Filvelgere",
             "ReleaseNote": "Lanseringsnotater",
-            "ManifestInvalidIntroduction": "ethos_lua_manifest.json: ugyldig \"introduction\" (må være en tekststreng, maks 1024 tegn)."
+            "ManifestInvalidIntroduction": "ethos_lua_manifest.json: ugyldig \"introduction\" (må være en tekststreng, maks 1024 tegn).",
+            "SaveLog": "Save log to file"
         },
         "LuaLib": {
             "LuaLib": "Lua bibliotek",

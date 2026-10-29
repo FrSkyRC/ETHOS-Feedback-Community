@@ -221,7 +221,8 @@
             "ManifestKey": "Script ID",
             "ManifestFolder": "Install directory",
             "FileSelectors": "File selectors",
-            "ReleaseNote": "Release notes"
+            "ReleaseNote": "Release notes",
+            "SaveLog": "Save log to file"
         },
         "LuaLib": {
             "LuaLib": "Lua library",

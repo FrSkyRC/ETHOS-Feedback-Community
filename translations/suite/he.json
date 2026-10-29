@@ -195,7 +195,8 @@
             "ManifestFolder": "Install directory",
             "FileSelectors": "File selectors",
             "ReleaseNote": "ReleaseNote",
-            "ManifestInvalidIntroduction": "ethos_lua_manifest.json: invalid \"introduction\" (must be a string, max 1024 characters)."
+            "ManifestInvalidIntroduction": "ethos_lua_manifest.json: invalid \"introduction\" (must be a string, max 1024 characters).",
+            "SaveLog": "Save log to file"
         },
         "LuaLib": {
             "LuaLib": "Lua library",

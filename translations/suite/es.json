@@ -175,7 +175,8 @@
             "ManifestFolder": "Directorio de Instalación",
             "FileSelectors": "Selectores de archivo",
             "ReleaseNote": "Nota del release",
-            "ManifestInvalidIntroduction": "ethos_lua_manifest.json: inválido \"introduction\" (debe ser una cadena, máximo 1024 caracteres)."
+            "ManifestInvalidIntroduction": "ethos_lua_manifest.json: inválido \"introduction\" (debe ser una cadena, máximo 1024 caracteres).",
+            "SaveLog": "Save log to file"
         },
         "LuaLib": {
             "LuaLib": "Librería Lua",

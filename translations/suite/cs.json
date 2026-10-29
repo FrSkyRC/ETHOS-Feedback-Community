@@ -195,7 +195,8 @@
             "ManifestFolder": "Instalační adresář",
             "FileSelectors": "Výběr souborů",
             "ReleaseNote": "Poznámka k vydání",
-            "ManifestInvalidIntroduction": "ethos_lua_manifest.json: neplatné \"introduction\" (musí být řetězec, max 1024 znaků)."
+            "ManifestInvalidIntroduction": "ethos_lua_manifest.json: neplatné \"introduction\" (musí být řetězec, max 1024 znaků).",
+            "SaveLog": "Save log to file"
         },
         "LuaLib": {
             "LuaLib": "Knihovna Lua",
