@@ -41,13 +41,44 @@ local function create()
         number=5
     }
 
-    form.addButton(nil, {x=w-170, y=0, w=160, h=160}, {
+    button = form.addButton(nil, {x=w-170, y=0, w=160, h=160}, {
         text="Bitmap button", 
         icon=icon, 
-        press=function() print("Button pressed") end
+        press=function() print("Button pressed") end,
+        paint=function() 
+            button:defaultPaint()
+            -- a decoration, called after defaultPaint()
+            lcd.color(ORANGE)
+            lcd.drawFilledCircle(145, 15, 10)
+            lcd.color(WHITE)
+            lcd.font(FONT_S_BOLD)
+            lcd.drawText(145, 7, "?", CENTERED)
+        end
     })
 
-    local line = form.addLine("TextDialog example")
+    local line = form.addLine("Boolean field example")
+    my_bool_value = true
+    boolField = form.addBooleanField(line, nil, {
+        set=function(value) my_bool_value = value end,
+        get=function() return my_bool_value end,
+        offLabel="NO",
+        onLabel="YES",
+        paint=function() 
+            lcd.color(ORANGE)
+            local rect = boolField:rect()
+            lcd.drawFilledRectangle(0, 0, rect.w, rect.h) -- a background, called before defaultPaint()
+            boolField:defaultPaint()
+        end
+    })
+    local originalRect = boolField:rect()
+    boolField:rect({
+        x=originalRect.x - 50,
+        y=originalRect.y,
+        w=originalRect.w - 50,
+        h=originalRect.h
+    })
+
+    line = form.addLine("TextDialog example")
     form.addButton(line, nil, {
         text="Press here", 
         press=function() 
