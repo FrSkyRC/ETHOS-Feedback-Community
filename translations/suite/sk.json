@@ -223,8 +223,8 @@
             "ScriptDeleted": "Skript odstránený z rádia.",
             "Upgrade": "Upgrade",
             "Readme": "README",
-            "FrSkyScripts": "FrSky scripts",
-            "ThirdpartyScripts": "Third-party scripts"
+            "FrSkyScripts": "FrSky skripty",
+            "ThirdpartyScripts": "Skripty tretích strán"
         },
         "Simulator": {
             "EthosSimulator": "ETHOS simulátor",
@@ -264,7 +264,7 @@
             "OpenConsolePanel": "Otvoriť panel konzoly",
             "OpenControlsPanel": "Otvoriť ovládací panel",
             "OpenDisplayPanel": "Otvoriť zobrazovací panel",
-            "ToggleMute": "Toggle mute",
+            "ToggleMute": "Stlmenie",
             "PauseMacro": "Pauza makro",
             "StopMacro": "Stop makro",
             "StepMacro": "Krok makro",
@@ -285,7 +285,7 @@
             "ControlsPanel": "Ovládací panel",
             "TelemetryPanel": "Telemetria",
             "ConsolePanel": "Konzola",
-            "SimUnresponsiveTitle": "Simulator neodpovedá",
+            "SimUnresponsiveTitle": "Simulátor neodpovedá",
             "SimUnresponsiveMessage": "Zdá sa, že simulátor ETHOS prestal reagovať. Chcete ho vynútene ukončiť?",
             "CloseSimulator": "Zatvoriť simulátor",
             "FailToOpenSimWindow": "Nepodarilo sa otvoriť okno simulátora.",
@@ -293,7 +293,7 @@
             "LoadLastLayout": "Načítať rozloženie poslednej strany",
             "LoadLastControls": "Načítať posledné polohy ovládacích prvkov",
             "SuspendSimulator": "Pozastaviť",
-            "ScreenshotCopied": "Screenshot copied to clipboard"
+            "ScreenshotCopied": "Snímka bola skopírovaná"
         },
         "BackupRecovery": {
             "Advanced": "Pokročilý",
@@ -632,12 +632,12 @@
         "ProxySettings": "Proxy nastavenia",
         "ForceRefetch": "Sila na opätovné získanie všetkých zdrojov servera",
         "AliServer": "Alibaba cloud",
-        "ScreenshotShortcut": "SOdkaz obrazovky",
+        "ScreenshotShortcut": "Odkaz obrazovky",
         "ScreenshotShortcutHint": "Kliknite na pole a potom stlačte kombináciu klávesov",
         "ScreenshotPressKeys": "Stlačte odkaz",
         "ScreenshotCopyClipboard": "Kópírovať do schránky",
         "ScreenshotSaveToPath": "Save to path",
-        "ScreenshotSavePath": "Save path",
+        "ScreenshotSavePath": "Uložiť cestu",
         "ScreenshotFilePrefix": "Predpona názvu súboru",
         "ScreenshotOptions": "Možnosti snímky obrazovky"
     },
@@ -735,10 +735,10 @@
         "ResetView": "Resetovať pohľad",
         "RowCount": "{{ count }} riadky",
         "SelectFile": "Zvoľte si CSV súbor",
-        "Title": "Log viewer",
+        "Title": "Zobrazovač udalostí",
         "UnlockFocus": "Odomknúť",
         "RevealInFolder": "Zobraziť v priečinku",
-        "ChartHintSwapped": "Skroluj na priblíženie Y· Ctrl+scroll na priblíženie času · Potiahnutím posúvaš· Nabehnutím zobraz hodnoty · Dojklik na uzamknutie focusu",
+        "ChartHintSwapped": "Skroluj na priblíženie Y· Ctrl+scroll na priblíženie času · Potiahnutím posúvaš· Nabehnutím zobraz hodnoty · Dvojklik na uzamknutie focusu",
         "ScrollToZoomX": "Skroluj na priblíženie X",
         "ScrollToZoomY": "Skroluj na priblíženie Y",
         "ResetColors": "Resetovať farby",
