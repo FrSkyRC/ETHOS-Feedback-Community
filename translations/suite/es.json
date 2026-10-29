@@ -176,7 +176,7 @@
             "FileSelectors": "Selectores de archivo",
             "ReleaseNote": "Nota del release",
             "ManifestInvalidIntroduction": "ethos_lua_manifest.json: inválido \"introduction\" (debe ser una cadena, máximo 1024 caracteres).",
-            "SaveLog": "Save log to file"
+            "SaveLog": "Guardar registro en archivo"
         },
         "LuaLib": {
             "LuaLib": "Librería Lua",
