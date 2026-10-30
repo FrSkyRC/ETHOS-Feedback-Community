@@ -743,6 +743,9 @@
         "ScrollToZoomY": "Rull for å forstørre Y",
         "ResetColors": "Tilbakestill farger",
         "ReferenceLine": "Referanselinje",
-        "Detail": "Detalj"
+        "Detail": "Detalj",
+        "DualAxis": "Dual axis",
+        "LeftReference": "Left reference",
+        "RightReference": "Right reference"
     }
 }

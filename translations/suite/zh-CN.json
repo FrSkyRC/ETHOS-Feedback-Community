@@ -535,7 +535,10 @@
         "ScrollToZoomY": "滚动缩放 Y 轴",
         "ResetColors": "恢复默认颜色",
         "ReferenceLine": "参考线",
-        "Detail": "Detail"
+        "Detail": "Detail",
+        "DualAxis": "Dual axis",
+        "LeftReference": "Left reference",
+        "RightReference": "Right reference"
     },
     "DownloadCenter": {
         "DownloadCenter": "FrSky 产品列表",

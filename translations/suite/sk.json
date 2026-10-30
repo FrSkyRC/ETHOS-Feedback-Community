@@ -743,6 +743,9 @@
         "ScrollToZoomY": "Skroluj na priblíženie Y",
         "ResetColors": "Resetovať farby",
         "ReferenceLine": "Referenčná čiara",
-        "Detail": "Detail"
+        "Detail": "Detail",
+        "DualAxis": "Dual axis",
+        "LeftReference": "Left reference",
+        "RightReference": "Right reference"
     }
 }

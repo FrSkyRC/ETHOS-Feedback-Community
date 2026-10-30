@@ -535,7 +535,10 @@
         "ScrollToZoomY": "Scroll to zoom Y",
         "ResetColors": "Reset colors",
         "ReferenceLine": "Reference line",
-        "Detail": "Detail"
+        "Detail": "Detail",
+        "DualAxis": "Dual axis",
+        "LeftReference": "Left reference",
+        "RightReference": "Right reference"
     },
     "DownloadCenter": {
         "DownloadCenter": "FrSky product list",

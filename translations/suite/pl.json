@@ -535,7 +535,10 @@
         "ScrollToZoomY": "Przewijaj, aby powiększyć oś Y",
         "ResetColors": "Resetuj kolory",
         "ReferenceLine": "Linia odniesienia",
-        "Detail": "Szczegóły"
+        "Detail": "Szczegóły",
+        "DualAxis": "Dual axis",
+        "LeftReference": "Left reference",
+        "RightReference": "Right reference"
     },
     "DownloadCenter": {
         "DownloadCenter": "Lista produktów FrSky",

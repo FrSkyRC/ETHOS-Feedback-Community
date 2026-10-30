@@ -743,6 +743,9 @@
         "ScrollToZoomY": "Deslizar para ampliar Y",
         "ResetColors": "Restablecer colores",
         "ReferenceLine": "Línea de referencia",
-        "Detail": "Detallar"
+        "Detail": "Detallar",
+        "DualAxis": "Dual axis",
+        "LeftReference": "Left reference",
+        "RightReference": "Right reference"
     }
 }
