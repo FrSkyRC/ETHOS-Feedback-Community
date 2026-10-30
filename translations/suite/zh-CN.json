@@ -222,7 +222,7 @@
             "FileSelectors": "文件选择器",
             "ReleaseNote": "发布说明",
             "ManifestInvalidIntroduction": "ethos_lua_manifest.json: \"introduction\" 无效 (必须为字符串, 最长 1024 个字符).",
-            "SaveLog": "Save log to file"
+            "SaveLog": "保存日志到文件"
         },
         "LuaLib": {
             "LuaLib": "Lua 管理中心",
@@ -535,10 +535,10 @@
         "ScrollToZoomY": "滚动缩放 Y 轴",
         "ResetColors": "恢复默认颜色",
         "ReferenceLine": "参考线",
-        "Detail": "Detail",
-        "DualAxis": "Dual axis",
-        "LeftReference": "Left reference",
-        "RightReference": "Right reference"
+        "Detail": "详细数据",
+        "DualAxis": "双重纵坐标",
+        "LeftReference": "左参考线",
+        "RightReference": "右参考线"
     },
     "DownloadCenter": {
         "DownloadCenter": "FrSky 产品列表",
