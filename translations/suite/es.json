@@ -744,8 +744,8 @@
         "ResetColors": "Restablecer colores",
         "ReferenceLine": "Línea de referencia",
         "Detail": "Detallar",
-        "DualAxis": "Dual axis",
-        "LeftReference": "Left reference",
-        "RightReference": "Right reference"
+        "DualAxis": "Doble eje",
+        "LeftReference": "Referencia Izquierda",
+        "RightReference": "Referencia Derecha"
     }
 }
