@@ -744,8 +744,8 @@
         "ResetColors": "Farben zurücksetzen",
         "ReferenceLine": "Bezugslinie",
         "Detail": "Detail",
-        "DualAxis": "Dual axis",
-        "LeftReference": "Left reference",
-        "RightReference": "Right reference"
+        "DualAxis": "Zweiachsig",
+        "LeftReference": "Linke Y-Achse",
+        "RightReference": "Rechte Y-Achse"
     }
 }
