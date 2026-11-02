@@ -12,10 +12,9 @@
     "Ethos": {
         "News": {
             "UpdateNews": "更新记录",
-            "Prerelease": "预发布",
             "Stable": "稳定版",
             "WebTitle": "ethos.frsky-rc.com",
-            "PrereleaseRequiresGithub": "请切换至 GitHub 服务器以启用预发布版本",
+            "PrereleaseRequiresGithub": "请切换至 GitHub 服务器以启用测试中版本",
             "ReleasedAt": "发布于"
         },
         "BackupRecovery": {

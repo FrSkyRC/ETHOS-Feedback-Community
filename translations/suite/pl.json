@@ -13,9 +13,8 @@
         "News": {
             "UpdateNews": "Historia zmian",
             "WebTitle": "ethos.frsky-rc.com",
-            "Prerelease": "Wersja przedpremierowa",
             "Stable": "Stabilna",
-            "PrereleaseRequiresGithub": "Przełącz serwer na GitHub, aby włączyć wersje przedpremierowe",
+            "PrereleaseRequiresGithub": "Przełącz serwer na GitHub, aby włączyć wersje testowe",
             "ReleasedAt": "Data wydania"
         },
         "BackupRecovery": {

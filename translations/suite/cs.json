@@ -12,10 +12,9 @@
     "Ethos": {
         "News": {
             "UpdateNews": "Novinky aktualizace",
-            "Prerelease": "Vývojové verze",
             "Stable": "Stabilní",
             "WebTitle": "ethos.frsky-rc.com",
-            "PrereleaseRequiresGithub": "Pro předčasný přístup k vývojovým verzím přepněte na GitHub server v Nastavení",
+            "PrereleaseRequiresGithub": "Pro přístup k testovacím verzím přepněte na GitHub server v Nastavení",
             "ReleasedAt": "Vydáno"
         },
         "EthosSum": {
@@ -539,7 +538,7 @@
         "OutOfDate": "Zastaralý",
         "GreaterThanLatestRelease": "Vyšší než poslední stabilní verze",
         "UpToDate": "Aktuální",
-        "Nightly": "Pozor! Vývojová verze"
+        "Nightly": "Pozor! Testovací verze"
     },
     "VersionMap": {
         "RecommendUpdate": "Důrazně doporučujeme aktualizovat na {{ recommend }} pro lepší zážitek",

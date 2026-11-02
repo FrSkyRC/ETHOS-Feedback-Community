@@ -13,9 +13,8 @@
         "News": {
             "UpdateNews": "Update news",
             "WebTitle": "ethos.frsky-rc.com",
-            "Prerelease": "Pre-release",
             "Stable": "Stable",
-            "PrereleaseRequiresGithub": "Please switch to GitHub server to enable pre-releases",
+            "PrereleaseRequiresGithub": "Please switch to GitHub server to enable testing versions",
             "ReleasedAt": "Released at"
         },
         "BackupRecovery": {
@@ -578,7 +577,7 @@
         "OutOfDate": "Out of date",
         "GreaterThanLatestRelease": "Greater than latest release",
         "UpToDate": "Up to date",
-        "Nightly": "Caution: nightly / pre-release build"
+        "Nightly": "Caution: nightly / testing version build"
     },
     "VersionMap": {
         "RecommendUpdate": "We strongly recommend you update to {{ recommend }} for a better experience",

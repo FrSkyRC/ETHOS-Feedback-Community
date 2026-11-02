@@ -12,10 +12,9 @@
     "Ethos": {
         "News": {
             "UpdateNews": "Nouveautés",
-            "Prerelease": "Pré-versions",
             "Stable": "Stable",
             "WebTitle": "ethos.frsky-rc.com",
-            "PrereleaseRequiresGithub": "Veuillez basculer sur le serveur Github pour utiliser les pré-versions",
+            "PrereleaseRequiresGithub": "Veuillez basculer sur le serveur GitHub pour utiliser les versions test",
             "ReleasedAt": "Publié le"
         },
         "EthosSum": {

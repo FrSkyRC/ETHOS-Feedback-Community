@@ -12,10 +12,9 @@
     "Ethos": {
         "News": {
             "UpdateNews": "Update-Informationen",
-            "Prerelease": "Pre-release",
             "Stable": "Stabiele",
             "WebTitle": "ethos.frsky-rc.com",
-            "PrereleaseRequiresGithub": "Bitte wechseln Sie zum GitHub-Server, um Vorabversionen zu aktivieren.",
+            "PrereleaseRequiresGithub": "Bitte wechseln Sie zum GitHub-Server, um Testversionen zu aktivieren.",
             "ReleasedAt": "Veröffentlicht am"
         },
         "EthosSum": {
@@ -539,7 +538,7 @@
         "OutOfDate": "veraltet",
         "GreaterThanLatestRelease": "Höher als die letzte Version",
         "UpToDate": "aktuell",
-        "Nightly": "Achtung! Nightly/Vorabversion"
+        "Nightly": "Achtung! Nightly/Testversion"
     },
     "VersionMap": {
         "RecommendUpdate": "Wir empfehlen Ihnen dringend ein Update auf {{ recommend }} für eine bessere Leistung.",
