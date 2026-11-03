@@ -282,6 +282,7 @@ MOVE_TRIM_TO_SUBTRIM,,"Versch. Trimmung zu Sub-Trimm.","Trimm. zu Sub-Trimm.","V
 INSTANT_TRIM,,"Direkt-Trimmung"
 MOVE_TRIMS_TO_SUBTRIMS,,"Versch. Trimmungen zu Sub-Trimm.","Trimm. zu Sub-Trimm.","Versch. Trimm. zu Sub-Trimm."
 INDEPENDENT_PER_FLIGHT_MODE,,"Trimmung je Flugphase"
+INDEPENDENT_PER_DRIVE_MODE,Surface radios,"Trimmung je Fahrmodus"
 STICK,,"Steuerknüppel "
 CONFIGURE_SCREENS,,"Bildschirm konfig."
 TOP_SCREEN,,"Bildschirm oben"
