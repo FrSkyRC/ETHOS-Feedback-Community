@@ -740,11 +740,9 @@
         "ChartHintSwapped": "Rull for å forstørre Y · Ctrl+rull for å forstørre tid · Dra for å panorere · Mus over for verdier · Dobbeltklikk for å låse fokus",
         "ScrollToZoomX": "Rull for å forstørre X",
         "ScrollToZoomY": "Rull for å forstørre Y",
-        "ResetColors": "Tilbakestill farger",
         "ReferenceLine": "Referanselinje",
         "Detail": "Detalj",
-        "DualAxis": "Dual axis",
-        "LeftReference": "Left reference",
-        "RightReference": "Right reference"
+        "IndependentCoord": "Independent coordinates",
+        "ReassignColors": "Reassign colors"
     }
 }

@@ -740,11 +740,9 @@
         "ChartHintSwapped": "Skroluj na priblíženie Y· Ctrl+scroll na priblíženie času · Potiahnutím posúvaš· Nabehnutím zobraz hodnoty · Dvojklik na uzamknutie focusu",
         "ScrollToZoomX": "Skroluj na priblíženie X",
         "ScrollToZoomY": "Skroluj na priblíženie Y",
-        "ResetColors": "Resetovať farby",
         "ReferenceLine": "Referenčná čiara",
         "Detail": "Detail",
-        "DualAxis": "Dual axis",
-        "LeftReference": "Left reference",
-        "RightReference": "Right reference"
+        "IndependentCoord": "Independent coordinates",
+        "ReassignColors": "Reassign colors"
     }
 }

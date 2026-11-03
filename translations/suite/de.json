@@ -740,11 +740,9 @@
         "ChartHintSwapped": "Scrollen zum Zoomen der Y-Achse · Strg + Scrollen zum Zoomen der Zeitachse · Ziehen zum Verschieben · Mauszeiger für Werte · Doppelklick zum Fixieren des Fokus",
         "ScrollToZoomX": "Scrollen, um X-Achse zu zoomen",
         "ScrollToZoomY": "Scrollen, um Y-Achse zu zoomen",
-        "ResetColors": "Farben zurücksetzen",
         "ReferenceLine": "Bezugslinie",
         "Detail": "Detail",
-        "DualAxis": "Zweiachsig",
-        "LeftReference": "Linke Y-Achse",
-        "RightReference": "Rechte Y-Achse"
+        "IndependentCoord": "Independent coordinates",
+        "ReassignColors": "Reassign colors"
     }
 }

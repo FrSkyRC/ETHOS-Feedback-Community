@@ -532,12 +532,10 @@
         "ErrorReadFailed": "Nie udało się odczytać wybranego pliku.",
         "ScrollToZoomX": "Przewijaj, aby powiększyć oś X",
         "ScrollToZoomY": "Przewijaj, aby powiększyć oś Y",
-        "ResetColors": "Resetuj kolory",
         "ReferenceLine": "Linia odniesienia",
         "Detail": "Szczegóły",
-        "DualAxis": "Dual axis",
-        "LeftReference": "Left reference",
-        "RightReference": "Right reference"
+        "IndependentCoord": "Independent coordinates",
+        "ReassignColors": "Reassign colors"
     },
     "DownloadCenter": {
         "DownloadCenter": "Lista produktów FrSky",

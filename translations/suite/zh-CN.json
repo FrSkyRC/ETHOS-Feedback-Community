@@ -532,12 +532,10 @@
         "ErrorReadFailed": "读取所选文件失败",
         "ScrollToZoomX": "滚动缩放 X 轴",
         "ScrollToZoomY": "滚动缩放 Y 轴",
-        "ResetColors": "恢复默认颜色",
         "ReferenceLine": "参考线",
         "Detail": "详细数据",
-        "DualAxis": "双重纵坐标",
-        "LeftReference": "左参考线",
-        "RightReference": "右参考线"
+        "IndependentCoord": "独立坐标",
+        "ReassignColors": "重新分配颜色"
     },
     "DownloadCenter": {
         "DownloadCenter": "FrSky 产品列表",

@@ -532,12 +532,10 @@
         "ErrorReadFailed": "Failed to read the selected file.",
         "ScrollToZoomX": "Scroll to zoom X",
         "ScrollToZoomY": "Scroll to zoom Y",
-        "ResetColors": "Reset colors",
         "ReferenceLine": "Reference line",
         "Detail": "Detail",
-        "DualAxis": "Dual axis",
-        "LeftReference": "Left reference",
-        "RightReference": "Right reference"
+        "IndependentCoord": "Independent coordinates",
+        "ReassignColors": "Reassign colors"
     },
     "DownloadCenter": {
         "DownloadCenter": "FrSky product list",

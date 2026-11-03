@@ -740,11 +740,9 @@
         "ChartHintSwapped": "Scorri per zoom Y · Ctrl+scorri per zoom Ora/durata · Trascina per pan · Passa su per valori · Doppio-click per bloccare Focus",
         "ScrollToZoomX": "Scorri per ingrandire X",
         "ScrollToZoomY": "Scorri per ingrandire Y",
-        "ResetColors": "Ripristina colori",
         "ReferenceLine": "Linea di riferimento",
         "Detail": "Dettagli",
-        "DualAxis": "Dual axis",
-        "LeftReference": "Left reference",
-        "RightReference": "Right reference"
+        "IndependentCoord": "Independent coordinates",
+        "ReassignColors": "Reassign colors"
     }
 }
