@@ -742,7 +742,7 @@
         "ScrollToZoomY": "Scrollen, um Y-Achse zu zoomen",
         "ReferenceLine": "Bezugslinie",
         "Detail": "Detail",
-        "IndependentCoord": "Independent coordinates",
-        "ReassignColors": "Reassign colors"
+        "IndependentCoord": "Unabhängige Koordinaten",
+        "ReassignColors": "Farben neu zuweisen"
     }
 }
