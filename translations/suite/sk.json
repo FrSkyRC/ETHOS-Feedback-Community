@@ -711,11 +711,11 @@
         "ScreenshotShortcutHint": "Kliknite na pole a potom stlačte kombináciu klávesov",
         "ScreenshotPressKeys": "Stlačte odkaz",
         "ScreenshotCopyClipboard": "Kópírovať do schránky",
-        "ScreenshotSaveToPath": "Save to path",
+        "ScreenshotSaveToPath": "Uložiť cestu",
         "ScreenshotSavePath": "Uložiť cestu",
         "ScreenshotFilePrefix": "Predpona názvu súboru",
         "ScreenshotOptions": "Možnosti snímky obrazovky",
-        "DarkMode": "Dark mode"
+        "DarkMode": "Tmavý režim"
     },
     "Documentation": {
         "Documentation": "Dokumentácia",
