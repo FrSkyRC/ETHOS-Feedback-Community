@@ -59,11 +59,11 @@
             "InternalModuleVersion": "内置模块版本",
             "NoInternalModule": "未检测到内置模块",
             "SDCard": "SD 卡",
-            "InternalStorage": "内部存储"
+            "InternalStorage": "内部存储",
+            "QuickCardThemeManagerDesc": "转码位图, 并生成 ETHOS 主题"
         },
         "Image": {
             "ImageManager": "图片管理器",
-            "ListSubtitle": "添加图片, 调整裁剪和大小并进行转码",
             "AddImagesOrDrop": "添加图片或拖放文件",
             "SupportedFormats": "支持 PNG, JPG, BMP 和 SVG",
             "ResolutionSettings": "分辨率设置",
@@ -320,7 +320,70 @@
             "SuspendSimulator": "挂起",
             "ScreenshotCopied": "截图已复制到剪贴板"
         },
-        "AppTitle": "ETHOS"
+        "AppTitle": "ETHOS",
+        "Theme": {
+            "Theme": "生成主题",
+            "Images": "转码图片",
+            "Name": "名称",
+            "Key": "键名",
+            "KeyHint": "1 到 7 位字母或数字",
+            "PresetDark": "深色",
+            "PresetLight": "浅色",
+            "FocusStyle": "焦点样式",
+            "FocusInvert": "反色",
+            "FocusOutline": "描边",
+            "FocusText": "文字",
+            "RoundButtons": "圆角按钮",
+            "BorderWidth": "边框宽度",
+            "ToolbarBackground": "工具栏背景",
+            "ToolbarLogo": "工具栏标志",
+            "ToolbarDefault": "默认",
+            "ToolbarLight": "浅色",
+            "ToolbarNone": "无",
+            "ToolbarCustom": "自定义图片",
+            "ToolbarHint": "默认保留内置深色图. 浅色和无是内置选项.",
+            "HighlightHint": "选择该主题时, ETHOS 会把这个颜色写入高亮设置.",
+            "Colors": "颜色",
+            "Generate": "生成主题",
+            "Generated": "主题压缩包已生成",
+            "GeneratedHint": "在 Lua 库中安装这个压缩包",
+            "Overwrite": "要替换已有的压缩包吗?",
+            "OpenFolder": "生成后打开文件夹",
+            "Color": {
+                "Primary": "主文字",
+                "SecondaryBg": "次背景",
+                "Highlight": "高亮",
+                "HighlightText": "高亮文字",
+                "Disabled": "禁用",
+                "PrimaryBg": "主背景",
+                "Overlay": "遮罩",
+                "Secondary": "次文字",
+                "Safe": "安全",
+                "PageBg": "页面背景",
+                "Error": "错误",
+                "Active": "激活",
+                "Inactive": "未激活",
+                "ButtonBorderActive": "激活按钮边框",
+                "ButtonBorder": "按钮边框",
+                "Warning": "警告",
+                "SafeText": "安全文字",
+                "TopLcd": "顶屏背景"
+            },
+            "Preview": "预览",
+            "ToolbarDrag": "在预览里拖动工具栏图片来裁剪",
+            "TranscodeFailed": "工具栏图片转码失败",
+            "ResetColor": "重置",
+            "Install": "生成主题 (直接安装到遥控器)",
+            "Installed": "主题已安装到遥控器",
+            "InstalledHint": "在系统 / 通用里选择该主题.",
+            "OverwriteRadio": "要替换遥控器上已有的主题吗?",
+            "NameNotFolder": "名称要能作为文件夹, 以字母或数字开头, 其余只能是字母/数字/. _ 或 -.",
+            "WriteFailed": "主题写入失败",
+            "Required": "必填",
+            "NameKeyRequired": "请填写名称和键名",
+            "Appearance": "外观个性化",
+            "Rgb565Hint": "因为 ETHOS 使用 RGB565 的颜色格式，实际上机效果可能会有区别，请以实机展示效果为准"
+        }
     },
     "ToolCommon": {
         "Models": "模型",
@@ -491,13 +554,13 @@
         "StepFlash": "开始烧录",
         "GuideEthosDfu": "将 ETHOS 遥控器关机, 然后使用 USB 线连接到电脑, 并等待 Suite 检测到 DFU 设备.",
         "InstallDriver": "安装 DFU 驱动",
-        "DriverInstallCancelled": "已取消安装 DFU 驱动。需要管理员权限。",
-        "DriverInstallReboot": "DFU 驱动已安装。使用前请重启 Windows。",
-        "DriverInstallReconnect": "DFU 驱动已安装。请拔出设备，再以 DFU 模式重新连接。",
-        "DriverInstalled": "DFU 驱动已安装。设备以 DFU 模式连接后会自动使用。",
+        "DriverInstallCancelled": "已取消安装 DFU 驱动, 需要管理员权限",
+        "DriverInstallReboot": "DFU 驱动已安装, 使用前请重启 Windows",
+        "DriverInstallReconnect": "DFU 驱动已安装, 请拔出设备, 再以 DFU 模式重新连接",
+        "DriverInstalled": "DFU 驱动已安装, 设备以 DFU 模式连接后会自动使用",
         "SourceLocal": "本地文件",
         "SelectRadio": "选择遥控器",
-        "NoBootloaders": "此服务器上没有找到 Bootloader。",
+        "NoBootloaders": "此服务器上没有找到 Bootloader",
         "BootloaderLoading": "正在加载 Bootloader ..."
     },
     "LogViewer": {
@@ -675,7 +738,8 @@
         "ScreenshotSaveToPath": "保存到路径",
         "ScreenshotSavePath": "保存路径",
         "ScreenshotFilePrefix": "文件名前缀",
-        "ScreenshotOptions": "截图选项"
+        "ScreenshotOptions": "截图选项",
+        "DarkMode": "深色模式"
     },
     "Documentation": {
         "Documentation": "文档",
@@ -725,7 +789,10 @@
         "StepConnectFc": "接入 Aegis 飞控",
         "StepConnectFcHint": "按控制台提示连接 Aegis 飞控",
         "ConnectHintTitle": "连接设备",
-        "ConnectHintText": "控制台提示时, 请通过 USB 连接 Aegis 飞控, 并等待更新程序完成."
+        "ConnectHintText": "控制台提示时, 请通过 USB 连接 Aegis 飞控, 并等待更新程序完成.",
+        "FlashingTitle": "Flashing Aegis firmware",
+        "FlashDone": "Aegis flash finished",
+        "FlashFailed": "Aegis flash failed"
     },
     "Ecos": {
         "SelectFirmware": "选择固件",
@@ -744,5 +811,22 @@
         "FlashingTitle": "正在刷写 ECOS 固件, 请勿断开设备连接.",
         "AppTitle": "ECOS"
     },
-    "Language": "中文"
+    "Language": "中文",
+    "TaskCenter": {
+        "Title": "Tasks",
+        "Empty": "No tasks in progress",
+        "Working": "Working",
+        "Open": "Open",
+        "NoticeDone": "Finished",
+        "NoticeError": "Something went wrong",
+        "NoticeAction": "Action needed",
+        "DisconnectWarning": "A task is in progress. Unplugging the radio will fail the operation and can damage the device.",
+        "CloseTitle": "A task is in progress",
+        "CloseMessage": "Closing Suite now will fail the operation and can damage the device.",
+        "CloseAnyway": "Close anyway"
+    },
+    "RadioLock": {
+        "BusyTitle": "Radio is busy",
+        "BusyMessage": "This radio is busy with {{task}}. Wait until it finishes."
+    }
 }

@@ -33,7 +33,8 @@
             "InternalModuleVersion": "Internal module version",
             "NoInternalModule": "No internal module detected.",
             "SDCard": "SD card",
-            "InternalStorage": "Internal storage"
+            "InternalStorage": "Internal storage",
+            "QuickCardThemeManagerDesc": "Transcode bitmaps and build an ETHOS theme"
         },
         "Image": {
             "ImageManager": "Gerenciador de Imagens",
@@ -43,7 +44,6 @@
             "TranscodingImages": "Transcodificando imagens...",
             "TheFollowingImagesFailedToTranscode": "As seguintes imagens falharam ao transcodificar:",
             "AddImagesOrDrop": "Add images or drop files",
-            "ListSubtitle": "Select images, then adjust crop and size before transcoding",
             "ResolutionSettings": "Resolution settings",
             "SupportedFormats": "Supports PNG, JPG, BMP, and SVG.",
             "OutputDetails": "Output details",
@@ -320,7 +320,70 @@
             "FullDriveLabel": "Full disk",
             "SelectDrivesToBackup": "Select disks to backup"
         },
-        "AppTitle": "ETHOS"
+        "AppTitle": "ETHOS",
+        "Theme": {
+            "Theme": "Generate theme",
+            "Images": "Transcode images",
+            "Name": "Name",
+            "Key": "Key",
+            "KeyHint": "1 to 7 letters or digits",
+            "PresetDark": "Dark",
+            "PresetLight": "Light",
+            "FocusStyle": "Focus style",
+            "FocusInvert": "Invert",
+            "FocusOutline": "Outline",
+            "FocusText": "Text",
+            "RoundButtons": "Round buttons",
+            "BorderWidth": "Border width",
+            "ToolbarBackground": "Toolbar background",
+            "ToolbarLogo": "Toolbar logo",
+            "ToolbarDefault": "Default",
+            "ToolbarLight": "Light",
+            "ToolbarNone": "None",
+            "ToolbarCustom": "Custom image",
+            "ToolbarHint": "Default keeps the built-in dark artwork. Light and none are built-in presets.",
+            "HighlightHint": "ETHOS copies this into the highlight setting when the theme is selected.",
+            "Colors": "Colors",
+            "Generate": "Generate theme",
+            "Generated": "Theme zip written",
+            "GeneratedHint": "Install this zip from the Lua library.",
+            "Overwrite": "Replace the existing zip file?",
+            "OpenFolder": "Open folder after generating",
+            "Color": {
+                "Primary": "Primary text",
+                "SecondaryBg": "Secondary background",
+                "Highlight": "Highlight",
+                "HighlightText": "Highlight text",
+                "Disabled": "Disabled",
+                "PrimaryBg": "Primary background",
+                "Overlay": "Overlay",
+                "Secondary": "Secondary text",
+                "Safe": "Safe",
+                "PageBg": "Page background",
+                "Error": "Error",
+                "Active": "Active",
+                "Inactive": "Inactive",
+                "ButtonBorderActive": "Active button border",
+                "ButtonBorder": "Button border",
+                "Warning": "Warning",
+                "SafeText": "Safe text",
+                "TopLcd": "Top LCD background"
+            },
+            "Preview": "Preview",
+            "ToolbarDrag": "Drag the toolbar image in the preview to crop it.",
+            "TranscodeFailed": "Could not transcode the toolbar image.",
+            "ResetColor": "Reset",
+            "Install": "Generate theme (install to the radio)",
+            "Installed": "Theme installed",
+            "InstalledHint": "Select it in System / General.",
+            "OverwriteRadio": "Replace the theme already on the radio?",
+            "NameNotFolder": "Use a name that can be a folder: start with a letter or digit, then only letters, digits, . _ or -.",
+            "WriteFailed": "Could not write the theme.",
+            "Required": "Required",
+            "NameKeyRequired": "Enter a name and a key.",
+            "Appearance": "Appearance",
+            "Rgb565Hint": "ETHOS uses the RGB565 color format, so the result on the radio may differ. Use the radio display as the reference."
+        }
     },
     "ToolCommon": {
         "FatalErrorOccurred": "Ocorreu um erro fatal",
@@ -638,7 +701,8 @@
         "ScreenshotSaveToPath": "Save to path",
         "ScreenshotSavePath": "Save path",
         "ScreenshotFilePrefix": "File name prefix",
-        "ScreenshotOptions": "Screenshot options"
+        "ScreenshotOptions": "Screenshot options",
+        "DarkMode": "Dark mode"
     },
     "Documentation": {
         "Documentation": "Documentação",
@@ -688,7 +752,10 @@
         "StepFlash": "Start flashing",
         "StepFlashHint": "Click Flash to launch the Aegis updater",
         "StepSelectFirmware": "Select firmware file",
-        "StepSelectFirmwareHint": "Choose an Aegis firmware"
+        "StepSelectFirmwareHint": "Choose an Aegis firmware",
+        "FlashingTitle": "Flashing Aegis firmware",
+        "FlashDone": "Aegis flash finished",
+        "FlashFailed": "Aegis flash failed"
     },
     "Ecos": {
         "SelectFirmware": "Select firmware",
@@ -742,7 +809,27 @@
         "ScrollToZoomY": "Scroll to zoom Y",
         "ReferenceLine": "Reference line",
         "Detail": "Detail",
+        "DualAxis": "Dual axis",
+        "LeftReference": "Left reference",
+        "RightReference": "Right reference",
         "IndependentCoord": "Independent coordinates",
         "ReassignColors": "Reassign colors"
+    },
+    "TaskCenter": {
+        "Title": "Tasks",
+        "Empty": "No tasks in progress",
+        "Working": "Working",
+        "Open": "Open",
+        "NoticeDone": "Finished",
+        "NoticeError": "Something went wrong",
+        "NoticeAction": "Action needed",
+        "DisconnectWarning": "A task is in progress. Unplugging the radio will fail the operation and can damage the device.",
+        "CloseTitle": "A task is in progress",
+        "CloseMessage": "Closing Suite now will fail the operation and can damage the device.",
+        "CloseAnyway": "Close anyway"
+    },
+    "RadioLock": {
+        "BusyTitle": "Radio is busy",
+        "BusyMessage": "This radio is busy with {{task}}. Wait until it finishes."
     }
 }
