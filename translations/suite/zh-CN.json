@@ -383,6 +383,19 @@
             "NameKeyRequired": "请填写名称和键名",
             "Appearance": "外观个性化",
             "Rgb565Hint": "因为 ETHOS 使用 RGB565 的颜色格式，实际上机效果可能会有区别，请以实机展示效果为准"
+        },
+        "Remote": {
+            "Title": "远程控制",
+            "NeedFirmware": "需要 ETHOS 26.2.0-RC5 或更高版本",
+            "Connecting": "正在切换遥控器模式",
+            "WaitingConfirm": "请在遥控器屏幕上允许远程控制",
+            "Live": "远程控制已连接",
+            "Refused": "遥控器拒绝了远程控制",
+            "SerialMissing": "未找到 ETHOS 串口",
+            "Failed": "远程控制失败",
+            "Stop": "中断远程控制",
+            "StorageHint": "远程控制期间 U 盘不可用，停止后恢复",
+            "Restoring": "正在切换回 U 盘模式"
         }
     },
     "ToolCommon": {

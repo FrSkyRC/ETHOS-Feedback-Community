@@ -383,6 +383,19 @@
             "NameKeyRequired": "Enter a name and a key.",
             "Appearance": "Appearance",
             "Rgb565Hint": "ETHOS uses the RGB565 color format, so the result on the radio may differ. Use the radio display as the reference."
+        },
+        "Remote": {
+            "Title": "Remote control",
+            "NeedFirmware": "Requires ETHOS 26.2.0-RC5 or above",
+            "Connecting": "Connecting to the radio",
+            "WaitingConfirm": "Allow remote control on the radio screen",
+            "Live": "Remote control connected",
+            "Refused": "The radio refused remote control",
+            "SerialMissing": "No ETHOS serial port found",
+            "Failed": "Remote control failed",
+            "Stop": "Stop remote control",
+            "StorageHint": "USB storage is unavailable until remote control stops",
+            "Restoring": "Switching the radio back to USB storage"
         }
     },
     "ToolCommon": {
