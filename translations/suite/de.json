@@ -395,7 +395,7 @@
             "Failed": "Die Fernsteuerung ist fehlgeschlagen",
             "Stop": "Fernsteuerung beenden",
             "StorageHint": "USB-Speicher ist nicht verfügbar, solange die Fernsteuerung aktiv ist.",
-            "Restoring": "Den Sendert wieder auf USB-Speicher umschalten"
+            "Restoring": "Den Sender wieder auf USB-Speicher umschalten"
         }
     },
     "ToolCommon": {
@@ -599,14 +599,14 @@
         "SelectProductHint": "Wählen Sie ein Produkt aus der Liste aus, um Firmware und Downloads anzuzeigen.",
         "NoProductsInList": "Es konnten keine Produkte geladen werden. Bitte versuchen Sie es später erneut.",
         "ProductsListPartial": "Einige Produkte oder Kategorien konnten aufgrund von Server-Datenfehlern nicht geladen werden. Es werden alle verfügbaren Einträge angezeigt.",
-        "SearchProducts": "Search products",
-        "Favorites": "Favorites",
-        "NoFavorites": "No favorited products yet",
-        "AddFavorite": "Add to favorites",
-        "RemoveFavorite": "Remove from favorites",
-        "NoSearchResults": "No products match this search",
-        "CollapseAll": "Collapse all",
-        "ClearSearch": "Clear search"
+        "SearchProducts": "Produkte suchen",
+        "Favorites": "Favoriten",
+        "NoFavorites": "Noch keine Favoriten hinzugefügt",
+        "AddFavorite": "Zu Favoriten hinzufügen",
+        "RemoveFavorite": "Aus Favoriten entfernen",
+        "NoSearchResults": "Es gibt es keine passenden Produkte.",
+        "CollapseAll": "Alle ausblenden",
+        "ClearSearch": "Suche löschen"
     },
     "VersionTag": {
         "FetchingFromServer": "Vom Server abrufen...",
@@ -766,9 +766,9 @@
         "StepFlashHint": "Klicken Sie auf Flash, um den Aegis-Updater zu starten.",
         "StepSelectFirmware": "Firmware-Datei auswählen",
         "StepSelectFirmwareHint": "Wählen Sie ein Aegis-Firmwarepaket aus.",
-        "FlashingTitle": "Flashing Aegis firmware",
-        "FlashDone": "Aegis flash finished",
-        "FlashFailed": "Aegis flash failed"
+        "FlashingTitle": "Aegis-Firmware aufspielen",
+        "FlashDone": "Aegis-Flash abgeschlossen",
+        "FlashFailed": "Aegis-Flash fehlgeschlagen"
     },
     "Ecos": {
         "SelectFirmware": "Firmware auswählen",
@@ -829,20 +829,20 @@
         "ReassignColors": "Farben neu zuweisen"
     },
     "TaskCenter": {
-        "Title": "Tasks",
-        "Empty": "No tasks in progress",
-        "Working": "Working",
-        "Open": "Open",
-        "NoticeDone": "Finished",
-        "NoticeError": "Something went wrong",
-        "NoticeAction": "Action needed",
-        "DisconnectWarning": "A task is in progress. Unplugging the radio will fail the operation and can damage the device.",
-        "CloseTitle": "A task is in progress",
-        "CloseMessage": "Closing Suite now will fail the operation and can damage the device.",
-        "CloseAnyway": "Close anyway"
+        "Title": "Aufgaben",
+        "Empty": "Keine Aufgaben in Bearbeitung",
+        "Working": "Verarbeitung",
+        "Open": "Öffnen",
+        "NoticeDone": "Fertig",
+        "NoticeError": "Etwas ist schiefgelaufen",
+        "NoticeAction": "Handlungsbedarf",
+        "DisconnectWarning": "Eine Aufgabe ist in Bearbeitung. Wenn Sie den Sender ausstecken, schlägt der Vorgang fehl und das Gerät kann beschädigt werden.",
+        "CloseTitle": "Eine Aufgabe wird gerade bearbeitet.",
+        "CloseMessage": "Das Schließen der Suite führt jetzt zum Abbruch des Vorgangs und kann das Gerät beschädigen.",
+        "CloseAnyway": "Trotzdem schließen"
     },
     "RadioLock": {
-        "BusyTitle": "Radio is busy",
-        "BusyMessage": "This radio is busy with {{task}}. Wait until it finishes."
+        "BusyTitle": "Der Sender ist belegt.",
+        "BusyMessage": "Der Sender ist mit {{task}} beschäftigt. Warten Sie, bis der Vorgang abgeschlossen ist."
     }
 }
