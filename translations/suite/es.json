@@ -382,7 +382,15 @@
             "Required": "Requerido",
             "NameKeyRequired": "Introduzca un nombre y una clave.",
             "Appearance": "Apariencia",
-            "Rgb565Hint": "ETHOS usa el formato de color RGB565, por lo que el resultado en la radio puede ser diferente. Use la pantalla de la radio como referencia."
+            "Rgb565Hint": "ETHOS usa el formato de color RGB565, por lo que el resultado en la radio puede ser diferente. Use la pantalla de la radio como referencia.",
+            "LoadExisting": "Load existing theme (optional)",
+            "LoadZip": "Zip file",
+            "LoadFolder": "Folder",
+            "LoadHint": "Reads settings into the form if you want to generate a theme with the existed one. The source theme would be left unchanged.",
+            "LoadNoEntry": "The selection must contain a main.lua entry file.",
+            "LoadNotTheme": "This main.lua does not register an ETHOS theme.",
+            "LoadFailed": "Could not read the theme.",
+            "LoadSourceProtected": "The loaded theme is read-only. Choose a different destination."
         },
         "Remote": {
             "Title": "Control remoto",
@@ -496,7 +504,9 @@
         "ContinueCurrentOperation": "Continue la operación actual",
         "AbortOperation": "Abortar la operación",
         "AbortOperationWarning": "Abortar la operación actual puede dañar su dispositivo. Confirme que quiere abortarla. Mantenga presionado para abortarla.",
-        "Release": "Versión"
+        "Release": "Versión",
+        "FoldersSupported": ". Folders are supported.",
+        "SelectFolder": "Select folder"
     },
     "Components": {
         "ChooseVideo": {

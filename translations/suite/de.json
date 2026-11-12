@@ -382,7 +382,15 @@
             "Required": "Erforderlich",
             "NameKeyRequired": "Gib einen Namen und einen Schlüssel ein.",
             "Appearance": "Aussehen",
-            "Rgb565Hint": "EETHOS verwendet das RGB565-Farbformat, daher kann das Ergebnis auf dem Sender abweichen. Nutzen Sie das Display des Senders als Referenz."
+            "Rgb565Hint": "EETHOS verwendet das RGB565-Farbformat, daher kann das Ergebnis auf dem Sender abweichen. Nutzen Sie das Display des Senders als Referenz.",
+            "LoadExisting": "Load existing theme (optional)",
+            "LoadZip": "Zip file",
+            "LoadFolder": "Folder",
+            "LoadHint": "Reads settings into the form if you want to generate a theme with the existed one. The source theme would be left unchanged.",
+            "LoadNoEntry": "The selection must contain a main.lua entry file.",
+            "LoadNotTheme": "This main.lua does not register an ETHOS theme.",
+            "LoadFailed": "Could not read the theme.",
+            "LoadSourceProtected": "The loaded theme is read-only. Choose a different destination."
         },
         "Remote": {
             "Title": "Fernsteuerung",
@@ -496,7 +504,9 @@
         "ContinueCurrentOperation": "Aktuellen Betrieb fortsetzen",
         "AbortOperation": "Vorgang abbrechen",
         "AbortOperationWarning": "Das Abbrechen des aktuellen Vorgangs kann Ihr Gerät beschädigen. Bestätigen Sie, dass Sie abbrechen möchten. Zum Abbrechen gedrückt halten.",
-        "Release": "Version"
+        "Release": "Version",
+        "FoldersSupported": ". Folders are supported.",
+        "SelectFolder": "Select folder"
     },
     "Components": {
         "ChooseVideo": {

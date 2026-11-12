@@ -382,7 +382,15 @@
             "Required": "必填",
             "NameKeyRequired": "请填写名称和键名",
             "Appearance": "外观个性化",
-            "Rgb565Hint": "因为 ETHOS 使用 RGB565 的颜色格式，实际上机效果可能会有区别，请以实机展示效果为准"
+            "Rgb565Hint": "因为 ETHOS 使用 RGB565 的颜色格式，实际上机效果可能会有区别，请以实机展示效果为准",
+            "LoadExisting": "载入已有主题 (可选)",
+            "LoadZip": "压缩包",
+            "LoadFolder": "文件夹",
+            "LoadHint": "如果你需要基于已有主题来生成一个新的主题, 你可以读取一个已有主题来载入其中的设置, 该操作不会修改已有主题.",
+            "LoadNoEntry": "所选内容必须包含 main.lua 入口文件.",
+            "LoadNotTheme": "main.lua 不是 ETHOS 的注册主题接口.",
+            "LoadFailed": "无法读取该主题.",
+            "LoadSourceProtected": "已载入的主题只读, 请另选保存位置."
         },
         "Remote": {
             "Title": "远程控制",
@@ -496,7 +504,9 @@
         "ContinueCurrentOperation": "继续当前操作",
         "AbortOperation": "中断操作",
         "AbortOperationWarning": "中断当前操作可能会对你的设备造成损坏, 请确认是否需要中断当前操作, 长按以进行中断",
-        "Release": "发布版本"
+        "Release": "发布版本",
+        "FoldersSupported": "，支持文件夹",
+        "SelectFolder": "选择文件夹"
     },
     "Components": {
         "ChooseVideo": {

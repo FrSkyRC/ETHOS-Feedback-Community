@@ -382,7 +382,15 @@
             "Required": "Požadované",
             "NameKeyRequired": "Vložte meno a kľúč.",
             "Appearance": "Vzhľad",
-            "Rgb565Hint": "ETHOS používa formát farby RGB565, takže výsledok v rádiu sa môže líšiť. Použite displej rádia ako referenciu."
+            "Rgb565Hint": "ETHOS používa formát farby RGB565, takže výsledok v rádiu sa môže líšiť. Použite displej rádia ako referenciu.",
+            "LoadExisting": "Load existing theme (optional)",
+            "LoadZip": "Zip file",
+            "LoadFolder": "Folder",
+            "LoadHint": "Reads settings into the form if you want to generate a theme with the existed one. The source theme would be left unchanged.",
+            "LoadNoEntry": "The selection must contain a main.lua entry file.",
+            "LoadNotTheme": "This main.lua does not register an ETHOS theme.",
+            "LoadFailed": "Could not read the theme.",
+            "LoadSourceProtected": "The loaded theme is read-only. Choose a different destination."
         },
         "Remote": {
             "Title": "Diaľkové ovládanie",
@@ -496,7 +504,9 @@
         "ContinueCurrentOperation": "Pokračovať v aktuálnej operácii",
         "AbortOperation": "Zrušiť operáciu",
         "AbortOperationWarning": "Prerušenie aktuálnej operácie môže poškodiť vaše zariadenie. Potvrďte, že chcete potratiť. Stlačte a držte pre zrušenie.",
-        "Release": "Vydanie"
+        "Release": "Vydanie",
+        "FoldersSupported": ". Folders are supported.",
+        "SelectFolder": "Select folder"
     },
     "Components": {
         "ChooseVideo": {
