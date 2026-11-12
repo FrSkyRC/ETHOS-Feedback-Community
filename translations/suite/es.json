@@ -122,7 +122,7 @@
             "RemoveAllCpuidFiles": "Borrar todos los archivos de identidad",
             "FirmwareNotAllowed": "Firmware no permitido",
             "RadioMinVersionLabel": "Este tipo de {{radio}} solo soporta las versiones de arriba {{minVersion}}",
-            "RemoteMode": "Remote control mode"
+            "RemoteMode": "Modo control remoto"
         },
         "Module": {
             "RFModule": "Módulo de RF",
@@ -384,14 +384,14 @@
             "NameKeyRequired": "Introduzca un nombre y una clave.",
             "Appearance": "Apariencia",
             "Rgb565Hint": "ETHOS usa el formato de color RGB565, por lo que el resultado en la radio puede ser diferente. Use la pantalla de la radio como referencia.",
-            "LoadExisting": "Load existing theme (optional)",
-            "LoadZip": "Zip file",
-            "LoadFolder": "Folder",
-            "LoadHint": "Reads settings into the form if you want to generate a theme with the existed one. The source theme would be left unchanged.",
-            "LoadNoEntry": "The selection must contain a main.lua entry file.",
-            "LoadNotTheme": "This main.lua does not register an ETHOS theme.",
-            "LoadFailed": "Could not read the theme.",
-            "LoadSourceProtected": "The loaded theme is read-only. Choose a different destination."
+            "LoadExisting": "Cargar tema existente (opcional)",
+            "LoadZip": "Comprimir archivo Zip",
+            "LoadFolder": "Carpeta",
+            "LoadHint": "Lea la configuración en el formulario si quiere generar un tema desde el que ya existe. El tema original permanecerá sin cambios.",
+            "LoadNoEntry": "Lo seleccionado debe contener un archivo de entrada main.lua.",
+            "LoadNotTheme": "Este main.lua no registra un tema de ETHOS.",
+            "LoadFailed": "No se puede leer el tema.",
+            "LoadSourceProtected": "El tema cargado es de solo lectura. Elija un destino diferente."
         },
         "Remote": {
             "Title": "Control remoto",
@@ -404,7 +404,7 @@
             "Failed": "Ha fallado el control remoto",
             "Stop": "Parar control remoto",
             "Restoring": "Retornando al almacenamiento USB de la radio",
-            "Controlling": "Remote control active"
+            "Controlling": "Contro Remoto activo"
         }
     },
     "ToolCommon": {
@@ -506,8 +506,8 @@
         "AbortOperation": "Abortar la operación",
         "AbortOperationWarning": "Abortar la operación actual puede dañar su dispositivo. Confirme que quiere abortarla. Mantenga presionado para abortarla.",
         "Release": "Versión",
-        "FoldersSupported": ". Folders are supported.",
-        "SelectFolder": "Select folder"
+        "FoldersSupported": ". Carpetas están soportadas.",
+        "SelectFolder": "Seleccionar carpeta"
     },
     "Components": {
         "ChooseVideo": {
