@@ -402,8 +402,8 @@
             "SerialMissing": "未找到 ETHOS 串口",
             "Failed": "远程控制失败",
             "Stop": "中断远程控制",
-            "StorageHint": "远程控制期间 U 盘不可用，停止后恢复",
-            "Restoring": "正在切换回 U 盘模式"
+            "Restoring": "正在切换回 U 盘模式",
+            "Controlling": "远程控制中"
         }
     },
     "ToolCommon": {

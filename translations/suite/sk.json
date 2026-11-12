@@ -402,8 +402,8 @@
             "SerialMissing": "Žiadny sériový port na rádiu ETHOS nebol nájdený",
             "Failed": "Diaľkové ovládanie zlyhalo",
             "Stop": "Zastaviť diaľkové ovládanie",
-            "StorageHint": "Úložisko USB nie je k dispozícii, kým sa nezastaví diaľkové ovládanie",
-            "Restoring": "Prepnutie rádia späť do úložiska USB"
+            "Restoring": "Prepnutie rádia späť do úložiska USB",
+            "Controlling": "Remote control active"
         }
     },
     "ToolCommon": {

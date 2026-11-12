@@ -402,8 +402,8 @@
             "SerialMissing": "No se ha encontrado el puerto serie ETHOS",
             "Failed": "Ha fallado el control remoto",
             "Stop": "Parar control remoto",
-            "StorageHint": "No estará disponible almacenamiento USB hasta que el control remoto se desconecte",
-            "Restoring": "Retornando al almacenamiento USB de la radio"
+            "Restoring": "Retornando al almacenamiento USB de la radio",
+            "Controlling": "Remote control active"
         }
     },
     "ToolCommon": {

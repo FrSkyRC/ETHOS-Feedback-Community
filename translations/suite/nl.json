@@ -402,8 +402,8 @@
             "SerialMissing": "No ETHOS serial port found",
             "Failed": "Remote control failed",
             "Stop": "Stop remote control",
-            "StorageHint": "USB storage is unavailable until remote control stops",
-            "Restoring": "Switching the radio back to USB storage"
+            "Restoring": "Switching the radio back to USB storage",
+            "Controlling": "Remote control active"
         }
     },
     "ToolCommon": {

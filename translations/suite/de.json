@@ -402,8 +402,8 @@
             "SerialMissing": "Kein ETHOS-Seriell-Port gefunden",
             "Failed": "Die Fernsteuerung ist fehlgeschlagen",
             "Stop": "Fernsteuerung beenden",
-            "StorageHint": "USB-Speicher ist nicht verfügbar, solange die Fernsteuerung aktiv ist.",
-            "Restoring": "Den Sender wieder auf USB-Speicher umschalten"
+            "Restoring": "Den Sender wieder auf USB-Speicher umschalten",
+            "Controlling": "Remote control active"
         }
     },
     "ToolCommon": {
