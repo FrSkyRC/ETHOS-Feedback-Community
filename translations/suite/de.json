@@ -385,13 +385,13 @@
             "Appearance": "Aussehen",
             "Rgb565Hint": "EETHOS verwendet das RGB565-Farbformat, daher kann das Ergebnis auf dem Sender abweichen. Nutzen Sie das Display des Senders als Referenz.",
             "LoadExisting": "Load existing theme (optional)",
-            "LoadZip": "Zip file",
-            "LoadFolder": "Folder",
-            "LoadHint": "Reads settings into the form if you want to generate a theme with the existed one. The source theme would be left unchanged.",
-            "LoadNoEntry": "The selection must contain a main.lua entry file.",
-            "LoadNotTheme": "This main.lua does not register an ETHOS theme.",
-            "LoadFailed": "Could not read the theme.",
-            "LoadSourceProtected": "The loaded theme is read-only. Choose a different destination."
+            "LoadZip": "ZIP-Datei",
+            "LoadFolder": "Ordner",
+            "LoadHint": "Lädt Einstellungen in das Formular, falls Sie auf Basis eines bestehenden Themas ein neues Thema erstellen möchten. Das ursprüngliche Thema bleibt dabei unverändert.",
+            "LoadNoEntry": "Die Auswahl muss eine Einstiegsdatei namens „main.lua“ enthalten.",
+            "LoadNotTheme": "Diese main.lua registriert kein ETHOS-Thema.",
+            "LoadFailed": "Das Thema konnte nicht gelesen werden.",
+            "LoadSourceProtected": "Das geladene Thema ist schreibgeschützt. Wählen Sie ein anderes Ziel."
         },
         "Remote": {
             "Title": "Fernsteuerung",
@@ -404,7 +404,7 @@
             "Failed": "Die Fernsteuerung ist fehlgeschlagen",
             "Stop": "Fernsteuerung beenden",
             "Restoring": "Den Sender wieder auf USB-Speicher umschalten",
-            "Controlling": "Remote control active"
+            "Controlling": "Fernsteuerung ist aktiv"
         }
     },
     "ToolCommon": {
@@ -506,8 +506,8 @@
         "AbortOperation": "Vorgang abbrechen",
         "AbortOperationWarning": "Das Abbrechen des aktuellen Vorgangs kann Ihr Gerät beschädigen. Bestätigen Sie, dass Sie abbrechen möchten. Zum Abbrechen gedrückt halten.",
         "Release": "Version",
-        "FoldersSupported": ". Folders are supported.",
-        "SelectFolder": "Select folder"
+        "FoldersSupported": "-Ordner werden unterstützt.",
+        "SelectFolder": "Ordner auswählen"
     },
     "Components": {
         "ChooseVideo": {
@@ -699,7 +699,7 @@
         "PopupDialogWhenError": "Popup-Dialog beim Auftreten eines schwerwiegenden Fehlers",
         "OpenLogs": "Protokollordner öffnen",
         "ClearCacheConfirm": "Sind Sie sicher, dass Sie den Speicher löschen möchten?",
-        "CacheCleared": "CSpeicher gelöscht!",
+        "CacheCleared": "Speicher gelöscht!",
         "Clear": "leer",
         "LangFileNotFound": "Sprachdatei nicht gefunden",
         "UpdateSuite": "FrSky Suite aktualisieren",
@@ -726,7 +726,7 @@
         "ScreenshotSavePath": "Speicherpfad",
         "ScreenshotFilePrefix": "Dateinamen-Präfix",
         "ScreenshotOptions": "Screenshot-Optionen",
-        "DarkMode": "Dark mode"
+        "DarkMode": "Dunkelmodus"
     },
     "Documentation": {
         "Documentation": "Dokumentationen",
