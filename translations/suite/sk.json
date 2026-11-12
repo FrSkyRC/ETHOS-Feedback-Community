@@ -28,7 +28,7 @@
             "Connected": "Pripojený",
             "ConnectedTo": "Spojený s {{ name }}.",
             "RadioInformation": "Informácie o rádiu",
-            "FirmwareVersion": "Firmware version",
+            "FirmwareVersion": "Verzia firmvéru",
             "BootloaderVersion": "Verzia bootloadera",
             "InternalModuleVersion": "Verzia interného modulu",
             "NoInternalModule": "Nebol zistený žiadny interný modul.",
@@ -141,7 +141,7 @@
             "RemoveAllCpuidFiles": "Odstránenie všetkých súborov totožnosti",
             "FirmwareNotAllowed": "Firmvér nie je povolený",
             "RadioMinVersionLabel": "Táto šarža z {{radio}}  podporuje iba vyššie uvedené verzie {{minVersion}}",
-            "RemoteMode": "Remote control mode"
+            "RemoteMode": "Mód vzdialeného ovládania"
         },
         "Module": {
             "RFModule": "RF Modul",
@@ -196,7 +196,7 @@
             "FileSelectors": "Výbery súborov",
             "ReleaseNote": "Poznámky k vydaniu",
             "ManifestInvalidIntroduction": "ethos_lua_manifest.json: neplatný \"introduction\" (musí byť reťazec, max 1024 znakov).",
-            "SaveLog": "Save log to file"
+            "SaveLog": "Uložiť logovanie do súboru"
         },
         "LuaLib": {
             "LuaLib": "Lua knižnica",
@@ -235,7 +235,7 @@
             "DownloadingSimulator": "Sťahovanie simulátora ...",
             "InitSimulatorFailed": "Nepodarilo sa inicializovať simulátor",
             "FailToPrepareSimDir": "Pri príprave potrebného adresára pre simulátor sa vyskytla chyba.",
-            "StopSimulator": "Stop simulator",
+            "StopSimulator": "Stop simulátora",
             "UploadFiles": "Nahrávanie súborov",
             "FileUploadedAndReloadSimQuestion": "Súbory boli úspešne nahrané. Je potrebné reštartovať simulátor, aby sa súbory načítali.",
             "SwitchPageQuestion": "Chystáte sa opustiť túto stránku. Chcete pozastaviť simulátor a nechať ho bežať na pozadí, alebo ho zavrieť?",
@@ -385,13 +385,13 @@
             "Appearance": "Vzhľad",
             "Rgb565Hint": "ETHOS používa formát farby RGB565, takže výsledok v rádiu sa môže líšiť. Použite displej rádia ako referenciu.",
             "LoadExisting": "Load existing theme (optional)",
-            "LoadZip": "Zip file",
-            "LoadFolder": "Folder",
+            "LoadZip": "Súbor zip",
+            "LoadFolder": "Adresár",
             "LoadHint": "Reads settings into the form if you want to generate a theme with the existed one. The source theme would be left unchanged.",
-            "LoadNoEntry": "The selection must contain a main.lua entry file.",
-            "LoadNotTheme": "This main.lua does not register an ETHOS theme.",
-            "LoadFailed": "Could not read the theme.",
-            "LoadSourceProtected": "The loaded theme is read-only. Choose a different destination."
+            "LoadNoEntry": "Výber musí zahŕňať main.lua entry súbor.",
+            "LoadNotTheme": "Tento main.lua nie je registrovaný v ETHOS téme.",
+            "LoadFailed": "Nemôžem načítať tému.",
+            "LoadSourceProtected": "Téma je len na čítanie. Zvoľte inú lokáciu."
         },
         "Remote": {
             "Title": "Diaľkové ovládanie",
@@ -404,7 +404,7 @@
             "Failed": "Diaľkové ovládanie zlyhalo",
             "Stop": "Zastaviť diaľkové ovládanie",
             "Restoring": "Prepnutie rádia späť do úložiska USB",
-            "Controlling": "Remote control active"
+            "Controlling": "Vzdialené ovládanie aktívne"
         }
     },
     "ToolCommon": {
@@ -457,7 +457,7 @@
         "DisplayLanguage": "Jazyk pre zobrazenie",
         "Options": "Voľby",
         "Recommended": "Doporučené",
-        "ListToBeTranscoded": "Zoznam pre prekódovanie",
+        "ListToBeTranscoded": "Zoznam na prekódovanie",
         "Delete": "Zmazať",
         "Language": "Jazyk",
         "DestinationPathNotExists": "Cieľová cesta neexistuje!",
@@ -506,8 +506,8 @@
         "AbortOperation": "Zrušiť operáciu",
         "AbortOperationWarning": "Prerušenie aktuálnej operácie môže poškodiť vaše zariadenie. Potvrďte, že chcete potratiť. Stlačte a držte pre zrušenie.",
         "Release": "Vydanie",
-        "FoldersSupported": ". Folders are supported.",
-        "SelectFolder": "Select folder"
+        "FoldersSupported": ". Adresáre sú podporované.",
+        "SelectFolder": "Vyberte adresár"
     },
     "Components": {
         "ChooseVideo": {
