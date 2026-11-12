@@ -383,7 +383,7 @@
             "NameKeyRequired": "Enter a name and a key.",
             "Appearance": "Appearance",
             "Rgb565Hint": "ETHOS uses the RGB565 color format, so the result on the radio may differ. Use the radio display as the reference.",
-            "LoadExisting": "Load existing theme (optional) (optional)",
+            "LoadExisting": "Load existing theme (optional)",
             "LoadZip": "Zip file",
             "LoadFolder": "Folder",
             "LoadHint": "Reads settings into the form if you want to generate a theme with the existed one. The source theme would be left unchanged.",
