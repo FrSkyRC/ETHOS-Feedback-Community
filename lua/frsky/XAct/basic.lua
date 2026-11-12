@@ -8,7 +8,6 @@ local series65Parameters = {
 
 local series65build = false
 local writeDialog = nil
-local lastSaveTime = 0
 local saveStep = 0
 
 local xActAppIdPairs = {{"6800", 0}, {"6801", 1}, {"6802", 2}, {"6803", 3}, {"6804", 4}, {"6805", 5}, {"6806", 6}, {"6807", 7},
@@ -32,6 +31,8 @@ local parameters = {
   { fieldFunction = CreateNumberField, fieldName = STR("Center"), pageAddress = 0x08, valueRead = function(value)
     value = value & 0xFF
     return value > 127 and value - 256 or value
+  end, valueWrite = function(value)
+    return value & 0xFF
   end, extraInfo = {min = -125, max = 125}},
   { fieldFunction = CreateNumberField, fieldName = STR("HoldingStrength"), pageAddress = 0x11, getValue = function(value)
     return value ~= nil and value or 10
@@ -71,7 +72,6 @@ local function create(module, appId)
 
   local line = form.addLine("")
   form.addTextButton(line, nil, STR("SaveToFlash"), function()
-    lastSaveTime = os.clock()
     saveStep = 0
     writeDialog = form.openDialog({title = STR("Saving"), message = STR("WritingSaveCommand"), closeWhenClickOutside = false, buttons= {
       {label = STR("Cancel"), action = function()
@@ -81,20 +81,18 @@ local function create(module, appId)
         end
       end}
     }, wakeup = function()
-      if lastSaveTime + 1 > os.clock() then
-        if saveStep == 0 then
-          if SensorWriteParameter({sensor = sensor}, 0x15, 7) then
-            saveStep = 1
-          end
-        elseif saveStep == 1 then
-          if SensorWriteParameter({sensor = sensor}, 0x30, 0) then
-            if writeDialog ~= nil then
-              writeDialog:message(STR("SaveSuccessfully"))
-            end
-            saveStep = 2
-          end
+      if saveStep == 0 then
+        -- the changed values must reach the device before it saves them
+        if not ConfigHasPendingWrites() and SensorWriteParameter({sensor = sensor}, 0x15, 7) then
+          saveStep = 1
         end
-        lastSaveTime = os.clock()
+      elseif saveStep == 1 then
+        if SensorWriteParameter({sensor = sensor}, 0x30, 0) then
+          if writeDialog ~= nil then
+            writeDialog:message(STR("SaveSuccessfully"))
+          end
+          saveStep = 2
+        end
       end
     end})
     return 0
@@ -114,6 +112,7 @@ local function create(module, appId)
             if parameter.value >= 40 then
               print("Build 65s form")
               for _, extP in ipairs(series65Parameters) do
+                extP.value = nil
                 extP.state = FieldState.INIT
                 extP.fieldFunction(extP)
                 Params[#Params + 1] = extP
@@ -137,4 +136,4 @@ local function create(module, appId)
   return {sensor = sensor, needIdle = false}
 end
 
-return {create = create, name = "XAct", wakeup = ConfigWakeup}
+return {create = create, name = "XAct", wakeup = ConfigWakeup, close = ConfigClose}

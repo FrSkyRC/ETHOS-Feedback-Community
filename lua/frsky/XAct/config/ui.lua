@@ -35,6 +35,62 @@ ResponsePhyId = PHY_ID_NOT_SET
 Params = {}
 ReceiveValueHandler = nil
 
+-- Each serial.open() returns a new handle, and the S.Port connector is stopped whenever one of them is garbage
+-- collected. Drop the handle and collect it right away, so that it can't stop a connection opened later.
+function ReleaseSportConnection()
+  if SportConnection ~= nil then
+    SportConnection = nil
+    collectgarbage()
+  end
+end
+
+function SetConnectionType(value)
+  WorkingConnectionType = value
+  if (WorkingConnectionType == ConnectionType.RF) then
+    ReleaseSportConnection()
+    print("RF module is activated")
+  else
+    if SportConnection == nil then
+      SportConnection = serial.open("sport", SportInterfaceBandrate, "8N1", true)
+    end
+    if SportConnection ~= nil then
+      print("S.Port interface is activated")
+    else
+      print("Failed to activate S.Port interface")
+    end
+  end
+end
+
+-- Module types able to forward S.Port frames to the receiver (PXX2, Multimodule, CRSF). A constant missing from
+-- an older firmware is skipped.
+local SPORT_OUTPUT_MODULE_TYPES = {}
+for _, name in ipairs({"MODULE_TYPE_ISRM", "MODULE_TYPE_XJT_LITE", "MODULE_TYPE_R9M_ACCESS", "MODULE_TYPE_R9M_LITE_ACCESS",
+                       "MODULE_TYPE_R9M_LITE_PRO_ACCESS", "MODULE_TYPE_TD_ISRM", "MODULE_TYPE_TW_ISRM", "MODULE_TYPE_TW_LITE",
+                       "MODULE_TYPE_TD_ISRM_PRO", "MODULE_TYPE_TD_ISRM_RS", "MODULE_TYPE_MULTIMODULE",
+                       "MODULE_TYPE_ELRS", "MODULE_TYPE_CROSSFIRE", "MODULE_TYPE_MLRS"}) do
+  local moduleType = _G[name]
+  if moduleType ~= nil then
+    SPORT_OUTPUT_MODULE_TYPES[moduleType] = true
+  end
+end
+
+-- True when an enabled RF module can reach the device. When it can't be known, assume it can (RF stays the default).
+function HasSPortCompatibleModule()
+  if model == nil or model.getModule == nil then
+    return true
+  end
+  for index = 0, 3 do
+    local module = model.getModule(index)
+    if module == nil then
+      break
+    end
+    if module:enable() and SPORT_OUTPUT_MODULE_TYPES[module:type()] then
+      return true
+    end
+  end
+  return false
+end
+
 function BuildConnectionChoice(appIdRange)
   if appIdRange ~= nil then
     AppIdStart = appIdRange.appIdStart
@@ -47,23 +103,7 @@ function BuildConnectionChoice(appIdRange)
   }
   local field = form.addChoiceField(line, nil, valuePairs, function()
     return WorkingConnectionType
-  end, function(value)
-    WorkingConnectionType = value
-    if (WorkingConnectionType == ConnectionType.RF) then
-      if SportConnection ~= nil then
-        -- SportConnection:destroy()
-      end
-      SportConnection = nil
-      print("RF module is activated")
-    else
-      SportConnection = serial.open("sport", SportInterfaceBandrate, "8N1", true)
-      if SportConnection ~= nil then
-        print("S.Port interface is activated")
-      else
-        print("Failed to activate S.Port interface")
-      end
-    end
-  end)
+  end, SetConnectionType)
 end
 
 local function getValue(param)
@@ -271,6 +311,7 @@ local phyIdPairs = {{"00", 0}, {"01", 1}, {"02", 2}, {"03", 3}, {"04", 4}, {"05"
                     {"18", 24}, {"19", 25}, {"1A", 26},}
 
 function CreatePhyIdField(param)
+  param.isPhyId = true
   if param.extraInfo == nil then
     param.extraInfo = {}
   end
@@ -280,13 +321,18 @@ end
 
 local requestInProgress = false
 local lastRquestTime = 0
+local requestTimeouts = 0
+
+-- Consecutive request timeouts after which the device is searched again on the S.Port interface
+local MAX_REQUEST_TIMEOUTS = 3
 
 function ConfigCreate()
   print("Enter config page, InitPage()")
   requestInProgress = false
   lastRquestTime = 0
+  requestTimeouts = 0
   WorkingConnectionType = ConnectionType.RF
-  SportConnection = nil
+  ReleaseSportConnection()
   RollCalledPhyIdIndex = 0
   ConnectedPhyId = PHY_ID_NOT_SET
   ConnectedAppId = 0
@@ -294,6 +340,10 @@ function ConfigCreate()
   ResponsePhyId = PHY_ID_NOT_SET
   if ProtocolReset ~= nil then
     ProtocolReset()
+  end
+  if not HasSPortCompatibleModule() then
+    print("No RF module can reach the device, use the S.Port interface")
+    SetConnectionType(ConnectionType.SPort)
   end
 
   for index, parameter in pairs(Params) do
@@ -309,6 +359,15 @@ function ConfigCreate()
       parameter.fieldFunction(parameter)
     end
   end
+end
+
+function ConfigHasPendingWrites()
+  for _, parameter in pairs(Params) do
+    if parameter.state == FieldState.DIRTY then
+      return true
+    end
+  end
+  return false
 end
 
 function SensorIdle(data, idle)
@@ -378,20 +437,31 @@ function ConfigWakeup(data)
       ProtocolPoll(calledPhyId)
     end
 
-    if ConnectedAppId == 0 then
+    if ConnectedPhyId == PHY_ID_NOT_SET then
+      -- discovery, or search again for the same device (same appId) when it doesn't answer anymore
       local frames = ProtocolRead()
       if frames == nil then
         return
       end
       for i = 1, #frames do
         local frame = frames[i]
-        if frame.discover and frame.appId >= AppIdStart and frame.appId <= AppIdEnd then
+        local appIdMatches
+        if ConnectedAppId == 0 then
+          appIdMatches = frame.appId >= AppIdStart and frame.appId <= AppIdEnd
+        else
+          appIdMatches = frame.appId == ConnectedAppId
+        end
+        if frame.discover and appIdMatches then
           ConnectedAppId = frame.appId
           ConnectedPhyId = frame.physId
           print("Connected appId: 0x", string.format("%04X", ConnectedAppId))
           print("Connected phyId: 0x", string.format("%02X", ConnectedPhyId))
           break
         end
+      end
+      if ConnectedPhyId == PHY_ID_NOT_SET then
+        -- no request until the device is found, they would be sent to nobody and use up their retries
+        return
       end
     end
   else
@@ -452,9 +522,16 @@ function ConfigWakeup(data)
         ReceiveValueHandler()
       end
       requestInProgress = false
+      requestTimeouts = 0
     elseif os.clock() - lastRquestTime > 1 then
       print("Request timeout")
       requestInProgress = false
+      requestTimeouts = requestTimeouts + 1
+      if requestTimeouts >= MAX_REQUEST_TIMEOUTS and WorkingConnectionType == ConnectionType.SPort and SportConnection ~= nil then
+        print("Device not answering, search it again")
+        requestTimeouts = 0
+        ConnectedPhyId = PHY_ID_NOT_SET
+      end
     end
   else
     for index, parameter in pairs(Params) do
@@ -493,6 +570,11 @@ function ConfigWakeup(data)
               data.sensor:appId(oldAppId & 0xFFF0 | parameter.value)
             end
           end
+          if parameter.isPhyId and WorkingConnectionType == ConnectionType.SPort and SportConnection ~= nil then
+            -- the frame above was still sent to the old physical ID, the device answers on the new one from now on
+            ConnectedPhyId = PhysIdTable[(parameter.value & 0x1F) + 1]
+            print("Connected phyId: 0x", string.format("%02X", ConnectedPhyId))
+          end
           requestInProgress = false
           parameter.state = FieldState.IDLE
           return
@@ -506,4 +588,5 @@ function ConfigClose(data)
   if data ~= nil and (data.needIdle == nil or data.needIdle) then
     SensorIdle(data, false)
   end
+  ReleaseSportConnection()
 end
