@@ -140,7 +140,8 @@
             "MultipleCpuidFilesMessage": "Multiple matching .cpuid files were detected on drive {{ drive }}. Please remove the extra .cpuid files manually, or let Suite remove all .cpuid files for you. After reconnecting the transmitter, ETHOS will create the correct identity file.",
             "RemoveAllCpuidFiles": "Remove all identity files",
             "FirmwareNotAllowed": "Firmware not allowed",
-            "RadioMinVersionLabel": "This batch of {{radio}} only supports versions above {{minVersion}}"
+            "RadioMinVersionLabel": "This batch of {{radio}} only supports versions above {{minVersion}}",
+            "RemoteMode": "Remote control mode"
         },
         "Module": {
             "RFModule": "RF module",

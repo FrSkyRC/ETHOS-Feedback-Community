@@ -121,7 +121,8 @@
             "MultipleCpuidFilesMessage": "Se han detectado varios archivos .cpuid iguales en la unidad {{ drive }}. Elimine manualmente los archivos .cpuid no necesarios, o deje que la Suite elimine todos los archivos .cpuid por usted. Después de volver a conectar la emisora, ETHOS creará un archivo correcto de identidad.",
             "RemoveAllCpuidFiles": "Borrar todos los archivos de identidad",
             "FirmwareNotAllowed": "Firmware no permitido",
-            "RadioMinVersionLabel": "Este tipo de {{radio}} solo soporta las versiones de arriba {{minVersion}}"
+            "RadioMinVersionLabel": "Este tipo de {{radio}} solo soporta las versiones de arriba {{minVersion}}",
+            "RemoteMode": "Remote control mode"
         },
         "Module": {
             "RFModule": "Módulo de RF",

@@ -140,7 +140,8 @@
             "MultipleCpuidFilesMessage": "Na disku boli zistené viaceré zodpovedajúce súbory .cpuid {{ drive }}. Odstráňte ďalšie súbory .cpuid manuálne, aleb4o nechajte Suite odstrániť všetky súbory .cpuid pre vás. Po opätovnom pripojení vysielača ETHOS vytvorí správny súbor totožnosti.",
             "RemoveAllCpuidFiles": "Odstránenie všetkých súborov totožnosti",
             "FirmwareNotAllowed": "Firmvér nie je povolený",
-            "RadioMinVersionLabel": "Táto šarža z {{radio}}  podporuje iba vyššie uvedené verzie {{minVersion}}"
+            "RadioMinVersionLabel": "Táto šarža z {{radio}}  podporuje iba vyššie uvedené verzie {{minVersion}}",
+            "RemoteMode": "Remote control mode"
         },
         "Module": {
             "RFModule": "RF Modul",
