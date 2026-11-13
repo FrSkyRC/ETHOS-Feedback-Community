@@ -142,7 +142,7 @@
             "FirmwareNotAllowed": "Firmvér nie je povolený",
             "RadioMinVersionLabel": "Táto šarža z {{radio}}  podporuje iba vyššie uvedené verzie {{minVersion}}",
             "RemoteMode": "Mód vzdialeného ovládania",
-            "Disconnected": "Radio disconnected"
+            "Disconnected": "Rádio odpojené"
         },
         "Module": {
             "RFModule": "RF Modul",
