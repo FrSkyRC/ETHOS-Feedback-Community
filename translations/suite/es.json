@@ -123,7 +123,7 @@
             "FirmwareNotAllowed": "Firmware no permitido",
             "RadioMinVersionLabel": "Este tipo de {{radio}} solo soporta las versiones de arriba {{minVersion}}",
             "RemoteMode": "Modo control remoto",
-            "Disconnected": "Radio disconnected"
+            "Disconnected": "Radio desconectada"
         },
         "Module": {
             "RFModule": "Módulo de RF",
