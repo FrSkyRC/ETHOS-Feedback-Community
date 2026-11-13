@@ -50,7 +50,8 @@ function SetConnectionType(value)
     ReleaseSportConnection()
     print("RF module is activated")
   else
-    if SportConnection == nil then
+    -- no serial library in the simulator
+    if SportConnection == nil and serial ~= nil then
       SportConnection = serial.open("sport", SportInterfaceBandrate, "8N1", true)
     end
     if SportConnection ~= nil then
