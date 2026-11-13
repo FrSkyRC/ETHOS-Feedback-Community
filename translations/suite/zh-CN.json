@@ -167,7 +167,8 @@
             "RemoveAllCpuidFiles": "删除所有身份识别文件",
             "FirmwareNotAllowed": "Firmware not allowed",
             "RadioMinVersionLabel": "该批次的 {{ radio }} 仅支持 {{ minVersion }} 以上的版本",
-            "RemoteMode": "远控模式"
+            "RemoteMode": "远控模式",
+            "Disconnected": "Radio disconnected"
         },
         "Module": {
             "RFModule": "射频模块",

@@ -141,7 +141,8 @@
             "RemoveAllCpuidFiles": "Odstránenie všetkých súborov totožnosti",
             "FirmwareNotAllowed": "Firmvér nie je povolený",
             "RadioMinVersionLabel": "Táto šarža z {{radio}}  podporuje iba vyššie uvedené verzie {{minVersion}}",
-            "RemoteMode": "Mód vzdialeného ovládania"
+            "RemoteMode": "Mód vzdialeného ovládania",
+            "Disconnected": "Radio disconnected"
         },
         "Module": {
             "RFModule": "RF Modul",

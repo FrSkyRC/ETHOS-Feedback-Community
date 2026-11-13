@@ -141,7 +141,8 @@
             "RemoveAllCpuidFiles": "Fjern alle .cpuid-filer",
             "FirmwareNotAllowed": "Dette er ikke en tillatt Firmware",
             "RadioMinVersionLabel": "Denne utgaven av {{radio}} støtter kun versjoner over {{minVersion}}",
-            "RemoteMode": "Remote control mode"
+            "RemoteMode": "Remote control mode",
+            "Disconnected": "Radio disconnected"
         },
         "Module": {
             "RFModule": "RF Modul",

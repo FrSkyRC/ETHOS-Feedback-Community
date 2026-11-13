@@ -141,7 +141,8 @@
             "RemoveAllCpuidFiles": "Alle Identitätsdateien (.cpuid) entfernen",
             "FirmwareNotAllowed": "Firmware nicht zulässig",
             "RadioMinVersionLabel": "Diese Charge von {{radio}} unterstützt nur Versionen über {{minVersion}}.",
-            "RemoteMode": "Fernsteuerungsmodus"
+            "RemoteMode": "Fernsteuerungsmodus",
+            "Disconnected": "Radio disconnected"
         },
         "Module": {
             "RFModule": "HF-Modul",

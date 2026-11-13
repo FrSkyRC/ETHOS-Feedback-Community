@@ -141,7 +141,8 @@
             "RemoveAllCpuidFiles": "Supprimer tous les fichiers d'identification",
             "FirmwareNotAllowed": "Firmware not allowed",
             "RadioMinVersionLabel": "This batch of {{radio}} only supports versions above {{minVersion}}",
-            "RemoteMode": "Remote control mode"
+            "RemoteMode": "Remote control mode",
+            "Disconnected": "Radio disconnected"
         },
         "Module": {
             "RFModule": "Module RF",
