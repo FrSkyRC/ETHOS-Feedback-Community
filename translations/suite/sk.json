@@ -760,7 +760,7 @@
         "ConfirmCancelDownload": "Potvrďte zrušenie sťahovania",
         "ConfirmCancelDownloadLabel": "Naozaj chcete zrušiť sťahovanie? Sťahovanie môžete reštartovať neskôr, ale priebeh sa nezachová.",
         "NetworkError": "Počas procesu sťahovania aktualizátora sa vyskytla chyba siete.",
-        "UpdateDownloadedLabel": "Inštalátor aktualizácie bol stiahnutý. chcete?",
+        "UpdateDownloadedLabel": "Inštalátor aktualizácie bol stiahnutý.",
         "InstallUpdate": "Inštalovať aktualizáciu",
         "DeleteInstaller": "Zmazanie inštalátora",
         "ConfirmDeleteInstaller": "Naozaj chcete odstrániť inštalátor aktualizácie?",

@@ -142,7 +142,7 @@
             "FirmwareNotAllowed": "Firmware nicht zulässig",
             "RadioMinVersionLabel": "Diese Charge von {{radio}} unterstützt nur Versionen über {{minVersion}}.",
             "RemoteMode": "Fernsteuerungsmodus",
-            "Disconnected": "Radio disconnected"
+            "Disconnected": "Sender getrennt"
         },
         "Module": {
             "RFModule": "HF-Modul",
