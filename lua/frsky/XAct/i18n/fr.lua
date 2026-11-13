@@ -24,4 +24,8 @@ return {
   WritingSaveCommand = "Writing save command ...",
   SaveSuccessfully = "Save successfully!",
   Cancel = "Cancel",
+  UnsavedChanges = "Modifications non enregistrées",
+  SaveBeforeLeaving = "Enregistrer les modifications dans la flash avant de quitter ?",
+  Save = "Enregistrer",
+  DontSave = "Ne pas enregistrer",
 }

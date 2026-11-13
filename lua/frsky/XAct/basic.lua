@@ -9,6 +9,8 @@ local series65Parameters = {
 local series65build = false
 local writeDialog = nil
 local saveStep = 0
+local sensor = nil
+local exitRequested = false -- system.exit() is called from the page wakeup
 
 local xActAppIdPairs = {{"6800", 0}, {"6801", 1}, {"6802", 2}, {"6803", 3}, {"6804", 4}, {"6805", 5}, {"6806", 6}, {"6807", 7},
                         {"6808", 8}, {"6809", 9}, {"680A", 10}, {"680B", 11}, {"680C", 12}, {"680D", 13}, {"680E", 14}, {"680F", 15},}
@@ -51,12 +53,53 @@ local parameters = {
   { fieldFunction = CreateNumberField, fieldName = STR("Deadband"), pageAddress = 0x21, extraInfo = {min = 0, max = 90} },
 }
 
+-- Sends the save command, once the changed values reached the device, in a progress dialog which can be cancelled.
+-- When it is done, a toast (since Ethos 26.2.0, before the dialog shows the message). onSaved is called then.
+local function save(onSaved)
+  print("Save to flash")
+  saveStep = 0
+  writeDialog = form.openWaitDialog({title = STR("Saving"), message = STR("WritingSaveCommand"), progress = true,
+                                     closeLabel = STR("Cancel"), wakeup = function()
+    if saveStep == 0 then
+      -- the changed values must reach the device before it saves them
+      if not ConfigHasPendingWrites() and SensorWriteParameter({sensor = sensor}, 0x15, 7) then
+        saveStep = 1
+        writeDialog:value(50)
+      end
+    elseif saveStep == 1 then
+      if SensorWriteParameter({sensor = sensor}, 0x30, 0) then
+        ConfigUnsaved = false
+        saveStep = 2
+        print("Save to flash: done")
+        if system.toast ~= nil then
+          writeDialog:close()
+          writeDialog = nil
+          system.toast(STR("SaveSuccessfully"))
+        else
+          writeDialog:value(100)
+          writeDialog:message(STR("SaveSuccessfully"))
+        end
+        if onSaved ~= nil then
+          onSaved()
+        end
+      end
+    end
+  end, close = function()
+    -- closed by the user (Cancel)
+    if saveStep < 2 then
+      print("Save to flash: cancelled")
+    end
+    writeDialog = nil
+  end})
+end
+
 local function create(module, appId)
   series65build = false
+  exitRequested = false
 
   local appRange = {appIdStart = 0x6800, appIdEnd = 0x680F, module = 0xFFFF}
 
-  local sensor = sport.getSensor(appRange)
+  sensor = sport.getSensor(appRange)
 
   BuildConnectionChoice(appRange)
 
@@ -72,29 +115,7 @@ local function create(module, appId)
 
   local line = form.addLine("")
   form.addTextButton(line, nil, STR("SaveToFlash"), function()
-    saveStep = 0
-    writeDialog = form.openDialog({title = STR("Saving"), message = STR("WritingSaveCommand"), closeWhenClickOutside = false, buttons= {
-      {label = STR("Cancel"), action = function()
-        if writeDialog ~= nil then
-          writeDialog:close()
-          writeDialog = nil
-        end
-      end}
-    }, wakeup = function()
-      if saveStep == 0 then
-        -- the changed values must reach the device before it saves them
-        if not ConfigHasPendingWrites() and SensorWriteParameter({sensor = sensor}, 0x15, 7) then
-          saveStep = 1
-        end
-      elseif saveStep == 1 then
-        if SensorWriteParameter({sensor = sensor}, 0x30, 0) then
-          if writeDialog ~= nil then
-            writeDialog:message(STR("SaveSuccessfully"))
-          end
-          saveStep = 2
-        end
-      end
-    end})
+    save()
     return 0
   end)
 
@@ -136,4 +157,43 @@ local function create(module, appId)
   return {sensor = sensor, needIdle = false}
 end
 
-return {create = create, name = "XAct", wakeup = ConfigWakeup, close = ConfigClose}
+local function wakeup(data)
+  if exitRequested then
+    exitRequested = false
+    system.exit()
+    return
+  end
+  ConfigWakeup(data)
+end
+
+-- Leaving the page (back arrow, RTN) with changes not saved to flash: they would be lost when the servo is powered off
+local function event(data, category, value, x, y)
+  if category == EVT_CLOSE and ConfigHasUnsavedChanges() then
+    print("Unsaved changes, confirm before leaving")
+    form.openDialog({title = STR("UnsavedChanges"), message = STR("SaveBeforeLeaving"), buttons = {
+      {label = STR("Save"), action = function()
+        save(function()
+          if writeDialog ~= nil then
+            -- the dialog showing the message (no toast before Ethos 26.2.0)
+            writeDialog:close()
+            writeDialog = nil
+          end
+          exitRequested = true
+        end)
+        return true
+      end},
+      {label = STR("DontSave"), action = function()
+        print("Leave without saving")
+        exitRequested = true
+        return true
+      end},
+      {label = STR("Cancel"), action = function()
+        return true
+      end},
+    }})
+    return true
+  end
+  return false
+end
+
+return {create = create, name = "XAct", wakeup = wakeup, event = event, close = ConfigClose}

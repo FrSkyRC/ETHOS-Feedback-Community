@@ -24,4 +24,8 @@ return {
   WritingSaveCommand = "Writing save command ...",
   SaveSuccessfully = "Save successfully!",
   Cancel = "Cancel",
+  UnsavedChanges = "Unsaved changes",
+  SaveBeforeLeaving = "Save the changes to flash before leaving?",
+  Save = "Save",
+  DontSave = "Don't save",
 }

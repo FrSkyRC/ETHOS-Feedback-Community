@@ -34,6 +34,7 @@ LastPolledPhyId = PHY_ID_NOT_SET
 ResponsePhyId = PHY_ID_NOT_SET
 Params = {}
 ReceiveValueHandler = nil
+ConfigUnsaved = false -- a parameter was written to the device since the last save to flash
 
 -- Each serial.open() returns a new handle, and the S.Port connector is stopped whenever one of them is garbage
 -- collected. Drop the handle and collect it right away, so that it can't stop a connection opened later.
@@ -97,7 +98,8 @@ function BuildConnectionChoice(appIdRange)
     AppIdStart = appIdRange.appIdStart
     AppIdEnd = appIdRange.appIdEnd
   end
-  local line = form.addLine(STR and STR("ConnectionType") or "Connection Type")
+  local label = STR and STR("ConnectionType") or "Connection Type"
+  local line = form.addLine(label)
   local valuePairs = {
     {STR and STR("RFModule") or "RF module", ConnectionType.RF},
     {STR and STR("SPortInterface") or "S.Port interface", ConnectionType.SPort},
@@ -105,7 +107,15 @@ function BuildConnectionChoice(appIdRange)
   local field = form.addChoiceField(line, nil, valuePairs, function()
     return WorkingConnectionType
   end, SetConnectionType)
+  -- the title of the menu (since Ethos 1.6.1)
+  if field ~= nil and field.title ~= nil then
+    field:title(label)
+  end
 end
+
+-- Shown by the fields not read from the device (not answered yet, or never)
+UNREAD_TEXT = "---"
+local UNREAD_VALUE = -1 -- the value of the "---" choice
 
 local function getValue(param)
   if param.getValue ~= nil then
@@ -165,10 +175,21 @@ function CreateChoiceField(param)
 
   local line = form.addLine(param.fieldName)
   local field = form.addChoiceField(line, nil, param.extraInfo.valuePairs, function()
+    if param.value == nil then
+      return UNREAD_VALUE
+    end
     return getValue(param)
   end, function(value)
     return setValue(param, value)
   end)
+  -- Until the value is read, a single "---" choice (the choices can be changed since Ethos 1.6.2, before
+  -- "???" is shown)
+  if field.values ~= nil then
+    field:values({{UNREAD_TEXT, UNREAD_VALUE}})
+    param.showValues = function()
+      field:values(param.extraInfo.valuePairs)
+    end
+  end
   field:enable(false)
   param.field = field
 end
@@ -198,6 +219,17 @@ end
         value (number) - The current value for the address. 3 bytes
         state (number) - The field state, see FieldState
 --]]
+-- The text of a number field, as Ethos shows it (a text handler replaces the prefix, decimals and suffix)
+local function formatNumber(value, extraInfo)
+  local text
+  if extraInfo.prec ~= nil and extraInfo.prec > 0 then
+    text = string.format("%." .. extraInfo.prec .. "f", value / 10 ^ extraInfo.prec)
+  else
+    text = string.format("%d", value)
+  end
+  return (extraInfo.prefix or "") .. text .. (extraInfo.suffix or "")
+end
+
 function CreateNumberField(param)
   if param.extraInfo == nil or param.extraInfo.min == nil or param.extraInfo.max == nil then
     print("Field create failed (" .. param.fieldName .. ") - Missing min/max")
@@ -223,9 +255,15 @@ function CreateNumberField(param)
   if param.extraInfo.prec then
     field:decimals(param.extraInfo.prec)
   end
-  if param.extraInfo.text then
-    field:text(param.extraInfo.text)
-  end
+  field:text(function(value)
+    if param.value == nil then
+      return UNREAD_TEXT
+    elseif param.extraInfo.text then
+      return param.extraInfo.text(value)
+    else
+      return formatNumber(value, param.extraInfo)
+    end
+  end)
   if field.defaultStep then
     if param.extraInfo.defaultStep then
       field:defaultStep(param.extraInfo.defaultStep)
@@ -288,6 +326,9 @@ end
 function CreateStaticText(param)
   local line = form.addLine(param.fieldName)
   form.addStaticText(line, nil, function()
+    if param.value == nil then
+      return UNREAD_TEXT
+    end
     return getValue(param)
   end)
 end
@@ -318,6 +359,10 @@ function CreatePhyIdField(param)
   end
   param.extraInfo.valuePairs = phyIdPairs
   CreateChoiceField(param)
+  -- the title of the menu (since Ethos 1.6.1)
+  if param.field ~= nil and param.field.title ~= nil then
+    param.field:title(param.fieldName)
+  end
 end
 
 local requestInProgress = false
@@ -339,6 +384,7 @@ function ConfigCreate()
   ConnectedAppId = 0
   LastPolledPhyId = PHY_ID_NOT_SET
   ResponsePhyId = PHY_ID_NOT_SET
+  ConfigUnsaved = false
   if ProtocolReset ~= nil then
     ProtocolReset()
   end
@@ -369,6 +415,11 @@ function ConfigHasPendingWrites()
     end
   end
   return false
+end
+
+-- Changes not saved to flash yet: written to the device, or still to write
+function ConfigHasUnsavedChanges()
+  return ConfigUnsaved or ConfigHasPendingWrites()
 end
 
 function SensorIdle(data, idle)
@@ -510,6 +561,11 @@ function ConfigWakeup(data)
           parameter.value = valueRead
           parameter.state = FieldState.RECEIVED
           parameter.tryTimes = nil
+          if parameter.showValues ~= nil then
+            -- the choices instead of "---"
+            parameter.showValues()
+            parameter.showValues = nil
+          end
           if parameter.field ~= nil then
             if (parameter.extraInfo == nil) or (not parameter.extraInfo.disable) then
               parameter.field:enable(true)
@@ -563,6 +619,7 @@ function ConfigWakeup(data)
         end
         if SensorWriteParameter(data, parameter.pageAddress, valueWrite) then
           print("sensor:writeParameter(0x" .. string.format("%02X", parameter.pageAddress) .. "): " .. string.format("%X", valueWrite))
+          ConfigUnsaved = true
           if parameter.isAppId ~= nil and parameter.isAppId then
             if WorkingConnectionType == ConnectionType.SPort and SportConnection ~= nil then
               ConnectedAppId = (ConnectedAppId & 0xFFF0) | parameter.value
