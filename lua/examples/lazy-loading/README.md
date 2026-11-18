@@ -19,12 +19,11 @@ Avoid lazy loading when:
 - The first-use delay would happen in a hot path such as a frequent `wakeup` loop.
 - The widget/tool persists its own settings via `read`/`write` — see "Known limitations" below; wrapping these usually loads the module almost immediately anyway.
 
-The reusable helper is `lazy.lua`. Copy that file next to your script, then wrap the callbacks in the registration table you pass to `system.registerSystemTool()` or `system.registerWidget()`.
+The reusable helper is `lazy.lua` (in the directory 'shared'). Copy that file next to your script, then wrap the callbacks in the registration table you pass to `system.registerSystemTool()` or `system.registerWidget()`.
 
 Files in this example:
 
 - `main.lua` loads the two tiny registration demos.
-- `lazy.lua` contains the reusable lazy-loading helper.
 - `tool.lua` demonstrates lazy `registerSystemTool()` registration.
 - `widget.lua` demonstrates lazy `registerWidget()` registration.
 - `tool_impl.lua` and `widget_impl.lua` contain the heavier callback code that is loaded on first use.
@@ -42,7 +41,7 @@ The pattern is:
 Minimal system tool registration:
 
 ```lua
-local lazy = assert(loadfile("lazy.lua"))()
+local lazy = assert(loadfile("SCRIPTS:/shared/lazy.lua"))()
 
 local tool = lazy.wrap({
   name = "My Tool",
@@ -54,7 +53,7 @@ system.registerSystemTool(tool)
 Minimal widget registration:
 
 ```lua
-local lazy = assert(loadfile("lazy.lua"))()
+local lazy = assert(loadfile("SCRIPTS:/shared/lazy.lua"))()
 
 local widget = lazy.wrap({
   key = "my-widget",

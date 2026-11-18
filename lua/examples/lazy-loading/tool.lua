@@ -3,7 +3,7 @@
 -- This file is intentionally small. It registers metadata immediately and
 -- defers the real callbacks to tool_impl.lua.
 
-local lazy = assert(loadfile("lazy.lua"))()
+local lazy = assert(loadfile("SCRIPTS:/shared/lazy.lua"))()
 
 local tool = lazy.wrap({
   name = "Lua Lazy Tool",

@@ -3,7 +3,7 @@
 -- This file is intentionally small. It registers metadata immediately and
 -- defers the real callbacks to widget_impl.lua.
 
-local lazy = assert(loadfile("lazy.lua"))()
+local lazy = assert(loadfile("SCRIPTS:/shared/lazy.lua"))()
 
 local widget = lazy.wrap({
   key = "lazy",
