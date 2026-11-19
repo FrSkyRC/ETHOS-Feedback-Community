@@ -276,7 +276,7 @@
             "LoadLastControls": "Cargar las últimas posiciones de control",
             "SuspendSimulator": "Suspender",
             "ScreenshotCopied": "Se ha copiado la pantalla en el portapapeles",
-            "AddModelSensors": "Add sensors from model"
+            "AddModelSensors": "Agregar sensores desde el modelo"
         },
         "BackupRecovery": {
             "Advanced": "Avanzado",
