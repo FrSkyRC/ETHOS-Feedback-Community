@@ -320,7 +320,8 @@
             "LoadLastLayout": "载入最后页面布局",
             "LoadLastControls": "载入最后硬件位置",
             "SuspendSimulator": "挂起",
-            "ScreenshotCopied": "截图已复制到剪贴板"
+            "ScreenshotCopied": "截图已复制到剪贴板",
+            "AddModelSensors": "添加来自于模型的传感器"
         },
         "AppTitle": "ETHOS",
         "Theme": {

@@ -320,7 +320,8 @@
             "LoadLastLayout": "Wczytaj ostatni układ strony",
             "LoadLastControls": "Wczytaj ostatnie pozycje elementów sterujących",
             "SuspendSimulator": "Zawieś",
-            "ScreenshotCopied": "Zrzut ekranu skopiowano do schowka"
+            "ScreenshotCopied": "Zrzut ekranu skopiowano do schowka",
+            "AddModelSensors": "Add sensors from model"
         },
         "AppTitle": "ETHOS",
         "Theme": {

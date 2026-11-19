@@ -275,7 +275,8 @@
             "LoadLastLayout": "Cargar la última plantilla de página",
             "LoadLastControls": "Cargar las últimas posiciones de control",
             "SuspendSimulator": "Suspender",
-            "ScreenshotCopied": "Se ha copiado la pantalla en el portapapeles"
+            "ScreenshotCopied": "Se ha copiado la pantalla en el portapapeles",
+            "AddModelSensors": "Add sensors from model"
         },
         "BackupRecovery": {
             "Advanced": "Avanzado",

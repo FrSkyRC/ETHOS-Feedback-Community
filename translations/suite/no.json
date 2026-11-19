@@ -294,7 +294,8 @@
             "LoadLastLayout": "Last inn siste sideoppsett",
             "LoadLastControls": "Last inn siste posisjon av kontrollene",
             "SuspendSimulator": "Pause",
-            "ScreenshotCopied": "Skjermbilde kopiert til utklippstavlen"
+            "ScreenshotCopied": "Skjermbilde kopiert til utklippstavlen",
+            "AddModelSensors": "Add sensors from model"
         },
         "BackupRecovery": {
             "Advanced": "Avansert",

@@ -294,7 +294,8 @@
             "LoadLastLayout": "Letztes Seitenlayout laden",
             "LoadLastControls": "Letzte Steuerpositionen laden",
             "SuspendSimulator": "Aussetzen",
-            "ScreenshotCopied": "Screenshot in die Zwischenablage kopiert"
+            "ScreenshotCopied": "Screenshot in die Zwischenablage kopiert",
+            "AddModelSensors": "Add sensors from model"
         },
         "BackupRecovery": {
             "Advanced": "Erweitert",

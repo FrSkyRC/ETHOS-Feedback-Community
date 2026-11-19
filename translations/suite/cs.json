@@ -294,7 +294,8 @@
             "LoadLastLayout": "Načíst poslední rozvržení stránky",
             "LoadLastControls": "Načíst poslední pozice ovládacích prvků",
             "SuspendSimulator": "Pozastavit",
-            "ScreenshotCopied": "Snímek obrazovky zkopírován do schránky"
+            "ScreenshotCopied": "Snímek obrazovky zkopírován do schránky",
+            "AddModelSensors": "Add sensors from model"
         },
         "BackupRecovery": {
             "Advanced": "Pokročilé",
