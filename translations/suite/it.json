@@ -343,7 +343,7 @@
             "ToolbarLight": "Chiaro",
             "ToolbarNone": "Nessuno",
             "ToolbarCustom": "Immagine Custom",
-            "ToolbarHint": "L'impostazione predefinita mantiene l'immagine di sfondo scura integrata. "Chiaro" e "Nessuno" sono impostazioni predefinite integrate.",
+            "ToolbarHint": "L'impostazione predefinita mantiene l'immagine di sfondo scura integrata. \"Chiaro\" e \"Nessuno\" sono impostazioni predefinite integrate.",
             "HighlightHint": "ETHOS inserisce questo testo nelle impostazioni di evidenziazione quando viene selezionato il tema.",
             "Colors": "Colori",
             "Generate": "Genera tema",
