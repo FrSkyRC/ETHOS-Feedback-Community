@@ -295,7 +295,7 @@
             "LoadLastControls": "Letzte Steuerpositionen laden",
             "SuspendSimulator": "Aussetzen",
             "ScreenshotCopied": "Screenshot in die Zwischenablage kopiert",
-            "AddModelSensors": "Add sensors from model"
+            "AddModelSensors": "Sensoren aus dem Modell hinzufügen"
         },
         "BackupRecovery": {
             "Advanced": "Erweitert",
