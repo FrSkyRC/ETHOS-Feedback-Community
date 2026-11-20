@@ -54,8 +54,8 @@
             "OutputSize": "Dimensione Output",
             "KeepAspectRatio": "Mantieni le proporzioni",
             "CustomSize": "Dimensione personalizzata",
-            "HomeLayoutSize": "Select size from ETHOS home layout",
-            "ClickLayoutSlot": "Click a slot to set the output size"
+            "HomeLayoutSize": "Seleziona la dimensione dalla home di ETHOS",
+            "ClickLayoutSlot": "Fai clic su uno slot per impostare le dimensioni di output"
         },
         "Audio": {
             "AudioManager": "Manager Audio",
