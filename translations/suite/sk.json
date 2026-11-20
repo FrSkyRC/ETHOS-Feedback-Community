@@ -53,7 +53,9 @@
             "SelectImageToEdit": "Vyberte obrázok na úpravu výstupu.",
             "OutputSize": "Veľkosť výstupu",
             "KeepAspectRatio": "Zachovať pomer strán",
-            "CustomSize": "Vlastný pomer strán"
+            "CustomSize": "Vlastný pomer strán",
+            "HomeLayoutSize": "Select size from ETHOS home layout",
+            "ClickLayoutSlot": "Click a slot to set the output size"
         },
         "Audio": {
             "AudioManager": "Správca zvukov",
@@ -509,7 +511,8 @@
         "AbortOperationWarning": "Prerušenie aktuálnej operácie môže poškodiť vaše zariadenie. Potvrďte, že chcete potratiť. Stlačte a držte pre zrušenie.",
         "Release": "Vydanie",
         "FoldersSupported": ". Adresáre sú podporované.",
-        "SelectFolder": "Vyberte adresár"
+        "SelectFolder": "Vyberte adresár",
+        "SelectRadio": "Zvoľte rádio"
     },
     "Components": {
         "ChooseVideo": {
@@ -585,7 +588,6 @@
         "DriverInstallReconnect": "Ovládač DFU nainštalovaný. Odpojte zariadenie a znova ho pripojte v režime DFU.",
         "DriverInstalled": "Ovládač DFU nainštalovaný. Bude sa používať pri pripojení zariadenia v režime DFU.",
         "SourceLocal": "Lokálny súbor",
-        "SelectRadio": "Zvoľte rádio",
         "NoBootloaders": "Na tomto serveri sa nenašiel žiadny bootloader.",
         "BootloaderLoading": "Načítanie bootloaderov ..."
     },

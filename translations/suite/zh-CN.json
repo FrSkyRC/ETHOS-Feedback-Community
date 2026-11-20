@@ -79,7 +79,9 @@
             "SelectImageToEdit": "选择图片并调整",
             "OutputSize": "图片大小",
             "KeepAspectRatio": "保持长宽比例",
-            "CustomSize": "自定义大小"
+            "CustomSize": "自定义大小",
+            "HomeLayoutSize": "基于ETHOS主页布局选择尺寸",
+            "ClickLayoutSlot": "点击一个槽位以设置输出尺寸"
         },
         "Audio": {
             "AudioManager": "音频管理器",
@@ -509,7 +511,8 @@
         "AbortOperationWarning": "中断当前操作可能会对你的设备造成损坏, 请确认是否需要中断当前操作, 长按以进行中断",
         "Release": "发布版本",
         "FoldersSupported": "，支持文件夹",
-        "SelectFolder": "选择文件夹"
+        "SelectFolder": "选择文件夹",
+        "SelectRadio": "选择遥控器"
     },
     "Components": {
         "ChooseVideo": {
@@ -585,7 +588,6 @@
         "DriverInstallReconnect": "DFU 驱动已安装, 请拔出设备, 再以 DFU 模式重新连接",
         "DriverInstalled": "DFU 驱动已安装, 设备以 DFU 模式连接后会自动使用",
         "SourceLocal": "本地文件",
-        "SelectRadio": "选择遥控器",
         "NoBootloaders": "此服务器上没有找到 Bootloader",
         "BootloaderLoading": "正在加载 Bootloader ..."
     },

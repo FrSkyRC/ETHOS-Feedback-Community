@@ -53,7 +53,9 @@
             "SelectImageToEdit": "Seleziona un immagine per per regolare l'output",
             "OutputSize": "Dimensione Output",
             "KeepAspectRatio": "Mantieni le proporzioni",
-            "CustomSize": "Dimensione personalizzata"
+            "CustomSize": "Dimensione personalizzata",
+            "HomeLayoutSize": "Select size from ETHOS home layout",
+            "ClickLayoutSlot": "Click a slot to set the output size"
         },
         "Audio": {
             "AudioManager": "Manager Audio",
@@ -509,7 +511,8 @@
         "AbortOperationWarning": "L'interruzione dell'operazione in corso potrebbe danneggiare il dispositivo. Conferma che desideri interrompere l'operazione. Tieni premuto per interrompere.",
         "Release": "Versione",
         "FoldersSupported": ". Cartelle supportate.",
-        "SelectFolder": "Seleziona cartella"
+        "SelectFolder": "Seleziona cartella",
+        "SelectRadio": "Seleziona la casella di opzione"
     },
     "Components": {
         "ChooseVideo": {
@@ -585,7 +588,6 @@
         "DriverInstallReconnect": "Driver DFU installato. Scollegare il dispositivo e ricollegarlo in modalità DFU.",
         "DriverInstalled": "Driver DFU installato. Verrà utilizzato quando un dispositivo viene collegato in modalità DFU.",
         "SourceLocal": "File locale",
-        "SelectRadio": "Seleziona la casella di opzione",
         "NoBootloaders": "Su questo server non è stato rilevato alcun bootloader.",
         "BootloaderLoading": "Caricamento dei bootloader ..."
     },

@@ -53,7 +53,9 @@
             "SelectImageToEdit": "Wählen Sie ein Bild aus, um die Ausgabe anzupassen.",
             "OutputSize": "Ausgabegröße",
             "KeepAspectRatio": "Seitenverhältnis beibehalten",
-            "CustomSize": "Individuelle Größe"
+            "CustomSize": "Individuelle Größe",
+            "HomeLayoutSize": "Select size from ETHOS home layout",
+            "ClickLayoutSlot": "Click a slot to set the output size"
         },
         "Audio": {
             "AudioManager": "Audio-Verwaltung",
@@ -509,7 +511,8 @@
         "AbortOperationWarning": "Das Abbrechen des aktuellen Vorgangs kann Ihr Gerät beschädigen. Bestätigen Sie, dass Sie abbrechen möchten. Zum Abbrechen gedrückt halten.",
         "Release": "Version",
         "FoldersSupported": "-Ordner werden unterstützt.",
-        "SelectFolder": "Ordner auswählen"
+        "SelectFolder": "Ordner auswählen",
+        "SelectRadio": "Sender auswählen"
     },
     "Components": {
         "ChooseVideo": {
@@ -585,7 +588,6 @@
         "DriverInstallReconnect": "DFU-Treiber installiert. Trennen Sie das Gerät und schließen Sie es erneut im DFU-Modus an.",
         "DriverInstalled": "DFU-Treiber installiert. Er kommt zum Einsatz, wenn ein Gerät im DFU-Modus angeschlossen wird.",
         "SourceLocal": "Lokale Datei",
-        "SelectRadio": "Sender auswählen",
         "NoBootloaders": "Auf diesem Server wurde kein Bootloader gefunden.",
         "BootloaderLoading": "Lade Bootloader..."
     },

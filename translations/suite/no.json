@@ -53,7 +53,9 @@
             "SelectImageToEdit": "Velg et bilde for å justere innstillingene",
             "OutputSize": "Størrelse på bilde",
             "KeepAspectRatio": "Behold størrelsesforhold",
-            "CustomSize": "Egendefinert størrelse"
+            "CustomSize": "Egendefinert størrelse",
+            "HomeLayoutSize": "Select size from ETHOS home layout",
+            "ClickLayoutSlot": "Click a slot to set the output size"
         },
         "Audio": {
             "AudioManager": "Lydhåndterer",
@@ -509,7 +511,8 @@
         "AbortOperationWarning": "Hvis du avslutter gjeldende prosess kan enheten din bli skadet. Bekreft at du ønsker å avslutte. Trykk og hold for å avslutte.",
         "Release": "Utgave",
         "FoldersSupported": ". Folders are supported.",
-        "SelectFolder": "Select folder"
+        "SelectFolder": "Select folder",
+        "SelectRadio": "Velg radio"
     },
     "Components": {
         "ChooseVideo": {
@@ -585,7 +588,6 @@
         "DriverInstallReconnect": "DFU driver installert. Koble fra enheten og koble til på nytt i DFU modus.",
         "DriverInstalled": "DFU driver installert. Den vil brukes når en enhet blir tilkoblet i DFU modus.",
         "SourceLocal": "Lokal fil",
-        "SelectRadio": "Velg radio",
         "NoBootloaders": "Ingen 'Bootloader' funnet på denne serveren.",
         "BootloaderLoading": "Laster 'Bootloadere' ..."
     },
