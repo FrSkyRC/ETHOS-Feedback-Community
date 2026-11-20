@@ -322,8 +322,8 @@
             "OutputSize": "Tamaño del resultado",
             "KeepAspectRatio": "Mantener la relación de aspecto",
             "CustomSize": "Tamaño personalizado",
-            "HomeLayoutSize": "Select size from ETHOS home layout",
-            "ClickLayoutSlot": "Click a slot to set the output size"
+            "HomeLayoutSize": "Seleccione el tamaño en el diseño de inicio de ETHOS",
+            "ClickLayoutSlot": "Haga click en un slot para establecer el tamaño de salida"
         },
         "AppTitle": "ETHOS",
         "Theme": {
