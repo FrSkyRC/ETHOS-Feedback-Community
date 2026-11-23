@@ -1,0 +1,18 @@
+77HOBBY.PL – Polski pakiet audio FrSky ETHOS
+
+Ten pakiet polskich komunikatów głosowych został przygotowany przez 77Hobby – partnera FrSky o statusie Premier Dealer – w ramach projektu kompleksowej polonizacji ekosystemu FrSky ETHOS, obejmującego:
+
+- system operacyjny ETHOS,
+- aplikację FrSky ETHOS Suite,
+- polskie komunikaty głosowe i telemetryczne (ten pakiet).
+
+Projekt rozwijany jest przez 77Hobby we współpracy z FrSky.
+
+Więcej informacji o polonizacji ETHOS, aktualizacjach projektu oraz dodatkowych pakietach audio będzie dostępnych na stronie:
+
+https://77hobby.pl/frsky-ethos-pl
+
+Warunki korzystania z pakietu opisano w pliku 00_LICENCJA.txt.
+
+Copyright © 2026 77Hobby
+https://77hobby.pl

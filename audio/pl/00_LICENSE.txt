@@ -1,0 +1,49 @@
+77Hobby – FrSky ETHOS Polish Audio Pack
+======================================
+
+Copyright © 2026 77Hobby
+https://77hobby.pl
+
+LICENSE
+
+The audio recordings included in the FrSky ETHOS Polish Audio Pack are licensed
+under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0
+International License (CC BY-NC-ND 4.0).
+
+Full license text:
+https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+
+Under this license, you may copy, use, and redistribute the original audio
+recordings, in whole or in part, for non-commercial purposes, provided that:
+
+- Appropriate credit is given to 77Hobby.
+- Copyright notices and license information are preserved.
+- Adapted or modified recordings are not distributed without separate permission.
+- The recordings are not used for commercial purposes without separate permission.
+
+ADDITIONAL PERMISSION FOR FrSky
+
+77Hobby grants FrSky worldwide, non-exclusive, royalty-free permission to
+commercially use, reproduce, and distribute the original, unmodified audio
+recordings within the FrSky ETHOS ecosystem, including FrSky software, updates,
+and devices.
+
+This permission does not constitute a general license for independent commercial
+use of the recordings by third parties. Such use requires separate permission
+from 77Hobby.
+
+Copyright notices, attribution information must be preserved.
+
+OTHER USES
+
+Any commercial use not explicitly permitted above, or distribution of modified
+versions of the recordings, requires separate permission from 77Hobby.
+
+For licensing inquiries:
+https://77hobby.pl
+
+SCOPE
+
+This license applies to the audio recordings included in the FrSky ETHOS Polish
+Audio Pack. It does not automatically apply to software, scripts, or other
+materials distributed alongside the recordings.
