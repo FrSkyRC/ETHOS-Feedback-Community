@@ -212,15 +212,7 @@ system/minus.wav,meno
 system/and.wav,e
 system/thousand.wav,mila
 system/thousands.wav,mille
-system/point1.wav,punto uno
-system/point2.wav,punto due
-system/point3.wav,punto  tre
-system/point4.wav,punto quattro
-system/point5.wav,punto cinque
-system/point6.wav,punto sei
-system/point7.wav,punto sette
-system/point8.wav,punto otto
-system/point9.wav,punto nove
+system/point.wav,punto
 system/hello.wav,Benvenuto in Ethos
 system/down.wav,Giù
 system/middle.wav,Metà
