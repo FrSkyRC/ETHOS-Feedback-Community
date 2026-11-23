@@ -801,7 +801,7 @@
         "StepFlashHint": "Seleccione Flash para actualizar el firmware del remoto conectado",
         "StepSelectFirmware": "Seleccione firmware",
         "StepSelectFirmwareHint": "Elija archivo .frk de firmware ECOS",
-        "WriteRfFirmware": "Write RF firmware"
+        "WriteRfFirmware": "Escribir firmware de RF"
     },
     "Language": "Español",
     "LogViewer": {
