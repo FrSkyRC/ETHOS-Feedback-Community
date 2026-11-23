@@ -1,0 +1,51 @@
+77Hobby – Polski pakiet audio FrSky ETHOS
+========================================
+
+Copyright © 2026 77Hobby
+https://77hobby.pl
+
+LICENCJA
+
+Nagrania dźwiękowe zawarte w polskim pakiecie audio FrSky ETHOS są udostępniane
+na licencji Creative Commons Uznanie autorstwa – Użycie niekomercyjne – Bez
+utworów zależnych 4.0 Międzynarodowa (CC BY-NC-ND 4.0).
+
+Pełny tekst licencji:
+https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.pl
+
+Na warunkach tej licencji wolno kopiować, wykorzystywać i rozpowszechniać
+oryginalne nagrania, w całości lub w części, w celach niekomercyjnych,
+pod warunkiem że:
+
+- Zostanie odpowiednio wskazane autorstwo 77Hobby.
+- Zostaną zachowane informacje o prawach autorskich i licencji.
+- Zmodyfikowane lub opracowane wersje nagrań nie będą rozpowszechniane bez
+  odrębnej zgody.
+- Nagrania nie będą wykorzystywane komercyjnie bez odrębnej zgody.
+
+DODATKOWE ZEZWOLENIE DLA FrSky
+
+77Hobby udziela FrSky nieodpłatnego, niewyłącznego i obowiązującego na całym
+świecie zezwolenia na komercyjne wykorzystywanie, kopiowanie i rozpowszechnianie
+oryginalnych, niezmienionych nagrań w ramach ekosystemu FrSky ETHOS, w tym
+oprogramowania, aktualizacji oraz urządzeń FrSky.
+
+Zezwolenie to nie stanowi ogólnej licencji na niezależne komercyjne
+wykorzystywanie nagrań przez podmioty trzecie. Takie wykorzystanie wymaga
+odrębnej zgody 77Hobby.
+
+Informacje o autorstwie, prawach autorskich i licencji muszą zostać zachowane.
+
+INNE ZASTOSOWANIA
+
+Każde wykorzystanie komercyjne niewymienione wyraźnie powyżej oraz
+rozpowszechnianie zmodyfikowanych wersji nagrań wymaga odrębnej zgody 77Hobby.
+
+Kontakt w sprawach licencyjnych:
+https://77hobby.pl
+
+ZAKRES LICENCJI
+
+Niniejsza licencja dotyczy nagrań dźwiękowych zawartych w polskim pakiecie audio
+FrSky ETHOS. Nie obejmuje automatycznie oprogramowania, skryptów ani innych
+materiałów rozpowszechnianych razem z nagraniami.
