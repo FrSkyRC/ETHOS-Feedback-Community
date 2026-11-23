@@ -113,7 +113,6 @@
             "OperationCancelled": "Operace je přerušena!",
             "ComponentNotFound": "Odpovídající komponenta nebyla nalezena!",
             "StartUpdating": "Zahajuji aktualizaci...",
-            "FlashLocalFirmware": "Aktualizovat rádio z místního souboru",
             "FlashLocalFRSK": "Flash místní .frsk",
             "Stable": "Stabilní",
             "Branch": "Větev",
@@ -512,7 +511,8 @@
         "Release": "Verze vydání",
         "FoldersSupported": ". Složky jsou podporovány.",
         "SelectFolder": "Vybrat složku",
-        "SelectRadio": "Vybrat rádio"
+        "SelectRadio": "Vybrat rádio",
+        "FlashLocalFirmware": "Aktualizovat rádio z místního souboru"
     },
     "Components": {
         "ChooseVideo": {
@@ -800,7 +800,8 @@
         "StepFlash": "Spustit zápis",
         "StepFlashHint": "Stiskněte Zápis pro aktualizaci firmware v připojeném ovladači",
         "StepSelectFirmware": "Vyberte firmware",
-        "StepSelectFirmwareHint": "Vyberte a .frk ECOS soubor s firmware"
+        "StepSelectFirmwareHint": "Vyberte a .frk ECOS soubor s firmware",
+        "WriteRfFirmware": "Write RF firmware"
     },
     "Language": "Česky",
     "LogViewer": {

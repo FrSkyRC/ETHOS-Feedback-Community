@@ -92,7 +92,6 @@
             "OperationCancelled": "¡Operación cancelada!",
             "ComponentNotFound": "¡Componente no encontrado!",
             "StartUpdating": "Comenzando la actualización ...",
-            "FlashLocalFirmware": "Actualizar la radio desde archivo local",
             "FlashLocalFRSK": "Actualizar localmente FRSK",
             "Stable": "Estable",
             "Branch": "Branch",
@@ -512,7 +511,8 @@
         "Release": "Versión",
         "FoldersSupported": ". Carpetas están soportadas.",
         "SelectFolder": "Seleccionar carpeta",
-        "SelectRadio": "Seleccione radio"
+        "SelectRadio": "Seleccione radio",
+        "FlashLocalFirmware": "Actualizar la radio desde archivo local"
     },
     "Components": {
         "ChooseVideo": {
@@ -800,7 +800,8 @@
         "StepFlash": "Comience actualización",
         "StepFlashHint": "Seleccione Flash para actualizar el firmware del remoto conectado",
         "StepSelectFirmware": "Seleccione firmware",
-        "StepSelectFirmwareHint": "Elija archivo .frk de firmware ECOS"
+        "StepSelectFirmwareHint": "Elija archivo .frk de firmware ECOS",
+        "WriteRfFirmware": "Write RF firmware"
     },
     "Language": "Español",
     "LogViewer": {

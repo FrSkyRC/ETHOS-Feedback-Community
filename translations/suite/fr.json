@@ -113,7 +113,6 @@
             "OperationCancelled": "Opération annulée !",
             "ComponentNotFound": "Composant non trouvé !",
             "StartUpdating": "Mise à jour en cours ...",
-            "FlashLocalFirmware": "Flasher radio depuis fichier local",
             "FlashLocalFRSK": "Flasher fichier .frsk local",
             "Stable": "Stable",
             "Branch": "Branche",
@@ -512,7 +511,8 @@
         "Release": "Version",
         "FoldersSupported": ". Folders are supported.",
         "SelectFolder": "Select folder",
-        "SelectRadio": "Select radio"
+        "SelectRadio": "Select radio",
+        "FlashLocalFirmware": "Flasher radio depuis fichier local"
     },
     "Components": {
         "ChooseVideo": {
@@ -800,7 +800,8 @@
         "StepFlash": "Démarrer le flashage",
         "StepFlashHint": "Cliquer Flash pour mettre à jour le firmware de la commande connectée",
         "StepSelectFirmware": "Sélectionner firmware",
-        "StepSelectFirmwareHint": "Choisir une fichier firmware .frk ECOS"
+        "StepSelectFirmwareHint": "Choisir une fichier firmware .frk ECOS",
+        "WriteRfFirmware": "Write RF firmware"
     },
     "Language": "Français",
     "LogViewer": {

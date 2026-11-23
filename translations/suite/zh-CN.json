@@ -139,7 +139,6 @@
             "OperationCancelled": "操作已被取消",
             "ComponentNotFound": "未找到对应组件",
             "StartUpdating": "开始升级...",
-            "FlashLocalFirmware": "通过本地文件烧录遥控器",
             "FlashLocalFRSK": "烧录本地 .frsk",
             "Stable": "稳定版本",
             "Branch": "分支",
@@ -512,7 +511,8 @@
         "Release": "发布版本",
         "FoldersSupported": "，支持文件夹",
         "SelectFolder": "选择文件夹",
-        "SelectRadio": "选择遥控器"
+        "SelectRadio": "选择遥控器",
+        "FlashLocalFirmware": "通过本地文件烧录遥控器"
     },
     "Components": {
         "ChooseVideo": {
@@ -837,7 +837,8 @@
         "FlashDoneSuccess": "固件更新已成功完成",
         "FlashDoneError": "固件更新失败: {{message}}",
         "FlashingTitle": "正在刷写 ECOS 固件, 请勿断开设备连接.",
-        "AppTitle": "ECOS"
+        "AppTitle": "ECOS",
+        "WriteRfFirmware": "Write RF firmware"
     },
     "Language": "中文",
     "TaskCenter": {

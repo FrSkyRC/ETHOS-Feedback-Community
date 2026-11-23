@@ -139,7 +139,6 @@
             "OperationCancelled": "Operacja anulowana",
             "ComponentNotFound": "Nie znaleziono odpowiedniego komponentu",
             "StartUpdating": "Rozpoczynanie aktualizacji ...",
-            "FlashLocalFirmware": "Wgraj firmware radia z pliku lokalnego",
             "FlashLocalFRSK": "Wgraj lokalny plik .frsk",
             "Stable": "Stabilna",
             "Branch": "Gałąź",
@@ -512,7 +511,8 @@
         "Release": "Wydanie",
         "FoldersSupported": ". Folders are supported.",
         "SelectFolder": "Select folder",
-        "SelectRadio": "Select radio"
+        "SelectRadio": "Select radio",
+        "FlashLocalFirmware": "Wgraj firmware radia z pliku lokalnego"
     },
     "Components": {
         "ChooseVideo": {
@@ -837,7 +837,8 @@
         "FlashDoneSuccess": "Aktualizacja firmware zakończona.",
         "FlashDoneError": "Aktualizacja firmware nie powiodła się: {{message}}",
         "FlashingTitle": "Wgrywanie firmware ECOS. Nie odłączaj urządzenia.",
-        "AppTitle": "ECOS"
+        "AppTitle": "ECOS",
+        "WriteRfFirmware": "Write RF firmware"
     },
     "Language": "Polski",
     "TaskCenter": {

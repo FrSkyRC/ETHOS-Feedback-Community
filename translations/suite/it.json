@@ -113,7 +113,6 @@
             "OperationCancelled": "Operazione cancellata!",
             "ComponentNotFound": "Il Componente corrispondente non trovato!",
             "StartUpdating": "Inizio aggiornamento...",
-            "FlashLocalFirmware": "Flash radio da file locale",
             "FlashLocalFRSK": "Flash .frsk in locale",
             "Stable": "Stabile",
             "Branch": "Ramo Sviluppo",
@@ -512,7 +511,8 @@
         "Release": "Versione",
         "FoldersSupported": ". Cartelle supportate.",
         "SelectFolder": "Seleziona cartella",
-        "SelectRadio": "Seleziona la casella di opzione"
+        "SelectRadio": "Seleziona la casella di opzione",
+        "FlashLocalFirmware": "Flash radio da file locale"
     },
     "Components": {
         "ChooseVideo": {
@@ -800,7 +800,8 @@
         "StepFlash": "Inizio flash",
         "StepFlashHint": "Seleziona Flash per aggiornare il firmware sul radiocomando collegato",
         "StepSelectFirmware": "Seleziona firmware",
-        "StepSelectFirmwareHint": "Scegli un file firmware ECOS .frk"
+        "StepSelectFirmwareHint": "Scegli un file firmware ECOS .frk",
+        "WriteRfFirmware": "Write RF firmware"
     },
     "Language": "Italiano",
     "LogViewer": {

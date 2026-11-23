@@ -113,7 +113,6 @@
             "OperationCancelled": "Operasjonen er stoppet!",
             "ComponentNotFound": "Den tilhørende komponenten kunne ikke bli funnet!",
             "StartUpdating": "Starter oppdatering...",
-            "FlashLocalFirmware": "'Flash' radio fra en lokal fil",
             "FlashLocalFRSK": "'Flash' lokal .frsk fil",
             "Stable": "Stabil",
             "Branch": "Gren",
@@ -512,7 +511,8 @@
         "Release": "Utgave",
         "FoldersSupported": ". Folders are supported.",
         "SelectFolder": "Select folder",
-        "SelectRadio": "Velg radio"
+        "SelectRadio": "Velg radio",
+        "FlashLocalFirmware": "'Flash' radio fra en lokal fil"
     },
     "Components": {
         "ChooseVideo": {
@@ -800,7 +800,8 @@
         "StepFlash": "Start 'flashing'",
         "StepFlashHint": "Klikk på 'Flash' for å oppdatere 'firmware' på den tilkoblede enheten",
         "StepSelectFirmware": "Velg 'firmware'",
-        "StepSelectFirmwareHint": "Velg en .frk 'ECOS firmware' fil"
+        "StepSelectFirmwareHint": "Velg en .frk 'ECOS firmware' fil",
+        "WriteRfFirmware": "Write RF firmware"
     },
     "Language": "Norsk",
     "LogViewer": {

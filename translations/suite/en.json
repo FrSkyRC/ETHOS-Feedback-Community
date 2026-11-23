@@ -139,7 +139,6 @@
             "OperationCancelled": "Operation cancelled",
             "ComponentNotFound": "The corresponding component could not be found",
             "StartUpdating": "Start updating ...",
-            "FlashLocalFirmware": "Flash radio from local file",
             "FlashLocalFRSK": "Flash local .frsk file",
             "Stable": "Stable",
             "Branch": "Branch",
@@ -512,7 +511,8 @@
         "Release": "Release",
         "FoldersSupported": ". Folders are supported.",
         "SelectFolder": "Select folder",
-        "SelectRadio": "Select radio"
+        "SelectRadio": "Select radio",
+        "FlashLocalFirmware": "Flash radio from local file"
     },
     "Components": {
         "ChooseVideo": {
@@ -837,7 +837,8 @@
         "FlashDoneSuccess": "Firmware update completed successfully.",
         "FlashDoneError": "Firmware update failed: {{message}}",
         "FlashingTitle": "Flashing ECOS firmware. Please do not disconnect the device.",
-        "AppTitle": "ECOS"
+        "AppTitle": "ECOS",
+        "WriteRfFirmware": "Write RF firmware"
     },
     "Language": "English",
     "TaskCenter": {

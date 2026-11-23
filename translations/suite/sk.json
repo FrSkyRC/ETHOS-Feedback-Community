@@ -113,7 +113,6 @@
             "OperationCancelled": "Operácia je zrušená!",
             "ComponentNotFound": "Zodpovedajúci komponent sa nepodarilo nájsť!",
             "StartUpdating": "Štart aktualizácie...",
-            "FlashLocalFirmware": "Aktualizácia rádia z lokálneho súboru",
             "FlashLocalFRSK": "Lokálny zápis .frsk",
             "Stable": "Stabilná",
             "Branch": "Branch",
@@ -512,7 +511,8 @@
         "Release": "Vydanie",
         "FoldersSupported": ". Adresáre sú podporované.",
         "SelectFolder": "Vyberte adresár",
-        "SelectRadio": "Zvoľte rádio"
+        "SelectRadio": "Zvoľte rádio",
+        "FlashLocalFirmware": "Aktualizácia rádia z lokálneho súboru"
     },
     "Components": {
         "ChooseVideo": {
@@ -800,7 +800,8 @@
         "StepFlash": "Štart zapisovania",
         "StepFlashHint": "Kliknite na položku Zápis pre aktualizáciu firmvéru na pripojenom rádiu",
         "StepSelectFirmware": "Vyberte si firmvér",
-        "StepSelectFirmwareHint": "Vyberte súbor firmvéru .frk ECOS"
+        "StepSelectFirmwareHint": "Vyberte súbor firmvéru .frk ECOS",
+        "WriteRfFirmware": "Write RF firmware"
     },
     "Language": "Slovenčina",
     "LogViewer": {

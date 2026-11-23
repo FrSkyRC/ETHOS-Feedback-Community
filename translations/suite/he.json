@@ -113,7 +113,6 @@
             "OperationCancelled": "פעולה בוטלה!",
             "ComponentNotFound": "הרכיב המתאים לא נמצא!",
             "StartUpdating": "התחל עדכון...",
-            "FlashLocalFirmware": "Flash radio from local file",
             "FlashLocalFRSK": "Flash local .frsk",
             "Stable": "Stable",
             "Branch": "Branch",
@@ -512,7 +511,8 @@
         "Release": "Release",
         "FoldersSupported": ". Folders are supported.",
         "SelectFolder": "Select folder",
-        "SelectRadio": "Select radio"
+        "SelectRadio": "Select radio",
+        "FlashLocalFirmware": "Flash radio from local file"
     },
     "Components": {
         "ChooseVideo": {
@@ -800,7 +800,8 @@
         "StepFlash": "Start flashing",
         "StepFlashHint": "Click Flash to update firmware on the connected remote",
         "StepSelectFirmware": "Select firmware",
-        "StepSelectFirmwareHint": "Choose a .frk ECOS firmware file"
+        "StepSelectFirmwareHint": "Choose a .frk ECOS firmware file",
+        "WriteRfFirmware": "Write RF firmware"
     },
     "Language": "עִברִית",
     "LogViewer": {

@@ -113,7 +113,6 @@
             "OperationCancelled": "Vorgang wird abgebrochen!",
             "ComponentNotFound": "Die entsprechende Komponente konnte nicht gefunden werden!",
             "StartUpdating": "Update starten...",
-            "FlashLocalFirmware": "Sender von lokaler Datei flashen",
             "FlashLocalFRSK": "Lokale .frsk-Datei flashen",
             "Stable": "Stabil",
             "Branch": "Versionsvorauswahl",
@@ -512,7 +511,8 @@
         "Release": "Version",
         "FoldersSupported": "-Ordner werden unterstützt.",
         "SelectFolder": "Ordner auswählen",
-        "SelectRadio": "Sender auswählen"
+        "SelectRadio": "Sender auswählen",
+        "FlashLocalFirmware": "Sender von lokaler Datei flashen"
     },
     "Components": {
         "ChooseVideo": {
@@ -800,7 +800,8 @@
         "StepFlash": "Mit dem Flashen beginnen",
         "StepFlashHint": "Klicken Sie auf „Flash“, um die Firmware auf der verbundenen Fernbedienung zu aktualisieren.",
         "StepSelectFirmware": "Firmware auswählen",
-        "StepSelectFirmwareHint": "Wählen Sie eine .frk-ECOS-Firmwaredatei aus."
+        "StepSelectFirmwareHint": "Wählen Sie eine .frk-ECOS-Firmwaredatei aus.",
+        "WriteRfFirmware": "Write RF firmware"
     },
     "Language": "Deutsch",
     "LogViewer": {
