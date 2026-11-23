@@ -801,7 +801,7 @@
         "StepFlashHint": "Klicken Sie auf „Flash“, um die Firmware auf der verbundenen Fernbedienung zu aktualisieren.",
         "StepSelectFirmware": "Firmware auswählen",
         "StepSelectFirmwareHint": "Wählen Sie eine .frk-ECOS-Firmwaredatei aus.",
-        "WriteRfFirmware": "Write RF firmware"
+        "WriteRfFirmware": "HF-Firmware schreiben"
     },
     "Language": "Deutsch",
     "LogViewer": {
