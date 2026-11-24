@@ -102,8 +102,15 @@ local function fail(data, message)
     openMessage("Warning", message)
 end
 
+-- brings an angle in tenths of degree back to -180.0 .. 180.0
+local function wrapAngle(angle)
+    return (angle + 1800) % 3600 - 1800
+end
+
 local function connectSensor(data, device)
-    local sensor = {connected = false, value = 0, lastRead = 0, since = os.clock(), dead = false}
+    -- raw: the angle given by the sensor, offset: set by a touch to have 0 at the current position, value: the angle
+    -- shown, both in tenths of degree
+    local sensor = {connected = false, raw = 0, offset = 0, value = 0, lastRead = 0, since = os.clock(), dead = false}
     sensor.connection = bluetooth.connect(device, {
         connected = function()
             sensor.connected = true
@@ -114,7 +121,8 @@ local function connectSensor(data, device)
         read = function(connection, uuid, value)
             if #value >= 2 then
                 local raw = string.unpack(">I2", value)
-                sensor.value = raw > 1800 and raw - 3600 or raw
+                sensor.raw = raw > 1800 and raw - 3600 or raw
+                sensor.value = wrapAngle(sensor.raw + sensor.offset)
             end
         end
     })
@@ -251,6 +259,21 @@ local function wakeup(data)
     end
 end
 
+-- A touch on a gauge calibrates its sensor: the current angle becomes the 0
+local function event(data, category, value, x, y)
+    if category == EVT_TOUCH and value == TOUCH_END and data.slotWidth and data.slotWidth > 0 then
+        local sensor = data.gauges[x // data.slotWidth + 1]
+        if sensor and sensor.connected then
+            sensor.offset = -sensor.raw
+            sensor.value = 0
+            lcd.invalidate()
+            system.killEvent(value)
+            return true
+        end
+    end
+    return false
+end
+
 local function paint(data)
     local w, h = lcd.getWindowSize()
 
@@ -273,6 +296,8 @@ local function paint(data)
 
     -- the gauges side by side, sharing the width
     local slotWidth = w // #gauges
+    data.gauges = gauges
+    data.slotWidth = slotWidth
     for i, sensor in ipairs(gauges) do
         paintGauge((i - 1) * slotWidth, 0, slotWidth, h, sensor)
     end
@@ -285,6 +310,7 @@ end
 return {
   create = create,
   wakeup = wakeup,
+  event = event,
   paint = paint,
   close = close,
 }
